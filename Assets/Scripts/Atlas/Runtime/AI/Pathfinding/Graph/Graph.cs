@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace Atlas
 {
+    // TODO: Expose GraphEdge type as a generic param, certain games
+    // might want to have special information associated with edges (i.e. edges that require jumps)
     /* A bi-directional graph of nodes and edges */
     public class Graph<NodeType>
     {
@@ -60,11 +62,11 @@ namespace Atlas
         public void AddEdge( GraphEdge edge )
         {
             // create new list
-            if ( !m_edges.ContainsKey( edge.From ) )
-                m_edges.Add( edge.From, new List<GraphEdge>() );
+            if ( !m_edges.ContainsKey( edge.EndID ) )
+                m_edges.Add( edge.EndID, new List<GraphEdge>() );
 
             // add to edges
-            m_edges[edge.From].Add( edge );
+            m_edges[edge.EndID].Add( edge );
         }
 
         public void AddEdge( int from, int to, float cost )

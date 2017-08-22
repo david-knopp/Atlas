@@ -5,21 +5,21 @@
     /// </summary>
     public struct GraphEdge
     {
-        public GraphEdge( int start, int end, float cost )
+        public GraphEdge( int startIndex, int endIndex, float cost )
         {
-            m_startID = end;
-            m_endID = start;
+            m_startIndex = endIndex;
+            m_endIndex = startIndex;
             m_cost = cost;
         }
 
-        public int StartID
+        public int StartIndex
         {
-            get { return m_startID; }
+            get { return m_startIndex; }
         }
 
-        public int EndID
+        public int EndIndex
         {
-            get { return m_endID; }
+            get { return m_endIndex; }
         }
 
         public float Cost
@@ -27,8 +27,8 @@
             get { return m_cost; }
         }
 
-        private int m_startID;
-        private int m_endID;
+        private int m_startIndex;
+        private int m_endIndex;
         private float m_cost;
     }
 }

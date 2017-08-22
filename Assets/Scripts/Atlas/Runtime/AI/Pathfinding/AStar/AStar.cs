@@ -28,15 +28,15 @@ namespace Atlas
             set { m_graph = value; }
         }
 
-        public SearchStatus Search( int startID, int endID, ref List<GraphEdge> path )
+        public SearchStatus Search( int startIndex, int endIndex, ref List<GraphEdge> path )
         {
-            Assert.IsTrue( startID != NodeRecord.InvalidID, "AStar.Search: Invalid start ID given" );
-            Assert.IsTrue( endID != NodeRecord.InvalidID, "AStar.Search: Invalid end ID given" );
+            Assert.IsTrue( startIndex != NodeRecord.InvalidID, "AStar.Search: Invalid start index given" );
+            Assert.IsTrue( endIndex != NodeRecord.InvalidID, "AStar.Search: Invalid end index given" );
             Assert.IsTrue( m_graph != null, "AStar.Search: graph is null" );
             Assert.IsTrue( path != null, "AStar.Search: output path is null" );
 
-            Initialize( startID, endID );
-            NodeType goalNode = m_graph.GetNode( endID );
+            Initialize( startIndex, endIndex );
+            NodeType goalNode = m_graph.Nodes[endIndex];
 
             SearchStatus status = SearchStatus.Failure;
 
@@ -47,18 +47,18 @@ namespace Atlas
                 nodeRecord.m_status = NodeRecord.Status.Closed;
 
                 // stop if at end
-                if ( nodeRecord.m_nodeID == endID )
+                if ( nodeRecord.m_nodeID == endIndex )
                 {
                     status = SearchStatus.Success;
 
                     // build path
-                    int nodeID = endID;
+                    int nodeID = endIndex;
                     do
                     {
                         NodeRecord record = m_nodes[nodeID];
                         path.Add( record.m_edge );
-                        nodeID = record.m_edge.StartID;
-                    } while ( nodeID != startID );
+                        nodeID = record.m_edge.StartIndex;
+                    } while ( nodeID != startIndex );
 
                     path.Reverse();
                     break;
@@ -69,7 +69,7 @@ namespace Atlas
                 for ( int i = 0; i < edges.Count; ++i )
                 {
                     GraphEdge edge = edges[i];
-                    VisitNode( edge, nodeRecord, goalNode );
+                    TraverseEdge( edge, nodeRecord, goalNode );
                 }
             }
 
@@ -83,39 +83,38 @@ namespace Atlas
         private Graph<NodeType> m_graph;
         private Heuristic m_heuristic;
 
-        private void Initialize( int startID, int endID )
+        private void Initialize( int startIndex, int endIndex )
         {
             m_nodes.Clear();
             m_openList.Clear();
 
-            m_openList.Resize( m_graph.NodeCount );
+            m_openList.Resize( m_graph.Nodes.Count );
 
             // create initial record
             NodeRecord startRecord = new NodeRecord()
             {
-                m_edge = new GraphEdge( startID, startID, 0.0f ),
+                m_edge = new GraphEdge( startIndex, startIndex, 0.0f ),
                 m_status = NodeRecord.Status.Open,
                 m_costSoFar = 0.0f,
-                m_totalEstimate = m_heuristic( m_graph.GetNode( startID ), m_graph.GetNode( endID ) ),
-                m_nodeID = startID
+                m_totalEstimate = m_heuristic( m_graph.Nodes[startIndex], m_graph.Nodes[endIndex] ),
+                m_nodeID = startIndex
             };
 
             // add record
-            m_nodes.Add( startID, startRecord );
-            m_openList.Insert( startID, startRecord );
+            m_nodes.Add( startIndex, startRecord );
+            m_openList.Insert( startIndex, startRecord );
         }
 
-        private void VisitNode( GraphEdge edge, NodeRecord parent, NodeType goalNode )
+        private void TraverseEdge( GraphEdge edge, NodeRecord parent, NodeType goalNode )
         {
-            int nodeID = edge.StartID;
+            int endNodeIndex = edge.EndIndex;
             float cost = parent.m_costSoFar + edge.Cost;
 
             NodeRecord nodeRecord;
 
             // record already exists
-            if ( m_nodes.TryGetValue( nodeID, out nodeRecord ) )
+            if ( m_nodes.TryGetValue( endNodeIndex, out nodeRecord ) )
             {
-
                 // update record if this path is better
                 if ( nodeRecord.m_status == NodeRecord.Status.Open &&
                      cost < nodeRecord.m_costSoFar )
@@ -124,10 +123,10 @@ namespace Atlas
 
                     nodeRecord.m_costSoFar = cost;
                     nodeRecord.m_totalEstimate = cost + heuristicCost;
-                    nodeRecord.m_nodeID = nodeID;
+                    nodeRecord.m_nodeID = endNodeIndex;
                     nodeRecord.m_edge = edge;
 
-                    m_openList.DecreaseIndex( nodeID, nodeRecord );
+                    m_openList.DecreaseIndex( endNodeIndex, nodeRecord );
                 }
             }
             // add new record
@@ -138,14 +137,12 @@ namespace Atlas
                     m_edge = edge,
                     m_status = NodeRecord.Status.Open,
                     m_costSoFar = cost,
-                    m_totalEstimate = cost + m_heuristic( m_graph.GetNode( nodeID ), goalNode ),
-                    m_nodeID = nodeID
+                    m_totalEstimate = cost + m_heuristic( m_graph.Nodes[endNodeIndex], goalNode ),
+                    m_nodeID = endNodeIndex
                 };
 
-                m_nodes.Add( nodeID, record );
-                // TODO: This requires that IDs be sequential, but isn't communicated to the user
-                // Maybe the graph could manage node id assignment (i.e. an index within an array -- is lookup by id needed for graphs?)
-                m_openList.Insert( nodeID, record );
+                m_nodes.Add( endNodeIndex, record );
+                m_openList.Insert( endNodeIndex, record );
             }
         }
         #endregion // private

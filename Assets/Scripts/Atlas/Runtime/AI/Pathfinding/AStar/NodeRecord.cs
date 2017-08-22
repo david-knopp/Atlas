@@ -22,10 +22,10 @@ namespace Atlas
             return Comparer<float>.Default.Compare( m_totalEstimate, other.m_totalEstimate );
         }
 
-        public GraphEdge m_edge;
-        public Status m_status;
-        public float m_costSoFar;
-        public float m_totalEstimate;
-        public int m_nodeID;
+        public GraphEdge m_edge; // The edge that led to this node
+        public Status m_status; // nodes status in the current search
+        public float m_costSoFar; // actual cost accrued along edges leading to this node
+        public float m_totalEstimate; // cost so far + heuristic to the goal node
+        public int m_nodeIndex; // index of node on the graph
     }
 }

@@ -15,7 +15,7 @@ namespace Atlas
         public Graph()
         {
             m_nodes = new List<NodeType>();
-            m_edges = new List<List<GraphEdge>>();
+            m_edges = new List<EdgeList>();
         }
 
         #region nodes
@@ -27,7 +27,13 @@ namespace Atlas
         #endregion // nodes
 
         #region edges
-        public List<List<GraphEdge>> Edges
+        [Serializable]
+        public class EdgeList
+        {
+            public List<GraphEdge> m_edges;
+        }
+
+        public List<EdgeList> Edges
         {
             get { return m_edges; }
             set { m_edges = value; }
@@ -38,7 +44,7 @@ namespace Atlas
             Assert.IsTrue( startNodeIndex >= 0 && startNodeIndex < m_edges.Count, 
                            string.Format( "Graph.GetEdges: No edges exist for node index '{0}'", startNodeIndex ) );
 
-            return m_edges[startNodeIndex];
+            return m_edges[startNodeIndex].m_edges;
         }
         #endregion // edges
 
@@ -51,7 +57,7 @@ namespace Atlas
 
         #region private
         [SerializeField] private List<NodeType> m_nodes;
-        [SerializeField] private List<List<GraphEdge>> m_edges;
+        [SerializeField] private List<EdgeList> m_edges;
         #endregion // private
     }
 }

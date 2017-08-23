@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
+using System.Collections.Generic;
 
 namespace Atlas
 {
@@ -12,6 +13,11 @@ namespace Atlas
             serializedObject.Update();
 
             m_nodeList.DoLayoutList();
+
+            if ( GUILayout.Button( "Connect Edges" ) )
+            {
+                ConnectEdges();
+            }
 
             serializedObject.ApplyModifiedProperties();
         }
@@ -66,6 +72,39 @@ namespace Atlas
         {
             SerializedProperty posProp = m_nodesProp.GetArrayElementAtIndex( index );
             EditorGUI.PropertyField( rect, posProp, GUIContent.none, true );
+        }
+
+        private void ConnectEdges()
+        {
+            PointGraph3D graph = target as PointGraph3D;
+            var nodes = graph.Nodes;
+            var edges = graph.GetAllEdges();
+            edges.Clear();
+
+            for ( int i = 0; i < nodes.Count; i++ )
+            {
+                List<GraphEdge> edgeList = new List<GraphEdge>();
+
+                for ( int j = 0; j < nodes.Count; j++ )
+                {
+                    if ( i != j )
+                    {
+                        Vector3 startNode = nodes[i];
+                        Vector3 endNode = nodes[j];
+
+                        float distance = Vector3.Distance( startNode, endNode );
+                        if ( Physics.Raycast( startNode, endNode - startNode, distance ) == false )
+                        {
+                            edgeList.Add( new GraphEdge( i, j, distance ) );
+                        }
+                    }
+                }
+
+                edges.Add( new Graph<Vector3>.EdgeList()
+                {
+                    m_edges = edgeList
+                } );
+            }
         }
     }
 }

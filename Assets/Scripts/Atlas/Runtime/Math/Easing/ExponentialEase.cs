@@ -25,7 +25,6 @@ namespace Atlas
             }
             else
             {
-                // c * (-pow(2, -10 * t/d) + 1) + b
                 return delta * ( -Mathf.Pow( 2.0f, -10.0f * ( t / duration ) ) + 1.0f ) + start;
             }
         }

@@ -9,7 +9,7 @@ namespace Atlas
     // might want to have special information associated with edges (i.e. edges that require jumps)
     /* A bi-directional graph of nodes and edges */
     [Serializable]
-    public class Graph<NodeType>
+    public class Graph<NodeType> : IGraph<NodeType>
     {
         #region public
         public Graph()
@@ -23,11 +23,6 @@ namespace Atlas
         {
             get { return m_nodes; }
             set { m_nodes = value; }
-        }
-
-        public bool ContainsNode( NodeType node )
-        {
-            return m_nodes.Contains( node );
         }
         #endregion // nodes
 

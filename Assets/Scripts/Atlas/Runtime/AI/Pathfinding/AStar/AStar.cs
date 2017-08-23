@@ -14,31 +14,24 @@ namespace Atlas
 
         public delegate float Heuristic( NodeType a, NodeType b );
 
-        public AStar( Heuristic heuristic, Graph<NodeType> graph )
+        public AStar( Heuristic heuristic )
         {
             m_openList = new IndexedPriorityQueue<NodeRecord>();
             m_nodes = new Dictionary<int, NodeRecord>();
             m_heuristic = heuristic;
-            m_graph = graph;
         }
 
-        public Graph<NodeType> Graph
-        {
-            get { return m_graph; }
-            set { m_graph = value; }
-        }
-
-        public SearchStatus Search( int startIndex, int endIndex, ref List<GraphEdge> path )
+        public SearchStatus Search( IGraph<NodeType> graph, int startIndex, int endIndex, ref List<GraphEdge> path )
         {
             // asserts
             Assert.IsTrue( startIndex != NodeRecord.InvalidID, "AStar.Search: Invalid start index given" );
             Assert.IsTrue( endIndex != NodeRecord.InvalidID, "AStar.Search: Invalid end index given" );
-            Assert.IsTrue( m_graph != null, "AStar.Search: graph is null" );
+            Assert.IsTrue( graph != null, "AStar.Search: graph is null" );
             Assert.IsTrue( path != null, "AStar.Search: output path is null" );
 
             // init search
-            Initialize( startIndex, endIndex );
-            NodeType goalNode = m_graph.Nodes[endIndex];
+            Initialize( graph, startIndex, endIndex );
+            NodeType goalNode = graph.Nodes[endIndex];
             SearchStatus status = SearchStatus.Failure;
 
             // perform search
@@ -67,11 +60,11 @@ namespace Atlas
                 }
 
                 // visit neighbors
-                List<GraphEdge> edges = m_graph.GetEdges( nodeRecord.m_nodeIndex );
+                List<GraphEdge> edges = graph.GetEdges( nodeRecord.m_nodeIndex );
                 for ( int i = 0; i < edges.Count; ++i )
                 {
                     GraphEdge edge = edges[i];
-                    TraverseEdge( edge, nodeRecord, goalNode );
+                    TraverseEdge( graph, edge, nodeRecord, goalNode );
                 }
             }
 
@@ -82,15 +75,14 @@ namespace Atlas
         #region private
         private IndexedPriorityQueue<NodeRecord> m_openList;
         private Dictionary<int, NodeRecord> m_nodes;
-        private Graph<NodeType> m_graph;
         private Heuristic m_heuristic;
 
-        private void Initialize( int startIndex, int endIndex )
+        private void Initialize( IGraph<NodeType> graph, int startIndex, int endIndex )
         {
             m_nodes.Clear();
             m_openList.Clear();
 
-            m_openList.Resize( m_graph.Nodes.Count );
+            m_openList.Resize( graph.Nodes.Count );
 
             // create initial record
             NodeRecord startRecord = new NodeRecord()
@@ -98,7 +90,7 @@ namespace Atlas
                 m_edge = new GraphEdge( startIndex, startIndex, 0.0f ),
                 m_status = NodeRecord.Status.Open,
                 m_costSoFar = 0.0f,
-                m_totalEstimate = m_heuristic( m_graph.Nodes[startIndex], m_graph.Nodes[endIndex] ),
+                m_totalEstimate = m_heuristic( graph.Nodes[startIndex], graph.Nodes[endIndex] ),
                 m_nodeIndex = startIndex
             };
 
@@ -107,7 +99,7 @@ namespace Atlas
             m_openList.Insert( startIndex, startRecord );
         }
 
-        private void TraverseEdge( GraphEdge edge, NodeRecord parent, NodeType goalNode )
+        private void TraverseEdge( IGraph<NodeType> graph, GraphEdge edge, NodeRecord parent, NodeType goalNode )
         {
             int endNodeIndex = edge.EndIndex;
             float cost = parent.m_costSoFar + edge.Cost;
@@ -139,7 +131,7 @@ namespace Atlas
                     m_edge = edge,
                     m_status = NodeRecord.Status.Open,
                     m_costSoFar = cost,
-                    m_totalEstimate = cost + m_heuristic( m_graph.Nodes[endNodeIndex], goalNode ),
+                    m_totalEstimate = cost + m_heuristic( graph.Nodes[endNodeIndex], goalNode ),
                     m_nodeIndex = endNodeIndex
                 };
 

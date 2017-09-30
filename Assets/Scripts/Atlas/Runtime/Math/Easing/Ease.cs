@@ -79,6 +79,18 @@ namespace Atlas
                 m_easeFunction = QuadraticEase.InOut;
                 break;
 
+            case EaseType.BounceIn:
+                m_easeFunction = BounceEase.In;
+                break;
+
+            case EaseType.BounceOut:
+                m_easeFunction = BounceEase.Out;
+                break;
+
+            case EaseType.BounceInOut:
+                m_easeFunction = BounceEase.InOut;
+                break;
+
             default:
                 Debug.LogWarningFormat( "Ease.Reset: No ease function exists for {0}", m_type );
                 m_easeFunction = LinearEase.InOut;

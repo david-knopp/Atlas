@@ -5,13 +5,13 @@
     {
         public static float In( float curTime, float duration )
         {
-            float t = curTime /= duration;
+            float t = curTime / duration;
             return t * t;
         }
 
         public static float Out( float curTime, float duration )
         {
-            float t = curTime /= duration;
+            float t = curTime / duration;
             return -1.0f * t * ( t - 2.0f );
         }
 

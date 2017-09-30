@@ -10,6 +10,9 @@
         ExponentialInOut,
         QuadraticIn,
         QuadraticOut,
-        QuadraticInOut
+        QuadraticInOut,
+        BounceIn,
+        BounceOut,
+        BounceInOut
     }
 }

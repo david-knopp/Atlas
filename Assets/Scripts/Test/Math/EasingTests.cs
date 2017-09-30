@@ -39,7 +39,7 @@ namespace Atlas.Test
 
             while ( t < m_duration )
             {
-                m_target.position = startPos + m_ease.Evaluate( t, 0.0f, 1.0f, m_duration ) * deltaPos;
+                m_target.position = startPos + m_ease.Evaluate( t, m_duration ) * deltaPos;
                 yield return null;
 
                 t = timer.Elapsed;

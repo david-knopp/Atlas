@@ -3,19 +3,19 @@
     // Adapted from Robert Penner's easing functions (http://robertpenner.com/easing/)
     public static class LinearEase
     {
-        public static float In( float t, float start, float delta, float duration )
+        public static float In( float curTime, float duration )
         {
-            return delta * t / duration + start;
+            return curTime / duration;
         }
 
-        public static float Out( float t, float start, float delta, float duration )
+        public static float Out( float curTime, float duration )
         {
-            return In( t, start, delta, duration );
+            return In( curTime, duration );
         }
 
-        public static float InOut( float t, float start, float delta, float duration )
+        public static float InOut( float curTime, float duration )
         {
-            return In( t, start, delta, duration );
+            return In( curTime, duration );
         }
     }
 }

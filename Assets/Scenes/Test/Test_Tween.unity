@@ -135,7 +135,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 232354835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1153390561}
@@ -154,10 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ease:
-    m_type: 0
-  m_duration: 2
+    m_type: 8
+  m_duration: 1
   m_target: {fileID: 1153390561}
-  m_goalPos: {x: 5, y: 2, z: 0}
+  m_goalPos: {x: 0, y: 3, z: 0}
 --- !u!1 &1153390560
 GameObject:
   m_ObjectHideFlags: 0

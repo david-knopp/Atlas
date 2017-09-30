@@ -5,48 +5,48 @@ namespace Atlas
     // Adapted from Robert Penner's easing functions (http://robertpenner.com/easing/)
     public static class ExponentialEase
     {
-        public static float In( float t, float start, float delta, float duration )
+        public static float In( float curTime, float duration )
         {
-            if ( t == 0.0f )
+            if ( curTime == 0.0f )
             {
-                return start;
+                return 0.0f;
             }
             else
             {
-                return delta * Mathf.Pow( 2.0f, 10.0f * ( t / duration - 1 ) ) + start;
+                return Mathf.Pow( 2.0f, 10.0f * ( curTime / duration - 1 ) );
             }
         }
 
-        public static float Out( float t, float start, float delta, float duration )
+        public static float Out( float curTime, float duration )
         {
-            if ( t == duration )
+            if ( curTime == duration )
             {
-                return start + delta;
+                return 1.0f;
             }
             else
             {
-                return delta * ( -Mathf.Pow( 2.0f, -10.0f * ( t / duration ) ) + 1.0f ) + start;
+                return -Mathf.Pow( 2.0f, -10.0f * ( curTime / duration ) ) + 1.0f;
             }
         }
 
-        public static float InOut( float t, float start, float delta, float duration )
+        public static float InOut( float curTime, float duration )
         {
-            if ( t == 0.0f )
+            if ( curTime == 0.0f )
             {
-                return start;
+                return 0.0f;
             }
-            else if ( t == duration )
+            else if ( curTime == duration )
             {
-                return start + delta;
+                return 1.0f;
             }
 
-            t /= duration / 2.0f;
-            if ( t < 1.0f )
+            curTime /= duration / 2.0f;
+            if ( curTime < 1.0f )
             {
-                return delta / 2.0f * Mathf.Pow( 2.0f, 10.0f * ( t - 1.0f ) ) + start;
+                return 1.0f / 2.0f * Mathf.Pow( 2.0f, 10.0f * ( curTime - 1.0f ) );
             }
             
-            return delta / 2.0f * ( -Mathf.Pow( 2.0f, -10.0f * ( t - 1.0f ) ) + 2.0f ) + start;
+            return 1.0f / 2.0f * ( -Mathf.Pow( 2.0f, -10.0f * ( curTime - 1.0f ) ) + 2.0f );
         }
     }
 }

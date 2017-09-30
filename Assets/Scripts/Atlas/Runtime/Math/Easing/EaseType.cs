@@ -8,8 +8,8 @@
         ExponentialIn,
         ExponentialOut,
         ExponentialInOut,
-        QuadIn,
-        QuadOut,
-        QuadInOut
+        QuadraticIn,
+        QuadraticOut,
+        QuadraticInOut
     }
 }

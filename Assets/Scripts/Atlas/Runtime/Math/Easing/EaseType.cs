@@ -13,6 +13,9 @@
         QuadraticInOut,
         BounceIn,
         BounceOut,
-        BounceInOut
+        BounceInOut,
+        BackIn,
+        BackOut,
+        BackInOut
     }
 }

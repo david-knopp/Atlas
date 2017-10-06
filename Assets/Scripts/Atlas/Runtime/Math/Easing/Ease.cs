@@ -91,6 +91,18 @@ namespace Atlas
                 m_easeFunction = BounceEase.InOut;
                 break;
 
+            case EaseType.BackIn:
+                m_easeFunction = BackEase.In;
+                break;
+
+            case EaseType.BackOut:
+                m_easeFunction = BackEase.Out;
+                break;
+
+            case EaseType.BackInOut:
+                m_easeFunction = BackEase.InOut;
+                break;
+
             default:
                 Debug.LogWarningFormat( "Ease.Reset: No ease function exists for {0}", m_type );
                 m_easeFunction = LinearEase.InOut;

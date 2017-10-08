@@ -31,6 +31,9 @@
         QuarticInOut,
         QuinticIn,
         QuinticOut,
-        QuinticInOut
+        QuinticInOut,
+        SineIn,
+        SineOut,
+        SineInOut
     }
 }

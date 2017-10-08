@@ -139,6 +139,18 @@ namespace Atlas
                 m_easeFunction = ElasticEase.InOut;
                 break;
 
+            case EaseType.QuarticIn:
+                m_easeFunction = QuarticEase.In;
+                break;
+
+            case EaseType.QuarticOut:
+                m_easeFunction = QuarticEase.Out;
+                break;
+
+            case EaseType.QuarticInOut:
+                m_easeFunction = QuarticEase.InOut;
+                break;
+
             default:
                 Debug.LogWarningFormat( "Ease.Reset: No ease function exists for {0}", m_type );
                 m_easeFunction = LinearEase.InOut;

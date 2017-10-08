@@ -25,6 +25,9 @@
         CubicInOut,
         ElasticIn,
         ElasticOut,
-        ElasticInOut
+        ElasticInOut,
+        QuarticIn,
+        QuarticOut,
+        QuarticInOut
     }
 }

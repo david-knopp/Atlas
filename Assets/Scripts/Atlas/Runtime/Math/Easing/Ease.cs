@@ -79,16 +79,40 @@ namespace Atlas
                 m_easeFunction = QuadraticEase.InOut;
                 break;
 
-            case EaseType.BounceIn:
-                m_easeFunction = BounceEase.In;
+            case EaseType.CubicIn:
+                m_easeFunction = CubicEase.In;
                 break;
 
-            case EaseType.BounceOut:
-                m_easeFunction = BounceEase.Out;
+            case EaseType.CubicOut:
+                m_easeFunction = CubicEase.Out;
                 break;
 
-            case EaseType.BounceInOut:
-                m_easeFunction = BounceEase.InOut;
+            case EaseType.CubicInOut:
+                m_easeFunction = CubicEase.InOut;
+                break;
+
+            case EaseType.QuarticIn:
+                m_easeFunction = QuarticEase.In;
+                break;
+
+            case EaseType.QuarticOut:
+                m_easeFunction = QuarticEase.Out;
+                break;
+
+            case EaseType.QuarticInOut:
+                m_easeFunction = QuarticEase.InOut;
+                break;
+
+            case EaseType.QuinticIn:
+                m_easeFunction = QuinticEase.In;
+                break;
+
+            case EaseType.QuinticOut:
+                m_easeFunction = QuinticEase.Out;
+                break;
+
+            case EaseType.QuinticInOut:
+                m_easeFunction = QuinticEase.InOut;
                 break;
 
             case EaseType.BackIn:
@@ -115,16 +139,16 @@ namespace Atlas
                 m_easeFunction = CircularEase.InOut;
                 break;
 
-            case EaseType.CubicIn:
-                m_easeFunction = CubicEase.In;
+            case EaseType.BounceIn:
+                m_easeFunction = BounceEase.In;
                 break;
 
-            case EaseType.CubicOut:
-                m_easeFunction = CubicEase.Out;
+            case EaseType.BounceOut:
+                m_easeFunction = BounceEase.Out;
                 break;
 
-            case EaseType.CubicInOut:
-                m_easeFunction = CubicEase.InOut;
+            case EaseType.BounceInOut:
+                m_easeFunction = BounceEase.InOut;
                 break;
 
             case EaseType.ElasticIn:
@@ -137,30 +161,6 @@ namespace Atlas
 
             case EaseType.ElasticInOut:
                 m_easeFunction = ElasticEase.InOut;
-                break;
-
-            case EaseType.QuarticIn:
-                m_easeFunction = QuarticEase.In;
-                break;
-
-            case EaseType.QuarticOut:
-                m_easeFunction = QuarticEase.Out;
-                break;
-
-            case EaseType.QuarticInOut:
-                m_easeFunction = QuarticEase.InOut;
-                break;
-
-            case EaseType.QuinticIn:
-                m_easeFunction = QuinticEase.In;
-                break;
-
-            case EaseType.QuinticOut:
-                m_easeFunction = QuinticEase.Out;
-                break;
-
-            case EaseType.QuinticInOut:
-                m_easeFunction = QuinticEase.InOut;
                 break;
 
             case EaseType.SineIn:

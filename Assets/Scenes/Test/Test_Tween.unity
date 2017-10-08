@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ease:
-    m_type: 8
+    m_type: 23
   m_duration: 1
   m_target: {fileID: 1153390561}
   m_goalPos: {x: 0, y: 3, z: 0}

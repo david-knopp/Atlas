@@ -22,6 +22,9 @@
         CircularInOut,
         CubicIn,
         CubicOut,
-        CubicInOut
+        CubicInOut,
+        ElasticIn,
+        ElasticOut,
+        ElasticInOut
     }
 }

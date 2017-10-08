@@ -127,6 +127,18 @@ namespace Atlas
                 m_easeFunction = CubicEase.InOut;
                 break;
 
+            case EaseType.ElasticIn:
+                m_easeFunction = ElasticEase.In;
+                break;
+
+            case EaseType.ElasticOut:
+                m_easeFunction = ElasticEase.Out;
+                break;
+
+            case EaseType.ElasticInOut:
+                m_easeFunction = ElasticEase.InOut;
+                break;
+
             default:
                 Debug.LogWarningFormat( "Ease.Reset: No ease function exists for {0}", m_type );
                 m_easeFunction = LinearEase.InOut;

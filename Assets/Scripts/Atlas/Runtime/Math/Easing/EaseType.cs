@@ -19,6 +19,9 @@
         BackInOut,
         CircularIn,
         CircularOut,
-        CircularInOut
+        CircularInOut,
+        CubicIn,
+        CubicOut,
+        CubicInOut
     }
 }

@@ -16,6 +16,9 @@
         BounceInOut,
         BackIn,
         BackOut,
-        BackInOut
+        BackInOut,
+        CircularIn,
+        CircularOut,
+        CircularInOut
     }
 }

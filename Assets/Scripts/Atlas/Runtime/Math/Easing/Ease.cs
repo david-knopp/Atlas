@@ -103,6 +103,18 @@ namespace Atlas
                 m_easeFunction = BackEase.InOut;
                 break;
 
+            case EaseType.CircularIn:
+                m_easeFunction = CircularEase.In;
+                break;
+
+            case EaseType.CircularOut:
+                m_easeFunction = CircularEase.Out;
+                break;
+
+            case EaseType.CircularInOut:
+                m_easeFunction = CircularEase.InOut;
+                break;
+
             default:
                 Debug.LogWarningFormat( "Ease.Reset: No ease function exists for {0}", m_type );
                 m_easeFunction = LinearEase.InOut;

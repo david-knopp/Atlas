@@ -1,10 +1,10 @@
 ﻿#define ATLAS_TRANSFORM_EDIT_ENABLED
 
+#if ATLAS_TRANSFORM_EDIT_ENABLED
+
 using UnityEngine;
 using UnityEditor;
 
-
-#if ATLAS_TRANSFORM_EDIT_ENABLED
 namespace Atlas
 {
     [CustomEditor( typeof( Transform ) )]

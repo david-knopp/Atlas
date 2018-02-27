@@ -1,0 +1,63 @@
+﻿using UnityEngine;
+using UnityEngine.Assertions;
+
+namespace Atlas
+{
+    public class SingletonBehavior<T> : MonoBehaviour where T : MonoBehaviour
+    {
+        #region public
+        public static bool HasInstance
+        {
+            get
+            {
+                return m_instance != null;
+            }
+        }
+
+        public static T Instance
+        {
+            get
+            {
+                if ( m_instance == null )
+                {
+                    m_instance = FindObjectOfType<T>();
+
+                    if ( m_instance == null )
+                    {
+                        Debug.LogFormat( "SingletonBehavior.Instance: Couldn't find a scene reference of type '{0}', creating a new one", typeof( T ) );
+
+                        GameObject singletonObj = new GameObject();
+                        m_instance = singletonObj.AddComponent<T>();
+                        singletonObj.name = typeof( T ).ToString();
+
+                        DontDestroyOnLoad( singletonObj );
+                    }
+                }
+
+                return m_instance;
+            }
+        }
+        #endregion // public
+
+        #region protected
+        protected virtual void Awake()
+        {
+            Assert.IsFalse( HasInstance, string.Format( "SingletonBehavior.Awake: A singleton instance of type '{0}' already exists", typeof( T ) ) );
+            m_instance = this as T;
+        }
+
+        protected virtual void OnDestroy()
+        {
+            if ( ReferenceEquals( this, m_instance ) )
+            {
+                m_instance = null;
+            }
+        }
+        #endregion // protected
+
+        #region private
+        private static T m_instance;
+        private static object m_lock = new object(); 
+        #endregion // private
+    }
+}

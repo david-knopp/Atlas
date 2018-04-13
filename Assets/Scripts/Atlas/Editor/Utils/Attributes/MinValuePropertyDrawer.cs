@@ -21,7 +21,7 @@ namespace Atlas
                     break;
 
                 case SerializedPropertyType.Float:
-                    property.floatValue = Mathf.Min( minAttribute.MinValue, property.floatValue );
+                    property.floatValue = Mathf.Max( minAttribute.MinValue, property.floatValue );
                     break;
 
                 default:

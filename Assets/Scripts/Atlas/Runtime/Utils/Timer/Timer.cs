@@ -13,7 +13,7 @@ namespace Atlas
                 {
                     return m_pauseTimestamp - m_startTimestamp;
                 }
-                else if ( m_startTimestamp > 0.0f )
+                else if ( m_startTimestamp >= 0.0f )
                 {
                     return CurrentTime - m_startTimestamp;
                 }
@@ -26,18 +26,18 @@ namespace Atlas
 
         public bool IsPaused
         {
-            get { return m_pauseTimestamp > 0.0f; }
+            get { return m_pauseTimestamp >= 0.0f; }
         }
 
         public bool IsTiming
         {
-            get { return !IsPaused && m_startTimestamp > 0.0f; }
+            get { return !IsPaused && m_startTimestamp >= 0.0f; }
         }
 
         public virtual void Start()
         {
             m_startTimestamp = CurrentTime;
-            m_pauseTimestamp = 0.0f;
+            m_pauseTimestamp = -1.0f;
         }
 
         public void Stop()
@@ -53,7 +53,7 @@ namespace Atlas
         public void Unpause()
         {
             m_startTimestamp += CurrentTime - m_pauseTimestamp;
-            m_pauseTimestamp = 0.0f;
+            m_pauseTimestamp = -1.0f;
         }
         #endregion // public
 

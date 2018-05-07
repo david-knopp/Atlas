@@ -57,7 +57,6 @@ namespace Atlas
 
         #region private
         private static T m_instance;
-        private static object m_lock = new object(); 
         #endregion // private
     }
 }

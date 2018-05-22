@@ -42,7 +42,7 @@ namespace Atlas
 
         public void Stop()
         {
-            m_startTimestamp = 0.0f;
+            m_startTimestamp = -1.0f;
         }
 
         public void Pause()
@@ -65,8 +65,8 @@ namespace Atlas
         #endregion // protected
 
         #region private
-        private float m_startTimestamp;
-        private float m_pauseTimestamp;
+        private float m_startTimestamp = -1.0f;
+        private float m_pauseTimestamp = -1.0f;
         #endregion // private
     }
 }

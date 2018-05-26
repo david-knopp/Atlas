@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using UnityEngine.Assertions;
+﻿using System;
+using UnityEngine;
 
 namespace Atlas
 {
@@ -42,7 +42,11 @@ namespace Atlas
         #region protected
         protected virtual void Awake()
         {
-            Assert.IsFalse( HasInstance, string.Format( "SingletonBehavior.Awake: A singleton instance of type '{0}' already exists", typeof( T ) ) );
+            if ( HasInstance )
+            {
+                throw new InvalidOperationException( string.Format( "SingletonBehavior.Awake: A singleton instance of type '{0}' already exists", typeof( T ) ) );
+            }
+
             m_instance = this as T;
         }
 

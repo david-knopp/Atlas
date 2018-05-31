@@ -61,7 +61,7 @@ namespace Atlas
             }
         } 
 
-        public static void DrawCircle( Vector3 centerPos, float radius, Color color, int numSegments = 8 )
+        public static void DrawCircle( Vector3 centerPos, float radius, Color color, int numSegments = 16 )
         {
             if ( IsEnabled )
             {

@@ -8,15 +8,16 @@ namespace Atlas
         #region public
         public static bool IsEnabled
         {
-            get { return m_isEnabled; }
-            set { m_isEnabled = value; }
+            get;
+            set;
         }
 
+#if ATLAS_DEBUG_DRAW
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new LineDebugDrawer( startPos, endPos, color ) ); 
+                Instance.m_drawers.Add( new LineDebugDrawer( startPos, endPos, color ) );
             }
         }
 
@@ -32,7 +33,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new CrossDebugDrawer( pos, lineLength, color ) ); 
+                Instance.m_drawers.Add( new CrossDebugDrawer( pos, lineLength, color ) );
             }
         }
 
@@ -48,7 +49,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new LineDebugDrawer( pos, pos + dir, color ), lifetime ) ); 
+                Instance.m_drawers.Add( new TimedDebugDrawer( new LineDebugDrawer( pos, pos + dir, color ), lifetime ) );
             }
         }
 
@@ -56,20 +57,27 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new CrossDebugDrawer( pos, lineLength, color ), lifetime ) ); 
+                Instance.m_drawers.Add( new TimedDebugDrawer( new CrossDebugDrawer( pos, lineLength, color ), lifetime ) );
             }
-        }
+        } 
+#else
+        public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color ) { }
+        public static void DrawRay( Vector3 pos, Vector3 dir, Color color ) { }
+        public static void DrawCross( Vector3 pos, float lineLength, Color color ) { }
+        public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color, float lifetime ) { }
+        public static void DrawRay( Vector3 pos, Vector3 dir, Color color, float lifetime ) { }
+        public static void DrawCross( Vector3 pos, float lineLength, Color color, float lifetime ) { }
+#endif
         #endregion // public
 
         #region private
-        private static bool m_isEnabled = true;
-
+#if ATLAS_DEBUG_DRAW
         private List<IDebugDrawer> m_drawers = new List<IDebugDrawer>();
         private Material m_material;
 
         private void Start()
         {
-            Shader debugShader = Shader.Find( "Hidden/DebugLines" );
+            Shader debugShader = Shader.Find( "UI/Unlit/Transparent" );
             if ( debugShader )
             {
                 m_material = new Material( debugShader );
@@ -93,16 +101,17 @@ namespace Atlas
                 {
                     GL.PushMatrix();
                     GL.LoadProjectionMatrix( camera.projectionMatrix );
+                    GL.modelview = camera.worldToCameraMatrix;
 
                     m_material.SetPass( 0 );
-                    
+
                     for ( int i = m_drawers.Count - 1; i >= 0; --i )
                     {
                         IDebugDrawer drawable = m_drawers[i];
                         if ( drawable != null )
                         {
                             drawable.Draw();
-                            if ( drawable.IsFinished == false)
+                            if ( drawable.IsFinished == false )
                             {
                                 continue;
                             }
@@ -114,7 +123,8 @@ namespace Atlas
                     GL.PopMatrix();
                 }
             }
-        }
+        } 
+#endif
         #endregion // private
     }
 }

@@ -10,7 +10,7 @@ namespace Atlas
             bool runtimeEnabled = EditorPrefs.GetBool( c_runtimePrefsKey, false );
             SetRuntimeEnabled( runtimeEnabled );
 
-            s_compileTimeEnabled = EditorPrefs.GetBool( c_compileTimePrefsKey, false );
+            s_compileTimeEnabled = EditorPrefs.GetBool( c_compileTimePrefsKey, false ) || ScriptingDefines.ContainsSymbol( c_defineSymbol );
             SetCompileTimeEnabled( s_compileTimeEnabled );
         }
 

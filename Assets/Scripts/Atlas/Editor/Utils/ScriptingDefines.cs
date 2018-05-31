@@ -11,6 +11,30 @@ namespace Atlas
     public static class ScriptingDefines
     {
         /// <summary>
+        /// Determines if the given target group has the given symbol defined
+        /// </summary>
+        /// <param name="group">Build group to check</param>
+        /// <param name="symbol">Preprocessor symbol to check for<</param>
+        /// <returns>true if the symbol is define, false if not</returns>
+        public static bool ContainsSymbol( BuildTargetGroup group, string symbol )
+        {
+            string defineSymbolsStr = PlayerSettings.GetScriptingDefineSymbolsForGroup( group );
+            List<string> defineSymbols = defineSymbolsStr.Split( ';' ).Select( x => x.Trim() ).ToList();
+
+            return defineSymbols.Contains( symbol );
+        }
+
+        /// <summary>
+        /// Determines if the current build group has the given symbol defined
+        /// </summary>
+        /// <param name="symbol">Preprocessor symbol to check for<</param>
+        /// <returns>true if the symbol is define, false if not</returns>
+        public static bool ContainsSymbol( string symbol )
+        {
+            return ContainsSymbol( EditorUserBuildSettings.selectedBuildTargetGroup, symbol );
+        }
+
+        /// <summary>
         /// Adds the given preprocessor definition to the PlayerSettings for the given build group
         /// </summary>
         /// <param name="group">Build group to add the symbol to</param>

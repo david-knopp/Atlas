@@ -19,7 +19,17 @@ namespace Atlas.Test
                 {
                     Vector3 pos = Input.mousePosition;
                     pos.z = 10.0f;
-                    DebugDraw.DrawCross( Camera.main.ScreenToWorldPoint( pos ), 2.0f, m_color, m_mouseClickLifetime );
+                    DebugDraw.DrawCircle( Camera.main.ScreenToWorldPoint( pos ), 0.5f, m_color, m_mouseClickLifetime );
+                }
+            }
+
+            if ( Input.GetMouseButtonDown( 1 ) )
+            {
+                if ( Camera.main )
+                {
+                    Vector3 pos = Input.mousePosition;
+                    pos.z = 10.0f;
+                    DebugDraw.DrawCross( Camera.main.ScreenToWorldPoint( pos ), 0.5f, m_color, m_mouseClickLifetime );
                 }
             }
         }

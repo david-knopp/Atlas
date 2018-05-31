@@ -60,6 +60,22 @@ namespace Atlas
                 Instance.m_drawers.Add( new TimedDebugDrawer( new CrossDebugDrawer( pos, lineLength, color ), lifetime ) );
             }
         } 
+
+        public static void DrawCircle( Vector3 centerPos, float radius, Color color, int numSegments = 8 )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new CircleDebugDrawer( centerPos, radius, color, numSegments ) );
+            }
+        }
+
+        public static void DrawCircle( Vector3 centerPos, float radius, Color color, float lifetime, int numSegments = 16 )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new TimedDebugDrawer( new CircleDebugDrawer( centerPos, radius, color, numSegments ), lifetime ) );
+            }
+        }
 #else
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color ) { }
         public static void DrawRay( Vector3 pos, Vector3 dir, Color color ) { }
@@ -114,7 +130,7 @@ namespace Atlas
         {
             if ( m_material )
             {
-                Camera camera = Camera.current;
+                Camera camera = Camera.main;
                 if ( camera )
                 {
                     GL.PushMatrix();

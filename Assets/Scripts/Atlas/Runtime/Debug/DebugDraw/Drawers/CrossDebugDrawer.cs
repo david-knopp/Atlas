@@ -27,21 +27,28 @@ namespace Atlas
 
         public void Draw()
         {
+            Vector3 up = Vector3.up;
+            Vector3 right = Vector3.right;
+
+            if ( Camera.main != null )
+            {
+                up = Camera.main.transform.up;
+                right = Camera.main.transform.right;
+            }
+
             // calculate line end-points
-            float d = m_lineLength / 2.828f; // about 2 * sqrt( 2 )
-            Vector3 min = new Vector3( m_position.x - d, m_position.y - d, 0.0f );
-            Vector3 max = new Vector3( m_position.x + d, m_position.y + d, 0.0f );
+            float d = m_lineLength * 0.7071f; // about sin(45)
 
             GL.Begin( GL.LINES );
             GL.Color( Color );
 
             // first line
-            GL.Vertex( min );
-            GL.Vertex( max );
+            GL.Vertex( m_position - right * d - up * d );
+            GL.Vertex( m_position + right * d + up * d );
 
             // second line
-            GL.Vertex( new Vector3( min.x, max.y, 0.0f ) );
-            GL.Vertex( new Vector3( max.x, min.y, 0.0f ) );
+            GL.Vertex( m_position - right * d + up * d );
+            GL.Vertex( m_position + right * d - up * d );
 
             GL.End();
         }

@@ -153,8 +153,8 @@ Camera:
   m_GameObject: {fileID: 33241373}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -193,7 +193,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -67.323006, z: 0}
 --- !u!1 &1520340587
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda1eacb89f0b56439f6a08fab05fa1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_color: {r: 0, g: 1, b: 0.0543108, a: 1}
+  m_color: {r: 0.514151, g: 0.98717564, b: 1, a: 1}
   m_startPoint: {x: 0, y: 0, z: 0}
   m_endPoint: {x: 5, y: 5, z: 0}
   m_mouseClickLifetime: 1

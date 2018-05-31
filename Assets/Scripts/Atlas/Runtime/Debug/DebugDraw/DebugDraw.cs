@@ -74,6 +74,24 @@ namespace Atlas
 #if ATLAS_DEBUG_DRAW
         private List<IDebugDrawer> m_drawers = new List<IDebugDrawer>();
         private Material m_material;
+        private GUIListener m_guiListener;
+
+        private void OnEnable()
+        {
+            m_guiListener = GUIListener.Instance;
+            if ( m_guiListener )
+            {
+                m_guiListener.OnGUIRender += OnGUIRender;
+            }
+        }
+
+        private void OnDisable()
+        {
+            if ( m_guiListener )
+            {
+                m_guiListener.OnGUIRender -= OnGUIRender;
+            }
+        }
 
         private void Start()
         {
@@ -92,7 +110,7 @@ namespace Atlas
             gameObject.hideFlags = HideFlags.HideAndDontSave;
         }
 
-        private void OnGUI()
+        private void OnGUIRender()
         {
             if ( m_material )
             {

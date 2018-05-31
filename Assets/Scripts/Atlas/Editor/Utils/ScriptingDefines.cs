@@ -35,7 +35,7 @@ namespace Atlas
         {
             foreach ( BuildTargetGroup group in Enum.GetValues( typeof( BuildTargetGroup ) ) )
             {
-                if ( group != BuildTargetGroup.Unknown )
+                if ( IsGroupValid( group ) )
                 {
                     AddSymbol( group, symbol );
                 }
@@ -67,11 +67,27 @@ namespace Atlas
         {
             foreach ( BuildTargetGroup group in Enum.GetValues( typeof( BuildTargetGroup ) ) )
             {
-                if ( group != BuildTargetGroup.Unknown )
+                if ( IsGroupValid( group ) )
                 {
                     RemoveSymbol( group, symbol );
                 }
             }
+        }
+
+        /// <summary>
+        /// Checks if the given group is valid
+        /// </summary>
+        /// <param name="group">The group to check</param>
+        /// <returns>true if valid, false if invalid</returns>
+        public static bool IsGroupValid( BuildTargetGroup group )
+        {
+            if ( group != BuildTargetGroup.Unknown &&
+                 group.IsObsolete() == false )
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

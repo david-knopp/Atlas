@@ -29,8 +29,6 @@ namespace Atlas
                         GameObject singletonObj = new GameObject();
                         m_instance = singletonObj.AddComponent<T>();
                         singletonObj.name = typeof( T ).ToString();
-
-                        DontDestroyOnLoad( singletonObj );
                     }
                 }
 

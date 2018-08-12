@@ -8,13 +8,13 @@ namespace Atlas
         public override void Play()
         {
             base.Play();
-            m_particleSystem.Play();
+            m_particleSystem.Play( true );
         }
 
         public override void Stop()
         {
             base.Stop();
-            m_particleSystem.Stop();
+            m_particleSystem.Stop( true );
         }
 
         protected override bool IsFinished

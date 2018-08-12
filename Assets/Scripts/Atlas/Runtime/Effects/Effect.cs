@@ -36,12 +36,22 @@ namespace Atlas
         public void Play()
         {
             IsPlaying = true;
+
+            foreach ( var emitter in m_emitters )
+            {
+                emitter.Play();
+            }
         }
 
         public void Stop()
         {
             if ( IsPlaying )
             {
+                foreach ( var emitter in m_emitters )
+                {
+                    emitter.Stop();
+                }
+
                 OnFinished();
             }
         }

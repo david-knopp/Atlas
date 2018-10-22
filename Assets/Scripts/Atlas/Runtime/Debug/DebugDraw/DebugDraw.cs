@@ -8,11 +8,11 @@ namespace Atlas
         #region public
         public static bool IsEnabled
         {
-            get;
-            set;
+            get { return m_isEnabled; }
+            set { m_isEnabled = value; }
         }
 
-#if ATLAS_DEBUG_DRAW
+#if ATLAS_DEBUG_DRAW_RUNTIME || ( ATLAS_DEBUG_DRAW_EDITOR && UNITY_EDITOR )
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color )
         {
             if ( IsEnabled )
@@ -83,11 +83,19 @@ namespace Atlas
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color, float lifetime ) { }
         public static void DrawRay( Vector3 pos, Vector3 dir, Color color, float lifetime ) { }
         public static void DrawCross( Vector3 pos, float lineLength, Color color, float lifetime ) { }
+        public static void DrawCircle( Vector3 centerPos, float radius, Color color, int numSegments = 16 ) { }
+        public static void DrawCircle( Vector3 centerPos, float radius, Color color, float lifetime, int numSegments = 16 ) { }
 #endif
         #endregion // public
 
         #region private
-#if ATLAS_DEBUG_DRAW
+#if ATLAS_DEBUGDRAW_VISIBLEATSTART
+        private static bool m_isEnabled = true;
+#else
+        private static bool m_isEnabled = false;
+#endif
+
+#if ATLAS_DEBUG_DRAW_RUNTIME || ( ATLAS_DEBUG_DRAW_EDITOR && UNITY_EDITOR )
         private List<IDebugDrawer> m_drawers = new List<IDebugDrawer>();
         private Material m_material;
         private GUIListener m_guiListener;

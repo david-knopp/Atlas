@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace Atlas
+namespace Atlas.Internal
 {
-    public static class Preferences
+    internal static class Preferences
     {
         private static class DebugDrawPrefs
         {
@@ -61,7 +61,7 @@ namespace Atlas
                 var labelStyle = EditorStyles.label;
                 labelStyle.richText = true;
                 EditorGUILayout.LabelField( "<b>Atlas Utility Library</b> by David Knopp", labelStyle );
-                EditorGUILayout.LabelField( "Version 0.5.0" );
+                EditorGUILayout.LabelField( string.Format( "Version {0}", Version.Full ) );
             }
         }
 

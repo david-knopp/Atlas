@@ -5,5 +5,6 @@ Assets/ConsoleE/
 Library/
 Temp/
 .vs/
+obj/
 Assets/Plugins/ConsoleE/
 Assets/Plugins/ConsoleE.meta

@@ -2,15 +2,13 @@
 
 namespace Atlas
 {
-    public class MaxValueAttribute : PropertyAttribute
+    public sealed class MaxValueAttribute : PropertyAttribute
     {
         public MaxValueAttribute( float maxValue )
         {
-            m_maxValue = maxValue;
+            MaxValue = maxValue;
         }
 
-        public float MaxValue { get { return m_maxValue; } }
-
-        private float m_maxValue;
+        public float MaxValue { get; private set; }
     }
 }

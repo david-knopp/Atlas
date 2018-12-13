@@ -2,15 +2,13 @@
 
 namespace Atlas
 {
-    public class MinValueAttribute : PropertyAttribute
+    public sealed class MinValueAttribute : PropertyAttribute
     {
         public MinValueAttribute( float minValue )
         {
-            m_minValue = minValue;
+            MinValue = minValue;
         }
 
-        public float MinValue { get { return m_minValue; } }
-
-        private float m_minValue;
+        public float MinValue { get; private set; }
     }
 }

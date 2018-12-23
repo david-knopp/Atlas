@@ -12,7 +12,7 @@ namespace Atlas
             set { m_isEnabled = value; }
         }
 
-#if ATLAS_DEBUG_DRAW_RUNTIME || ( ATLAS_DEBUG_DRAW_EDITOR && UNITY_EDITOR )
+#if ATLAS_DEBUGDRAW_RUNTIME || ( ATLAS_DEBUGDRAW_EDITOR && UNITY_EDITOR )
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color )
         {
             if ( IsEnabled )
@@ -95,7 +95,7 @@ namespace Atlas
         private static bool m_isEnabled = false;
 #endif
 
-#if ATLAS_DEBUG_DRAW_RUNTIME || ( ATLAS_DEBUG_DRAW_EDITOR && UNITY_EDITOR )
+#if ATLAS_DEBUGDRAW_RUNTIME || ( ATLAS_DEBUGDRAW_EDITOR && UNITY_EDITOR )
         private List<IDebugDrawer> m_drawers = new List<IDebugDrawer>();
         private Material m_material;
         private GUIListener m_guiListener;

@@ -2,9 +2,16 @@
 
 namespace Atlas
 {
-    public class Timer
+    public struct Timer
     {
         #region public
+        public Timer( TimeScale scale = TimeScale.Scaled )
+        {
+            m_timeScale = scale;
+            m_startTimestamp = float.NegativeInfinity;
+            m_pauseTimestamp = float.NegativeInfinity;
+        }
+
         public float Elapsed
         {
             get
@@ -13,7 +20,7 @@ namespace Atlas
                 {
                     return m_pauseTimestamp - m_startTimestamp;
                 }
-                else if ( m_startTimestamp >= 0.0f )
+                else if ( float.IsNegativeInfinity( m_startTimestamp ) == false )
                 {
                     return CurrentTime - m_startTimestamp;
                 }
@@ -26,23 +33,34 @@ namespace Atlas
 
         public bool IsPaused
         {
-            get { return m_pauseTimestamp >= 0.0f; }
+            get { return float.IsNegativeInfinity( m_pauseTimestamp ) == false; }
         }
 
         public bool IsTiming
         {
-            get { return !IsPaused && m_startTimestamp >= 0.0f; }
+            get
+            {
+                return IsPaused == false && 
+                       float.IsNegativeInfinity( m_startTimestamp ) == false;
+            }
         }
 
-        public virtual void Start()
+        public void Start()
         {
             m_startTimestamp = CurrentTime;
-            m_pauseTimestamp = -1.0f;
+            m_pauseTimestamp = float.NegativeInfinity;
+        }
+
+        public void Start( float timeOffset )
+        {
+            m_startTimestamp = CurrentTime - timeOffset;
+            m_pauseTimestamp = float.NegativeInfinity;
         }
 
         public void Stop()
         {
-            m_startTimestamp = -1.0f;
+            m_startTimestamp = float.NegativeInfinity;
+            m_pauseTimestamp = float.NegativeInfinity;
         }
 
         public void Pause()
@@ -53,20 +71,38 @@ namespace Atlas
         public void Unpause()
         {
             m_startTimestamp += CurrentTime - m_pauseTimestamp;
-            m_pauseTimestamp = -1.0f;
+            m_pauseTimestamp = float.NegativeInfinity;
+        }
+
+        public bool HasElapsed( float time )
+        {
+            return Elapsed >= time;
         }
         #endregion // public
 
-        #region protected
-        protected virtual float CurrentTime
-        {
-            get { return Time.time; }
-        }
-        #endregion // protected
-
         #region private
-        private float m_startTimestamp = -1.0f;
-        private float m_pauseTimestamp = -1.0f;
+        private float m_startTimestamp;
+        private float m_pauseTimestamp;
+        private TimeScale m_timeScale;
+
+        private float CurrentTime
+        {
+            get
+            {
+                switch ( m_timeScale )
+                {
+                case TimeScale.Unscaled:
+                    return Time.unscaledTime;
+
+                default:
+                case TimeScale.Scaled:
+                    return Time.time;
+
+                case TimeScale.Fixed:
+                    return Time.fixedTime;
+                }
+            }
+        }
         #endregion // private
     }
 }

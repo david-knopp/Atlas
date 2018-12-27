@@ -10,7 +10,7 @@ namespace Atlas
             m_lifetime = lifetime;
             m_initialAlpha = m_drawer.Color.a;
 
-            m_timer = new UnscaledTimer();
+            m_timer = new Timer( TimeScale.Unscaled );
             m_timer.Start();
         }
 

@@ -48,7 +48,7 @@ namespace Atlas.Internal
 
             // runtime path
             EditorGUI.BeginChangeCheck();
-            GUIContent runtimePathContent = new GUIContent( "Runtime Path", "Path to runtime script folder" );
+            GUIContent runtimePathContent = new GUIContent( "Generated Code Path", "Path to runtime script folder" );
             m_runtimePath = EditorGUILayout.TextField( runtimePathContent, m_runtimePath );
             if ( EditorGUI.EndChangeCheck() )
             {

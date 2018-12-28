@@ -65,8 +65,6 @@ namespace Atlas
             return EditorBuildSettings.scenes.Any( x => Path.GetFileNameWithoutExtension( x.path ) == sceneName );
         }
 
-        private readonly static string[] s_searchPaths = { "Assets/" };
-
         private const float c_warningHeightScale = 1.4f;
     }
 }

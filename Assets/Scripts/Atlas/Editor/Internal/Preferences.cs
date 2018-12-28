@@ -49,6 +49,7 @@ namespace Atlas.Internal
             DrawInfo();
 
             EditorGUILayout.Separator();
+            EditorGUILayoutUtils.HorizontalLine();
             EditorGUILayout.Separator();
 
             DrawDebugDrawPrefs();

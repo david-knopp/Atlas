@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+
+namespace f9
+{
+}
 
 namespace Atlas.Internal
 {
@@ -13,7 +19,20 @@ namespace Atlas.Internal
         {
             s_preferences = new List<IPreferenceItem>();
 
-            s_preferences.Add( new DebugDrawPreferences() );
+            // add preference items
+            Type interfaceType = typeof( IPreferenceItem );
+            var preferenceTypes = AppDomain.CurrentDomain.GetAssemblies()
+                                                         .SelectMany( x => x.GetTypes() )
+                                                         .Where( x => x.IsClass && interfaceType.IsAssignableFrom( x ) );
+
+            foreach ( Type prefType in preferenceTypes )
+            {
+                IPreferenceItem preferenceItem = Activator.CreateInstance( prefType ) as IPreferenceItem;
+                if ( preferenceItem != null )
+                {
+                    s_preferences.Add( preferenceItem ); 
+                }
+            }
 
             foreach ( var preference in s_preferences )
             {
@@ -28,14 +47,23 @@ namespace Atlas.Internal
             DrawInfo();
 
             EditorGUILayout.Separator();
+            EditorGUILayoutUtils.HorizontalLine( 2f, 0.95f );
 
             for ( int i = 0; i < s_preferences.Count; i++ )
             {
-                EditorGUILayoutUtils.HorizontalLine( height: i == 0 ? 2f : 1f, 
-                                                     widthPct: i == 0 ? 0.95f : 0.85f );
-
                 IPreferenceItem preference = s_preferences[i];
-                preference.OnGUI();
+
+                EditorGUILayoutUtils.RichLabelField( string.Format( "<b>{0}</b>", preference.Name ) );
+
+                using ( new EditorGUI.IndentLevelScope() )
+                {
+                    preference.OnGUI();
+                }
+
+                if ( i < s_preferences.Count - 1 )
+                {
+                    EditorGUILayoutUtils.HorizontalLine( 1f, 0.85f );
+                }
             }
         }
 
@@ -43,9 +71,7 @@ namespace Atlas.Internal
         {
             using ( new GUIColorScope( new Color( 0.6f, 0.6f, 0.6f ) ) )
             {
-                var labelStyle = EditorStyles.label;
-                labelStyle.richText = true;
-                EditorGUILayout.LabelField( "<b>Atlas Utility Library</b> by David Knopp", labelStyle );
+                EditorGUILayoutUtils.RichLabelField( "<b>Atlas Utility Library</b> by David Knopp" );
                 EditorGUILayout.LabelField( string.Format( "Version {0}", Version.Full ) );
             }
         }

@@ -3,6 +3,14 @@
         {
             "m_key": "DebugDraw_State",
             "m_value": "Enabled"
+        },
+        {
+            "m_key": "Scripting_Namespace",
+            "m_value": "Atlas"
+        },
+        {
+            "m_key": "Scripting_RuntimePath",
+            "m_value": "Scripts/Runtime/"
         }
     ]
 }

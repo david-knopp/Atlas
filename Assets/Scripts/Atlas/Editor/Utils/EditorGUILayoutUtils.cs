@@ -21,5 +21,12 @@ namespace Atlas
 
             EditorGUI.DrawRect( rect, color );
         }
+
+        public static void RichLabelField( string label )
+        {
+            GUIStyle richStyle = EditorStyles.label;
+            richStyle.richText = true;
+            EditorGUILayout.LabelField( label, richStyle );
+        }
     }
 }

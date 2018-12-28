@@ -3,7 +3,7 @@ using UnityEditor;
 
 namespace Atlas.Internal
 {
-    internal static class Preferences
+    internal static class PreferencesWindow
     {
         private static class DebugDrawPrefs
         {
@@ -103,7 +103,7 @@ namespace Atlas.Internal
                     }
                     else
                     {
-                        DebugDraw.IsEnabled = EditorGUILayout.Toggle( new GUIContent( "Visible", "Sets whether drawing is visible or not" ), 
+                        DebugDraw.IsEnabled = EditorGUILayout.Toggle( new GUIContent( "Visible", "Sets whether drawing is visible or not" ),
                                                                       DebugDraw.IsEnabled );
                     }
                 }

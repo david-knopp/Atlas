@@ -2,7 +2,7 @@
     "m_elements": [
         {
             "m_key": "DebugDraw_State",
-            "m_value": "Enabled"
+            "m_value": "EditorOnly"
         },
         {
             "m_key": "Scripting_Namespace",

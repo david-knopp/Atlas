@@ -6,12 +6,17 @@ namespace Atlas.Test
     {
         [SerializeField] private Color m_color;
         [SerializeField, MinValue( 0.0f )] private float m_drawLifetime;
+        [Header( "Text" )]
+        [SerializeField, TextArea] private string m_text;
+        [SerializeField] private float m_fontSize = 1f;
 
         private Vector3 m_startPoint;
         private Vector3 m_endPoint;
 
         private void Update()
         {
+            DebugDraw.DrawText( Vector3.up * 3.0f, m_text, m_color, m_fontSize );
+
             if ( Input.GetMouseButtonDown( 0 ) )
             {
                 if ( Camera.main )

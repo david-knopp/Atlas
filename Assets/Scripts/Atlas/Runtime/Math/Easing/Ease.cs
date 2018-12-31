@@ -19,9 +19,28 @@ namespace Atlas
             }
         }
 
-        public float Evaluate( float curTime, float duration )
+        public float Evaluate( float t, float duration = 1f )
         {
-            return m_easeFunction.Invoke( curTime, duration );
+            Mathf.Max( duration, Mathf.Epsilon );
+            return m_easeFunction.Invoke( t, duration );
+        }
+
+        public float Interpolate( float from, float to, float t )
+        {
+            float ease = Evaluate( t );
+            return from * ( 1f - ease ) + to * ease;
+        }
+
+        public Vector3 Interpolate( Vector3 from, Vector3 to, float t )
+        {
+            float ease = Evaluate( t );
+            return from * ( 1f - ease ) + to * ease;
+        }
+
+        public Vector2 Interpolate( Vector2 from, Vector2 to, float t )
+        {
+            float ease = Evaluate( t );
+            return from * ( 1f - ease ) + to * ease;
         }
 
         #region ISerializationCallbackReceiver

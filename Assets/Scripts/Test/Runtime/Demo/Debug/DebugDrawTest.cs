@@ -2,7 +2,7 @@
 
 namespace Atlas.Test
 {
-    public class DebugDrawTest : MonoBehaviour
+    public sealed class DebugDrawTest : MonoBehaviour
     {
         [SerializeField] private Color m_color;
         [SerializeField, MinValue( 0.0f )] private float m_drawLifetime;

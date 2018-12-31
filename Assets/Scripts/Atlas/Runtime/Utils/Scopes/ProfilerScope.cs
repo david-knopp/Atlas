@@ -26,8 +26,7 @@ namespace Atlas
                 m_disposed = true;
             }
         }
-
-        private Color m_prevColor;
+        
         private bool m_disposed;
     }
 }

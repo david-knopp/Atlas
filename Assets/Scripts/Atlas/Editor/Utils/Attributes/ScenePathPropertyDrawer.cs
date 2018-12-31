@@ -11,47 +11,61 @@ namespace Atlas
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {
-            Rect propertyRect = position;
-            propertyRect.height = EditorGUIUtility.singleLineHeight;
-
-            string[] sceneGUIDs = AssetDatabase.FindAssets( "t:Scene" );
-            if ( sceneGUIDs != null )
+            if ( property.propertyType == SerializedPropertyType.String )
             {
-                string[] scenePaths = sceneGUIDs.Select( ConvertGUIDToFilename ).ToArray();
-                int selectedIndex = Mathf.Max( Array.IndexOf( scenePaths, property.stringValue ), 0 );
+                Rect propertyRect = position;
+                propertyRect.height = EditorGUIUtility.singleLineHeight;
 
-                EditorGUI.BeginChangeCheck();
-                selectedIndex = EditorGUI.Popup( propertyRect,
-                                                 label,
-                                                 selectedIndex,
-                                                 scenePaths.Select( x => new GUIContent( x ) ).ToArray() );
-                if ( EditorGUI.EndChangeCheck() )
+                string[] sceneGUIDs = AssetDatabase.FindAssets( "t:Scene" );
+                if ( sceneGUIDs != null )
                 {
-                    if ( selectedIndex >= 0 &&
-                        selectedIndex < scenePaths.Length )
+                    string[] scenePaths = sceneGUIDs.Select( ConvertGUIDToFilename ).ToArray();
+                    int selectedIndex = Mathf.Max( Array.IndexOf( scenePaths, property.stringValue ), 0 );
+
+                    EditorGUI.BeginChangeCheck();
+                    selectedIndex = EditorGUI.Popup( propertyRect,
+                                                     label,
+                                                     selectedIndex,
+                                                     scenePaths.Select( x => new GUIContent( x ) ).ToArray() );
+                    if ( EditorGUI.EndChangeCheck() )
                     {
-                        property.stringValue = Path.GetFileNameWithoutExtension( scenePaths[selectedIndex] );
+                        if ( selectedIndex >= 0 &&
+                            selectedIndex < scenePaths.Length )
+                        {
+                            property.stringValue = Path.GetFileNameWithoutExtension( scenePaths[selectedIndex] );
+                        }
+                    }
+
+                    if ( IsSceneValid( property.stringValue ) == false )
+                    {
+                        propertyRect.y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
+                        propertyRect.height = EditorGUIUtility.singleLineHeight * c_warningHeightScale;
+                        EditorGUI.HelpBox( propertyRect, "Scene is not included in editor build settings", MessageType.Error );
                     }
                 }
-
-                if ( IsSceneValid( property.stringValue ) == false )
-                {
-                    propertyRect.y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
-                    propertyRect.height = EditorGUIUtility.singleLineHeight * c_warningHeightScale;
-                    EditorGUI.HelpBox( propertyRect, "Scene is not included in editor build settings", MessageType.Error ); 
-                }
+            }
+            else
+            {
+                EditorGUI.PropertyField( position, property, label );
             }
         }
 
         public override float GetPropertyHeight( SerializedProperty property, GUIContent label )
         {
-            if ( IsSceneValid( property.stringValue ) )
+            if ( property.propertyType == SerializedPropertyType.String )
             {
-                return base.GetPropertyHeight( property, label );
+                if ( IsSceneValid( property.stringValue ) )
+                {
+                    return base.GetPropertyHeight( property, label );
+                }
+                else
+                {
+                    return base.GetPropertyHeight( property, label ) + EditorGUIUtility.singleLineHeight * c_warningHeightScale + EditorGUIUtility.standardVerticalSpacing;
+                } 
             }
             else
             {
-                return base.GetPropertyHeight( property, label ) + EditorGUIUtility.singleLineHeight * c_warningHeightScale + EditorGUIUtility.standardVerticalSpacing;
+                return base.GetPropertyHeight( property, label );
             }
         }
 

@@ -146,6 +146,9 @@ MonoBehaviour:
   m_intMax: 1
   m_intMin: 0
   m_notEditable: 0
+  m_projectFilePath: Assets/Scenes
+  m_assetsFilePath: Scripts
+  m_absoluteFilePath: C:/Users/dakno/Documents/Projects/Tech/Atlas/Assets/ThirdParty
 --- !u!4 &2051749107
 Transform:
   m_ObjectHideFlags: 0

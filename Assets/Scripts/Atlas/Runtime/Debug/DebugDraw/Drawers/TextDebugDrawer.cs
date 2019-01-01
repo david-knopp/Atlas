@@ -126,7 +126,7 @@ namespace Atlas
         private const int c_numSegments = 14;
         private const float c_fontWidthPct = 0.6f;
         private const float c_fontHeightPct = 1f;
-        private const float c_characterSpacingPct = 0.1f;
+        private const float c_characterSpacingPct = 0.15f;
         private const Location c_invalidCharSegments = Location.H_MidLeft | Location.H_MidRight |
                                                        Location.D_TopLeft | Location.D_TopRight | Location.D_BottomLeft | Location.D_BottomRight;
 

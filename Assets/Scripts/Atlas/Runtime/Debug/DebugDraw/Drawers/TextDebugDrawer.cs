@@ -58,11 +58,14 @@ namespace Atlas
                 m_rotation = Camera.main.transform.rotation;
             }
 
+            GL.PushMatrix();
+            GL.MultMatrix( Matrix4x4.Translate( m_position ) * Matrix4x4.Rotate( m_rotation ) * Matrix4x4.Translate( -m_position ) );
+
             Vector3 position = m_position;
 
             foreach ( var text in m_textLines )
             {
-                Vector3 horizontalOffset = m_rotation * new Vector3( c_fontWidthPct * m_fontSize + c_characterSpacingPct * m_fontSize, 0f, 0f );
+                Vector3 horizontalOffset = new Vector3( c_fontWidthPct * m_fontSize + c_characterSpacingPct * m_fontSize, 0f, 0f );
 
                 foreach ( char character in text )
                 {
@@ -71,9 +74,11 @@ namespace Atlas
                 }
 
                 // add newline
-                Vector3 verticalOffset = m_rotation * new Vector3( 0f, -( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize ), 0f );
+                Vector3 verticalOffset = new Vector3( 0f, -( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize ), 0f );
                 position = m_position + verticalOffset;
             }
+
+            GL.PopMatrix();
         }
 
         private struct Segment
@@ -139,9 +144,9 @@ namespace Atlas
             //   6‾7‾8
             s_offsets = new Vector3[]
             {
-                new Vector3( c_fontWidthPct * -0.5f, c_fontHeightPct * 0.5f ),    new Vector3( 0f, c_fontHeightPct * 0.5f ), new Vector3( c_fontWidthPct * 0.5f, c_fontHeightPct * 0.5f ),
-                new Vector3( c_fontWidthPct * -0.5f, 0f ),                        new Vector3( 0f, 0f ),                     new Vector3( c_fontWidthPct * 0.5f, 0f ),
-                new Vector3( c_fontWidthPct * -0.5f, c_fontHeightPct * -0.5f ),   new Vector3( 0f, c_fontHeightPct * -0.5f ), new Vector3( c_fontWidthPct * 0.5f, c_fontHeightPct * -0.5f )
+                new Vector3( c_fontWidthPct * -0.5f, c_fontHeightPct * 0.5f ),  new Vector3( 0f, c_fontHeightPct * 0.5f ),  new Vector3( c_fontWidthPct * 0.5f, c_fontHeightPct * 0.5f ),
+                new Vector3( c_fontWidthPct * -0.5f, 0f ),                      new Vector3( 0f, 0f ),                      new Vector3( c_fontWidthPct * 0.5f, 0f ),
+                new Vector3( c_fontWidthPct * -0.5f, c_fontHeightPct * -0.5f ), new Vector3( 0f, c_fontHeightPct * -0.5f ), new Vector3( c_fontWidthPct * 0.5f, c_fontHeightPct * -0.5f )
             };
 
             s_segments = new Segment[]
@@ -274,8 +279,8 @@ namespace Atlas
 
         private void DrawSegment( Vector3 position, Segment segment )
         {
-            Vector3 startPos = position + m_rotation * s_offsets[segment.m_startOffset] * m_fontSize;
-            Vector3 endPos = position + m_rotation * s_offsets[segment.m_endOffset] * m_fontSize;
+            Vector3 startPos = position + s_offsets[segment.m_startOffset] * m_fontSize;
+            Vector3 endPos = position + s_offsets[segment.m_endOffset] * m_fontSize;
 
             GL.Begin( GL.LINES );
             GL.Color( Color );

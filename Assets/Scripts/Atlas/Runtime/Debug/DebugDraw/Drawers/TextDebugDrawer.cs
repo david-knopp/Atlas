@@ -142,6 +142,7 @@ namespace Atlas
             // symbols
             s_charSegments.Add( ' ', 0 );
             s_charSegments.Add( '-', Location.H_MidLeft | Location.H_MidRight );
+            s_charSegments.Add( '+', Location.H_MidLeft | Location.H_MidRight | Location.V_TopMid | Location.V_BottomMid );
             s_charSegments.Add( ',', Location.D_BottomLeft );
             s_charSegments.Add( '.', Location.V_BottomMid );
             s_charSegments.Add( '=', Location.H_Bottom | Location.H_MidLeft | Location.H_MidRight );
@@ -153,6 +154,8 @@ namespace Atlas
             s_charSegments.Add( '`', Location.D_TopLeft );
             s_charSegments.Add( '?', Location.H_Top | Location.H_MidRight |
                                      Location.V_TopLeft | Location.V_TopRight | Location.V_BottomMid );
+            s_charSegments.Add( '$', Location.H_Top | Location.H_Bottom | Location.H_MidLeft | Location.H_MidRight |
+                                     Location.V_TopLeft | Location.V_BottomRight | Location.V_TopMid | Location.V_BottomMid );
 
 
             // english alphabet

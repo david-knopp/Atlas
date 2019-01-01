@@ -92,6 +92,22 @@ namespace Atlas
                 Instance.m_drawers.Add( new TimedDebugDrawer( new TextDebugDrawer( pos, text, color, fontSize ), lifetime ) );
             }
         }
+
+        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, Quaternion rotation )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new TextDebugDrawer( pos, text, color, fontSize, rotation ) );
+            }
+        }
+
+        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, float lifetime, Quaternion rotation )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new TimedDebugDrawer( new TextDebugDrawer( pos, text, color, fontSize, rotation ), lifetime ) );
+            }
+        }
 #else
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color ) { }
         public static void DrawRay( Vector3 pos, Vector3 dir, Color color ) { }

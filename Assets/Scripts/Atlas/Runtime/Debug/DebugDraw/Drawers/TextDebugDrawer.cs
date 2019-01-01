@@ -13,6 +13,19 @@ namespace Atlas
             m_position = position;
             Color = color;
             m_fontSize = fontSize;
+            m_rotation = Quaternion.identity;
+            IsBillboarded = true;
+
+            m_textLines = text.Split( s_newlineCharacters, StringSplitOptions.RemoveEmptyEntries );
+        }
+
+        public TextDebugDrawer( Vector3 position, string text, Color color, float fontSize, Quaternion rotation )
+        {
+            m_position = position;
+            Color = color;
+            m_fontSize = fontSize;
+            m_rotation = rotation;
+            IsBillboarded = false;
 
             m_textLines = text.Split( s_newlineCharacters, StringSplitOptions.RemoveEmptyEntries );
         }
@@ -31,10 +44,16 @@ namespace Atlas
             set;
         }
 
+        public bool IsBillboarded
+        {
+            get;
+            private set;
+        }
+
         public void Draw()
         {
-            m_rotation = Quaternion.identity;
-            if ( Camera.main != null )
+            if ( IsBillboarded &&
+                 Camera.main != null )
             {
                 m_rotation = Camera.main.transform.rotation;
             }

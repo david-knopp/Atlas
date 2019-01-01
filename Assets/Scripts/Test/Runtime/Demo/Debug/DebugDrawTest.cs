@@ -24,7 +24,7 @@ namespace Atlas.Test
 
         private void Update()
         {
-            DebugDraw.DrawText( Vector3.up + Vector3.left * 6f, m_text, m_color, m_fontSize );
+            DebugDraw.DrawText( Vector3.up + Vector3.left * 6f, m_text, m_color, m_fontSize, Quaternion.identity );
 
             if ( Input.GetMouseButtonDown( 0 ) )
             {
@@ -68,18 +68,18 @@ namespace Atlas.Test
         {
             while ( true )
             {
-                yield return new WaitForSeconds( Random.Range( 0f, 1f ) );
+                yield return new WaitForSeconds( Random.Range( 0f, .5f ) );
 
                 if ( m_randomizedText.Count > 0 )
                 {
-                    Vector3 offset = Random.insideUnitCircle.normalized;
+                    Vector3 offset = Random.insideUnitSphere;
                     Vector3 spawnPos = new Vector3( m_maxTextSpawnOffset.x * offset.x,
                                                     m_maxTextSpawnOffset.y * offset.y,
-                                                    0f );
+                                                    m_maxTextSpawnOffset.z * offset.z );
 
                     int textIndex = Random.Range( 0, m_randomizedText.Count );
 
-                    DebugDraw.DrawText( spawnPos, m_randomizedText[textIndex], Color.white * 0.7f, m_fontSize * 0.5f, m_drawLifetime ); 
+                    DebugDraw.DrawText( spawnPos, m_randomizedText[textIndex], Random.ColorHSV( .0f, 1f, 0.4f, .8f, 0.7f, 1f ), Random.Range( m_fontSize * 0.2f, m_fontSize * 0.7f ), m_drawLifetime ); 
                 }
             }
         }

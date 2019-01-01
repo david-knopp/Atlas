@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 33241377}
   - component: {fileID: 33241376}
-  - component: {fileID: 33241375}
   - component: {fileID: 33241374}
   m_Layer: 0
   m_Name: Main Camera
@@ -131,20 +130,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &33241374
-AudioListener:
+--- !u!114 &33241374
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 33241373}
   m_Enabled: 1
---- !u!124 &33241375
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33241373}
-  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f0d7b8766d9a94ea54c6415372189e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_orbitSpeed: 20
+  m_pivotPoint: {x: 0, y: 0, z: 0}
 --- !u!20 &33241376
 Camera:
   m_ObjectHideFlags: 0
@@ -233,18 +231,25 @@ MonoBehaviour:
   m_fontSize: 0.5
   m_randomizedText:
   - Wow
-  - What's up, ya'll?
+  - Bitchin'
   - Cool
   - Word
   - No diggity
   - I <3 U
-  - Inv#lid Ch@r&cters
+  - wicked
   - amazing
-  - so what?
+  - aw heck
   - Sick text
   - Cowabunga
   - Atlas = $
-  m_maxTextSpawnOffset: {x: 4, y: 4, z: 0}
+  - So debuggy
+  - nice
+  - Sweet
+  - Dope
+  - Fashionable
+  - Chill
+  - Rad
+  m_maxTextSpawnOffset: {x: 5, y: 5, z: 5}
 --- !u!4 &1520340589
 Transform:
   m_ObjectHideFlags: 0

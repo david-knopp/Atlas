@@ -33,19 +33,27 @@ namespace Atlas
 
         public void Draw()
         {
+            m_rotation = Quaternion.identity;
+            if ( Camera.main != null )
+            {
+                m_rotation = Camera.main.transform.rotation;
+            }
+
             Vector3 position = m_position;
 
             foreach ( var text in m_textLines )
             {
+                Vector3 horizontalOffset = m_rotation * new Vector3( c_fontWidthPct * m_fontSize + c_characterSpacingPct * m_fontSize, 0f, 0f );
+
                 foreach ( char character in text )
                 {
                     DrawCharacter( char.ToLower( character ), position );
-                    position.x += ( c_fontWidthPct * m_fontSize + c_characterSpacingPct * m_fontSize );
+                    position += horizontalOffset;
                 }
 
                 // add newline
-                position.x = m_position.x;
-                position.y -= ( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize );
+                Vector3 verticalOffset = m_rotation * new Vector3( 0f, -( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize ), 0f );
+                position = m_position + verticalOffset;
             }
         }
 
@@ -101,6 +109,7 @@ namespace Atlas
         private string[] m_textLines;
         private float m_fontSize;
         private Vector3 m_position;
+        private Quaternion m_rotation;
 
         static TextDebugDrawer()
         {
@@ -246,8 +255,8 @@ namespace Atlas
 
         private void DrawSegment( Vector3 position, Segment segment )
         {
-            Vector3 startPos = position + s_offsets[segment.m_startOffset] * m_fontSize;
-            Vector3 endPos = position + s_offsets[segment.m_endOffset] * m_fontSize;
+            Vector3 startPos = position + m_rotation * s_offsets[segment.m_startOffset] * m_fontSize;
+            Vector3 endPos = position + m_rotation * s_offsets[segment.m_endOffset] * m_fontSize;
 
             GL.Begin( GL.LINES );
             GL.Color( Color );

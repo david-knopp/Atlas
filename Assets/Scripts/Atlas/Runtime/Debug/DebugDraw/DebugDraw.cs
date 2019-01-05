@@ -41,7 +41,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new LineDebugDrawer( startPos, endPos, color ), lifetime ) );
+                Instance.m_drawers.Add( new TimedDebugDrawModifier( new LineDebugDrawer( startPos, endPos, color ), lifetime ) );
             }
         }
 
@@ -49,7 +49,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new LineDebugDrawer( pos, pos + dir, color ), lifetime ) );
+                Instance.m_drawers.Add( new TimedDebugDrawModifier( new LineDebugDrawer( pos, pos + dir, color ), lifetime ) );
             }
         }
 
@@ -57,7 +57,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new CrossDebugDrawer( pos, lineLength, color ), lifetime ) );
+                Instance.m_drawers.Add( new TimedDebugDrawModifier( new CrossDebugDrawer( pos, lineLength, color ), lifetime ) );
             }
         } 
 
@@ -73,7 +73,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new CircleDebugDrawer( centerPos, radius, color, numSegments ), lifetime ) );
+                Instance.m_drawers.Add( new TimedDebugDrawModifier( new CircleDebugDrawer( centerPos, radius, color, numSegments ), lifetime ) );
             }
         }
 
@@ -89,7 +89,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new TextDebugDrawer( pos, text, color, fontSize ), lifetime ) );
+                Instance.m_drawers.Add( new TimedDebugDrawModifier( new TextDebugDrawer( pos, text, color, fontSize ), lifetime ) );
             }
         }
 
@@ -105,7 +105,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawer( new TextDebugDrawer( pos, text, color, fontSize, rotation ), lifetime ) );
+                Instance.m_drawers.Add( new TimedDebugDrawModifier( new TextDebugDrawer( pos, text, color, fontSize, rotation ), lifetime ) );
             }
         }
 #else

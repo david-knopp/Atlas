@@ -6,7 +6,7 @@ namespace Atlas
 {
     // Inspired by LotteMakesStuff's segment font: https://gist.github.com/LotteMakesStuff/ceb66cb29cb7d3c07da1207ab5d12045
     // and https://www.keshikan.net/img/dseg_sample.png
-    public sealed class TextDebugDrawer : IDebugDrawer
+    public struct TextDebugDrawer : IDebugDrawer
     {
         public TextDebugDrawer( Vector3 position, string text, Color color, float fontSize )
         {

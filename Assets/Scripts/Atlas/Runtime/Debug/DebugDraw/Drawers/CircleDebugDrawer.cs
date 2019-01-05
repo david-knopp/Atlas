@@ -2,7 +2,7 @@
 
 namespace Atlas
 {
-    public class CircleDebugDrawer : IDebugDrawer
+    public struct CircleDebugDrawer : IDebugDrawer
     {
         public CircleDebugDrawer( Vector3 centerPos, float radius, Color color, int numSegments )
         {

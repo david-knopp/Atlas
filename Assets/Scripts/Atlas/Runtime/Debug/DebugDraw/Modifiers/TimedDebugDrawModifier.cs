@@ -2,9 +2,9 @@
 
 namespace Atlas
 {
-    public class TimedDebugDrawer : IDebugDrawer
+    public struct TimedDebugDrawModifier : IDebugDrawer
     {
-        public TimedDebugDrawer( IDebugDrawer drawer, float lifetime )
+        public TimedDebugDrawModifier( IDebugDrawer drawer, float lifetime )
         {
             m_drawer = drawer;
             m_lifetime = lifetime;
@@ -29,20 +29,17 @@ namespace Atlas
         }
 
         public void Draw()
-        {
-            if ( m_drawer != null )
+        {                
+            // fade alpha over lifetime
+            if ( m_lifetime > 0.0f )
             {
-                // fade alpha over lifetime
-                if ( m_lifetime > 0.0f )
-                {
-                    float t = Mathf.Clamp01( m_timer.Elapsed / m_lifetime );
-                    Color color = m_drawer.Color;
-                    color.a = m_initialAlpha * ( 1.0f - t );
-                    m_drawer.Color = color;
-                }
-
-                m_drawer.Draw();
+                float t = Mathf.Clamp01( m_timer.Elapsed / m_lifetime );
+                Color color = m_drawer.Color;
+                color.a = m_initialAlpha * ( 1.0f - t );
+                m_drawer.Color = color;
             }
+
+            m_drawer.Draw();
         }
 
         private IDebugDrawer m_drawer;

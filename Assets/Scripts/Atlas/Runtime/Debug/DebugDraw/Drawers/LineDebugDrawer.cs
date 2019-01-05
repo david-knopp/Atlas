@@ -2,7 +2,7 @@
 
 namespace Atlas
 {
-    public class LineDebugDrawer : IDebugDrawer
+    public struct LineDebugDrawer : IDebugDrawer
     {
         public LineDebugDrawer( Vector3 startPos, Vector3 endPos, Color color )
         {

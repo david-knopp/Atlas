@@ -8,24 +8,10 @@ namespace Atlas
     // and https://www.keshikan.net/img/dseg_sample.png
     public struct TextDebugDrawer : IDebugDrawer
     {
-        public TextDebugDrawer( Vector3 position, string text, Color color, float fontSize )
+        public TextDebugDrawer( string text, Color color, float fontSize )
         {
-            m_position = position;
             Color = color;
             m_fontSize = fontSize;
-            m_rotation = Quaternion.identity;
-            IsBillboarded = true;
-
-            m_textLines = text.Split( s_newlineCharacters, StringSplitOptions.RemoveEmptyEntries );
-        }
-
-        public TextDebugDrawer( Vector3 position, string text, Color color, float fontSize, Quaternion rotation )
-        {
-            m_position = position;
-            Color = color;
-            m_fontSize = fontSize;
-            m_rotation = rotation;
-            IsBillboarded = false;
 
             m_textLines = text.Split( s_newlineCharacters, StringSplitOptions.RemoveEmptyEntries );
         }
@@ -44,28 +30,13 @@ namespace Atlas
             set;
         }
 
-        public bool IsBillboarded
-        {
-            get;
-            private set;
-        }
-
         public void Draw()
         {
-            if ( IsBillboarded &&
-                 Camera.main != null )
-            {
-                m_rotation = Camera.main.transform.rotation;
-            }
-
-            GL.PushMatrix();
-            GL.MultMatrix( Matrix4x4.Translate( m_position ) * Matrix4x4.Rotate( m_rotation ) * Matrix4x4.Translate( -m_position ) );
-
-            Vector3 position = m_position;
+            Vector2 position = Vector2.zero;
 
             foreach ( var text in m_textLines )
             {
-                Vector3 horizontalOffset = new Vector3( c_fontWidthPct * m_fontSize + c_characterSpacingPct * m_fontSize, 0f, 0f );
+                Vector2 horizontalOffset = new Vector2( c_fontWidthPct * m_fontSize + c_characterSpacingPct * m_fontSize, 0f );
 
                 foreach ( char character in text )
                 {
@@ -74,11 +45,9 @@ namespace Atlas
                 }
 
                 // add newline
-                Vector3 verticalOffset = new Vector3( 0f, -( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize ), 0f );
-                position = m_position + verticalOffset;
+                Vector2 verticalOffset = new Vector2( 0f, -( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize ) );
+                position = Vector2.zero + verticalOffset;
             }
-
-            GL.PopMatrix();
         }
 
         private struct Segment
@@ -118,7 +87,7 @@ namespace Atlas
             D_BottomRight = 1 << 13
         }
 
-        private static readonly Vector3[] s_offsets;
+        private static readonly Vector2[] s_offsets;
         private static readonly Segment[] s_segments;
         private static readonly Dictionary<char, Location> s_charSegments;
         private static readonly char[] s_newlineCharacters = new char[] { '\n', '\r' };
@@ -132,8 +101,6 @@ namespace Atlas
 
         private string[] m_textLines;
         private float m_fontSize;
-        private Vector3 m_position;
-        private Quaternion m_rotation;
 
         static TextDebugDrawer()
         {
@@ -142,11 +109,11 @@ namespace Atlas
             //  3——4——5       
             //   |/|\|
             //   6‾7‾8
-            s_offsets = new Vector3[]
+            s_offsets = new Vector2[]
             {
-                new Vector3( c_fontWidthPct * -0.5f, c_fontHeightPct * 0.5f ),  new Vector3( 0f, c_fontHeightPct * 0.5f ),  new Vector3( c_fontWidthPct * 0.5f, c_fontHeightPct * 0.5f ),
-                new Vector3( c_fontWidthPct * -0.5f, 0f ),                      new Vector3( 0f, 0f ),                      new Vector3( c_fontWidthPct * 0.5f, 0f ),
-                new Vector3( c_fontWidthPct * -0.5f, c_fontHeightPct * -0.5f ), new Vector3( 0f, c_fontHeightPct * -0.5f ), new Vector3( c_fontWidthPct * 0.5f, c_fontHeightPct * -0.5f )
+                new Vector2( c_fontWidthPct * -0.5f, c_fontHeightPct * 0.5f ),  new Vector2( 0f, c_fontHeightPct * 0.5f ),  new Vector2( c_fontWidthPct * 0.5f, c_fontHeightPct * 0.5f ),
+                new Vector2( c_fontWidthPct * -0.5f, 0f ),                      new Vector2( 0f, 0f ),                      new Vector2( c_fontWidthPct * 0.5f, 0f ),
+                new Vector2( c_fontWidthPct * -0.5f, c_fontHeightPct * -0.5f ), new Vector2( 0f, c_fontHeightPct * -0.5f ), new Vector2( c_fontWidthPct * 0.5f, c_fontHeightPct * -0.5f )
             };
 
             s_segments = new Segment[]
@@ -260,7 +227,7 @@ namespace Atlas
                                      Location.V_TopLeft | Location.V_TopRight | Location.V_BottomRight );
         }
 
-        private void DrawCharacter( char character, Vector3 position )
+        private void DrawCharacter( char character, Vector2 position )
         {
             Location segments;
             if ( s_charSegments.TryGetValue( character, out segments ) == false )
@@ -277,7 +244,7 @@ namespace Atlas
             }
         }
 
-        private void DrawSegment( Vector3 position, Segment segment )
+        private void DrawSegment( Vector2 position, Segment segment )
         {
             Vector3 startPos = position + s_offsets[segment.m_startOffset] * m_fontSize;
             Vector3 endPos = position + s_offsets[segment.m_endOffset] * m_fontSize;

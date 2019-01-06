@@ -109,6 +109,38 @@ namespace Atlas
             }
         }
 
+        public static void DrawRectangle( Vector3 position, float width, float height, Color color )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new RectangleDebugDrawer( width, height, color ).Billboarded( position ) );
+            }
+        }
+
+        public static void DrawRectangle( Vector3 position, float width, float height, Color color, float lifetime )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new RectangleDebugDrawer( width, height, color ).Billboarded( position ).Timed( lifetime ) );
+            }
+        }
+
+        public static void DrawRectangle( Vector3 position, Quaternion rotation, float width, float height, Color color )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new RectangleDebugDrawer( width, height, color ).Transformed( position, rotation ) );
+            }
+        }
+
+        public static void DrawRectangle( Vector3 position, Quaternion rotation, float width, float height, Color color, float lifetime )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new RectangleDebugDrawer( width, height, color ).Transformed( position, rotation ).Timed( lifetime ) );
+            }
+        }
+
         public static void DrawText( Vector3 position, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
@@ -197,16 +229,26 @@ namespace Atlas
             {
                 Debug.LogError( "DebugDraw.Start: Couldn't find debug line shader, debug draw won't render." );
             }
-
-            // hide debug object so it doesn't clutter the hierarchy
-            gameObject.hideFlags = HideFlags.HideAndDontSave;
         }
+
+#if UNITY_EDITOR
+        // scene view drawing
+        private void OnDrawGizmos()
+        {
+            Draw();
+        } 
+#endif
 
         private void OnGUIRender()
         {
+            Draw();
+        } 
+
+        private void Draw()
+        {
             if ( m_material )
             {
-                Camera camera = Camera.main;
+                Camera camera = Camera.current;
                 if ( camera )
                 {
                     GL.PushMatrix();
@@ -233,7 +275,7 @@ namespace Atlas
                     GL.PopMatrix();
                 }
             }
-        } 
+        }
 #endif
         #endregion // private
     }

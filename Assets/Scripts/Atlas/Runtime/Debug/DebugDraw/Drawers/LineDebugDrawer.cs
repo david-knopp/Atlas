@@ -13,10 +13,7 @@ namespace Atlas
 
         public bool IsFinished
         {
-            get
-            {
-                return true;
-            }
+            get { return true; }
         }
 
         public Color Color

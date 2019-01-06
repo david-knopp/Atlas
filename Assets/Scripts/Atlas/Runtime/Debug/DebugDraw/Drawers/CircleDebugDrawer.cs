@@ -13,10 +13,7 @@ namespace Atlas
 
         public bool IsFinished
         {
-            get
-            {
-                return true;
-            }
+            get { return true; }
         }
 
         public Color Color
@@ -34,7 +31,7 @@ namespace Atlas
             {
                 float angle = ( i % m_numSegments ) * ( 2.0f * Mathf.PI / m_numSegments );
                 Vector2 vertPosition = new Vector2( Mathf.Cos( angle ) * m_radius, 
-                                              Mathf.Sin( angle ) * m_radius );
+                                                    Mathf.Sin( angle ) * m_radius );
                 GL.Vertex( vertPosition );
             }
 

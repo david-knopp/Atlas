@@ -21,104 +21,106 @@ namespace Atlas
             }
         }
 
-        public static void DrawRay( Vector3 pos, Vector3 dir, Color color )
-        {
-            if ( IsEnabled )
-            {
-                Instance.m_drawers.Add( new LineDebugDrawer( pos, pos + dir, color ) );
-            }
-        }
-
-        public static void DrawCross( Vector3 pos, float lineLength, Color color )
-        {
-            if ( IsEnabled )
-            {
-                Instance.m_drawers.Add( new CrossDebugDrawer( pos, lineLength, color ) );
-            }
-        }
-
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color, float lifetime )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawModifier( new LineDebugDrawer( startPos, endPos, color ), lifetime ) );
+                Instance.m_drawers.Add( new LineDebugDrawer( startPos, endPos, color ).Timed( lifetime ) );
             }
         }
 
-        public static void DrawRay( Vector3 pos, Vector3 dir, Color color, float lifetime )
+        public static void DrawRay( Vector3 position, Vector3 direction, Color color )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawModifier( new LineDebugDrawer( pos, pos + dir, color ), lifetime ) );
+                Instance.m_drawers.Add( new LineDebugDrawer( position, position + direction, color ) );
             }
         }
 
-        public static void DrawCross( Vector3 pos, float lineLength, Color color, float lifetime )
+        public static void DrawRay( Vector3 position, Vector3 direction, Color color, float lifetime )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawModifier( new CrossDebugDrawer( pos, lineLength, color ), lifetime ) );
-            }
-        } 
-
-        public static void DrawCircle( Vector3 centerPos, float radius, Color color, int numSegments = 16 )
-        {
-            if ( IsEnabled )
-            {
-                Instance.m_drawers.Add( new CircleDebugDrawer( centerPos, radius, color, numSegments ) );
+                Instance.m_drawers.Add( new LineDebugDrawer( position, position + direction, color ).Timed( lifetime ) );
             }
         }
 
-        public static void DrawCircle( Vector3 centerPos, float radius, Color color, float lifetime, int numSegments = 16 )
+        public static void DrawCross( Vector3 position, float lineLength, Color color )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawModifier( new CircleDebugDrawer( centerPos, radius, color, numSegments ), lifetime ) );
+                Instance.m_drawers.Add( new CrossDebugDrawer( position, lineLength, color ) );
             }
         }
 
-        public static void DrawText( Vector3 pos, string text, Color color, float fontSize )
+        public static void DrawCross( Vector3 position, float lineLength, Color color, float lifetime )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TextDebugDrawer( pos, text, color, fontSize ) );
+                Instance.m_drawers.Add( new CrossDebugDrawer( position, lineLength, color ).Timed( lifetime ) );
             }
         }
 
-        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, float lifetime )
+        public static void DrawCircle( Vector3 position, float radius, Color color, int numSegments = 16 )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawModifier( new TextDebugDrawer( pos, text, color, fontSize ), lifetime ) );
+                Instance.m_drawers.Add( new CircleDebugDrawer( position, radius, color, numSegments ) );
             }
         }
 
-        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, Quaternion rotation )
+        public static void DrawCircle( Vector3 position, float radius, Color color, float lifetime, int numSegments = 16 )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TextDebugDrawer( pos, text, color, fontSize, rotation ) );
+                Instance.m_drawers.Add( new CircleDebugDrawer( position, radius, color, numSegments ).Timed( lifetime ) );
             }
         }
 
-        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, float lifetime, Quaternion rotation )
+        public static void DrawText( Vector3 position, string text, Color color, float fontSize )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TimedDebugDrawModifier( new TextDebugDrawer( pos, text, color, fontSize, rotation ), lifetime ) );
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Billboarded( position ) );
+            }
+        }
+
+        public static void DrawText( Vector3 position, string text, Color color, float fontSize, float lifetime )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Billboarded( position ).Timed( lifetime ) );
+            }
+        }
+
+        public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Transformed( position, rotation ) );
+            }
+        }
+
+        public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize, float lifetime )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Transformed( position, rotation ).Timed( lifetime ) );
             }
         }
 #else
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color ) { }
-        public static void DrawRay( Vector3 pos, Vector3 dir, Color color ) { }
-        public static void DrawCross( Vector3 pos, float lineLength, Color color ) { }
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color, float lifetime ) { }
+        public static void DrawRay( Vector3 pos, Vector3 dir, Color color ) { }
         public static void DrawRay( Vector3 pos, Vector3 dir, Color color, float lifetime ) { }
+        public static void DrawCross( Vector3 pos, float lineLength, Color color ) { }
         public static void DrawCross( Vector3 pos, float lineLength, Color color, float lifetime ) { }
         public static void DrawCircle( Vector3 centerPos, float radius, Color color, int numSegments = 16 ) { }
         public static void DrawCircle( Vector3 centerPos, float radius, Color color, float lifetime, int numSegments = 16 ) { }
         public static void DrawText( Vector3 pos, string text, Color color, float fontSize ) { }
         public static void DrawText( Vector3 pos, string text, Color color, float fontSize, float lifetime ) { }
+        public static void DrawText( Vector3 pos, Quaternion rotation, string text, Color color, float fontSize ) { }
+        public static void DrawText( Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, float lifetime ) { }
 #endif
         #endregion // public
 

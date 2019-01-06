@@ -8,7 +8,7 @@ using UnityEditor;
 namespace Atlas
 {
     [CustomEditor( typeof( Transform ) )]
-    public class TransformEditor : Editor
+    public sealed class TransformEditor : Editor
     {
         public override void OnInspectorGUI()
         {

@@ -4,7 +4,7 @@ using UnityEditor;
 namespace Atlas
 {
     [CustomPropertyDrawer( typeof( Range ) )]
-    public class RangeDrawer : PropertyDrawer
+    public sealed class RangeDrawer : PropertyDrawer
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {

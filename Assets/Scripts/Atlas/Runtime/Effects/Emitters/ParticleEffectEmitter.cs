@@ -3,7 +3,7 @@
 namespace Atlas
 {
     [RequireComponent( typeof( ParticleSystem ) )]
-    public class ParticleEffectEmitter : EffectEmitterBase
+    public sealed class ParticleEffectEmitter : EffectEmitterBase
     {
         public override void Play()
         {

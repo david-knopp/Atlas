@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 
 namespace Atlas
 {
-    public class UIStack
+    public sealed class UIStack
     {
         #region public
         [Flags]

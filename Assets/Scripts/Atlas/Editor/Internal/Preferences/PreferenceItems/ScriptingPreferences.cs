@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Atlas.Internal
 {
-    internal class ScriptingPreferences : IPreferenceItem
+    internal sealed class ScriptingPreferences : IPreferenceItem
     {
         public static string NamespaceName
         {

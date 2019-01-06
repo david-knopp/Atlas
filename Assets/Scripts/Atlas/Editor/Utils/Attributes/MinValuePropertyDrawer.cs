@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Atlas
 {
     [CustomPropertyDrawer( typeof( MinValueAttribute ) )]
-    public class MinValuePropertyDrawer : PropertyDrawer
+    public sealed class MinValuePropertyDrawer : PropertyDrawer
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {

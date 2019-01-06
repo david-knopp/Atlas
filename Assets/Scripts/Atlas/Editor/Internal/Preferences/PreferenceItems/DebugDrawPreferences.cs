@@ -3,7 +3,7 @@ using UnityEditor;
 
 namespace Atlas.Internal
 {
-    internal class DebugDrawPreferences : IPreferenceItem
+    internal sealed class DebugDrawPreferences : IPreferenceItem
     {
         #region IPreferenceItem
         public string Name

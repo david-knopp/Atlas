@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Atlas
 {
-    public class Effect : MonoBehaviour
+    public sealed class Effect : MonoBehaviour
     {
         public enum ActivationEventType
         {

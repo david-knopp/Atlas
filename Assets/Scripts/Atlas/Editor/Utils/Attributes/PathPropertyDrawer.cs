@@ -4,7 +4,7 @@ using UnityEditor;
 namespace Atlas
 {
     [CustomPropertyDrawer( typeof( PathAttribute ) )]
-    public class PathAttributePropertyDrawer : PropertyDrawer
+    public sealed class PathAttributePropertyDrawer : PropertyDrawer
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {

@@ -4,7 +4,7 @@ using UnityEngine.Assertions;
 
 namespace Atlas
 {
-    public class TaskScheduler : IScheduledTask
+    public sealed class TaskScheduler : IScheduledTask
     {
         #region public
         public struct TaskRecord : IEquatable<TaskRecord>
@@ -41,7 +41,7 @@ namespace Atlas
         public TaskScheduler( int phaseIterationCount )
         {
             m_tasks = new List<TaskRecord>();
-            m_frame = 0;
+            Frame = 0;
             m_phaseIterationCount = phaseIterationCount;
         }
 
@@ -52,7 +52,8 @@ namespace Atlas
 
         public int Frame
         {
-            get { return m_frame; }
+            get;
+            private set;
         }
 
         /// <summary>
@@ -110,18 +111,17 @@ namespace Atlas
             for ( int i = 0; i < m_tasks.Count; i++ )
             {
                 TaskRecord record = m_tasks[i];
-                if ( IsTaskScheduled( record, m_frame ) )
+                if ( IsTaskScheduled( record, Frame ) )
                 {
                     record.m_task.ScheduledTick();
                 }
             }
-            ++m_frame;
+            ++Frame;
         }
         #endregion // public
 
         #region private
         private List<TaskRecord> m_tasks;
-        private int m_frame;
         private int m_phaseIterationCount;
 
         private bool IsTaskScheduled( TaskRecord record, int frame )
@@ -137,7 +137,7 @@ namespace Atlas
             int minTaskCount = int.MaxValue;
 
             // look ahead to find frame with fewest running tasks
-            for ( int frame = m_frame; frame < m_phaseIterationCount; ++frame )
+            for ( int frame = Frame; frame < m_phaseIterationCount; ++frame )
             {
                 int frameTaskCount = 0;
 
@@ -153,7 +153,7 @@ namespace Atlas
                 if ( frameTaskCount < minTaskCount )
                 {
                     minTaskCount = frameTaskCount;
-                    phase = frame - m_frame;
+                    phase = frame - Frame;
                 }
             }
 

@@ -1,20 +1,21 @@
 ﻿using System;
-using UnityEngine;
 using UnityEngine.Profiling;
 
 using Object = UnityEngine.Object;
 
 namespace Atlas
 {
-    public class ProfilerScope : IDisposable
+    public struct ProfilerScope : IDisposable
     {
         public ProfilerScope( string name )
         {
+            m_disposed = false;
             Profiler.BeginSample( name );
         }
 
         public ProfilerScope( string name, Object targetObject )
         {
+            m_disposed = false;
             Profiler.BeginSample( name, targetObject );
         }
 

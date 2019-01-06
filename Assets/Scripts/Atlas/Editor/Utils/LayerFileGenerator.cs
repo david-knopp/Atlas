@@ -5,12 +5,10 @@ using System.Text;
 using System;
 using System.IO;
 using Atlas.Internal;
-using Microsoft.CSharp;
-using System.CodeDom;
 
 namespace Atlas
 {
-    public class LayerFileGenerator
+    public sealed class LayerFileGenerator
     {
         [MenuItem( "Atlas/Generate Layer File" )]
         public static void Generate()

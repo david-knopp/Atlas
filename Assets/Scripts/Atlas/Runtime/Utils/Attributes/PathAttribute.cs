@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Atlas
 {
     [AttributeUsage( AttributeTargets.Field, AllowMultiple = false )]
-    public class PathAttribute : PropertyAttribute
+    public sealed class PathAttribute : PropertyAttribute
     {
         public enum PathType
         {

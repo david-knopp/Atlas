@@ -3,10 +3,11 @@ using UnityEngine;
 
 namespace Atlas
 {
-    public class GUIColorScope : IDisposable
+    public struct GUIColorScope : IDisposable
     {
         public GUIColorScope( Color color )
         {
+            m_disposed = false;
             m_prevColor = GUI.color;
             GUI.color = color;
         }

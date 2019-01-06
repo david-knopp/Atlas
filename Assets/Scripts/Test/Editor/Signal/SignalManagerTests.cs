@@ -1,13 +1,9 @@
-﻿using UnityEngine;
-using UnityEditor;
-using UnityEngine.TestTools;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System;
-using System.Collections;
 
 namespace Atlas.Test
 {
-    public class SignalManagerTests
+    public sealed class SignalManagerTests
     {
         [Test]
         public void AddListener()

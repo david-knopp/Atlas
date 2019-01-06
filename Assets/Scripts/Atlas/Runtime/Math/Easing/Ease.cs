@@ -7,7 +7,7 @@ namespace Atlas
     /// A serializable helper class for simplifying easing workflow
     /// </summary>
     [Serializable]
-    public class Ease : ISerializationCallbackReceiver
+    public sealed class Ease : ISerializationCallbackReceiver
     {
         public EaseType Type
         {

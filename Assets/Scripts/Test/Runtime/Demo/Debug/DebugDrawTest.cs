@@ -106,7 +106,6 @@ namespace Atlas.Test
                                                 m_maxTextSpawnOffset.y * offset.y,
                                                 m_maxTextSpawnOffset.z * offset.z );
 
-                int textIndex = Random.Range( 0, m_randomizedText.Count );
                 float scale = Random.Range( 0.1f, 0.5f );
                 
                 switch ( Random.Range( 0, 3 ) )

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Atlas
 {
-    public class DebugDraw : SingletonBehavior<DebugDraw>
+    public sealed class DebugDraw : SingletonBehavior<DebugDraw>
     {
         #region public
         public static bool IsEnabled

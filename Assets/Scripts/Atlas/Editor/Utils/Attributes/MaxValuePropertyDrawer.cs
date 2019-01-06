@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Atlas
 {
     [CustomPropertyDrawer( typeof( MaxValueAttribute ) )]
-    public class MaxValuePropertyDrawer : PropertyDrawer
+    public sealed class MaxValuePropertyDrawer : PropertyDrawer
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {

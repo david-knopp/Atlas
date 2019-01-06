@@ -7,7 +7,7 @@ using System.IO;
 namespace Atlas
 {
     [CustomPropertyDrawer( typeof( ScenePathAttribute ) )]
-    public class ScenePathAttributePropertyDrawer : PropertyDrawer
+    public sealed class ScenePathAttributePropertyDrawer : PropertyDrawer
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {

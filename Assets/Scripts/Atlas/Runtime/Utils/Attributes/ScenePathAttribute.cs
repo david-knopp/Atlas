@@ -4,7 +4,7 @@ using System;
 namespace Atlas
 {
     [AttributeUsage( AttributeTargets.Field, AllowMultiple = false )]
-    public class ScenePathAttribute : PropertyAttribute
+    public sealed class ScenePathAttribute : PropertyAttribute
     {
     }
 }

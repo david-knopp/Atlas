@@ -2,7 +2,7 @@
 
 namespace Atlas
 {
-    public class GUIListener : SingletonBehavior<GUIListener>
+    public sealed class GUIListener : SingletonBehavior<GUIListener>
     {
         public event Action OnGUIRender
         {

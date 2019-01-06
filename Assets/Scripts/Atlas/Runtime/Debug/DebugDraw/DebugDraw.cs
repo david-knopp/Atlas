@@ -109,35 +109,35 @@ namespace Atlas
             }
         }
 
-        public static void DrawText( Vector3 position, string text, Color color, float fontSize )
+        public static void DrawText( Vector3 position, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Billboarded( position ) );
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize, anchor ).Billboarded( position ) );
             }
         }
 
-        public static void DrawText( Vector3 position, string text, Color color, float fontSize, float lifetime )
+        public static void DrawText( Vector3 position, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Billboarded( position ).Timed( lifetime ) );
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize, anchor ).Billboarded( position ).Timed( lifetime ) );
             }
         }
 
-        public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize )
+        public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Transformed( position, rotation ) );
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize, anchor ).Transformed( position, rotation ) );
             }
         }
 
-        public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize, float lifetime )
+        public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize ).Transformed( position, rotation ).Timed( lifetime ) );
+                Instance.m_drawers.Add( new TextDebugDrawer( text, color, fontSize, anchor ).Transformed( position, rotation ).Timed( lifetime ) );
             }
         }
 #else
@@ -149,10 +149,10 @@ namespace Atlas
         public static void DrawCross( Vector3 pos, float lineLength, Color color, float lifetime ) { }
         public static void DrawCircle( Vector3 centerPos, float radius, Color color, int numSegments = 16 ) { }
         public static void DrawCircle( Vector3 centerPos, float radius, Color color, float lifetime, int numSegments = 16 ) { }
-        public static void DrawText( Vector3 pos, string text, Color color, float fontSize ) { }
-        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, float lifetime ) { }
-        public static void DrawText( Vector3 pos, Quaternion rotation, string text, Color color, float fontSize ) { }
-        public static void DrawText( Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, float lifetime ) { }
+        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft ) { }
+        public static void DrawText( Vector3 pos, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft ) { }
+        public static void DrawText( Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft ) { }
+        public static void DrawText( Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft ) { }
 #endif
         #endregion // public
 

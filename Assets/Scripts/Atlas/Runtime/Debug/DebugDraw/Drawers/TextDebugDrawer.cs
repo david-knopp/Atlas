@@ -8,12 +8,14 @@ namespace Atlas
     // and https://www.keshikan.net/img/dseg_sample.png
     public struct TextDebugDrawer : IDebugDrawer
     {
-        public TextDebugDrawer( string text, Color color, float fontSize )
+        public TextDebugDrawer( string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             Color = color;
             m_fontSize = fontSize;
 
             m_textLines = text.Split( s_newlineCharacters, StringSplitOptions.RemoveEmptyEntries );
+            m_anchorPosition = new Vector2( GetHorizontalAnchorOffset( m_textLines, anchor ) * fontSize,
+                                            GetVerticalAnchorOffset( m_textLines, anchor ) * fontSize );
         }
 
         public bool IsFinished
@@ -32,7 +34,7 @@ namespace Atlas
 
         public void Draw()
         {
-            Vector2 position = Vector2.zero;
+            Vector2 position = m_anchorPosition;
 
             foreach ( var text in m_textLines )
             {
@@ -45,8 +47,8 @@ namespace Atlas
                 }
 
                 // add newline
-                Vector2 verticalOffset = new Vector2( 0f, -( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize ) );
-                position = Vector2.zero + verticalOffset;
+                position = new Vector2( m_anchorPosition.x, 
+                                        position.y - ( c_fontHeightPct * m_fontSize + c_characterSpacingPct * m_fontSize ) );
             }
         }
 
@@ -101,6 +103,7 @@ namespace Atlas
 
         private string[] m_textLines;
         private float m_fontSize;
+        private Vector2 m_anchorPosition;
 
         static TextDebugDrawer()
         {
@@ -111,9 +114,9 @@ namespace Atlas
             //   6‾7‾8
             s_offsets = new Vector2[]
             {
-                new Vector2( c_fontWidthPct * -0.5f, c_fontHeightPct * 0.5f ),  new Vector2( 0f, c_fontHeightPct * 0.5f ),  new Vector2( c_fontWidthPct * 0.5f, c_fontHeightPct * 0.5f ),
-                new Vector2( c_fontWidthPct * -0.5f, 0f ),                      new Vector2( 0f, 0f ),                      new Vector2( c_fontWidthPct * 0.5f, 0f ),
-                new Vector2( c_fontWidthPct * -0.5f, c_fontHeightPct * -0.5f ), new Vector2( 0f, c_fontHeightPct * -0.5f ), new Vector2( c_fontWidthPct * 0.5f, c_fontHeightPct * -0.5f )
+                new Vector2( 0f, 0f ),                      new Vector2( c_fontWidthPct * 0.5f, 0f ),                      new Vector2( c_fontWidthPct, 0f ),
+                new Vector2( 0f, c_fontHeightPct * -0.5f ), new Vector2( c_fontWidthPct * 0.5f, c_fontHeightPct * -0.5f ), new Vector2( c_fontWidthPct, c_fontHeightPct * -0.5f ),
+                new Vector2( 0f, -c_fontHeightPct ),        new Vector2( c_fontWidthPct * 0.5f, -c_fontHeightPct ),        new Vector2( c_fontWidthPct, -c_fontHeightPct )
             };
 
             s_segments = new Segment[]
@@ -256,6 +259,48 @@ namespace Atlas
             GL.Vertex( endPos );
 
             GL.End();
+        }
+
+        private static float GetVerticalAnchorOffset( string[] textLines, AnchorPosition anchor )
+        {
+            switch ( anchor )
+            {
+            default:
+            case AnchorPosition.TopLeft:
+            case AnchorPosition.TopRight:
+                return 0f;
+
+            case AnchorPosition.BottomLeft:
+            case AnchorPosition.BottomRight:
+                int verticalCharCount = textLines.Length;
+                return verticalCharCount * c_fontHeightPct + ( verticalCharCount - 1 ) * c_characterSpacingPct;
+
+            case AnchorPosition.Center:
+                return GetVerticalAnchorOffset( textLines, AnchorPosition.BottomLeft ) * 0.5f;
+            }
+        }
+
+        private static float GetHorizontalAnchorOffset( string[] textLines, AnchorPosition anchor )
+        {
+            switch ( anchor )
+            {
+            default:
+            case AnchorPosition.TopLeft:
+            case AnchorPosition.BottomLeft:
+                return 0f;
+
+            case AnchorPosition.TopRight:
+            case AnchorPosition.BottomRight:
+                int horizontalCharCount = 0;
+                foreach ( var textLine in textLines )
+                {
+                    horizontalCharCount = Mathf.Max( textLine.Length, horizontalCharCount );
+                }
+                return -( horizontalCharCount * c_fontWidthPct + ( horizontalCharCount - 1 ) * c_characterSpacingPct );
+
+            case AnchorPosition.Center:
+                return GetHorizontalAnchorOffset( textLines, AnchorPosition.TopRight ) * 0.5f;
+            }
         }
     }
 }

@@ -49,7 +49,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new CrossDebugDrawer( position, lineLength, color ) );
+                Instance.m_drawers.Add( new CrossDebugDrawer( lineLength, color ).Billboarded( position ) );
             }
         }
 
@@ -57,7 +57,23 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new CrossDebugDrawer( position, lineLength, color ).Timed( lifetime ) );
+                Instance.m_drawers.Add( new CrossDebugDrawer( lineLength, color ).Billboarded( position ).Timed( lifetime ) );
+            }
+        }
+
+        public static void DrawCross( Vector3 position, Quaternion rotation, float lineLength, Color color )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new CrossDebugDrawer( lineLength, color ).Transformed( position, rotation ) );
+            }
+        }
+
+        public static void DrawCross( Vector3 position, Quaternion rotation, float lineLength, Color color, float lifetime )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new CrossDebugDrawer( lineLength, color ).Transformed( position, rotation ).Timed( lifetime ) );
             }
         }
 
@@ -65,7 +81,7 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new CircleDebugDrawer( position, radius, color, numSegments ) );
+                Instance.m_drawers.Add( new CircleDebugDrawer( radius, color, numSegments ).Billboarded( position ) );
             }
         }
 
@@ -73,7 +89,23 @@ namespace Atlas
         {
             if ( IsEnabled )
             {
-                Instance.m_drawers.Add( new CircleDebugDrawer( position, radius, color, numSegments ).Timed( lifetime ) );
+                Instance.m_drawers.Add( new CircleDebugDrawer( radius, color, numSegments ).Billboarded( position ).Timed( lifetime ) );
+            }
+        }
+
+        public static void DrawCircle( Vector3 position, Quaternion rotation, float radius, Color color, int numSegments = 16 )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new CircleDebugDrawer( radius, color, numSegments ).Transformed( position, rotation ) );
+            }
+        }
+
+        public static void DrawCircle( Vector3 position, Quaternion rotation, float radius, Color color, float lifetime, int numSegments = 16 )
+        {
+            if ( IsEnabled )
+            {
+                Instance.m_drawers.Add( new CircleDebugDrawer( radius, color, numSegments ).Transformed( position, rotation ).Timed( lifetime ) );
             }
         }
 

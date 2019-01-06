@@ -24,7 +24,7 @@ namespace Atlas.Test
 
         private void Update()
         {
-            DebugDraw.DrawText( Vector3.up + Vector3.left * 6f, m_text, m_color, m_fontSize, Quaternion.identity );
+            DebugDraw.DrawText( Vector3.up + Vector3.left * 6f, Quaternion.identity, m_text, m_color, m_fontSize );
 
             if ( Input.GetMouseButtonDown( 0 ) )
             {
@@ -79,7 +79,11 @@ namespace Atlas.Test
 
                     int textIndex = Random.Range( 0, m_randomizedText.Count );
 
-                    DebugDraw.DrawText( spawnPos, m_randomizedText[textIndex], Random.ColorHSV( .0f, 1f, 0.4f, .8f, 0.7f, 1f ), Random.Range( m_fontSize * 0.2f, m_fontSize * 0.7f ), m_drawLifetime ); 
+                    DebugDraw.DrawText( spawnPos, 
+                                        m_randomizedText[textIndex], 
+                                        Random.ColorHSV( .0f, 1f, 0.4f, .8f, 0.7f, 1f ), 
+                                        Random.Range( m_fontSize * 0.2f, m_fontSize * 0.7f ), 
+                                        m_drawLifetime ); 
                 }
             }
         }

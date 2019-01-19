@@ -38,7 +38,6 @@ namespace Atlas.Internal
             {
                 preference.OnInitialize();
             }
-
         }
 
         [PreferenceItem( "Atlas" )]

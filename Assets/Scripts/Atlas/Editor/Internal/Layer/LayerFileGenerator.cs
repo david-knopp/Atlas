@@ -8,11 +8,22 @@ using Atlas.Internal;
 
 namespace Atlas
 {
-    public sealed class LayerFileGenerator
+    internal static class LayerFileGenerator
     {
+        public static string ProjectRelativeLayerFilePath
+        {
+            get { return string.Format( "{0}/Layer.cs", ScriptingPreferences.RuntimePath ); }
+        }
+
+        public static string FullLayerFilePath
+        {
+            get { return string.Format( "{0}/{1}", Application.dataPath, ProjectRelativeLayerFilePath ); ; }
+        }
+
         [MenuItem( "Atlas/Generate Layer File" )]
         public static void Generate()
         {
+            // generate code text
             StringBuilder stringBuilder = new StringBuilder();
             TextIndentHelper indent = TextIndentHelper.StandardSpacesHelper;
 
@@ -39,22 +50,24 @@ namespace Atlas
             indent.IndentLevel--;
             stringBuilder.Append( indent.ApplyIndent( "}" ) );
 
-            // save file
-            string path = string.Format( "{0}/Layer.cs", ScriptingPreferences.RuntimePath );
-            string fullPath = string.Format( "{0}/{1}", Application.dataPath, path );
+            string fullPath = FullLayerFilePath;
 
             // create directory if needed
             if ( Directory.Exists( fullPath ) == false )
             {
                 Directory.CreateDirectory( Path.GetDirectoryName( fullPath ) );
             }
-            
+
+            // save to file
             using ( StreamWriter writer = new StreamWriter( fullPath, false ) )
             {
                 writer.Write( stringBuilder.ToString() );
             }
             
-            AssetDatabase.ImportAsset( string.Format( "Assets/{0}", path ), ImportAssetOptions.ForceUpdate );
+            AssetDatabase.ImportAsset( string.Format( "Assets/{0}", ProjectRelativeLayerFilePath ), ImportAssetOptions.ForceUpdate );
+
+            Debug.LogFormat( "Generated `Layer.cs` at `{0}`\nTo change the destination folder or namespace for this file, use 'Edit/Preferences/Atlas'", 
+                             ScriptingPreferences.RuntimePath );
         }
 
         private static void AppendClass<TElement>( StringBuilder stringBuilder, string className, TextIndentHelper indent, Func<string, TElement> elementValueCallback )

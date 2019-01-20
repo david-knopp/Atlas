@@ -8,6 +8,7 @@
 ## Table of Contents
 - [What is it](#what-is-it?)
 - [Installation](#installation)
+- [Features](#features)
 - [License](#license)
 
 ## What is it?
@@ -20,6 +21,9 @@ Download the latest .unitypackage from the [releases page](https://github.com/da
 
 In an effort to keep your project tidy, Atlas will place itself in `Assets/ThirdParty/Atlas/`.
 
+## Features
+- [MaxValueAttribute](Scripts/Utils/Attributes/MaxValueAttribute.md)
+- [MinValueAttribute](Scripts/Utils/Attributes/MinValueAttribute.md)
 
 ## License
 [MIT © David Knopp](https://github.com/david-knopp/Atlas/blob/master/LICENSE "MIT © David Knopp")

@@ -3,9 +3,17 @@ using System.Collections.Generic;
 
 namespace Atlas
 {
+    /// <summary>
+    /// A system for rendering debug elements in the game view, as well as the scene view.
+    /// Options to enable in the editor or in standalone builds can be found in the Atlas
+    /// preferences window.
+    /// </summary>
     public sealed class DebugDraw : SingletonBehavior<DebugDraw>
     {
         #region public
+        /// <summary>
+        /// Whether or not the system is enabled
+        /// </summary>
         public static bool IsEnabled
         {
             get { return m_isEnabled; }
@@ -13,6 +21,12 @@ namespace Atlas
         }
 
 #if ATLAS_DEBUGDRAW_RUNTIME || ( ATLAS_DEBUGDRAW_EDITOR && UNITY_EDITOR )
+        /// <summary>
+        /// Draws a debug line
+        /// </summary>
+        /// <param name="startPos">Starting point of the line (in world space)</param>
+        /// <param name="endPos">Ending point of the line (in world space)</param>
+        /// <param name="color">Color of the line</param>
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color )
         {
             if ( IsEnabled )
@@ -21,6 +35,13 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug line for the given amount of time
+        /// </summary>
+        /// <param name="startPos">Starting point of the line (in world space)</param>
+        /// <param name="endPos">Ending point of the line (in world space)</param>
+        /// <param name="color">Color of the line</param>
+        /// <param name="lifetime">Length of time to draw the line (in seconds)</param>
         public static void DrawLine( Vector3 startPos, Vector3 endPos, Color color, float lifetime )
         {
             if ( IsEnabled )
@@ -29,6 +50,12 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug ray
+        /// </summary>
+        /// <param name="position">Starting point of the ray (in world space)</param>
+        /// <param name="direction">Direction and magnitude of the ray (in world space)</param>
+        /// <param name="color">Color of the lirayne</param>
         public static void DrawRay( Vector3 position, Vector3 direction, Color color )
         {
             if ( IsEnabled )
@@ -37,6 +64,13 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug ray for the given amount of time
+        /// </summary>
+        /// <param name="position">Starting point of the ray (in world space)</param>
+        /// <param name="direction">Direction and magnitude of the ray (in world space)</param>
+        /// <param name="color">Color of the lirayne</param>
+        /// <param name="lifetime">Length of time to draw the ray (in seconds)</param>
         public static void DrawRay( Vector3 position, Vector3 direction, Color color, float lifetime )
         {
             if ( IsEnabled )
@@ -45,6 +79,12 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug cross (X), billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the cross (in world space)</param>
+        /// <param name="lineLength">Length of each line</param>
+        /// <param name="color">Color of the cross</param>
         public static void DrawCross( Vector3 position, float lineLength, Color color )
         {
             if ( IsEnabled )
@@ -53,6 +93,13 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug cross (X) for the given amount of time, billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the cross (in world space)</param>
+        /// <param name="lineLength">Length of each line</param>
+        /// <param name="color">Color of the cross</param>
+        /// <param name="lifetime">Length of time to draw the cross (in seconds)</param>
         public static void DrawCross( Vector3 position, float lineLength, Color color, float lifetime )
         {
             if ( IsEnabled )
@@ -61,6 +108,14 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug cross (X)
+        /// </summary>
+        /// <param name="position">Position of the cross (in world space)</param>
+        /// <param name="rotation">Rotation of the cross (in world space)</param>
+        /// <param name="lineLength">Length of each line</param>
+        /// <param name="color">Color of the cross</param>
+        /// <param name="lifetime">Length of time to draw the cross (in seconds)</param>
         public static void DrawCross( Vector3 position, Quaternion rotation, float lineLength, Color color )
         {
             if ( IsEnabled )
@@ -69,6 +124,14 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug cross (X) for the given amount of time
+        /// </summary>
+        /// <param name="position">Position of the cross (in world space)</param>
+        /// <param name="rotation">Rotation of the cross (in world space)</param>
+        /// <param name="lineLength">Length of each line</param>
+        /// <param name="color">Color of the cross</param>
+        /// <param name="lifetime">Length of time to draw the cross (in seconds)</param>
         public static void DrawCross( Vector3 position, Quaternion rotation, float lineLength, Color color, float lifetime )
         {
             if ( IsEnabled )
@@ -77,6 +140,13 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug circle, billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the circle (in world space)</param>
+        /// <param name="radius">Radius of the circle</param>
+        /// <param name="color">Color of the circle</param>
+        /// <param name="numSegments">Number of segments to construct the circle with, e.g. 3 segments would form a triangle</param>
         public static void DrawCircle( Vector3 position, float radius, Color color, int numSegments = 16 )
         {
             if ( IsEnabled )
@@ -85,6 +155,14 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug circle for the given amount of time, billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the circle (in world space)</param>
+        /// <param name="radius">Radius of the circle</param>
+        /// <param name="color">Color of the circle</param>
+        /// <param name="lifetime">Length of time to draw the cross (in seconds)</param>
+        /// <param name="numSegments">Number of segments to construct the circle with, e.g. 3 segments would form a triangle</param>
         public static void DrawCircle( Vector3 position, float radius, Color color, float lifetime, int numSegments = 16 )
         {
             if ( IsEnabled )
@@ -93,6 +171,14 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug circle
+        /// </summary>
+        /// <param name="position">Position of the circle (in world space)</param>
+        /// <param name="rotation">Rotation of the circle (in world space)</param>
+        /// <param name="radius">Radius of the circle</param>
+        /// <param name="color">Color of the circle</param>
+        /// <param name="numSegments">Number of segments to construct the circle with, e.g. 3 segments would form a triangle</param>
         public static void DrawCircle( Vector3 position, Quaternion rotation, float radius, Color color, int numSegments = 16 )
         {
             if ( IsEnabled )
@@ -101,6 +187,15 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a debug circle for the given amount of time
+        /// </summary>
+        /// <param name="position">Position of the circle (in world space)</param>
+        /// <param name="rotation">Rotation of the circle (in world space)</param>
+        /// <param name="radius">Radius of the circle</param>
+        /// <param name="color">Color of the circle</param>
+        /// <param name="lifetime">Length of time to draw the circle (in seconds)</param>
+        /// <param name="numSegments">Number of segments to construct the circle with, e.g. 3 segments would form a triangle</param>
         public static void DrawCircle( Vector3 position, Quaternion rotation, float radius, Color color, float lifetime, int numSegments = 16 )
         {
             if ( IsEnabled )
@@ -109,6 +204,13 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a rectangle, billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the rectangle (in world space)</param>
+        /// <param name="width">Width of the rectangle</param>
+        /// <param name="height">Height of the rectangle</param>
+        /// <param name="color">Color of the rectangle</param>
         public static void DrawRectangle( Vector3 position, float width, float height, Color color )
         {
             if ( IsEnabled )
@@ -117,6 +219,14 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a rectangle for the given amount of time, billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the rectangle (in world space)</param>
+        /// <param name="width">Width of the rectangle</param>
+        /// <param name="height">Height of the rectangle</param>
+        /// <param name="color">Color of the rectangle</param>
+        /// <param name="lifetime">Length of time to draw the rectangle (in seconds)</param>
         public static void DrawRectangle( Vector3 position, float width, float height, Color color, float lifetime )
         {
             if ( IsEnabled )
@@ -125,6 +235,14 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a rectangle
+        /// </summary>
+        /// <param name="position">Position of the rectangle (in world space)</param>
+        /// <param name="rotation">Rotation of the rectangle (in world space)</param>
+        /// <param name="width">Width of the rectangle</param>
+        /// <param name="height">Height of the rectangle</param>
+        /// <param name="color">Color of the rectangle</param>
         public static void DrawRectangle( Vector3 position, Quaternion rotation, float width, float height, Color color )
         {
             if ( IsEnabled )
@@ -133,6 +251,15 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a rectangle for the given amount of time
+        /// </summary>
+        /// <param name="position">Position of the rectangle (in world space)</param>
+        /// <param name="rotation">Rotation of the rectangle (in world space)</param>
+        /// <param name="width">Width of the rectangle</param>
+        /// <param name="height">Height of the rectangle</param>
+        /// <param name="color">Color of the rectangle</param>
+        /// <param name="lifetime">Length of time to draw the rectangle (in seconds)</param>
         public static void DrawRectangle( Vector3 position, Quaternion rotation, float width, float height, Color color, float lifetime )
         {
             if ( IsEnabled )
@@ -141,6 +268,14 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a string of text, billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the text's anchor (in world space)</param>
+        /// <param name="text">Text to display</param>
+        /// <param name="color">Color of the text</param>
+        /// <param name="fontSize">Size of the text's characters</param>
+        /// <param name="anchor">Position of the text's anchor. The text will be positioned relative to this position</param>
         public static void DrawText( Vector3 position, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
@@ -149,6 +284,15 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a string of text for the given amount of time, billboarded to the current camera
+        /// </summary>
+        /// <param name="position">Position of the text's anchor (in world space)</param>
+        /// <param name="text">Text to display</param>
+        /// <param name="color">Color of the text</param>
+        /// <param name="fontSize">Size of the text's characters</param>
+        /// <param name="lifetime">Length of time to draw the text (in seconds)</param>
+        /// <param name="anchor">Position of the text's anchor. The text will be positioned relative to this position</param>
         public static void DrawText( Vector3 position, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
@@ -157,6 +301,15 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a string of text
+        /// </summary>
+        /// <param name="position">Position of the text's anchor (in world space)</param>
+        /// <param name="rotation">Rotation of the text (in world space)</param>
+        /// <param name="text">Text to display</param>
+        /// <param name="color">Color of the text</param>
+        /// <param name="fontSize">Size of the text's characters</param>
+        /// <param name="anchor">Position of the text's anchor. The text will be positioned relative to this position</param>
         public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )
@@ -165,6 +318,16 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Draws a string of text for the given amount of time
+        /// </summary>
+        /// <param name="position">Position of the text's anchor (in world space)</param>
+        /// <param name="rotation">Rotation of the text (in world space)</param>
+        /// <param name="text">Text to display</param>
+        /// <param name="color">Color of the text</param>
+        /// <param name="fontSize">Size of the text's characters</param>
+        /// <param name="lifetime">Length of time to draw the text (in seconds)</param>
+        /// <param name="anchor">Position of the text's anchor. The text will be positioned relative to this position</param>
         public static void DrawText( Vector3 position, Quaternion rotation, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             if ( IsEnabled )

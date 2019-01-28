@@ -2,8 +2,18 @@
 
 namespace Atlas
 {
+    /// <summary>
+    /// Debug circle element
+    /// </summary>
+    /// <seealso cref="DebugDraw"/>
     public struct CircleDebugDrawer : IDebugDrawer
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="radius">Radius of the circle</param>
+        /// <param name="color">Color of the circle</param>
+        /// <param name="numSegments">Number of segments to use when constructing the circle</param>
         public CircleDebugDrawer( float radius, Color color, int numSegments )
         {
             m_radius = radius;
@@ -11,17 +21,26 @@ namespace Atlas
             Color = color;
         }
 
+        /// <summary>
+        /// Whether or not this drawer has finished drawing yet
+        /// </summary>
         public bool IsFinished
         {
             get { return true; }
         }
 
+        /// <summary>
+        /// The color of the circle
+        /// </summary>
         public Color Color
         {
             get;
             set;
         }
 
+        /// <summary>
+        /// Draws the circle
+        /// </summary>
         public void Draw()
         {
             GL.Begin( GL.LINE_STRIP );

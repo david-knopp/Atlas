@@ -2,8 +2,16 @@
 
 namespace Atlas
 {
+    /// <summary>
+    /// Causes the modified <see cref="IDebugDrawer"/> to render for the given amount of time
+    /// </summary>
     public struct TimedDebugDrawModifier : IDebugDrawer
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="drawer">Element to draw</param>
+        /// <param name="lifetime">Amount of time (in seconds) to draw the element for</param>
         public TimedDebugDrawModifier( IDebugDrawer drawer, float lifetime )
         {
             m_drawer = drawer;
@@ -14,6 +22,9 @@ namespace Atlas
             m_timer.Start();
         }
 
+        /// <summary>
+        /// Whether or not the modified element has finished drawing
+        /// </summary>
         public bool IsFinished
         {
             get
@@ -22,12 +33,18 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Color of the modified element
+        /// </summary>
         public Color Color
         {
             get { return m_drawer.Color; }
             set { m_drawer.Color = value; }
         }
 
+        /// <summary>
+        /// Draws the modified element
+        /// </summary>
         public void Draw()
         {                
             // fade alpha over lifetime

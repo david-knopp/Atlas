@@ -2,25 +2,43 @@
 
 namespace Atlas
 {
+    /// <summary>
+    /// Debug cross (X) element
+    /// </summary>
+    /// <seealso cref="DebugDraw"/>
     public struct CrossDebugDrawer : IDebugDrawer
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="lineLength">Length of each line</param>
+        /// <param name="color">Color of the cross</param>
         public CrossDebugDrawer( float lineLength, Color color )
         {
             m_lineLength = lineLength;
             Color = color;
         }
 
+        /// <summary>
+        /// Whether or not this drawer has finished drawing yet
+        /// </summary>
         public bool IsFinished
         {
             get { return true; }
         }
 
+        /// <summary>
+        /// The color of the cross
+        /// </summary>
         public Color Color
         {
             get;
             set;
         }
 
+        /// <summary>
+        /// Draws the cross
+        /// </summary>
         public void Draw()
         {
             Vector3 up = Vector3.up;

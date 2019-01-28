@@ -4,10 +4,21 @@ using UnityEngine;
 
 namespace Atlas
 {
-    // Inspired by LotteMakesStuff's segment font: https://gist.github.com/LotteMakesStuff/ceb66cb29cb7d3c07da1207ab5d12045
-    // and https://www.keshikan.net/img/dseg_sample.png
+    /// <summary>
+    /// Debug text element
+    /// </summary>
+    /// <seealso cref="DebugDraw"/>
+    /// <remarks>Inspired by LotteMakesStuff's segment font: https://gist.github.com/LotteMakesStuff/ceb66cb29cb7d3c07da1207ab5d12045
+    /// and https://www.keshikan.net/img/dseg_sample.png </remarks>
     public struct TextDebugDrawer : IDebugDrawer
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="text">Text to display</param>
+        /// <param name="color">Color of the text</param>
+        /// <param name="fontSize">Size of the text's characters</param>
+        /// <param name="anchor">Position of the text's anchor</param>
         public TextDebugDrawer( string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft )
         {
             Color = color;
@@ -18,17 +29,26 @@ namespace Atlas
                                             GetVerticalAnchorOffset( m_textLines, anchor ) * fontSize );
         }
 
+        /// <summary>
+        /// Whether or not the text has finished drawing
+        /// </summary>
         public bool IsFinished
         {
             get { return true; }
         }
 
+        /// <summary>
+        /// The color of the text
+        /// </summary>
         public Color Color
         {
             get;
             set;
         }
 
+        /// <summary>
+        /// Draws the text
+        /// </summary>
         public void Draw()
         {
             Vector2 position = m_anchorPosition;

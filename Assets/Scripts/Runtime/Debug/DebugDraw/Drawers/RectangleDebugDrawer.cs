@@ -2,8 +2,18 @@
 
 namespace Atlas
 {
+    /// <summary>
+    /// Debug rectangle element
+    /// </summary>
+    /// <seealso cref="DebugDraw"/>
     public struct RectangleDebugDrawer : IDebugDrawer
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="width">Width of the rectangle</param>
+        /// <param name="height">Height of the rectangle</param>
+        /// <param name="color">Color of the rectangle</param>
         public RectangleDebugDrawer( float width, float height, Color color )
         {
             float halfWidth = width * 0.5f;
@@ -17,17 +27,26 @@ namespace Atlas
             Color = color;
         }
 
+        /// <summary>
+        /// Whether or not this drawer has finished drawing yet
+        /// </summary>
         public bool IsFinished
         {
             get { return true; }
         }
 
+        /// <summary>
+        /// Color of the rectangle
+        /// </summary>
         public Color Color
         {
             get;
             set;
         }
 
+        /// <summary>
+        /// Draws the rectangle
+        /// </summary>
         public void Draw()
         {
             GL.Begin( GL.LINE_STRIP );

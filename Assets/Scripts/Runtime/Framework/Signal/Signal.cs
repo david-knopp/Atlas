@@ -1,55 +1,15 @@
-﻿using System.Collections.Generic;
-using System;
+﻿using System;
 
 namespace Atlas
 {
-    public interface ISignal
+    /// <summary>
+    /// Zero-argument signal
+    /// </summary>
+    public class Signal : SignalBase<ICommand, Action>
     {
-    }
-
-    public class BaseSignal<TBaseCommand, TAction> : ISignal
-    {
-        public BaseSignal()
-        {
-            m_commands = new List<TBaseCommand>();
-            m_listeners = new List<TAction>();
-        }
-
-        public void AddCommand<CommandType>( CommandType command ) where CommandType : TBaseCommand
-        {
-            m_commands.Add( command );
-        }
-
-        public void AddCommand<CommandType>() where CommandType : TBaseCommand
-        {
-            CommandType command = Activator.CreateInstance<CommandType>();
-            m_commands.Add( command );
-        }
-
-        public void RemoveCommand<CommandType>() where CommandType : TBaseCommand
-        {
-            m_commands.RemoveAll( ( TBaseCommand command ) => 
-            {
-                return command is CommandType;
-            } );
-        }
-
-        public void AddListener( TAction listener )
-        {
-            m_listeners.Add( listener );
-        }
-
-        public void RemoveListener( TAction listener )
-        {
-            m_listeners.Remove( listener );
-        }
-
-        protected List<TBaseCommand> m_commands;
-        protected List<TAction> m_listeners;
-    }
-
-    public class Signal : BaseSignal<ICommand, Action>
-    {
+        /// <summary>
+        /// Invokes the signal, calling all registered callback methods/commands
+        /// </summary>
         public void Dispatch()
         {
             for ( int i = 0; i < m_commands.Count; i++ )
@@ -64,8 +24,16 @@ namespace Atlas
         }
     }
 
-    public class Signal<T> : BaseSignal<ICommand<T>, Action<T>>
+    /// <summary>
+    /// Single-argument signal
+    /// </summary>
+    /// <typeparam name="T">Type of the signal's argument</typeparam>
+    public class Signal<T> : SignalBase<ICommand<T>, Action<T>>
     {
+        /// <summary>
+        /// Invokes the signal, calling all registered callback methods/commands
+        /// </summary>
+        /// <param name="arg">Argument to pass to the callbacks</param>
         public void Dispatch( T arg )
         {
             for ( int i = 0; i < m_commands.Count; i++ )
@@ -80,8 +48,18 @@ namespace Atlas
         }
     }
 
-    public class Signal<T1, T2> : BaseSignal<ICommand<T1, T2>, Action<T1, T2>>
+    /// <summary>
+    /// Two-argument signal
+    /// </summary>
+    /// <typeparam name="T1">First argument type</typeparam>
+    /// <typeparam name="T2">Second argument type</typeparam>
+    public class Signal<T1, T2> : SignalBase<ICommand<T1, T2>, Action<T1, T2>>
     {
+        /// <summary>
+        /// Invokes the signal, calling all registered callback methods/commands
+        /// </summary>
+        /// <param name="arg1">First argument to pass to the callbacks</param>
+        /// <param name="arg2">Second argument to pass to the callbacks</param>
         public void Dispatch( T1 arg1, T2 arg2 )
         {
             for ( int i = 0; i < m_commands.Count; i++ )
@@ -96,8 +74,20 @@ namespace Atlas
         }
     }
 
-    public class Signal<T1, T2, T3> : BaseSignal<ICommand<T1, T2, T3>, Action<T1, T2, T3>>
+    /// <summary>
+    /// Three-argument signal
+    /// </summary>
+    /// <typeparam name="T1">First argument type</typeparam>
+    /// <typeparam name="T2">Second argument type</typeparam>
+    /// <typeparam name="T3">Third argument type</typeparam>
+    public class Signal<T1, T2, T3> : SignalBase<ICommand<T1, T2, T3>, Action<T1, T2, T3>>
     {
+        /// <summary>
+        /// Invokes the signal, calling all registered callback methods/commands
+        /// </summary>
+        /// <param name="arg1">First argument to pass to the callbacks</param>
+        /// <param name="arg2">Second argument to pass to the callbacks</param>
+        /// <param name="arg3">Third argument to pass to the callbacks</param>
         public void Dispatch( T1 arg1, T2 arg2, T3 arg3 )
         {
             for ( int i = 0; i < m_commands.Count; i++ )
@@ -112,8 +102,22 @@ namespace Atlas
         }
     }
 
-    public class Signal<T1, T2, T3, T4> : BaseSignal<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>
+    /// <summary>
+    /// Four-argument signal
+    /// </summary>
+    /// <typeparam name="T1">First argument type</typeparam>
+    /// <typeparam name="T2">Second argument type</typeparam>
+    /// <typeparam name="T3">Third argument type</typeparam>
+    /// <typeparam name="T4">Fourth argument</typeparam>
+    public class Signal<T1, T2, T3, T4> : SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>
     {
+        /// <summary>
+        /// Invokes the signal, calling all registered callback methods/commands
+        /// </summary>
+        /// <param name="arg1">First argument to pass to the callbacks</param>
+        /// <param name="arg2">Second argument to pass to the callbacks</param>
+        /// <param name="arg3">Third argument to pass to the callbacks</param>
+        /// <param name="arg4">Fourth argument to pass to the callbacks</param>
         public void Dispatch( T1 arg1, T2 arg2, T3 arg3, T4 arg4 )
         {
             for ( int i = 0; i < m_commands.Count; i++ )

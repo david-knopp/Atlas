@@ -87,6 +87,17 @@ namespace Atlas
         }
 
         /// <summary>
+        /// Determines whether or not the given <paramref name="range"/> value overlaps this range
+        /// </summary>
+        /// <param name="range">The range value to test</param>
+        /// <returns>Whether or not the ranges overlap eachother</returns>
+        public bool Intersects( Range range )
+        {
+            return m_minValue <= range.m_maxValue &&
+                   m_maxValue >= range.m_minValue;
+        }
+
+        /// <summary>
         /// Clamps the given <paramref name="value"/> between the range
         /// </summary>
         /// <param name="value">The value to clamp</param>
@@ -109,6 +120,31 @@ namespace Atlas
             {
                 m_minValue = Mathf.Min( m_minValue, range.m_minValue ),
                 m_maxValue = Mathf.Max( m_maxValue, range.m_maxValue )
+            };
+        }
+
+        /// <summary>
+        /// Calculates the range of values where this range overlaps with the given <paramref name="range"/>.
+        /// If the ranges don't overlap, an invalid range is returned.
+        /// </summary>
+        /// <param name="range">The range to intersect with</param>
+        /// <returns>The intersecting range</returns>
+        public Range IntersectionWith( Range range )
+        {
+            if ( Intersects( range ) )
+            {
+                return new Range()
+                {
+                    m_minValue = Mathf.Max( m_minValue, range.m_minValue ),
+                    m_maxValue = Mathf.Min( m_maxValue, range.m_maxValue )
+                };
+            }
+
+            // no intersection
+            return new Range()
+            {
+                m_minValue = float.NaN,
+                m_maxValue = float.NaN
             };
         }
     }

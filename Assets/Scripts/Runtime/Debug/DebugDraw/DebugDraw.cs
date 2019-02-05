@@ -368,7 +368,7 @@ namespace Atlas
             m_guiListener = GUIListener.Instance;
             if ( m_guiListener )
             {
-                m_guiListener.OnGUIRender += OnGUIRender;
+                m_guiListener.GUIRenderEvent += OnGUIRender;
             }
         }
 
@@ -376,7 +376,7 @@ namespace Atlas
         {
             if ( m_guiListener )
             {
-                m_guiListener.OnGUIRender -= OnGUIRender;
+                m_guiListener.GUIRenderEvent -= OnGUIRender;
             }
         }
 

@@ -4,11 +4,15 @@ using UnityEngine;
 namespace Atlas
 {
     /// <summary>
-    /// A serializable helper class for simplifying easing workflow
+    /// A serializable class for simplifying easing/tweening workflow
     /// </summary>
     [Serializable]
     public sealed class Ease : ISerializationCallbackReceiver
     {
+        #region public
+        /// <summary>
+        /// Type of ease function to use when evaluating
+        /// </summary>
         public EaseType Type
         {
             get { return m_type; }
@@ -19,24 +23,51 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Calculates the eased value of <paramref name="t"/>
+        /// </summary>
+        /// <param name="t">The time value to evaluate at</param>
+        /// <param name="duration">The duration of this ease</param>
+        /// <returns>The eased value</returns>
         public float Evaluate( float t, float duration = 1f )
         {
             Mathf.Max( duration, Mathf.Epsilon );
             return m_easeFunction.Invoke( t, duration );
         }
 
+        /// <summary>
+        /// Eases between the two given float values at time <paramref name="t"/>
+        /// </summary>
+        /// <param name="from">Initial value</param>
+        /// <param name="to">Final value</param>
+        /// <param name="t">The time value to evaluate at</param>
+        /// <returns>The eased value</returns>
         public float Interpolate( float from, float to, float t )
         {
             float ease = Evaluate( t );
             return from * ( 1f - ease ) + to * ease;
         }
 
+        /// <summary>
+        /// Eases between two given <see cref="Vector3"/> values at time <paramref name="t"/>
+        /// </summary>
+        /// <param name="from">Initial value</param>
+        /// <param name="to">Final value</param>
+        /// <param name="t">The time value to evaluate at</param>
+        /// <returns>The eased value</returns>
         public Vector3 Interpolate( Vector3 from, Vector3 to, float t )
         {
             float ease = Evaluate( t );
             return from * ( 1f - ease ) + to * ease;
         }
 
+        /// <summary>
+        /// Eases between two given <see cref="Vector2"/> values at time <paramref name="t"/>
+        /// </summary>
+        /// <param name="from">Initial value</param>
+        /// <param name="to">Final value</param>
+        /// <param name="t">The time value to evaluate at</param>
+        /// <returns>The eased value</returns>
         public Vector2 Interpolate( Vector2 from, Vector2 to, float t )
         {
             float ease = Evaluate( t );
@@ -52,8 +83,10 @@ namespace Atlas
         {
             Reset();
         }
-        #endregion // ISerializationCallbackReceiver
+        #endregion // ISerializationCallbackReceiver 
+        #endregion public
 
+        #region private
         [SerializeField] private EaseType m_type;
 
         private Func<float, float, float> m_easeFunction;
@@ -199,6 +232,7 @@ namespace Atlas
                 m_easeFunction = LinearEase.InOut;
                 break;
             }
-        }
+        } 
+        #endregion private
     }
 }

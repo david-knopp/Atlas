@@ -233,4 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a2eddfa882b67418b0776ddd527a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_path: Assets/Scripts/Runtime
+  m_filePathAbsolute: C:/Program Files/Java/jdk1.8.0_102/bin/javac.exe
+  m_directoryPathAbsolute: C:/Program Files
+  m_filePathAssets: Examples/Scenes/Attributes.unity
+  m_directoryPathAssets: Examples/Scenes
+  m_filePathProject: ProjectSettings/AtlasPreferences.asset
+  m_directoryPathProject: ProjectSettings

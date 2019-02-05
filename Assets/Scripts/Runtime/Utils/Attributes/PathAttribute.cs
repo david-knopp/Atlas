@@ -14,7 +14,7 @@ namespace Atlas
         /// <summary>
         /// Folder path relativity type
         /// </summary>
-        public enum PathType
+        public enum Relativity
         {
             /// <summary>
             /// The full path e.g. "C:/Users/MichaelScott/Documents/"
@@ -33,36 +33,60 @@ namespace Atlas
         }
 
         /// <summary>
+        /// Type of path target to represent
+        /// </summary>
+        public enum Path
+        {
+            /// <summary>
+            /// Represents the path of a file
+            /// </summary>
+            File = 0,
+
+            /// <summary>
+            /// Represents the path of a directory
+            /// </summary>
+            Directory = 1
+        }
+
+        /// <summary>
         /// Constructor
         /// </summary>
+        /// <param name="pathTargetType">Type of path to use</param>
         /// <param name="relativePath">Type of path relativity to use</param>
-        public PathAttribute( PathType relativePath = PathType.ProjectRelative )
+        public PathAttribute( Path pathTargetType = Path.File, 
+                              Relativity relativePath = Relativity.ProjectRelative )
         {
-            Type = relativePath;
+            TargetType = pathTargetType;
+            RelativityType = relativePath;
         }
+
+        /// <summary>
+        /// Type of path target to represent
+        /// </summary>
+        public Path TargetType { get; private set; }
 
         /// <summary>
         /// Type of path relativity to use
         /// </summary>
-        public PathType Type { get; private set; }
+        public Relativity RelativityType { get; private set; }
 
         /// <summary>
-        /// A string representing the desired relative path as defined by <see cref="Type"/>
+        /// A string representing the desired relative path as defined by <see cref="RelativityType"/>
         /// </summary>
         public string RelativePath
         {
             get
             {
-                switch ( Type )
+                switch ( RelativityType )
                 {
                 default:
-                case PathType.Absolute:
+                case Relativity.Absolute:
                     return string.Empty;
 
-                case PathType.AssetsRelative:
+                case Relativity.AssetsRelative:
                     return string.Format( "{0}/", Application.dataPath );
 
-                case PathType.ProjectRelative:
+                case Relativity.ProjectRelative:
                     int assetsIndex = Application.dataPath.LastIndexOf( "Assets" );
                     if ( assetsIndex >= 0 )
                     {

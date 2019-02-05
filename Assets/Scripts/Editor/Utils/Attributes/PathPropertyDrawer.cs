@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace Atlas
 {
@@ -32,7 +32,21 @@ namespace Atlas
             // file path selector button
             if ( GUI.Button( buttonRect, "..." ) )
             {
-                string path = EditorUtility.OpenFolderPanel( label.text, curFullPath, string.Empty );
+                string path = null;
+
+                // open desired explorer panel
+                switch ( pathAttribute.TargetType )
+                {
+                    case PathAttribute.Path.File:
+                        path = EditorUtility.OpenFilePanel( label.text, curFullPath, string.Empty );
+                        break;
+
+                    case PathAttribute.Path.Directory:
+                        path = EditorUtility.OpenFolderPanel( label.text, curFullPath, string.Empty );
+                        break;
+                }
+
+                // cleanup path
                 if ( string.IsNullOrEmpty( path ) == false )
                 {
                     // remove relative path

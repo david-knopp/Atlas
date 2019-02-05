@@ -10,8 +10,5 @@ namespace Atlas.Test
         [SerializeField, MaxValue( 1 )] private int m_intMax;
         [SerializeField, MinValue( 0 )] private int m_intMin;
         [SerializeField, PreventEditInInspector] private bool m_notEditable;
-        [SerializeField, Path( PathAttribute.PathType.ProjectRelative )] private string m_projectFilePath;
-        [SerializeField, Path( PathAttribute.PathType.AssetsRelative )] private string m_assetsFilePath;
-        [SerializeField, Path( PathAttribute.PathType.Absolute )] private string m_absoluteFilePath;
     }
 }

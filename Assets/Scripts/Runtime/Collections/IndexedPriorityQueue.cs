@@ -3,15 +3,27 @@ using UnityEngine.Assertions;
 
 namespace Atlas
 {
-    /* Generic priority Queue with random access */
+    /// <summary>
+    /// Generic priority queue data structure, providing random access to its elements
+    /// </summary>
+    /// <typeparam name="T">Type of contained elements</typeparam>
     public sealed class IndexedPriorityQueue<T> where T : IComparable<T>
     {
         #region public
+        /// <summary>
+        /// Current number of elements in the queue
+        /// </summary>
         public int Count
         {
-            get { return m_count; }
+            get;
+            private set;
         }
 
+        /// <summary>
+        /// Accesses the element at the given index
+        /// </summary>
+        /// <param name="index">Index of the element to access</param>
+        /// <returns>The value at the given index</returns>
         public T this[int index]
         {
             get
@@ -29,11 +41,18 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public IndexedPriorityQueue()
         {
             Resize( 1 );
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="maxSize">Max number of elements the queue can contain</param>
         public IndexedPriorityQueue( int maxSize )
         {
             Resize( maxSize );
@@ -49,17 +68,17 @@ namespace Atlas
             Assert.IsTrue( index < m_objects.Length && index >= 0, 
                            string.Format( "IndexedPriorityQueue.Insert: Index '{0}' out of range", index ) );
 
-            ++m_count;
+            ++Count;
 
             // add object
             m_objects[index] = value;
 
             // add to heap
-            m_heapInverse[index] = m_count;
-            m_heap[m_count] = index;
+            m_heapInverse[index] = Count;
+            m_heap[Count] = index;
 
             // update heap
-            SortHeapUpward( m_count );
+            SortHeapUpward( Count );
         }
 
         /// <summary>
@@ -78,21 +97,21 @@ namespace Atlas
         /// <returns>The removed element</returns>
         public T Pop()
         {
-            Assert.IsTrue( m_count > 0, "IndexedPriorityQueue.Pop: Queue is empty" );
+            Assert.IsTrue( Count > 0, "IndexedPriorityQueue.Pop: Queue is empty" );
 
-            if ( m_count == 0 )
+            if ( Count == 0 )
             {
                 return default( T );
             }
 
             // swap front to back for removal
-            Swap( 1, m_count-- );
+            Swap( 1, Count-- );
 
             // re-sort heap
             SortHeapDownward( 1 );
 
             // return popped object
-            return m_objects[m_heap[m_count + 1]];
+            return m_objects[m_heap[Count + 1]];
         }
 
         /// <summary>
@@ -100,65 +119,71 @@ namespace Atlas
         /// as efficient as the DecreaseIndex/IncreaseIndex methods, but is
         /// best when the value at the index is not known
         /// </summary>
-        /// <param name="index">index of the value to set</param>
-        /// <param name="obj">new value</param>
-        public void Set( int index, T obj )
+        /// <param name="index">Index of the value to set</param>
+        /// <param name="newValue">New value</param>
+        /// <remarks>This will cause either an upward or downard sort of the internal heap</remarks>
+        public void Set( int index, T newValue )
         {
-            if ( obj.CompareTo( m_objects[index] ) <= 0 )
+            if ( newValue.CompareTo( m_objects[index] ) <= 0 )
             {
-                DecreaseIndex( index, obj );
+                DecreaseValueAtIndex( index, newValue );
             }
             else
             {
-                IncreaseIndex( index, obj );
+                IncreaseValueAtIndex( index, newValue );
             }
         }
 
         /// <summary>
-        /// Decrease the value at the current index
+        /// Decreases the value at the current index to the given value
         /// </summary>
-        /// <param name="index">index to decrease value of</param>
-        /// <param name="obj">new value</param>
-        public void DecreaseIndex( int index, T obj )
+        /// <param name="index">Index to decrease value of</param>
+        /// <param name="decreasedValue">New value</param>
+        /// <remarks>This will cause an upward sort of the internal heap</remarks>
+        public void DecreaseValueAtIndex( int index, T decreasedValue )
         {
             Assert.IsTrue( index < m_objects.Length && index >= 0, 
                            string.Format( "IndexedPriorityQueue.DecreaseIndex: Index '{0}' out of range", 
                            index ) );
-            Assert.IsTrue( obj.CompareTo( m_objects[index] ) <= 0, 
+            Assert.IsTrue( decreasedValue.CompareTo( m_objects[index] ) <= 0, 
                            string.Format( "IndexedPriorityQueue.DecreaseIndex: object '{0}' isn't less than current value '{1}'", 
-                           obj, m_objects[index] ) );
+                           decreasedValue, m_objects[index] ) );
 
-            m_objects[index] = obj;
+            m_objects[index] = decreasedValue;
             SortUpward( index );
         }
 
         /// <summary>
-        /// Increase the value at the current index
+        /// Increases the value at the current index to the given value
         /// </summary>
-        /// <param name="index">index to increase value of</param>
-        /// <param name="obj">new value</param>
-        public void IncreaseIndex( int index, T obj )
+        /// <param name="index">Index to increase value of</param>
+        /// <param name="increasedValue">New value</param>
+        /// <remarks>This will cause a downward sort of the internal heap</remarks>
+        public void IncreaseValueAtIndex( int index, T increasedValue )
         {
             Assert.IsTrue( index < m_objects.Length && index >= 0, 
                           string.Format( "IndexedPriorityQueue.DecreaseIndex: Index '{0}' out of range", 
                           index ) );
-            Assert.IsTrue( obj.CompareTo( m_objects[index] ) >= 0, 
+            Assert.IsTrue( increasedValue.CompareTo( m_objects[index] ) >= 0, 
                            string.Format( "IndexedPriorityQueue.DecreaseIndex: object '{0}' isn't greater than current value '{1}'", 
-                           obj, m_objects[index] ) );
+                           increasedValue, m_objects[index] ) );
 
-            m_objects[index] = obj;
+            m_objects[index] = increasedValue;
             SortDownward( index );
         }
 
+        /// <summary>
+        /// Removes all elements from the queue
+        /// </summary>
         public void Clear()
         {
-            m_count = 0;
+            Count = 0;
         }
 
         /// <summary>
         /// Set the maximum capacity of the queue
         /// </summary>
-        /// <param name="maxSize">new maximum capacity</param>
+        /// <param name="maxSize">The desired maximum capacity</param>
         public void Resize( int maxSize )
         {
             Assert.IsTrue( maxSize >= 0, 
@@ -167,7 +192,7 @@ namespace Atlas
             m_objects = new T[maxSize];
             m_heap = new int[maxSize + 1];
             m_heapInverse = new int[maxSize];
-            m_count = 0;
+            Count = 0;
         }
         #endregion // public
 
@@ -175,7 +200,6 @@ namespace Atlas
         private T[] m_objects;
         private int[] m_heap;
         private int[] m_heapInverse;
-        private int m_count;
 
         private void SortUpward( int index )
         {
@@ -205,12 +229,12 @@ namespace Atlas
         private void SortHeapDownward( int heapIndex )
         {
             // move node downward if less than children
-            while ( FirstChild( heapIndex ) <= m_count )
+            while ( FirstChild( heapIndex ) <= Count )
             {
                 int child = FirstChild( heapIndex );
 
                 // find smallest of two children (if 2 exist)
-                if ( child < m_count && 
+                if ( child < Count && 
                      m_objects[m_heap[child + 1]].CompareTo( m_objects[m_heap[child]] ) < 0 )
                 {
                     ++child;

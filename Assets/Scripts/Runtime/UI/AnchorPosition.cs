@@ -1,5 +1,9 @@
 ﻿namespace Atlas
 {
+    /// <summary>
+    /// An enumeration for various types of UI anchoring positions
+    /// </summary>
+    /// <seealso cref="TextDebugDrawer"/>
     public enum AnchorPosition
     {
         TopLeft = 1,

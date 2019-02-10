@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ElasticEase
+  commentId: T:Atlas.ElasticEase
+  id: ElasticEase
+  parent: Atlas
+  children:
+  - Atlas.ElasticEase.In(System.Single,System.Single)
+  - Atlas.ElasticEase.InOut(System.Single,System.Single)
+  - Atlas.ElasticEase.Out(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: ElasticEase
+  nameWithType: ElasticEase
+  fullName: Atlas.ElasticEase
+  type: Class
+  source:
+    id: ElasticEase
+    path: ''
+    startLine: 3797
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static class ElasticEase
+    content.vb: Public Module ElasticEase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.ElasticEase.In(System.Single,System.Single)
+  commentId: M:Atlas.ElasticEase.In(System.Single,System.Single)
+  id: In(System.Single,System.Single)
+  parent: Atlas.ElasticEase
+  langs:
+  - csharp
+  - vb
+  name: In(Single, Single)
+  nameWithType: ElasticEase.In(Single, Single)
+  fullName: Atlas.ElasticEase.In(System.Single, System.Single)
+  type: Method
+  source:
+    id: In
+    path: ''
+    startLine: 3799
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float In(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function In(curTime As Single, duration As Single) As Single
+  overload: Atlas.ElasticEase.In*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ElasticEase.Out(System.Single,System.Single)
+  commentId: M:Atlas.ElasticEase.Out(System.Single,System.Single)
+  id: Out(System.Single,System.Single)
+  parent: Atlas.ElasticEase
+  langs:
+  - csharp
+  - vb
+  name: Out(Single, Single)
+  nameWithType: ElasticEase.Out(Single, Single)
+  fullName: Atlas.ElasticEase.Out(System.Single, System.Single)
+  type: Method
+  source:
+    id: Out
+    path: ''
+    startLine: 3820
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float Out(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Out(curTime As Single, duration As Single) As Single
+  overload: Atlas.ElasticEase.Out*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ElasticEase.InOut(System.Single,System.Single)
+  commentId: M:Atlas.ElasticEase.InOut(System.Single,System.Single)
+  id: InOut(System.Single,System.Single)
+  parent: Atlas.ElasticEase
+  langs:
+  - csharp
+  - vb
+  name: InOut(Single, Single)
+  nameWithType: ElasticEase.InOut(Single, Single)
+  fullName: Atlas.ElasticEase.InOut(System.Single, System.Single)
+  type: Method
+  source:
+    id: InOut
+    path: ''
+    startLine: 3838
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float InOut(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function InOut(curTime As Single, duration As Single) As Single
+  overload: Atlas.ElasticEase.InOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.ElasticEase.In*
+  commentId: Overload:Atlas.ElasticEase.In
+  name: In
+  nameWithType: ElasticEase.In
+  fullName: Atlas.ElasticEase.In
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.ElasticEase.Out*
+  commentId: Overload:Atlas.ElasticEase.Out
+  name: Out
+  nameWithType: ElasticEase.Out
+  fullName: Atlas.ElasticEase.Out
+- uid: Atlas.ElasticEase.InOut*
+  commentId: Overload:Atlas.ElasticEase.InOut
+  name: InOut
+  nameWithType: ElasticEase.InOut
+  fullName: Atlas.ElasticEase.InOut

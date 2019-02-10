@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.TypeExtensions
+  commentId: T:Atlas.TypeExtensions
+  id: TypeExtensions
+  parent: Atlas
+  children:
+  - Atlas.TypeExtensions.GetPrimitiveName(Type)
+  langs:
+  - csharp
+  - vb
+  name: TypeExtensions
+  nameWithType: TypeExtensions
+  fullName: Atlas.TypeExtensions
+  type: Class
+  source:
+    id: TypeExtensions
+    path: ''
+    startLine: 1330
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static class TypeExtensions
+    content.vb: Public Module TypeExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.TypeExtensions.GetPrimitiveName(Type)
+  commentId: M:Atlas.TypeExtensions.GetPrimitiveName(Type)
+  id: GetPrimitiveName(Type)
+  isExtensionMethod: true
+  parent: Atlas.TypeExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPrimitiveName(Type)
+  nameWithType: TypeExtensions.GetPrimitiveName(Type)
+  fullName: Atlas.TypeExtensions.GetPrimitiveName(Type)
+  type: Method
+  source:
+    id: GetPrimitiveName
+    path: ''
+    startLine: 1332
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static string GetPrimitiveName(this Type type)
+    parameters:
+    - id: type
+      type: Type
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetPrimitiveName(type As Type) As String
+  overload: Atlas.TypeExtensions.GetPrimitiveName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.TypeExtensions.GetPrimitiveName*
+  commentId: Overload:Atlas.TypeExtensions.GetPrimitiveName
+  name: GetPrimitiveName
+  nameWithType: TypeExtensions.GetPrimitiveName
+  fullName: Atlas.TypeExtensions.GetPrimitiveName
+- uid: Type
+  commentId: '!:Type'
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

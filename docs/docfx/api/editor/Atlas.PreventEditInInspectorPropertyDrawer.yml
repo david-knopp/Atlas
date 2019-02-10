@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PreventEditInInspectorPropertyDrawer
+  commentId: T:Atlas.PreventEditInInspectorPropertyDrawer
+  id: PreventEditInInspectorPropertyDrawer
+  parent: Atlas
+  children:
+  - Atlas.PreventEditInInspectorPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: PreventEditInInspectorPropertyDrawer
+  nameWithType: PreventEditInInspectorPropertyDrawer
+  fullName: Atlas.PreventEditInInspectorPropertyDrawer
+  type: Class
+  source:
+    id: PreventEditInInspectorPropertyDrawer
+    path: ''
+    startLine: 1087
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: 'public sealed class PreventEditInInspectorPropertyDrawer : PropertyDrawer'
+    content.vb: >-
+      Public NotInheritable Class PreventEditInInspectorPropertyDrawer
+          Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.PreventEditInInspectorPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  commentId: M:Atlas.PreventEditInInspectorPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  id: OnGUI(Rect,SerializedProperty,GUIContent)
+  parent: Atlas.PreventEditInInspectorPropertyDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: PreventEditInInspectorPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: Atlas.PreventEditInInspectorPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  type: Method
+  source:
+    id: OnGUI
+    path: ''
+    startLine: 1090
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: Rect
+    - id: property
+      type: SerializedProperty
+    - id: label
+      type: GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, property As SerializedProperty, label As GUIContent)
+  overload: Atlas.PreventEditInInspectorPropertyDrawer.OnGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.PreventEditInInspectorPropertyDrawer.OnGUI*
+  commentId: Overload:Atlas.PreventEditInInspectorPropertyDrawer.OnGUI
+  name: OnGUI
+  nameWithType: PreventEditInInspectorPropertyDrawer.OnGUI
+  fullName: Atlas.PreventEditInInspectorPropertyDrawer.OnGUI
+- uid: Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: GUIContent

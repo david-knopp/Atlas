@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Effect
+  commentId: T:Atlas.Effect
+  id: Effect
+  parent: Atlas
+  children:
+  - Atlas.Effect.ActivationEvent
+  - Atlas.Effect.DestructionEvent
+  - Atlas.Effect.IsPlaying
+  - Atlas.Effect.Play
+  - Atlas.Effect.Stop
+  langs:
+  - csharp
+  - vb
+  name: Effect
+  nameWithType: Effect
+  fullName: Atlas.Effect
+  type: Class
+  source:
+    id: Effect
+    path: ''
+    startLine: 2051
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nManages activation and destruction of all effect emitters (<xref href=\"Atlas.EffectEmitterBase\" data-throw-if-not-resolved=\"false\"></xref>) that comprise a game effect.\nBundling all elements of an effect into one self-contained, reusable package can be make working with effects that\ncontain various components easier, such as audio, particles, haptics, etc.\n"
+  example: []
+  syntax:
+    content: 'public sealed class Effect : MonoBehaviour'
+    content.vb: >-
+      Public NotInheritable Class Effect
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.Effect.ActivationEvent
+  commentId: P:Atlas.Effect.ActivationEvent
+  id: ActivationEvent
+  parent: Atlas.Effect
+  langs:
+  - csharp
+  - vb
+  name: ActivationEvent
+  nameWithType: Effect.ActivationEvent
+  fullName: Atlas.Effect.ActivationEvent
+  type: Property
+  source:
+    id: ActivationEvent
+    path: ''
+    startLine: 2089
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nWhen the effect will be activated\n"
+  example: []
+  syntax:
+    content: public Effect.ActivationEventType ActivationEvent { get; }
+    parameters: []
+    return:
+      type: Atlas.Effect.ActivationEventType
+    content.vb: Public ReadOnly Property ActivationEvent As Effect.ActivationEventType
+  overload: Atlas.Effect.ActivationEvent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.Effect.DestructionEvent
+  commentId: P:Atlas.Effect.DestructionEvent
+  id: DestructionEvent
+  parent: Atlas.Effect
+  langs:
+  - csharp
+  - vb
+  name: DestructionEvent
+  nameWithType: Effect.DestructionEvent
+  fullName: Atlas.Effect.DestructionEvent
+  type: Property
+  source:
+    id: DestructionEvent
+    path: ''
+    startLine: 2097
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nWhen the effect will be destroyed\n"
+  example: []
+  syntax:
+    content: public Effect.DestructionEventType DestructionEvent { get; }
+    parameters: []
+    return:
+      type: Atlas.Effect.DestructionEventType
+    content.vb: Public ReadOnly Property DestructionEvent As Effect.DestructionEventType
+  overload: Atlas.Effect.DestructionEvent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.Effect.IsPlaying
+  commentId: P:Atlas.Effect.IsPlaying
+  id: IsPlaying
+  parent: Atlas.Effect
+  langs:
+  - csharp
+  - vb
+  name: IsPlaying
+  nameWithType: Effect.IsPlaying
+  fullName: Atlas.Effect.IsPlaying
+  type: Property
+  source:
+    id: IsPlaying
+    path: ''
+    startLine: 2105
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nWhether or not the effect is currently playing\n"
+  example: []
+  syntax:
+    content: public bool IsPlaying { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPlaying As Boolean
+  overload: Atlas.Effect.IsPlaying*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.Effect.Play
+  commentId: M:Atlas.Effect.Play
+  id: Play
+  parent: Atlas.Effect
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: Effect.Play()
+  fullName: Atlas.Effect.Play()
+  type: Method
+  source:
+    id: Play
+    path: ''
+    startLine: 2114
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nBegins playing all child emitters\n"
+  example: []
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play
+  overload: Atlas.Effect.Play*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Effect.Stop
+  commentId: M:Atlas.Effect.Stop
+  id: Stop
+  parent: Atlas.Effect
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: Effect.Stop()
+  fullName: Atlas.Effect.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: ''
+    startLine: 2127
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nStops all child emitters\n"
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub Stop
+  overload: Atlas.Effect.Stop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas.EffectEmitterBase
+  commentId: T:Atlas.EffectEmitterBase
+  parent: Atlas
+  name: EffectEmitterBase
+  nameWithType: EffectEmitterBase
+  fullName: Atlas.EffectEmitterBase
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.Effect.ActivationEvent*
+  commentId: Overload:Atlas.Effect.ActivationEvent
+  name: ActivationEvent
+  nameWithType: Effect.ActivationEvent
+  fullName: Atlas.Effect.ActivationEvent
+- uid: Atlas.Effect.ActivationEventType
+  commentId: T:Atlas.Effect.ActivationEventType
+  parent: Atlas
+  name: Effect.ActivationEventType
+  nameWithType: Effect.ActivationEventType
+  fullName: Atlas.Effect.ActivationEventType
+- uid: Atlas.Effect.DestructionEvent*
+  commentId: Overload:Atlas.Effect.DestructionEvent
+  name: DestructionEvent
+  nameWithType: Effect.DestructionEvent
+  fullName: Atlas.Effect.DestructionEvent
+- uid: Atlas.Effect.DestructionEventType
+  commentId: T:Atlas.Effect.DestructionEventType
+  parent: Atlas
+  name: Effect.DestructionEventType
+  nameWithType: Effect.DestructionEventType
+  fullName: Atlas.Effect.DestructionEventType
+- uid: Atlas.Effect.IsPlaying*
+  commentId: Overload:Atlas.Effect.IsPlaying
+  name: IsPlaying
+  nameWithType: Effect.IsPlaying
+  fullName: Atlas.Effect.IsPlaying
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Atlas.Effect.Play*
+  commentId: Overload:Atlas.Effect.Play
+  name: Play
+  nameWithType: Effect.Play
+  fullName: Atlas.Effect.Play
+- uid: Atlas.Effect.Stop*
+  commentId: Overload:Atlas.Effect.Stop
+  name: Stop
+  nameWithType: Effect.Stop
+  fullName: Atlas.Effect.Stop

@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ScenePathAttribute
+  commentId: T:Atlas.ScenePathAttribute
+  id: ScenePathAttribute
+  parent: Atlas
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ScenePathAttribute
+  nameWithType: ScenePathAttribute
+  fullName: Atlas.ScenePathAttribute
+  type: Class
+  source:
+    id: ScenePathAttribute
+    path: ''
+    startLine: 4878
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nMarks the target string field as a scene path, and automatically provides a \ndropdown in the inspector listing all scenes contained within the project. \nIf the scene has not yet been added to build settings, an inspector warning is\ndisplayed with the ability to add it immediately\n"
+  example: []
+  syntax:
+    content: 'public sealed class ScenePathAttribute : PropertyAttribute'
+    content.vb: >-
+      Public NotInheritable Class ScenePathAttribute
+          Inherits PropertyAttribute
+  seealso:
+  - linkId: Atlas.PathAttribute
+    commentId: T:Atlas.PathAttribute
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+references:
+- uid: Atlas.PathAttribute
+  commentId: T:Atlas.PathAttribute
+  name: PathAttribute
+  nameWithType: PathAttribute
+  fullName: Atlas.PathAttribute
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

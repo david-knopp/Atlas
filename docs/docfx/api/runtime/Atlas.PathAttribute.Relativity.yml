@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PathAttribute.Relativity
+  commentId: T:Atlas.PathAttribute.Relativity
+  id: PathAttribute.Relativity
+  parent: Atlas
+  children:
+  - Atlas.PathAttribute.Relativity.Absolute
+  - Atlas.PathAttribute.Relativity.AssetsRelative
+  - Atlas.PathAttribute.Relativity.ProjectRelative
+  langs:
+  - csharp
+  - vb
+  name: PathAttribute.Relativity
+  nameWithType: PathAttribute.Relativity
+  fullName: Atlas.PathAttribute.Relativity
+  type: Enum
+  source:
+    id: Relativity
+    path: ''
+    startLine: 4768
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nFolder path relativity type\n"
+  example: []
+  syntax:
+    content: public enum Relativity
+    content.vb: Public Enum Relativity
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.PathAttribute.Relativity.Absolute
+  commentId: F:Atlas.PathAttribute.Relativity.Absolute
+  id: Absolute
+  parent: Atlas.PathAttribute.Relativity
+  langs:
+  - csharp
+  - vb
+  name: Absolute
+  nameWithType: PathAttribute.Relativity.Absolute
+  fullName: Atlas.PathAttribute.Relativity.Absolute
+  type: Field
+  source:
+    id: Absolute
+    path: ''
+    startLine: 4773
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe full path e.g. &quot;C:/Users/MichaelScott/Documents/&quot;\n"
+  example: []
+  syntax:
+    content: Absolute = 0
+    return:
+      type: Atlas.PathAttribute.Relativity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.PathAttribute.Relativity.AssetsRelative
+  commentId: F:Atlas.PathAttribute.Relativity.AssetsRelative
+  id: AssetsRelative
+  parent: Atlas.PathAttribute.Relativity
+  langs:
+  - csharp
+  - vb
+  name: AssetsRelative
+  nameWithType: PathAttribute.Relativity.AssetsRelative
+  fullName: Atlas.PathAttribute.Relativity.AssetsRelative
+  type: Field
+  source:
+    id: AssetsRelative
+    path: ''
+    startLine: 4778
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nUses a path that is relative to the project&apos;s Assets folder e.g. &quot;Scripts/Runtime/&quot;\n"
+  example: []
+  syntax:
+    content: AssetsRelative = 1
+    return:
+      type: Atlas.PathAttribute.Relativity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.PathAttribute.Relativity.ProjectRelative
+  commentId: F:Atlas.PathAttribute.Relativity.ProjectRelative
+  id: ProjectRelative
+  parent: Atlas.PathAttribute.Relativity
+  langs:
+  - csharp
+  - vb
+  name: ProjectRelative
+  nameWithType: PathAttribute.Relativity.ProjectRelative
+  fullName: Atlas.PathAttribute.Relativity.ProjectRelative
+  type: Field
+  source:
+    id: ProjectRelative
+    path: ''
+    startLine: 4783
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nUses a path that is relative to the project&apos;s root folder e.g. &quot;Assets/Scripts/Runtime/&quot;\n"
+  example: []
+  syntax:
+    content: ProjectRelative = 2
+    return:
+      type: Atlas.PathAttribute.Relativity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.PathAttribute.Relativity
+  commentId: T:Atlas.PathAttribute.Relativity
+  parent: Atlas
+  name: PathAttribute.Relativity
+  nameWithType: PathAttribute.Relativity
+  fullName: Atlas.PathAttribute.Relativity

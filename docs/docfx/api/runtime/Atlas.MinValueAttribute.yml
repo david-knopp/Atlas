@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.MinValueAttribute
+  commentId: T:Atlas.MinValueAttribute
+  id: MinValueAttribute
+  parent: Atlas
+  children:
+  - Atlas.MinValueAttribute.#ctor(System.Single)
+  - Atlas.MinValueAttribute.MinValue
+  langs:
+  - csharp
+  - vb
+  name: MinValueAttribute
+  nameWithType: MinValueAttribute
+  fullName: Atlas.MinValueAttribute
+  type: Class
+  source:
+    id: MinValueAttribute
+    path: ''
+    startLine: 4734
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nSets a minimum value for the target field. \nAutomatically prevents assigning a value less than the specified \nvalue when editing the field in the inspector window\n"
+  example: []
+  syntax:
+    content: 'public sealed class MinValueAttribute : PropertyAttribute'
+    content.vb: >-
+      Public NotInheritable Class MinValueAttribute
+          Inherits PropertyAttribute
+  seealso:
+  - linkId: Atlas.MaxValueAttribute
+    commentId: T:Atlas.MaxValueAttribute
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.MinValueAttribute.#ctor(System.Single)
+  commentId: M:Atlas.MinValueAttribute.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: Atlas.MinValueAttribute
+  langs:
+  - csharp
+  - vb
+  name: MinValueAttribute(Single)
+  nameWithType: MinValueAttribute.MinValueAttribute(Single)
+  fullName: Atlas.MinValueAttribute.MinValueAttribute(System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4741
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public MinValueAttribute(float minValue)
+    parameters:
+    - id: minValue
+      type: System.Single
+      description: The minimum allowable value the field can have
+    content.vb: Public Sub New(minValue As Single)
+  overload: Atlas.MinValueAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.MinValueAttribute.MinValue
+  commentId: P:Atlas.MinValueAttribute.MinValue
+  id: MinValue
+  parent: Atlas.MinValueAttribute
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: MinValueAttribute.MinValue
+  fullName: Atlas.MinValueAttribute.MinValue
+  type: Property
+  source:
+    id: MinValue
+    path: ''
+    startLine: 4749
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe minimum allowable value the field can have\n"
+  example: []
+  syntax:
+    content: public float MinValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MinValue As Single
+  overload: Atlas.MinValueAttribute.MinValue*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Atlas.MaxValueAttribute
+  commentId: T:Atlas.MaxValueAttribute
+  name: MaxValueAttribute
+  nameWithType: MaxValueAttribute
+  fullName: Atlas.MaxValueAttribute
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.MinValueAttribute.#ctor*
+  commentId: Overload:Atlas.MinValueAttribute.#ctor
+  name: MinValueAttribute
+  nameWithType: MinValueAttribute.MinValueAttribute
+  fullName: Atlas.MinValueAttribute.MinValueAttribute
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.MinValueAttribute.MinValue*
+  commentId: Overload:Atlas.MinValueAttribute.MinValue
+  name: MinValue
+  nameWithType: MinValueAttribute.MinValue
+  fullName: Atlas.MinValueAttribute.MinValue

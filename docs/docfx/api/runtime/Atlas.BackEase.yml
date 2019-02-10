@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.BackEase
+  commentId: T:Atlas.BackEase
+  id: BackEase
+  parent: Atlas
+  children:
+  - Atlas.BackEase.In(System.Single,System.Single)
+  - Atlas.BackEase.InOut(System.Single,System.Single)
+  - Atlas.BackEase.Out(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: BackEase
+  nameWithType: BackEase
+  fullName: Atlas.BackEase
+  type: Class
+  source:
+    id: BackEase
+    path: ''
+    startLine: 3362
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static class BackEase
+    content.vb: Public Module BackEase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.BackEase.In(System.Single,System.Single)
+  commentId: M:Atlas.BackEase.In(System.Single,System.Single)
+  id: In(System.Single,System.Single)
+  parent: Atlas.BackEase
+  langs:
+  - csharp
+  - vb
+  name: In(Single, Single)
+  nameWithType: BackEase.In(Single, Single)
+  fullName: Atlas.BackEase.In(System.Single, System.Single)
+  type: Method
+  source:
+    id: In
+    path: ''
+    startLine: 3364
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float In(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function In(curTime As Single, duration As Single) As Single
+  overload: Atlas.BackEase.In*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BackEase.Out(System.Single,System.Single)
+  commentId: M:Atlas.BackEase.Out(System.Single,System.Single)
+  id: Out(System.Single,System.Single)
+  parent: Atlas.BackEase
+  langs:
+  - csharp
+  - vb
+  name: Out(Single, Single)
+  nameWithType: BackEase.Out(Single, Single)
+  fullName: Atlas.BackEase.Out(System.Single, System.Single)
+  type: Method
+  source:
+    id: Out
+    path: ''
+    startLine: 3371
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float Out(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Out(curTime As Single, duration As Single) As Single
+  overload: Atlas.BackEase.Out*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BackEase.InOut(System.Single,System.Single)
+  commentId: M:Atlas.BackEase.InOut(System.Single,System.Single)
+  id: InOut(System.Single,System.Single)
+  parent: Atlas.BackEase
+  langs:
+  - csharp
+  - vb
+  name: InOut(Single, Single)
+  nameWithType: BackEase.InOut(Single, Single)
+  fullName: Atlas.BackEase.InOut(System.Single, System.Single)
+  type: Method
+  source:
+    id: InOut
+    path: ''
+    startLine: 3378
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float InOut(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function InOut(curTime As Single, duration As Single) As Single
+  overload: Atlas.BackEase.InOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.BackEase.In*
+  commentId: Overload:Atlas.BackEase.In
+  name: In
+  nameWithType: BackEase.In
+  fullName: Atlas.BackEase.In
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.BackEase.Out*
+  commentId: Overload:Atlas.BackEase.Out
+  name: Out
+  nameWithType: BackEase.Out
+  fullName: Atlas.BackEase.Out
+- uid: Atlas.BackEase.InOut*
+  commentId: Overload:Atlas.BackEase.InOut
+  name: InOut
+  nameWithType: BackEase.InOut
+  fullName: Atlas.BackEase.InOut

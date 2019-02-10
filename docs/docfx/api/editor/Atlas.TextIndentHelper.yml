@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.TextIndentHelper
+  commentId: T:Atlas.TextIndentHelper
+  id: TextIndentHelper
+  parent: Atlas
+  children:
+  - Atlas.TextIndentHelper.#ctor(System.Char,System.Int32)
+  - Atlas.TextIndentHelper.ApplyIndent(System.String)
+  - Atlas.TextIndentHelper.CharactersPerIndent
+  - Atlas.TextIndentHelper.Indent
+  - Atlas.TextIndentHelper.IndentLevel
+  - Atlas.TextIndentHelper.StandardSpacesHelper
+  - Atlas.TextIndentHelper.StandardTabHelper
+  langs:
+  - csharp
+  - vb
+  name: TextIndentHelper
+  nameWithType: TextIndentHelper
+  fullName: Atlas.TextIndentHelper
+  type: Struct
+  source:
+    id: TextIndentHelper
+    path: ''
+    startLine: 806
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public struct TextIndentHelper
+    content.vb: Public Structure TextIndentHelper
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Atlas.TextIndentHelper.StandardTabHelper
+  commentId: F:Atlas.TextIndentHelper.StandardTabHelper
+  id: StandardTabHelper
+  parent: Atlas.TextIndentHelper
+  langs:
+  - csharp
+  - vb
+  name: StandardTabHelper
+  nameWithType: TextIndentHelper.StandardTabHelper
+  fullName: Atlas.TextIndentHelper.StandardTabHelper
+  type: Field
+  source:
+    id: StandardTabHelper
+    path: ''
+    startLine: 808
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static readonly TextIndentHelper StandardTabHelper
+    return:
+      type: Atlas.TextIndentHelper
+    content.vb: Public Shared ReadOnly StandardTabHelper As TextIndentHelper
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Atlas.TextIndentHelper.StandardSpacesHelper
+  commentId: F:Atlas.TextIndentHelper.StandardSpacesHelper
+  id: StandardSpacesHelper
+  parent: Atlas.TextIndentHelper
+  langs:
+  - csharp
+  - vb
+  name: StandardSpacesHelper
+  nameWithType: TextIndentHelper.StandardSpacesHelper
+  fullName: Atlas.TextIndentHelper.StandardSpacesHelper
+  type: Field
+  source:
+    id: StandardSpacesHelper
+    path: ''
+    startLine: 809
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static readonly TextIndentHelper StandardSpacesHelper
+    return:
+      type: Atlas.TextIndentHelper
+    content.vb: Public Shared ReadOnly StandardSpacesHelper As TextIndentHelper
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Atlas.TextIndentHelper.#ctor(System.Char,System.Int32)
+  commentId: M:Atlas.TextIndentHelper.#ctor(System.Char,System.Int32)
+  id: '#ctor(System.Char,System.Int32)'
+  parent: Atlas.TextIndentHelper
+  langs:
+  - csharp
+  - vb
+  name: TextIndentHelper(Char, Int32)
+  nameWithType: TextIndentHelper.TextIndentHelper(Char, Int32)
+  fullName: Atlas.TextIndentHelper.TextIndentHelper(System.Char, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 811
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public TextIndentHelper(char indentCharacter = ' ', int charactersPerIndent = 4)
+    parameters:
+    - id: indentCharacter
+      type: System.Char
+    - id: charactersPerIndent
+      type: System.Int32
+    content.vb: Public Sub New(indentCharacter As Char = " "c, charactersPerIndent As Integer = 4)
+  overload: Atlas.TextIndentHelper.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.TextIndentHelper.Indent
+  commentId: P:Atlas.TextIndentHelper.Indent
+  id: Indent
+  parent: Atlas.TextIndentHelper
+  langs:
+  - csharp
+  - vb
+  name: Indent
+  nameWithType: TextIndentHelper.Indent
+  fullName: Atlas.TextIndentHelper.Indent
+  type: Property
+  source:
+    id: Indent
+    path: ''
+    startLine: 822
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public string Indent { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Indent As String
+  overload: Atlas.TextIndentHelper.Indent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.TextIndentHelper.IndentLevel
+  commentId: P:Atlas.TextIndentHelper.IndentLevel
+  id: IndentLevel
+  parent: Atlas.TextIndentHelper
+  langs:
+  - csharp
+  - vb
+  name: IndentLevel
+  nameWithType: TextIndentHelper.IndentLevel
+  fullName: Atlas.TextIndentHelper.IndentLevel
+  type: Property
+  source:
+    id: IndentLevel
+    path: ''
+    startLine: 828
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public int IndentLevel { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property IndentLevel As Integer
+  overload: Atlas.TextIndentHelper.IndentLevel*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Atlas.TextIndentHelper.CharactersPerIndent
+  commentId: P:Atlas.TextIndentHelper.CharactersPerIndent
+  id: CharactersPerIndent
+  parent: Atlas.TextIndentHelper
+  langs:
+  - csharp
+  - vb
+  name: CharactersPerIndent
+  nameWithType: TextIndentHelper.CharactersPerIndent
+  fullName: Atlas.TextIndentHelper.CharactersPerIndent
+  type: Property
+  source:
+    id: CharactersPerIndent
+    path: ''
+    startLine: 839
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public int CharactersPerIndent { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CharactersPerIndent As Integer
+  overload: Atlas.TextIndentHelper.CharactersPerIndent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Atlas.TextIndentHelper.ApplyIndent(System.String)
+  commentId: M:Atlas.TextIndentHelper.ApplyIndent(System.String)
+  id: ApplyIndent(System.String)
+  parent: Atlas.TextIndentHelper
+  langs:
+  - csharp
+  - vb
+  name: ApplyIndent(String)
+  nameWithType: TextIndentHelper.ApplyIndent(String)
+  fullName: Atlas.TextIndentHelper.ApplyIndent(System.String)
+  type: Method
+  source:
+    id: ApplyIndent
+    path: ''
+    startLine: 850
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public string ApplyIndent(string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function ApplyIndent(text As String) As String
+  overload: Atlas.TextIndentHelper.ApplyIndent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.TextIndentHelper
+  commentId: T:Atlas.TextIndentHelper
+  parent: Atlas
+  name: TextIndentHelper
+  nameWithType: TextIndentHelper
+  fullName: Atlas.TextIndentHelper
+- uid: Atlas.TextIndentHelper.#ctor*
+  commentId: Overload:Atlas.TextIndentHelper.#ctor
+  name: TextIndentHelper
+  nameWithType: TextIndentHelper.TextIndentHelper
+  fullName: Atlas.TextIndentHelper.TextIndentHelper
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.TextIndentHelper.Indent*
+  commentId: Overload:Atlas.TextIndentHelper.Indent
+  name: Indent
+  nameWithType: TextIndentHelper.Indent
+  fullName: Atlas.TextIndentHelper.Indent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Atlas.TextIndentHelper.IndentLevel*
+  commentId: Overload:Atlas.TextIndentHelper.IndentLevel
+  name: IndentLevel
+  nameWithType: TextIndentHelper.IndentLevel
+  fullName: Atlas.TextIndentHelper.IndentLevel
+- uid: Atlas.TextIndentHelper.CharactersPerIndent*
+  commentId: Overload:Atlas.TextIndentHelper.CharactersPerIndent
+  name: CharactersPerIndent
+  nameWithType: TextIndentHelper.CharactersPerIndent
+  fullName: Atlas.TextIndentHelper.CharactersPerIndent
+- uid: Atlas.TextIndentHelper.ApplyIndent*
+  commentId: Overload:Atlas.TextIndentHelper.ApplyIndent
+  name: ApplyIndent
+  nameWithType: TextIndentHelper.ApplyIndent
+  fullName: Atlas.TextIndentHelper.ApplyIndent

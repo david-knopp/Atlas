@@ -1,0 +1,489 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Range
+  commentId: T:Atlas.Range
+  id: Range
+  parent: Atlas
+  children:
+  - Atlas.Range.Clamp(System.Single)
+  - Atlas.Range.Contains(Atlas.Range)
+  - Atlas.Range.Contains(System.Single)
+  - Atlas.Range.GetLerpedValue(System.Single)
+  - Atlas.Range.GetNormalizedValue(System.Single)
+  - Atlas.Range.GetRandomValue
+  - Atlas.Range.IntersectionWith(Atlas.Range)
+  - Atlas.Range.Intersects(Atlas.Range)
+  - Atlas.Range.m_maxValue
+  - Atlas.Range.m_minValue
+  - Atlas.Range.UnionWith(Atlas.Range)
+  langs:
+  - csharp
+  - vb
+  name: Range
+  nameWithType: Range
+  fullName: Atlas.Range
+  type: Struct
+  source:
+    id: Range
+    path: ''
+    startLine: 3216
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRepresents a closed mathematical interval of float values\n"
+  example: []
+  syntax:
+    content: public struct Range
+    content.vb: Public Structure Range
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Atlas.Range.m_minValue
+  commentId: F:Atlas.Range.m_minValue
+  id: m_minValue
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: m_minValue
+  nameWithType: Range.m_minValue
+  fullName: Atlas.Range.m_minValue
+  type: Field
+  source:
+    id: m_minValue
+    path: ''
+    startLine: 3222
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe minimum value of the range (inclusive)\n"
+  example: []
+  syntax:
+    content: public float m_minValue
+    return:
+      type: System.Single
+    content.vb: Public m_minValue As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.m_maxValue
+  commentId: F:Atlas.Range.m_maxValue
+  id: m_maxValue
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: m_maxValue
+  nameWithType: Range.m_maxValue
+  fullName: Atlas.Range.m_maxValue
+  type: Field
+  source:
+    id: m_maxValue
+    path: ''
+    startLine: 3227
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe maximum value of the range (inclusive)\n"
+  example: []
+  syntax:
+    content: public float m_maxValue
+    return:
+      type: System.Single
+    content.vb: Public m_maxValue As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.GetRandomValue
+  commentId: M:Atlas.Range.GetRandomValue
+  id: GetRandomValue
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: GetRandomValue()
+  nameWithType: Range.GetRandomValue()
+  fullName: Atlas.Range.GetRandomValue()
+  type: Method
+  source:
+    id: GetRandomValue
+    path: ''
+    startLine: 3233
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nReturns a random number between <xref href=\"Atlas.Range.m_minValue\" data-throw-if-not-resolved=\"false\"></xref> (inclusive) and <xref href=\"Atlas.Range.m_maxValue\" data-throw-if-not-resolved=\"false\"></xref> (inclusive)\n"
+  example: []
+  syntax:
+    content: public float GetRandomValue()
+    return:
+      type: System.Single
+      description: A random value within the range
+    content.vb: Public Function GetRandomValue As Single
+  overload: Atlas.Range.GetRandomValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.GetLerpedValue(System.Single)
+  commentId: M:Atlas.Range.GetLerpedValue(System.Single)
+  id: GetLerpedValue(System.Single)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: GetLerpedValue(Single)
+  nameWithType: Range.GetLerpedValue(Single)
+  fullName: Atlas.Range.GetLerpedValue(System.Single)
+  type: Method
+  source:
+    id: GetLerpedValue
+    path: ''
+    startLine: 3245
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public float GetLerpedValue(float t)
+    parameters:
+    - id: t
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function GetLerpedValue(t As Single) As Single
+  overload: Atlas.Range.GetLerpedValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.GetNormalizedValue(System.Single)
+  commentId: M:Atlas.Range.GetNormalizedValue(System.Single)
+  id: GetNormalizedValue(System.Single)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: GetNormalizedValue(Single)
+  nameWithType: Range.GetNormalizedValue(Single)
+  fullName: Atlas.Range.GetNormalizedValue(System.Single)
+  type: Method
+  source:
+    id: GetNormalizedValue
+    path: ''
+    startLine: 3256
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCalculates a value representing the normalized position of the provided <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> \nwithin the range, clamped to [0, 1]\n"
+  example: []
+  syntax:
+    content: public float GetNormalizedValue(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to normalize
+    return:
+      type: System.Single
+      description: The normalized value
+    content.vb: Public Function GetNormalizedValue(value As Single) As Single
+  overload: Atlas.Range.GetNormalizedValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.Contains(System.Single)
+  commentId: M:Atlas.Range.Contains(System.Single)
+  id: Contains(System.Single)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: Contains(Single)
+  nameWithType: Range.Contains(Single)
+  fullName: Atlas.Range.Contains(System.Single)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 3279
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDetermines whether or not the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is within this numerical range (inclusive)\n"
+  example: []
+  syntax:
+    content: public bool Contains(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to determine
+    return:
+      type: System.Boolean
+      description: Whether or not the value is within the range
+    content.vb: Public Function Contains(value As Single) As Boolean
+  overload: Atlas.Range.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.Contains(Atlas.Range)
+  commentId: M:Atlas.Range.Contains(Atlas.Range)
+  id: Contains(Atlas.Range)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: Contains(Range)
+  nameWithType: Range.Contains(Range)
+  fullName: Atlas.Range.Contains(Atlas.Range)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 3290
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDetermines whether or not the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code> value is contained within this\nnumerical range (inclusive)\n"
+  example: []
+  syntax:
+    content: public bool Contains(Range range)
+    parameters:
+    - id: range
+      type: Atlas.Range
+      description: The range value to determine
+    return:
+      type: System.Boolean
+      description: Whether or not the range value is contained
+    content.vb: Public Function Contains(range As Range) As Boolean
+  overload: Atlas.Range.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.Intersects(Atlas.Range)
+  commentId: M:Atlas.Range.Intersects(Atlas.Range)
+  id: Intersects(Atlas.Range)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Range)
+  nameWithType: Range.Intersects(Range)
+  fullName: Atlas.Range.Intersects(Atlas.Range)
+  type: Method
+  source:
+    id: Intersects
+    path: ''
+    startLine: 3301
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDetermines whether or not the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code> value overlaps this range\n"
+  example: []
+  syntax:
+    content: public bool Intersects(Range range)
+    parameters:
+    - id: range
+      type: Atlas.Range
+      description: The range value to test
+    return:
+      type: System.Boolean
+      description: Whether or not the ranges overlap eachother
+    content.vb: Public Function Intersects(range As Range) As Boolean
+  overload: Atlas.Range.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.Clamp(System.Single)
+  commentId: M:Atlas.Range.Clamp(System.Single)
+  id: Clamp(System.Single)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: Clamp(Single)
+  nameWithType: Range.Clamp(Single)
+  fullName: Atlas.Range.Clamp(System.Single)
+  type: Method
+  source:
+    id: Clamp
+    path: ''
+    startLine: 3313
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nClamps the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> between the range\n"
+  example: []
+  syntax:
+    content: public float Clamp(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value to clamp
+    return:
+      type: System.Single
+      description: >-
+        If the value is within the range, the value is returned unchanged. Otherwise, a value clamped
+
+        to the range limits is returned.
+    content.vb: Public Function Clamp(value As Single) As Single
+  overload: Atlas.Range.Clamp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.UnionWith(Atlas.Range)
+  commentId: M:Atlas.Range.UnionWith(Atlas.Range)
+  id: UnionWith(Atlas.Range)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: UnionWith(Range)
+  nameWithType: Range.UnionWith(Range)
+  fullName: Atlas.Range.UnionWith(Atlas.Range)
+  type: Method
+  source:
+    id: UnionWith
+    path: ''
+    startLine: 3324
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCombines the range with the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code> into a mathematical union, creating\na range that spans both ranges\n"
+  example: []
+  syntax:
+    content: public Range UnionWith(Range range)
+    parameters:
+    - id: range
+      type: Atlas.Range
+      description: The range to union with
+    return:
+      type: Atlas.Range
+      description: The combined range
+    content.vb: Public Function UnionWith(range As Range) As Range
+  overload: Atlas.Range.UnionWith*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Range.IntersectionWith(Atlas.Range)
+  commentId: M:Atlas.Range.IntersectionWith(Atlas.Range)
+  id: IntersectionWith(Atlas.Range)
+  parent: Atlas.Range
+  langs:
+  - csharp
+  - vb
+  name: IntersectionWith(Range)
+  nameWithType: Range.IntersectionWith(Range)
+  fullName: Atlas.Range.IntersectionWith(Atlas.Range)
+  type: Method
+  source:
+    id: IntersectionWith
+    path: ''
+    startLine: 3339
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCalculates the range of values where this range overlaps with the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code>.\nIf the ranges don&apos;t overlap, an invalid range is returned.\n"
+  example: []
+  syntax:
+    content: public Range IntersectionWith(Range range)
+    parameters:
+    - id: range
+      type: Atlas.Range
+      description: The range to intersect with
+    return:
+      type: Atlas.Range
+      description: The intersecting range
+    content.vb: Public Function IntersectionWith(range As Range) As Range
+  overload: Atlas.Range.IntersectionWith*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.Range.m_minValue
+  commentId: F:Atlas.Range.m_minValue
+  isExternal: true
+- uid: Atlas.Range.m_maxValue
+  commentId: F:Atlas.Range.m_maxValue
+  isExternal: true
+- uid: Atlas.Range.GetRandomValue*
+  commentId: Overload:Atlas.Range.GetRandomValue
+  name: GetRandomValue
+  nameWithType: Range.GetRandomValue
+  fullName: Atlas.Range.GetRandomValue
+- uid: Atlas.Range.GetLerpedValue*
+  commentId: Overload:Atlas.Range.GetLerpedValue
+  name: GetLerpedValue
+  nameWithType: Range.GetLerpedValue
+  fullName: Atlas.Range.GetLerpedValue
+- uid: Atlas.Range.GetNormalizedValue*
+  commentId: Overload:Atlas.Range.GetNormalizedValue
+  name: GetNormalizedValue
+  nameWithType: Range.GetNormalizedValue
+  fullName: Atlas.Range.GetNormalizedValue
+- uid: Atlas.Range.Contains*
+  commentId: Overload:Atlas.Range.Contains
+  name: Contains
+  nameWithType: Range.Contains
+  fullName: Atlas.Range.Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Atlas.Range
+  commentId: T:Atlas.Range
+  parent: Atlas
+  name: Range
+  nameWithType: Range
+  fullName: Atlas.Range
+- uid: Atlas.Range.Intersects*
+  commentId: Overload:Atlas.Range.Intersects
+  name: Intersects
+  nameWithType: Range.Intersects
+  fullName: Atlas.Range.Intersects
+- uid: Atlas.Range.Clamp*
+  commentId: Overload:Atlas.Range.Clamp
+  name: Clamp
+  nameWithType: Range.Clamp
+  fullName: Atlas.Range.Clamp
+- uid: Atlas.Range.UnionWith*
+  commentId: Overload:Atlas.Range.UnionWith
+  name: UnionWith
+  nameWithType: Range.UnionWith
+  fullName: Atlas.Range.UnionWith
+- uid: Atlas.Range.IntersectionWith*
+  commentId: Overload:Atlas.Range.IntersectionWith
+  name: IntersectionWith
+  nameWithType: Range.IntersectionWith
+  fullName: Atlas.Range.IntersectionWith

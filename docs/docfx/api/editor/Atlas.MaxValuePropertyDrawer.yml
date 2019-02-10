@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.MaxValuePropertyDrawer
+  commentId: T:Atlas.MaxValuePropertyDrawer
+  id: MaxValuePropertyDrawer
+  parent: Atlas
+  children:
+  - Atlas.MaxValuePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: MaxValuePropertyDrawer
+  nameWithType: MaxValuePropertyDrawer
+  fullName: Atlas.MaxValuePropertyDrawer
+  type: Class
+  source:
+    id: MaxValuePropertyDrawer
+    path: ''
+    startLine: 950
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: 'public sealed class MaxValuePropertyDrawer : PropertyDrawer'
+    content.vb: >-
+      Public NotInheritable Class MaxValuePropertyDrawer
+          Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.MaxValuePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  commentId: M:Atlas.MaxValuePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  id: OnGUI(Rect,SerializedProperty,GUIContent)
+  parent: Atlas.MaxValuePropertyDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: MaxValuePropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: Atlas.MaxValuePropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  type: Method
+  source:
+    id: OnGUI
+    path: ''
+    startLine: 953
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: Rect
+    - id: property
+      type: SerializedProperty
+    - id: label
+      type: GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, property As SerializedProperty, label As GUIContent)
+  overload: Atlas.MaxValuePropertyDrawer.OnGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.MaxValuePropertyDrawer.OnGUI*
+  commentId: Overload:Atlas.MaxValuePropertyDrawer.OnGUI
+  name: OnGUI
+  nameWithType: MaxValuePropertyDrawer.OnGUI
+  fullName: Atlas.MaxValuePropertyDrawer.OnGUI
+- uid: Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: GUIContent

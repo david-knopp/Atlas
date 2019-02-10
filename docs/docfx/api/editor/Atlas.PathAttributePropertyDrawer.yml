@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PathAttributePropertyDrawer
+  commentId: T:Atlas.PathAttributePropertyDrawer
+  id: PathAttributePropertyDrawer
+  parent: Atlas
+  children:
+  - Atlas.PathAttributePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: PathAttributePropertyDrawer
+  nameWithType: PathAttributePropertyDrawer
+  fullName: Atlas.PathAttributePropertyDrawer
+  type: Class
+  source:
+    id: PathAttributePropertyDrawer
+    path: ''
+    startLine: 1018
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: 'public sealed class PathAttributePropertyDrawer : PropertyDrawer'
+    content.vb: >-
+      Public NotInheritable Class PathAttributePropertyDrawer
+          Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.PathAttributePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  commentId: M:Atlas.PathAttributePropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  id: OnGUI(Rect,SerializedProperty,GUIContent)
+  parent: Atlas.PathAttributePropertyDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: PathAttributePropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: Atlas.PathAttributePropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  type: Method
+  source:
+    id: OnGUI
+    path: ''
+    startLine: 1021
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: Rect
+    - id: property
+      type: SerializedProperty
+    - id: label
+      type: GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, property As SerializedProperty, label As GUIContent)
+  overload: Atlas.PathAttributePropertyDrawer.OnGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.PathAttributePropertyDrawer.OnGUI*
+  commentId: Overload:Atlas.PathAttributePropertyDrawer.OnGUI
+  name: OnGUI
+  nameWithType: PathAttributePropertyDrawer.OnGUI
+  fullName: Atlas.PathAttributePropertyDrawer.OnGUI
+- uid: Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: GUIContent

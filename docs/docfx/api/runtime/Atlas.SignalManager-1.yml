@@ -1,0 +1,1304 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.SignalManager`1
+  commentId: T:Atlas.SignalManager`1
+  id: SignalManager`1
+  parent: Atlas
+  children:
+  - Atlas.SignalManager`1.#ctor
+  - Atlas.SignalManager`1.AddListener(`0,Action)
+  - Atlas.SignalManager`1.AddListener``1(`0,Action{``0})
+  - Atlas.SignalManager`1.AddListener``2(`0,Action{``0,``1})
+  - Atlas.SignalManager`1.AddListener``3(`0,Action{``0,``1,``2})
+  - Atlas.SignalManager`1.AddListener``4(`0,Action{``0,``1,``2,``3})
+  - Atlas.SignalManager`1.Dispatch(`0)
+  - Atlas.SignalManager`1.Dispatch``1(`0,``0)
+  - Atlas.SignalManager`1.Dispatch``2(`0,``0,``1)
+  - Atlas.SignalManager`1.Dispatch``3(`0,``0,``1,``2)
+  - Atlas.SignalManager`1.Dispatch``4(`0,``0,``1,``2,``3)
+  - Atlas.SignalManager`1.RemoveListener(`0,Action)
+  - Atlas.SignalManager`1.RemoveListener``1(`0,Action{``0})
+  - Atlas.SignalManager`1.RemoveListener``2(`0,Action{``0,``1})
+  - Atlas.SignalManager`1.RemoveListener``3(`0,Action{``0,``1,``2})
+  - Atlas.SignalManager`1.RemoveListener``4(`0,Action{``0,``1,``2,``3})
+  langs:
+  - csharp
+  - vb
+  name: SignalManager<TKey>
+  nameWithType: SignalManager<TKey>
+  fullName: Atlas.SignalManager<TKey>
+  type: Class
+  source:
+    id: SignalManager
+    path: ''
+    startLine: 2724
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nA simple signal container meant to make dispatching and managing signal listeners across\nvarious systems easier\n"
+  example: []
+  syntax:
+    content: public class SignalManager<TKey>
+    typeParameters:
+    - id: TKey
+      description: Type of key to use for identifying signals
+    content.vb: Public Class SignalManager(Of TKey)
+  inheritance:
+  - System.Object
+  nameWithType.vb: SignalManager(Of TKey)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Atlas.SignalManager(Of TKey)
+  name.vb: SignalManager(Of TKey)
+- uid: Atlas.SignalManager`1.#ctor
+  commentId: M:Atlas.SignalManager`1.#ctor
+  id: '#ctor'
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: SignalManager()
+  nameWithType: SignalManager<TKey>.SignalManager()
+  fullName: Atlas.SignalManager<TKey>.SignalManager()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2730
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public SignalManager()
+    content.vb: Public Sub New
+  overload: Atlas.SignalManager`1.#ctor*
+  nameWithType.vb: SignalManager(Of TKey).SignalManager()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).SignalManager()
+- uid: Atlas.SignalManager`1.AddListener(`0,Action)
+  commentId: M:Atlas.SignalManager`1.AddListener(`0,Action)
+  id: AddListener(`0,Action)
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: AddListener(TKey, Action)
+  nameWithType: SignalManager<TKey>.AddListener(TKey, Action)
+  fullName: Atlas.SignalManager<TKey>.AddListener(TKey, Action)
+  type: Method
+  source:
+    id: AddListener
+    path: ''
+    startLine: 2742
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds a zero-argument callback to the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void AddListener(TKey signalKey, Action listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action
+      description: Callback to register as a listener
+    content.vb: Public Sub AddListener(signalKey As TKey, listener As Action)
+  overload: Atlas.SignalManager`1.AddListener*
+  nameWithType.vb: SignalManager(Of TKey).AddListener(TKey, Action)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).AddListener(TKey, Action)
+- uid: Atlas.SignalManager`1.AddListener``1(`0,Action{``0})
+  commentId: M:Atlas.SignalManager`1.AddListener``1(`0,Action{``0})
+  id: AddListener``1(`0,Action{``0})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: AddListener<T>(TKey, Action<T>)
+  nameWithType: SignalManager<TKey>.AddListener<T>(TKey, Action<T>)
+  fullName: Atlas.SignalManager<TKey>.AddListener<T>(TKey, Action<T>)
+  type: Method
+  source:
+    id: AddListener
+    path: ''
+    startLine: 2777
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds a single-argument callback to the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void AddListener<T>(TKey signalKey, Action<T> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T}}
+      description: Callback to register as a listener
+    typeParameters:
+    - id: T
+      description: Type of the signal&apos;s argument
+    content.vb: Public Sub AddListener(Of T)(signalKey As TKey, listener As Action(Of T))
+  overload: Atlas.SignalManager`1.AddListener*
+  nameWithType.vb: SignalManager(Of TKey).AddListener(Of T)(TKey, Action(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).AddListener(Of T)(TKey, Action(Of T))
+  name.vb: AddListener(Of T)(TKey, Action(Of T))
+- uid: Atlas.SignalManager`1.AddListener``2(`0,Action{``0,``1})
+  commentId: M:Atlas.SignalManager`1.AddListener``2(`0,Action{``0,``1})
+  id: AddListener``2(`0,Action{``0,``1})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: AddListener<T1, T2>(TKey, Action<T1, T2>)
+  nameWithType: SignalManager<TKey>.AddListener<T1, T2>(TKey, Action<T1, T2>)
+  fullName: Atlas.SignalManager<TKey>.AddListener<T1, T2>(TKey, Action<T1, T2>)
+  type: Method
+  source:
+    id: AddListener
+    path: ''
+    startLine: 2813
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds a two-argument callback to the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void AddListener<T1, T2>(TKey signalKey, Action<T1, T2> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T1},{T2}}
+      description: Callback to register as a listener
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    content.vb: Public Sub AddListener(Of T1, T2)(signalKey As TKey, listener As Action(Of T1, T2))
+  overload: Atlas.SignalManager`1.AddListener*
+  nameWithType.vb: SignalManager(Of TKey).AddListener(Of T1, T2)(TKey, Action(Of T1, T2))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).AddListener(Of T1, T2)(TKey, Action(Of T1, T2))
+  name.vb: AddListener(Of T1, T2)(TKey, Action(Of T1, T2))
+- uid: Atlas.SignalManager`1.AddListener``3(`0,Action{``0,``1,``2})
+  commentId: M:Atlas.SignalManager`1.AddListener``3(`0,Action{``0,``1,``2})
+  id: AddListener``3(`0,Action{``0,``1,``2})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: AddListener<T1, T2, T3>(TKey, Action<T1, T2, T3>)
+  nameWithType: SignalManager<TKey>.AddListener<T1, T2, T3>(TKey, Action<T1, T2, T3>)
+  fullName: Atlas.SignalManager<TKey>.AddListener<T1, T2, T3>(TKey, Action<T1, T2, T3>)
+  type: Method
+  source:
+    id: AddListener
+    path: ''
+    startLine: 2850
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds a three-argument callback to the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void AddListener<T1, T2, T3>(TKey signalKey, Action<T1, T2, T3> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T1},{T2},{T3}}
+      description: Callback to register as a listener
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    - id: T3
+      description: Type of the signal&apos;s third argument
+    content.vb: Public Sub AddListener(Of T1, T2, T3)(signalKey As TKey, listener As Action(Of T1, T2, T3))
+  overload: Atlas.SignalManager`1.AddListener*
+  nameWithType.vb: SignalManager(Of TKey).AddListener(Of T1, T2, T3)(TKey, Action(Of T1, T2, T3))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).AddListener(Of T1, T2, T3)(TKey, Action(Of T1, T2, T3))
+  name.vb: AddListener(Of T1, T2, T3)(TKey, Action(Of T1, T2, T3))
+- uid: Atlas.SignalManager`1.AddListener``4(`0,Action{``0,``1,``2,``3})
+  commentId: M:Atlas.SignalManager`1.AddListener``4(`0,Action{``0,``1,``2,``3})
+  id: AddListener``4(`0,Action{``0,``1,``2,``3})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: AddListener<T1, T2, T3, T4>(TKey, Action<T1, T2, T3, T4>)
+  nameWithType: SignalManager<TKey>.AddListener<T1, T2, T3, T4>(TKey, Action<T1, T2, T3, T4>)
+  fullName: Atlas.SignalManager<TKey>.AddListener<T1, T2, T3, T4>(TKey, Action<T1, T2, T3, T4>)
+  type: Method
+  source:
+    id: AddListener
+    path: ''
+    startLine: 2888
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds a four-argument callback to the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void AddListener<T1, T2, T3, T4>(TKey signalKey, Action<T1, T2, T3, T4> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T1},{T2},{T3},{T4}}
+      description: Callback to register as a listener
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    - id: T3
+      description: Type of the signal&apos;s third argument
+    - id: T4
+      description: Type of the signal&apos;s fourth argument
+    content.vb: Public Sub AddListener(Of T1, T2, T3, T4)(signalKey As TKey, listener As Action(Of T1, T2, T3, T4))
+  overload: Atlas.SignalManager`1.AddListener*
+  nameWithType.vb: SignalManager(Of TKey).AddListener(Of T1, T2, T3, T4)(TKey, Action(Of T1, T2, T3, T4))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).AddListener(Of T1, T2, T3, T4)(TKey, Action(Of T1, T2, T3, T4))
+  name.vb: AddListener(Of T1, T2, T3, T4)(TKey, Action(Of T1, T2, T3, T4))
+- uid: Atlas.SignalManager`1.RemoveListener(`0,Action)
+  commentId: M:Atlas.SignalManager`1.RemoveListener(`0,Action)
+  id: RemoveListener(`0,Action)
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(TKey, Action)
+  nameWithType: SignalManager<TKey>.RemoveListener(TKey, Action)
+  fullName: Atlas.SignalManager<TKey>.RemoveListener(TKey, Action)
+  type: Method
+  source:
+    id: RemoveListener
+    path: ''
+    startLine: 2922
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves a zero-argument callback from the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void RemoveListener(TKey signalKey, Action listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action
+      description: Callback to unregister
+    content.vb: Public Sub RemoveListener(signalKey As TKey, listener As Action)
+  overload: Atlas.SignalManager`1.RemoveListener*
+  nameWithType.vb: SignalManager(Of TKey).RemoveListener(TKey, Action)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).RemoveListener(TKey, Action)
+- uid: Atlas.SignalManager`1.RemoveListener``1(`0,Action{``0})
+  commentId: M:Atlas.SignalManager`1.RemoveListener``1(`0,Action{``0})
+  id: RemoveListener``1(`0,Action{``0})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener<T>(TKey, Action<T>)
+  nameWithType: SignalManager<TKey>.RemoveListener<T>(TKey, Action<T>)
+  fullName: Atlas.SignalManager<TKey>.RemoveListener<T>(TKey, Action<T>)
+  type: Method
+  source:
+    id: RemoveListener
+    path: ''
+    startLine: 2949
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves a single-argument callback from the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void RemoveListener<T>(TKey signalKey, Action<T> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T}}
+      description: Callback to unregister
+    typeParameters:
+    - id: T
+      description: Type of the signal&apos;s argument
+    content.vb: Public Sub RemoveListener(Of T)(signalKey As TKey, listener As Action(Of T))
+  overload: Atlas.SignalManager`1.RemoveListener*
+  nameWithType.vb: SignalManager(Of TKey).RemoveListener(Of T)(TKey, Action(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).RemoveListener(Of T)(TKey, Action(Of T))
+  name.vb: RemoveListener(Of T)(TKey, Action(Of T))
+- uid: Atlas.SignalManager`1.RemoveListener``2(`0,Action{``0,``1})
+  commentId: M:Atlas.SignalManager`1.RemoveListener``2(`0,Action{``0,``1})
+  id: RemoveListener``2(`0,Action{``0,``1})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener<T1, T2>(TKey, Action<T1, T2>)
+  nameWithType: SignalManager<TKey>.RemoveListener<T1, T2>(TKey, Action<T1, T2>)
+  fullName: Atlas.SignalManager<TKey>.RemoveListener<T1, T2>(TKey, Action<T1, T2>)
+  type: Method
+  source:
+    id: RemoveListener
+    path: ''
+    startLine: 2977
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves a two-argument callback from the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void RemoveListener<T1, T2>(TKey signalKey, Action<T1, T2> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T1},{T2}}
+      description: Callback to unregister
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    content.vb: Public Sub RemoveListener(Of T1, T2)(signalKey As TKey, listener As Action(Of T1, T2))
+  overload: Atlas.SignalManager`1.RemoveListener*
+  nameWithType.vb: SignalManager(Of TKey).RemoveListener(Of T1, T2)(TKey, Action(Of T1, T2))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).RemoveListener(Of T1, T2)(TKey, Action(Of T1, T2))
+  name.vb: RemoveListener(Of T1, T2)(TKey, Action(Of T1, T2))
+- uid: Atlas.SignalManager`1.RemoveListener``3(`0,Action{``0,``1,``2})
+  commentId: M:Atlas.SignalManager`1.RemoveListener``3(`0,Action{``0,``1,``2})
+  id: RemoveListener``3(`0,Action{``0,``1,``2})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener<T1, T2, T3>(TKey, Action<T1, T2, T3>)
+  nameWithType: SignalManager<TKey>.RemoveListener<T1, T2, T3>(TKey, Action<T1, T2, T3>)
+  fullName: Atlas.SignalManager<TKey>.RemoveListener<T1, T2, T3>(TKey, Action<T1, T2, T3>)
+  type: Method
+  source:
+    id: RemoveListener
+    path: ''
+    startLine: 3006
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves a three-argument callback from the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void RemoveListener<T1, T2, T3>(TKey signalKey, Action<T1, T2, T3> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T1},{T2},{T3}}
+      description: Callback to unregister
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    - id: T3
+      description: Type of the signal&apos;s third argument
+    content.vb: Public Sub RemoveListener(Of T1, T2, T3)(signalKey As TKey, listener As Action(Of T1, T2, T3))
+  overload: Atlas.SignalManager`1.RemoveListener*
+  nameWithType.vb: SignalManager(Of TKey).RemoveListener(Of T1, T2, T3)(TKey, Action(Of T1, T2, T3))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).RemoveListener(Of T1, T2, T3)(TKey, Action(Of T1, T2, T3))
+  name.vb: RemoveListener(Of T1, T2, T3)(TKey, Action(Of T1, T2, T3))
+- uid: Atlas.SignalManager`1.RemoveListener``4(`0,Action{``0,``1,``2,``3})
+  commentId: M:Atlas.SignalManager`1.RemoveListener``4(`0,Action{``0,``1,``2,``3})
+  id: RemoveListener``4(`0,Action{``0,``1,``2,``3})
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener<T1, T2, T3, T4>(TKey, Action<T1, T2, T3, T4>)
+  nameWithType: SignalManager<TKey>.RemoveListener<T1, T2, T3, T4>(TKey, Action<T1, T2, T3, T4>)
+  fullName: Atlas.SignalManager<TKey>.RemoveListener<T1, T2, T3, T4>(TKey, Action<T1, T2, T3, T4>)
+  type: Method
+  source:
+    id: RemoveListener
+    path: ''
+    startLine: 3036
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves a four-argument callback from the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void RemoveListener<T1, T2, T3, T4>(TKey signalKey, Action<T1, T2, T3, T4> listener)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key for the desired signal
+    - id: listener
+      type: Action{{T1},{T2},{T3},{T4}}
+      description: Callback to unregister
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    - id: T3
+      description: Type of the signal&apos;s third argument
+    - id: T4
+      description: Type of the signal&apos;s fourth argument
+    content.vb: Public Sub RemoveListener(Of T1, T2, T3, T4)(signalKey As TKey, listener As Action(Of T1, T2, T3, T4))
+  overload: Atlas.SignalManager`1.RemoveListener*
+  nameWithType.vb: SignalManager(Of TKey).RemoveListener(Of T1, T2, T3, T4)(TKey, Action(Of T1, T2, T3, T4))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).RemoveListener(Of T1, T2, T3, T4)(TKey, Action(Of T1, T2, T3, T4))
+  name.vb: RemoveListener(Of T1, T2, T3, T4)(TKey, Action(Of T1, T2, T3, T4))
+- uid: Atlas.SignalManager`1.Dispatch(`0)
+  commentId: M:Atlas.SignalManager`1.Dispatch(`0)
+  id: Dispatch(`0)
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: Dispatch(TKey)
+  nameWithType: SignalManager<TKey>.Dispatch(TKey)
+  fullName: Atlas.SignalManager<TKey>.Dispatch(TKey)
+  type: Method
+  source:
+    id: Dispatch
+    path: ''
+    startLine: 3062
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDispatches the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void Dispatch(TKey signalKey)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key of the signal to dispatch
+    content.vb: Public Sub Dispatch(signalKey As TKey)
+  overload: Atlas.SignalManager`1.Dispatch*
+  nameWithType.vb: SignalManager(Of TKey).Dispatch(TKey)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).Dispatch(TKey)
+- uid: Atlas.SignalManager`1.Dispatch``1(`0,``0)
+  commentId: M:Atlas.SignalManager`1.Dispatch``1(`0,``0)
+  id: Dispatch``1(`0,``0)
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: Dispatch<T>(TKey, T)
+  nameWithType: SignalManager<TKey>.Dispatch<T>(TKey, T)
+  fullName: Atlas.SignalManager<TKey>.Dispatch<T>(TKey, T)
+  type: Method
+  source:
+    id: Dispatch
+    path: ''
+    startLine: 3087
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDispatches the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void Dispatch<T>(TKey signalKey, T arg)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key of the signal to dispatch
+    - id: arg
+      type: '{T}'
+      description: Argument to dispatch the signal with
+    typeParameters:
+    - id: T
+      description: Type of the signal&apos;s argument
+    content.vb: Public Sub Dispatch(Of T)(signalKey As TKey, arg As T)
+  overload: Atlas.SignalManager`1.Dispatch*
+  nameWithType.vb: SignalManager(Of TKey).Dispatch(Of T)(TKey, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).Dispatch(Of T)(TKey, T)
+  name.vb: Dispatch(Of T)(TKey, T)
+- uid: Atlas.SignalManager`1.Dispatch``2(`0,``0,``1)
+  commentId: M:Atlas.SignalManager`1.Dispatch``2(`0,``0,``1)
+  id: Dispatch``2(`0,``0,``1)
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: Dispatch<T1, T2>(TKey, T1, T2)
+  nameWithType: SignalManager<TKey>.Dispatch<T1, T2>(TKey, T1, T2)
+  fullName: Atlas.SignalManager<TKey>.Dispatch<T1, T2>(TKey, T1, T2)
+  type: Method
+  source:
+    id: Dispatch
+    path: ''
+    startLine: 3115
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDispatches the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void Dispatch<T1, T2>(TKey signalKey, T1 arg1, T2 arg2)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key of the signal to dispatch
+    - id: arg1
+      type: '{T1}'
+      description: First argument to dispatch the signal with
+    - id: arg2
+      type: '{T2}'
+      description: Second argument to dispatch the signal with
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    content.vb: Public Sub Dispatch(Of T1, T2)(signalKey As TKey, arg1 As T1, arg2 As T2)
+  overload: Atlas.SignalManager`1.Dispatch*
+  nameWithType.vb: SignalManager(Of TKey).Dispatch(Of T1, T2)(TKey, T1, T2)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).Dispatch(Of T1, T2)(TKey, T1, T2)
+  name.vb: Dispatch(Of T1, T2)(TKey, T1, T2)
+- uid: Atlas.SignalManager`1.Dispatch``3(`0,``0,``1,``2)
+  commentId: M:Atlas.SignalManager`1.Dispatch``3(`0,``0,``1,``2)
+  id: Dispatch``3(`0,``0,``1,``2)
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: Dispatch<T1, T2, T3>(TKey, T1, T2, T3)
+  nameWithType: SignalManager<TKey>.Dispatch<T1, T2, T3>(TKey, T1, T2, T3)
+  fullName: Atlas.SignalManager<TKey>.Dispatch<T1, T2, T3>(TKey, T1, T2, T3)
+  type: Method
+  source:
+    id: Dispatch
+    path: ''
+    startLine: 3146
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDispatches the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void Dispatch<T1, T2, T3>(TKey signalKey, T1 arg1, T2 arg2, T3 arg3)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key of the signal to dispatch
+    - id: arg1
+      type: '{T1}'
+      description: First argument to dispatch the signal with
+    - id: arg2
+      type: '{T2}'
+      description: Second argument to dispatch the signal with
+    - id: arg3
+      type: '{T3}'
+      description: Third argument to dispatch the signal with
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    - id: T3
+      description: Type of the signal&apos;s third argument
+    content.vb: Public Sub Dispatch(Of T1, T2, T3)(signalKey As TKey, arg1 As T1, arg2 As T2, arg3 As T3)
+  overload: Atlas.SignalManager`1.Dispatch*
+  nameWithType.vb: SignalManager(Of TKey).Dispatch(Of T1, T2, T3)(TKey, T1, T2, T3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).Dispatch(Of T1, T2, T3)(TKey, T1, T2, T3)
+  name.vb: Dispatch(Of T1, T2, T3)(TKey, T1, T2, T3)
+- uid: Atlas.SignalManager`1.Dispatch``4(`0,``0,``1,``2,``3)
+  commentId: M:Atlas.SignalManager`1.Dispatch``4(`0,``0,``1,``2,``3)
+  id: Dispatch``4(`0,``0,``1,``2,``3)
+  parent: Atlas.SignalManager`1
+  langs:
+  - csharp
+  - vb
+  name: Dispatch<T1, T2, T3, T4>(TKey, T1, T2, T3, T4)
+  nameWithType: SignalManager<TKey>.Dispatch<T1, T2, T3, T4>(TKey, T1, T2, T3, T4)
+  fullName: Atlas.SignalManager<TKey>.Dispatch<T1, T2, T3, T4>(TKey, T1, T2, T3, T4)
+  type: Method
+  source:
+    id: Dispatch
+    path: ''
+    startLine: 3180
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDispatches the signal with the given key\n"
+  example: []
+  syntax:
+    content: public void Dispatch<T1, T2, T3, T4>(TKey signalKey, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+    parameters:
+    - id: signalKey
+      type: '{TKey}'
+      description: Key of the signal to dispatch
+    - id: arg1
+      type: '{T1}'
+      description: First argument to dispatch the signal with
+    - id: arg2
+      type: '{T2}'
+      description: Second argument to dispatch the signal with
+    - id: arg3
+      type: '{T3}'
+      description: Third argument to dispatch the signal with
+    - id: arg4
+      type: '{T4}'
+      description: Fourth argument to dispatch the signal with
+    typeParameters:
+    - id: T1
+      description: Type of the signal&apos;s first argument
+    - id: T2
+      description: Type of the signal&apos;s second argument
+    - id: T3
+      description: Type of the signal&apos;s third argument
+    - id: T4
+      description: Type of the signal&apos;s fourth argument
+    content.vb: Public Sub Dispatch(Of T1, T2, T3, T4)(signalKey As TKey, arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4)
+  overload: Atlas.SignalManager`1.Dispatch*
+  nameWithType.vb: SignalManager(Of TKey).Dispatch(Of T1, T2, T3, T4)(TKey, T1, T2, T3, T4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalManager(Of TKey).Dispatch(Of T1, T2, T3, T4)(TKey, T1, T2, T3, T4)
+  name.vb: Dispatch(Of T1, T2, T3, T4)(TKey, T1, T2, T3, T4)
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.SignalManager`1.#ctor*
+  commentId: Overload:Atlas.SignalManager`1.#ctor
+  name: SignalManager
+  nameWithType: SignalManager<TKey>.SignalManager
+  fullName: Atlas.SignalManager<TKey>.SignalManager
+  nameWithType.vb: SignalManager(Of TKey).SignalManager
+  fullName.vb: Atlas.SignalManager(Of TKey).SignalManager
+- uid: Atlas.SignalManager`1.AddListener*
+  commentId: Overload:Atlas.SignalManager`1.AddListener
+  name: AddListener
+  nameWithType: SignalManager<TKey>.AddListener
+  fullName: Atlas.SignalManager<TKey>.AddListener
+  nameWithType.vb: SignalManager(Of TKey).AddListener
+  fullName.vb: Atlas.SignalManager(Of TKey).AddListener
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: Action
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: Action
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: Action{{T}}
+  commentId: '!:Action{``0}'
+  definition: Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`1
+  isExternal: true
+  name: Action<>
+  nameWithType: Action<>
+  fullName: Action<>
+  nameWithType.vb: Action(Of )
+  fullName.vb: Action(Of )
+  name.vb: Action(Of )
+  spec.csharp:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`1
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{{T1},{T2}}
+  commentId: '!:Action{``0,``1}'
+  definition: Action`2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`2
+  isExternal: true
+  name: Action<, >
+  nameWithType: Action<, >
+  fullName: Action<, >
+  nameWithType.vb: Action(Of , )
+  fullName.vb: Action(Of , )
+  name.vb: Action(Of , )
+  spec.csharp:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`2
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{{T1},{T2},{T3}}
+  commentId: '!:Action{``0,``1,``2}'
+  definition: Action`3
+  name: Action<T1, T2, T3>
+  nameWithType: Action<T1, T2, T3>
+  fullName: Action<T1, T2, T3>
+  nameWithType.vb: Action(Of T1, T2, T3)
+  fullName.vb: Action(Of T1, T2, T3)
+  name.vb: Action(Of T1, T2, T3)
+  spec.csharp:
+  - uid: Action`3
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`3
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`3
+  isExternal: true
+  name: Action<, , >
+  nameWithType: Action<, , >
+  fullName: Action<, , >
+  nameWithType.vb: Action(Of , , )
+  fullName.vb: Action(Of , , )
+  name.vb: Action(Of , , )
+  spec.csharp:
+  - uid: Action`3
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`3
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action{{T1},{T2},{T3},{T4}}
+  commentId: '!:Action{``0,``1,``2,``3}'
+  definition: Action`4
+  name: Action<T1, T2, T3, T4>
+  nameWithType: Action<T1, T2, T3, T4>
+  fullName: Action<T1, T2, T3, T4>
+  nameWithType.vb: Action(Of T1, T2, T3, T4)
+  fullName.vb: Action(Of T1, T2, T3, T4)
+  name.vb: Action(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: Action`4
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`4
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action`4
+  isExternal: true
+  name: Action<, , , >
+  nameWithType: Action<, , , >
+  fullName: Action<, , , >
+  nameWithType.vb: Action(Of , , , )
+  fullName.vb: Action(Of , , , )
+  name.vb: Action(Of , , , )
+  spec.csharp:
+  - uid: Action`4
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Action`4
+    name: Action
+    nameWithType: Action
+    fullName: Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalManager`1.RemoveListener*
+  commentId: Overload:Atlas.SignalManager`1.RemoveListener
+  name: RemoveListener
+  nameWithType: SignalManager<TKey>.RemoveListener
+  fullName: Atlas.SignalManager<TKey>.RemoveListener
+  nameWithType.vb: SignalManager(Of TKey).RemoveListener
+  fullName.vb: Atlas.SignalManager(Of TKey).RemoveListener
+- uid: Atlas.SignalManager`1.Dispatch*
+  commentId: Overload:Atlas.SignalManager`1.Dispatch
+  name: Dispatch
+  nameWithType: SignalManager<TKey>.Dispatch
+  fullName: Atlas.SignalManager<TKey>.Dispatch
+  nameWithType.vb: SignalManager(Of TKey).Dispatch
+  fullName.vb: Atlas.SignalManager(Of TKey).Dispatch
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: '{T1}'
+  commentId: '!:T1'
+  definition: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: '{T2}'
+  commentId: '!:T2'
+  definition: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: '{T3}'
+  commentId: '!:T3'
+  definition: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: '{T4}'
+  commentId: '!:T4'
+  definition: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4
+- uid: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4

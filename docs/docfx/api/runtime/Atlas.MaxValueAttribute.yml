@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.MaxValueAttribute
+  commentId: T:Atlas.MaxValueAttribute
+  id: MaxValueAttribute
+  parent: Atlas
+  children:
+  - Atlas.MaxValueAttribute.#ctor(System.Single)
+  - Atlas.MaxValueAttribute.MaxValue
+  langs:
+  - csharp
+  - vb
+  name: MaxValueAttribute
+  nameWithType: MaxValueAttribute
+  fullName: Atlas.MaxValueAttribute
+  type: Class
+  source:
+    id: MaxValueAttribute
+    path: ''
+    startLine: 4705
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nSets a maximum value for the target field. \nAutomatically prevents assigning a value greater than the specified \nvalue when editing the field in the inspector window\n"
+  example: []
+  syntax:
+    content: 'public sealed class MaxValueAttribute : PropertyAttribute'
+    content.vb: >-
+      Public NotInheritable Class MaxValueAttribute
+          Inherits PropertyAttribute
+  seealso:
+  - linkId: Atlas.MinValueAttribute
+    commentId: T:Atlas.MinValueAttribute
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.MaxValueAttribute.#ctor(System.Single)
+  commentId: M:Atlas.MaxValueAttribute.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: Atlas.MaxValueAttribute
+  langs:
+  - csharp
+  - vb
+  name: MaxValueAttribute(Single)
+  nameWithType: MaxValueAttribute.MaxValueAttribute(Single)
+  fullName: Atlas.MaxValueAttribute.MaxValueAttribute(System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4712
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public MaxValueAttribute(float maxValue)
+    parameters:
+    - id: maxValue
+      type: System.Single
+      description: The maximum allowable value the field can have
+    content.vb: Public Sub New(maxValue As Single)
+  overload: Atlas.MaxValueAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.MaxValueAttribute.MaxValue
+  commentId: P:Atlas.MaxValueAttribute.MaxValue
+  id: MaxValue
+  parent: Atlas.MaxValueAttribute
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: MaxValueAttribute.MaxValue
+  fullName: Atlas.MaxValueAttribute.MaxValue
+  type: Property
+  source:
+    id: MaxValue
+    path: ''
+    startLine: 4720
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe maximum allowable value the field can have\n"
+  example: []
+  syntax:
+    content: public float MaxValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MaxValue As Single
+  overload: Atlas.MaxValueAttribute.MaxValue*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Atlas.MinValueAttribute
+  commentId: T:Atlas.MinValueAttribute
+  name: MinValueAttribute
+  nameWithType: MinValueAttribute
+  fullName: Atlas.MinValueAttribute
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.MaxValueAttribute.#ctor*
+  commentId: Overload:Atlas.MaxValueAttribute.#ctor
+  name: MaxValueAttribute
+  nameWithType: MaxValueAttribute.MaxValueAttribute
+  fullName: Atlas.MaxValueAttribute.MaxValueAttribute
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.MaxValueAttribute.MaxValue*
+  commentId: Overload:Atlas.MaxValueAttribute.MaxValue
+  name: MaxValue
+  nameWithType: MaxValueAttribute.MaxValue
+  fullName: Atlas.MaxValueAttribute.MaxValue

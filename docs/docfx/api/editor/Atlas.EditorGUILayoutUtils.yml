@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.EditorGUILayoutUtils
+  commentId: T:Atlas.EditorGUILayoutUtils
+  id: EditorGUILayoutUtils
+  parent: Atlas
+  children:
+  - Atlas.EditorGUILayoutUtils.HorizontalLine(Color,System.Single,System.Single)
+  - Atlas.EditorGUILayoutUtils.HorizontalLine(System.Single,System.Single)
+  - Atlas.EditorGUILayoutUtils.RichLabelField(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EditorGUILayoutUtils
+  nameWithType: EditorGUILayoutUtils
+  fullName: Atlas.EditorGUILayoutUtils
+  type: Class
+  source:
+    id: EditorGUILayoutUtils
+    path: ''
+    startLine: 578
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static class EditorGUILayoutUtils
+    content.vb: Public Module EditorGUILayoutUtils
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.EditorGUILayoutUtils.HorizontalLine(System.Single,System.Single)
+  commentId: M:Atlas.EditorGUILayoutUtils.HorizontalLine(System.Single,System.Single)
+  id: HorizontalLine(System.Single,System.Single)
+  parent: Atlas.EditorGUILayoutUtils
+  langs:
+  - csharp
+  - vb
+  name: HorizontalLine(Single, Single)
+  nameWithType: EditorGUILayoutUtils.HorizontalLine(Single, Single)
+  fullName: Atlas.EditorGUILayoutUtils.HorizontalLine(System.Single, System.Single)
+  type: Method
+  source:
+    id: HorizontalLine
+    path: ''
+    startLine: 580
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static void HorizontalLine(float height = 1F, float widthPct = 1F)
+    parameters:
+    - id: height
+      type: System.Single
+    - id: widthPct
+      type: System.Single
+    content.vb: Public Shared Sub HorizontalLine(height As Single = 1F, widthPct As Single = 1F)
+  overload: Atlas.EditorGUILayoutUtils.HorizontalLine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.EditorGUILayoutUtils.HorizontalLine(Color,System.Single,System.Single)
+  commentId: M:Atlas.EditorGUILayoutUtils.HorizontalLine(Color,System.Single,System.Single)
+  id: HorizontalLine(Color,System.Single,System.Single)
+  parent: Atlas.EditorGUILayoutUtils
+  langs:
+  - csharp
+  - vb
+  name: HorizontalLine(Color, Single, Single)
+  nameWithType: EditorGUILayoutUtils.HorizontalLine(Color, Single, Single)
+  fullName: Atlas.EditorGUILayoutUtils.HorizontalLine(Color, System.Single, System.Single)
+  type: Method
+  source:
+    id: HorizontalLine
+    path: ''
+    startLine: 585
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static void HorizontalLine(Color color, float height = 1F, float widthPct = 1F)
+    parameters:
+    - id: color
+      type: Color
+    - id: height
+      type: System.Single
+    - id: widthPct
+      type: System.Single
+    content.vb: Public Shared Sub HorizontalLine(color As Color, height As Single = 1F, widthPct As Single = 1F)
+  overload: Atlas.EditorGUILayoutUtils.HorizontalLine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.EditorGUILayoutUtils.RichLabelField(System.String)
+  commentId: M:Atlas.EditorGUILayoutUtils.RichLabelField(System.String)
+  id: RichLabelField(System.String)
+  parent: Atlas.EditorGUILayoutUtils
+  langs:
+  - csharp
+  - vb
+  name: RichLabelField(String)
+  nameWithType: EditorGUILayoutUtils.RichLabelField(String)
+  fullName: Atlas.EditorGUILayoutUtils.RichLabelField(System.String)
+  type: Method
+  source:
+    id: RichLabelField
+    path: ''
+    startLine: 597
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static void RichLabelField(string label)
+    parameters:
+    - id: label
+      type: System.String
+    content.vb: Public Shared Sub RichLabelField(label As String)
+  overload: Atlas.EditorGUILayoutUtils.RichLabelField*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.EditorGUILayoutUtils.HorizontalLine*
+  commentId: Overload:Atlas.EditorGUILayoutUtils.HorizontalLine
+  name: HorizontalLine
+  nameWithType: EditorGUILayoutUtils.HorizontalLine
+  fullName: Atlas.EditorGUILayoutUtils.HorizontalLine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Color
+  commentId: '!:Color'
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: Atlas.EditorGUILayoutUtils.RichLabelField*
+  commentId: Overload:Atlas.EditorGUILayoutUtils.RichLabelField
+  name: RichLabelField
+  nameWithType: EditorGUILayoutUtils.RichLabelField
+  fullName: Atlas.EditorGUILayoutUtils.RichLabelField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

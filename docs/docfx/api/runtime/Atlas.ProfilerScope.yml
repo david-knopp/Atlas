@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ProfilerScope
+  commentId: T:Atlas.ProfilerScope
+  id: ProfilerScope
+  parent: Atlas
+  children:
+  - Atlas.ProfilerScope.#ctor(System.String)
+  - Atlas.ProfilerScope.#ctor(System.String,Object)
+  - Atlas.ProfilerScope.Dispose
+  langs:
+  - csharp
+  - vb
+  name: ProfilerScope
+  nameWithType: ProfilerScope
+  fullName: Atlas.ProfilerScope
+  type: Struct
+  source:
+    id: ProfilerScope
+    path: ''
+    startLine: 5016
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nA handy scope variable that starts a <see cref=\"!:Profiler\"></see> sample, \nand ends it when the scope ends\n"
+  example: []
+  syntax:
+    content: 'public struct ProfilerScope : IDisposable'
+    content.vb: >-
+      Public Structure ProfilerScope
+          Implements IDisposable
+  seealso:
+  - linkId: Atlas.GUIColorScope
+    commentId: T:Atlas.GUIColorScope
+  implements:
+  - IDisposable
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Atlas.ProfilerScope.#ctor(System.String)
+  commentId: M:Atlas.ProfilerScope.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Atlas.ProfilerScope
+  langs:
+  - csharp
+  - vb
+  name: ProfilerScope(String)
+  nameWithType: ProfilerScope.ProfilerScope(String)
+  fullName: Atlas.ProfilerScope.ProfilerScope(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5022
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ProfilerScope(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: A string to identify the sample in the Profiler window
+    content.vb: Public Sub New(name As String)
+  overload: Atlas.ProfilerScope.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.ProfilerScope.#ctor(System.String,Object)
+  commentId: M:Atlas.ProfilerScope.#ctor(System.String,Object)
+  id: '#ctor(System.String,Object)'
+  parent: Atlas.ProfilerScope
+  langs:
+  - csharp
+  - vb
+  name: ProfilerScope(String, Object)
+  nameWithType: ProfilerScope.ProfilerScope(String, Object)
+  fullName: Atlas.ProfilerScope.ProfilerScope(System.String, Object)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5033
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ProfilerScope(string name, Object targetObject)
+    parameters:
+    - id: name
+      type: System.String
+      description: A string to identify the sample in the Profiler window
+    - id: targetObject
+      type: Object
+      description: An object that provides context to the sample
+    content.vb: Public Sub New(name As String, targetObject As Object)
+  overload: Atlas.ProfilerScope.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.ProfilerScope.Dispose
+  commentId: M:Atlas.ProfilerScope.Dispose
+  id: Dispose
+  parent: Atlas.ProfilerScope
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ProfilerScope.Dispose()
+  fullName: Atlas.ProfilerScope.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 5042
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nEnds the scope\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Atlas.ProfilerScope.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas.GUIColorScope
+  commentId: T:Atlas.GUIColorScope
+  name: GUIColorScope
+  nameWithType: GUIColorScope
+  fullName: Atlas.GUIColorScope
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: Atlas.ProfilerScope.#ctor*
+  commentId: Overload:Atlas.ProfilerScope.#ctor
+  name: ProfilerScope
+  nameWithType: ProfilerScope.ProfilerScope
+  fullName: Atlas.ProfilerScope.ProfilerScope
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Object
+  commentId: '!:Object'
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: Object
+- uid: Atlas.ProfilerScope.Dispose*
+  commentId: Overload:Atlas.ProfilerScope.Dispose
+  name: Dispose
+  nameWithType: ProfilerScope.Dispose
+  fullName: Atlas.ProfilerScope.Dispose

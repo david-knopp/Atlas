@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.StateLink.TransitionCondition
+  commentId: T:Atlas.StateLink.TransitionCondition
+  id: StateLink.TransitionCondition
+  parent: Atlas
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: StateLink.TransitionCondition
+  nameWithType: StateLink.TransitionCondition
+  fullName: Atlas.StateLink.TransitionCondition
+  type: Delegate
+  source:
+    id: TransitionCondition
+    path: ''
+    startLine: 129
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe callback for determining whether or not this link&apos;s transition\ncondition is satisfied\n"
+  example: []
+  syntax:
+    content: public delegate bool TransitionCondition();
+    return:
+      type: System.Boolean
+      description: True if a transition is desired, false otherwise
+    content.vb: Public Delegate Function TransitionCondition As Boolean
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

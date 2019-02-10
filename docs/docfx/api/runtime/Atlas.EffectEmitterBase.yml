@@ -1,0 +1,294 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.EffectEmitterBase
+  commentId: T:Atlas.EffectEmitterBase
+  id: EffectEmitterBase
+  parent: Atlas
+  children:
+  - Atlas.EffectEmitterBase.EmissionFinishedEvent
+  - Atlas.EffectEmitterBase.IsFinished
+  - Atlas.EffectEmitterBase.IsPlaying
+  - Atlas.EffectEmitterBase.Play
+  - Atlas.EffectEmitterBase.Stop
+  - Atlas.EffectEmitterBase.Update
+  langs:
+  - csharp
+  - vb
+  name: EffectEmitterBase
+  nameWithType: EffectEmitterBase
+  fullName: Atlas.EffectEmitterBase
+  type: Class
+  source:
+    id: EffectEmitterBase
+    path: ''
+    startLine: 2193
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nBase emitter class to be used with the <xref href=\"Atlas.Effect\" data-throw-if-not-resolved=\"false\"></xref> system\n"
+  example: []
+  syntax:
+    content: 'public abstract class EffectEmitterBase : MonoBehaviour'
+    content.vb: >-
+      Public MustInherit Class EffectEmitterBase
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Atlas.ParticleEffectEmitter
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Atlas.EffectEmitterBase.EmissionFinishedEvent
+  commentId: E:Atlas.EffectEmitterBase.EmissionFinishedEvent
+  id: EmissionFinishedEvent
+  parent: Atlas.EffectEmitterBase
+  langs:
+  - csharp
+  - vb
+  name: EmissionFinishedEvent
+  nameWithType: EffectEmitterBase.EmissionFinishedEvent
+  fullName: Atlas.EffectEmitterBase.EmissionFinishedEvent
+  type: Event
+  source:
+    id: EmissionFinishedEvent
+    path: ''
+    startLine: 2199
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nEvent that gets fired when the effect has finished emitting\n"
+  example: []
+  syntax:
+    content: public event Action EmissionFinishedEvent
+    return:
+      type: Action
+    content.vb: Public Event EmissionFinishedEvent As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.EffectEmitterBase.IsPlaying
+  commentId: P:Atlas.EffectEmitterBase.IsPlaying
+  id: IsPlaying
+  parent: Atlas.EffectEmitterBase
+  langs:
+  - csharp
+  - vb
+  name: IsPlaying
+  nameWithType: EffectEmitterBase.IsPlaying
+  fullName: Atlas.EffectEmitterBase.IsPlaying
+  type: Property
+  source:
+    id: IsPlaying
+    path: ''
+    startLine: 2208
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nWhether or not the effect is currently playing\n"
+  example: []
+  syntax:
+    content: public bool IsPlaying { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPlaying As Boolean
+  overload: Atlas.EffectEmitterBase.IsPlaying*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.EffectEmitterBase.Play
+  commentId: M:Atlas.EffectEmitterBase.Play
+  id: Play
+  parent: Atlas.EffectEmitterBase
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: EffectEmitterBase.Play()
+  fullName: Atlas.EffectEmitterBase.Play()
+  type: Method
+  source:
+    id: Play
+    path: ''
+    startLine: 2217
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nPlays the emitter\n"
+  example: []
+  syntax:
+    content: public virtual void Play()
+    content.vb: Public Overridable Sub Play
+  overload: Atlas.EffectEmitterBase.Play*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Atlas.EffectEmitterBase.Stop
+  commentId: M:Atlas.EffectEmitterBase.Stop
+  id: Stop
+  parent: Atlas.EffectEmitterBase
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: EffectEmitterBase.Stop()
+  fullName: Atlas.EffectEmitterBase.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: ''
+    startLine: 2225
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nStops the emitter\n"
+  example: []
+  syntax:
+    content: public virtual void Stop()
+    content.vb: Public Overridable Sub Stop
+  overload: Atlas.EffectEmitterBase.Stop*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Atlas.EffectEmitterBase.IsFinished
+  commentId: P:Atlas.EffectEmitterBase.IsFinished
+  id: IsFinished
+  parent: Atlas.EffectEmitterBase
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: EffectEmitterBase.IsFinished
+  fullName: Atlas.EffectEmitterBase.IsFinished
+  type: Property
+  source:
+    id: IsFinished
+    path: ''
+    startLine: 2235
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nWhether or not the emitter has finished emitting\n"
+  example: []
+  syntax:
+    content: protected abstract bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected MustOverride ReadOnly Property IsFinished As Boolean
+  overload: Atlas.EffectEmitterBase.IsFinished*
+  modifiers.csharp:
+  - protected
+  - abstract
+  - get
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  - ReadOnly
+- uid: Atlas.EffectEmitterBase.Update
+  commentId: M:Atlas.EffectEmitterBase.Update
+  id: Update
+  parent: Atlas.EffectEmitterBase
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: EffectEmitterBase.Update()
+  fullName: Atlas.EffectEmitterBase.Update()
+  type: Method
+  source:
+    id: Update
+    path: ''
+    startLine: 2243
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nUpdates the emitter, called once per frame\n"
+  example: []
+  syntax:
+    content: protected virtual void Update()
+    content.vb: Protected Overridable Sub Update
+  overload: Atlas.EffectEmitterBase.Update*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Atlas.Effect
+  commentId: T:Atlas.Effect
+  name: Effect
+  nameWithType: Effect
+  fullName: Atlas.Effect
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Action
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: Action
+- uid: Atlas.EffectEmitterBase.IsPlaying*
+  commentId: Overload:Atlas.EffectEmitterBase.IsPlaying
+  name: IsPlaying
+  nameWithType: EffectEmitterBase.IsPlaying
+  fullName: Atlas.EffectEmitterBase.IsPlaying
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Atlas.EffectEmitterBase.Play*
+  commentId: Overload:Atlas.EffectEmitterBase.Play
+  name: Play
+  nameWithType: EffectEmitterBase.Play
+  fullName: Atlas.EffectEmitterBase.Play
+- uid: Atlas.EffectEmitterBase.Stop*
+  commentId: Overload:Atlas.EffectEmitterBase.Stop
+  name: Stop
+  nameWithType: EffectEmitterBase.Stop
+  fullName: Atlas.EffectEmitterBase.Stop
+- uid: Atlas.EffectEmitterBase.IsFinished*
+  commentId: Overload:Atlas.EffectEmitterBase.IsFinished
+  name: IsFinished
+  nameWithType: EffectEmitterBase.IsFinished
+  fullName: Atlas.EffectEmitterBase.IsFinished
+- uid: Atlas.EffectEmitterBase.Update*
+  commentId: Overload:Atlas.EffectEmitterBase.Update
+  name: Update
+  nameWithType: EffectEmitterBase.Update
+  fullName: Atlas.EffectEmitterBase.Update

@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.StateMachineBehavior
+  commentId: T:Atlas.StateMachineBehavior
+  id: StateMachineBehavior
+  parent: Atlas
+  children:
+  - Atlas.StateMachineBehavior.AddState``1(``0)
+  - Atlas.StateMachineBehavior.CurrentState
+  - Atlas.StateMachineBehavior.GetState``1
+  - Atlas.StateMachineBehavior.PreviousState
+  - Atlas.StateMachineBehavior.RemoveState``1
+  - Atlas.StateMachineBehavior.RevertToPrevState
+  - Atlas.StateMachineBehavior.SetState``1
+  - Atlas.StateMachineBehavior.Tick
+  - Atlas.StateMachineBehavior.Update
+  langs:
+  - csharp
+  - vb
+  name: StateMachineBehavior
+  nameWithType: StateMachineBehavior
+  fullName: Atlas.StateMachineBehavior
+  type: Class
+  source:
+    id: StateMachineBehavior
+    path: ''
+    startLine: 321
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe <see cref=\"!:MonoBehaviour\"></see> derivative of a <xref href=\"Atlas.StateMachine\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class StateMachineBehavior : MonoBehaviour, IStateMachine'
+    content.vb: >-
+      Public Class StateMachineBehavior
+          Inherits MonoBehaviour
+          Implements IStateMachine
+  seealso:
+  - linkId: Atlas.StateMachine
+    commentId: T:Atlas.StateMachine
+  inheritance:
+  - System.Object
+  implements:
+  - Atlas.IStateMachine
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Atlas.StateMachineBehavior.CurrentState
+  commentId: P:Atlas.StateMachineBehavior.CurrentState
+  id: CurrentState
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: CurrentState
+  nameWithType: StateMachineBehavior.CurrentState
+  fullName: Atlas.StateMachineBehavior.CurrentState
+  type: Property
+  source:
+    id: CurrentState
+    path: ''
+    startLine: 327
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe state that&apos;s currently executing, or null if no state is running\n"
+  example: []
+  syntax:
+    content: public State CurrentState { get; }
+    parameters: []
+    return:
+      type: Atlas.State
+    content.vb: Public ReadOnly Property CurrentState As State
+  overload: Atlas.StateMachineBehavior.CurrentState*
+  implements:
+  - Atlas.IStateMachine.CurrentState
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.StateMachineBehavior.PreviousState
+  commentId: P:Atlas.StateMachineBehavior.PreviousState
+  id: PreviousState
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: PreviousState
+  nameWithType: StateMachineBehavior.PreviousState
+  fullName: Atlas.StateMachineBehavior.PreviousState
+  type: Property
+  source:
+    id: PreviousState
+    path: ''
+    startLine: 335
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe state that was running before the current one, or null if no previous state exists\n"
+  example: []
+  syntax:
+    content: public State PreviousState { get; }
+    parameters: []
+    return:
+      type: Atlas.State
+    content.vb: Public ReadOnly Property PreviousState As State
+  overload: Atlas.StateMachineBehavior.PreviousState*
+  implements:
+  - Atlas.IStateMachine.PreviousState
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.StateMachineBehavior.AddState``1(``0)
+  commentId: M:Atlas.StateMachineBehavior.AddState``1(``0)
+  id: AddState``1(``0)
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: AddState<StateType>(StateType)
+  nameWithType: StateMachineBehavior.AddState<StateType>(StateType)
+  fullName: Atlas.StateMachineBehavior.AddState<StateType>(StateType)
+  type: Method
+  source:
+    id: AddState
+    path: ''
+    startLine: 345
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds the given state to the state machine\n"
+  example: []
+  syntax:
+    content: >-
+      public void AddState<StateType>(StateType state)
+          where StateType : State
+    parameters:
+    - id: state
+      type: '{StateType}'
+      description: The state to add
+    typeParameters:
+    - id: StateType
+      description: Type of state to add
+    content.vb: Public Sub AddState(Of StateType As State)(state As StateType)
+  overload: Atlas.StateMachineBehavior.AddState*
+  implements:
+  - Atlas.IStateMachine.AddState``1({StateType})
+  nameWithType.vb: StateMachineBehavior.AddState(Of StateType)(StateType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.StateMachineBehavior.AddState(Of StateType)(StateType)
+  name.vb: AddState(Of StateType)(StateType)
+- uid: Atlas.StateMachineBehavior.RemoveState``1
+  commentId: M:Atlas.StateMachineBehavior.RemoveState``1
+  id: RemoveState``1
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: RemoveState<StateType>()
+  nameWithType: StateMachineBehavior.RemoveState<StateType>()
+  fullName: Atlas.StateMachineBehavior.RemoveState<StateType>()
+  type: Method
+  source:
+    id: RemoveState
+    path: ''
+    startLine: 355
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves the state of the given type. If multiple states exist with the given type,\nthe first state of the desired type is removed.\n"
+  example: []
+  syntax:
+    content: >-
+      public void RemoveState<StateType>()
+          where StateType : State
+    typeParameters:
+    - id: StateType
+      description: Type of state to remove
+    content.vb: Public Sub RemoveState(Of StateType As State)
+  overload: Atlas.StateMachineBehavior.RemoveState*
+  implements:
+  - Atlas.IStateMachine.RemoveState``1
+  nameWithType.vb: StateMachineBehavior.RemoveState(Of StateType)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.StateMachineBehavior.RemoveState(Of StateType)()
+  name.vb: RemoveState(Of StateType)()
+- uid: Atlas.StateMachineBehavior.GetState``1
+  commentId: M:Atlas.StateMachineBehavior.GetState``1
+  id: GetState``1
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: GetState<StateType>()
+  nameWithType: StateMachineBehavior.GetState<StateType>()
+  fullName: Atlas.StateMachineBehavior.GetState<StateType>()
+  type: Method
+  source:
+    id: GetState
+    path: ''
+    startLine: 366
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nGets the state of the given type. If multiple states exist with the given type,\nthe first state of the desired type is returned.\n"
+  example: []
+  syntax:
+    content: >-
+      public StateType GetState<StateType>()
+          where StateType : State
+    typeParameters:
+    - id: StateType
+      description: Type of state to get
+    return:
+      type: '{StateType}'
+      description: The state with the given type
+    content.vb: Public Function GetState(Of StateType As State) As StateType
+  overload: Atlas.StateMachineBehavior.GetState*
+  implements:
+  - Atlas.IStateMachine.GetState``1
+  nameWithType.vb: StateMachineBehavior.GetState(Of StateType)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.StateMachineBehavior.GetState(Of StateType)()
+  name.vb: GetState(Of StateType)()
+- uid: Atlas.StateMachineBehavior.SetState``1
+  commentId: M:Atlas.StateMachineBehavior.SetState``1
+  id: SetState``1
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: SetState<StateType>()
+  nameWithType: StateMachineBehavior.SetState<StateType>()
+  fullName: Atlas.StateMachineBehavior.SetState<StateType>()
+  type: Method
+  source:
+    id: SetState
+    path: ''
+    startLine: 375
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nSets the current state to the state of the desired type\n"
+  example: []
+  syntax:
+    content: >-
+      public void SetState<StateType>()
+          where StateType : State
+    typeParameters:
+    - id: StateType
+      description: Type of state to change to
+    content.vb: Public Sub SetState(Of StateType As State)
+  overload: Atlas.StateMachineBehavior.SetState*
+  implements:
+  - Atlas.IStateMachine.SetState``1
+  nameWithType.vb: StateMachineBehavior.SetState(Of StateType)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.StateMachineBehavior.SetState(Of StateType)()
+  name.vb: SetState(Of StateType)()
+- uid: Atlas.StateMachineBehavior.RevertToPrevState
+  commentId: M:Atlas.StateMachineBehavior.RevertToPrevState
+  id: RevertToPrevState
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: RevertToPrevState()
+  nameWithType: StateMachineBehavior.RevertToPrevState()
+  fullName: Atlas.StateMachineBehavior.RevertToPrevState()
+  type: Method
+  source:
+    id: RevertToPrevState
+    path: ''
+    startLine: 383
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nReverts the state machine to the previously running state\n"
+  example: []
+  syntax:
+    content: public void RevertToPrevState()
+    content.vb: Public Sub RevertToPrevState
+  overload: Atlas.StateMachineBehavior.RevertToPrevState*
+  implements:
+  - Atlas.IStateMachine.RevertToPrevState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.StateMachineBehavior.Tick
+  commentId: M:Atlas.StateMachineBehavior.Tick
+  id: Tick
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: StateMachineBehavior.Tick()
+  fullName: Atlas.StateMachineBehavior.Tick()
+  type: Method
+  source:
+    id: Tick
+    path: ''
+    startLine: 391
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nUpdates the state machine, called in <xref href=\"Atlas.StateMachineBehavior.Update\" data-throw-if-not-resolved=\"false\"></xref> automatically\n"
+  example: []
+  syntax:
+    content: public void Tick()
+    content.vb: Public Sub Tick
+  overload: Atlas.StateMachineBehavior.Tick*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.StateMachineBehavior.Update
+  commentId: M:Atlas.StateMachineBehavior.Update
+  id: Update
+  parent: Atlas.StateMachineBehavior
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: StateMachineBehavior.Update()
+  fullName: Atlas.StateMachineBehavior.Update()
+  type: Method
+  source:
+    id: Update
+    path: ''
+    startLine: 401
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nUpdates the state machine, called by Unity\n"
+  example: []
+  syntax:
+    content: protected virtual void Update()
+    content.vb: Protected Overridable Sub Update
+  overload: Atlas.StateMachineBehavior.Update*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: Atlas.StateMachine
+  commentId: T:Atlas.StateMachine
+  name: StateMachine
+  nameWithType: StateMachine
+  fullName: Atlas.StateMachine
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Atlas.IStateMachine
+  commentId: T:Atlas.IStateMachine
+  parent: Atlas
+  name: IStateMachine
+  nameWithType: IStateMachine
+  fullName: Atlas.IStateMachine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.StateMachineBehavior.CurrentState*
+  commentId: Overload:Atlas.StateMachineBehavior.CurrentState
+  name: CurrentState
+  nameWithType: StateMachineBehavior.CurrentState
+  fullName: Atlas.StateMachineBehavior.CurrentState
+- uid: Atlas.IStateMachine.CurrentState
+  commentId: P:Atlas.IStateMachine.CurrentState
+  parent: Atlas.IStateMachine
+  name: CurrentState
+  nameWithType: IStateMachine.CurrentState
+  fullName: Atlas.IStateMachine.CurrentState
+- uid: Atlas.State
+  commentId: T:Atlas.State
+  parent: Atlas
+  name: State
+  nameWithType: State
+  fullName: Atlas.State
+- uid: Atlas.StateMachineBehavior.PreviousState*
+  commentId: Overload:Atlas.StateMachineBehavior.PreviousState
+  name: PreviousState
+  nameWithType: StateMachineBehavior.PreviousState
+  fullName: Atlas.StateMachineBehavior.PreviousState
+- uid: Atlas.IStateMachine.PreviousState
+  commentId: P:Atlas.IStateMachine.PreviousState
+  parent: Atlas.IStateMachine
+  name: PreviousState
+  nameWithType: IStateMachine.PreviousState
+  fullName: Atlas.IStateMachine.PreviousState
+- uid: Atlas.StateMachineBehavior.AddState*
+  commentId: Overload:Atlas.StateMachineBehavior.AddState
+  name: AddState
+  nameWithType: StateMachineBehavior.AddState
+  fullName: Atlas.StateMachineBehavior.AddState
+- uid: Atlas.IStateMachine.AddState``1({StateType})
+  commentId: M:Atlas.IStateMachine.AddState``1(``0)
+  parent: Atlas.IStateMachine
+  definition: Atlas.IStateMachine.AddState``1(``0)
+  name: AddState<StateType>(StateType)
+  nameWithType: IStateMachine.AddState<StateType>(StateType)
+  fullName: Atlas.IStateMachine.AddState<StateType>(StateType)
+  nameWithType.vb: IStateMachine.AddState(Of StateType)(StateType)
+  fullName.vb: Atlas.IStateMachine.AddState(Of StateType)(StateType)
+  name.vb: AddState(Of StateType)(StateType)
+  spec.csharp:
+  - uid: Atlas.IStateMachine.AddState``1(``0)
+    name: AddState<StateType>
+    nameWithType: IStateMachine.AddState<StateType>
+    fullName: Atlas.IStateMachine.AddState<StateType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: StateType
+    nameWithType: StateType
+    fullName: StateType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IStateMachine.AddState``1(``0)
+    name: AddState(Of StateType)
+    nameWithType: IStateMachine.AddState(Of StateType)
+    fullName: Atlas.IStateMachine.AddState(Of StateType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: StateType
+    nameWithType: StateType
+    fullName: StateType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{StateType}'
+  commentId: '!:StateType'
+  definition: StateType
+  name: StateType
+  nameWithType: StateType
+  fullName: StateType
+- uid: Atlas.IStateMachine.AddState``1(``0)
+  commentId: M:Atlas.IStateMachine.AddState``1(``0)
+  name: AddState<StateType>(StateType)
+  nameWithType: IStateMachine.AddState<StateType>(StateType)
+  fullName: Atlas.IStateMachine.AddState<StateType>(StateType)
+  nameWithType.vb: IStateMachine.AddState(Of StateType)(StateType)
+  fullName.vb: Atlas.IStateMachine.AddState(Of StateType)(StateType)
+  name.vb: AddState(Of StateType)(StateType)
+  spec.csharp:
+  - uid: Atlas.IStateMachine.AddState``1(``0)
+    name: AddState<StateType>
+    nameWithType: IStateMachine.AddState<StateType>
+    fullName: Atlas.IStateMachine.AddState<StateType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: StateType
+    nameWithType: StateType
+    fullName: StateType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IStateMachine.AddState``1(``0)
+    name: AddState(Of StateType)
+    nameWithType: IStateMachine.AddState(Of StateType)
+    fullName: Atlas.IStateMachine.AddState(Of StateType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: StateType
+    nameWithType: StateType
+    fullName: StateType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: StateType
+  name: StateType
+  nameWithType: StateType
+  fullName: StateType
+- uid: Atlas.StateMachineBehavior.RemoveState*
+  commentId: Overload:Atlas.StateMachineBehavior.RemoveState
+  name: RemoveState
+  nameWithType: StateMachineBehavior.RemoveState
+  fullName: Atlas.StateMachineBehavior.RemoveState
+- uid: Atlas.IStateMachine.RemoveState``1
+  commentId: M:Atlas.IStateMachine.RemoveState``1
+  parent: Atlas.IStateMachine
+  name: RemoveState<StateType>()
+  nameWithType: IStateMachine.RemoveState<StateType>()
+  fullName: Atlas.IStateMachine.RemoveState<StateType>()
+  nameWithType.vb: IStateMachine.RemoveState(Of StateType)()
+  fullName.vb: Atlas.IStateMachine.RemoveState(Of StateType)()
+  name.vb: RemoveState(Of StateType)()
+  spec.csharp:
+  - uid: Atlas.IStateMachine.RemoveState``1
+    name: RemoveState<StateType>
+    nameWithType: IStateMachine.RemoveState<StateType>
+    fullName: Atlas.IStateMachine.RemoveState<StateType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IStateMachine.RemoveState``1
+    name: RemoveState(Of StateType)
+    nameWithType: IStateMachine.RemoveState(Of StateType)
+    fullName: Atlas.IStateMachine.RemoveState(Of StateType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.StateMachineBehavior.GetState*
+  commentId: Overload:Atlas.StateMachineBehavior.GetState
+  name: GetState
+  nameWithType: StateMachineBehavior.GetState
+  fullName: Atlas.StateMachineBehavior.GetState
+- uid: Atlas.IStateMachine.GetState``1
+  commentId: M:Atlas.IStateMachine.GetState``1
+  parent: Atlas.IStateMachine
+  name: GetState<StateType>()
+  nameWithType: IStateMachine.GetState<StateType>()
+  fullName: Atlas.IStateMachine.GetState<StateType>()
+  nameWithType.vb: IStateMachine.GetState(Of StateType)()
+  fullName.vb: Atlas.IStateMachine.GetState(Of StateType)()
+  name.vb: GetState(Of StateType)()
+  spec.csharp:
+  - uid: Atlas.IStateMachine.GetState``1
+    name: GetState<StateType>
+    nameWithType: IStateMachine.GetState<StateType>
+    fullName: Atlas.IStateMachine.GetState<StateType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IStateMachine.GetState``1
+    name: GetState(Of StateType)
+    nameWithType: IStateMachine.GetState(Of StateType)
+    fullName: Atlas.IStateMachine.GetState(Of StateType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.StateMachineBehavior.SetState*
+  commentId: Overload:Atlas.StateMachineBehavior.SetState
+  name: SetState
+  nameWithType: StateMachineBehavior.SetState
+  fullName: Atlas.StateMachineBehavior.SetState
+- uid: Atlas.IStateMachine.SetState``1
+  commentId: M:Atlas.IStateMachine.SetState``1
+  parent: Atlas.IStateMachine
+  name: SetState<StateType>()
+  nameWithType: IStateMachine.SetState<StateType>()
+  fullName: Atlas.IStateMachine.SetState<StateType>()
+  nameWithType.vb: IStateMachine.SetState(Of StateType)()
+  fullName.vb: Atlas.IStateMachine.SetState(Of StateType)()
+  name.vb: SetState(Of StateType)()
+  spec.csharp:
+  - uid: Atlas.IStateMachine.SetState``1
+    name: SetState<StateType>
+    nameWithType: IStateMachine.SetState<StateType>
+    fullName: Atlas.IStateMachine.SetState<StateType>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IStateMachine.SetState``1
+    name: SetState(Of StateType)
+    nameWithType: IStateMachine.SetState(Of StateType)
+    fullName: Atlas.IStateMachine.SetState(Of StateType)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.StateMachineBehavior.RevertToPrevState*
+  commentId: Overload:Atlas.StateMachineBehavior.RevertToPrevState
+  name: RevertToPrevState
+  nameWithType: StateMachineBehavior.RevertToPrevState
+  fullName: Atlas.StateMachineBehavior.RevertToPrevState
+- uid: Atlas.IStateMachine.RevertToPrevState
+  commentId: M:Atlas.IStateMachine.RevertToPrevState
+  parent: Atlas.IStateMachine
+  name: RevertToPrevState()
+  nameWithType: IStateMachine.RevertToPrevState()
+  fullName: Atlas.IStateMachine.RevertToPrevState()
+  spec.csharp:
+  - uid: Atlas.IStateMachine.RevertToPrevState
+    name: RevertToPrevState
+    nameWithType: IStateMachine.RevertToPrevState
+    fullName: Atlas.IStateMachine.RevertToPrevState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IStateMachine.RevertToPrevState
+    name: RevertToPrevState
+    nameWithType: IStateMachine.RevertToPrevState
+    fullName: Atlas.IStateMachine.RevertToPrevState
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.StateMachineBehavior.Update
+  commentId: M:Atlas.StateMachineBehavior.Update
+  isExternal: true
+- uid: Atlas.StateMachineBehavior.Tick*
+  commentId: Overload:Atlas.StateMachineBehavior.Tick
+  name: Tick
+  nameWithType: StateMachineBehavior.Tick
+  fullName: Atlas.StateMachineBehavior.Tick
+- uid: Atlas.StateMachineBehavior.Update*
+  commentId: Overload:Atlas.StateMachineBehavior.Update
+  name: Update
+  nameWithType: StateMachineBehavior.Update
+  fullName: Atlas.StateMachineBehavior.Update

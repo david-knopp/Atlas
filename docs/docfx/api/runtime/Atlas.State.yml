@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.State
+  commentId: T:Atlas.State
+  id: State
+  parent: Atlas
+  children:
+  - Atlas.State.#ctor
+  - Atlas.State.AddStateLink(Atlas.IStateLink)
+  - Atlas.State.AddStateLink(Atlas.State,Atlas.StateLink.TransitionCondition)
+  - Atlas.State.Enter
+  - Atlas.State.Exit
+  - Atlas.State.StateLinks
+  - Atlas.State.StateMachine
+  - Atlas.State.Tick
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: State
+  fullName: Atlas.State
+  type: Class
+  source:
+    id: State
+    path: ''
+    startLine: 42
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRepresents a single state within a <xref href=\"Atlas.IStateMachine\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public abstract class State : ITickable'
+    content.vb: >-
+      Public MustInherit Class State
+          Implements ITickable
+  seealso:
+  - linkId: Atlas.IStateMachine
+    commentId: T:Atlas.IStateMachine
+  - linkId: Atlas.StateMachine
+    commentId: T:Atlas.StateMachine
+  inheritance:
+  - System.Object
+  implements:
+  - Atlas.ITickable
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Atlas.State.#ctor
+  commentId: M:Atlas.State.#ctor
+  id: '#ctor'
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: State()
+  nameWithType: State.State()
+  fullName: Atlas.State.State()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 47
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public State()
+    content.vb: Public Sub New
+  overload: Atlas.State.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.State.StateMachine
+  commentId: P:Atlas.State.StateMachine
+  id: StateMachine
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: StateMachine
+  nameWithType: State.StateMachine
+  fullName: Atlas.State.StateMachine
+  type: Property
+  source:
+    id: StateMachine
+    path: ''
+    startLine: 55
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe <xref href=\"Atlas.IStateMachine\" data-throw-if-not-resolved=\"false\"></xref> that owns this state\n"
+  example: []
+  syntax:
+    content: public IStateMachine StateMachine { get; set; }
+    parameters: []
+    return:
+      type: Atlas.IStateMachine
+    content.vb: Public Property StateMachine As IStateMachine
+  overload: Atlas.State.StateMachine*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Atlas.State.StateLinks
+  commentId: P:Atlas.State.StateLinks
+  id: StateLinks
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: StateLinks
+  nameWithType: State.StateLinks
+  fullName: Atlas.State.StateLinks
+  type: Property
+  source:
+    id: StateLinks
+    path: ''
+    startLine: 64
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nLinks to other states\n"
+  example: []
+  syntax:
+    content: public List<IStateLink> StateLinks { get; }
+    parameters: []
+    return:
+      type: List{Atlas.IStateLink}
+    content.vb: Public ReadOnly Property StateLinks As List(Of IStateLink)
+  overload: Atlas.State.StateLinks*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.State.AddStateLink(Atlas.IStateLink)
+  commentId: M:Atlas.State.AddStateLink(Atlas.IStateLink)
+  id: AddStateLink(Atlas.IStateLink)
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: AddStateLink(IStateLink)
+  nameWithType: State.AddStateLink(IStateLink)
+  fullName: Atlas.State.AddStateLink(Atlas.IStateLink)
+  type: Method
+  source:
+    id: AddStateLink
+    path: ''
+    startLine: 74
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds a link to another state\n"
+  example: []
+  syntax:
+    content: public void AddStateLink(IStateLink link)
+    parameters:
+    - id: link
+      type: Atlas.IStateLink
+      description: The link to add
+    content.vb: Public Sub AddStateLink(link As IStateLink)
+  overload: Atlas.State.AddStateLink*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.State.AddStateLink(Atlas.State,Atlas.StateLink.TransitionCondition)
+  commentId: M:Atlas.State.AddStateLink(Atlas.State,Atlas.StateLink.TransitionCondition)
+  id: AddStateLink(Atlas.State,Atlas.StateLink.TransitionCondition)
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: AddStateLink(State, StateLink.TransitionCondition)
+  nameWithType: State.AddStateLink(State, StateLink.TransitionCondition)
+  fullName: Atlas.State.AddStateLink(Atlas.State, Atlas.StateLink.TransitionCondition)
+  type: Method
+  source:
+    id: AddStateLink
+    path: ''
+    startLine: 84
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds a link to another state\n"
+  example: []
+  syntax:
+    content: public void AddStateLink(State nextState, StateLink.TransitionCondition condition)
+    parameters:
+    - id: nextState
+      type: Atlas.State
+      description: The state to transition to when the given condition is satisfied
+    - id: condition
+      type: Atlas.StateLink.TransitionCondition
+      description: The condition used to evaluate if this link is satisfied
+    content.vb: Public Sub AddStateLink(nextState As State, condition As StateLink.TransitionCondition)
+  overload: Atlas.State.AddStateLink*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.State.Enter
+  commentId: M:Atlas.State.Enter
+  id: Enter
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: Enter()
+  nameWithType: State.Enter()
+  fullName: Atlas.State.Enter()
+  type: Method
+  source:
+    id: Enter
+    path: ''
+    startLine: 93
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCalled when the state is entered\n"
+  example: []
+  syntax:
+    content: public virtual void Enter()
+    content.vb: Public Overridable Sub Enter
+  overload: Atlas.State.Enter*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Atlas.State.Tick
+  commentId: M:Atlas.State.Tick
+  id: Tick
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: State.Tick()
+  fullName: Atlas.State.Tick()
+  type: Method
+  source:
+    id: Tick
+    path: ''
+    startLine: 100
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCalled when the state is updated\n"
+  example: []
+  syntax:
+    content: public virtual void Tick()
+    content.vb: Public Overridable Sub Tick
+  overload: Atlas.State.Tick*
+  implements:
+  - Atlas.ITickable.Tick
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Atlas.State.Exit
+  commentId: M:Atlas.State.Exit
+  id: Exit
+  parent: Atlas.State
+  langs:
+  - csharp
+  - vb
+  name: Exit()
+  nameWithType: State.Exit()
+  fullName: Atlas.State.Exit()
+  type: Method
+  source:
+    id: Exit
+    path: ''
+    startLine: 107
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCalled when the state is exited\n"
+  example: []
+  syntax:
+    content: public virtual void Exit()
+    content.vb: Public Overridable Sub Exit
+  overload: Atlas.State.Exit*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Atlas.IStateMachine
+  commentId: T:Atlas.IStateMachine
+  parent: Atlas
+  name: IStateMachine
+  nameWithType: IStateMachine
+  fullName: Atlas.IStateMachine
+- uid: Atlas.StateMachine
+  commentId: T:Atlas.StateMachine
+  name: StateMachine
+  nameWithType: StateMachine
+  fullName: Atlas.StateMachine
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Atlas.ITickable
+  commentId: T:Atlas.ITickable
+  parent: Atlas
+  name: ITickable
+  nameWithType: ITickable
+  fullName: Atlas.ITickable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.State.#ctor*
+  commentId: Overload:Atlas.State.#ctor
+  name: State
+  nameWithType: State.State
+  fullName: Atlas.State.State
+- uid: Atlas.State.StateMachine*
+  commentId: Overload:Atlas.State.StateMachine
+  name: StateMachine
+  nameWithType: State.StateMachine
+  fullName: Atlas.State.StateMachine
+- uid: Atlas.State.StateLinks*
+  commentId: Overload:Atlas.State.StateLinks
+  name: StateLinks
+  nameWithType: State.StateLinks
+  fullName: Atlas.State.StateLinks
+- uid: List{Atlas.IStateLink}
+  commentId: '!:List{Atlas.IStateLink}'
+  definition: List`1
+  name: List<IStateLink>
+  nameWithType: List<IStateLink>
+  fullName: List<Atlas.IStateLink>
+  nameWithType.vb: List(Of IStateLink)
+  fullName.vb: List(Of Atlas.IStateLink)
+  name.vb: List(Of IStateLink)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Atlas.IStateLink
+    name: IStateLink
+    nameWithType: IStateLink
+    fullName: Atlas.IStateLink
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Atlas.IStateLink
+    name: IStateLink
+    nameWithType: IStateLink
+    fullName: Atlas.IStateLink
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.State.AddStateLink*
+  commentId: Overload:Atlas.State.AddStateLink
+  name: AddStateLink
+  nameWithType: State.AddStateLink
+  fullName: Atlas.State.AddStateLink
+- uid: Atlas.IStateLink
+  commentId: T:Atlas.IStateLink
+  parent: Atlas
+  name: IStateLink
+  nameWithType: IStateLink
+  fullName: Atlas.IStateLink
+- uid: Atlas.State
+  commentId: T:Atlas.State
+  parent: Atlas
+  name: State
+  nameWithType: State
+  fullName: Atlas.State
+- uid: Atlas.StateLink.TransitionCondition
+  commentId: T:Atlas.StateLink.TransitionCondition
+  parent: Atlas
+  name: StateLink.TransitionCondition
+  nameWithType: StateLink.TransitionCondition
+  fullName: Atlas.StateLink.TransitionCondition
+- uid: Atlas.State.Enter*
+  commentId: Overload:Atlas.State.Enter
+  name: Enter
+  nameWithType: State.Enter
+  fullName: Atlas.State.Enter
+- uid: Atlas.State.Tick*
+  commentId: Overload:Atlas.State.Tick
+  name: Tick
+  nameWithType: State.Tick
+  fullName: Atlas.State.Tick
+- uid: Atlas.ITickable.Tick
+  commentId: M:Atlas.ITickable.Tick
+  parent: Atlas.ITickable
+  name: Tick()
+  nameWithType: ITickable.Tick()
+  fullName: Atlas.ITickable.Tick()
+  spec.csharp:
+  - uid: Atlas.ITickable.Tick
+    name: Tick
+    nameWithType: ITickable.Tick
+    fullName: Atlas.ITickable.Tick
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.ITickable.Tick
+    name: Tick
+    nameWithType: ITickable.Tick
+    fullName: Atlas.ITickable.Tick
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.State.Exit*
+  commentId: Overload:Atlas.State.Exit
+  name: Exit
+  nameWithType: State.Exit
+  fullName: Atlas.State.Exit

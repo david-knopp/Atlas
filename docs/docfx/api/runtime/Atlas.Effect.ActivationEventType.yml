@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Effect.ActivationEventType
+  commentId: T:Atlas.Effect.ActivationEventType
+  id: Effect.ActivationEventType
+  parent: Atlas
+  children:
+  - Atlas.Effect.ActivationEventType.Manual
+  - Atlas.Effect.ActivationEventType.Start
+  langs:
+  - csharp
+  - vb
+  name: Effect.ActivationEventType
+  nameWithType: Effect.ActivationEventType
+  fullName: Atlas.Effect.ActivationEventType
+  type: Enum
+  source:
+    id: ActivationEventType
+    path: ''
+    startLine: 2057
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nEvent defining how the effect will be activated\n"
+  example: []
+  syntax:
+    content: public enum ActivationEventType
+    content.vb: Public Enum ActivationEventType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.Effect.ActivationEventType.Start
+  commentId: F:Atlas.Effect.ActivationEventType.Start
+  id: Start
+  parent: Atlas.Effect.ActivationEventType
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: Effect.ActivationEventType.Start
+  fullName: Atlas.Effect.ActivationEventType.Start
+  type: Field
+  source:
+    id: Start
+    path: ''
+    startLine: 2062
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nActivate on <xref href=\"Atlas.Effect.ActivationEventType.Start\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Start = 0
+    return:
+      type: Atlas.Effect.ActivationEventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.Effect.ActivationEventType.Manual
+  commentId: F:Atlas.Effect.ActivationEventType.Manual
+  id: Manual
+  parent: Atlas.Effect.ActivationEventType
+  langs:
+  - csharp
+  - vb
+  name: Manual
+  nameWithType: Effect.ActivationEventType.Manual
+  fullName: Atlas.Effect.ActivationEventType.Manual
+  type: Field
+  source:
+    id: Manual
+    path: ''
+    startLine: 2067
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nManually activate via code (by calling <xref href=\"Atlas.Effect.Play\" data-throw-if-not-resolved=\"false\"></xref>)\n"
+  example: []
+  syntax:
+    content: Manual = 1
+    return:
+      type: Atlas.Effect.ActivationEventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.Effect.ActivationEventType.Start
+  commentId: F:Atlas.Effect.ActivationEventType.Start
+  isExternal: true
+- uid: Atlas.Effect.ActivationEventType
+  commentId: T:Atlas.Effect.ActivationEventType
+  parent: Atlas
+  name: Effect.ActivationEventType
+  nameWithType: Effect.ActivationEventType
+  fullName: Atlas.Effect.ActivationEventType
+- uid: Atlas.Effect.Play
+  commentId: M:Atlas.Effect.Play
+  isExternal: true

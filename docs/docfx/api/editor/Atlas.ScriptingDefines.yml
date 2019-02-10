@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ScriptingDefines
+  commentId: T:Atlas.ScriptingDefines
+  id: ScriptingDefines
+  parent: Atlas
+  children:
+  - Atlas.ScriptingDefines.AddSymbol(BuildTargetGroup,System.String)
+  - Atlas.ScriptingDefines.AddSymbol(System.String)
+  - Atlas.ScriptingDefines.ContainsSymbol(BuildTargetGroup,System.String)
+  - Atlas.ScriptingDefines.ContainsSymbol(System.String)
+  - Atlas.ScriptingDefines.IsGroupValid(BuildTargetGroup)
+  - Atlas.ScriptingDefines.RemoveSymbol(BuildTargetGroup,System.String)
+  - Atlas.ScriptingDefines.RemoveSymbol(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ScriptingDefines
+  nameWithType: ScriptingDefines
+  fullName: Atlas.ScriptingDefines
+  type: Class
+  source:
+    id: ScriptingDefines
+    path: ''
+    startLine: 694
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nHelper class for adding/removing scripting define symbols \n"
+  example: []
+  syntax:
+    content: public static class ScriptingDefines
+    content.vb: Public Module ScriptingDefines
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.ScriptingDefines.ContainsSymbol(BuildTargetGroup,System.String)
+  commentId: M:Atlas.ScriptingDefines.ContainsSymbol(BuildTargetGroup,System.String)
+  id: ContainsSymbol(BuildTargetGroup,System.String)
+  parent: Atlas.ScriptingDefines
+  langs:
+  - csharp
+  - vb
+  name: ContainsSymbol(BuildTargetGroup, String)
+  nameWithType: ScriptingDefines.ContainsSymbol(BuildTargetGroup, String)
+  fullName: Atlas.ScriptingDefines.ContainsSymbol(BuildTargetGroup, System.String)
+  type: Method
+  source:
+    id: ContainsSymbol
+    path: ''
+    startLine: 702
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static bool ContainsSymbol(BuildTargetGroup group, string symbol)
+    parameters:
+    - id: group
+      type: BuildTargetGroup
+    - id: symbol
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ContainsSymbol(group As BuildTargetGroup, symbol As String) As Boolean
+  overload: Atlas.ScriptingDefines.ContainsSymbol*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ScriptingDefines.ContainsSymbol(System.String)
+  commentId: M:Atlas.ScriptingDefines.ContainsSymbol(System.String)
+  id: ContainsSymbol(System.String)
+  parent: Atlas.ScriptingDefines
+  langs:
+  - csharp
+  - vb
+  name: ContainsSymbol(String)
+  nameWithType: ScriptingDefines.ContainsSymbol(String)
+  fullName: Atlas.ScriptingDefines.ContainsSymbol(System.String)
+  type: Method
+  source:
+    id: ContainsSymbol
+    path: ''
+    startLine: 715
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static bool ContainsSymbol(string symbol)
+    parameters:
+    - id: symbol
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ContainsSymbol(symbol As String) As Boolean
+  overload: Atlas.ScriptingDefines.ContainsSymbol*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ScriptingDefines.AddSymbol(BuildTargetGroup,System.String)
+  commentId: M:Atlas.ScriptingDefines.AddSymbol(BuildTargetGroup,System.String)
+  id: AddSymbol(BuildTargetGroup,System.String)
+  parent: Atlas.ScriptingDefines
+  langs:
+  - csharp
+  - vb
+  name: AddSymbol(BuildTargetGroup, String)
+  nameWithType: ScriptingDefines.AddSymbol(BuildTargetGroup, String)
+  fullName: Atlas.ScriptingDefines.AddSymbol(BuildTargetGroup, System.String)
+  type: Method
+  source:
+    id: AddSymbol
+    path: ''
+    startLine: 725
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds the given preprocessor definition to the PlayerSettings for the given build group\n"
+  example: []
+  syntax:
+    content: public static void AddSymbol(BuildTargetGroup group, string symbol)
+    parameters:
+    - id: group
+      type: BuildTargetGroup
+      description: Build group to add the symbol to
+    - id: symbol
+      type: System.String
+      description: Preprocessor symbol to add
+    content.vb: Public Shared Sub AddSymbol(group As BuildTargetGroup, symbol As String)
+  overload: Atlas.ScriptingDefines.AddSymbol*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ScriptingDefines.AddSymbol(System.String)
+  commentId: M:Atlas.ScriptingDefines.AddSymbol(System.String)
+  id: AddSymbol(System.String)
+  parent: Atlas.ScriptingDefines
+  langs:
+  - csharp
+  - vb
+  name: AddSymbol(String)
+  nameWithType: ScriptingDefines.AddSymbol(String)
+  fullName: Atlas.ScriptingDefines.AddSymbol(System.String)
+  type: Method
+  source:
+    id: AddSymbol
+    path: ''
+    startLine: 741
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nAdds the given preprocessor definition to the PlayerSettings for all valid build groups\n"
+  example: []
+  syntax:
+    content: public static void AddSymbol(string symbol)
+    parameters:
+    - id: symbol
+      type: System.String
+      description: Preprocessor symbol to add
+    content.vb: Public Shared Sub AddSymbol(symbol As String)
+  overload: Atlas.ScriptingDefines.AddSymbol*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ScriptingDefines.RemoveSymbol(BuildTargetGroup,System.String)
+  commentId: M:Atlas.ScriptingDefines.RemoveSymbol(BuildTargetGroup,System.String)
+  id: RemoveSymbol(BuildTargetGroup,System.String)
+  parent: Atlas.ScriptingDefines
+  langs:
+  - csharp
+  - vb
+  name: RemoveSymbol(BuildTargetGroup, String)
+  nameWithType: ScriptingDefines.RemoveSymbol(BuildTargetGroup, String)
+  fullName: Atlas.ScriptingDefines.RemoveSymbol(BuildTargetGroup, System.String)
+  type: Method
+  source:
+    id: RemoveSymbol
+    path: ''
+    startLine: 757
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves the given preprocessor definition from the PlayerSettings for the given build groups\n"
+  example: []
+  syntax:
+    content: public static void RemoveSymbol(BuildTargetGroup group, string symbol)
+    parameters:
+    - id: group
+      type: BuildTargetGroup
+      description: Build group to remove the symbol from
+    - id: symbol
+      type: System.String
+      description: Preprocessor symbol to add
+    content.vb: Public Shared Sub RemoveSymbol(group As BuildTargetGroup, symbol As String)
+  overload: Atlas.ScriptingDefines.RemoveSymbol*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ScriptingDefines.RemoveSymbol(System.String)
+  commentId: M:Atlas.ScriptingDefines.RemoveSymbol(System.String)
+  id: RemoveSymbol(System.String)
+  parent: Atlas.ScriptingDefines
+  langs:
+  - csharp
+  - vb
+  name: RemoveSymbol(String)
+  nameWithType: ScriptingDefines.RemoveSymbol(String)
+  fullName: Atlas.ScriptingDefines.RemoveSymbol(System.String)
+  type: Method
+  source:
+    id: RemoveSymbol
+    path: ''
+    startLine: 773
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves the given preprocessor definition from the PlayerSettings for all valid build groups\n"
+  example: []
+  syntax:
+    content: public static void RemoveSymbol(string symbol)
+    parameters:
+    - id: symbol
+      type: System.String
+      description: Preprocessor symbol to add
+    content.vb: Public Shared Sub RemoveSymbol(symbol As String)
+  overload: Atlas.ScriptingDefines.RemoveSymbol*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.ScriptingDefines.IsGroupValid(BuildTargetGroup)
+  commentId: M:Atlas.ScriptingDefines.IsGroupValid(BuildTargetGroup)
+  id: IsGroupValid(BuildTargetGroup)
+  parent: Atlas.ScriptingDefines
+  langs:
+  - csharp
+  - vb
+  name: IsGroupValid(BuildTargetGroup)
+  nameWithType: ScriptingDefines.IsGroupValid(BuildTargetGroup)
+  fullName: Atlas.ScriptingDefines.IsGroupValid(BuildTargetGroup)
+  type: Method
+  source:
+    id: IsGroupValid
+    path: ''
+    startLine: 789
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nChecks if the given group is valid\n"
+  example: []
+  syntax:
+    content: public static bool IsGroupValid(BuildTargetGroup group)
+    parameters:
+    - id: group
+      type: BuildTargetGroup
+      description: The group to check
+    return:
+      type: System.Boolean
+      description: true if valid, false if invalid
+    content.vb: Public Shared Function IsGroupValid(group As BuildTargetGroup) As Boolean
+  overload: Atlas.ScriptingDefines.IsGroupValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.ScriptingDefines.ContainsSymbol*
+  commentId: Overload:Atlas.ScriptingDefines.ContainsSymbol
+  name: ContainsSymbol
+  nameWithType: ScriptingDefines.ContainsSymbol
+  fullName: Atlas.ScriptingDefines.ContainsSymbol
+- uid: BuildTargetGroup
+  isExternal: true
+  name: BuildTargetGroup
+  nameWithType: BuildTargetGroup
+  fullName: BuildTargetGroup
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Atlas.ScriptingDefines.AddSymbol*
+  commentId: Overload:Atlas.ScriptingDefines.AddSymbol
+  name: AddSymbol
+  nameWithType: ScriptingDefines.AddSymbol
+  fullName: Atlas.ScriptingDefines.AddSymbol
+- uid: Atlas.ScriptingDefines.RemoveSymbol*
+  commentId: Overload:Atlas.ScriptingDefines.RemoveSymbol
+  name: RemoveSymbol
+  nameWithType: ScriptingDefines.RemoveSymbol
+  fullName: Atlas.ScriptingDefines.RemoveSymbol
+- uid: Atlas.ScriptingDefines.IsGroupValid*
+  commentId: Overload:Atlas.ScriptingDefines.IsGroupValid
+  name: IsGroupValid
+  nameWithType: ScriptingDefines.IsGroupValid
+  fullName: Atlas.ScriptingDefines.IsGroupValid

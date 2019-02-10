@@ -1,0 +1,326 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.GUIListener
+  commentId: T:Atlas.GUIListener
+  id: GUIListener
+  parent: Atlas
+  children:
+  - Atlas.GUIListener.GUIRenderEvent
+  langs:
+  - csharp
+  - vb
+  name: GUIListener
+  nameWithType: GUIListener
+  fullName: Atlas.GUIListener
+  type: Class
+  source:
+    id: GUIListener
+    path: ''
+    startLine: 4482
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nA singleton class for registering and executing callbacks in Unity&apos;s OnGUI.\nSince simply including the OnGUI method in a <see cref=\"!:UnityEngine.MonoBehaviour\"></see>\nwill cause undesirable heap allocations, this class is meant to collect those calls\ninto one place, which can be disabled in live builds or even lazily instantiated\nfor rendering debug information only when necessary.\n"
+  example: []
+  syntax:
+    content: 'public sealed class GUIListener : SingletonBehavior<GUIListener>'
+    content.vb: >-
+      Public NotInheritable Class GUIListener
+          Inherits SingletonBehavior(Of GUIListener)
+  inheritance:
+  - System.Object
+  - Atlas.SingletonBehavior{Atlas.GUIListener}
+  inheritedMembers:
+  - Atlas.SingletonBehavior{Atlas.GUIListener}.HasInstance
+  - Atlas.SingletonBehavior{Atlas.GUIListener}.Instance
+  - Atlas.SingletonBehavior{Atlas.GUIListener}.Awake
+  - Atlas.SingletonBehavior{Atlas.GUIListener}.OnDestroy
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.GUIListener.GUIRenderEvent
+  commentId: E:Atlas.GUIListener.GUIRenderEvent
+  id: GUIRenderEvent
+  parent: Atlas.GUIListener
+  langs:
+  - csharp
+  - vb
+  name: GUIRenderEvent
+  nameWithType: GUIListener.GUIRenderEvent
+  fullName: Atlas.GUIListener.GUIRenderEvent
+  type: Event
+  source:
+    id: GUIRenderEvent
+    path: ''
+    startLine: 4488
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nEvent that fires every OnGUI update cycle\n"
+  example: []
+  syntax:
+    content: public event Action GUIRenderEvent
+    return:
+      type: Action
+    content.vb: Public Event GUIRenderEvent As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Atlas.SingletonBehavior{Atlas.GUIListener}
+  commentId: T:Atlas.SingletonBehavior{Atlas.GUIListener}
+  parent: Atlas
+  definition: Atlas.SingletonBehavior`1
+  name: SingletonBehavior<GUIListener>
+  nameWithType: SingletonBehavior<GUIListener>
+  fullName: Atlas.SingletonBehavior<Atlas.GUIListener>
+  nameWithType.vb: SingletonBehavior(Of GUIListener)
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.GUIListener)
+  name.vb: SingletonBehavior(Of GUIListener)
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Atlas.GUIListener
+    name: GUIListener
+    nameWithType: GUIListener
+    fullName: Atlas.GUIListener
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Atlas.GUIListener
+    name: GUIListener
+    nameWithType: GUIListener
+    fullName: Atlas.GUIListener
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior{Atlas.GUIListener}.HasInstance
+  commentId: P:Atlas.SingletonBehavior{Atlas.GUIListener}.HasInstance
+  parent: Atlas.SingletonBehavior{Atlas.GUIListener}
+  definition: Atlas.SingletonBehavior`1.HasInstance
+  name: HasInstance
+  nameWithType: SingletonBehavior<GUIListener>.HasInstance
+  fullName: Atlas.SingletonBehavior<Atlas.GUIListener>.HasInstance
+  nameWithType.vb: SingletonBehavior(Of GUIListener).HasInstance
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.GUIListener).HasInstance
+- uid: Atlas.SingletonBehavior{Atlas.GUIListener}.Instance
+  commentId: P:Atlas.SingletonBehavior{Atlas.GUIListener}.Instance
+  parent: Atlas.SingletonBehavior{Atlas.GUIListener}
+  definition: Atlas.SingletonBehavior`1.Instance
+  name: Instance
+  nameWithType: SingletonBehavior<GUIListener>.Instance
+  fullName: Atlas.SingletonBehavior<Atlas.GUIListener>.Instance
+  nameWithType.vb: SingletonBehavior(Of GUIListener).Instance
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.GUIListener).Instance
+- uid: Atlas.SingletonBehavior{Atlas.GUIListener}.Awake
+  commentId: M:Atlas.SingletonBehavior{Atlas.GUIListener}.Awake
+  parent: Atlas.SingletonBehavior{Atlas.GUIListener}
+  definition: Atlas.SingletonBehavior`1.Awake
+  name: Awake()
+  nameWithType: SingletonBehavior<GUIListener>.Awake()
+  fullName: Atlas.SingletonBehavior<Atlas.GUIListener>.Awake()
+  nameWithType.vb: SingletonBehavior(Of GUIListener).Awake()
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.GUIListener).Awake()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior<GUIListener>.Awake
+    fullName: Atlas.SingletonBehavior<Atlas.GUIListener>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior(Of GUIListener).Awake
+    fullName: Atlas.SingletonBehavior(Of Atlas.GUIListener).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior{Atlas.GUIListener}.OnDestroy
+  commentId: M:Atlas.SingletonBehavior{Atlas.GUIListener}.OnDestroy
+  parent: Atlas.SingletonBehavior{Atlas.GUIListener}
+  definition: Atlas.SingletonBehavior`1.OnDestroy
+  name: OnDestroy()
+  nameWithType: SingletonBehavior<GUIListener>.OnDestroy()
+  fullName: Atlas.SingletonBehavior<Atlas.GUIListener>.OnDestroy()
+  nameWithType.vb: SingletonBehavior(Of GUIListener).OnDestroy()
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.GUIListener).OnDestroy()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior<GUIListener>.OnDestroy
+    fullName: Atlas.SingletonBehavior<Atlas.GUIListener>.OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior(Of GUIListener).OnDestroy
+    fullName: Atlas.SingletonBehavior(Of Atlas.GUIListener).OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.SingletonBehavior`1
+  commentId: T:Atlas.SingletonBehavior`1
+  name: SingletonBehavior<TDerived>
+  nameWithType: SingletonBehavior<TDerived>
+  fullName: Atlas.SingletonBehavior<TDerived>
+  nameWithType.vb: SingletonBehavior(Of TDerived)
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived)
+  name.vb: SingletonBehavior(Of TDerived)
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDerived
+    nameWithType: TDerived
+    fullName: TDerived
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDerived
+    nameWithType: TDerived
+    fullName: TDerived
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior`1.HasInstance
+  commentId: P:Atlas.SingletonBehavior`1.HasInstance
+  name: HasInstance
+  nameWithType: SingletonBehavior<TDerived>.HasInstance
+  fullName: Atlas.SingletonBehavior<TDerived>.HasInstance
+  nameWithType.vb: SingletonBehavior(Of TDerived).HasInstance
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).HasInstance
+- uid: Atlas.SingletonBehavior`1.Instance
+  commentId: P:Atlas.SingletonBehavior`1.Instance
+  name: Instance
+  nameWithType: SingletonBehavior<TDerived>.Instance
+  fullName: Atlas.SingletonBehavior<TDerived>.Instance
+  nameWithType.vb: SingletonBehavior(Of TDerived).Instance
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).Instance
+- uid: Atlas.SingletonBehavior`1.Awake
+  commentId: M:Atlas.SingletonBehavior`1.Awake
+  name: Awake()
+  nameWithType: SingletonBehavior<TDerived>.Awake()
+  fullName: Atlas.SingletonBehavior<TDerived>.Awake()
+  nameWithType.vb: SingletonBehavior(Of TDerived).Awake()
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).Awake()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior<TDerived>.Awake
+    fullName: Atlas.SingletonBehavior<TDerived>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior(Of TDerived).Awake
+    fullName: Atlas.SingletonBehavior(Of TDerived).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior`1.OnDestroy
+  commentId: M:Atlas.SingletonBehavior`1.OnDestroy
+  name: OnDestroy()
+  nameWithType: SingletonBehavior<TDerived>.OnDestroy()
+  fullName: Atlas.SingletonBehavior<TDerived>.OnDestroy()
+  nameWithType.vb: SingletonBehavior(Of TDerived).OnDestroy()
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).OnDestroy()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior<TDerived>.OnDestroy
+    fullName: Atlas.SingletonBehavior<TDerived>.OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior(Of TDerived).OnDestroy
+    fullName: Atlas.SingletonBehavior(Of TDerived).OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Action
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: Action

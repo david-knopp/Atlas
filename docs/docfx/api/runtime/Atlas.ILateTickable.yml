@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ILateTickable
+  commentId: T:Atlas.ILateTickable
+  id: ILateTickable
+  parent: Atlas
+  children:
+  - Atlas.ILateTickable.LateTick
+  langs:
+  - csharp
+  - vb
+  name: ILateTickable
+  nameWithType: ILateTickable
+  fullName: Atlas.ILateTickable
+  type: Interface
+  source:
+    id: ILateTickable
+    path: ''
+    startLine: 2474
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nA helper for providing a shared interface for updating objects in Unity&apos;s LateUpdate\n"
+  example: []
+  syntax:
+    content: public interface ILateTickable
+    content.vb: Public Interface ILateTickable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Atlas.ILateTickable.LateTick
+  commentId: M:Atlas.ILateTickable.LateTick
+  id: LateTick
+  parent: Atlas.ILateTickable
+  langs:
+  - csharp
+  - vb
+  name: LateTick()
+  nameWithType: ILateTickable.LateTick()
+  fullName: Atlas.ILateTickable.LateTick()
+  type: Method
+  source:
+    id: LateTick
+    path: ''
+    startLine: 2479
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nIntended to be called every late update cycle\n"
+  example: []
+  syntax:
+    content: void LateTick()
+    content.vb: Sub LateTick
+  overload: Atlas.ILateTickable.LateTick*
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.ILateTickable.LateTick*
+  commentId: Overload:Atlas.ILateTickable.LateTick
+  name: LateTick
+  nameWithType: ILateTickable.LateTick
+  fullName: Atlas.ILateTickable.LateTick

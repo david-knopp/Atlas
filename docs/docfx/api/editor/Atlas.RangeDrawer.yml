@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.RangeDrawer
+  commentId: T:Atlas.RangeDrawer
+  id: RangeDrawer
+  parent: Atlas
+  children:
+  - Atlas.RangeDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: RangeDrawer
+  nameWithType: RangeDrawer
+  fullName: Atlas.RangeDrawer
+  type: Class
+  source:
+    id: RangeDrawer
+    path: ''
+    startLine: 638
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: 'public sealed class RangeDrawer : PropertyDrawer'
+    content.vb: >-
+      Public NotInheritable Class RangeDrawer
+          Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.RangeDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  commentId: M:Atlas.RangeDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  id: OnGUI(Rect,SerializedProperty,GUIContent)
+  parent: Atlas.RangeDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: RangeDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: Atlas.RangeDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  type: Method
+  source:
+    id: OnGUI
+    path: ''
+    startLine: 641
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: Rect
+    - id: property
+      type: SerializedProperty
+    - id: label
+      type: GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, property As SerializedProperty, label As GUIContent)
+  overload: Atlas.RangeDrawer.OnGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.RangeDrawer.OnGUI*
+  commentId: Overload:Atlas.RangeDrawer.OnGUI
+  name: OnGUI
+  nameWithType: RangeDrawer.OnGUI
+  fullName: Atlas.RangeDrawer.OnGUI
+- uid: Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: GUIContent

@@ -1,0 +1,1030 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Runtime
+  commentId: N:Atlas
+  id: Atlas.Runtime
+  children:
+  - Atlas.AnchorPosition
+  - Atlas.BackEase
+  - Atlas.BillboardDebugDrawModifier
+  - Atlas.BitField
+  - Atlas.BounceEase
+  - Atlas.CircleDebugDrawer
+  - Atlas.CircularEase
+  - Atlas.CrossDebugDrawer
+  - Atlas.CubicEase
+  - Atlas.DebugDraw
+  - Atlas.DebugDrawModifierExtensions
+  - Atlas.DebugExtensions
+  - Atlas.Ease
+  - Atlas.EaseType
+  - Atlas.Effect
+  - Atlas.Effect.ActivationEventType
+  - Atlas.Effect.DestructionEventType
+  - Atlas.EffectEmitterBase
+  - Atlas.ElasticEase
+  - Atlas.ExponentialEase
+  - Atlas.GizmoUtils
+  - Atlas.GUIColorScope
+  - Atlas.GUIListener
+  - Atlas.HashCode
+  - Atlas.ICommand
+  - Atlas.ICommand`1
+  - Atlas.ICommand`2
+  - Atlas.ICommand`3
+  - Atlas.ICommand`4
+  - Atlas.IDebugDrawer
+  - Atlas.IFixedTickable
+  - Atlas.ILateTickable
+  - Atlas.IndexedPriorityQueue`1
+  - Atlas.IScheduledTask
+  - Atlas.ISignal
+  - Atlas.IStateLink
+  - Atlas.IStateMachine
+  - Atlas.ITickable
+  - Atlas.IUIPanel
+  - Atlas.LinearEase
+  - Atlas.LineDebugDrawer
+  - Atlas.MaxValueAttribute
+  - Atlas.MinValueAttribute
+  - Atlas.ParticleEffectEmitter
+  - Atlas.PathAttribute
+  - Atlas.PathAttribute.Path
+  - Atlas.PathAttribute.Relativity
+  - Atlas.PreventEditInInspectorAttribute
+  - Atlas.ProfilerScope
+  - Atlas.QuadraticEase
+  - Atlas.QuarticEase
+  - Atlas.QuinticEase
+  - Atlas.Range
+  - Atlas.RectangleDebugDrawer
+  - Atlas.ScenePathAttribute
+  - Atlas.Signal
+  - Atlas.Signal`1
+  - Atlas.Signal`2
+  - Atlas.Signal`3
+  - Atlas.Signal`4
+  - Atlas.SignalBase`2
+  - Atlas.SignalManager`1
+  - Atlas.SineEase
+  - Atlas.SingletonBehavior`1
+  - Atlas.State
+  - Atlas.StateLink
+  - Atlas.StateLink.TransitionCondition
+  - Atlas.StateMachine
+  - Atlas.StateMachineBehavior
+  - Atlas.TaskScheduler
+  - Atlas.TextDebugDrawer
+  - Atlas.TimedDebugDrawModifier
+  - Atlas.Timer
+  - Atlas.TimeScale
+  - Atlas.TransformDebugDrawModifier
+  - Atlas.UIStack
+  - Atlas.UIStack.Transition
+  langs:
+  - csharp
+  - vb
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Atlas.IStateLink
+  commentId: T:Atlas.IStateLink
+  parent: Atlas
+  name: IStateLink
+  nameWithType: IStateLink
+  fullName: Atlas.IStateLink
+- uid: Atlas.IStateMachine
+  commentId: T:Atlas.IStateMachine
+  parent: Atlas
+  name: IStateMachine
+  nameWithType: IStateMachine
+  fullName: Atlas.IStateMachine
+- uid: Atlas.State
+  commentId: T:Atlas.State
+  parent: Atlas
+  name: State
+  nameWithType: State
+  fullName: Atlas.State
+- uid: Atlas.StateLink
+  commentId: T:Atlas.StateLink
+  name: StateLink
+  nameWithType: StateLink
+  fullName: Atlas.StateLink
+- uid: Atlas.StateLink.TransitionCondition
+  commentId: T:Atlas.StateLink.TransitionCondition
+  parent: Atlas
+  name: StateLink.TransitionCondition
+  nameWithType: StateLink.TransitionCondition
+  fullName: Atlas.StateLink.TransitionCondition
+- uid: Atlas.StateMachine
+  commentId: T:Atlas.StateMachine
+  name: StateMachine
+  nameWithType: StateMachine
+  fullName: Atlas.StateMachine
+- uid: Atlas.StateMachineBehavior
+  commentId: T:Atlas.StateMachineBehavior
+  name: StateMachineBehavior
+  nameWithType: StateMachineBehavior
+  fullName: Atlas.StateMachineBehavior
+- uid: Atlas.IndexedPriorityQueue`1
+  commentId: T:Atlas.IndexedPriorityQueue`1
+  name: IndexedPriorityQueue<T>
+  nameWithType: IndexedPriorityQueue<T>
+  fullName: Atlas.IndexedPriorityQueue<T>
+  nameWithType.vb: IndexedPriorityQueue(Of T)
+  fullName.vb: Atlas.IndexedPriorityQueue(Of T)
+  name.vb: IndexedPriorityQueue(Of T)
+  spec.csharp:
+  - uid: Atlas.IndexedPriorityQueue`1
+    name: IndexedPriorityQueue
+    nameWithType: IndexedPriorityQueue
+    fullName: Atlas.IndexedPriorityQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.IndexedPriorityQueue`1
+    name: IndexedPriorityQueue
+    nameWithType: IndexedPriorityQueue
+    fullName: Atlas.IndexedPriorityQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.DebugDraw
+  commentId: T:Atlas.DebugDraw
+  name: DebugDraw
+  nameWithType: DebugDraw
+  fullName: Atlas.DebugDraw
+- uid: Atlas.CircleDebugDrawer
+  commentId: T:Atlas.CircleDebugDrawer
+  name: CircleDebugDrawer
+  nameWithType: CircleDebugDrawer
+  fullName: Atlas.CircleDebugDrawer
+- uid: Atlas.CrossDebugDrawer
+  commentId: T:Atlas.CrossDebugDrawer
+  name: CrossDebugDrawer
+  nameWithType: CrossDebugDrawer
+  fullName: Atlas.CrossDebugDrawer
+- uid: Atlas.IDebugDrawer
+  commentId: T:Atlas.IDebugDrawer
+  parent: Atlas
+  name: IDebugDrawer
+  nameWithType: IDebugDrawer
+  fullName: Atlas.IDebugDrawer
+- uid: Atlas.LineDebugDrawer
+  commentId: T:Atlas.LineDebugDrawer
+  name: LineDebugDrawer
+  nameWithType: LineDebugDrawer
+  fullName: Atlas.LineDebugDrawer
+- uid: Atlas.RectangleDebugDrawer
+  commentId: T:Atlas.RectangleDebugDrawer
+  name: RectangleDebugDrawer
+  nameWithType: RectangleDebugDrawer
+  fullName: Atlas.RectangleDebugDrawer
+- uid: Atlas.TextDebugDrawer
+  commentId: T:Atlas.TextDebugDrawer
+  name: TextDebugDrawer
+  nameWithType: TextDebugDrawer
+  fullName: Atlas.TextDebugDrawer
+- uid: Atlas.BillboardDebugDrawModifier
+  commentId: T:Atlas.BillboardDebugDrawModifier
+  name: BillboardDebugDrawModifier
+  nameWithType: BillboardDebugDrawModifier
+  fullName: Atlas.BillboardDebugDrawModifier
+- uid: Atlas.DebugDrawModifierExtensions
+  commentId: T:Atlas.DebugDrawModifierExtensions
+  name: DebugDrawModifierExtensions
+  nameWithType: DebugDrawModifierExtensions
+  fullName: Atlas.DebugDrawModifierExtensions
+- uid: Atlas.TimedDebugDrawModifier
+  commentId: T:Atlas.TimedDebugDrawModifier
+  name: TimedDebugDrawModifier
+  nameWithType: TimedDebugDrawModifier
+  fullName: Atlas.TimedDebugDrawModifier
+- uid: Atlas.TransformDebugDrawModifier
+  commentId: T:Atlas.TransformDebugDrawModifier
+  name: TransformDebugDrawModifier
+  nameWithType: TransformDebugDrawModifier
+  fullName: Atlas.TransformDebugDrawModifier
+- uid: Atlas.Effect
+  commentId: T:Atlas.Effect
+  name: Effect
+  nameWithType: Effect
+  fullName: Atlas.Effect
+- uid: Atlas.Effect.ActivationEventType
+  commentId: T:Atlas.Effect.ActivationEventType
+  parent: Atlas
+  name: Effect.ActivationEventType
+  nameWithType: Effect.ActivationEventType
+  fullName: Atlas.Effect.ActivationEventType
+- uid: Atlas.Effect.DestructionEventType
+  commentId: T:Atlas.Effect.DestructionEventType
+  parent: Atlas
+  name: Effect.DestructionEventType
+  nameWithType: Effect.DestructionEventType
+  fullName: Atlas.Effect.DestructionEventType
+- uid: Atlas.EffectEmitterBase
+  commentId: T:Atlas.EffectEmitterBase
+  parent: Atlas
+  name: EffectEmitterBase
+  nameWithType: EffectEmitterBase
+  fullName: Atlas.EffectEmitterBase
+- uid: Atlas.ParticleEffectEmitter
+  commentId: T:Atlas.ParticleEffectEmitter
+  name: ParticleEffectEmitter
+  nameWithType: ParticleEffectEmitter
+  fullName: Atlas.ParticleEffectEmitter
+- uid: Atlas.SingletonBehavior`1
+  commentId: T:Atlas.SingletonBehavior`1
+  name: SingletonBehavior<TDerived>
+  nameWithType: SingletonBehavior<TDerived>
+  fullName: Atlas.SingletonBehavior<TDerived>
+  nameWithType.vb: SingletonBehavior(Of TDerived)
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived)
+  name.vb: SingletonBehavior(Of TDerived)
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDerived
+    nameWithType: TDerived
+    fullName: TDerived
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDerived
+    nameWithType: TDerived
+    fullName: TDerived
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.ICommand
+  commentId: T:Atlas.ICommand
+  name: ICommand
+  nameWithType: ICommand
+  fullName: Atlas.ICommand
+- uid: Atlas.ICommand`1
+  commentId: T:Atlas.ICommand`1
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: Atlas.ICommand<T>
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: Atlas.ICommand(Of T)
+  name.vb: ICommand(Of T)
+  spec.csharp:
+  - uid: Atlas.ICommand`1
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.ICommand`1
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.ICommand`2
+  commentId: T:Atlas.ICommand`2
+  name: ICommand<T1, T2>
+  nameWithType: ICommand<T1, T2>
+  fullName: Atlas.ICommand<T1, T2>
+  nameWithType.vb: ICommand(Of T1, T2)
+  fullName.vb: Atlas.ICommand(Of T1, T2)
+  name.vb: ICommand(Of T1, T2)
+  spec.csharp:
+  - uid: Atlas.ICommand`2
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.ICommand`2
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.ICommand`3
+  commentId: T:Atlas.ICommand`3
+  name: ICommand<T1, T2, T3>
+  nameWithType: ICommand<T1, T2, T3>
+  fullName: Atlas.ICommand<T1, T2, T3>
+  nameWithType.vb: ICommand(Of T1, T2, T3)
+  fullName.vb: Atlas.ICommand(Of T1, T2, T3)
+  name.vb: ICommand(Of T1, T2, T3)
+  spec.csharp:
+  - uid: Atlas.ICommand`3
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.ICommand`3
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.ICommand`4
+  commentId: T:Atlas.ICommand`4
+  name: ICommand<T1, T2, T3, T4>
+  nameWithType: ICommand<T1, T2, T3, T4>
+  fullName: Atlas.ICommand<T1, T2, T3, T4>
+  nameWithType.vb: ICommand(Of T1, T2, T3, T4)
+  fullName.vb: Atlas.ICommand(Of T1, T2, T3, T4)
+  name.vb: ICommand(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: Atlas.ICommand`4
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.ICommand`4
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.IFixedTickable
+  commentId: T:Atlas.IFixedTickable
+  name: IFixedTickable
+  nameWithType: IFixedTickable
+  fullName: Atlas.IFixedTickable
+- uid: Atlas.ILateTickable
+  commentId: T:Atlas.ILateTickable
+  name: ILateTickable
+  nameWithType: ILateTickable
+  fullName: Atlas.ILateTickable
+- uid: Atlas.ITickable
+  commentId: T:Atlas.ITickable
+  parent: Atlas
+  name: ITickable
+  nameWithType: ITickable
+  fullName: Atlas.ITickable
+- uid: Atlas.ISignal
+  commentId: T:Atlas.ISignal
+  parent: Atlas
+  name: ISignal
+  nameWithType: ISignal
+  fullName: Atlas.ISignal
+- uid: Atlas.Signal
+  commentId: T:Atlas.Signal
+  name: Signal
+  nameWithType: Signal
+  fullName: Atlas.Signal
+- uid: Atlas.Signal`1
+  commentId: T:Atlas.Signal`1
+  name: Signal<T>
+  nameWithType: Signal<T>
+  fullName: Atlas.Signal<T>
+  nameWithType.vb: Signal(Of T)
+  fullName.vb: Atlas.Signal(Of T)
+  name.vb: Signal(Of T)
+  spec.csharp:
+  - uid: Atlas.Signal`1
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.Signal`1
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.Signal`2
+  commentId: T:Atlas.Signal`2
+  name: Signal<T1, T2>
+  nameWithType: Signal<T1, T2>
+  fullName: Atlas.Signal<T1, T2>
+  nameWithType.vb: Signal(Of T1, T2)
+  fullName.vb: Atlas.Signal(Of T1, T2)
+  name.vb: Signal(Of T1, T2)
+  spec.csharp:
+  - uid: Atlas.Signal`2
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.Signal`2
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.Signal`3
+  commentId: T:Atlas.Signal`3
+  name: Signal<T1, T2, T3>
+  nameWithType: Signal<T1, T2, T3>
+  fullName: Atlas.Signal<T1, T2, T3>
+  nameWithType.vb: Signal(Of T1, T2, T3)
+  fullName.vb: Atlas.Signal(Of T1, T2, T3)
+  name.vb: Signal(Of T1, T2, T3)
+  spec.csharp:
+  - uid: Atlas.Signal`3
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.Signal`3
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.Signal`4
+  commentId: T:Atlas.Signal`4
+  name: Signal<T1, T2, T3, T4>
+  nameWithType: Signal<T1, T2, T3, T4>
+  fullName: Atlas.Signal<T1, T2, T3, T4>
+  nameWithType.vb: Signal(Of T1, T2, T3, T4)
+  fullName.vb: Atlas.Signal(Of T1, T2, T3, T4)
+  name.vb: Signal(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: Atlas.Signal`4
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.Signal`4
+    name: Signal
+    nameWithType: Signal
+    fullName: Atlas.Signal
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase`2
+  commentId: T:Atlas.SignalBase`2
+  name: SignalBase<TCommandBase, TAction>
+  nameWithType: SignalBase<TCommandBase, TAction>
+  fullName: Atlas.SignalBase<TCommandBase, TAction>
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction)
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction)
+  name.vb: SignalBase(Of TCommandBase, TAction)
+  spec.csharp:
+  - uid: Atlas.SignalBase`2
+    name: SignalBase
+    nameWithType: SignalBase
+    fullName: Atlas.SignalBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCommandBase
+    nameWithType: TCommandBase
+    fullName: TCommandBase
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SignalBase`2
+    name: SignalBase
+    nameWithType: SignalBase
+    fullName: Atlas.SignalBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCommandBase
+    nameWithType: TCommandBase
+    fullName: TCommandBase
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalManager`1
+  commentId: T:Atlas.SignalManager`1
+  name: SignalManager<TKey>
+  nameWithType: SignalManager<TKey>
+  fullName: Atlas.SignalManager<TKey>
+  nameWithType.vb: SignalManager(Of TKey)
+  fullName.vb: Atlas.SignalManager(Of TKey)
+  name.vb: SignalManager(Of TKey)
+  spec.csharp:
+  - uid: Atlas.SignalManager`1
+    name: SignalManager
+    nameWithType: SignalManager
+    fullName: Atlas.SignalManager
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SignalManager`1
+    name: SignalManager
+    nameWithType: SignalManager
+    fullName: Atlas.SignalManager
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.Range
+  commentId: T:Atlas.Range
+  parent: Atlas
+  name: Range
+  nameWithType: Range
+  fullName: Atlas.Range
+- uid: Atlas.BackEase
+  commentId: T:Atlas.BackEase
+  name: BackEase
+  nameWithType: BackEase
+  fullName: Atlas.BackEase
+- uid: Atlas.BounceEase
+  commentId: T:Atlas.BounceEase
+  name: BounceEase
+  nameWithType: BounceEase
+  fullName: Atlas.BounceEase
+- uid: Atlas.CircularEase
+  commentId: T:Atlas.CircularEase
+  name: CircularEase
+  nameWithType: CircularEase
+  fullName: Atlas.CircularEase
+- uid: Atlas.CubicEase
+  commentId: T:Atlas.CubicEase
+  name: CubicEase
+  nameWithType: CubicEase
+  fullName: Atlas.CubicEase
+- uid: Atlas.Ease
+  commentId: T:Atlas.Ease
+  name: Ease
+  nameWithType: Ease
+  fullName: Atlas.Ease
+- uid: Atlas.EaseType
+  commentId: T:Atlas.EaseType
+  parent: Atlas
+  name: EaseType
+  nameWithType: EaseType
+  fullName: Atlas.EaseType
+- uid: Atlas.ElasticEase
+  commentId: T:Atlas.ElasticEase
+  name: ElasticEase
+  nameWithType: ElasticEase
+  fullName: Atlas.ElasticEase
+- uid: Atlas.ExponentialEase
+  commentId: T:Atlas.ExponentialEase
+  name: ExponentialEase
+  nameWithType: ExponentialEase
+  fullName: Atlas.ExponentialEase
+- uid: Atlas.LinearEase
+  commentId: T:Atlas.LinearEase
+  name: LinearEase
+  nameWithType: LinearEase
+  fullName: Atlas.LinearEase
+- uid: Atlas.QuadraticEase
+  commentId: T:Atlas.QuadraticEase
+  name: QuadraticEase
+  nameWithType: QuadraticEase
+  fullName: Atlas.QuadraticEase
+- uid: Atlas.QuarticEase
+  commentId: T:Atlas.QuarticEase
+  name: QuarticEase
+  nameWithType: QuarticEase
+  fullName: Atlas.QuarticEase
+- uid: Atlas.QuinticEase
+  commentId: T:Atlas.QuinticEase
+  name: QuinticEase
+  nameWithType: QuinticEase
+  fullName: Atlas.QuinticEase
+- uid: Atlas.SineEase
+  commentId: T:Atlas.SineEase
+  name: SineEase
+  nameWithType: SineEase
+  fullName: Atlas.SineEase
+- uid: Atlas.IScheduledTask
+  commentId: T:Atlas.IScheduledTask
+  parent: Atlas
+  name: IScheduledTask
+  nameWithType: IScheduledTask
+  fullName: Atlas.IScheduledTask
+- uid: Atlas.TaskScheduler
+  commentId: T:Atlas.TaskScheduler
+  name: TaskScheduler
+  nameWithType: TaskScheduler
+  fullName: Atlas.TaskScheduler
+- uid: Atlas.AnchorPosition
+  commentId: T:Atlas.AnchorPosition
+  parent: Atlas
+  name: AnchorPosition
+  nameWithType: AnchorPosition
+  fullName: Atlas.AnchorPosition
+- uid: Atlas.IUIPanel
+  commentId: T:Atlas.IUIPanel
+  parent: Atlas
+  name: IUIPanel
+  nameWithType: IUIPanel
+  fullName: Atlas.IUIPanel
+- uid: Atlas.UIStack
+  commentId: T:Atlas.UIStack
+  name: UIStack
+  nameWithType: UIStack
+  fullName: Atlas.UIStack
+- uid: Atlas.UIStack.Transition
+  commentId: T:Atlas.UIStack.Transition
+  parent: Atlas
+  name: UIStack.Transition
+  nameWithType: UIStack.Transition
+  fullName: Atlas.UIStack.Transition
+- uid: Atlas.GUIListener
+  commentId: T:Atlas.GUIListener
+  name: GUIListener
+  nameWithType: GUIListener
+  fullName: Atlas.GUIListener
+- uid: Atlas.BitField
+  commentId: T:Atlas.BitField
+  name: BitField
+  nameWithType: BitField
+  fullName: Atlas.BitField
+- uid: Atlas.GizmoUtils
+  commentId: T:Atlas.GizmoUtils
+  name: GizmoUtils
+  nameWithType: GizmoUtils
+  fullName: Atlas.GizmoUtils
+- uid: Atlas.MaxValueAttribute
+  commentId: T:Atlas.MaxValueAttribute
+  name: MaxValueAttribute
+  nameWithType: MaxValueAttribute
+  fullName: Atlas.MaxValueAttribute
+- uid: Atlas.MinValueAttribute
+  commentId: T:Atlas.MinValueAttribute
+  name: MinValueAttribute
+  nameWithType: MinValueAttribute
+  fullName: Atlas.MinValueAttribute
+- uid: Atlas.PathAttribute
+  commentId: T:Atlas.PathAttribute
+  name: PathAttribute
+  nameWithType: PathAttribute
+  fullName: Atlas.PathAttribute
+- uid: Atlas.PathAttribute.Relativity
+  commentId: T:Atlas.PathAttribute.Relativity
+  parent: Atlas
+  name: PathAttribute.Relativity
+  nameWithType: PathAttribute.Relativity
+  fullName: Atlas.PathAttribute.Relativity
+- uid: Atlas.PathAttribute.Path
+  commentId: T:Atlas.PathAttribute.Path
+  parent: Atlas
+  name: PathAttribute.Path
+  nameWithType: PathAttribute.Path
+  fullName: Atlas.PathAttribute.Path
+- uid: Atlas.PreventEditInInspectorAttribute
+  commentId: T:Atlas.PreventEditInInspectorAttribute
+  name: PreventEditInInspectorAttribute
+  nameWithType: PreventEditInInspectorAttribute
+  fullName: Atlas.PreventEditInInspectorAttribute
+- uid: Atlas.ScenePathAttribute
+  commentId: T:Atlas.ScenePathAttribute
+  name: ScenePathAttribute
+  nameWithType: ScenePathAttribute
+  fullName: Atlas.ScenePathAttribute
+- uid: Atlas.DebugExtensions
+  commentId: T:Atlas.DebugExtensions
+  name: DebugExtensions
+  nameWithType: DebugExtensions
+  fullName: Atlas.DebugExtensions
+- uid: Atlas.HashCode
+  commentId: T:Atlas.HashCode
+  name: HashCode
+  nameWithType: HashCode
+  fullName: Atlas.HashCode
+- uid: Atlas.GUIColorScope
+  commentId: T:Atlas.GUIColorScope
+  name: GUIColorScope
+  nameWithType: GUIColorScope
+  fullName: Atlas.GUIColorScope
+- uid: Atlas.ProfilerScope
+  commentId: T:Atlas.ProfilerScope
+  name: ProfilerScope
+  nameWithType: ProfilerScope
+  fullName: Atlas.ProfilerScope
+- uid: Atlas.Timer
+  commentId: T:Atlas.Timer
+  name: Timer
+  nameWithType: Timer
+  fullName: Atlas.Timer
+- uid: Atlas.TimeScale
+  commentId: T:Atlas.TimeScale
+  parent: Atlas
+  name: TimeScale
+  nameWithType: TimeScale
+  fullName: Atlas.TimeScale
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas

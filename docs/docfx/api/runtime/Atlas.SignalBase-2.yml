@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.SignalBase`2
+  commentId: T:Atlas.SignalBase`2
+  id: SignalBase`2
+  parent: Atlas
+  children:
+  - Atlas.SignalBase`2.#ctor
+  - Atlas.SignalBase`2.AddCommand``1
+  - Atlas.SignalBase`2.AddCommand``1(``0)
+  - Atlas.SignalBase`2.AddListener(`1)
+  - Atlas.SignalBase`2.m_commands
+  - Atlas.SignalBase`2.m_listeners
+  - Atlas.SignalBase`2.RemoveCommand``1
+  - Atlas.SignalBase`2.RemoveListener(`1)
+  langs:
+  - csharp
+  - vb
+  name: SignalBase<TCommandBase, TAction>
+  nameWithType: SignalBase<TCommandBase, TAction>
+  fullName: Atlas.SignalBase<TCommandBase, TAction>
+  type: Class
+  source:
+    id: SignalBase
+    path: ''
+    startLine: 2645
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nBase signal class that provides a shared listener management for simpler derived signals\n"
+  example: []
+  syntax:
+    content: 'public class SignalBase<TCommandBase, TAction> : ISignal'
+    typeParameters:
+    - id: TCommandBase
+      description: Base type of command listeners to allow
+    - id: TAction
+      description: Type of callback listeners to allow
+    content.vb: >-
+      Public Class SignalBase(Of TCommandBase, TAction)
+          Implements ISignal
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Atlas.Signal
+  - Atlas.Signal`1
+  - Atlas.Signal`2
+  - Atlas.Signal`3
+  - Atlas.Signal`4
+  implements:
+  - Atlas.ISignal
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction)
+  name.vb: SignalBase(Of TCommandBase, TAction)
+- uid: Atlas.SignalBase`2.#ctor
+  commentId: M:Atlas.SignalBase`2.#ctor
+  id: '#ctor'
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: SignalBase()
+  nameWithType: SignalBase<TCommandBase, TAction>.SignalBase()
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.SignalBase()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2651
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public SignalBase()
+    content.vb: Public Sub New
+  overload: Atlas.SignalBase`2.#ctor*
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).SignalBase()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).SignalBase()
+- uid: Atlas.SignalBase`2.AddCommand``1(``0)
+  commentId: M:Atlas.SignalBase`2.AddCommand``1(``0)
+  id: AddCommand``1(``0)
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: AddCommand<TCommand>(TCommand)
+  nameWithType: SignalBase<TCommandBase, TAction>.AddCommand<TCommand>(TCommand)
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddCommand<TCommand>(TCommand)
+  type: Method
+  source:
+    id: AddCommand
+    path: ''
+    startLine: 2662
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRegisters the given command instance as a listener\n"
+  example: []
+  syntax:
+    content: >-
+      public void AddCommand<TCommand>(TCommand command)
+          where TCommand : TCommandBase
+    parameters:
+    - id: command
+      type: '{TCommand}'
+      description: The command instance to register
+    typeParameters:
+    - id: TCommand
+      description: Type of command to add
+    content.vb: Public Sub AddCommand(Of TCommand As TCommandBase)(command As TCommand)
+  overload: Atlas.SignalBase`2.AddCommand*
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)(TCommand)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)(TCommand)
+  name.vb: AddCommand(Of TCommand)(TCommand)
+- uid: Atlas.SignalBase`2.AddCommand``1
+  commentId: M:Atlas.SignalBase`2.AddCommand``1
+  id: AddCommand``1
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: AddCommand<TCommand>()
+  nameWithType: SignalBase<TCommandBase, TAction>.AddCommand<TCommand>()
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddCommand<TCommand>()
+  type: Method
+  source:
+    id: AddCommand
+    path: ''
+    startLine: 2671
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCreates and registeres a command as a listener\n"
+  example: []
+  syntax:
+    content: >-
+      public void AddCommand<TCommand>()
+          where TCommand : TCommandBase
+    typeParameters:
+    - id: TCommand
+      description: Type of command to add
+    content.vb: Public Sub AddCommand(Of TCommand As TCommandBase)
+  overload: Atlas.SignalBase`2.AddCommand*
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)()
+  name.vb: AddCommand(Of TCommand)()
+- uid: Atlas.SignalBase`2.RemoveCommand``1
+  commentId: M:Atlas.SignalBase`2.RemoveCommand``1
+  id: RemoveCommand``1
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveCommand<TCommand>()
+  nameWithType: SignalBase<TCommandBase, TAction>.RemoveCommand<TCommand>()
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveCommand<TCommand>()
+  type: Method
+  source:
+    id: RemoveCommand
+    path: ''
+    startLine: 2681
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves all command instances of the given type\n"
+  example: []
+  syntax:
+    content: >-
+      public void RemoveCommand<TCommand>()
+          where TCommand : TCommandBase
+    typeParameters:
+    - id: TCommand
+      description: Type of commands to remove
+    content.vb: Public Sub RemoveCommand(Of TCommand As TCommandBase)
+  overload: Atlas.SignalBase`2.RemoveCommand*
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).RemoveCommand(Of TCommand)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).RemoveCommand(Of TCommand)()
+  name.vb: RemoveCommand(Of TCommand)()
+- uid: Atlas.SignalBase`2.AddListener(`1)
+  commentId: M:Atlas.SignalBase`2.AddListener(`1)
+  id: AddListener(`1)
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: AddListener(TAction)
+  nameWithType: SignalBase<TCommandBase, TAction>.AddListener(TAction)
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddListener(TAction)
+  type: Method
+  source:
+    id: AddListener
+    path: ''
+    startLine: 2693
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRegisters the given callback as a listener\n"
+  example: []
+  syntax:
+    content: public void AddListener(TAction listener)
+    parameters:
+    - id: listener
+      type: '{TAction}'
+      description: Listener instance to register
+    content.vb: Public Sub AddListener(listener As TAction)
+  overload: Atlas.SignalBase`2.AddListener*
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddListener(TAction)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddListener(TAction)
+- uid: Atlas.SignalBase`2.RemoveListener(`1)
+  commentId: M:Atlas.SignalBase`2.RemoveListener(`1)
+  id: RemoveListener(`1)
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(TAction)
+  nameWithType: SignalBase<TCommandBase, TAction>.RemoveListener(TAction)
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveListener(TAction)
+  type: Method
+  source:
+    id: RemoveListener
+    path: ''
+    startLine: 2702
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nUnregisters the given callback as a listener\n"
+  example: []
+  syntax:
+    content: public void RemoveListener(TAction listener)
+    parameters:
+    - id: listener
+      type: '{TAction}'
+      description: The callback to unregister
+    content.vb: Public Sub RemoveListener(listener As TAction)
+  overload: Atlas.SignalBase`2.RemoveListener*
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).RemoveListener(TAction)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).RemoveListener(TAction)
+- uid: Atlas.SignalBase`2.m_commands
+  commentId: F:Atlas.SignalBase`2.m_commands
+  id: m_commands
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: m_commands
+  nameWithType: SignalBase<TCommandBase, TAction>.m_commands
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.m_commands
+  type: Field
+  source:
+    id: m_commands
+    path: ''
+    startLine: 2709
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: protected List<TCommandBase> m_commands
+    return:
+      type: List{{TCommandBase}}
+    content.vb: Protected m_commands As List(Of TCommandBase)
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).m_commands
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).m_commands
+- uid: Atlas.SignalBase`2.m_listeners
+  commentId: F:Atlas.SignalBase`2.m_listeners
+  id: m_listeners
+  parent: Atlas.SignalBase`2
+  langs:
+  - csharp
+  - vb
+  name: m_listeners
+  nameWithType: SignalBase<TCommandBase, TAction>.m_listeners
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.m_listeners
+  type: Field
+  source:
+    id: m_listeners
+    path: ''
+    startLine: 2710
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: protected List<TAction> m_listeners
+    return:
+      type: List{{TAction}}
+    content.vb: Protected m_listeners As List(Of TAction)
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).m_listeners
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).m_listeners
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Atlas.ISignal
+  commentId: T:Atlas.ISignal
+  parent: Atlas
+  name: ISignal
+  nameWithType: ISignal
+  fullName: Atlas.ISignal
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.SignalBase`2.#ctor*
+  commentId: Overload:Atlas.SignalBase`2.#ctor
+  name: SignalBase
+  nameWithType: SignalBase<TCommandBase, TAction>.SignalBase
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.SignalBase
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).SignalBase
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).SignalBase
+- uid: Atlas.SignalBase`2.AddCommand*
+  commentId: Overload:Atlas.SignalBase`2.AddCommand
+  name: AddCommand
+  nameWithType: SignalBase<TCommandBase, TAction>.AddCommand
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddCommand
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddCommand
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddCommand
+- uid: '{TCommand}'
+  commentId: '!:TCommand'
+  definition: TCommand
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: TCommand
+  commentId: '!:TCommand'
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: Atlas.SignalBase`2.RemoveCommand*
+  commentId: Overload:Atlas.SignalBase`2.RemoveCommand
+  name: RemoveCommand
+  nameWithType: SignalBase<TCommandBase, TAction>.RemoveCommand
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveCommand
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).RemoveCommand
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).RemoveCommand
+- uid: Atlas.SignalBase`2.AddListener*
+  commentId: Overload:Atlas.SignalBase`2.AddListener
+  name: AddListener
+  nameWithType: SignalBase<TCommandBase, TAction>.AddListener
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddListener
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddListener
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddListener
+- uid: '{TAction}'
+  commentId: '!:TAction'
+  definition: TAction
+  name: TAction
+  nameWithType: TAction
+  fullName: TAction
+- uid: TAction
+  name: TAction
+  nameWithType: TAction
+  fullName: TAction
+- uid: Atlas.SignalBase`2.RemoveListener*
+  commentId: Overload:Atlas.SignalBase`2.RemoveListener
+  name: RemoveListener
+  nameWithType: SignalBase<TCommandBase, TAction>.RemoveListener
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveListener
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).RemoveListener
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).RemoveListener
+- uid: List{{TCommandBase}}
+  commentId: '!:List{`0}'
+  definition: List`1
+  name: List<TCommandBase>
+  nameWithType: List<TCommandBase>
+  fullName: List<TCommandBase>
+  nameWithType.vb: List(Of TCommandBase)
+  fullName.vb: List(Of TCommandBase)
+  name.vb: List(Of TCommandBase)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCommandBase
+    nameWithType: TCommandBase
+    fullName: TCommandBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCommandBase
+    nameWithType: TCommandBase
+    fullName: TCommandBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List{{TAction}}
+  commentId: '!:List{`1}'
+  definition: List`1
+  name: List<TAction>
+  nameWithType: List<TAction>
+  fullName: List<TAction>
+  nameWithType.vb: List(Of TAction)
+  fullName.vb: List(Of TAction)
+  name.vb: List(Of TAction)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: )
+    nameWithType: )
+    fullName: )

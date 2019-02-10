@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.StateLink
+  commentId: T:Atlas.StateLink
+  id: StateLink
+  parent: Atlas
+  children:
+  - Atlas.StateLink.#ctor(Atlas.State,Atlas.StateLink.TransitionCondition)
+  - Atlas.StateLink.IsSatisfied
+  - Atlas.StateLink.NextState
+  langs:
+  - csharp
+  - vb
+  name: StateLink
+  nameWithType: StateLink
+  fullName: Atlas.StateLink
+  type: Struct
+  source:
+    id: StateLink
+    path: ''
+    startLine: 121
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nA concrete object representing the link from one state to another\n"
+  example: []
+  syntax:
+    content: 'public struct StateLink : IStateLink'
+    content.vb: >-
+      Public Structure StateLink
+          Implements IStateLink
+  seealso:
+  - linkId: Atlas.IStateLink
+    commentId: T:Atlas.IStateLink
+  - linkId: Atlas.StateMachine
+    commentId: T:Atlas.StateMachine
+  implements:
+  - Atlas.IStateLink
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Atlas.StateLink.#ctor(Atlas.State,Atlas.StateLink.TransitionCondition)
+  commentId: M:Atlas.StateLink.#ctor(Atlas.State,Atlas.StateLink.TransitionCondition)
+  id: '#ctor(Atlas.State,Atlas.StateLink.TransitionCondition)'
+  parent: Atlas.StateLink
+  langs:
+  - csharp
+  - vb
+  name: StateLink(State, StateLink.TransitionCondition)
+  nameWithType: StateLink.StateLink(State, StateLink.TransitionCondition)
+  fullName: Atlas.StateLink.StateLink(Atlas.State, Atlas.StateLink.TransitionCondition)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 136
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public StateLink(State nextState, StateLink.TransitionCondition condition)
+    parameters:
+    - id: nextState
+      type: Atlas.State
+      description: The state to transition to when the condition satisfied
+    - id: condition
+      type: Atlas.StateLink.TransitionCondition
+      description: The callback used to determine when a transition should occur
+    content.vb: Public Sub New(nextState As State, condition As StateLink.TransitionCondition)
+  overload: Atlas.StateLink.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.StateLink.NextState
+  commentId: P:Atlas.StateLink.NextState
+  id: NextState
+  parent: Atlas.StateLink
+  langs:
+  - csharp
+  - vb
+  name: NextState
+  nameWithType: StateLink.NextState
+  fullName: Atlas.StateLink.NextState
+  type: Property
+  source:
+    id: NextState
+    path: ''
+    startLine: 148
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nThe state to transition to when the condition satisfied\n"
+  example: []
+  syntax:
+    content: public State NextState { get; }
+    parameters: []
+    return:
+      type: Atlas.State
+    content.vb: Public ReadOnly Property NextState As State
+  overload: Atlas.StateLink.NextState*
+  implements:
+  - Atlas.IStateLink.NextState
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.StateLink.IsSatisfied
+  commentId: P:Atlas.StateLink.IsSatisfied
+  id: IsSatisfied
+  parent: Atlas.StateLink
+  langs:
+  - csharp
+  - vb
+  name: IsSatisfied
+  nameWithType: StateLink.IsSatisfied
+  fullName: Atlas.StateLink.IsSatisfied
+  type: Property
+  source:
+    id: IsSatisfied
+    path: ''
+    startLine: 156
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nWhether or not a transition to <xref href=\"Atlas.StateLink.NextState\" data-throw-if-not-resolved=\"false\"></xref> is desired\n"
+  example: []
+  syntax:
+    content: public bool IsSatisfied { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSatisfied As Boolean
+  overload: Atlas.StateLink.IsSatisfied*
+  implements:
+  - Atlas.IStateLink.IsSatisfied
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Atlas.IStateLink
+  commentId: T:Atlas.IStateLink
+  parent: Atlas
+  name: IStateLink
+  nameWithType: IStateLink
+  fullName: Atlas.IStateLink
+- uid: Atlas.StateMachine
+  commentId: T:Atlas.StateMachine
+  name: StateMachine
+  nameWithType: StateMachine
+  fullName: Atlas.StateMachine
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.StateLink.#ctor*
+  commentId: Overload:Atlas.StateLink.#ctor
+  name: StateLink
+  nameWithType: StateLink.StateLink
+  fullName: Atlas.StateLink.StateLink
+- uid: Atlas.State
+  commentId: T:Atlas.State
+  parent: Atlas
+  name: State
+  nameWithType: State
+  fullName: Atlas.State
+- uid: Atlas.StateLink.TransitionCondition
+  commentId: T:Atlas.StateLink.TransitionCondition
+  parent: Atlas
+  name: StateLink.TransitionCondition
+  nameWithType: StateLink.TransitionCondition
+  fullName: Atlas.StateLink.TransitionCondition
+- uid: Atlas.StateLink.NextState*
+  commentId: Overload:Atlas.StateLink.NextState
+  name: NextState
+  nameWithType: StateLink.NextState
+  fullName: Atlas.StateLink.NextState
+- uid: Atlas.IStateLink.NextState
+  commentId: P:Atlas.IStateLink.NextState
+  parent: Atlas.IStateLink
+  name: NextState
+  nameWithType: IStateLink.NextState
+  fullName: Atlas.IStateLink.NextState
+- uid: Atlas.StateLink.NextState
+  commentId: P:Atlas.StateLink.NextState
+  isExternal: true
+- uid: Atlas.StateLink.IsSatisfied*
+  commentId: Overload:Atlas.StateLink.IsSatisfied
+  name: IsSatisfied
+  nameWithType: StateLink.IsSatisfied
+  fullName: Atlas.StateLink.IsSatisfied
+- uid: Atlas.IStateLink.IsSatisfied
+  commentId: P:Atlas.IStateLink.IsSatisfied
+  parent: Atlas.IStateLink
+  name: IsSatisfied
+  nameWithType: IStateLink.IsSatisfied
+  fullName: Atlas.IStateLink.IsSatisfied
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

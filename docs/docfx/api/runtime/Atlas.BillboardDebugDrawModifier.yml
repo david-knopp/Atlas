@@ -1,0 +1,322 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.BillboardDebugDrawModifier
+  commentId: T:Atlas.BillboardDebugDrawModifier
+  id: BillboardDebugDrawModifier
+  parent: Atlas
+  children:
+  - Atlas.BillboardDebugDrawModifier.#ctor(Atlas.IDebugDrawer,Vector3)
+  - Atlas.BillboardDebugDrawModifier.#ctor(Atlas.IDebugDrawer,Vector3,Camera)
+  - Atlas.BillboardDebugDrawModifier.Color
+  - Atlas.BillboardDebugDrawModifier.Draw
+  - Atlas.BillboardDebugDrawModifier.IsFinished
+  langs:
+  - csharp
+  - vb
+  name: BillboardDebugDrawModifier
+  nameWithType: BillboardDebugDrawModifier
+  fullName: Atlas.BillboardDebugDrawModifier
+  type: Struct
+  source:
+    id: BillboardDebugDrawModifier
+    path: ''
+    startLine: 1764
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nCauses the modified <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> to get rendered facing the given camera\n"
+  example: []
+  syntax:
+    content: 'public struct BillboardDebugDrawModifier : IDebugDrawer'
+    content.vb: >-
+      Public Structure BillboardDebugDrawModifier
+          Implements IDebugDrawer
+  seealso:
+  - linkId: Atlas.DebugDraw
+    commentId: T:Atlas.DebugDraw
+  implements:
+  - Atlas.IDebugDrawer
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Atlas.BillboardDebugDrawModifier.#ctor(Atlas.IDebugDrawer,Vector3)
+  commentId: M:Atlas.BillboardDebugDrawModifier.#ctor(Atlas.IDebugDrawer,Vector3)
+  id: '#ctor(Atlas.IDebugDrawer,Vector3)'
+  parent: Atlas.BillboardDebugDrawModifier
+  langs:
+  - csharp
+  - vb
+  name: BillboardDebugDrawModifier(IDebugDrawer, Vector3)
+  nameWithType: BillboardDebugDrawModifier.BillboardDebugDrawModifier(IDebugDrawer, Vector3)
+  fullName: Atlas.BillboardDebugDrawModifier.BillboardDebugDrawModifier(Atlas.IDebugDrawer, Vector3)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1771
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor, automatically uses <see cref=\"!:Camera.main\"></see> for billboarding\n"
+  example: []
+  syntax:
+    content: public BillboardDebugDrawModifier(IDebugDrawer drawer, Vector3 position)
+    parameters:
+    - id: drawer
+      type: Atlas.IDebugDrawer
+      description: The drawer to modify
+    - id: position
+      type: Vector3
+      description: The position of the element
+    content.vb: Public Sub New(drawer As IDebugDrawer, position As Vector3)
+  overload: Atlas.BillboardDebugDrawModifier.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.BillboardDebugDrawModifier.#ctor(Atlas.IDebugDrawer,Vector3,Camera)
+  commentId: M:Atlas.BillboardDebugDrawModifier.#ctor(Atlas.IDebugDrawer,Vector3,Camera)
+  id: '#ctor(Atlas.IDebugDrawer,Vector3,Camera)'
+  parent: Atlas.BillboardDebugDrawModifier
+  langs:
+  - csharp
+  - vb
+  name: BillboardDebugDrawModifier(IDebugDrawer, Vector3, Camera)
+  nameWithType: BillboardDebugDrawModifier.BillboardDebugDrawModifier(IDebugDrawer, Vector3, Camera)
+  fullName: Atlas.BillboardDebugDrawModifier.BillboardDebugDrawModifier(Atlas.IDebugDrawer, Vector3, Camera)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1789
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public BillboardDebugDrawModifier(IDebugDrawer drawer, Vector3 position, Camera camera)
+    parameters:
+    - id: drawer
+      type: Atlas.IDebugDrawer
+      description: The drawer to modify
+    - id: position
+      type: Vector3
+      description: The position of the element
+    - id: camera
+      type: Camera
+      description: The camera to face the element toward
+    content.vb: Public Sub New(drawer As IDebugDrawer, position As Vector3, camera As Camera)
+  overload: Atlas.BillboardDebugDrawModifier.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.BillboardDebugDrawModifier.IsFinished
+  commentId: P:Atlas.BillboardDebugDrawModifier.IsFinished
+  id: IsFinished
+  parent: Atlas.BillboardDebugDrawModifier
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: BillboardDebugDrawModifier.IsFinished
+  fullName: Atlas.BillboardDebugDrawModifier.IsFinished
+  type: Property
+  source:
+    id: IsFinished
+    path: ''
+    startLine: 1799
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nWhether or not the modified element has finished drawing\n"
+  example: []
+  syntax:
+    content: public bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFinished As Boolean
+  overload: Atlas.BillboardDebugDrawModifier.IsFinished*
+  implements:
+  - Atlas.IDebugDrawer.IsFinished
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.BillboardDebugDrawModifier.Color
+  commentId: P:Atlas.BillboardDebugDrawModifier.Color
+  id: Color
+  parent: Atlas.BillboardDebugDrawModifier
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: BillboardDebugDrawModifier.Color
+  fullName: Atlas.BillboardDebugDrawModifier.Color
+  type: Property
+  source:
+    id: Color
+    path: ''
+    startLine: 1810
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nColor of the modified element\n"
+  example: []
+  syntax:
+    content: public Color Color { get; set; }
+    parameters: []
+    return:
+      type: Color
+    content.vb: Public Property Color As Color
+  overload: Atlas.BillboardDebugDrawModifier.Color*
+  implements:
+  - Atlas.IDebugDrawer.Color
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Atlas.BillboardDebugDrawModifier.Draw
+  commentId: M:Atlas.BillboardDebugDrawModifier.Draw
+  id: Draw
+  parent: Atlas.BillboardDebugDrawModifier
+  langs:
+  - csharp
+  - vb
+  name: Draw()
+  nameWithType: BillboardDebugDrawModifier.Draw()
+  fullName: Atlas.BillboardDebugDrawModifier.Draw()
+  type: Method
+  source:
+    id: Draw
+    path: ''
+    startLine: 1819
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDraws the modified element\n"
+  example: []
+  syntax:
+    content: public void Draw()
+    content.vb: Public Sub Draw
+  overload: Atlas.BillboardDebugDrawModifier.Draw*
+  implements:
+  - Atlas.IDebugDrawer.Draw
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas.IDebugDrawer
+  commentId: T:Atlas.IDebugDrawer
+  parent: Atlas
+  name: IDebugDrawer
+  nameWithType: IDebugDrawer
+  fullName: Atlas.IDebugDrawer
+- uid: Atlas.DebugDraw
+  commentId: T:Atlas.DebugDraw
+  name: DebugDraw
+  nameWithType: DebugDraw
+  fullName: Atlas.DebugDraw
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.BillboardDebugDrawModifier.#ctor*
+  commentId: Overload:Atlas.BillboardDebugDrawModifier.#ctor
+  name: BillboardDebugDrawModifier
+  nameWithType: BillboardDebugDrawModifier.BillboardDebugDrawModifier
+  fullName: Atlas.BillboardDebugDrawModifier.BillboardDebugDrawModifier
+- uid: Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Camera
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: Camera
+- uid: Atlas.BillboardDebugDrawModifier.IsFinished*
+  commentId: Overload:Atlas.BillboardDebugDrawModifier.IsFinished
+  name: IsFinished
+  nameWithType: BillboardDebugDrawModifier.IsFinished
+  fullName: Atlas.BillboardDebugDrawModifier.IsFinished
+- uid: Atlas.IDebugDrawer.IsFinished
+  commentId: P:Atlas.IDebugDrawer.IsFinished
+  parent: Atlas.IDebugDrawer
+  name: IsFinished
+  nameWithType: IDebugDrawer.IsFinished
+  fullName: Atlas.IDebugDrawer.IsFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.BillboardDebugDrawModifier.Color*
+  commentId: Overload:Atlas.BillboardDebugDrawModifier.Color
+  name: Color
+  nameWithType: BillboardDebugDrawModifier.Color
+  fullName: Atlas.BillboardDebugDrawModifier.Color
+- uid: Atlas.IDebugDrawer.Color
+  commentId: P:Atlas.IDebugDrawer.Color
+  parent: Atlas.IDebugDrawer
+  name: Color
+  nameWithType: IDebugDrawer.Color
+  fullName: Atlas.IDebugDrawer.Color
+- uid: Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: Atlas.BillboardDebugDrawModifier.Draw*
+  commentId: Overload:Atlas.BillboardDebugDrawModifier.Draw
+  name: Draw
+  nameWithType: BillboardDebugDrawModifier.Draw
+  fullName: Atlas.BillboardDebugDrawModifier.Draw
+- uid: Atlas.IDebugDrawer.Draw
+  commentId: M:Atlas.IDebugDrawer.Draw
+  parent: Atlas.IDebugDrawer
+  name: Draw()
+  nameWithType: IDebugDrawer.Draw()
+  fullName: Atlas.IDebugDrawer.Draw()
+  spec.csharp:
+  - uid: Atlas.IDebugDrawer.Draw
+    name: Draw
+    nameWithType: IDebugDrawer.Draw
+    fullName: Atlas.IDebugDrawer.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IDebugDrawer.Draw
+    name: Draw
+    nameWithType: IDebugDrawer.Draw
+    fullName: Atlas.IDebugDrawer.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

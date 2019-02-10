@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.BounceEase
+  commentId: T:Atlas.BounceEase
+  id: BounceEase
+  parent: Atlas
+  children:
+  - Atlas.BounceEase.In(System.Single,System.Single)
+  - Atlas.BounceEase.InOut(System.Single,System.Single)
+  - Atlas.BounceEase.Out(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: BounceEase
+  nameWithType: BounceEase
+  fullName: Atlas.BounceEase
+  type: Class
+  source:
+    id: BounceEase
+    path: ''
+    startLine: 3397
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static class BounceEase
+    content.vb: Public Module BounceEase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.BounceEase.In(System.Single,System.Single)
+  commentId: M:Atlas.BounceEase.In(System.Single,System.Single)
+  id: In(System.Single,System.Single)
+  parent: Atlas.BounceEase
+  langs:
+  - csharp
+  - vb
+  name: In(Single, Single)
+  nameWithType: BounceEase.In(Single, Single)
+  fullName: Atlas.BounceEase.In(System.Single, System.Single)
+  type: Method
+  source:
+    id: In
+    path: ''
+    startLine: 3399
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float In(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function In(curTime As Single, duration As Single) As Single
+  overload: Atlas.BounceEase.In*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BounceEase.Out(System.Single,System.Single)
+  commentId: M:Atlas.BounceEase.Out(System.Single,System.Single)
+  id: Out(System.Single,System.Single)
+  parent: Atlas.BounceEase
+  langs:
+  - csharp
+  - vb
+  name: Out(Single, Single)
+  nameWithType: BounceEase.Out(Single, Single)
+  fullName: Atlas.BounceEase.Out(System.Single, System.Single)
+  type: Method
+  source:
+    id: Out
+    path: ''
+    startLine: 3404
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float Out(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Out(curTime As Single, duration As Single) As Single
+  overload: Atlas.BounceEase.Out*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BounceEase.InOut(System.Single,System.Single)
+  commentId: M:Atlas.BounceEase.InOut(System.Single,System.Single)
+  id: InOut(System.Single,System.Single)
+  parent: Atlas.BounceEase
+  langs:
+  - csharp
+  - vb
+  name: InOut(Single, Single)
+  nameWithType: BounceEase.InOut(Single, Single)
+  fullName: Atlas.BounceEase.InOut(System.Single, System.Single)
+  type: Method
+  source:
+    id: InOut
+    path: ''
+    startLine: 3429
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  syntax:
+    content: public static float InOut(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function InOut(curTime As Single, duration As Single) As Single
+  overload: Atlas.BounceEase.InOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.BounceEase.In*
+  commentId: Overload:Atlas.BounceEase.In
+  name: In
+  nameWithType: BounceEase.In
+  fullName: Atlas.BounceEase.In
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.BounceEase.Out*
+  commentId: Overload:Atlas.BounceEase.Out
+  name: Out
+  nameWithType: BounceEase.Out
+  fullName: Atlas.BounceEase.Out
+- uid: Atlas.BounceEase.InOut*
+  commentId: Overload:Atlas.BounceEase.InOut
+  name: InOut
+  nameWithType: BounceEase.InOut
+  fullName: Atlas.BounceEase.InOut

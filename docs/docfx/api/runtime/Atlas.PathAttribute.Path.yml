@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PathAttribute.Path
+  commentId: T:Atlas.PathAttribute.Path
+  id: PathAttribute.Path
+  parent: Atlas
+  children:
+  - Atlas.PathAttribute.Path.Directory
+  - Atlas.PathAttribute.Path.File
+  langs:
+  - csharp
+  - vb
+  name: PathAttribute.Path
+  nameWithType: PathAttribute.Path
+  fullName: Atlas.PathAttribute.Path
+  type: Enum
+  source:
+    id: Path
+    path: ''
+    startLine: 4789
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nType of path target to represent\n"
+  example: []
+  syntax:
+    content: public enum Path
+    content.vb: Public Enum Path
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.PathAttribute.Path.File
+  commentId: F:Atlas.PathAttribute.Path.File
+  id: File
+  parent: Atlas.PathAttribute.Path
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: PathAttribute.Path.File
+  fullName: Atlas.PathAttribute.Path.File
+  type: Field
+  source:
+    id: File
+    path: ''
+    startLine: 4794
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRepresents the path of a file\n"
+  example: []
+  syntax:
+    content: File = 0
+    return:
+      type: Atlas.PathAttribute.Path
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.PathAttribute.Path.Directory
+  commentId: F:Atlas.PathAttribute.Path.Directory
+  id: Directory
+  parent: Atlas.PathAttribute.Path
+  langs:
+  - csharp
+  - vb
+  name: Directory
+  nameWithType: PathAttribute.Path.Directory
+  fullName: Atlas.PathAttribute.Path.Directory
+  type: Field
+  source:
+    id: Directory
+    path: ''
+    startLine: 4799
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRepresents the path of a directory\n"
+  example: []
+  syntax:
+    content: Directory = 1
+    return:
+      type: Atlas.PathAttribute.Path
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.PathAttribute.Path
+  commentId: T:Atlas.PathAttribute.Path
+  parent: Atlas
+  name: PathAttribute.Path
+  nameWithType: PathAttribute.Path
+  fullName: Atlas.PathAttribute.Path

@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.UIStack
+  commentId: T:Atlas.UIStack
+  id: UIStack
+  parent: Atlas
+  children:
+  - Atlas.UIStack.#ctor
+  - Atlas.UIStack.Clear
+  - Atlas.UIStack.Contains(Atlas.IUIPanel)
+  - Atlas.UIStack.Count
+  - Atlas.UIStack.Peek
+  - Atlas.UIStack.Pop
+  - Atlas.UIStack.Pop(Atlas.UIStack.Transition)
+  - Atlas.UIStack.Push(Atlas.IUIPanel)
+  - Atlas.UIStack.Push(Atlas.IUIPanel,Atlas.UIStack.Transition)
+  langs:
+  - csharp
+  - vb
+  name: UIStack
+  nameWithType: UIStack
+  fullName: Atlas.UIStack
+  type: Class
+  source:
+    id: UIStack
+    path: ''
+    startLine: 4322
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nA stack data structure for management and presentation of UI Panels\n"
+  example: []
+  syntax:
+    content: public sealed class UIStack
+    content.vb: Public NotInheritable Class UIStack
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.UIStack.#ctor
+  commentId: M:Atlas.UIStack.#ctor
+  id: '#ctor'
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: UIStack()
+  nameWithType: UIStack.UIStack()
+  fullName: Atlas.UIStack.UIStack()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 4355
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public UIStack()
+    content.vb: Public Sub New
+  overload: Atlas.UIStack.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.UIStack.Count
+  commentId: P:Atlas.UIStack.Count
+  id: Count
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: UIStack.Count
+  fullName: Atlas.UIStack.Count
+  type: Property
+  source:
+    id: Count
+    path: ''
+    startLine: 4363
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nNumber of panels currently in the stack\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Atlas.UIStack.Count*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.UIStack.Push(Atlas.IUIPanel)
+  commentId: M:Atlas.UIStack.Push(Atlas.IUIPanel)
+  id: Push(Atlas.IUIPanel)
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Push(IUIPanel)
+  nameWithType: UIStack.Push(IUIPanel)
+  fullName: Atlas.UIStack.Push(Atlas.IUIPanel)
+  type: Method
+  source:
+    id: Push
+    path: ''
+    startLine: 4373
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nPushes the given panel onto the top of the stack, hiding all current panels, with\nfull transitions\n"
+  example: []
+  syntax:
+    content: public void Push(IUIPanel panel)
+    parameters:
+    - id: panel
+      type: Atlas.IUIPanel
+      description: The panel to push
+    content.vb: Public Sub Push(panel As IUIPanel)
+  overload: Atlas.UIStack.Push*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.UIStack.Push(Atlas.IUIPanel,Atlas.UIStack.Transition)
+  commentId: M:Atlas.UIStack.Push(Atlas.IUIPanel,Atlas.UIStack.Transition)
+  id: Push(Atlas.IUIPanel,Atlas.UIStack.Transition)
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Push(IUIPanel, UIStack.Transition)
+  nameWithType: UIStack.Push(IUIPanel, UIStack.Transition)
+  fullName: Atlas.UIStack.Push(Atlas.IUIPanel, Atlas.UIStack.Transition)
+  type: Method
+  source:
+    id: Push
+    path: ''
+    startLine: 4384
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nPushes the given panel onto the top of the stack, hiding all current panels using\nthe given transitions\n"
+  example: []
+  syntax:
+    content: public void Push(IUIPanel panel, UIStack.Transition transition)
+    parameters:
+    - id: panel
+      type: Atlas.IUIPanel
+      description: The panel to push
+    - id: transition
+      type: Atlas.UIStack.Transition
+      description: Type of transition(s) to play
+    content.vb: Public Sub Push(panel As IUIPanel, transition As UIStack.Transition)
+  overload: Atlas.UIStack.Push*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.UIStack.Pop
+  commentId: M:Atlas.UIStack.Pop
+  id: Pop
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Pop()
+  nameWithType: UIStack.Pop()
+  fullName: Atlas.UIStack.Pop()
+  type: Method
+  source:
+    id: Pop
+    path: ''
+    startLine: 4406
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves the top panel from the stack, with full transitions\n"
+  example: []
+  syntax:
+    content: public IUIPanel Pop()
+    return:
+      type: Atlas.IUIPanel
+      description: The popped panel
+    content.vb: Public Function Pop As IUIPanel
+  overload: Atlas.UIStack.Pop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.UIStack.Pop(Atlas.UIStack.Transition)
+  commentId: M:Atlas.UIStack.Pop(Atlas.UIStack.Transition)
+  id: Pop(Atlas.UIStack.Transition)
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Pop(UIStack.Transition)
+  nameWithType: UIStack.Pop(UIStack.Transition)
+  fullName: Atlas.UIStack.Pop(Atlas.UIStack.Transition)
+  type: Method
+  source:
+    id: Pop
+    path: ''
+    startLine: 4416
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves the top panel from the stack, with the given transition(s)\n"
+  example: []
+  syntax:
+    content: public IUIPanel Pop(UIStack.Transition transition)
+    parameters:
+    - id: transition
+      type: Atlas.UIStack.Transition
+      description: Type of transition(s) to play
+    return:
+      type: Atlas.IUIPanel
+      description: The popped panel
+    content.vb: Public Function Pop(transition As UIStack.Transition) As IUIPanel
+  overload: Atlas.UIStack.Pop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.UIStack.Clear
+  commentId: M:Atlas.UIStack.Clear
+  id: Clear
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: UIStack.Clear()
+  fullName: Atlas.UIStack.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 4440
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nRemoves all panels from the stack. <xref href=\"Atlas.IUIPanel.OnPop(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> will not\nbe called.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: Atlas.UIStack.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.UIStack.Peek
+  commentId: M:Atlas.UIStack.Peek
+  id: Peek
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Peek()
+  nameWithType: UIStack.Peek()
+  fullName: Atlas.UIStack.Peek()
+  type: Method
+  source:
+    id: Peek
+    path: ''
+    startLine: 4449
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nReturns the top <xref href=\"Atlas.IUIPanel\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public IUIPanel Peek()
+    return:
+      type: Atlas.IUIPanel
+      description: The top panel
+    content.vb: Public Function Peek As IUIPanel
+  overload: Atlas.UIStack.Peek*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.UIStack.Contains(Atlas.IUIPanel)
+  commentId: M:Atlas.UIStack.Contains(Atlas.IUIPanel)
+  id: Contains(Atlas.IUIPanel)
+  parent: Atlas.UIStack
+  langs:
+  - csharp
+  - vb
+  name: Contains(IUIPanel)
+  nameWithType: UIStack.Contains(IUIPanel)
+  fullName: Atlas.UIStack.Contains(Atlas.IUIPanel)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 4460
+  assemblies:
+  - cs.temp.dll
+  namespace: Atlas
+  summary: "\nDetermines whether or not the given panel is contained within the stack\n"
+  example: []
+  syntax:
+    content: public bool Contains(IUIPanel panel)
+    parameters:
+    - id: panel
+      type: Atlas.IUIPanel
+      description: The panel to check
+    return:
+      type: System.Boolean
+      description: True if the panel is in the stack, false otherwise
+    content.vb: Public Function Contains(panel As IUIPanel) As Boolean
+  overload: Atlas.UIStack.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.UIStack.#ctor*
+  commentId: Overload:Atlas.UIStack.#ctor
+  name: UIStack
+  nameWithType: UIStack.UIStack
+  fullName: Atlas.UIStack.UIStack
+- uid: Atlas.UIStack.Count*
+  commentId: Overload:Atlas.UIStack.Count
+  name: Count
+  nameWithType: UIStack.Count
+  fullName: Atlas.UIStack.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Atlas.UIStack.Push*
+  commentId: Overload:Atlas.UIStack.Push
+  name: Push
+  nameWithType: UIStack.Push
+  fullName: Atlas.UIStack.Push
+- uid: Atlas.IUIPanel
+  commentId: T:Atlas.IUIPanel
+  parent: Atlas
+  name: IUIPanel
+  nameWithType: IUIPanel
+  fullName: Atlas.IUIPanel
+- uid: Atlas.UIStack.Transition
+  commentId: T:Atlas.UIStack.Transition
+  parent: Atlas
+  name: UIStack.Transition
+  nameWithType: UIStack.Transition
+  fullName: Atlas.UIStack.Transition
+- uid: Atlas.UIStack.Pop*
+  commentId: Overload:Atlas.UIStack.Pop
+  name: Pop
+  nameWithType: UIStack.Pop
+  fullName: Atlas.UIStack.Pop
+- uid: Atlas.IUIPanel.OnPop(System.Boolean)
+  commentId: M:Atlas.IUIPanel.OnPop(System.Boolean)
+  isExternal: true
+- uid: Atlas.UIStack.Clear*
+  commentId: Overload:Atlas.UIStack.Clear
+  name: Clear
+  nameWithType: UIStack.Clear
+  fullName: Atlas.UIStack.Clear
+- uid: Atlas.UIStack.Peek*
+  commentId: Overload:Atlas.UIStack.Peek
+  name: Peek
+  nameWithType: UIStack.Peek
+  fullName: Atlas.UIStack.Peek
+- uid: Atlas.UIStack.Contains*
+  commentId: Overload:Atlas.UIStack.Contains
+  name: Contains
+  nameWithType: UIStack.Contains
+  fullName: Atlas.UIStack.Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

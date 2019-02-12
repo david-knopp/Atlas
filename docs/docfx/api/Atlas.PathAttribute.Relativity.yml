@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PathAttribute.Relativity
+  commentId: T:Atlas.PathAttribute.Relativity
+  id: PathAttribute.Relativity
+  parent: Atlas
+  children:
+  - Atlas.PathAttribute.Relativity.Absolute
+  - Atlas.PathAttribute.Relativity.AssetsRelative
+  - Atlas.PathAttribute.Relativity.ProjectRelative
+  langs:
+  - csharp
+  - vb
+  name: PathAttribute.Relativity
+  nameWithType: PathAttribute.Relativity
+  fullName: Atlas.PathAttribute.Relativity
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Relativity
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nFolder path relativity type\n"
+  example: []
+  syntax:
+    content: public enum Relativity
+    content.vb: Public Enum Relativity
+  extensionMethods:
+  - System.Enum.Atlas.EnumExtensions.IsObsolete
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.PathAttribute.Relativity.Absolute
+  commentId: F:Atlas.PathAttribute.Relativity.Absolute
+  id: Absolute
+  parent: Atlas.PathAttribute.Relativity
+  langs:
+  - csharp
+  - vb
+  name: Absolute
+  nameWithType: PathAttribute.Relativity.Absolute
+  fullName: Atlas.PathAttribute.Relativity.Absolute
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Absolute
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nThe full path e.g. &quot;C:/Users/MichaelScott/Documents/&quot;\n"
+  example: []
+  syntax:
+    content: Absolute = 0
+    return:
+      type: Atlas.PathAttribute.Relativity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.PathAttribute.Relativity.AssetsRelative
+  commentId: F:Atlas.PathAttribute.Relativity.AssetsRelative
+  id: AssetsRelative
+  parent: Atlas.PathAttribute.Relativity
+  langs:
+  - csharp
+  - vb
+  name: AssetsRelative
+  nameWithType: PathAttribute.Relativity.AssetsRelative
+  fullName: Atlas.PathAttribute.Relativity.AssetsRelative
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: AssetsRelative
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nUses a path that is relative to the project&apos;s Assets folder e.g. &quot;Scripts/Runtime/&quot;\n"
+  example: []
+  syntax:
+    content: AssetsRelative = 1
+    return:
+      type: Atlas.PathAttribute.Relativity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.PathAttribute.Relativity.ProjectRelative
+  commentId: F:Atlas.PathAttribute.Relativity.ProjectRelative
+  id: ProjectRelative
+  parent: Atlas.PathAttribute.Relativity
+  langs:
+  - csharp
+  - vb
+  name: ProjectRelative
+  nameWithType: PathAttribute.Relativity.ProjectRelative
+  fullName: Atlas.PathAttribute.Relativity.ProjectRelative
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ProjectRelative
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nUses a path that is relative to the project&apos;s root folder e.g. &quot;Assets/Scripts/Runtime/&quot;\n"
+  example: []
+  syntax:
+    content: ProjectRelative = 2
+    return:
+      type: Atlas.PathAttribute.Relativity
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Enum.Atlas.EnumExtensions.IsObsolete
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  parent: Atlas.EnumExtensions
+  definition: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  name: IsObsolete()
+  nameWithType: EnumExtensions.IsObsolete()
+  fullName: Atlas.EnumExtensions.IsObsolete()
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  isExternal: true
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  parent: Atlas
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+- uid: Atlas.PathAttribute.Relativity
+  commentId: T:Atlas.PathAttribute.Relativity
+  parent: Atlas
+  name: PathAttribute.Relativity
+  nameWithType: PathAttribute.Relativity
+  fullName: Atlas.PathAttribute.Relativity

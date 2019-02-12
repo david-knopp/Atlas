@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PreventEditInInspectorAttribute
+  commentId: T:Atlas.PreventEditInInspectorAttribute
+  id: PreventEditInInspectorAttribute
+  parent: Atlas
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PreventEditInInspectorAttribute
+  nameWithType: PreventEditInInspectorAttribute
+  fullName: Atlas.PreventEditInInspectorAttribute
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PreventEditInInspectorAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: PreventEditInInspectorAttribute
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PreventEditInInspectorAttribute.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nPrevents the target field from being edited in the inspector window while\nstill maintaining its visiblity\n"
+  example: []
+  syntax:
+    content: >-
+      [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
+
+      public sealed class PreventEditInInspectorAttribute : PropertyAttribute, _Attribute
+    content.vb: >-
+      <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
+
+      Public NotInheritable Class PreventEditInInspectorAttribute
+          Inherits PropertyAttribute
+          Implements _Attribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  implements:
+  - System.Runtime.InteropServices._Attribute
+  inheritedMembers:
+  - UnityEngine.PropertyAttribute.order
+  attributes:
+  - type: System.AttributeUsageAttribute
+    ctor: System.AttributeUsageAttribute.#ctor(System.AttributeTargets)
+    arguments:
+    - type: System.AttributeTargets
+      value: 256
+    namedArguments:
+    - name: AllowMultiple
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System.Runtime.InteropServices._Attribute
+  commentId: T:System.Runtime.InteropServices._Attribute
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: _Attribute
+  nameWithType: _Attribute
+  fullName: System.Runtime.InteropServices._Attribute
+- uid: UnityEngine.PropertyAttribute.order
+  commentId: P:UnityEngine.PropertyAttribute.order
+  parent: UnityEngine.PropertyAttribute
+  isExternal: true
+  name: order
+  nameWithType: PropertyAttribute.order
+  fullName: UnityEngine.PropertyAttribute.order
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices

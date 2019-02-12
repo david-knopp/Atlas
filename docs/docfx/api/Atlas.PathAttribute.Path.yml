@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PathAttribute.Path
+  commentId: T:Atlas.PathAttribute.Path
+  id: PathAttribute.Path
+  parent: Atlas
+  children:
+  - Atlas.PathAttribute.Path.Directory
+  - Atlas.PathAttribute.Path.File
+  langs:
+  - csharp
+  - vb
+  name: PathAttribute.Path
+  nameWithType: PathAttribute.Path
+  fullName: Atlas.PathAttribute.Path
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Path
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nType of path target to represent\n"
+  example: []
+  syntax:
+    content: public enum Path
+    content.vb: Public Enum Path
+  extensionMethods:
+  - System.Enum.Atlas.EnumExtensions.IsObsolete
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.PathAttribute.Path.File
+  commentId: F:Atlas.PathAttribute.Path.File
+  id: File
+  parent: Atlas.PathAttribute.Path
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: PathAttribute.Path.File
+  fullName: Atlas.PathAttribute.Path.File
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: File
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nRepresents the path of a file\n"
+  example: []
+  syntax:
+    content: File = 0
+    return:
+      type: Atlas.PathAttribute.Path
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.PathAttribute.Path.Directory
+  commentId: F:Atlas.PathAttribute.Path.Directory
+  id: Directory
+  parent: Atlas.PathAttribute.Path
+  langs:
+  - csharp
+  - vb
+  name: Directory
+  nameWithType: PathAttribute.Path.Directory
+  fullName: Atlas.PathAttribute.Path.Directory
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Directory
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nRepresents the path of a directory\n"
+  example: []
+  syntax:
+    content: Directory = 1
+    return:
+      type: Atlas.PathAttribute.Path
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Enum.Atlas.EnumExtensions.IsObsolete
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  parent: Atlas.EnumExtensions
+  definition: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  name: IsObsolete()
+  nameWithType: EnumExtensions.IsObsolete()
+  fullName: Atlas.EnumExtensions.IsObsolete()
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  isExternal: true
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  parent: Atlas
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+- uid: Atlas.PathAttribute.Path
+  commentId: T:Atlas.PathAttribute.Path
+  parent: Atlas
+  name: PathAttribute.Path
+  nameWithType: PathAttribute.Path
+  fullName: Atlas.PathAttribute.Path

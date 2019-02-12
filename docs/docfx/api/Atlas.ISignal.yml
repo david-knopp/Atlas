@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ISignal
+  commentId: T:Atlas.ISignal
+  id: ISignal
+  parent: Atlas
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISignal
+  nameWithType: ISignal
+  fullName: Atlas.ISignal
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Framework/Signal/ISignal.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ISignal
+    path: ../../Assets/Scripts/Runtime/Framework/Signal/ISignal.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public interface ISignal
+    content.vb: Public Interface ISignal
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas

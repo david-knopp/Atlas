@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.IScheduledTask
+  commentId: T:Atlas.IScheduledTask
+  id: IScheduledTask
+  parent: Atlas
+  children:
+  - Atlas.IScheduledTask.ScheduledTick
+  langs:
+  - csharp
+  - vb
+  name: IScheduledTask
+  nameWithType: IScheduledTask
+  fullName: Atlas.IScheduledTask
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IScheduledTask
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nInterface for tasks used when scheduling execution\n"
+  example: []
+  syntax:
+    content: public interface IScheduledTask
+    content.vb: Public Interface IScheduledTask
+  seealso:
+  - linkId: Atlas.TaskScheduler
+    commentId: T:Atlas.TaskScheduler
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Atlas.IScheduledTask.ScheduledTick
+  commentId: M:Atlas.IScheduledTask.ScheduledTick
+  id: ScheduledTick
+  parent: Atlas.IScheduledTask
+  langs:
+  - csharp
+  - vb
+  name: ScheduledTick()
+  nameWithType: IScheduledTask.ScheduledTick()
+  fullName: Atlas.IScheduledTask.ScheduledTick()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ScheduledTick
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: void ScheduledTick()
+    content.vb: Sub ScheduledTick
+  overload: Atlas.IScheduledTask.ScheduledTick*
+references:
+- uid: Atlas.TaskScheduler
+  commentId: T:Atlas.TaskScheduler
+  name: TaskScheduler
+  nameWithType: TaskScheduler
+  fullName: Atlas.TaskScheduler
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.IScheduledTask.ScheduledTick*
+  commentId: Overload:Atlas.IScheduledTask.ScheduledTick
+  name: ScheduledTick
+  nameWithType: IScheduledTask.ScheduledTick
+  fullName: Atlas.IScheduledTask.ScheduledTick

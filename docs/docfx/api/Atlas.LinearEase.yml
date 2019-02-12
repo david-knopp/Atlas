@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.LinearEase
+  commentId: T:Atlas.LinearEase
+  id: LinearEase
+  parent: Atlas
+  children:
+  - Atlas.LinearEase.In(System.Single,System.Single)
+  - Atlas.LinearEase.InOut(System.Single,System.Single)
+  - Atlas.LinearEase.Out(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: LinearEase
+  nameWithType: LinearEase
+  fullName: Atlas.LinearEase
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: LinearEase
+    path: ../../Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+    startLine: 3
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static class LinearEase
+    content.vb: Public Module LinearEase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.LinearEase.In(System.Single,System.Single)
+  commentId: M:Atlas.LinearEase.In(System.Single,System.Single)
+  id: In(System.Single,System.Single)
+  parent: Atlas.LinearEase
+  langs:
+  - csharp
+  - vb
+  name: In(Single, Single)
+  nameWithType: LinearEase.In(Single, Single)
+  fullName: Atlas.LinearEase.In(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: In
+    path: ../../Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float In(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function In(curTime As Single, duration As Single) As Single
+  overload: Atlas.LinearEase.In*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.LinearEase.Out(System.Single,System.Single)
+  commentId: M:Atlas.LinearEase.Out(System.Single,System.Single)
+  id: Out(System.Single,System.Single)
+  parent: Atlas.LinearEase
+  langs:
+  - csharp
+  - vb
+  name: Out(Single, Single)
+  nameWithType: LinearEase.Out(Single, Single)
+  fullName: Atlas.LinearEase.Out(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Out
+    path: ../../Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float Out(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Out(curTime As Single, duration As Single) As Single
+  overload: Atlas.LinearEase.Out*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.LinearEase.InOut(System.Single,System.Single)
+  commentId: M:Atlas.LinearEase.InOut(System.Single,System.Single)
+  id: InOut(System.Single,System.Single)
+  parent: Atlas.LinearEase
+  langs:
+  - csharp
+  - vb
+  name: InOut(Single, Single)
+  nameWithType: LinearEase.InOut(Single, Single)
+  fullName: Atlas.LinearEase.InOut(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: InOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/LinearEase.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float InOut(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function InOut(curTime As Single, duration As Single) As Single
+  overload: Atlas.LinearEase.InOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.LinearEase.In*
+  commentId: Overload:Atlas.LinearEase.In
+  name: In
+  nameWithType: LinearEase.In
+  fullName: Atlas.LinearEase.In
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.LinearEase.Out*
+  commentId: Overload:Atlas.LinearEase.Out
+  name: Out
+  nameWithType: LinearEase.Out
+  fullName: Atlas.LinearEase.Out
+- uid: Atlas.LinearEase.InOut*
+  commentId: Overload:Atlas.LinearEase.InOut
+  name: InOut
+  nameWithType: LinearEase.InOut
+  fullName: Atlas.LinearEase.InOut

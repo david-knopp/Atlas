@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Effect.ActivationEventType
+  commentId: T:Atlas.Effect.ActivationEventType
+  id: Effect.ActivationEventType
+  parent: Atlas
+  children:
+  - Atlas.Effect.ActivationEventType.Manual
+  - Atlas.Effect.ActivationEventType.Start
+  langs:
+  - csharp
+  - vb
+  name: Effect.ActivationEventType
+  nameWithType: Effect.ActivationEventType
+  fullName: Atlas.Effect.ActivationEventType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Effect.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ActivationEventType
+    path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nEvent defining how the effect will be activated\n"
+  example: []
+  syntax:
+    content: public enum ActivationEventType
+    content.vb: Public Enum ActivationEventType
+  extensionMethods:
+  - System.Enum.Atlas.EnumExtensions.IsObsolete
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.Effect.ActivationEventType.Start
+  commentId: F:Atlas.Effect.ActivationEventType.Start
+  id: Start
+  parent: Atlas.Effect.ActivationEventType
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: Effect.ActivationEventType.Start
+  fullName: Atlas.Effect.ActivationEventType.Start
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Effect.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Start
+    path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nActivate on <xref href=\"Atlas.Effect.ActivationEventType.Start\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Start = 0
+    return:
+      type: Atlas.Effect.ActivationEventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.Effect.ActivationEventType.Manual
+  commentId: F:Atlas.Effect.ActivationEventType.Manual
+  id: Manual
+  parent: Atlas.Effect.ActivationEventType
+  langs:
+  - csharp
+  - vb
+  name: Manual
+  nameWithType: Effect.ActivationEventType.Manual
+  fullName: Atlas.Effect.ActivationEventType.Manual
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Effect.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Manual
+    path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nManually activate via code (by calling <xref href=\"Atlas.Effect.Play\" data-throw-if-not-resolved=\"false\"></xref>)\n"
+  example: []
+  syntax:
+    content: Manual = 1
+    return:
+      type: Atlas.Effect.ActivationEventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Enum.Atlas.EnumExtensions.IsObsolete
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  parent: Atlas.EnumExtensions
+  definition: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  name: IsObsolete()
+  nameWithType: EnumExtensions.IsObsolete()
+  fullName: Atlas.EnumExtensions.IsObsolete()
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  isExternal: true
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  parent: Atlas
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+- uid: Atlas.Effect.ActivationEventType.Start
+  commentId: F:Atlas.Effect.ActivationEventType.Start
+  isExternal: true
+- uid: Atlas.Effect.ActivationEventType
+  commentId: T:Atlas.Effect.ActivationEventType
+  parent: Atlas
+  name: Effect.ActivationEventType
+  nameWithType: Effect.ActivationEventType
+  fullName: Atlas.Effect.ActivationEventType
+- uid: Atlas.Effect.Play
+  commentId: M:Atlas.Effect.Play
+  isExternal: true

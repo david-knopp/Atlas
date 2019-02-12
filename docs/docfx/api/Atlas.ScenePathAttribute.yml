@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ScenePathAttribute
+  commentId: T:Atlas.ScenePathAttribute
+  id: ScenePathAttribute
+  parent: Atlas
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ScenePathAttribute
+  nameWithType: ScenePathAttribute
+  fullName: Atlas.ScenePathAttribute
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/ScenePathAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ScenePathAttribute
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/ScenePathAttribute.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nMarks the target string field as a scene path, and automatically provides a \ndropdown in the inspector listing all scenes contained within the project. \nIf the scene has not yet been added to build settings, an inspector warning is\ndisplayed with the ability to add it immediately\n"
+  example: []
+  syntax:
+    content: >-
+      [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
+
+      public sealed class ScenePathAttribute : PropertyAttribute, _Attribute
+    content.vb: >-
+      <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
+
+      Public NotInheritable Class ScenePathAttribute
+          Inherits PropertyAttribute
+          Implements _Attribute
+  seealso:
+  - linkId: Atlas.PathAttribute
+    commentId: T:Atlas.PathAttribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  implements:
+  - System.Runtime.InteropServices._Attribute
+  inheritedMembers:
+  - UnityEngine.PropertyAttribute.order
+  attributes:
+  - type: System.AttributeUsageAttribute
+    ctor: System.AttributeUsageAttribute.#ctor(System.AttributeTargets)
+    arguments:
+    - type: System.AttributeTargets
+      value: 256
+    namedArguments:
+    - name: AllowMultiple
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+references:
+- uid: Atlas.PathAttribute
+  commentId: T:Atlas.PathAttribute
+  parent: Atlas
+  name: PathAttribute
+  nameWithType: PathAttribute
+  fullName: Atlas.PathAttribute
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System.Runtime.InteropServices._Attribute
+  commentId: T:System.Runtime.InteropServices._Attribute
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: _Attribute
+  nameWithType: _Attribute
+  fullName: System.Runtime.InteropServices._Attribute
+- uid: UnityEngine.PropertyAttribute.order
+  commentId: P:UnityEngine.PropertyAttribute.order
+  parent: UnityEngine.PropertyAttribute
+  isExternal: true
+  name: order
+  nameWithType: PropertyAttribute.order
+  fullName: UnityEngine.PropertyAttribute.order
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices

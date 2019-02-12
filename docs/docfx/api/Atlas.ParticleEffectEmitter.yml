@@ -1,0 +1,358 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ParticleEffectEmitter
+  commentId: T:Atlas.ParticleEffectEmitter
+  id: ParticleEffectEmitter
+  parent: Atlas
+  children:
+  - Atlas.ParticleEffectEmitter.IsFinished
+  - Atlas.ParticleEffectEmitter.Play
+  - Atlas.ParticleEffectEmitter.Stop
+  langs:
+  - csharp
+  - vb
+  name: ParticleEffectEmitter
+  nameWithType: ParticleEffectEmitter
+  fullName: Atlas.ParticleEffectEmitter
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ParticleEffectEmitter
+    path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nEffect component for emitting particles\n"
+  example: []
+  syntax:
+    content: >-
+      [RequireComponent(typeof(ParticleSystem))]
+
+      public sealed class ParticleEffectEmitter : EffectEmitterBase
+    content.vb: >-
+      <RequireComponent(GetType(ParticleSystem))>
+
+      Public NotInheritable Class ParticleEffectEmitter
+          Inherits EffectEmitterBase
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Atlas.EffectEmitterBase
+  inheritedMembers:
+  - Atlas.EffectEmitterBase.EmissionFinishedEvent
+  - Atlas.EffectEmitterBase.IsPlaying
+  - Atlas.EffectEmitterBase.Update
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEngine.ParticleSystem
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.ParticleEffectEmitter.Play
+  commentId: M:Atlas.ParticleEffectEmitter.Play
+  id: Play
+  parent: Atlas.ParticleEffectEmitter
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: ParticleEffectEmitter.Play()
+  fullName: Atlas.ParticleEffectEmitter.Play()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Play
+    path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nStarts playing the emitter\n"
+  example: []
+  syntax:
+    content: public override void Play()
+    content.vb: Public Overrides Sub Play
+  overridden: Atlas.EffectEmitterBase.Play
+  overload: Atlas.ParticleEffectEmitter.Play*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Atlas.ParticleEffectEmitter.Stop
+  commentId: M:Atlas.ParticleEffectEmitter.Stop
+  id: Stop
+  parent: Atlas.ParticleEffectEmitter
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ParticleEffectEmitter.Stop()
+  fullName: Atlas.ParticleEffectEmitter.Stop()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Stop
+    path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nStops the emitter\n"
+  example: []
+  syntax:
+    content: public override void Stop()
+    content.vb: Public Overrides Sub Stop
+  overridden: Atlas.EffectEmitterBase.Stop
+  overload: Atlas.ParticleEffectEmitter.Stop*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Atlas.ParticleEffectEmitter.IsFinished
+  commentId: P:Atlas.ParticleEffectEmitter.IsFinished
+  id: IsFinished
+  parent: Atlas.ParticleEffectEmitter
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: ParticleEffectEmitter.IsFinished
+  fullName: Atlas.ParticleEffectEmitter.IsFinished
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IsFinished
+    path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nWhether or not the emitter has finished emitting\n"
+  example: []
+  syntax:
+    content: protected override bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides ReadOnly Property IsFinished As Boolean
+  overridden: Atlas.EffectEmitterBase.IsFinished
+  overload: Atlas.ParticleEffectEmitter.IsFinished*
+  modifiers.csharp:
+  - protected
+  - override
+  - get
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - ReadOnly
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Atlas.EffectEmitterBase
+  commentId: T:Atlas.EffectEmitterBase
+  parent: Atlas
+  name: EffectEmitterBase
+  nameWithType: EffectEmitterBase
+  fullName: Atlas.EffectEmitterBase
+- uid: Atlas.EffectEmitterBase.EmissionFinishedEvent
+  commentId: E:Atlas.EffectEmitterBase.EmissionFinishedEvent
+  parent: Atlas.EffectEmitterBase
+  name: EmissionFinishedEvent
+  nameWithType: EffectEmitterBase.EmissionFinishedEvent
+  fullName: Atlas.EffectEmitterBase.EmissionFinishedEvent
+- uid: Atlas.EffectEmitterBase.IsPlaying
+  commentId: P:Atlas.EffectEmitterBase.IsPlaying
+  parent: Atlas.EffectEmitterBase
+  name: IsPlaying
+  nameWithType: EffectEmitterBase.IsPlaying
+  fullName: Atlas.EffectEmitterBase.IsPlaying
+- uid: Atlas.EffectEmitterBase.Update
+  commentId: M:Atlas.EffectEmitterBase.Update
+  parent: Atlas.EffectEmitterBase
+  name: Update()
+  nameWithType: EffectEmitterBase.Update()
+  fullName: Atlas.EffectEmitterBase.Update()
+  spec.csharp:
+  - uid: Atlas.EffectEmitterBase.Update
+    name: Update
+    nameWithType: EffectEmitterBase.Update
+    fullName: Atlas.EffectEmitterBase.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EffectEmitterBase.Update
+    name: Update
+    nameWithType: EffectEmitterBase.Update
+    fullName: Atlas.EffectEmitterBase.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Atlas.EffectEmitterBase.Play
+  commentId: M:Atlas.EffectEmitterBase.Play
+  parent: Atlas.EffectEmitterBase
+  name: Play()
+  nameWithType: EffectEmitterBase.Play()
+  fullName: Atlas.EffectEmitterBase.Play()
+  spec.csharp:
+  - uid: Atlas.EffectEmitterBase.Play
+    name: Play
+    nameWithType: EffectEmitterBase.Play
+    fullName: Atlas.EffectEmitterBase.Play
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EffectEmitterBase.Play
+    name: Play
+    nameWithType: EffectEmitterBase.Play
+    fullName: Atlas.EffectEmitterBase.Play
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.ParticleEffectEmitter.Play*
+  commentId: Overload:Atlas.ParticleEffectEmitter.Play
+  name: Play
+  nameWithType: ParticleEffectEmitter.Play
+  fullName: Atlas.ParticleEffectEmitter.Play
+- uid: Atlas.EffectEmitterBase.Stop
+  commentId: M:Atlas.EffectEmitterBase.Stop
+  parent: Atlas.EffectEmitterBase
+  name: Stop()
+  nameWithType: EffectEmitterBase.Stop()
+  fullName: Atlas.EffectEmitterBase.Stop()
+  spec.csharp:
+  - uid: Atlas.EffectEmitterBase.Stop
+    name: Stop
+    nameWithType: EffectEmitterBase.Stop
+    fullName: Atlas.EffectEmitterBase.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EffectEmitterBase.Stop
+    name: Stop
+    nameWithType: EffectEmitterBase.Stop
+    fullName: Atlas.EffectEmitterBase.Stop
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.ParticleEffectEmitter.Stop*
+  commentId: Overload:Atlas.ParticleEffectEmitter.Stop
+  name: Stop
+  nameWithType: ParticleEffectEmitter.Stop
+  fullName: Atlas.ParticleEffectEmitter.Stop
+- uid: Atlas.EffectEmitterBase.IsFinished
+  commentId: P:Atlas.EffectEmitterBase.IsFinished
+  parent: Atlas.EffectEmitterBase
+  name: IsFinished
+  nameWithType: EffectEmitterBase.IsFinished
+  fullName: Atlas.EffectEmitterBase.IsFinished
+- uid: Atlas.ParticleEffectEmitter.IsFinished*
+  commentId: Overload:Atlas.ParticleEffectEmitter.IsFinished
+  name: IsFinished
+  nameWithType: ParticleEffectEmitter.IsFinished
+  fullName: Atlas.ParticleEffectEmitter.IsFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

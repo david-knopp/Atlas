@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.QuarticEase
+  commentId: T:Atlas.QuarticEase
+  id: QuarticEase
+  parent: Atlas
+  children:
+  - Atlas.QuarticEase.In(System.Single,System.Single)
+  - Atlas.QuarticEase.InOut(System.Single,System.Single)
+  - Atlas.QuarticEase.Out(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: QuarticEase
+  nameWithType: QuarticEase
+  fullName: Atlas.QuarticEase
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuarticEase
+    path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static class QuarticEase
+    content.vb: Public Module QuarticEase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.QuarticEase.In(System.Single,System.Single)
+  commentId: M:Atlas.QuarticEase.In(System.Single,System.Single)
+  id: In(System.Single,System.Single)
+  parent: Atlas.QuarticEase
+  langs:
+  - csharp
+  - vb
+  name: In(Single, Single)
+  nameWithType: QuarticEase.In(Single, Single)
+  fullName: Atlas.QuarticEase.In(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: In
+    path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float In(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function In(curTime As Single, duration As Single) As Single
+  overload: Atlas.QuarticEase.In*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.QuarticEase.Out(System.Single,System.Single)
+  commentId: M:Atlas.QuarticEase.Out(System.Single,System.Single)
+  id: Out(System.Single,System.Single)
+  parent: Atlas.QuarticEase
+  langs:
+  - csharp
+  - vb
+  name: Out(Single, Single)
+  nameWithType: QuarticEase.Out(Single, Single)
+  fullName: Atlas.QuarticEase.Out(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Out
+    path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float Out(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Out(curTime As Single, duration As Single) As Single
+  overload: Atlas.QuarticEase.Out*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.QuarticEase.InOut(System.Single,System.Single)
+  commentId: M:Atlas.QuarticEase.InOut(System.Single,System.Single)
+  id: InOut(System.Single,System.Single)
+  parent: Atlas.QuarticEase
+  langs:
+  - csharp
+  - vb
+  name: InOut(Single, Single)
+  nameWithType: QuarticEase.InOut(Single, Single)
+  fullName: Atlas.QuarticEase.InOut(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: InOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float InOut(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function InOut(curTime As Single, duration As Single) As Single
+  overload: Atlas.QuarticEase.InOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.QuarticEase.In*
+  commentId: Overload:Atlas.QuarticEase.In
+  name: In
+  nameWithType: QuarticEase.In
+  fullName: Atlas.QuarticEase.In
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.QuarticEase.Out*
+  commentId: Overload:Atlas.QuarticEase.Out
+  name: Out
+  nameWithType: QuarticEase.Out
+  fullName: Atlas.QuarticEase.Out
+- uid: Atlas.QuarticEase.InOut*
+  commentId: Overload:Atlas.QuarticEase.InOut
+  name: InOut
+  nameWithType: QuarticEase.InOut
+  fullName: Atlas.QuarticEase.InOut

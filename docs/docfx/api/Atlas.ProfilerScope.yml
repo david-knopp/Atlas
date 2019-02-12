@@ -1,0 +1,243 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ProfilerScope
+  commentId: T:Atlas.ProfilerScope
+  id: ProfilerScope
+  parent: Atlas
+  children:
+  - Atlas.ProfilerScope.#ctor(System.String)
+  - Atlas.ProfilerScope.#ctor(System.String,UnityEngine.Object)
+  - Atlas.ProfilerScope.Dispose
+  langs:
+  - csharp
+  - vb
+  name: ProfilerScope
+  nameWithType: ProfilerScope
+  fullName: Atlas.ProfilerScope
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ProfilerScope
+    path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nA handy scope variable that starts a <xref href=\"UnityEngine.Profiling.Profiler\" data-throw-if-not-resolved=\"false\"></xref> sample, \nand ends it when the scope ends\n"
+  example: []
+  syntax:
+    content: 'public struct ProfilerScope : IDisposable'
+    content.vb: >-
+      Public Structure ProfilerScope
+          Implements IDisposable
+  seealso:
+  - linkId: Atlas.GUIColorScope
+    commentId: T:Atlas.GUIColorScope
+  implements:
+  - System.IDisposable
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Atlas.ProfilerScope.#ctor(System.String)
+  commentId: M:Atlas.ProfilerScope.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Atlas.ProfilerScope
+  langs:
+  - csharp
+  - vb
+  name: ProfilerScope(String)
+  nameWithType: ProfilerScope.ProfilerScope(String)
+  fullName: Atlas.ProfilerScope.ProfilerScope(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: .ctor
+    path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ProfilerScope(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: A string to identify the sample in the Profiler window
+    content.vb: Public Sub New(name As String)
+  overload: Atlas.ProfilerScope.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.ProfilerScope.#ctor(System.String,UnityEngine.Object)
+  commentId: M:Atlas.ProfilerScope.#ctor(System.String,UnityEngine.Object)
+  id: '#ctor(System.String,UnityEngine.Object)'
+  parent: Atlas.ProfilerScope
+  langs:
+  - csharp
+  - vb
+  name: ProfilerScope(String, Object)
+  nameWithType: ProfilerScope.ProfilerScope(String, Object)
+  fullName: Atlas.ProfilerScope.ProfilerScope(System.String, UnityEngine.Object)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: .ctor
+    path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ProfilerScope(string name, Object targetObject)
+    parameters:
+    - id: name
+      type: System.String
+      description: A string to identify the sample in the Profiler window
+    - id: targetObject
+      type: UnityEngine.Object
+      description: An object that provides context to the sample
+    content.vb: Public Sub New(name As String, targetObject As Object)
+  overload: Atlas.ProfilerScope.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.ProfilerScope.Dispose
+  commentId: M:Atlas.ProfilerScope.Dispose
+  id: Dispose
+  parent: Atlas.ProfilerScope
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ProfilerScope.Dispose()
+  fullName: Atlas.ProfilerScope.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Dispose
+    path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nEnds the scope\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Atlas.ProfilerScope.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: UnityEngine.Profiling.Profiler
+  commentId: T:UnityEngine.Profiling.Profiler
+  isExternal: true
+- uid: Atlas.GUIColorScope
+  commentId: T:Atlas.GUIColorScope
+  name: GUIColorScope
+  nameWithType: GUIColorScope
+  fullName: Atlas.GUIColorScope
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.ProfilerScope.#ctor*
+  commentId: Overload:Atlas.ProfilerScope.#ctor
+  name: ProfilerScope
+  nameWithType: ProfilerScope.ProfilerScope
+  fullName: Atlas.ProfilerScope.ProfilerScope
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Atlas.ProfilerScope.Dispose*
+  commentId: Overload:Atlas.ProfilerScope.Dispose
+  name: Dispose
+  nameWithType: ProfilerScope.Dispose
+  fullName: Atlas.ProfilerScope.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

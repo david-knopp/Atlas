@@ -1,0 +1,974 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.DebugDraw
+  commentId: T:Atlas.DebugDraw
+  id: DebugDraw
+  parent: Atlas
+  children:
+  - Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Int32)
+  - Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single,System.Int32)
+  - Atlas.DebugDraw.DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  - Atlas.DebugDraw.DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single)
+  - Atlas.DebugDraw.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  - Atlas.DebugDraw.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  - Atlas.DebugDraw.DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  - Atlas.DebugDraw.DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  - Atlas.DebugDraw.DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  - Atlas.DebugDraw.DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  - Atlas.DebugDraw.DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  - Atlas.DebugDraw.DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  - Atlas.DebugDraw.IsEnabled
+  langs:
+  - csharp
+  - vb
+  name: DebugDraw
+  nameWithType: DebugDraw
+  fullName: Atlas.DebugDraw
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DebugDraw
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nA system for rendering debug elements in the game view, as well as the scene view.\nOptions to enable in the editor or in standalone builds can be found in the Atlas\npreferences window.\n"
+  example: []
+  syntax:
+    content: 'public sealed class DebugDraw : SingletonBehavior<DebugDraw>'
+    content.vb: >-
+      Public NotInheritable Class DebugDraw
+          Inherits SingletonBehavior(Of DebugDraw)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - Atlas.SingletonBehavior{Atlas.DebugDraw}
+  inheritedMembers:
+  - Atlas.SingletonBehavior{Atlas.DebugDraw}.HasInstance
+  - Atlas.SingletonBehavior{Atlas.DebugDraw}.Instance
+  - Atlas.SingletonBehavior{Atlas.DebugDraw}.Awake
+  - Atlas.SingletonBehavior{Atlas.DebugDraw}.OnDestroy
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.DebugDraw.IsEnabled
+  commentId: P:Atlas.DebugDraw.IsEnabled
+  id: IsEnabled
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled
+  nameWithType: DebugDraw.IsEnabled
+  fullName: Atlas.DebugDraw.IsEnabled
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IsEnabled
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nWhether or not the system is enabled\n"
+  example: []
+  syntax:
+    content: public static bool IsEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property IsEnabled As Boolean
+  overload: Atlas.DebugDraw.IsEnabled*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  commentId: M:Atlas.DebugDraw.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  id: DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawLine(Vector3, Vector3, Color)
+  nameWithType: DebugDraw.DrawLine(Vector3, Vector3, Color)
+  fullName: Atlas.DebugDraw.DrawLine(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawLine
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 338
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawLine(Vector3 startPos, Vector3 endPos, Color color)
+    parameters:
+    - id: startPos
+      type: UnityEngine.Vector3
+    - id: endPos
+      type: UnityEngine.Vector3
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Shared Sub DrawLine(startPos As Vector3, endPos As Vector3, color As Color)
+  overload: Atlas.DebugDraw.DrawLine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  commentId: M:Atlas.DebugDraw.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  id: DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawLine(Vector3, Vector3, Color, Single)
+  nameWithType: DebugDraw.DrawLine(Vector3, Vector3, Color, Single)
+  fullName: Atlas.DebugDraw.DrawLine(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Color, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawLine
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 339
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawLine(Vector3 startPos, Vector3 endPos, Color color, float lifetime)
+    parameters:
+    - id: startPos
+      type: UnityEngine.Vector3
+    - id: endPos
+      type: UnityEngine.Vector3
+    - id: color
+      type: UnityEngine.Color
+    - id: lifetime
+      type: System.Single
+    content.vb: Public Shared Sub DrawLine(startPos As Vector3, endPos As Vector3, color As Color, lifetime As Single)
+  overload: Atlas.DebugDraw.DrawLine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  commentId: M:Atlas.DebugDraw.DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  id: DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawRay(Vector3, Vector3, Color)
+  nameWithType: DebugDraw.DrawRay(Vector3, Vector3, Color)
+  fullName: Atlas.DebugDraw.DrawRay(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawRay
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 340
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawRay(Vector3 pos, Vector3 dir, Color color)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: dir
+      type: UnityEngine.Vector3
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Shared Sub DrawRay(pos As Vector3, dir As Vector3, color As Color)
+  overload: Atlas.DebugDraw.DrawRay*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  commentId: M:Atlas.DebugDraw.DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  id: DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawRay(Vector3, Vector3, Color, Single)
+  nameWithType: DebugDraw.DrawRay(Vector3, Vector3, Color, Single)
+  fullName: Atlas.DebugDraw.DrawRay(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Color, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawRay
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 341
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawRay(Vector3 pos, Vector3 dir, Color color, float lifetime)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: dir
+      type: UnityEngine.Vector3
+    - id: color
+      type: UnityEngine.Color
+    - id: lifetime
+      type: System.Single
+    content.vb: Public Shared Sub DrawRay(pos As Vector3, dir As Vector3, color As Color, lifetime As Single)
+  overload: Atlas.DebugDraw.DrawRay*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  commentId: M:Atlas.DebugDraw.DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  id: DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawCross(Vector3, Single, Color)
+  nameWithType: DebugDraw.DrawCross(Vector3, Single, Color)
+  fullName: Atlas.DebugDraw.DrawCross(UnityEngine.Vector3, System.Single, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawCross
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 342
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawCross(Vector3 pos, float lineLength, Color color)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: lineLength
+      type: System.Single
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Shared Sub DrawCross(pos As Vector3, lineLength As Single, color As Color)
+  overload: Atlas.DebugDraw.DrawCross*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single)
+  commentId: M:Atlas.DebugDraw.DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single)
+  id: DrawCross(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawCross(Vector3, Single, Color, Single)
+  nameWithType: DebugDraw.DrawCross(Vector3, Single, Color, Single)
+  fullName: Atlas.DebugDraw.DrawCross(UnityEngine.Vector3, System.Single, UnityEngine.Color, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawCross
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 343
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawCross(Vector3 pos, float lineLength, Color color, float lifetime)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: lineLength
+      type: System.Single
+    - id: color
+      type: UnityEngine.Color
+    - id: lifetime
+      type: System.Single
+    content.vb: Public Shared Sub DrawCross(pos As Vector3, lineLength As Single, color As Color, lifetime As Single)
+  overload: Atlas.DebugDraw.DrawCross*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Int32)
+  commentId: M:Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Int32)
+  id: DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Int32)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawCircle(Vector3, Single, Color, Int32)
+  nameWithType: DebugDraw.DrawCircle(Vector3, Single, Color, Int32)
+  fullName: Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3, System.Single, UnityEngine.Color, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawCircle
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 344
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawCircle(Vector3 centerPos, float radius, Color color, int numSegments = 16)
+    parameters:
+    - id: centerPos
+      type: UnityEngine.Vector3
+    - id: radius
+      type: System.Single
+    - id: color
+      type: UnityEngine.Color
+    - id: numSegments
+      type: System.Int32
+    content.vb: Public Shared Sub DrawCircle(centerPos As Vector3, radius As Single, color As Color, numSegments As Integer = 16)
+  overload: Atlas.DebugDraw.DrawCircle*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single,System.Int32)
+  commentId: M:Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single,System.Int32)
+  id: DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Color,System.Single,System.Int32)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawCircle(Vector3, Single, Color, Single, Int32)
+  nameWithType: DebugDraw.DrawCircle(Vector3, Single, Color, Single, Int32)
+  fullName: Atlas.DebugDraw.DrawCircle(UnityEngine.Vector3, System.Single, UnityEngine.Color, System.Single, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawCircle
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 345
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawCircle(Vector3 centerPos, float radius, Color color, float lifetime, int numSegments = 16)
+    parameters:
+    - id: centerPos
+      type: UnityEngine.Vector3
+    - id: radius
+      type: System.Single
+    - id: color
+      type: UnityEngine.Color
+    - id: lifetime
+      type: System.Single
+    - id: numSegments
+      type: System.Int32
+    content.vb: Public Shared Sub DrawCircle(centerPos As Vector3, radius As Single, color As Color, lifetime As Single, numSegments As Integer = 16)
+  overload: Atlas.DebugDraw.DrawCircle*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  commentId: M:Atlas.DebugDraw.DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  id: DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawText(Vector3, String, Color, Single, AnchorPosition)
+  nameWithType: DebugDraw.DrawText(Vector3, String, Color, Single, AnchorPosition)
+  fullName: Atlas.DebugDraw.DrawText(UnityEngine.Vector3, System.String, UnityEngine.Color, System.Single, Atlas.AnchorPosition)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawText
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 346
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawText(Vector3 pos, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: text
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    - id: fontSize
+      type: System.Single
+    - id: anchor
+      type: Atlas.AnchorPosition
+    content.vb: Public Shared Sub DrawText(pos As Vector3, text As String, color As Color, fontSize As Single, anchor As AnchorPosition = AnchorPosition.TopLeft)
+  overload: Atlas.DebugDraw.DrawText*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  commentId: M:Atlas.DebugDraw.DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  id: DrawText(UnityEngine.Vector3,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawText(Vector3, String, Color, Single, Single, AnchorPosition)
+  nameWithType: DebugDraw.DrawText(Vector3, String, Color, Single, Single, AnchorPosition)
+  fullName: Atlas.DebugDraw.DrawText(UnityEngine.Vector3, System.String, UnityEngine.Color, System.Single, System.Single, Atlas.AnchorPosition)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawText
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 347
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawText(Vector3 pos, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: text
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    - id: fontSize
+      type: System.Single
+    - id: lifetime
+      type: System.Single
+    - id: anchor
+      type: Atlas.AnchorPosition
+    content.vb: Public Shared Sub DrawText(pos As Vector3, text As String, color As Color, fontSize As Single, lifetime As Single, anchor As AnchorPosition = AnchorPosition.TopLeft)
+  overload: Atlas.DebugDraw.DrawText*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  commentId: M:Atlas.DebugDraw.DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  id: DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,Atlas.AnchorPosition)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawText(Vector3, Quaternion, String, Color, Single, AnchorPosition)
+  nameWithType: DebugDraw.DrawText(Vector3, Quaternion, String, Color, Single, AnchorPosition)
+  fullName: Atlas.DebugDraw.DrawText(UnityEngine.Vector3, UnityEngine.Quaternion, System.String, UnityEngine.Color, System.Single, Atlas.AnchorPosition)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawText
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 348
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawText(Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: rotation
+      type: UnityEngine.Quaternion
+    - id: text
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    - id: fontSize
+      type: System.Single
+    - id: anchor
+      type: Atlas.AnchorPosition
+    content.vb: Public Shared Sub DrawText(pos As Vector3, rotation As Quaternion, text As String, color As Color, fontSize As Single, anchor As AnchorPosition = AnchorPosition.TopLeft)
+  overload: Atlas.DebugDraw.DrawText*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDraw.DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  commentId: M:Atlas.DebugDraw.DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  id: DrawText(UnityEngine.Vector3,UnityEngine.Quaternion,System.String,UnityEngine.Color,System.Single,System.Single,Atlas.AnchorPosition)
+  parent: Atlas.DebugDraw
+  langs:
+  - csharp
+  - vb
+  name: DrawText(Vector3, Quaternion, String, Color, Single, Single, AnchorPosition)
+  nameWithType: DebugDraw.DrawText(Vector3, Quaternion, String, Color, Single, Single, AnchorPosition)
+  fullName: Atlas.DebugDraw.DrawText(UnityEngine.Vector3, UnityEngine.Quaternion, System.String, UnityEngine.Color, System.Single, System.Single, Atlas.AnchorPosition)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawText
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
+    startLine: 349
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawText(Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: rotation
+      type: UnityEngine.Quaternion
+    - id: text
+      type: System.String
+    - id: color
+      type: UnityEngine.Color
+    - id: fontSize
+      type: System.Single
+    - id: lifetime
+      type: System.Single
+    - id: anchor
+      type: Atlas.AnchorPosition
+    content.vb: Public Shared Sub DrawText(pos As Vector3, rotation As Quaternion, text As String, color As Color, fontSize As Single, lifetime As Single, anchor As AnchorPosition = AnchorPosition.TopLeft)
+  overload: Atlas.DebugDraw.DrawText*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: Atlas.SingletonBehavior{Atlas.DebugDraw}
+  commentId: T:Atlas.SingletonBehavior{Atlas.DebugDraw}
+  parent: Atlas
+  definition: Atlas.SingletonBehavior`1
+  name: SingletonBehavior<DebugDraw>
+  nameWithType: SingletonBehavior<DebugDraw>
+  fullName: Atlas.SingletonBehavior<Atlas.DebugDraw>
+  nameWithType.vb: SingletonBehavior(Of DebugDraw)
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.DebugDraw)
+  name.vb: SingletonBehavior(Of DebugDraw)
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Atlas.DebugDraw
+    name: DebugDraw
+    nameWithType: DebugDraw
+    fullName: Atlas.DebugDraw
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Atlas.DebugDraw
+    name: DebugDraw
+    nameWithType: DebugDraw
+    fullName: Atlas.DebugDraw
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior{Atlas.DebugDraw}.HasInstance
+  commentId: P:Atlas.SingletonBehavior{Atlas.DebugDraw}.HasInstance
+  parent: Atlas.SingletonBehavior{Atlas.DebugDraw}
+  definition: Atlas.SingletonBehavior`1.HasInstance
+  name: HasInstance
+  nameWithType: SingletonBehavior<DebugDraw>.HasInstance
+  fullName: Atlas.SingletonBehavior<Atlas.DebugDraw>.HasInstance
+  nameWithType.vb: SingletonBehavior(Of DebugDraw).HasInstance
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.DebugDraw).HasInstance
+- uid: Atlas.SingletonBehavior{Atlas.DebugDraw}.Instance
+  commentId: P:Atlas.SingletonBehavior{Atlas.DebugDraw}.Instance
+  parent: Atlas.SingletonBehavior{Atlas.DebugDraw}
+  definition: Atlas.SingletonBehavior`1.Instance
+  name: Instance
+  nameWithType: SingletonBehavior<DebugDraw>.Instance
+  fullName: Atlas.SingletonBehavior<Atlas.DebugDraw>.Instance
+  nameWithType.vb: SingletonBehavior(Of DebugDraw).Instance
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.DebugDraw).Instance
+- uid: Atlas.SingletonBehavior{Atlas.DebugDraw}.Awake
+  commentId: M:Atlas.SingletonBehavior{Atlas.DebugDraw}.Awake
+  parent: Atlas.SingletonBehavior{Atlas.DebugDraw}
+  definition: Atlas.SingletonBehavior`1.Awake
+  name: Awake()
+  nameWithType: SingletonBehavior<DebugDraw>.Awake()
+  fullName: Atlas.SingletonBehavior<Atlas.DebugDraw>.Awake()
+  nameWithType.vb: SingletonBehavior(Of DebugDraw).Awake()
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.DebugDraw).Awake()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior<DebugDraw>.Awake
+    fullName: Atlas.SingletonBehavior<Atlas.DebugDraw>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior(Of DebugDraw).Awake
+    fullName: Atlas.SingletonBehavior(Of Atlas.DebugDraw).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior{Atlas.DebugDraw}.OnDestroy
+  commentId: M:Atlas.SingletonBehavior{Atlas.DebugDraw}.OnDestroy
+  parent: Atlas.SingletonBehavior{Atlas.DebugDraw}
+  definition: Atlas.SingletonBehavior`1.OnDestroy
+  name: OnDestroy()
+  nameWithType: SingletonBehavior<DebugDraw>.OnDestroy()
+  fullName: Atlas.SingletonBehavior<Atlas.DebugDraw>.OnDestroy()
+  nameWithType.vb: SingletonBehavior(Of DebugDraw).OnDestroy()
+  fullName.vb: Atlas.SingletonBehavior(Of Atlas.DebugDraw).OnDestroy()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior<DebugDraw>.OnDestroy
+    fullName: Atlas.SingletonBehavior<Atlas.DebugDraw>.OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior(Of DebugDraw).OnDestroy
+    fullName: Atlas.SingletonBehavior(Of Atlas.DebugDraw).OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Atlas.SingletonBehavior`1
+  commentId: T:Atlas.SingletonBehavior`1
+  name: SingletonBehavior<TDerived>
+  nameWithType: SingletonBehavior<TDerived>
+  fullName: Atlas.SingletonBehavior<TDerived>
+  nameWithType.vb: SingletonBehavior(Of TDerived)
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived)
+  name.vb: SingletonBehavior(Of TDerived)
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDerived
+    nameWithType: TDerived
+    fullName: TDerived
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1
+    name: SingletonBehavior
+    nameWithType: SingletonBehavior
+    fullName: Atlas.SingletonBehavior
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDerived
+    nameWithType: TDerived
+    fullName: TDerived
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior`1.HasInstance
+  commentId: P:Atlas.SingletonBehavior`1.HasInstance
+  name: HasInstance
+  nameWithType: SingletonBehavior<TDerived>.HasInstance
+  fullName: Atlas.SingletonBehavior<TDerived>.HasInstance
+  nameWithType.vb: SingletonBehavior(Of TDerived).HasInstance
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).HasInstance
+- uid: Atlas.SingletonBehavior`1.Instance
+  commentId: P:Atlas.SingletonBehavior`1.Instance
+  name: Instance
+  nameWithType: SingletonBehavior<TDerived>.Instance
+  fullName: Atlas.SingletonBehavior<TDerived>.Instance
+  nameWithType.vb: SingletonBehavior(Of TDerived).Instance
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).Instance
+- uid: Atlas.SingletonBehavior`1.Awake
+  commentId: M:Atlas.SingletonBehavior`1.Awake
+  name: Awake()
+  nameWithType: SingletonBehavior<TDerived>.Awake()
+  fullName: Atlas.SingletonBehavior<TDerived>.Awake()
+  nameWithType.vb: SingletonBehavior(Of TDerived).Awake()
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).Awake()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior<TDerived>.Awake
+    fullName: Atlas.SingletonBehavior<TDerived>.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.Awake
+    name: Awake
+    nameWithType: SingletonBehavior(Of TDerived).Awake
+    fullName: Atlas.SingletonBehavior(Of TDerived).Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SingletonBehavior`1.OnDestroy
+  commentId: M:Atlas.SingletonBehavior`1.OnDestroy
+  name: OnDestroy()
+  nameWithType: SingletonBehavior<TDerived>.OnDestroy()
+  fullName: Atlas.SingletonBehavior<TDerived>.OnDestroy()
+  nameWithType.vb: SingletonBehavior(Of TDerived).OnDestroy()
+  fullName.vb: Atlas.SingletonBehavior(Of TDerived).OnDestroy()
+  spec.csharp:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior<TDerived>.OnDestroy
+    fullName: Atlas.SingletonBehavior<TDerived>.OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SingletonBehavior`1.OnDestroy
+    name: OnDestroy
+    nameWithType: SingletonBehavior(Of TDerived).OnDestroy
+    fullName: Atlas.SingletonBehavior(Of TDerived).OnDestroy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.DebugDraw.IsEnabled*
+  commentId: Overload:Atlas.DebugDraw.IsEnabled
+  name: IsEnabled
+  nameWithType: DebugDraw.IsEnabled
+  fullName: Atlas.DebugDraw.IsEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Atlas.DebugDraw.DrawLine*
+  commentId: Overload:Atlas.DebugDraw.DrawLine
+  name: DrawLine
+  nameWithType: DebugDraw.DrawLine
+  fullName: Atlas.DebugDraw.DrawLine
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.DebugDraw.DrawRay*
+  commentId: Overload:Atlas.DebugDraw.DrawRay
+  name: DrawRay
+  nameWithType: DebugDraw.DrawRay
+  fullName: Atlas.DebugDraw.DrawRay
+- uid: Atlas.DebugDraw.DrawCross*
+  commentId: Overload:Atlas.DebugDraw.DrawCross
+  name: DrawCross
+  nameWithType: DebugDraw.DrawCross
+  fullName: Atlas.DebugDraw.DrawCross
+- uid: Atlas.DebugDraw.DrawCircle*
+  commentId: Overload:Atlas.DebugDraw.DrawCircle
+  name: DrawCircle
+  nameWithType: DebugDraw.DrawCircle
+  fullName: Atlas.DebugDraw.DrawCircle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Atlas.DebugDraw.DrawText*
+  commentId: Overload:Atlas.DebugDraw.DrawText
+  name: DrawText
+  nameWithType: DebugDraw.DrawText
+  fullName: Atlas.DebugDraw.DrawText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Atlas.AnchorPosition
+  commentId: T:Atlas.AnchorPosition
+  parent: Atlas
+  name: AnchorPosition
+  nameWithType: AnchorPosition
+  fullName: Atlas.AnchorPosition
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion

@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.ITickable
+  commentId: T:Atlas.ITickable
+  id: ITickable
+  parent: Atlas
+  children:
+  - Atlas.ITickable.Tick
+  langs:
+  - csharp
+  - vb
+  name: ITickable
+  nameWithType: ITickable
+  fullName: Atlas.ITickable
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ITickable
+    path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nA helper for providing a shared interface for updating objects\n"
+  example: []
+  syntax:
+    content: public interface ITickable
+    content.vb: Public Interface ITickable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Atlas.ITickable.Tick
+  commentId: M:Atlas.ITickable.Tick
+  id: Tick
+  parent: Atlas.ITickable
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: ITickable.Tick()
+  fullName: Atlas.ITickable.Tick()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Tick
+    path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nIntended to be called every update cycle\n"
+  example: []
+  syntax:
+    content: void Tick()
+    content.vb: Sub Tick
+  overload: Atlas.ITickable.Tick*
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.ITickable.Tick*
+  commentId: Overload:Atlas.ITickable.Tick
+  name: Tick
+  nameWithType: ITickable.Tick
+  fullName: Atlas.ITickable.Tick

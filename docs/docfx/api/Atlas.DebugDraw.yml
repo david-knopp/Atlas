@@ -32,7 +32,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DebugDraw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -81,7 +81,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: IsEnabled
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -120,7 +120,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawLine
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 338
+    startLine: 339
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -159,7 +159,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawLine
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 339
+    startLine: 340
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -200,7 +200,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawRay
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 340
+    startLine: 341
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -239,7 +239,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawRay
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 341
+    startLine: 342
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -280,7 +280,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawCross
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 342
+    startLine: 343
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -319,7 +319,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawCross
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 343
+    startLine: 344
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -360,7 +360,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawCircle
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 344
+    startLine: 345
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -401,7 +401,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawCircle
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 345
+    startLine: 346
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -444,7 +444,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 346
+    startLine: 347
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -487,7 +487,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 347
+    startLine: 348
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -532,7 +532,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 348
+    startLine: 349
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -577,7 +577,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-    startLine: 349
+    startLine: 350
   assemblies:
   - Assembly-CSharp
   namespace: Atlas

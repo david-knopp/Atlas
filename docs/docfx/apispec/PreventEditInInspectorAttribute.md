@@ -4,4 +4,4 @@ uid: Atlas.PreventEditInInspectorAttribute
 example: [*content]
 ---
 ![Inspector Demo](../images/Examples_PreventEditInInspectorAttribute.png)
-[!code-csharp[PreventEditInInspectorAttribute](../../../Assets/Examples/Scripts/Runtime/Utils/Attributes/Example_PreventEditInInspectorAttribute.cs)]
+[!code-csharp[PreventEditInInspector](../../../Assets/Examples/Scripts/Runtime/Utils/Attributes/Example_PreventEditInInspectorAttribute.cs)]

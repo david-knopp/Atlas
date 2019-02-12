@@ -1,0 +1,842 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.LineDebugDrawer
+  commentId: T:Atlas.LineDebugDrawer
+  id: LineDebugDrawer
+  parent: Atlas
+  children:
+  - Atlas.LineDebugDrawer.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  - Atlas.LineDebugDrawer.Color
+  - Atlas.LineDebugDrawer.Draw
+  - Atlas.LineDebugDrawer.IsFinished
+  langs:
+  - csharp
+  - vb
+  name: LineDebugDrawer
+  nameWithType: LineDebugDrawer
+  fullName: Atlas.LineDebugDrawer
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: LineDebugDrawer
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nDebug line element\n"
+  example: []
+  syntax:
+    content: 'public struct LineDebugDrawer : IDebugDrawer'
+    content.vb: >-
+      Public Structure LineDebugDrawer
+          Implements IDebugDrawer
+  seealso:
+  - linkId: Atlas.DebugDraw
+    commentId: T:Atlas.DebugDraw
+  implements:
+  - Atlas.IDebugDrawer
+  extensionMethods:
+  - Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Timed(System.Single)
+  - Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3)
+  - Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3,UnityEngine.Quaternion)
+  - Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3)
+  - Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3,UnityEngine.Camera)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Atlas.LineDebugDrawer.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  commentId: M:Atlas.LineDebugDrawer.#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)
+  id: '#ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color)'
+  parent: Atlas.LineDebugDrawer
+  langs:
+  - csharp
+  - vb
+  name: LineDebugDrawer(Vector3, Vector3, Color)
+  nameWithType: LineDebugDrawer.LineDebugDrawer(Vector3, Vector3, Color)
+  fullName: Atlas.LineDebugDrawer.LineDebugDrawer(UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Color)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: .ctor
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public LineDebugDrawer(Vector3 startPos, Vector3 endPos, Color color)
+    parameters:
+    - id: startPos
+      type: UnityEngine.Vector3
+      description: Starting position of the line
+    - id: endPos
+      type: UnityEngine.Vector3
+      description: Ending position of the line
+    - id: color
+      type: UnityEngine.Color
+      description: Color of the line
+    content.vb: Public Sub New(startPos As Vector3, endPos As Vector3, color As Color)
+  overload: Atlas.LineDebugDrawer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.LineDebugDrawer.IsFinished
+  commentId: P:Atlas.LineDebugDrawer.IsFinished
+  id: IsFinished
+  parent: Atlas.LineDebugDrawer
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: LineDebugDrawer.IsFinished
+  fullName: Atlas.LineDebugDrawer.IsFinished
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IsFinished
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nWhether or not this drawer has finished drawing yet\n"
+  example: []
+  syntax:
+    content: public bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFinished As Boolean
+  overload: Atlas.LineDebugDrawer.IsFinished*
+  implements:
+  - Atlas.IDebugDrawer.IsFinished
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.LineDebugDrawer.Color
+  commentId: P:Atlas.LineDebugDrawer.Color
+  id: Color
+  parent: Atlas.LineDebugDrawer
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: LineDebugDrawer.Color
+  fullName: Atlas.LineDebugDrawer.Color
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Color
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nColor of the line\n"
+  example: []
+  syntax:
+    content: public Color Color { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property Color As Color
+  overload: Atlas.LineDebugDrawer.Color*
+  implements:
+  - Atlas.IDebugDrawer.Color
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Atlas.LineDebugDrawer.Draw
+  commentId: M:Atlas.LineDebugDrawer.Draw
+  id: Draw
+  parent: Atlas.LineDebugDrawer
+  langs:
+  - csharp
+  - vb
+  name: Draw()
+  nameWithType: LineDebugDrawer.Draw()
+  fullName: Atlas.LineDebugDrawer.Draw()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Draw
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/LineDebugDrawer.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nDraws the line\n"
+  example: []
+  syntax:
+    content: public void Draw()
+    content.vb: Public Sub Draw
+  overload: Atlas.LineDebugDrawer.Draw*
+  implements:
+  - Atlas.IDebugDrawer.Draw
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas.DebugDraw
+  commentId: T:Atlas.DebugDraw
+  name: DebugDraw
+  nameWithType: DebugDraw
+  fullName: Atlas.DebugDraw
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.IDebugDrawer
+  commentId: T:Atlas.IDebugDrawer
+  parent: Atlas
+  name: IDebugDrawer
+  nameWithType: IDebugDrawer
+  fullName: Atlas.IDebugDrawer
+- uid: Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Timed(System.Single)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+  parent: Atlas.DebugDrawModifierExtensions
+  definition: Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+  name: Timed(Single)
+  nameWithType: DebugDrawModifierExtensions.Timed(Single)
+  fullName: Atlas.DebugDrawModifierExtensions.Timed(System.Single)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Timed(System.Single)
+    name: Timed
+    nameWithType: DebugDrawModifierExtensions.Timed
+    fullName: Atlas.DebugDrawModifierExtensions.Timed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Timed(System.Single)
+    name: Timed
+    nameWithType: DebugDrawModifierExtensions.Timed
+    fullName: Atlas.DebugDrawModifierExtensions.Timed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  parent: Atlas.DebugDrawModifierExtensions
+  definition: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  name: Transformed(Vector3)
+  nameWithType: DebugDrawModifierExtensions.Transformed(Vector3)
+  fullName: Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: Atlas.DebugDrawModifierExtensions
+  definition: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name: Transformed(Vector3, Quaternion)
+  nameWithType: DebugDrawModifierExtensions.Transformed(Vector3, Quaternion)
+  fullName: Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3, UnityEngine.Quaternion)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  parent: Atlas.DebugDrawModifierExtensions
+  definition: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  name: Billboarded(Vector3)
+  nameWithType: DebugDrawModifierExtensions.Billboarded(Vector3)
+  fullName: Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.IDebugDrawer.Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3,UnityEngine.Camera)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  parent: Atlas.DebugDrawModifierExtensions
+  definition: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  name: Billboarded(Vector3, Camera)
+  nameWithType: DebugDrawModifierExtensions.Billboarded(Vector3, Camera)
+  fullName: Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3, UnityEngine.Camera)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3,UnityEngine.Camera)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Camera
+    name: Camera
+    nameWithType: Camera
+    fullName: UnityEngine.Camera
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(UnityEngine.Vector3,UnityEngine.Camera)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Camera
+    name: Camera
+    nameWithType: Camera
+    fullName: UnityEngine.Camera
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+  isExternal: true
+  name: Timed(IDebugDrawer, Single)
+  nameWithType: DebugDrawModifierExtensions.Timed(IDebugDrawer, Single)
+  fullName: Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer, System.Single)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+    name: Timed
+    nameWithType: DebugDrawModifierExtensions.Timed
+    fullName: Atlas.DebugDrawModifierExtensions.Timed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+    name: Timed
+    nameWithType: DebugDrawModifierExtensions.Timed
+    fullName: Atlas.DebugDrawModifierExtensions.Timed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.DebugDrawModifierExtensions
+  commentId: T:Atlas.DebugDrawModifierExtensions
+  parent: Atlas
+  name: DebugDrawModifierExtensions
+  nameWithType: DebugDrawModifierExtensions
+  fullName: Atlas.DebugDrawModifierExtensions
+- uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  isExternal: true
+  name: Transformed(IDebugDrawer, Vector3)
+  nameWithType: DebugDrawModifierExtensions.Transformed(IDebugDrawer, Vector3)
+  fullName: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  name: Transformed(IDebugDrawer, Vector3, Quaternion)
+  nameWithType: DebugDrawModifierExtensions.Transformed(IDebugDrawer, Vector3, Quaternion)
+  fullName: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer, UnityEngine.Vector3, UnityEngine.Quaternion)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Transformed
+    nameWithType: DebugDrawModifierExtensions.Transformed
+    fullName: Atlas.DebugDrawModifierExtensions.Transformed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  isExternal: true
+  name: Billboarded(IDebugDrawer, Vector3)
+  nameWithType: DebugDrawModifierExtensions.Billboarded(IDebugDrawer, Vector3)
+  fullName: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  isExternal: true
+  name: Billboarded(IDebugDrawer, Vector3, Camera)
+  nameWithType: DebugDrawModifierExtensions.Billboarded(IDebugDrawer, Vector3, Camera)
+  fullName: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer, UnityEngine.Vector3, UnityEngine.Camera)
+  spec.csharp:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Camera
+    name: Camera
+    nameWithType: Camera
+    fullName: UnityEngine.Camera
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+    name: Billboarded
+    nameWithType: DebugDrawModifierExtensions.Billboarded
+    fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Atlas.IDebugDrawer
+    name: IDebugDrawer
+    nameWithType: IDebugDrawer
+    fullName: Atlas.IDebugDrawer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Camera
+    name: Camera
+    nameWithType: Camera
+    fullName: UnityEngine.Camera
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.LineDebugDrawer.#ctor*
+  commentId: Overload:Atlas.LineDebugDrawer.#ctor
+  name: LineDebugDrawer
+  nameWithType: LineDebugDrawer.LineDebugDrawer
+  fullName: Atlas.LineDebugDrawer.LineDebugDrawer
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Atlas.LineDebugDrawer.IsFinished*
+  commentId: Overload:Atlas.LineDebugDrawer.IsFinished
+  name: IsFinished
+  nameWithType: LineDebugDrawer.IsFinished
+  fullName: Atlas.LineDebugDrawer.IsFinished
+- uid: Atlas.IDebugDrawer.IsFinished
+  commentId: P:Atlas.IDebugDrawer.IsFinished
+  parent: Atlas.IDebugDrawer
+  name: IsFinished
+  nameWithType: IDebugDrawer.IsFinished
+  fullName: Atlas.IDebugDrawer.IsFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.LineDebugDrawer.Color*
+  commentId: Overload:Atlas.LineDebugDrawer.Color
+  name: Color
+  nameWithType: LineDebugDrawer.Color
+  fullName: Atlas.LineDebugDrawer.Color
+- uid: Atlas.IDebugDrawer.Color
+  commentId: P:Atlas.IDebugDrawer.Color
+  parent: Atlas.IDebugDrawer
+  name: Color
+  nameWithType: IDebugDrawer.Color
+  fullName: Atlas.IDebugDrawer.Color
+- uid: Atlas.LineDebugDrawer.Draw*
+  commentId: Overload:Atlas.LineDebugDrawer.Draw
+  name: Draw
+  nameWithType: LineDebugDrawer.Draw
+  fullName: Atlas.LineDebugDrawer.Draw
+- uid: Atlas.IDebugDrawer.Draw
+  commentId: M:Atlas.IDebugDrawer.Draw
+  parent: Atlas.IDebugDrawer
+  name: Draw()
+  nameWithType: IDebugDrawer.Draw()
+  fullName: Atlas.IDebugDrawer.Draw()
+  spec.csharp:
+  - uid: Atlas.IDebugDrawer.Draw
+    name: Draw
+    nameWithType: IDebugDrawer.Draw
+    fullName: Atlas.IDebugDrawer.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IDebugDrawer.Draw
+    name: Draw
+    nameWithType: IDebugDrawer.Draw
+    fullName: Atlas.IDebugDrawer.Draw
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

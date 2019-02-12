@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Effect.DestructionEventType
+  commentId: T:Atlas.Effect.DestructionEventType
+  id: Effect.DestructionEventType
+  parent: Atlas
+  children:
+  - Atlas.Effect.DestructionEventType.Finished
+  - Atlas.Effect.DestructionEventType.Manual
+  langs:
+  - csharp
+  - vb
+  name: Effect.DestructionEventType
+  nameWithType: Effect.DestructionEventType
+  fullName: Atlas.Effect.DestructionEventType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Effect.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DestructionEventType
+    path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nEvent defining how the effect will be destroyed\n"
+  example: []
+  syntax:
+    content: public enum DestructionEventType
+    content.vb: Public Enum DestructionEventType
+  extensionMethods:
+  - System.Enum.Atlas.EnumExtensions.IsObsolete
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.Effect.DestructionEventType.Finished
+  commentId: F:Atlas.Effect.DestructionEventType.Finished
+  id: Finished
+  parent: Atlas.Effect.DestructionEventType
+  langs:
+  - csharp
+  - vb
+  name: Finished
+  nameWithType: Effect.DestructionEventType.Finished
+  fullName: Atlas.Effect.DestructionEventType.Finished
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Effect.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Finished
+    path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nDestroy when all child emitters finish\n"
+  example: []
+  syntax:
+    content: Finished = 0
+    return:
+      type: Atlas.Effect.DestructionEventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.Effect.DestructionEventType.Manual
+  commentId: F:Atlas.Effect.DestructionEventType.Manual
+  id: Manual
+  parent: Atlas.Effect.DestructionEventType
+  langs:
+  - csharp
+  - vb
+  name: Manual
+  nameWithType: Effect.DestructionEventType.Manual
+  fullName: Atlas.Effect.DestructionEventType.Manual
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Effects/Effect.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Manual
+    path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nManually destroy via code (by calling <xref href=\"UnityEngine.Object.Destroy(UnityEngine.Object%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref>)\n"
+  example: []
+  syntax:
+    content: Manual = 1
+    return:
+      type: Atlas.Effect.DestructionEventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Enum.Atlas.EnumExtensions.IsObsolete
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  parent: Atlas.EnumExtensions
+  definition: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  name: IsObsolete()
+  nameWithType: EnumExtensions.IsObsolete()
+  fullName: Atlas.EnumExtensions.IsObsolete()
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  isExternal: true
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  parent: Atlas
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+- uid: Atlas.Effect.DestructionEventType
+  commentId: T:Atlas.Effect.DestructionEventType
+  parent: Atlas
+  name: Effect.DestructionEventType
+  nameWithType: Effect.DestructionEventType
+  fullName: Atlas.Effect.DestructionEventType
+- uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  commentId: M:UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  isExternal: true

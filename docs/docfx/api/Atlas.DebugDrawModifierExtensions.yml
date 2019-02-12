@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.DebugDrawModifierExtensions
+  commentId: T:Atlas.DebugDrawModifierExtensions
+  id: DebugDrawModifierExtensions
+  parent: Atlas
+  children:
+  - Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  - Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  - Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+  - Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  - Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  langs:
+  - csharp
+  - vb
+  name: DebugDrawModifierExtensions
+  nameWithType: DebugDrawModifierExtensions
+  fullName: Atlas.DebugDrawModifierExtensions
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DebugDrawModifierExtensions
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nHelpful extension methods to make working with <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> more user-friendly\n"
+  example: []
+  syntax:
+    content: public static class DebugDrawModifierExtensions
+    content.vb: Public Module DebugDrawModifierExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer,System.Single)
+  id: Timed(Atlas.IDebugDrawer,System.Single)
+  isExtensionMethod: true
+  parent: Atlas.DebugDrawModifierExtensions
+  langs:
+  - csharp
+  - vb
+  name: Timed(IDebugDrawer, Single)
+  nameWithType: DebugDrawModifierExtensions.Timed(IDebugDrawer, Single)
+  fullName: Atlas.DebugDrawModifierExtensions.Timed(Atlas.IDebugDrawer, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Timed
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nExtension method to modify the given <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> by adding a draw lifetime\n"
+  example: []
+  syntax:
+    content: public static IDebugDrawer Timed(this IDebugDrawer drawer, float lifetime)
+    parameters:
+    - id: drawer
+      type: Atlas.IDebugDrawer
+      description: The drawer to modify
+    - id: lifetime
+      type: System.Single
+      description: Amount of time (in seconds) to draw the element for
+    return:
+      type: Atlas.IDebugDrawer
+      description: The original <xref href="Atlas.IDebugDrawer" data-throw-if-not-resolved="false"></xref>, wrapped in a <xref href="Atlas.TimedDebugDrawModifier" data-throw-if-not-resolved="false"></xref>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Timed(drawer As IDebugDrawer, lifetime As Single) As IDebugDrawer
+  overload: Atlas.DebugDrawModifierExtensions.Timed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  id: Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.DebugDrawModifierExtensions
+  langs:
+  - csharp
+  - vb
+  name: Transformed(IDebugDrawer, Vector3)
+  nameWithType: DebugDrawModifierExtensions.Transformed(IDebugDrawer, Vector3)
+  fullName: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Transformed
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nExtension method to apply a transformation to a <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static IDebugDrawer Transformed(this IDebugDrawer drawer, Vector3 position)
+    parameters:
+    - id: drawer
+      type: Atlas.IDebugDrawer
+      description: The drawer to transform
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position to apply to the element
+    return:
+      type: Atlas.IDebugDrawer
+      description: The transformed drawer
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Transformed(drawer As IDebugDrawer, position As Vector3) As IDebugDrawer
+  overload: Atlas.DebugDrawModifierExtensions.Transformed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  id: Transformed(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExtensionMethod: true
+  parent: Atlas.DebugDrawModifierExtensions
+  langs:
+  - csharp
+  - vb
+  name: Transformed(IDebugDrawer, Vector3, Quaternion)
+  nameWithType: DebugDrawModifierExtensions.Transformed(IDebugDrawer, Vector3, Quaternion)
+  fullName: Atlas.DebugDrawModifierExtensions.Transformed(Atlas.IDebugDrawer, UnityEngine.Vector3, UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Transformed
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nExtension method to apply a transformation to a <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static IDebugDrawer Transformed(this IDebugDrawer drawer, Vector3 position, Quaternion rotation)
+    parameters:
+    - id: drawer
+      type: Atlas.IDebugDrawer
+      description: The drawer to transform
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position to apply to the element
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: The rotation to apply to the element
+    return:
+      type: Atlas.IDebugDrawer
+      description: The transformed drawer
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Transformed(drawer As IDebugDrawer, position As Vector3, rotation As Quaternion) As IDebugDrawer
+  overload: Atlas.DebugDrawModifierExtensions.Transformed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  id: Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.DebugDrawModifierExtensions
+  langs:
+  - csharp
+  - vb
+  name: Billboarded(IDebugDrawer, Vector3)
+  nameWithType: DebugDrawModifierExtensions.Billboarded(IDebugDrawer, Vector3)
+  fullName: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Billboarded
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nExtension method to apply a billboarded transformation to the given <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>.\nUses <xref href=\"UnityEngine.Camera.main\" data-throw-if-not-resolved=\"false\"></xref> by default for billboarding\n"
+  example: []
+  syntax:
+    content: public static IDebugDrawer Billboarded(this IDebugDrawer drawer, Vector3 position)
+    parameters:
+    - id: drawer
+      type: Atlas.IDebugDrawer
+      description: The drawer to billboard
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position to aply to the element
+    return:
+      type: Atlas.IDebugDrawer
+      description: The billboarded drawer
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Billboarded(drawer As IDebugDrawer, position As Vector3) As IDebugDrawer
+  overload: Atlas.DebugDrawModifierExtensions.Billboarded*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  commentId: M:Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  id: Billboarded(Atlas.IDebugDrawer,UnityEngine.Vector3,UnityEngine.Camera)
+  isExtensionMethod: true
+  parent: Atlas.DebugDrawModifierExtensions
+  langs:
+  - csharp
+  - vb
+  name: Billboarded(IDebugDrawer, Vector3, Camera)
+  nameWithType: DebugDrawModifierExtensions.Billboarded(IDebugDrawer, Vector3, Camera)
+  fullName: Atlas.DebugDrawModifierExtensions.Billboarded(Atlas.IDebugDrawer, UnityEngine.Vector3, UnityEngine.Camera)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Billboarded
+    path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nExtension method to apply a billboarded transformation to the given <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static IDebugDrawer Billboarded(this IDebugDrawer drawer, Vector3 position, Camera camera)
+    parameters:
+    - id: drawer
+      type: Atlas.IDebugDrawer
+      description: The drawer to billboard
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position to aply to the element
+    - id: camera
+      type: UnityEngine.Camera
+      description: The camera to face the element toward
+    return:
+      type: Atlas.IDebugDrawer
+      description: The billboarded drawer
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Billboarded(drawer As IDebugDrawer, position As Vector3, camera As Camera) As IDebugDrawer
+  overload: Atlas.DebugDrawModifierExtensions.Billboarded*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas.IDebugDrawer
+  commentId: T:Atlas.IDebugDrawer
+  parent: Atlas
+  name: IDebugDrawer
+  nameWithType: IDebugDrawer
+  fullName: Atlas.IDebugDrawer
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.TimedDebugDrawModifier
+  commentId: T:Atlas.TimedDebugDrawModifier
+  name: TimedDebugDrawModifier
+  nameWithType: TimedDebugDrawModifier
+  fullName: Atlas.TimedDebugDrawModifier
+- uid: Atlas.DebugDrawModifierExtensions.Timed*
+  commentId: Overload:Atlas.DebugDrawModifierExtensions.Timed
+  name: Timed
+  nameWithType: DebugDrawModifierExtensions.Timed
+  fullName: Atlas.DebugDrawModifierExtensions.Timed
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.DebugDrawModifierExtensions.Transformed*
+  commentId: Overload:Atlas.DebugDrawModifierExtensions.Transformed
+  name: Transformed
+  nameWithType: DebugDrawModifierExtensions.Transformed
+  fullName: Atlas.DebugDrawModifierExtensions.Transformed
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine.Camera.main
+  commentId: P:UnityEngine.Camera.main
+  isExternal: true
+- uid: Atlas.DebugDrawModifierExtensions.Billboarded*
+  commentId: Overload:Atlas.DebugDrawModifierExtensions.Billboarded
+  name: Billboarded
+  nameWithType: DebugDrawModifierExtensions.Billboarded
+  fullName: Atlas.DebugDrawModifierExtensions.Billboarded
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera

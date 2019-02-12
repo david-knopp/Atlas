@@ -1,0 +1,463 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.TaskScheduler
+  commentId: T:Atlas.TaskScheduler
+  id: TaskScheduler
+  parent: Atlas
+  children:
+  - Atlas.TaskScheduler.#ctor(System.Int32)
+  - Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32)
+  - Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32,System.Int32)
+  - Atlas.TaskScheduler.ChangeFrequency(Atlas.IScheduledTask,System.UInt32)
+  - Atlas.TaskScheduler.Frame
+  - Atlas.TaskScheduler.RemoveTask(Atlas.IScheduledTask)
+  - Atlas.TaskScheduler.ScheduledTick
+  - Atlas.TaskScheduler.TaskCount
+  langs:
+  - csharp
+  - vb
+  name: TaskScheduler
+  nameWithType: TaskScheduler
+  fullName: Atlas.TaskScheduler
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: TaskScheduler
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nHandles scheduling and distributing task execution between frames, attempting to balance frame-by-frame execution\nso one frame isn&apos;t heavier than the another.\n"
+  example: []
+  syntax:
+    content: 'public sealed class TaskScheduler : IScheduledTask'
+    content.vb: >-
+      Public NotInheritable Class TaskScheduler
+          Implements IScheduledTask
+  seealso:
+  - linkId: Atlas.IScheduledTask
+    commentId: T:Atlas.IScheduledTask
+  inheritance:
+  - System.Object
+  implements:
+  - Atlas.IScheduledTask
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.TaskScheduler.#ctor(System.Int32)
+  commentId: M:Atlas.TaskScheduler.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: TaskScheduler(Int32)
+  nameWithType: TaskScheduler.TaskScheduler(Int32)
+  fullName: Atlas.TaskScheduler.TaskScheduler(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: .ctor
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public TaskScheduler(int phaseIterationCount = 10)
+    parameters:
+    - id: phaseIterationCount
+      type: System.Int32
+      description: Number of frames to look ahead at when determining the optimum phase for a task
+    content.vb: Public Sub New(phaseIterationCount As Integer = 10)
+  overload: Atlas.TaskScheduler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.TaskScheduler.TaskCount
+  commentId: P:Atlas.TaskScheduler.TaskCount
+  id: TaskCount
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: TaskCount
+  nameWithType: TaskScheduler.TaskCount
+  fullName: Atlas.TaskScheduler.TaskCount
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: TaskCount
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nNumber of tasks currently scheduled to execute\n"
+  example: []
+  syntax:
+    content: public int TaskCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TaskCount As Integer
+  overload: Atlas.TaskScheduler.TaskCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.TaskScheduler.Frame
+  commentId: P:Atlas.TaskScheduler.Frame
+  id: Frame
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: Frame
+  nameWithType: TaskScheduler.Frame
+  fullName: Atlas.TaskScheduler.Frame
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Frame
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nThis scheduler&apos;s current frame count\n"
+  example: []
+  syntax:
+    content: public int Frame { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Frame As Integer
+  overload: Atlas.TaskScheduler.Frame*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32,System.Int32)
+  commentId: M:Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32,System.Int32)
+  id: AddTask(Atlas.IScheduledTask,System.UInt32,System.Int32)
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: AddTask(IScheduledTask, UInt32, Int32)
+  nameWithType: TaskScheduler.AddTask(IScheduledTask, UInt32, Int32)
+  fullName: Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask, System.UInt32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: AddTask
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nRegisters the given task for scheduled updates\n"
+  example: []
+  syntax:
+    content: public void AddTask(IScheduledTask task, uint frequency, int phase)
+    parameters:
+    - id: task
+      type: Atlas.IScheduledTask
+      description: The task to schedule
+    - id: frequency
+      type: System.UInt32
+      description: The desired update frequency (in frames)
+    - id: phase
+      type: System.Int32
+      description: An offset used to scatter tasks with similar frequencies
+    content.vb: Public Sub AddTask(task As IScheduledTask, frequency As UInteger, phase As Integer)
+  overload: Atlas.TaskScheduler.AddTask*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32)
+  commentId: M:Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32)
+  id: AddTask(Atlas.IScheduledTask,System.UInt32)
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: AddTask(IScheduledTask, UInt32)
+  nameWithType: TaskScheduler.AddTask(IScheduledTask, UInt32)
+  fullName: Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask, System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: AddTask
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nRegisters the given task for scheduled updates, with an automatic phase assignment.\nThis method will be a bit slower than <xref href=\"Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask%2cSystem.UInt32%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>, as it will evaluate the number of\nscheduled tasks for upcoming frames in an attempt to select an optimum phase offset for the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">task</code>.\n"
+  example: []
+  syntax:
+    content: public void AddTask(IScheduledTask task, uint frequency)
+    parameters:
+    - id: task
+      type: Atlas.IScheduledTask
+      description: The task to schedule
+    - id: frequency
+      type: System.UInt32
+      description: The desired update frequency (in frames)
+    content.vb: Public Sub AddTask(task As IScheduledTask, frequency As UInteger)
+  overload: Atlas.TaskScheduler.AddTask*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.TaskScheduler.RemoveTask(Atlas.IScheduledTask)
+  commentId: M:Atlas.TaskScheduler.RemoveTask(Atlas.IScheduledTask)
+  id: RemoveTask(Atlas.IScheduledTask)
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: RemoveTask(IScheduledTask)
+  nameWithType: TaskScheduler.RemoveTask(IScheduledTask)
+  fullName: Atlas.TaskScheduler.RemoveTask(Atlas.IScheduledTask)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: RemoveTask
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nUnregisters the given task\n"
+  example: []
+  syntax:
+    content: public void RemoveTask(IScheduledTask task)
+    parameters:
+    - id: task
+      type: Atlas.IScheduledTask
+      description: The task to remove
+    content.vb: Public Sub RemoveTask(task As IScheduledTask)
+  overload: Atlas.TaskScheduler.RemoveTask*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.TaskScheduler.ChangeFrequency(Atlas.IScheduledTask,System.UInt32)
+  commentId: M:Atlas.TaskScheduler.ChangeFrequency(Atlas.IScheduledTask,System.UInt32)
+  id: ChangeFrequency(Atlas.IScheduledTask,System.UInt32)
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: ChangeFrequency(IScheduledTask, UInt32)
+  nameWithType: TaskScheduler.ChangeFrequency(IScheduledTask, UInt32)
+  fullName: Atlas.TaskScheduler.ChangeFrequency(Atlas.IScheduledTask, System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ChangeFrequency
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 94
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nChanges the frequency for a task that is already managed by this scheduler\n"
+  example: []
+  syntax:
+    content: public void ChangeFrequency(IScheduledTask task, uint frequency)
+    parameters:
+    - id: task
+      type: Atlas.IScheduledTask
+      description: The task to update
+    - id: frequency
+      type: System.UInt32
+      description: The task&apos;s desired frequency
+    content.vb: Public Sub ChangeFrequency(task As IScheduledTask, frequency As UInteger)
+  overload: Atlas.TaskScheduler.ChangeFrequency*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.TaskScheduler.ScheduledTick
+  commentId: M:Atlas.TaskScheduler.ScheduledTick
+  id: ScheduledTick
+  parent: Atlas.TaskScheduler
+  langs:
+  - csharp
+  - vb
+  name: ScheduledTick()
+  nameWithType: TaskScheduler.ScheduledTick()
+  fullName: Atlas.TaskScheduler.ScheduledTick()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ScheduledTick
+    path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
+    startLine: 106
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nUpdates the scheduler, and any tasks scheduled to execute on the scheduler&apos;s current <xref href=\"Atlas.TaskScheduler.Frame\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public void ScheduledTick()
+    content.vb: Public Sub ScheduledTick
+  overload: Atlas.TaskScheduler.ScheduledTick*
+  implements:
+  - Atlas.IScheduledTask.ScheduledTick
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Atlas.IScheduledTask
+  commentId: T:Atlas.IScheduledTask
+  parent: Atlas
+  name: IScheduledTask
+  nameWithType: IScheduledTask
+  fullName: Atlas.IScheduledTask
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.TaskScheduler.#ctor*
+  commentId: Overload:Atlas.TaskScheduler.#ctor
+  name: TaskScheduler
+  nameWithType: TaskScheduler.TaskScheduler
+  fullName: Atlas.TaskScheduler.TaskScheduler
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Atlas.TaskScheduler.TaskCount*
+  commentId: Overload:Atlas.TaskScheduler.TaskCount
+  name: TaskCount
+  nameWithType: TaskScheduler.TaskCount
+  fullName: Atlas.TaskScheduler.TaskCount
+- uid: Atlas.TaskScheduler.Frame*
+  commentId: Overload:Atlas.TaskScheduler.Frame
+  name: Frame
+  nameWithType: TaskScheduler.Frame
+  fullName: Atlas.TaskScheduler.Frame
+- uid: Atlas.TaskScheduler.AddTask*
+  commentId: Overload:Atlas.TaskScheduler.AddTask
+  name: AddTask
+  nameWithType: TaskScheduler.AddTask
+  fullName: Atlas.TaskScheduler.AddTask
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32,System.Int32)
+  commentId: M:Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask,System.UInt32,System.Int32)
+  isExternal: true
+- uid: Atlas.TaskScheduler.RemoveTask*
+  commentId: Overload:Atlas.TaskScheduler.RemoveTask
+  name: RemoveTask
+  nameWithType: TaskScheduler.RemoveTask
+  fullName: Atlas.TaskScheduler.RemoveTask
+- uid: Atlas.TaskScheduler.ChangeFrequency*
+  commentId: Overload:Atlas.TaskScheduler.ChangeFrequency
+  name: ChangeFrequency
+  nameWithType: TaskScheduler.ChangeFrequency
+  fullName: Atlas.TaskScheduler.ChangeFrequency
+- uid: Atlas.TaskScheduler.Frame
+  commentId: P:Atlas.TaskScheduler.Frame
+  isExternal: true
+- uid: Atlas.TaskScheduler.ScheduledTick*
+  commentId: Overload:Atlas.TaskScheduler.ScheduledTick
+  name: ScheduledTick
+  nameWithType: TaskScheduler.ScheduledTick
+  fullName: Atlas.TaskScheduler.ScheduledTick
+- uid: Atlas.IScheduledTask.ScheduledTick
+  commentId: M:Atlas.IScheduledTask.ScheduledTick
+  parent: Atlas.IScheduledTask
+  name: ScheduledTick()
+  nameWithType: IScheduledTask.ScheduledTick()
+  fullName: Atlas.IScheduledTask.ScheduledTick()
+  spec.csharp:
+  - uid: Atlas.IScheduledTask.ScheduledTick
+    name: ScheduledTick
+    nameWithType: IScheduledTask.ScheduledTick
+    fullName: Atlas.IScheduledTask.ScheduledTick
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.IScheduledTask.ScheduledTick
+    name: ScheduledTick
+    nameWithType: IScheduledTask.ScheduledTick
+    fullName: Atlas.IScheduledTask.ScheduledTick
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

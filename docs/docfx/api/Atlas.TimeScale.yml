@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.TimeScale
+  commentId: T:Atlas.TimeScale
+  id: TimeScale
+  parent: Atlas
+  children:
+  - Atlas.TimeScale.Fixed
+  - Atlas.TimeScale.Scaled
+  - Atlas.TimeScale.Unscaled
+  langs:
+  - csharp
+  - vb
+  name: TimeScale
+  nameWithType: TimeScale
+  fullName: Atlas.TimeScale
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: TimeScale
+    path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nTypes of time scales used to reference Unity&apos;s various <xref href=\"UnityEngine.Time\" data-throw-if-not-resolved=\"false\"></xref> methods\n"
+  example: []
+  syntax:
+    content: public enum TimeScale
+    content.vb: Public Enum TimeScale
+  extensionMethods:
+  - System.Enum.Atlas.EnumExtensions.IsObsolete
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.TimeScale.Scaled
+  commentId: F:Atlas.TimeScale.Scaled
+  id: Scaled
+  parent: Atlas.TimeScale
+  langs:
+  - csharp
+  - vb
+  name: Scaled
+  nameWithType: TimeScale.Scaled
+  fullName: Atlas.TimeScale.Scaled
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Scaled
+    path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nUses default <xref href=\"UnityEngine.Time.time\" data-throw-if-not-resolved=\"false\"></xref>, thus allowing the timer to \nreact to slow-mo effects and game pauses\n"
+  example: []
+  syntax:
+    content: Scaled = 0
+    return:
+      type: Atlas.TimeScale
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.TimeScale.Unscaled
+  commentId: F:Atlas.TimeScale.Unscaled
+  id: Unscaled
+  parent: Atlas.TimeScale
+  langs:
+  - csharp
+  - vb
+  name: Unscaled
+  nameWithType: TimeScale.Unscaled
+  fullName: Atlas.TimeScale.Unscaled
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Unscaled
+    path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nUses <xref href=\"UnityEngine.Time.timeScale\" data-throw-if-not-resolved=\"false\"></xref>-independent time to effectively \nmeasure &quot;real&quot; time\n"
+  example: []
+  syntax:
+    content: Unscaled = 1
+    return:
+      type: Atlas.TimeScale
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.TimeScale.Fixed
+  commentId: F:Atlas.TimeScale.Fixed
+  id: Fixed
+  parent: Atlas.TimeScale
+  langs:
+  - csharp
+  - vb
+  name: Fixed
+  nameWithType: TimeScale.Fixed
+  fullName: Atlas.TimeScale.Fixed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Fixed
+    path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nUses the current <xref href=\"UnityEngine.Time.fixedTime\" data-throw-if-not-resolved=\"false\"></xref> to provide more \naccurate time measuring inside of Unity&apos;s FixedUpdate\n"
+  example: []
+  syntax:
+    content: Fixed = 2
+    return:
+      type: Atlas.TimeScale
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: UnityEngine.Time
+  commentId: T:UnityEngine.Time
+  isExternal: true
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Enum.Atlas.EnumExtensions.IsObsolete
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  parent: Atlas.EnumExtensions
+  definition: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  name: IsObsolete()
+  nameWithType: EnumExtensions.IsObsolete()
+  fullName: Atlas.EnumExtensions.IsObsolete()
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  isExternal: true
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  parent: Atlas
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+- uid: UnityEngine.Time.time
+  commentId: P:UnityEngine.Time.time
+  isExternal: true
+- uid: Atlas.TimeScale
+  commentId: T:Atlas.TimeScale
+  parent: Atlas
+  name: TimeScale
+  nameWithType: TimeScale
+  fullName: Atlas.TimeScale
+- uid: UnityEngine.Time.timeScale
+  commentId: P:UnityEngine.Time.timeScale
+  isExternal: true
+- uid: UnityEngine.Time.fixedTime
+  commentId: P:UnityEngine.Time.fixedTime
+  isExternal: true

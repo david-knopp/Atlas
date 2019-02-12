@@ -1,0 +1,355 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.MinValuePropertyDrawer
+  commentId: T:Atlas.MinValuePropertyDrawer
+  id: MinValuePropertyDrawer
+  parent: Atlas
+  children:
+  - Atlas.MinValuePropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: MinValuePropertyDrawer
+  nameWithType: MinValuePropertyDrawer
+  fullName: Atlas.MinValuePropertyDrawer
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: MinValuePropertyDrawer
+    path: ../../Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Atlas
+  syntax:
+    content: >-
+      [CustomPropertyDrawer(typeof(MinValueAttribute))]
+
+      public sealed class MinValuePropertyDrawer : PropertyDrawer
+    content.vb: >-
+      <CustomPropertyDrawer(GetType(MinValueAttribute))>
+
+      Public NotInheritable Class MinValuePropertyDrawer
+          Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+  - UnityEditor.GUIDrawer
+  - UnityEditor.PropertyDrawer
+  inheritedMembers:
+  - UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  - UnityEditor.PropertyDrawer.CanCacheInspectorGUI(UnityEditor.SerializedProperty)
+  - UnityEditor.PropertyDrawer.attribute
+  - UnityEditor.PropertyDrawer.fieldInfo
+  attributes:
+  - type: UnityEditor.CustomPropertyDrawer
+    ctor: UnityEditor.CustomPropertyDrawer.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Atlas.MinValueAttribute
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.MinValuePropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:Atlas.MinValuePropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  id: OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: Atlas.MinValuePropertyDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: MinValuePropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: Atlas.MinValuePropertyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: OnGUI
+    path: ../../Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Atlas
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: UnityEngine.Rect
+    - id: property
+      type: UnityEditor.SerializedProperty
+    - id: label
+      type: UnityEngine.GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, property As SerializedProperty, label As GUIContent)
+  overridden: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  overload: Atlas.MinValuePropertyDrawer.OnGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEditor.GUIDrawer
+  commentId: T:UnityEditor.GUIDrawer
+  parent: UnityEditor
+  isExternal: true
+  name: GUIDrawer
+  nameWithType: GUIDrawer
+  fullName: UnityEditor.GUIDrawer
+- uid: UnityEditor.PropertyDrawer
+  commentId: T:UnityEditor.PropertyDrawer
+  parent: UnityEditor
+  isExternal: true
+  name: PropertyDrawer
+  nameWithType: PropertyDrawer
+  fullName: UnityEditor.PropertyDrawer
+- uid: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: PropertyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  fullName: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  spec.csharp:
+  - uid: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: GetPropertyHeight
+    nameWithType: PropertyDrawer.GetPropertyHeight
+    fullName: UnityEditor.PropertyDrawer.GetPropertyHeight
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    nameWithType: GUIContent
+    fullName: UnityEngine.GUIContent
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: GetPropertyHeight
+    nameWithType: PropertyDrawer.GetPropertyHeight
+    fullName: UnityEditor.PropertyDrawer.GetPropertyHeight
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    nameWithType: GUIContent
+    fullName: UnityEngine.GUIContent
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEditor.PropertyDrawer.CanCacheInspectorGUI(UnityEditor.SerializedProperty)
+  commentId: M:UnityEditor.PropertyDrawer.CanCacheInspectorGUI(UnityEditor.SerializedProperty)
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: CanCacheInspectorGUI(SerializedProperty)
+  nameWithType: PropertyDrawer.CanCacheInspectorGUI(SerializedProperty)
+  fullName: UnityEditor.PropertyDrawer.CanCacheInspectorGUI(UnityEditor.SerializedProperty)
+  spec.csharp:
+  - uid: UnityEditor.PropertyDrawer.CanCacheInspectorGUI(UnityEditor.SerializedProperty)
+    name: CanCacheInspectorGUI
+    nameWithType: PropertyDrawer.CanCacheInspectorGUI
+    fullName: UnityEditor.PropertyDrawer.CanCacheInspectorGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PropertyDrawer.CanCacheInspectorGUI(UnityEditor.SerializedProperty)
+    name: CanCacheInspectorGUI
+    nameWithType: PropertyDrawer.CanCacheInspectorGUI
+    fullName: UnityEditor.PropertyDrawer.CanCacheInspectorGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEditor.PropertyDrawer.attribute
+  commentId: P:UnityEditor.PropertyDrawer.attribute
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: attribute
+  nameWithType: PropertyDrawer.attribute
+  fullName: UnityEditor.PropertyDrawer.attribute
+- uid: UnityEditor.PropertyDrawer.fieldInfo
+  commentId: P:UnityEditor.PropertyDrawer.fieldInfo
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: fieldInfo
+  nameWithType: PropertyDrawer.fieldInfo
+  fullName: UnityEditor.PropertyDrawer.fieldInfo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: PropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  spec.csharp:
+  - uid: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: OnGUI
+    nameWithType: PropertyDrawer.OnGUI
+    fullName: UnityEditor.PropertyDrawer.OnGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    nameWithType: Rect
+    fullName: UnityEngine.Rect
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    nameWithType: GUIContent
+    fullName: UnityEngine.GUIContent
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+    name: OnGUI
+    nameWithType: PropertyDrawer.OnGUI
+    fullName: UnityEditor.PropertyDrawer.OnGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    nameWithType: Rect
+    fullName: UnityEngine.Rect
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    nameWithType: GUIContent
+    fullName: UnityEngine.GUIContent
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.MinValuePropertyDrawer.OnGUI*
+  commentId: Overload:Atlas.MinValuePropertyDrawer.OnGUI
+  name: OnGUI
+  nameWithType: MinValuePropertyDrawer.OnGUI
+  fullName: Atlas.MinValuePropertyDrawer.OnGUI
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: UnityEditor.SerializedProperty
+  commentId: T:UnityEditor.SerializedProperty
+  parent: UnityEditor
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: UnityEditor.SerializedProperty
+- uid: UnityEngine.GUIContent
+  commentId: T:UnityEngine.GUIContent
+  parent: UnityEngine
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

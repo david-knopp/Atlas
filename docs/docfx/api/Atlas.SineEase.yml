@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.SineEase
+  commentId: T:Atlas.SineEase
+  id: SineEase
+  parent: Atlas
+  children:
+  - Atlas.SineEase.In(System.Single,System.Single)
+  - Atlas.SineEase.InOut(System.Single,System.Single)
+  - Atlas.SineEase.Out(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: SineEase
+  nameWithType: SineEase
+  fullName: Atlas.SineEase
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SineEase
+    path: ../../Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static class SineEase
+    content.vb: Public Module SineEase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.SineEase.In(System.Single,System.Single)
+  commentId: M:Atlas.SineEase.In(System.Single,System.Single)
+  id: In(System.Single,System.Single)
+  parent: Atlas.SineEase
+  langs:
+  - csharp
+  - vb
+  name: In(Single, Single)
+  nameWithType: SineEase.In(Single, Single)
+  fullName: Atlas.SineEase.In(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: In
+    path: ../../Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float In(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function In(curTime As Single, duration As Single) As Single
+  overload: Atlas.SineEase.In*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.SineEase.Out(System.Single,System.Single)
+  commentId: M:Atlas.SineEase.Out(System.Single,System.Single)
+  id: Out(System.Single,System.Single)
+  parent: Atlas.SineEase
+  langs:
+  - csharp
+  - vb
+  name: Out(Single, Single)
+  nameWithType: SineEase.Out(Single, Single)
+  fullName: Atlas.SineEase.Out(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Out
+    path: ../../Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float Out(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Out(curTime As Single, duration As Single) As Single
+  overload: Atlas.SineEase.Out*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.SineEase.InOut(System.Single,System.Single)
+  commentId: M:Atlas.SineEase.InOut(System.Single,System.Single)
+  id: InOut(System.Single,System.Single)
+  parent: Atlas.SineEase
+  langs:
+  - csharp
+  - vb
+  name: InOut(Single, Single)
+  nameWithType: SineEase.InOut(Single, Single)
+  fullName: Atlas.SineEase.InOut(System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: InOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/SineEase.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static float InOut(float curTime, float duration)
+    parameters:
+    - id: curTime
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function InOut(curTime As Single, duration As Single) As Single
+  overload: Atlas.SineEase.InOut*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.SineEase.In*
+  commentId: Overload:Atlas.SineEase.In
+  name: In
+  nameWithType: SineEase.In
+  fullName: Atlas.SineEase.In
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.SineEase.Out*
+  commentId: Overload:Atlas.SineEase.Out
+  name: Out
+  nameWithType: SineEase.Out
+  fullName: Atlas.SineEase.Out
+- uid: Atlas.SineEase.InOut*
+  commentId: Overload:Atlas.SineEase.InOut
+  name: InOut
+  nameWithType: SineEase.InOut
+  fullName: Atlas.SineEase.InOut

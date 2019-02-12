@@ -1,0 +1,888 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Signal`4
+  commentId: T:Atlas.Signal`4
+  id: Signal`4
+  parent: Atlas
+  children:
+  - Atlas.Signal`4.Dispatch(`0,`1,`2,`3)
+  langs:
+  - csharp
+  - vb
+  name: Signal<T1, T2, T3, T4>
+  nameWithType: Signal<T1, T2, T3, T4>
+  fullName: Atlas.Signal<T1, T2, T3, T4>
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Framework/Signal/Signal.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Signal
+    path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nFour-argument signal\n"
+  example: []
+  syntax:
+    content: 'public class Signal<T1, T2, T3, T4> : SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>, ISignal'
+    typeParameters:
+    - id: T1
+      description: First argument type
+    - id: T2
+      description: Second argument type
+    - id: T3
+      description: Third argument type
+    - id: T4
+      description: Fourth argument
+    content.vb: >-
+      Public Class Signal(Of T1, T2, T3, T4)
+          Inherits SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4))
+          Implements ISignal
+  inheritance:
+  - System.Object
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  implements:
+  - Atlas.ISignal
+  inheritedMembers:
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.AddCommand``1({TCommand})
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.AddCommand``1
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.RemoveCommand``1
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.AddListener(System.Action{{T1},{T2},{T3},{T4}})
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.RemoveListener(System.Action{{T1},{T2},{T3},{T4}})
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.m_commands
+  - Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.m_listeners
+  nameWithType.vb: Signal(Of T1, T2, T3, T4)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Atlas.Signal(Of T1, T2, T3, T4)
+  name.vb: Signal(Of T1, T2, T3, T4)
+- uid: Atlas.Signal`4.Dispatch(`0,`1,`2,`3)
+  commentId: M:Atlas.Signal`4.Dispatch(`0,`1,`2,`3)
+  id: Dispatch(`0,`1,`2,`3)
+  parent: Atlas.Signal`4
+  langs:
+  - csharp
+  - vb
+  name: Dispatch(T1, T2, T3, T4)
+  nameWithType: Signal<T1, T2, T3, T4>.Dispatch(T1, T2, T3, T4)
+  fullName: Atlas.Signal<T1, T2, T3, T4>.Dispatch(T1, T2, T3, T4)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Framework/Signal/Signal.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Dispatch
+    path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs
+    startLine: 120
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nInvokes the signal, calling all registered callback methods/commands\n"
+  example: []
+  syntax:
+    content: public void Dispatch(T1 arg1, T2 arg2, T3 arg3, T4 arg4)
+    parameters:
+    - id: arg1
+      type: '{T1}'
+      description: First argument to pass to the callbacks
+    - id: arg2
+      type: '{T2}'
+      description: Second argument to pass to the callbacks
+    - id: arg3
+      type: '{T3}'
+      description: Third argument to pass to the callbacks
+    - id: arg4
+      type: '{T4}'
+      description: Fourth argument to pass to the callbacks
+    content.vb: Public Sub Dispatch(arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4)
+  overload: Atlas.Signal`4.Dispatch*
+  nameWithType.vb: Signal(Of T1, T2, T3, T4).Dispatch(T1, T2, T3, T4)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.Signal(Of T1, T2, T3, T4).Dispatch(T1, T2, T3, T4)
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  commentId: T:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}
+  parent: Atlas
+  definition: Atlas.SignalBase`2
+  name: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4))
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4))
+  name.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4))
+  spec.csharp:
+  - uid: Atlas.SignalBase`2
+    name: SignalBase
+    nameWithType: SignalBase
+    fullName: Atlas.SignalBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Atlas.ICommand`4
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SignalBase`2
+    name: SignalBase
+    nameWithType: SignalBase
+    fullName: Atlas.SignalBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Atlas.ICommand`4
+    name: ICommand
+    nameWithType: ICommand
+    fullName: Atlas.ICommand
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.ISignal
+  commentId: T:Atlas.ISignal
+  parent: Atlas
+  name: ISignal
+  nameWithType: ISignal
+  fullName: Atlas.ISignal
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.AddCommand``1({TCommand})
+  commentId: M:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}.AddCommand``1(``0)
+  parent: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  definition: Atlas.SignalBase`2.AddCommand``1(``0)
+  name: AddCommand<TCommand>(TCommand)
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.AddCommand<TCommand>(TCommand)
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.AddCommand<TCommand>(TCommand)
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)(TCommand)
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)(TCommand)
+  name.vb: AddCommand(Of TCommand)(TCommand)
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.AddCommand``1(``0)
+    name: AddCommand<TCommand>
+    nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.AddCommand<TCommand>
+    fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.AddCommand<TCommand>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TCommand
+    nameWithType: TCommand
+    fullName: TCommand
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.AddCommand``1(``0)
+    name: AddCommand(Of TCommand)
+    nameWithType: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)
+    fullName: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TCommand
+    nameWithType: TCommand
+    fullName: TCommand
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.AddCommand``1
+  commentId: M:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}.AddCommand``1
+  parent: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  definition: Atlas.SignalBase`2.AddCommand``1
+  name: AddCommand<TCommand>()
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.AddCommand<TCommand>()
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.AddCommand<TCommand>()
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)()
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)()
+  name.vb: AddCommand(Of TCommand)()
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.AddCommand``1
+    name: AddCommand<TCommand>
+    nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.AddCommand<TCommand>
+    fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.AddCommand<TCommand>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.AddCommand``1
+    name: AddCommand(Of TCommand)
+    nameWithType: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)
+    fullName: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).AddCommand(Of TCommand)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.RemoveCommand``1
+  commentId: M:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}.RemoveCommand``1
+  parent: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  definition: Atlas.SignalBase`2.RemoveCommand``1
+  name: RemoveCommand<TCommand>()
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.RemoveCommand<TCommand>()
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.RemoveCommand<TCommand>()
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).RemoveCommand(Of TCommand)()
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).RemoveCommand(Of TCommand)()
+  name.vb: RemoveCommand(Of TCommand)()
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.RemoveCommand``1
+    name: RemoveCommand<TCommand>
+    nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.RemoveCommand<TCommand>
+    fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.RemoveCommand<TCommand>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.RemoveCommand``1
+    name: RemoveCommand(Of TCommand)
+    nameWithType: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).RemoveCommand(Of TCommand)
+    fullName: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).RemoveCommand(Of TCommand)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.AddListener(System.Action{{T1},{T2},{T3},{T4}})
+  commentId: M:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}.AddListener(System.Action{`0,`1,`2,`3})
+  parent: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  definition: Atlas.SignalBase`2.AddListener(`1)
+  name: AddListener(Action<T1, T2, T3, T4>)
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.AddListener(Action<T1, T2, T3, T4>)
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.AddListener(System.Action<T1, T2, T3, T4>)
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).AddListener(Action(Of T1, T2, T3, T4))
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).AddListener(System.Action(Of T1, T2, T3, T4))
+  name.vb: AddListener(Action(Of T1, T2, T3, T4))
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.AddListener(`1)
+    name: AddListener
+    nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.AddListener
+    fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.AddListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.AddListener(`1)
+    name: AddListener
+    nameWithType: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).AddListener
+    fullName: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).AddListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.RemoveListener(System.Action{{T1},{T2},{T3},{T4}})
+  commentId: M:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}.RemoveListener(System.Action{`0,`1,`2,`3})
+  parent: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  definition: Atlas.SignalBase`2.RemoveListener(`1)
+  name: RemoveListener(Action<T1, T2, T3, T4>)
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.RemoveListener(Action<T1, T2, T3, T4>)
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.RemoveListener(System.Action<T1, T2, T3, T4>)
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).RemoveListener(Action(Of T1, T2, T3, T4))
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).RemoveListener(System.Action(Of T1, T2, T3, T4))
+  name.vb: RemoveListener(Action(Of T1, T2, T3, T4))
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.RemoveListener(`1)
+    name: RemoveListener
+    nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.RemoveListener
+    fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.RemoveListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.RemoveListener(`1)
+    name: RemoveListener
+    nameWithType: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).RemoveListener
+    fullName: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).RemoveListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`4
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T3
+    nameWithType: T3
+    fullName: T3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T4
+    nameWithType: T4
+    fullName: T4
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.m_commands
+  commentId: F:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}.m_commands
+  parent: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  definition: Atlas.SignalBase`2.m_commands
+  name: m_commands
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.m_commands
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.m_commands
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).m_commands
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).m_commands
+- uid: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}.m_listeners
+  commentId: F:Atlas.SignalBase{Atlas.ICommand{`0,`1,`2,`3},System.Action{`0,`1,`2,`3}}.m_listeners
+  parent: Atlas.SignalBase{Atlas.ICommand{{T1},{T2},{T3},{T4}},System.Action{{T1},{T2},{T3},{T4}}}
+  definition: Atlas.SignalBase`2.m_listeners
+  name: m_listeners
+  nameWithType: SignalBase<ICommand<T1, T2, T3, T4>, Action<T1, T2, T3, T4>>.m_listeners
+  fullName: Atlas.SignalBase<Atlas.ICommand<T1, T2, T3, T4>, System.Action<T1, T2, T3, T4>>.m_listeners
+  nameWithType.vb: SignalBase(Of ICommand(Of T1, T2, T3, T4), Action(Of T1, T2, T3, T4)).m_listeners
+  fullName.vb: Atlas.SignalBase(Of Atlas.ICommand(Of T1, T2, T3, T4), System.Action(Of T1, T2, T3, T4)).m_listeners
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.SignalBase`2
+  commentId: T:Atlas.SignalBase`2
+  name: SignalBase<TCommandBase, TAction>
+  nameWithType: SignalBase<TCommandBase, TAction>
+  fullName: Atlas.SignalBase<TCommandBase, TAction>
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction)
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction)
+  name.vb: SignalBase(Of TCommandBase, TAction)
+  spec.csharp:
+  - uid: Atlas.SignalBase`2
+    name: SignalBase
+    nameWithType: SignalBase
+    fullName: Atlas.SignalBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCommandBase
+    nameWithType: TCommandBase
+    fullName: TCommandBase
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Atlas.SignalBase`2
+    name: SignalBase
+    nameWithType: SignalBase
+    fullName: Atlas.SignalBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCommandBase
+    nameWithType: TCommandBase
+    fullName: TCommandBase
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase`2.AddCommand``1(``0)
+  commentId: M:Atlas.SignalBase`2.AddCommand``1(``0)
+  name: AddCommand<TCommand>(TCommand)
+  nameWithType: SignalBase<TCommandBase, TAction>.AddCommand<TCommand>(TCommand)
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddCommand<TCommand>(TCommand)
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)(TCommand)
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)(TCommand)
+  name.vb: AddCommand(Of TCommand)(TCommand)
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.AddCommand``1(``0)
+    name: AddCommand<TCommand>
+    nameWithType: SignalBase<TCommandBase, TAction>.AddCommand<TCommand>
+    fullName: Atlas.SignalBase<TCommandBase, TAction>.AddCommand<TCommand>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TCommand
+    nameWithType: TCommand
+    fullName: TCommand
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.AddCommand``1(``0)
+    name: AddCommand(Of TCommand)
+    nameWithType: SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)
+    fullName: Atlas.SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TCommand
+    nameWithType: TCommand
+    fullName: TCommand
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase`2.AddCommand``1
+  commentId: M:Atlas.SignalBase`2.AddCommand``1
+  name: AddCommand<TCommand>()
+  nameWithType: SignalBase<TCommandBase, TAction>.AddCommand<TCommand>()
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddCommand<TCommand>()
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)()
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)()
+  name.vb: AddCommand(Of TCommand)()
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.AddCommand``1
+    name: AddCommand<TCommand>
+    nameWithType: SignalBase<TCommandBase, TAction>.AddCommand<TCommand>
+    fullName: Atlas.SignalBase<TCommandBase, TAction>.AddCommand<TCommand>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.AddCommand``1
+    name: AddCommand(Of TCommand)
+    nameWithType: SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)
+    fullName: Atlas.SignalBase(Of TCommandBase, TAction).AddCommand(Of TCommand)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase`2.RemoveCommand``1
+  commentId: M:Atlas.SignalBase`2.RemoveCommand``1
+  name: RemoveCommand<TCommand>()
+  nameWithType: SignalBase<TCommandBase, TAction>.RemoveCommand<TCommand>()
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveCommand<TCommand>()
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).RemoveCommand(Of TCommand)()
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).RemoveCommand(Of TCommand)()
+  name.vb: RemoveCommand(Of TCommand)()
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.RemoveCommand``1
+    name: RemoveCommand<TCommand>
+    nameWithType: SignalBase<TCommandBase, TAction>.RemoveCommand<TCommand>
+    fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveCommand<TCommand>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.RemoveCommand``1
+    name: RemoveCommand(Of TCommand)
+    nameWithType: SignalBase(Of TCommandBase, TAction).RemoveCommand(Of TCommand)
+    fullName: Atlas.SignalBase(Of TCommandBase, TAction).RemoveCommand(Of TCommand)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase`2.AddListener(`1)
+  commentId: M:Atlas.SignalBase`2.AddListener(`1)
+  name: AddListener(TAction)
+  nameWithType: SignalBase<TCommandBase, TAction>.AddListener(TAction)
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.AddListener(TAction)
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).AddListener(TAction)
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).AddListener(TAction)
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.AddListener(`1)
+    name: AddListener
+    nameWithType: SignalBase<TCommandBase, TAction>.AddListener
+    fullName: Atlas.SignalBase<TCommandBase, TAction>.AddListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.AddListener(`1)
+    name: AddListener
+    nameWithType: SignalBase(Of TCommandBase, TAction).AddListener
+    fullName: Atlas.SignalBase(Of TCommandBase, TAction).AddListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase`2.RemoveListener(`1)
+  commentId: M:Atlas.SignalBase`2.RemoveListener(`1)
+  name: RemoveListener(TAction)
+  nameWithType: SignalBase<TCommandBase, TAction>.RemoveListener(TAction)
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveListener(TAction)
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).RemoveListener(TAction)
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).RemoveListener(TAction)
+  spec.csharp:
+  - uid: Atlas.SignalBase`2.RemoveListener(`1)
+    name: RemoveListener
+    nameWithType: SignalBase<TCommandBase, TAction>.RemoveListener
+    fullName: Atlas.SignalBase<TCommandBase, TAction>.RemoveListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.SignalBase`2.RemoveListener(`1)
+    name: RemoveListener
+    nameWithType: SignalBase(Of TCommandBase, TAction).RemoveListener
+    fullName: Atlas.SignalBase(Of TCommandBase, TAction).RemoveListener
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TAction
+    nameWithType: TAction
+    fullName: TAction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.SignalBase`2.m_commands
+  commentId: F:Atlas.SignalBase`2.m_commands
+  name: m_commands
+  nameWithType: SignalBase<TCommandBase, TAction>.m_commands
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.m_commands
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).m_commands
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).m_commands
+- uid: Atlas.SignalBase`2.m_listeners
+  commentId: F:Atlas.SignalBase`2.m_listeners
+  name: m_listeners
+  nameWithType: SignalBase<TCommandBase, TAction>.m_listeners
+  fullName: Atlas.SignalBase<TCommandBase, TAction>.m_listeners
+  nameWithType.vb: SignalBase(Of TCommandBase, TAction).m_listeners
+  fullName.vb: Atlas.SignalBase(Of TCommandBase, TAction).m_listeners
+- uid: Atlas.Signal`4.Dispatch*
+  commentId: Overload:Atlas.Signal`4.Dispatch
+  name: Dispatch
+  nameWithType: Signal<T1, T2, T3, T4>.Dispatch
+  fullName: Atlas.Signal<T1, T2, T3, T4>.Dispatch
+  nameWithType.vb: Signal(Of T1, T2, T3, T4).Dispatch
+  fullName.vb: Atlas.Signal(Of T1, T2, T3, T4).Dispatch
+- uid: '{T1}'
+  commentId: '!:T1'
+  definition: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: '{T2}'
+  commentId: '!:T2'
+  definition: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: '{T3}'
+  commentId: '!:T3'
+  definition: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: '{T4}'
+  commentId: '!:T4'
+  definition: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4
+- uid: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4

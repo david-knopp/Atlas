@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.MaxValueAttribute
+  commentId: T:Atlas.MaxValueAttribute
+  id: MaxValueAttribute
+  parent: Atlas
+  children:
+  - Atlas.MaxValueAttribute.#ctor(System.Single)
+  - Atlas.MaxValueAttribute.MaxValue
+  langs:
+  - csharp
+  - vb
+  name: MaxValueAttribute
+  nameWithType: MaxValueAttribute
+  fullName: Atlas.MaxValueAttribute
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: MaxValueAttribute
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nSets a maximum value for the target field. \nAutomatically prevents assigning a value greater than the specified \nvalue when editing the field in the inspector window\n"
+  example: []
+  syntax:
+    content: >-
+      [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
+
+      public sealed class MaxValueAttribute : PropertyAttribute, _Attribute
+    content.vb: >-
+      <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
+
+      Public NotInheritable Class MaxValueAttribute
+          Inherits PropertyAttribute
+          Implements _Attribute
+  seealso:
+  - linkId: Atlas.MinValueAttribute
+    commentId: T:Atlas.MinValueAttribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  - UnityEngine.PropertyAttribute
+  implements:
+  - System.Runtime.InteropServices._Attribute
+  inheritedMembers:
+  - UnityEngine.PropertyAttribute.order
+  attributes:
+  - type: System.AttributeUsageAttribute
+    ctor: System.AttributeUsageAttribute.#ctor(System.AttributeTargets)
+    arguments:
+    - type: System.AttributeTargets
+      value: 256
+    namedArguments:
+    - name: AllowMultiple
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.MaxValueAttribute.#ctor(System.Single)
+  commentId: M:Atlas.MaxValueAttribute.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: Atlas.MaxValueAttribute
+  langs:
+  - csharp
+  - vb
+  name: MaxValueAttribute(Single)
+  nameWithType: MaxValueAttribute.MaxValueAttribute(Single)
+  fullName: Atlas.MaxValueAttribute.MaxValueAttribute(System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: .ctor
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public MaxValueAttribute(float maxValue)
+    parameters:
+    - id: maxValue
+      type: System.Single
+      description: The maximum allowable value the field can have
+    content.vb: Public Sub New(maxValue As Single)
+  overload: Atlas.MaxValueAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.MaxValueAttribute.MaxValue
+  commentId: P:Atlas.MaxValueAttribute.MaxValue
+  id: MaxValue
+  parent: Atlas.MaxValueAttribute
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: MaxValueAttribute.MaxValue
+  fullName: Atlas.MaxValueAttribute.MaxValue
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: MaxValue
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nThe maximum allowable value the field can have\n"
+  example: []
+  syntax:
+    content: public float MaxValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MaxValue As Single
+  overload: Atlas.MaxValueAttribute.MaxValue*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Atlas.MinValueAttribute
+  commentId: T:Atlas.MinValueAttribute
+  parent: Atlas
+  name: MinValueAttribute
+  nameWithType: MinValueAttribute
+  fullName: Atlas.MinValueAttribute
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  parent: System
+  isExternal: true
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: UnityEngine.PropertyAttribute
+  commentId: T:UnityEngine.PropertyAttribute
+  parent: UnityEngine
+  isExternal: true
+  name: PropertyAttribute
+  nameWithType: PropertyAttribute
+  fullName: UnityEngine.PropertyAttribute
+- uid: System.Runtime.InteropServices._Attribute
+  commentId: T:System.Runtime.InteropServices._Attribute
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: _Attribute
+  nameWithType: _Attribute
+  fullName: System.Runtime.InteropServices._Attribute
+- uid: UnityEngine.PropertyAttribute.order
+  commentId: P:UnityEngine.PropertyAttribute.order
+  parent: UnityEngine.PropertyAttribute
+  isExternal: true
+  name: order
+  nameWithType: PropertyAttribute.order
+  fullName: UnityEngine.PropertyAttribute.order
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  isExternal: true
+  name: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  fullName: System.Runtime.InteropServices
+- uid: Atlas.MaxValueAttribute.#ctor*
+  commentId: Overload:Atlas.MaxValueAttribute.#ctor
+  name: MaxValueAttribute
+  nameWithType: MaxValueAttribute.MaxValueAttribute
+  fullName: Atlas.MaxValueAttribute.MaxValueAttribute
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Atlas.MaxValueAttribute.MaxValue*
+  commentId: Overload:Atlas.MaxValueAttribute.MaxValue
+  name: MaxValue
+  nameWithType: MaxValueAttribute.MaxValue
+  fullName: Atlas.MaxValueAttribute.MaxValue

@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.TransformEditor
+  commentId: T:Atlas.TransformEditor
+  id: TransformEditor
+  parent: Atlas
+  children:
+  - Atlas.TransformEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: TransformEditor
+  nameWithType: TransformEditor
+  fullName: Atlas.TransformEditor
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Editor/Utils/TransformEditor.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: TransformEditor
+    path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Atlas
+  syntax:
+    content: >-
+      [CustomEditor(typeof(Transform))]
+
+      public sealed class TransformEditor : Editor, IPreviewable, IToolModeOwner
+    content.vb: >-
+      <CustomEditor(GetType(Transform))>
+
+      Public NotInheritable Class TransformEditor
+          Inherits Editor
+          Implements IPreviewable, IToolModeOwner
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEngine.Transform
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.TransformEditor.OnInspectorGUI
+  commentId: M:Atlas.TransformEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: Atlas.TransformEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: TransformEditor.OnInspectorGUI()
+  fullName: Atlas.TransformEditor.OnInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Editor/Utils/TransformEditor.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: OnInspectorGUI
+    path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Atlas
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI
+  overridden: UnityEditor.Editor.OnInspectorGUI
+  overload: Atlas.TransformEditor.OnInspectorGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.Editor.OnInspectorGUI
+  commentId: M:UnityEditor.Editor.OnInspectorGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: OnInspectorGUI()
+  nameWithType: Editor.OnInspectorGUI()
+  fullName: UnityEditor.Editor.OnInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    nameWithType: Editor.OnInspectorGUI
+    fullName: UnityEditor.Editor.OnInspectorGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    nameWithType: Editor.OnInspectorGUI
+    fullName: UnityEditor.Editor.OnInspectorGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.TransformEditor.OnInspectorGUI*
+  commentId: Overload:Atlas.TransformEditor.OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: TransformEditor.OnInspectorGUI
+  fullName: Atlas.TransformEditor.OnInspectorGUI

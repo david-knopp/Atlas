@@ -4,29 +4,13 @@
       "src": [
         {
           "files": [
-            "**.cs"
+            "**.sln"
           ],
-          "src": "../../Assets/Scripts/Runtime/"
+          "src": "../../"
         }
       ],
-      "dest": "api/runtime",
-      "filter": "filterConfig.yml",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "**.cs"
-          ],
-          "src": "../../Assets/Scripts/Editor/"
-        }
-      ],
-      "dest": "api/editor",
-      "filter": "filterConfig.yml",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "dest": "api/",
+      "filter": "filterConfig.yml"
     }
   ],
   "build": {
@@ -65,7 +49,12 @@
       }
     ],
     "dest": "_site",
+    "overwrite": "apispec/*.md",
     "globalMetadataFiles": [],
+    "globalMetadata": {
+      "_appTitle": "Atlas",
+      "_enableSearch": true
+    },
     "fileMetadataFiles": [],
     "template": [
       "default"

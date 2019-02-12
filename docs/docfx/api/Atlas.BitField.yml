@@ -1,0 +1,687 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.BitField
+  commentId: T:Atlas.BitField
+  id: BitField
+  parent: Atlas
+  children:
+  - Atlas.BitField.ClearFlag(System.Enum,System.Enum)
+  - Atlas.BitField.ClearFlag(System.Int32,System.Enum)
+  - Atlas.BitField.ClearFlag(System.Int32,System.Int32)
+  - Atlas.BitField.IsFlagSet(System.Enum,System.Enum)
+  - Atlas.BitField.IsFlagSet(System.Int32,System.Enum)
+  - Atlas.BitField.IsFlagSet(System.Int32,System.Int32)
+  - Atlas.BitField.SetFlag(System.Enum,System.Enum)
+  - Atlas.BitField.SetFlag(System.Int32,System.Enum)
+  - Atlas.BitField.SetFlag(System.Int32,System.Int32)
+  - Atlas.BitField.SetFlag(System.Int32,System.Int32,System.Boolean)
+  - Atlas.BitField.ToggleFlag(System.Enum,System.Enum)
+  - Atlas.BitField.ToggleFlag(System.Int32,System.Enum)
+  - Atlas.BitField.ToggleFlag(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: BitField
+  nameWithType: BitField
+  fullName: Atlas.BitField
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: BitField
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nA utility class to aid in working with bit fields\n"
+  example: []
+  syntax:
+    content: public static class BitField
+    content.vb: Public Module BitField
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.BitField.SetFlag(System.Int32,System.Int32,System.Boolean)
+  commentId: M:Atlas.BitField.SetFlag(System.Int32,System.Int32,System.Boolean)
+  id: SetFlag(System.Int32,System.Int32,System.Boolean)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: SetFlag(Int32, Int32, Boolean)
+  nameWithType: BitField.SetFlag(Int32, Int32, Boolean)
+  fullName: Atlas.BitField.SetFlag(System.Int32, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SetFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nSets a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int SetFlag(int bitField, int flag, bool value)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: Bit field to modify
+    - id: flag
+      type: System.Int32
+      description: The target flag to set
+    - id: value
+      type: System.Boolean
+      description: The value to set the flag to
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function SetFlag(bitField As Integer, flag As Integer, value As Boolean) As Integer
+  overload: Atlas.BitField.SetFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.SetFlag(System.Int32,System.Int32)
+  commentId: M:Atlas.BitField.SetFlag(System.Int32,System.Int32)
+  id: SetFlag(System.Int32,System.Int32)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: SetFlag(Int32, Int32)
+  nameWithType: BitField.SetFlag(Int32, Int32)
+  fullName: Atlas.BitField.SetFlag(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SetFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nSets a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int SetFlag(int bitField, int flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: Bit field to modify
+    - id: flag
+      type: System.Int32
+      description: The target flag to set
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function SetFlag(bitField As Integer, flag As Integer) As Integer
+  overload: Atlas.BitField.SetFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.SetFlag(System.Enum,System.Enum)
+  commentId: M:Atlas.BitField.SetFlag(System.Enum,System.Enum)
+  id: SetFlag(System.Enum,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: SetFlag(Enum, Enum)
+  nameWithType: BitField.SetFlag(Enum, Enum)
+  fullName: Atlas.BitField.SetFlag(System.Enum, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SetFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nSets a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int SetFlag(Enum bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Enum
+      description: Bit field to modify
+    - id: flag
+      type: System.Enum
+      description: The target flag to set
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function SetFlag(bitField As  Enum, flag As  Enum) As Integer
+  overload: Atlas.BitField.SetFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.SetFlag(System.Int32,System.Enum)
+  commentId: M:Atlas.BitField.SetFlag(System.Int32,System.Enum)
+  id: SetFlag(System.Int32,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: SetFlag(Int32, Enum)
+  nameWithType: BitField.SetFlag(Int32, Enum)
+  fullName: Atlas.BitField.SetFlag(System.Int32, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SetFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nSets a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int SetFlag(int bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: Bit field to modify
+    - id: flag
+      type: System.Enum
+      description: The target flag to set
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function SetFlag(bitField As Integer, flag As  Enum) As Integer
+  overload: Atlas.BitField.SetFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.ClearFlag(System.Int32,System.Int32)
+  commentId: M:Atlas.BitField.ClearFlag(System.Int32,System.Int32)
+  id: ClearFlag(System.Int32,System.Int32)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: ClearFlag(Int32, Int32)
+  nameWithType: BitField.ClearFlag(Int32, Int32)
+  fullName: Atlas.BitField.ClearFlag(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ClearFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nClears a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int ClearFlag(int bitField, int flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: Bit field to modify
+    - id: flag
+      type: System.Int32
+      description: The target flag to clear
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function ClearFlag(bitField As Integer, flag As Integer) As Integer
+  overload: Atlas.BitField.ClearFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.ClearFlag(System.Enum,System.Enum)
+  commentId: M:Atlas.BitField.ClearFlag(System.Enum,System.Enum)
+  id: ClearFlag(System.Enum,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: ClearFlag(Enum, Enum)
+  nameWithType: BitField.ClearFlag(Enum, Enum)
+  fullName: Atlas.BitField.ClearFlag(System.Enum, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ClearFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nClears a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int ClearFlag(Enum bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Enum
+      description: Bit field to modify
+    - id: flag
+      type: System.Enum
+      description: The target flag to clear
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function ClearFlag(bitField As  Enum, flag As  Enum) As Integer
+  overload: Atlas.BitField.ClearFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.ClearFlag(System.Int32,System.Enum)
+  commentId: M:Atlas.BitField.ClearFlag(System.Int32,System.Enum)
+  id: ClearFlag(System.Int32,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: ClearFlag(Int32, Enum)
+  nameWithType: BitField.ClearFlag(Int32, Enum)
+  fullName: Atlas.BitField.ClearFlag(System.Int32, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ClearFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nClears a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int ClearFlag(int bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: Bit field to modify
+    - id: flag
+      type: System.Enum
+      description: The target flag to clear
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function ClearFlag(bitField As Integer, flag As  Enum) As Integer
+  overload: Atlas.BitField.ClearFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.ToggleFlag(System.Int32,System.Int32)
+  commentId: M:Atlas.BitField.ToggleFlag(System.Int32,System.Int32)
+  id: ToggleFlag(System.Int32,System.Int32)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: ToggleFlag(Int32, Int32)
+  nameWithType: BitField.ToggleFlag(Int32, Int32)
+  fullName: Atlas.BitField.ToggleFlag(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ToggleFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nToggles a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int ToggleFlag(int bitField, int flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: The bit field to modify
+    - id: flag
+      type: System.Int32
+      description: The target flag to toggle
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function ToggleFlag(bitField As Integer, flag As Integer) As Integer
+  overload: Atlas.BitField.ToggleFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.ToggleFlag(System.Enum,System.Enum)
+  commentId: M:Atlas.BitField.ToggleFlag(System.Enum,System.Enum)
+  id: ToggleFlag(System.Enum,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: ToggleFlag(Enum, Enum)
+  nameWithType: BitField.ToggleFlag(Enum, Enum)
+  fullName: Atlas.BitField.ToggleFlag(System.Enum, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ToggleFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nToggles a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int ToggleFlag(Enum bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Enum
+      description: The bit field to modify
+    - id: flag
+      type: System.Enum
+      description: The target flag to toggle
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function ToggleFlag(bitField As  Enum, flag As  Enum) As Integer
+  overload: Atlas.BitField.ToggleFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.ToggleFlag(System.Int32,System.Enum)
+  commentId: M:Atlas.BitField.ToggleFlag(System.Int32,System.Enum)
+  id: ToggleFlag(System.Int32,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: ToggleFlag(Int32, Enum)
+  nameWithType: BitField.ToggleFlag(Int32, Enum)
+  fullName: Atlas.BitField.ToggleFlag(System.Int32, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ToggleFlag
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 122
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nToggles a flag in the given field\n"
+  example: []
+  syntax:
+    content: public static int ToggleFlag(int bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: The bit field to modify
+    - id: flag
+      type: System.Enum
+      description: The target flag to toggle
+    return:
+      type: System.Int32
+      description: The modified bit field
+    content.vb: Public Shared Function ToggleFlag(bitField As Integer, flag As  Enum) As Integer
+  overload: Atlas.BitField.ToggleFlag*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.IsFlagSet(System.Int32,System.Int32)
+  commentId: M:Atlas.BitField.IsFlagSet(System.Int32,System.Int32)
+  id: IsFlagSet(System.Int32,System.Int32)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: IsFlagSet(Int32, Int32)
+  nameWithType: BitField.IsFlagSet(Int32, Int32)
+  fullName: Atlas.BitField.IsFlagSet(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IsFlagSet
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nDetermines whether or not the flag is set in the given bit field\n"
+  example: []
+  syntax:
+    content: public static bool IsFlagSet(int bitField, int flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: The bit field to check
+    - id: flag
+      type: System.Int32
+      description: The target flag to look for
+    return:
+      type: System.Boolean
+      description: True if the flag is set, false if not
+    content.vb: Public Shared Function IsFlagSet(bitField As Integer, flag As Integer) As Boolean
+  overload: Atlas.BitField.IsFlagSet*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.IsFlagSet(System.Enum,System.Enum)
+  commentId: M:Atlas.BitField.IsFlagSet(System.Enum,System.Enum)
+  id: IsFlagSet(System.Enum,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: IsFlagSet(Enum, Enum)
+  nameWithType: BitField.IsFlagSet(Enum, Enum)
+  fullName: Atlas.BitField.IsFlagSet(System.Enum, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IsFlagSet
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 144
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nDetermines whether or not the flag is set in the given bit field\n"
+  example: []
+  syntax:
+    content: public static bool IsFlagSet(Enum bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Enum
+      description: The bit field to check
+    - id: flag
+      type: System.Enum
+      description: The target flag to look for
+    return:
+      type: System.Boolean
+      description: True if the flag is set, false if not
+    content.vb: Public Shared Function IsFlagSet(bitField As  Enum, flag As  Enum) As Boolean
+  overload: Atlas.BitField.IsFlagSet*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.BitField.IsFlagSet(System.Int32,System.Enum)
+  commentId: M:Atlas.BitField.IsFlagSet(System.Int32,System.Enum)
+  id: IsFlagSet(System.Int32,System.Enum)
+  parent: Atlas.BitField
+  langs:
+  - csharp
+  - vb
+  name: IsFlagSet(Int32, Enum)
+  nameWithType: BitField.IsFlagSet(Int32, Enum)
+  fullName: Atlas.BitField.IsFlagSet(System.Int32, System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/BitField.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IsFlagSet
+    path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
+    startLine: 155
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nDetermines whether or not the flag is set in the given bit field\n"
+  example: []
+  syntax:
+    content: public static bool IsFlagSet(int bitField, Enum flag)
+    parameters:
+    - id: bitField
+      type: System.Int32
+      description: The bit field to check
+    - id: flag
+      type: System.Enum
+      description: The target flag to look for
+    return:
+      type: System.Boolean
+      description: True if the flag is set, false if not
+    content.vb: Public Shared Function IsFlagSet(bitField As Integer, flag As  Enum) As Boolean
+  overload: Atlas.BitField.IsFlagSet*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.BitField.SetFlag*
+  commentId: Overload:Atlas.BitField.SetFlag
+  name: SetFlag
+  nameWithType: BitField.SetFlag
+  fullName: Atlas.BitField.SetFlag
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Enum
+  commentId: T:System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: Atlas.BitField.ClearFlag*
+  commentId: Overload:Atlas.BitField.ClearFlag
+  name: ClearFlag
+  nameWithType: BitField.ClearFlag
+  fullName: Atlas.BitField.ClearFlag
+- uid: Atlas.BitField.ToggleFlag*
+  commentId: Overload:Atlas.BitField.ToggleFlag
+  name: ToggleFlag
+  nameWithType: BitField.ToggleFlag
+  fullName: Atlas.BitField.ToggleFlag
+- uid: Atlas.BitField.IsFlagSet*
+  commentId: Overload:Atlas.BitField.IsFlagSet
+  name: IsFlagSet
+  nameWithType: BitField.IsFlagSet
+  fullName: Atlas.BitField.IsFlagSet

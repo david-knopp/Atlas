@@ -1,0 +1,1210 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.EaseType
+  commentId: T:Atlas.EaseType
+  id: EaseType
+  parent: Atlas
+  children:
+  - Atlas.EaseType.BackIn
+  - Atlas.EaseType.BackInOut
+  - Atlas.EaseType.BackOut
+  - Atlas.EaseType.BounceIn
+  - Atlas.EaseType.BounceInOut
+  - Atlas.EaseType.BounceOut
+  - Atlas.EaseType.CircularIn
+  - Atlas.EaseType.CircularInOut
+  - Atlas.EaseType.CircularOut
+  - Atlas.EaseType.CubicIn
+  - Atlas.EaseType.CubicInOut
+  - Atlas.EaseType.CubicOut
+  - Atlas.EaseType.ElasticIn
+  - Atlas.EaseType.ElasticInOut
+  - Atlas.EaseType.ElasticOut
+  - Atlas.EaseType.ExponentialIn
+  - Atlas.EaseType.ExponentialInOut
+  - Atlas.EaseType.ExponentialOut
+  - Atlas.EaseType.LinearIn
+  - Atlas.EaseType.LinearInOut
+  - Atlas.EaseType.LinearOut
+  - Atlas.EaseType.QuadraticIn
+  - Atlas.EaseType.QuadraticInOut
+  - Atlas.EaseType.QuadraticOut
+  - Atlas.EaseType.QuarticIn
+  - Atlas.EaseType.QuarticInOut
+  - Atlas.EaseType.QuarticOut
+  - Atlas.EaseType.QuinticIn
+  - Atlas.EaseType.QuinticInOut
+  - Atlas.EaseType.QuinticOut
+  - Atlas.EaseType.SineIn
+  - Atlas.EaseType.SineInOut
+  - Atlas.EaseType.SineOut
+  langs:
+  - csharp
+  - vb
+  name: EaseType
+  nameWithType: EaseType
+  fullName: Atlas.EaseType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: EaseType
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 2
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public enum EaseType
+    content.vb: Public Enum EaseType
+  extensionMethods:
+  - System.Enum.Atlas.EnumExtensions.IsObsolete
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.EaseType.LinearIn
+  commentId: F:Atlas.EaseType.LinearIn
+  id: LinearIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: LinearIn
+  nameWithType: EaseType.LinearIn
+  fullName: Atlas.EaseType.LinearIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: LinearIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: LinearIn = 0
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.LinearOut
+  commentId: F:Atlas.EaseType.LinearOut
+  id: LinearOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: LinearOut
+  nameWithType: EaseType.LinearOut
+  fullName: Atlas.EaseType.LinearOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: LinearOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: LinearOut = 1
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.LinearInOut
+  commentId: F:Atlas.EaseType.LinearInOut
+  id: LinearInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: LinearInOut
+  nameWithType: EaseType.LinearInOut
+  fullName: Atlas.EaseType.LinearInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: LinearInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: LinearInOut = 2
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.ExponentialIn
+  commentId: F:Atlas.EaseType.ExponentialIn
+  id: ExponentialIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: ExponentialIn
+  nameWithType: EaseType.ExponentialIn
+  fullName: Atlas.EaseType.ExponentialIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ExponentialIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: ExponentialIn = 3
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.ExponentialOut
+  commentId: F:Atlas.EaseType.ExponentialOut
+  id: ExponentialOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: ExponentialOut
+  nameWithType: EaseType.ExponentialOut
+  fullName: Atlas.EaseType.ExponentialOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ExponentialOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: ExponentialOut = 4
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.ExponentialInOut
+  commentId: F:Atlas.EaseType.ExponentialInOut
+  id: ExponentialInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: ExponentialInOut
+  nameWithType: EaseType.ExponentialInOut
+  fullName: Atlas.EaseType.ExponentialInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ExponentialInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: ExponentialInOut = 5
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuadraticIn
+  commentId: F:Atlas.EaseType.QuadraticIn
+  id: QuadraticIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuadraticIn
+  nameWithType: EaseType.QuadraticIn
+  fullName: Atlas.EaseType.QuadraticIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuadraticIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuadraticIn = 6
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuadraticOut
+  commentId: F:Atlas.EaseType.QuadraticOut
+  id: QuadraticOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuadraticOut
+  nameWithType: EaseType.QuadraticOut
+  fullName: Atlas.EaseType.QuadraticOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuadraticOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuadraticOut = 7
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuadraticInOut
+  commentId: F:Atlas.EaseType.QuadraticInOut
+  id: QuadraticInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuadraticInOut
+  nameWithType: EaseType.QuadraticInOut
+  fullName: Atlas.EaseType.QuadraticInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuadraticInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuadraticInOut = 8
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.CubicIn
+  commentId: F:Atlas.EaseType.CubicIn
+  id: CubicIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: CubicIn
+  nameWithType: EaseType.CubicIn
+  fullName: Atlas.EaseType.CubicIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: CubicIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: CubicIn = 9
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.CubicOut
+  commentId: F:Atlas.EaseType.CubicOut
+  id: CubicOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: CubicOut
+  nameWithType: EaseType.CubicOut
+  fullName: Atlas.EaseType.CubicOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: CubicOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: CubicOut = 10
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.CubicInOut
+  commentId: F:Atlas.EaseType.CubicInOut
+  id: CubicInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: CubicInOut
+  nameWithType: EaseType.CubicInOut
+  fullName: Atlas.EaseType.CubicInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: CubicInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: CubicInOut = 11
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuarticIn
+  commentId: F:Atlas.EaseType.QuarticIn
+  id: QuarticIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuarticIn
+  nameWithType: EaseType.QuarticIn
+  fullName: Atlas.EaseType.QuarticIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuarticIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuarticIn = 12
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuarticOut
+  commentId: F:Atlas.EaseType.QuarticOut
+  id: QuarticOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuarticOut
+  nameWithType: EaseType.QuarticOut
+  fullName: Atlas.EaseType.QuarticOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuarticOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuarticOut = 13
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuarticInOut
+  commentId: F:Atlas.EaseType.QuarticInOut
+  id: QuarticInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuarticInOut
+  nameWithType: EaseType.QuarticInOut
+  fullName: Atlas.EaseType.QuarticInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuarticInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuarticInOut = 14
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuinticIn
+  commentId: F:Atlas.EaseType.QuinticIn
+  id: QuinticIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuinticIn
+  nameWithType: EaseType.QuinticIn
+  fullName: Atlas.EaseType.QuinticIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuinticIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuinticIn = 15
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuinticOut
+  commentId: F:Atlas.EaseType.QuinticOut
+  id: QuinticOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuinticOut
+  nameWithType: EaseType.QuinticOut
+  fullName: Atlas.EaseType.QuinticOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuinticOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuinticOut = 16
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.QuinticInOut
+  commentId: F:Atlas.EaseType.QuinticInOut
+  id: QuinticInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: QuinticInOut
+  nameWithType: EaseType.QuinticInOut
+  fullName: Atlas.EaseType.QuinticInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: QuinticInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: QuinticInOut = 17
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.BackIn
+  commentId: F:Atlas.EaseType.BackIn
+  id: BackIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: BackIn
+  nameWithType: EaseType.BackIn
+  fullName: Atlas.EaseType.BackIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: BackIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: BackIn = 18
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.BackOut
+  commentId: F:Atlas.EaseType.BackOut
+  id: BackOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: BackOut
+  nameWithType: EaseType.BackOut
+  fullName: Atlas.EaseType.BackOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: BackOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: BackOut = 19
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.BackInOut
+  commentId: F:Atlas.EaseType.BackInOut
+  id: BackInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: BackInOut
+  nameWithType: EaseType.BackInOut
+  fullName: Atlas.EaseType.BackInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: BackInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: BackInOut = 20
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.BounceIn
+  commentId: F:Atlas.EaseType.BounceIn
+  id: BounceIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: BounceIn
+  nameWithType: EaseType.BounceIn
+  fullName: Atlas.EaseType.BounceIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: BounceIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: BounceIn = 21
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.BounceOut
+  commentId: F:Atlas.EaseType.BounceOut
+  id: BounceOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: BounceOut
+  nameWithType: EaseType.BounceOut
+  fullName: Atlas.EaseType.BounceOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: BounceOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: BounceOut = 22
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.BounceInOut
+  commentId: F:Atlas.EaseType.BounceInOut
+  id: BounceInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: BounceInOut
+  nameWithType: EaseType.BounceInOut
+  fullName: Atlas.EaseType.BounceInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: BounceInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: BounceInOut = 23
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.ElasticIn
+  commentId: F:Atlas.EaseType.ElasticIn
+  id: ElasticIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: ElasticIn
+  nameWithType: EaseType.ElasticIn
+  fullName: Atlas.EaseType.ElasticIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ElasticIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: ElasticIn = 24
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.ElasticOut
+  commentId: F:Atlas.EaseType.ElasticOut
+  id: ElasticOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: ElasticOut
+  nameWithType: EaseType.ElasticOut
+  fullName: Atlas.EaseType.ElasticOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ElasticOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: ElasticOut = 25
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.ElasticInOut
+  commentId: F:Atlas.EaseType.ElasticInOut
+  id: ElasticInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: ElasticInOut
+  nameWithType: EaseType.ElasticInOut
+  fullName: Atlas.EaseType.ElasticInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: ElasticInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: ElasticInOut = 26
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.CircularIn
+  commentId: F:Atlas.EaseType.CircularIn
+  id: CircularIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: CircularIn
+  nameWithType: EaseType.CircularIn
+  fullName: Atlas.EaseType.CircularIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: CircularIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: CircularIn = 27
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.CircularOut
+  commentId: F:Atlas.EaseType.CircularOut
+  id: CircularOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: CircularOut
+  nameWithType: EaseType.CircularOut
+  fullName: Atlas.EaseType.CircularOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: CircularOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: CircularOut = 28
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.CircularInOut
+  commentId: F:Atlas.EaseType.CircularInOut
+  id: CircularInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: CircularInOut
+  nameWithType: EaseType.CircularInOut
+  fullName: Atlas.EaseType.CircularInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: CircularInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: CircularInOut = 29
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.SineIn
+  commentId: F:Atlas.EaseType.SineIn
+  id: SineIn
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: SineIn
+  nameWithType: EaseType.SineIn
+  fullName: Atlas.EaseType.SineIn
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SineIn
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: SineIn = 30
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.SineOut
+  commentId: F:Atlas.EaseType.SineOut
+  id: SineOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: SineOut
+  nameWithType: EaseType.SineOut
+  fullName: Atlas.EaseType.SineOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SineOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: SineOut = 31
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.EaseType.SineInOut
+  commentId: F:Atlas.EaseType.SineInOut
+  id: SineInOut
+  parent: Atlas.EaseType
+  langs:
+  - csharp
+  - vb
+  name: SineInOut
+  nameWithType: EaseType.SineInOut
+  fullName: Atlas.EaseType.SineInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: SineInOut
+    path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: SineInOut = 32
+    return:
+      type: Atlas.EaseType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Enum.Atlas.EnumExtensions.IsObsolete
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  parent: Atlas.EnumExtensions
+  definition: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  name: IsObsolete()
+  nameWithType: EnumExtensions.IsObsolete()
+  fullName: Atlas.EnumExtensions.IsObsolete()
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  isExternal: true
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  parent: Atlas
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+- uid: Atlas.EaseType
+  commentId: T:Atlas.EaseType
+  parent: Atlas
+  name: EaseType
+  nameWithType: EaseType
+  fullName: Atlas.EaseType

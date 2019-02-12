@@ -1,0 +1,285 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.UIStack.Transition
+  commentId: T:Atlas.UIStack.Transition
+  id: UIStack.Transition
+  parent: Atlas
+  children:
+  - Atlas.UIStack.Transition.Full
+  - Atlas.UIStack.Transition.Intro
+  - Atlas.UIStack.Transition.None
+  - Atlas.UIStack.Transition.Outro
+  langs:
+  - csharp
+  - vb
+  name: UIStack.Transition
+  nameWithType: UIStack.Transition
+  fullName: Atlas.UIStack.Transition
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/UI/UIStack.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Transition
+    path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nTypes of panel transitions\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum Transition
+    content.vb: >-
+      <Flags>
+
+      Public Enum Transition
+  extensionMethods:
+  - System.Enum.Atlas.EnumExtensions.IsObsolete
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Atlas.UIStack.Transition.None
+  commentId: F:Atlas.UIStack.Transition.None
+  id: None
+  parent: Atlas.UIStack.Transition
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UIStack.Transition.None
+  fullName: Atlas.UIStack.Transition.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/UI/UIStack.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: None
+    path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nNo transition\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: Atlas.UIStack.Transition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.UIStack.Transition.Intro
+  commentId: F:Atlas.UIStack.Transition.Intro
+  id: Intro
+  parent: Atlas.UIStack.Transition
+  langs:
+  - csharp
+  - vb
+  name: Intro
+  nameWithType: UIStack.Transition.Intro
+  fullName: Atlas.UIStack.Transition.Intro
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/UI/UIStack.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Intro
+    path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nPlay a transition only in <xref href=\"Atlas.IUIPanel.OnPush(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> / <xref href=\"Atlas.IUIPanel.OnShow(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Intro = 1
+    return:
+      type: Atlas.UIStack.Transition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.UIStack.Transition.Outro
+  commentId: F:Atlas.UIStack.Transition.Outro
+  id: Outro
+  parent: Atlas.UIStack.Transition
+  langs:
+  - csharp
+  - vb
+  name: Outro
+  nameWithType: UIStack.Transition.Outro
+  fullName: Atlas.UIStack.Transition.Outro
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/UI/UIStack.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Outro
+    path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nPlay a transition only in <xref href=\"Atlas.IUIPanel.OnPop(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> / <xref href=\"Atlas.IUIPanel.OnHide(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Outro = 2
+    return:
+      type: Atlas.UIStack.Transition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Atlas.UIStack.Transition.Full
+  commentId: F:Atlas.UIStack.Transition.Full
+  id: Full
+  parent: Atlas.UIStack.Transition
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: UIStack.Transition.Full
+  fullName: Atlas.UIStack.Transition.Full
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/UI/UIStack.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Full
+    path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nPlay all transitions\n"
+  example: []
+  syntax:
+    content: Full = 3
+    return:
+      type: Atlas.UIStack.Transition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Enum.Atlas.EnumExtensions.IsObsolete
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  parent: Atlas.EnumExtensions
+  definition: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  name: IsObsolete()
+  nameWithType: EnumExtensions.IsObsolete()
+  fullName: Atlas.EnumExtensions.IsObsolete()
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  isExternal: true
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  spec.csharp:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+    name: IsObsolete
+    nameWithType: EnumExtensions.IsObsolete
+    fullName: Atlas.EnumExtensions.IsObsolete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Enum
+    name: Enum
+    nameWithType: Enum
+    fullName: System.Enum
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  parent: Atlas
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+- uid: Atlas.UIStack.Transition
+  commentId: T:Atlas.UIStack.Transition
+  parent: Atlas
+  name: UIStack.Transition
+  nameWithType: UIStack.Transition
+  fullName: Atlas.UIStack.Transition
+- uid: Atlas.IUIPanel.OnPush(System.Boolean)
+  commentId: M:Atlas.IUIPanel.OnPush(System.Boolean)
+  isExternal: true
+- uid: Atlas.IUIPanel.OnShow(System.Boolean)
+  commentId: M:Atlas.IUIPanel.OnShow(System.Boolean)
+  isExternal: true
+- uid: Atlas.IUIPanel.OnPop(System.Boolean)
+  commentId: M:Atlas.IUIPanel.OnPop(System.Boolean)
+  isExternal: true
+- uid: Atlas.IUIPanel.OnHide(System.Boolean)
+  commentId: M:Atlas.IUIPanel.OnHide(System.Boolean)
+  isExternal: true

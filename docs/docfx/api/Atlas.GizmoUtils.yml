@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.GizmoUtils
+  commentId: T:Atlas.GizmoUtils
+  id: GizmoUtils
+  parent: Atlas
+  children:
+  - Atlas.GizmoUtils.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: GizmoUtils
+  nameWithType: GizmoUtils
+  fullName: Atlas.GizmoUtils
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/GizmoUtils.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: GizmoUtils
+    path: ../../Assets/Scripts/Runtime/Utils/GizmoUtils.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static class GizmoUtils
+    content.vb: Public Module GizmoUtils
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.GizmoUtils.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Int32)
+  commentId: M:Atlas.GizmoUtils.DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Int32)
+  id: DrawCircle(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Int32)
+  parent: Atlas.GizmoUtils
+  langs:
+  - csharp
+  - vb
+  name: DrawCircle(Vector3, Single, Vector3, Int32)
+  nameWithType: GizmoUtils.DrawCircle(Vector3, Single, Vector3, Int32)
+  fullName: Atlas.GizmoUtils.DrawCircle(UnityEngine.Vector3, System.Single, UnityEngine.Vector3, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/GizmoUtils.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawCircle
+    path: ../../Assets/Scripts/Runtime/Utils/GizmoUtils.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawCircle(Vector3 pos, float radius, Vector3 axis, int numSegments = 20)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: radius
+      type: System.Single
+    - id: axis
+      type: UnityEngine.Vector3
+    - id: numSegments
+      type: System.Int32
+    content.vb: Public Shared Sub DrawCircle(pos As Vector3, radius As Single, axis As Vector3, numSegments As Integer = 20)
+  overload: Atlas.GizmoUtils.DrawCircle*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.GizmoUtils.DrawCircle*
+  commentId: Overload:Atlas.GizmoUtils.DrawCircle
+  name: DrawCircle
+  nameWithType: GizmoUtils.DrawCircle
+  fullName: Atlas.GizmoUtils.DrawCircle
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

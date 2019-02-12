@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.EnumExtensions
+  commentId: T:Atlas.EnumExtensions
+  id: EnumExtensions
+  parent: Atlas
+  children:
+  - Atlas.EnumExtensions.IsObsolete(System.Enum)
+  langs:
+  - csharp
+  - vb
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: Atlas.EnumExtensions
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: EnumExtensions
+    path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Atlas
+  syntax:
+    content: public static class EnumExtensions
+    content.vb: Public Module EnumExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  commentId: M:Atlas.EnumExtensions.IsObsolete(System.Enum)
+  id: IsObsolete(System.Enum)
+  isExtensionMethod: true
+  parent: Atlas.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsObsolete(Enum)
+  nameWithType: EnumExtensions.IsObsolete(Enum)
+  fullName: Atlas.EnumExtensions.IsObsolete(System.Enum)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: IsObsolete
+    path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: Atlas
+  syntax:
+    content: public static bool IsObsolete(this Enum e)
+    parameters:
+    - id: e
+      type: System.Enum
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsObsolete(e As  Enum) As Boolean
+  overload: Atlas.EnumExtensions.IsObsolete*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.EnumExtensions.IsObsolete*
+  commentId: Overload:Atlas.EnumExtensions.IsObsolete
+  name: IsObsolete
+  nameWithType: EnumExtensions.IsObsolete
+  fullName: Atlas.EnumExtensions.IsObsolete
+- uid: System.Enum
+  commentId: T:System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

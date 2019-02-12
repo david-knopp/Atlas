@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.DebugExtensions
+  commentId: T:Atlas.DebugExtensions
+  id: DebugExtensions
+  parent: Atlas
+  children:
+  - Atlas.DebugExtensions.DrawX(UnityEngine.Vector3,System.Single)
+  - Atlas.DebugExtensions.DrawX(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  langs:
+  - csharp
+  - vb
+  name: DebugExtensions
+  nameWithType: DebugExtensions
+  fullName: Atlas.DebugExtensions
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DebugExtensions
+    path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
+    startLine: 4
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static class DebugExtensions
+    content.vb: Public Module DebugExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.DebugExtensions.DrawX(UnityEngine.Vector3,System.Single)
+  commentId: M:Atlas.DebugExtensions.DrawX(UnityEngine.Vector3,System.Single)
+  id: DrawX(UnityEngine.Vector3,System.Single)
+  parent: Atlas.DebugExtensions
+  langs:
+  - csharp
+  - vb
+  name: DrawX(Vector3, Single)
+  nameWithType: DebugExtensions.DrawX(Vector3, Single)
+  fullName: Atlas.DebugExtensions.DrawX(UnityEngine.Vector3, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawX
+    path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawX(Vector3 pos, float lineLength)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: lineLength
+      type: System.Single
+    content.vb: Public Shared Sub DrawX(pos As Vector3, lineLength As Single)
+  overload: Atlas.DebugExtensions.DrawX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.DebugExtensions.DrawX(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  commentId: M:Atlas.DebugExtensions.DrawX(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  id: DrawX(UnityEngine.Vector3,System.Single,UnityEngine.Color)
+  parent: Atlas.DebugExtensions
+  langs:
+  - csharp
+  - vb
+  name: DrawX(Vector3, Single, Color)
+  nameWithType: DebugExtensions.DrawX(Vector3, Single, Color)
+  fullName: Atlas.DebugExtensions.DrawX(UnityEngine.Vector3, System.Single, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawX
+    path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  syntax:
+    content: public static void DrawX(Vector3 pos, float lineLength, Color color)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: lineLength
+      type: System.Single
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Shared Sub DrawX(pos As Vector3, lineLength As Single, color As Color)
+  overload: Atlas.DebugExtensions.DrawX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.DebugExtensions.DrawX*
+  commentId: Overload:Atlas.DebugExtensions.DrawX
+  name: DrawX
+  nameWithType: DebugExtensions.DrawX
+  fullName: Atlas.DebugExtensions.DrawX
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color

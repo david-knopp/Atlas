@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Atlas
@@ -361,23 +362,11 @@ namespace Atlas
 #if ATLAS_DEBUGDRAW_RUNTIME || ( ATLAS_DEBUGDRAW_EDITOR && UNITY_EDITOR )
         private List<IDebugDrawer> m_drawers = new List<IDebugDrawer>();
         private Material m_material;
-        private GUIListener m_guiListener;
+        private WaitForEndOfFrame m_endOfFrameYield = new WaitForEndOfFrame();
 
         private void OnEnable()
         {
-            m_guiListener = GUIListener.Instance;
-            if ( m_guiListener )
-            {
-                m_guiListener.GUIRenderEvent += OnGUIRender;
-            }
-        }
-
-        private void OnDisable()
-        {
-            if ( m_guiListener )
-            {
-                m_guiListener.GUIRenderEvent -= OnGUIRender;
-            }
+            StartCoroutine( FlushFinishedDrawersRoutine() );
         }
 
         private void Start()
@@ -394,18 +383,10 @@ namespace Atlas
             }
         }
 
-#if UNITY_EDITOR
-        // scene view drawing
-        private void OnDrawGizmos()
+        private void OnRenderObject()
         {
             Draw();
-        } 
-#endif
-
-        private void OnGUIRender()
-        {
-            Draw();
-        } 
+        }
 
         private void Draw()
         {
@@ -426,17 +407,29 @@ namespace Atlas
                         if ( drawable != null )
                         {
                             drawable.Draw();
-                            if ( drawable.IsFinished == false )
-                            {
-                                continue;
-                            }
                         }
-
-                        m_drawers.RemoveAt( i );
                     }
 
                     GL.PopMatrix();
                 }
+            }
+        }
+
+        private IEnumerator FlushFinishedDrawersRoutine()
+        {
+            while ( true )
+            {
+                for ( int i = m_drawers.Count - 1; i >= 0; --i )
+                {
+                    IDebugDrawer drawable = m_drawers[i];
+                    if ( drawable == null || 
+                         drawable.IsFinished )
+                    {
+                        m_drawers.RemoveAt( i );
+                    }
+                }
+
+                yield return m_endOfFrameYield;
             }
         }
 #endif

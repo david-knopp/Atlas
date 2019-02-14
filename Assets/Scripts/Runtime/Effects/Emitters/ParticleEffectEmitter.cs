@@ -3,14 +3,14 @@
 namespace Atlas
 {
     /// <summary>
-    /// Effect component for emitting particles
+    /// Effect emitter for handling particle effect emissions
     /// </summary>
     [RequireComponent( typeof( ParticleSystem ) )]
     public sealed class ParticleEffectEmitter : EffectEmitterBase
     {
         #region public
         /// <summary>
-        /// Starts playing the emitter
+        /// Starts playing particle system, and its children (if it has any)
         /// </summary>
         public override void Play()
         {
@@ -19,7 +19,7 @@ namespace Atlas
         }
 
         /// <summary>
-        /// Stops the emitter
+        /// Stops the particle system, and its children (if it has any)
         /// </summary>
         public override void Stop()
         {

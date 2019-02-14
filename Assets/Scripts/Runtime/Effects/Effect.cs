@@ -8,6 +8,7 @@ namespace Atlas
     /// Bundling all elements of an effect into one self-contained, reusable package can be make working with effects that
     /// contain various components easier, such as audio, particles, haptics, etc.
     /// </summary>
+    /// <seealso cref="EffectEmitterBase"/>
     public sealed class Effect : MonoBehaviour
     {
         #region public

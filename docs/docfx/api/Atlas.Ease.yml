@@ -7,6 +7,7 @@ items:
   children:
   - Atlas.Ease.Evaluate(System.Single,System.Single)
   - Atlas.Ease.Interpolate(System.Single,System.Single,System.Single)
+  - Atlas.Ease.Interpolate(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
   - Atlas.Ease.Interpolate(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
   - Atlas.Ease.Interpolate(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
   - Atlas.Ease.OnAfterDeserialize
@@ -172,7 +173,7 @@ items:
       description: Final value
     - id: t
       type: System.Single
-      description: The time value to evaluate at
+      description: The time value to evaluate at, normalized to [0, 1]
     return:
       type: System.Single
       description: The eased value
@@ -217,7 +218,7 @@ items:
       description: Final value
     - id: t
       type: System.Single
-      description: The time value to evaluate at
+      description: The time value to evaluate at, normalized to [0, 1]
     return:
       type: UnityEngine.Vector3
       description: The eased value
@@ -262,11 +263,56 @@ items:
       description: Final value
     - id: t
       type: System.Single
-      description: The time value to evaluate at
+      description: The time value to evaluate at, normalized to [0, 1]
     return:
       type: UnityEngine.Vector2
       description: The eased value
     content.vb: Public Function Interpolate(from As Vector2, to As Vector2, t As Single) As Vector2
+  overload: Atlas.Ease.Interpolate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.Ease.Interpolate(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+  commentId: M:Atlas.Ease.Interpolate(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+  id: Interpolate(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+  parent: Atlas.Ease
+  langs:
+  - csharp
+  - vb
+  name: Interpolate(Quaternion, Quaternion, Single)
+  nameWithType: Ease.Interpolate(Quaternion, Quaternion, Single)
+  fullName: Atlas.Ease.Interpolate(UnityEngine.Quaternion, UnityEngine.Quaternion, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
+      branch: v0.9.4
+      repo: https://github.com/david-knopp/Atlas
+    id: Interpolate
+    path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: Atlas
+  summary: "\nEases between two given <xref href=\"UnityEngine.Quaternion\" data-throw-if-not-resolved=\"false\"></xref> values at time <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code>\n"
+  example: []
+  syntax:
+    content: public Quaternion Interpolate(Quaternion from, Quaternion to, float t)
+    parameters:
+    - id: from
+      type: UnityEngine.Quaternion
+      description: Initial value
+    - id: to
+      type: UnityEngine.Quaternion
+      description: Final value
+    - id: t
+      type: System.Single
+      description: The time value to evaluate at, normalized to [0, 1]
+    return:
+      type: UnityEngine.Quaternion
+      description: The eased value
+    content.vb: Public Function Interpolate(from As Quaternion, to As Quaternion, t As Single) As Quaternion
   overload: Atlas.Ease.Interpolate*
   modifiers.csharp:
   - public
@@ -290,7 +336,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: OnBeforeSerialize
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
-    startLine: 77
+    startLine: 90
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -322,7 +368,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: OnAfterDeserialize
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
-    startLine: 81
+    startLine: 94
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -410,6 +456,13 @@ references:
   name: Vector2
   nameWithType: Vector2
   fullName: UnityEngine.Vector2
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
 - uid: Atlas.Ease.OnBeforeSerialize*
   commentId: Overload:Atlas.Ease.OnBeforeSerialize
   name: OnBeforeSerialize

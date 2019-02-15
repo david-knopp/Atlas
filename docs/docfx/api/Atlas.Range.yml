@@ -178,13 +178,17 @@ items:
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
+  summary: "\nReturns a linearly interpolated value between <xref href=\"Atlas.Range.m_minValue\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Atlas.Range.m_maxValue\" data-throw-if-not-resolved=\"false\"></xref>\nwhere an input <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code> of 0 will return <xref href=\"Atlas.Range.m_minValue\" data-throw-if-not-resolved=\"false\"></xref>, and an input of 1 will\nreturn <xref href=\"Atlas.Range.m_maxValue\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
   syntax:
     content: public float GetLerpedValue(float t)
     parameters:
     - id: t
       type: System.Single
+      description: The value to interpulate normalized to [0, 1]
     return:
       type: System.Single
+      description: The linearly interpolated value
     content.vb: Public Function GetLerpedValue(t As Single) As Single
   overload: Atlas.Range.GetLerpedValue*
   modifiers.csharp:

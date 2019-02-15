@@ -66,15 +66,20 @@ items:
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nDetermines if the given target group has the given symbol defined\n"
+  example: []
   syntax:
     content: public static bool ContainsSymbol(BuildTargetGroup group, string symbol)
     parameters:
     - id: group
       type: UnityEditor.BuildTargetGroup
+      description: Build group to check
     - id: symbol
       type: System.String
+      description: Preprocessor symbol to check for
     return:
       type: System.Boolean
+      description: true if the symbol is define, false if not
     content.vb: Public Shared Function ContainsSymbol(group As BuildTargetGroup, symbol As String) As Boolean
   overload: Atlas.ScriptingDefines.ContainsSymbol*
   modifiers.csharp:
@@ -105,13 +110,17 @@ items:
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nDetermines if the current build group has the given symbol defined\n"
+  example: []
   syntax:
     content: public static bool ContainsSymbol(string symbol)
     parameters:
     - id: symbol
       type: System.String
+      description: Preprocessor symbol to check for
     return:
       type: System.Boolean
+      description: true if the symbol is define, false if not
     content.vb: Public Shared Function ContainsSymbol(symbol As String) As Boolean
   overload: Atlas.ScriptingDefines.ContainsSymbol*
   modifiers.csharp:

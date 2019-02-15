@@ -15,11 +15,11 @@ items:
   type: Interface
   source:
     remote:
-      path: Assets/Scripts/Runtime/Framework/Command/Command.cs
+      path: Assets/Scripts/Runtime/Framework/Command/ICommand.cs
       branch: v0.9.4
       repo: https://github.com/david-knopp/Atlas
     id: ICommand
-    path: ../../Assets/Scripts/Runtime/Framework/Command/Command.cs
+    path: ../../Assets/Scripts/Runtime/Framework/Command/ICommand.cs
     startLine: 30
   assemblies:
   - Assembly-CSharp
@@ -57,11 +57,11 @@ items:
   type: Method
   source:
     remote:
-      path: Assets/Scripts/Runtime/Framework/Command/Command.cs
+      path: Assets/Scripts/Runtime/Framework/Command/ICommand.cs
       branch: v0.9.4
       repo: https://github.com/david-knopp/Atlas
     id: Execute
-    path: ../../Assets/Scripts/Runtime/Framework/Command/Command.cs
+    path: ../../Assets/Scripts/Runtime/Framework/Command/ICommand.cs
     startLine: 35
   assemblies:
   - Assembly-CSharp

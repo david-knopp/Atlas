@@ -78,6 +78,7 @@
   "Atlas.Ease": "Atlas.Ease.yml",
   "Atlas.Ease.Evaluate(System.Single,System.Single)": "Atlas.Ease.yml",
   "Atlas.Ease.Interpolate(System.Single,System.Single,System.Single)": "Atlas.Ease.yml",
+  "Atlas.Ease.Interpolate(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)": "Atlas.Ease.yml",
   "Atlas.Ease.Interpolate(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)": "Atlas.Ease.yml",
   "Atlas.Ease.Interpolate(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)": "Atlas.Ease.yml",
   "Atlas.Ease.OnAfterDeserialize": "Atlas.Ease.yml",

@@ -40,7 +40,7 @@ namespace Atlas
         /// </summary>
         /// <param name="from">Initial value</param>
         /// <param name="to">Final value</param>
-        /// <param name="t">The time value to evaluate at</param>
+        /// <param name="t">The time value to evaluate at, normalized to [0, 1]</param>
         /// <returns>The eased value</returns>
         public float Interpolate( float from, float to, float t )
         {
@@ -53,7 +53,7 @@ namespace Atlas
         /// </summary>
         /// <param name="from">Initial value</param>
         /// <param name="to">Final value</param>
-        /// <param name="t">The time value to evaluate at</param>
+        /// <param name="t">The time value to evaluate at, normalized to [0, 1]</param>
         /// <returns>The eased value</returns>
         public Vector3 Interpolate( Vector3 from, Vector3 to, float t )
         {
@@ -66,12 +66,25 @@ namespace Atlas
         /// </summary>
         /// <param name="from">Initial value</param>
         /// <param name="to">Final value</param>
-        /// <param name="t">The time value to evaluate at</param>
+        /// <param name="t">The time value to evaluate at, normalized to [0, 1]</param>
         /// <returns>The eased value</returns>
         public Vector2 Interpolate( Vector2 from, Vector2 to, float t )
         {
             float ease = Evaluate( t );
             return from * ( 1f - ease ) + to * ease;
+        }
+
+        /// <summary>
+        /// Eases between two given <see cref="Quaternion"/> values at time <paramref name="t"/>
+        /// </summary>
+        /// <param name="from">Initial value</param>
+        /// <param name="to">Final value</param>
+        /// <param name="t">The time value to evaluate at, normalized to [0, 1]</param>
+        /// <returns>The eased value</returns>
+        public Quaternion Interpolate( Quaternion from, Quaternion to, float t )
+        {
+            float ease = Evaluate( t );
+            return Quaternion.LerpUnclamped( from, to, ease );
         }
 
         #region ISerializationCallbackReceiver

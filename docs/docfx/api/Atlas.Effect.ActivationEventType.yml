@@ -21,7 +21,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: ActivationEventType
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -56,7 +56,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Start
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Manual
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Assembly-CSharp
   namespace: Atlas

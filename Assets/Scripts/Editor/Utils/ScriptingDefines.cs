@@ -14,7 +14,7 @@ namespace Atlas
         /// Determines if the given target group has the given symbol defined
         /// </summary>
         /// <param name="group">Build group to check</param>
-        /// <param name="symbol">Preprocessor symbol to check for<</param>
+        /// <param name="symbol">Preprocessor symbol to check for</param>
         /// <returns>true if the symbol is define, false if not</returns>
         public static bool ContainsSymbol( BuildTargetGroup group, string symbol )
         {
@@ -27,7 +27,7 @@ namespace Atlas
         /// <summary>
         /// Determines if the current build group has the given symbol defined
         /// </summary>
-        /// <param name="symbol">Preprocessor symbol to check for<</param>
+        /// <param name="symbol">Preprocessor symbol to check for</param>
         /// <returns>true if the symbol is define, false if not</returns>
         public static bool ContainsSymbol( string symbol )
         {

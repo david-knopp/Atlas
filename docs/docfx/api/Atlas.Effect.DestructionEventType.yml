@@ -21,7 +21,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DestructionEventType
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -56,7 +56,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Finished
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Manual
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 42
+    startLine: 43
   assemblies:
   - Assembly-CSharp
   namespace: Atlas

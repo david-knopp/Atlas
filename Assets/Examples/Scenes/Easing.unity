@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 493831932}
   - component: {fileID: 493831931}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,9 +143,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_initialRotation: {x: 0, y: 0, z: 0}
-  m_finalRotation: {x: 0, y: 0, z: -90}
+  m_finalRotation: {x: 180, y: 0, z: 0}
   m_ease:
-    m_type: 20
+    m_type: 22
 --- !u!23 &493831932
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 493831930}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &493831934
 Transform:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_initialRotation: {x: 0, y: 0, z: 0}
-  m_finalRotation: {x: 0, y: 0, z: 180}
+  m_finalRotation: {x: 0, y: 0, z: -90}
   m_ease:
     m_type: 25
 --- !u!23 &1133901569

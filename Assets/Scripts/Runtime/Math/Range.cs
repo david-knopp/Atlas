@@ -30,7 +30,7 @@ namespace Atlas
 
         /// <summary>
         /// Returns a linearly interpolated value between <see cref="m_minValue"/> and <see cref="m_maxValue"/>
-        /// where an input <param name="t"> of 0 will return <see cref="m_minValue"/>, and an input of 1 will
+        /// where an input <paramref name="t"/> of 0 will return <see cref="m_minValue"/>, and an input of 1 will
         /// return <see cref="m_maxValue"/>
         /// </summary>
         /// <param name="t">The value to interpulate normalized to [0, 1]</param>

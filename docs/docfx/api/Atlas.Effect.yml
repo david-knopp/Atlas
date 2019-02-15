@@ -24,7 +24,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Effect
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -35,6 +35,9 @@ items:
     content.vb: >-
       Public NotInheritable Class Effect
           Inherits MonoBehaviour
+  seealso:
+  - linkId: Atlas.EffectEmitterBase
+    commentId: T:Atlas.EffectEmitterBase
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -67,7 +70,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: ActivationEvent
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -104,7 +107,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: DestructionEvent
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -141,7 +144,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: IsPlaying
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 64
+    startLine: 65
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -178,7 +181,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Play
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -210,7 +213,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Stop
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
-    startLine: 86
+    startLine: 87
   assemblies:
   - Assembly-CSharp
   namespace: Atlas

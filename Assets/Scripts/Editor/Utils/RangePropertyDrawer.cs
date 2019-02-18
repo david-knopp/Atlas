@@ -3,6 +3,9 @@ using UnityEditor;
 
 namespace Atlas
 {
+    /// <summary>
+    /// Handles inspector drawing for <see cref="Range"/>
+    /// </summary>
     [CustomPropertyDrawer( typeof( Range ) )]
     public sealed class RangeDrawer : PropertyDrawer
     {

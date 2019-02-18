@@ -2,7 +2,10 @@
 using UnityEngine;
 
 namespace Atlas
-{
+{    
+    /// <summary>
+    /// Handles inspector drawing for <see cref="PathAttribute"/>
+    /// </summary>
     [CustomPropertyDrawer( typeof( PathAttribute ) )]
     public sealed class PathAttributePropertyDrawer : PropertyDrawer
     {

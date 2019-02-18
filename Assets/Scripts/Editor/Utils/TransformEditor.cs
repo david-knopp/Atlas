@@ -7,6 +7,9 @@ using UnityEditor;
 
 namespace Atlas
 {
+    /// <summary>
+    /// Overrides the default Transform editor that adds handy buttons for resetting transform values
+    /// </summary>
     [CustomEditor( typeof( Transform ) )]
     public sealed class TransformEditor : Editor
     {

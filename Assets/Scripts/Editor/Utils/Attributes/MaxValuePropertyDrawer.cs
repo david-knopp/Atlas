@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Atlas
 {
+    /// <summary>
+    /// Handles inspector drawing for <see cref="MaxValueAttribute"/>
+    /// </summary>
     [CustomPropertyDrawer( typeof( MaxValueAttribute ) )]
     public sealed class MaxValuePropertyDrawer : PropertyDrawer
     {

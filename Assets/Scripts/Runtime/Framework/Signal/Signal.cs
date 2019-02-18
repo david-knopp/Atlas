@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Atlas
 {
@@ -14,12 +15,46 @@ namespace Atlas
         {
             for ( int i = 0; i < m_commands.Count; i++ )
             {
-                m_commands[i].Execute();
+                try
+                {
+                    m_commands[i].Execute();
+                }
+                catch ( Exception e )
+                {
+                    if ( m_commands[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when executing command '{1}'",
+                                              e,
+                                              m_commands[i].GetType() );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null command listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
 
             for ( int i = 0; i < m_listeners.Count; i++ )
             {
-                m_listeners[i].Invoke();
+                try
+                {
+                    m_listeners[i].Invoke();
+                }
+                catch ( Exception e )
+                {
+                    if ( m_listeners[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when invoking method '{1}'",
+                                              e,
+                                              m_listeners[i].Method.Name );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null action listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
         }
     }
@@ -38,12 +73,47 @@ namespace Atlas
         {
             for ( int i = 0; i < m_commands.Count; i++ )
             {
-                m_commands[i].Execute( arg );
+                try
+                {
+                    m_commands[i].Execute( arg );
+                }
+                catch ( Exception e )
+                {
+                    if ( m_commands[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when executing command '{1}'",
+                                              e,
+                                              m_commands[i].GetType() );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null command listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
 
             for ( int i = 0; i < m_listeners.Count; i++ )
             {
-                m_listeners[i].Invoke( arg );
+                try
+                {
+                    m_listeners[i].Invoke( arg );
+
+                }
+                catch ( Exception e )
+                {
+                    if ( m_listeners[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when invoking method '{1}'",
+                                              e,
+                                              m_listeners[i].Method.Name );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null action listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
         }
     }
@@ -64,12 +134,47 @@ namespace Atlas
         {
             for ( int i = 0; i < m_commands.Count; i++ )
             {
-                m_commands[i].Execute( arg1, arg2 );
+                try
+                {
+                    m_commands[i].Execute( arg1, arg2 );
+                }
+                catch ( Exception e )
+                {
+                    if ( m_commands[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when executing command '{1}'",
+                                              e,
+                                              m_commands[i].GetType() );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null command listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
 
             for ( int i = 0; i < m_listeners.Count; i++ )
             {
-                m_listeners[i].Invoke( arg1, arg2 );
+                try
+                {
+
+                    m_listeners[i].Invoke( arg1, arg2 );
+                }
+                catch ( Exception e )
+                {
+                    if ( m_listeners[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when invoking method '{1}'",
+                                              e,
+                                              m_listeners[i].Method.Name );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null action listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
         }
     }
@@ -92,12 +197,47 @@ namespace Atlas
         {
             for ( int i = 0; i < m_commands.Count; i++ )
             {
-                m_commands[i].Execute( arg1, arg2, arg3 );
+                try
+                {
+                    m_commands[i].Execute( arg1, arg2, arg3 );
+                }
+                catch ( Exception e )
+                {
+                    if ( m_commands[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when executing command '{1}'",
+                                              e,
+                                              m_commands[i].GetType() );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null command listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
 
             for ( int i = 0; i < m_listeners.Count; i++ )
             {
-                m_listeners[i].Invoke( arg1, arg2, arg3 );
+                try
+                {
+                    m_listeners[i].Invoke( arg1, arg2, arg3 );
+
+                }
+                catch ( Exception e )
+                {
+                    if ( m_listeners[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when invoking method '{1}'",
+                                              e,
+                                              m_listeners[i].Method.Name );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null action listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
         }
     }
@@ -122,12 +262,46 @@ namespace Atlas
         {
             for ( int i = 0; i < m_commands.Count; i++ )
             {
-                m_commands[i].Execute( arg1, arg2, arg3, arg4 );
+                try
+                {
+                    m_commands[i].Execute( arg1, arg2, arg3, arg4 );
+                }
+                catch ( Exception e )
+                {
+                    if ( m_commands[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when executing command '{1}'",
+                                              e,
+                                              m_commands[i].GetType() );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null command listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
 
             for ( int i = 0; i < m_listeners.Count; i++ )
             {
-                m_listeners[i].Invoke( arg1, arg2, arg3, arg4 );
+                try
+                {
+                    m_listeners[i].Invoke( arg1, arg2, arg3, arg4 );
+                }
+                catch ( Exception e )
+                {
+                    if ( m_listeners[i] != null )
+                    {
+                        Debug.LogErrorFormat( "Encountered exception '{0}' when invoking method '{1}'",
+                                              e,
+                                              m_listeners[i].Method.Name );
+                    }
+                    else
+                    {
+                        Debug.LogErrorFormat( "Encountered null action listener when dipatching signal '{0}'",
+                                              GetType() );
+                    }
+                }
             }
         }
     }

@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Atlas
 {
+    /// <summary>
+    /// Handles inspector drawing for <see cref="PreventEditInInspectorAttribute"/>
+    /// </summary>
     [CustomPropertyDrawer( typeof( PreventEditInInspectorAttribute ) )]
     public sealed class PreventEditInInspectorPropertyDrawer : PropertyDrawer
     {

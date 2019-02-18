@@ -6,6 +6,9 @@ using System.IO;
 
 namespace Atlas
 {
+    /// <summary>
+    /// Handles inspector drawing for <see cref="ScenePathAttribute"/>
+    /// </summary>
     [CustomPropertyDrawer( typeof( ScenePathAttribute ) )]
     public sealed class ScenePathAttributePropertyDrawer : PropertyDrawer
     {

@@ -3,8 +3,18 @@ using System.Globalization;
 
 namespace Atlas
 {
+    /// <summary>
+    /// Extension methods for the <see cref="Type"/> class
+    /// </summary>
     public static class TypeExtensions
     {
+        /// <summary>
+        /// Finds the primitive name for a given type. For instance, where <see cref="Type.FullName"/>
+        /// would return "System.Int32" for an int, this method would return just "int". This is useful
+        /// for creating more straight-forward code generation
+        /// </summary>
+        /// <param name="type">The type to get the primitive name of</param>
+        /// <returns>The primitive name of the given type</returns>
         public static string GetPrimitiveName( this Type type )
         {
             //var compiler = new Microsoft.CSharp.CSharpCodeProvider();

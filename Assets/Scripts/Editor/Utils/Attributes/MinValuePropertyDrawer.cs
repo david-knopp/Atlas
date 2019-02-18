@@ -2,7 +2,9 @@
 using UnityEngine;
 
 namespace Atlas
-{
+{    /// <summary>
+     /// Handles inspector drawing for <see cref="MinValueAttribute"/>
+     /// </summary>
     [CustomPropertyDrawer( typeof( MinValueAttribute ) )]
     public sealed class MinValuePropertyDrawer : PropertyDrawer
     {

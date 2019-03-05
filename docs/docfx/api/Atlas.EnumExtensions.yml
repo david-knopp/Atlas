@@ -20,10 +20,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: EnumExtensions
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nExtension methods for the <xref href=\"System.Enum\" data-throw-if-not-resolved=\"false\"></xref> class\n"
+  example: []
   syntax:
     content: public static class EnumExtensions
     content.vb: Public Module EnumExtensions
@@ -55,17 +57,21 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: IsObsolete
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
-    startLine: 7
+    startLine: 15
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nDetermines if the given enum value has been marked with <xref href=\"System.ObsoleteAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
   syntax:
     content: public static bool IsObsolete(this Enum e)
     parameters:
     - id: e
       type: System.Enum
+      description: The enum value to check
     return:
       type: System.Boolean
+      description: True if the value has been marked obselete, false otherwise
     content.vb: >-
       <ExtensionAttribute>
 
@@ -78,6 +84,13 @@ items:
   - Public
   - Shared
 references:
+- uid: System.Enum
+  commentId: T:System.Enum
+  parent: System
+  isExternal: true
+  name: Enum
+  nameWithType: Enum
+  fullName: System.Enum
 - uid: Atlas
   commentId: N:Atlas
   name: Atlas
@@ -96,18 +109,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.ObsoleteAttribute
+  commentId: T:System.ObsoleteAttribute
+  isExternal: true
 - uid: Atlas.EnumExtensions.IsObsolete*
   commentId: Overload:Atlas.EnumExtensions.IsObsolete
   name: IsObsolete
   nameWithType: EnumExtensions.IsObsolete
   fullName: Atlas.EnumExtensions.IsObsolete
-- uid: System.Enum
-  commentId: T:System.Enum
-  parent: System
-  isExternal: true
-  name: Enum
-  nameWithType: Enum
-  fullName: System.Enum
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

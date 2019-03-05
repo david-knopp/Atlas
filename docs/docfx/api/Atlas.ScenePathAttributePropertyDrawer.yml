@@ -21,10 +21,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: ScenePathAttributePropertyDrawer
     path: ../../Assets/Scripts/Editor/Utils/Attributes/ScenePathPropertyDrawer.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nHandles inspector drawing for <xref href=\"Atlas.ScenePathAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
   syntax:
     content: >-
       [CustomPropertyDrawer(typeof(ScenePathAttribute))]
@@ -75,7 +77,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: OnGUI
     path: ../../Assets/Scripts/Editor/Utils/Attributes/ScenePathPropertyDrawer.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
@@ -115,7 +117,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: GetPropertyHeight
     path: ../../Assets/Scripts/Editor/Utils/Attributes/ScenePathPropertyDrawer.cs
-    startLine: 120
+    startLine: 123
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
@@ -138,6 +140,12 @@ items:
   - Public
   - Overrides
 references:
+- uid: Atlas.ScenePathAttribute
+  commentId: T:Atlas.ScenePathAttribute
+  parent: Atlas
+  name: ScenePathAttribute
+  nameWithType: ScenePathAttribute
+  fullName: Atlas.ScenePathAttribute
 - uid: Atlas
   commentId: N:Atlas
   name: Atlas

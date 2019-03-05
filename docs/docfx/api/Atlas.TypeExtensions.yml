@@ -20,10 +20,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: TypeExtensions
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/TypeExtensions.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nExtension methods for the <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> class\n"
+  example: []
   syntax:
     content: public static class TypeExtensions
     content.vb: Public Module TypeExtensions
@@ -55,17 +57,21 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: GetPrimitiveName
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/TypeExtensions.cs
-    startLine: 7
+    startLine: 17
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nFinds the primitive name for a given type. For instance, where <xref href=\"System.Type.FullName\" data-throw-if-not-resolved=\"false\"></xref>\nwould return &quot;System.Int32&quot; for an int, this method would return just &quot;int&quot;. This is useful\nfor creating more straight-forward code generation\n"
+  example: []
   syntax:
     content: public static string GetPrimitiveName(this Type type)
     parameters:
     - id: type
       type: System.Type
+      description: The type to get the primitive name of
     return:
       type: System.String
+      description: The primitive name of the given type
     content.vb: >-
       <ExtensionAttribute>
 
@@ -78,6 +84,13 @@ items:
   - Public
   - Shared
 references:
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
 - uid: Atlas
   commentId: N:Atlas
   name: Atlas
@@ -96,18 +109,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Type.FullName
+  commentId: P:System.Type.FullName
+  isExternal: true
 - uid: Atlas.TypeExtensions.GetPrimitiveName*
   commentId: Overload:Atlas.TypeExtensions.GetPrimitiveName
   name: GetPrimitiveName
   nameWithType: TypeExtensions.GetPrimitiveName
   fullName: Atlas.TypeExtensions.GetPrimitiveName
-- uid: System.Type
-  commentId: T:System.Type
-  parent: System
-  isExternal: true
-  name: Type
-  nameWithType: Type
-  fullName: System.Type
 - uid: System.String
   commentId: T:System.String
   parent: System

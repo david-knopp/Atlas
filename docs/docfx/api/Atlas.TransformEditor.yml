@@ -20,10 +20,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: TransformEditor
     path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nOverrides the default Transform editor that adds handy buttons for resetting transform values\n"
+  example: []
   syntax:
     content: >-
       [CustomEditor(typeof(Transform))]
@@ -72,7 +74,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: OnInspectorGUI
     path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas

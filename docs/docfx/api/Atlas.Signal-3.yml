@@ -20,7 +20,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Signal
     path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs
-    startLine: 82
+    startLine: 187
   assemblies:
   - Assembly-CSharp
   namespace: Atlas
@@ -79,7 +79,7 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Dispatch
     path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs
-    startLine: 90
+    startLine: 195
   assemblies:
   - Assembly-CSharp
   namespace: Atlas

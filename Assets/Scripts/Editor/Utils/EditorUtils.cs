@@ -17,6 +17,7 @@ namespace Atlas
                 FieldInfo field = type.GetField( "s_Hidden", BindingFlags.NonPublic | BindingFlags.Static );
                 return ( ( bool )field.GetValue( null ) );
             }
+
             set
             {
                 Type type = typeof( Tools );

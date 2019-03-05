@@ -26,10 +26,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: TextIndentHelper
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nA helper object for making text indentation management easier, particularly when working\nwith code generation\n"
+  example: []
   syntax:
     content: public struct TextIndentHelper
     content.vb: Public Structure TextIndentHelper
@@ -57,10 +59,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: StandardTabHelper
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 7
+    startLine: 15
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nDefault helper for providing 1 tab per indentation\n"
+  example: []
   syntax:
     content: public static readonly TextIndentHelper StandardTabHelper
     return:
@@ -92,10 +96,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: StandardSpacesHelper
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 8
+    startLine: 20
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nDefault helper for providing 4 spaces per indentation\n"
+  example: []
   syntax:
     content: public static readonly TextIndentHelper StandardSpacesHelper
     return:
@@ -127,17 +133,21 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 10
+    startLine: 27
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
   syntax:
     content: public TextIndentHelper(char indentCharacter = ' ', int charactersPerIndent = 4)
     parameters:
     - id: indentCharacter
       type: System.Char
+      description: The character to use as indentation, with a space as default
     - id: charactersPerIndent
       type: System.Int32
+      description: Number of characters to use per indentation
     content.vb: Public Sub New(indentCharacter As Char = " "c, charactersPerIndent As Integer = 4)
   overload: Atlas.TextIndentHelper.#ctor*
   modifiers.csharp:
@@ -162,10 +172,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: Indent
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 21
+    startLine: 42
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nA string representing the current indentation level. \nThis will initially be an empty string.\n"
+  example: []
   syntax:
     content: public string Indent { get; }
     parameters: []
@@ -197,10 +209,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: IndentLevel
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 27
+    startLine: 51
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nThe current level/number of indentations\n"
+  example: []
   syntax:
     content: public int IndentLevel { get; set; }
     parameters: []
@@ -232,10 +246,12 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: CharactersPerIndent
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 38
+    startLine: 65
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nNumber of characters to use per indentation\n"
+  example: []
   syntax:
     content: public int CharactersPerIndent { get; set; }
     parameters: []
@@ -267,17 +283,21 @@ items:
       repo: https://github.com/david-knopp/Atlas
     id: ApplyIndent
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-    startLine: 49
+    startLine: 82
   assemblies:
   - Assembly-CSharp-Editor
   namespace: Atlas
+  summary: "\nHelper method for applying the current indentation to the given string.\nThis is equivalent to prepending <xref href=\"Atlas.TextIndentHelper.Indent\" data-throw-if-not-resolved=\"false\"></xref> to the front of <code data-dev-comment-type=\"paramref\" class=\"paramref\">text</code>\n"
+  example: []
   syntax:
     content: public string ApplyIndent(string text)
     parameters:
     - id: text
       type: System.String
+      description: The string to apply indentation to
     return:
       type: System.String
+      description: The indented string
     content.vb: Public Function ApplyIndent(text As String) As String
   overload: Atlas.TextIndentHelper.ApplyIndent*
   modifiers.csharp:
@@ -343,6 +363,9 @@ references:
   name: CharactersPerIndent
   nameWithType: TextIndentHelper.CharactersPerIndent
   fullName: Atlas.TextIndentHelper.CharactersPerIndent
+- uid: Atlas.TextIndentHelper.Indent
+  commentId: P:Atlas.TextIndentHelper.Indent
+  isExternal: true
 - uid: Atlas.TextIndentHelper.ApplyIndent*
   commentId: Overload:Atlas.TextIndentHelper.ApplyIndent
   name: ApplyIndent

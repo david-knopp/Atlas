@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Range
+   | Atlas </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Range
+   | Atlas ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atlas.Range">
+  
+  
+  <h1 id="Atlas_Range" data-uid="Atlas.Range" class="text-break">Struct Range
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a closed mathematical interval of float values</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atlas.html">Atlas</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Atlas_Range_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct Range</code></pre>
+  </div>
+  <h5 id="Atlas_Range_examples"><strong>Examples</strong></h5>
+  <pre><code class="lang-csharp" name="Range">using UnityEngine;
+
+namespace Atlas.Examples
+{
+    public sealed class Example_Range
+    {
+        // generic character class
+        public class Character
+        {
+            public void ApplyDamage( float damage ) { /* ... */ }
+        }
+
+        public void OnCharacterHit( Character hitCharacter )
+        {
+            // get randomized damage amount
+            float damageAmount = m_damageRange.GetRandomValue();
+
+            // apply damage
+            hitCharacter.ApplyDamage( damageAmount );
+        }
+
+        // range declaration
+        [SerializeField] private Range m_damageRange 
+            = new Range() { m_minValue = 6f, m_maxValue = 20f };
+    }
+}
+</code></pre>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_m_maxValue.md&amp;value=---%0Auid%3A%20Atlas.Range.m_maxValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L20">View Source</a>
+  </span>
+  <h4 id="Atlas_Range_m_maxValue" data-uid="Atlas.Range.m_maxValue">m_maxValue</h4>
+  <div class="markdown level1 summary"><p>The maximum value of the range (inclusive)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_maxValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_m_minValue.md&amp;value=---%0Auid%3A%20Atlas.Range.m_minValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L15">View Source</a>
+  </span>
+  <h4 id="Atlas_Range_m_minValue" data-uid="Atlas.Range.m_minValue">m_minValue</h4>
+  <div class="markdown level1 summary"><p>The minimum value of the range (inclusive)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float m_minValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_Clamp_System_Single_.md&amp;value=---%0Auid%3A%20Atlas.Range.Clamp(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L106">View Source</a>
+  </span>
+  <a id="Atlas_Range_Clamp_" data-uid="Atlas.Range.Clamp*"></a>
+  <h4 id="Atlas_Range_Clamp_System_Single_" data-uid="Atlas.Range.Clamp(System.Single)">Clamp(Single)</h4>
+  <div class="markdown level1 summary"><p>Clamps the given <code data-dev-comment-type="paramref" class="paramref">value</code> between the range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Clamp(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to clamp</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>If the value is within the range, the value is returned unchanged. Otherwise, a value clamped
+to the range limits is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_Contains_Atlas_Range_.md&amp;value=---%0Auid%3A%20Atlas.Range.Contains(Atlas.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L83">View Source</a>
+  </span>
+  <a id="Atlas_Range_Contains_" data-uid="Atlas.Range.Contains*"></a>
+  <h4 id="Atlas_Range_Contains_Atlas_Range_" data-uid="Atlas.Range.Contains(Atlas.Range)">Contains(Range)</h4>
+  <div class="markdown level1 summary"><p>Determines whether or not the given <code data-dev-comment-type="paramref" class="paramref">range</code> value is contained within this
+numerical range (inclusive)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(Range range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atlas.Range.html">Range</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range value to determine</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not the range value is contained</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_Contains_System_Single_.md&amp;value=---%0Auid%3A%20Atlas.Range.Contains(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L72">View Source</a>
+  </span>
+  <a id="Atlas_Range_Contains_" data-uid="Atlas.Range.Contains*"></a>
+  <h4 id="Atlas_Range_Contains_System_Single_" data-uid="Atlas.Range.Contains(System.Single)">Contains(Single)</h4>
+  <div class="markdown level1 summary"><p>Determines whether or not the given <code data-dev-comment-type="paramref" class="paramref">value</code> is within this numerical range (inclusive)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to determine</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not the value is within the range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_GetLerpedValue_System_Single_.md&amp;value=---%0Auid%3A%20Atlas.Range.GetLerpedValue(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L38">View Source</a>
+  </span>
+  <a id="Atlas_Range_GetLerpedValue_" data-uid="Atlas.Range.GetLerpedValue*"></a>
+  <h4 id="Atlas_Range_GetLerpedValue_System_Single_" data-uid="Atlas.Range.GetLerpedValue(System.Single)">GetLerpedValue(Single)</h4>
+  <div class="markdown level1 summary"><p>Returns a linearly interpolated value between <a class="xref" href="Atlas.Range.html#Atlas_Range_m_minValue">m_minValue</a> and <a class="xref" href="Atlas.Range.html#Atlas_Range_m_maxValue">m_maxValue</a>
+where an input <code data-dev-comment-type="paramref" class="paramref">t</code> of 0 will return <a class="xref" href="Atlas.Range.html#Atlas_Range_m_minValue">m_minValue</a>, and an input of 1 will
+return <a class="xref" href="Atlas.Range.html#Atlas_Range_m_maxValue">m_maxValue</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetLerpedValue(float t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The value to interpulate normalized to [0, 1]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The linearly interpolated value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_GetNormalizedValue_System_Single_.md&amp;value=---%0Auid%3A%20Atlas.Range.GetNormalizedValue(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L49">View Source</a>
+  </span>
+  <a id="Atlas_Range_GetNormalizedValue_" data-uid="Atlas.Range.GetNormalizedValue*"></a>
+  <h4 id="Atlas_Range_GetNormalizedValue_System_Single_" data-uid="Atlas.Range.GetNormalizedValue(System.Single)">GetNormalizedValue(Single)</h4>
+  <div class="markdown level1 summary"><p>Calculates a value representing the normalized position of the provided <code data-dev-comment-type="paramref" class="paramref">value</code>
+within the range, clamped to [0, 1]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetNormalizedValue(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to normalize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The normalized value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_GetRandomValue.md&amp;value=---%0Auid%3A%20Atlas.Range.GetRandomValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L26">View Source</a>
+  </span>
+  <a id="Atlas_Range_GetRandomValue_" data-uid="Atlas.Range.GetRandomValue*"></a>
+  <h4 id="Atlas_Range_GetRandomValue" data-uid="Atlas.Range.GetRandomValue">GetRandomValue()</h4>
+  <div class="markdown level1 summary"><p>Returns a random number between <a class="xref" href="Atlas.Range.html#Atlas_Range_m_minValue">m_minValue</a> (inclusive) and <a class="xref" href="Atlas.Range.html#Atlas_Range_m_maxValue">m_maxValue</a> (inclusive)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetRandomValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>A random value within the range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_IntersectionWith_Atlas_Range_.md&amp;value=---%0Auid%3A%20Atlas.Range.IntersectionWith(Atlas.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L132">View Source</a>
+  </span>
+  <a id="Atlas_Range_IntersectionWith_" data-uid="Atlas.Range.IntersectionWith*"></a>
+  <h4 id="Atlas_Range_IntersectionWith_Atlas_Range_" data-uid="Atlas.Range.IntersectionWith(Atlas.Range)">IntersectionWith(Range)</h4>
+  <div class="markdown level1 summary"><p>Calculates the range of values where this range overlaps with the given <code data-dev-comment-type="paramref" class="paramref">range</code>.
+If the ranges don't overlap, an invalid range is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range IntersectionWith(Range range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atlas.Range.html">Range</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range to intersect with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atlas.Range.html">Range</a></td>
+        <td><p>The intersecting range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_Intersects_Atlas_Range_.md&amp;value=---%0Auid%3A%20Atlas.Range.Intersects(Atlas.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L94">View Source</a>
+  </span>
+  <a id="Atlas_Range_Intersects_" data-uid="Atlas.Range.Intersects*"></a>
+  <h4 id="Atlas_Range_Intersects_Atlas_Range_" data-uid="Atlas.Range.Intersects(Atlas.Range)">Intersects(Range)</h4>
+  <div class="markdown level1 summary"><p>Determines whether or not the given <code data-dev-comment-type="paramref" class="paramref">range</code> value overlaps this range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Intersects(Range range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atlas.Range.html">Range</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range value to test</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not the ranges overlap eachother</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.4/apiSpec/new?filename=Atlas_Range_UnionWith_Atlas_Range_.md&amp;value=---%0Auid%3A%20Atlas.Range.UnionWith(Atlas.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L117">View Source</a>
+  </span>
+  <a id="Atlas_Range_UnionWith_" data-uid="Atlas.Range.UnionWith*"></a>
+  <h4 id="Atlas_Range_UnionWith_Atlas_Range_" data-uid="Atlas.Range.UnionWith(Atlas.Range)">UnionWith(Range)</h4>
+  <div class="markdown level1 summary"><p>Combines the range with the given <code data-dev-comment-type="paramref" class="paramref">range</code> into a mathematical union, creating
+a range that spans both ranges</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range UnionWith(Range range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atlas.Range.html">Range</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range to union with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atlas.Range.html">Range</a></td>
+        <td><p>The combined range</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/docs/docfx/apispec/Range.md/#L2" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/Assets/Scripts/Runtime/Math/Range.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1289 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/dakno/Documents/Projects/Tech/Atlas/docs/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.AnchorPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.AnchorPosition.html",
+          "hash": "EKp4fV+NajG4chCZT2nPDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.BackEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.BackEase.html",
+          "hash": "Un0W6UGuVMT6q72Vbm25vQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.BillboardDebugDrawModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.BillboardDebugDrawModifier.html",
+          "hash": "ESQD56r+8WtVphlxtqrTcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.BitField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.BitField.html",
+          "hash": "CPPBKUyKuTqUmMD4VtNqjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.BounceEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.BounceEase.html",
+          "hash": "ugtK4XScGY2JsS41wn+CwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.CircleDebugDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.CircleDebugDrawer.html",
+          "hash": "eBaG2if47nvesQz62y5yUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.CircularEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.CircularEase.html",
+          "hash": "GwqAGTG9O4yP1lN4f7b+jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.CrossDebugDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.CrossDebugDrawer.html",
+          "hash": "GfFWdJuz2fSHJ3ZDUliJRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.CubicEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.CubicEase.html",
+          "hash": "QhsjRdTHHkZuE59t9s5p6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.DebugDraw.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.DebugDraw.html",
+          "hash": "Cykb+AJte2t3z2jLQNqnLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.DebugDrawModifierExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.DebugDrawModifierExtensions.html",
+          "hash": "3iy07Lz5V/QBtaJN5nXnFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.DebugExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.DebugExtensions.html",
+          "hash": "n/FkYmq9ix4SJj4FJdgQcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Ease.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Ease.html",
+          "hash": "u84ppPIAVisgWAnVaO6qdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.EaseType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.EaseType.html",
+          "hash": "kxXpofs7eEwVasBI4ChLQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.EditorGUILayoutUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.EditorGUILayoutUtils.html",
+          "hash": "+MpyjFAs5lfstH6yyzuCog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.EditorUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.EditorUtils.html",
+          "hash": "1TlqyJK/5yDdDX13U2UIMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Effect.ActivationEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Effect.ActivationEventType.html",
+          "hash": "o+iuI0b6bLQHbaLf+ZMeoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Effect.DestructionEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Effect.DestructionEventType.html",
+          "hash": "5JmG8+vwcvxSvU/Oi44IvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Effect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Effect.html",
+          "hash": "11kXye/cP+IModuKgGLWPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.EffectEmitterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.EffectEmitterBase.html",
+          "hash": "sc9AZZhJzkSlaG2xVbLDjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ElasticEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ElasticEase.html",
+          "hash": "UxyXcodz7PK1e94YgFassw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.EnumExtensions.html",
+          "hash": "MCECBSWQO0DKgaIYZnbdxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ExponentialEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ExponentialEase.html",
+          "hash": "K7REYMhmcpnl2TEjj90nYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.GUIColorScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.GUIColorScope.html",
+          "hash": "0C1XwFZUedWjGp64mZHgqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.GUIListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.GUIListener.html",
+          "hash": "lUWEg11LHYWI+ejd5wLS/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.GizmoUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.GizmoUtils.html",
+          "hash": "iP/ZjPEHYfyIKsnntG3vjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.HashCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.HashCode.html",
+          "hash": "Q5QD8qBeCsRAo7mhUQXuxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ICommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ICommand-1.html",
+          "hash": "qSM9mfQRc1eeWbt1OSWN8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ICommand-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ICommand-2.html",
+          "hash": "D/J/zlowSMWUUjAafCOlJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ICommand-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ICommand-3.html",
+          "hash": "EtCbYwCHTVomhdix8csfVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ICommand-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ICommand-4.html",
+          "hash": "qR4KSJi2+yB5cUYFEEpX7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ICommand.html",
+          "hash": "0qZi9FcAwjguMkEbqjOssA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IDebugDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IDebugDrawer.html",
+          "hash": "ck1ZBwlHiuBZV9Ttv+WP5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IFixedTickable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IFixedTickable.html",
+          "hash": "7VtJvFH4JENRQ46kyspoAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ILateTickable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ILateTickable.html",
+          "hash": "cNLhQI+Kgj9iU9jM1OZbjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IScheduledTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IScheduledTask.html",
+          "hash": "vr/VMy4aW5qBJLjhmeB8Fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ISignal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ISignal.html",
+          "hash": "JbrQcHWSfcMR5qds86U/cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IStateLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IStateLink.html",
+          "hash": "6NsdKFs6Cb3S2sLYTY+OZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IStateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IStateMachine.html",
+          "hash": "LRSiC34zZ0t4+mJ3wYiRXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ITickable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ITickable.html",
+          "hash": "KOj02dgZq7PlxuCA7OH5sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IUIPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IUIPanel.html",
+          "hash": "338bolND9NEKQIzqIgKTGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IndexedPriorityQueue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IndexedPriorityQueue-1.html",
+          "hash": "AoJaOrcRmks2FGA7fksRlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.LineDebugDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.LineDebugDrawer.html",
+          "hash": "vC0mrZEmUbNyaG7qX1iPvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.LinearEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.LinearEase.html",
+          "hash": "z4q9sj49Ji4595vrTv4tMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.MaxValueAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.MaxValueAttribute.html",
+          "hash": "HHwQe+HssLsYZLNc2ADwkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.MaxValuePropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.MaxValuePropertyDrawer.html",
+          "hash": "VjkNxjDGQIMkZv9pAFouUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.MinValueAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.MinValueAttribute.html",
+          "hash": "J8iLpe7z9CgsbA3005ebkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.MinValuePropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.MinValuePropertyDrawer.html",
+          "hash": "DW2Kod8WSbT2iP6aNVAd4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ParticleEffectEmitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ParticleEffectEmitter.html",
+          "hash": "nN3w4B1MScSUvAbGEP3kEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.PathAttribute.Path.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.PathAttribute.Path.html",
+          "hash": "A4qKdWJFYkHvE9mREqJqPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.PathAttribute.Relativity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.PathAttribute.Relativity.html",
+          "hash": "mhPbhEeXPyiBx0bHpDkxsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.PathAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.PathAttribute.html",
+          "hash": "Bli10AHDc71943ajLHgZew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.PathAttributePropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.PathAttributePropertyDrawer.html",
+          "hash": "/fdfmCzolCCdhaUk+Dtz5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.PreventEditInInspectorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.PreventEditInInspectorAttribute.html",
+          "hash": "4Hwqfy/wuz7Nsqc2x5V6mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.PreventEditInInspectorPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.PreventEditInInspectorPropertyDrawer.html",
+          "hash": "IXnABYWZew5crLWHWtLvYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ProfilerScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ProfilerScope.html",
+          "hash": "k28IgQaPV7L8Cr5bPDZ/SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.QuadraticEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.QuadraticEase.html",
+          "hash": "01VQtu+7qDw3SV0Iv0v3sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.QuarticEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.QuarticEase.html",
+          "hash": "Pnq2V3rsVdlWklcFtTgklA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.QuinticEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.QuinticEase.html",
+          "hash": "HRJN9V+8eRxrdIp7IvJ2UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Range.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Range.html",
+          "hash": "iVBvw8n3QavbrR72fEllkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.RangeDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.RangeDrawer.html",
+          "hash": "GTOUmMdDeNUhJg0Zq5bCjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.RectangleDebugDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.RectangleDebugDrawer.html",
+          "hash": "3Xg3Nb83h4MPGdwu1Q7/iA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ScenePathAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ScenePathAttribute.html",
+          "hash": "DIynBkJOanscQ+Cnh62UFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ScenePathAttributePropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ScenePathAttributePropertyDrawer.html",
+          "hash": "t6chlYZjNNsUoZgF01lFtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.ScriptingDefines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.ScriptingDefines.html",
+          "hash": "AntM8Gp9HeuWtYHQBw/S+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Signal-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Signal-1.html",
+          "hash": "i/zSLNPV/ysxrJ6st1vSNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Signal-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Signal-2.html",
+          "hash": "bh+3cvVkiG0rDJGWOsIcrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Signal-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Signal-3.html",
+          "hash": "0SERBMjglkZMXC/5Bh/xfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Signal-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Signal-4.html",
+          "hash": "ScJR2b3+vXHzvcBAru2a/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Signal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Signal.html",
+          "hash": "iR3OcG9pUEi8N4eldTSdNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.SignalBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.SignalBase-2.html",
+          "hash": "aOctBkqTcP+msTZApMZ0aQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.SignalManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.SignalManager-1.html",
+          "hash": "bT28TXl46bxxvEQw//c6EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.SineEase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.SineEase.html",
+          "hash": "ME4/1QFcg8Cla70qycSoNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.SingletonBehavior-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.SingletonBehavior-1.html",
+          "hash": "DB1Xvdp4hJYIcCxEQ2vMOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.State.html",
+          "hash": "eqKylBnGhB5uXQ3952ezpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.StateLink.TransitionCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.StateLink.TransitionCondition.html",
+          "hash": "ZtbyWjw9IE4gDre/1YVMsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.StateLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.StateLink.html",
+          "hash": "Ovrbyic+P5jEFDpqPtmX5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.StateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.StateMachine.html",
+          "hash": "ujnsewz0UEf5LIKdDTopng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.StateMachineBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.StateMachineBehavior.html",
+          "hash": "sZEIlbO9IP9/wYJhmJGrTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TaskScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TaskScheduler.html",
+          "hash": "rBNZ33ZpYTTdkhygHdAF8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TextDebugDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TextDebugDrawer.html",
+          "hash": "XJlthfD2JgAG9FWgUSZb+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TextIndentHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TextIndentHelper.html",
+          "hash": "Z9Y69WwuhC+QsPN0yOy+HQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TimeScale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TimeScale.html",
+          "hash": "Nj2R0ic6R8XZ4P8Oj9h88Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TimedDebugDrawModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TimedDebugDrawModifier.html",
+          "hash": "6MkOGUPOk7wVQ/zG9GrydA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Timer.html",
+          "hash": "qfk8Jct5SDB+77wuYJbRyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TransformDebugDrawModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TransformDebugDrawModifier.html",
+          "hash": "RFMYMYQnXCPHrJsUfTXNEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TransformEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TransformEditor.html",
+          "hash": "YvK2C/D+ifywpXKthjX2Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.TypeExtensions.html",
+          "hash": "EW1Bz2LVfjwL3/v/ReZJaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.UIStack.Transition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.UIStack.Transition.html",
+          "hash": "FyFVEuHALR5K7tSpTofrlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.UIStack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.UIStack.html",
+          "hash": "uFblUqc63zK5dzuyqaKrlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.html",
+          "hash": "sZvqJqTfOwStLRb+U5776Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "4ZOFIhvbfDt3iWtg8V14Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "oAwnCcnzjnJwfC5tlEuS5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Examples_DebugDraw.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/Examples_DebugDraw.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Examples_Ease.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Examples_Ease.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Examples_PathAttribute.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Examples_PathAttribute.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Examples_PreventEditInInspectorAttribute.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/Examples_PreventEditInInspectorAttribute.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Examples_ScenePathAttribute.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/Examples_ScenePathAttribute.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "DLZygPcRyfKGdHJ2/ULTzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "8HK3mJngmwQOPTTTkOk6Vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "user-manual/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "user-manual/intro.html",
+          "hash": "PksH4YyyRaz1CVOb6yvJpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "user-manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "user-manual/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 114,
+          "skipped_file_count": 114
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

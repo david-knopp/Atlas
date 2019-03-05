@@ -44,11 +44,11 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "Atlas.Docs/**"
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "Atlas.Docs",
     "overwrite": "apispec/*.md",
     "globalMetadataFiles": [],
     "globalMetadata": {

@@ -35,6 +35,7 @@ items:
       <CustomPropertyDrawer(GetType(MinValueAttribute))>
 
       Public NotInheritable Class MinValuePropertyDrawer
+
           Inherits PropertyDrawer
   inheritance:
   - System.Object

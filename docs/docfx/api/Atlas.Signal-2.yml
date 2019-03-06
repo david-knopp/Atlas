@@ -35,7 +35,9 @@ items:
       description: Second argument type
     content.vb: >-
       Public Class Signal(Of T1, T2)
+
           Inherits SignalBase(Of ICommand(Of T1, T2), Action(Of T1, T2))
+
           Implements ISignal
   inheritance:
   - System.Object

@@ -37,6 +37,7 @@ items:
     content: 'public sealed class TaskScheduler : IScheduledTask'
     content.vb: >-
       Public NotInheritable Class TaskScheduler
+
           Implements IScheduledTask
   seealso:
   - linkId: Atlas.IScheduledTask

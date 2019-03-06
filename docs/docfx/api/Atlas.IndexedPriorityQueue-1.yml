@@ -40,6 +40,7 @@ items:
   syntax:
     content: >-
       public sealed class IndexedPriorityQueue<T>
+
           where T : IComparable<T>
     typeParameters:
     - id: T

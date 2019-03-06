@@ -42,6 +42,7 @@ items:
       <Serializable>
 
       Public NotInheritable Class Ease
+
           Implements ISerializationCallbackReceiver
   inheritance:
   - System.Object

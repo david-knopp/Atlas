@@ -34,6 +34,7 @@ items:
     content: 'public sealed class Effect : MonoBehaviour'
     content.vb: >-
       Public NotInheritable Class Effect
+
           Inherits MonoBehaviour
   seealso:
   - linkId: Atlas.EffectEmitterBase

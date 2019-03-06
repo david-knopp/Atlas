@@ -35,6 +35,7 @@ items:
       <CustomPropertyDrawer(GetType(Range))>
 
       Public NotInheritable Class RangeDrawer
+
           Inherits PropertyDrawer
   inheritance:
   - System.Object

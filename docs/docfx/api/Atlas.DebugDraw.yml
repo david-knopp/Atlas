@@ -42,6 +42,7 @@ items:
     content: 'public sealed class DebugDraw : SingletonBehavior<DebugDraw>'
     content.vb: >-
       Public NotInheritable Class DebugDraw
+
           Inherits SingletonBehavior(Of DebugDraw)
   inheritance:
   - System.Object

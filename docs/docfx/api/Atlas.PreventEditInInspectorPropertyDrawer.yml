@@ -35,6 +35,7 @@ items:
       <CustomPropertyDrawer(GetType(PreventEditInInspectorAttribute))>
 
       Public NotInheritable Class PreventEditInInspectorPropertyDrawer
+
           Inherits PropertyDrawer
   inheritance:
   - System.Object

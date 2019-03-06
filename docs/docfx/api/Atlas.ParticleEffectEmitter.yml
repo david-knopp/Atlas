@@ -37,6 +37,7 @@ items:
       <RequireComponent(GetType(ParticleSystem))>
 
       Public NotInheritable Class ParticleEffectEmitter
+
           Inherits EffectEmitterBase
   inheritance:
   - System.Object

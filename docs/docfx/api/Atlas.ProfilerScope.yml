@@ -32,6 +32,7 @@ items:
     content: 'public struct ProfilerScope : IDisposable'
     content.vb: >-
       Public Structure ProfilerScope
+
           Implements IDisposable
   seealso:
   - linkId: Atlas.GUIColorScope

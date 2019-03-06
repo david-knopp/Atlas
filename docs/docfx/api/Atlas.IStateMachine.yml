@@ -130,6 +130,7 @@ items:
   syntax:
     content: >-
       void AddState<StateType>(StateType state)
+
           where StateType : State
     parameters:
     - id: state
@@ -166,6 +167,7 @@ items:
   syntax:
     content: >-
       void RemoveState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType
@@ -199,6 +201,7 @@ items:
   syntax:
     content: >-
       StateType GetState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType
@@ -234,6 +237,7 @@ items:
   syntax:
     content: >-
       void SetState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType

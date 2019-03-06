@@ -42,6 +42,7 @@ items:
       description: Type of callback listeners to allow
     content.vb: >-
       Public Class SignalBase(Of TCommandBase, TAction)
+
           Implements ISignal
   inheritance:
   - System.Object
@@ -123,6 +124,7 @@ items:
   syntax:
     content: >-
       public void AddCommand<TCommand>(TCommand command)
+
           where TCommand : TCommandBase
     parameters:
     - id: command
@@ -167,6 +169,7 @@ items:
   syntax:
     content: >-
       public void AddCommand<TCommand>()
+
           where TCommand : TCommandBase
     typeParameters:
     - id: TCommand
@@ -207,6 +210,7 @@ items:
   syntax:
     content: >-
       public void RemoveCommand<TCommand>()
+
           where TCommand : TCommandBase
     typeParameters:
     - id: TCommand

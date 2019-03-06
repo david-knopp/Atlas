@@ -34,6 +34,7 @@ items:
     content: 'public struct BillboardDebugDrawModifier : IDebugDrawer'
     content.vb: >-
       Public Structure BillboardDebugDrawModifier
+
           Implements IDebugDrawer
   seealso:
   - linkId: Atlas.DebugDraw

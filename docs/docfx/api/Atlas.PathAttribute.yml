@@ -38,7 +38,9 @@ items:
       <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
 
       Public NotInheritable Class PathAttribute
+
           Inherits PropertyAttribute
+
           Implements _Attribute
   seealso:
   - linkId: Atlas.ScenePathAttribute

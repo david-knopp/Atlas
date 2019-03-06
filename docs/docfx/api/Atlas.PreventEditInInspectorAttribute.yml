@@ -34,7 +34,9 @@ items:
       <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
 
       Public NotInheritable Class PreventEditInInspectorAttribute
+
           Inherits PropertyAttribute
+
           Implements _Attribute
   inheritance:
   - System.Object

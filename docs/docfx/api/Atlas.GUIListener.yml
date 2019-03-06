@@ -30,6 +30,7 @@ items:
     content: 'public sealed class GUIListener : SingletonBehavior<GUIListener>'
     content.vb: >-
       Public NotInheritable Class GUIListener
+
           Inherits SingletonBehavior(Of GUIListener)
   inheritance:
   - System.Object

@@ -36,6 +36,7 @@ items:
       <CustomPropertyDrawer(GetType(ScenePathAttribute))>
 
       Public NotInheritable Class ScenePathAttributePropertyDrawer
+
           Inherits PropertyDrawer
   inheritance:
   - System.Object

@@ -35,6 +35,7 @@ items:
     content: 'public abstract class EffectEmitterBase : MonoBehaviour'
     content.vb: >-
       Public MustInherit Class EffectEmitterBase
+
           Inherits MonoBehaviour
   inheritance:
   - System.Object

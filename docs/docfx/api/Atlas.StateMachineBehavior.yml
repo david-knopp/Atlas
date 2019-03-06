@@ -38,7 +38,9 @@ items:
     content: 'public class StateMachineBehavior : MonoBehaviour, IStateMachine'
     content.vb: >-
       Public Class StateMachineBehavior
+
           Inherits MonoBehaviour
+
           Implements IStateMachine
   seealso:
   - linkId: Atlas.StateMachine
@@ -162,6 +164,7 @@ items:
   syntax:
     content: >-
       public void AddState<StateType>(StateType state)
+
           where StateType : State
     parameters:
     - id: state
@@ -208,6 +211,7 @@ items:
   syntax:
     content: >-
       public void RemoveState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType
@@ -250,6 +254,7 @@ items:
   syntax:
     content: >-
       public StateType GetState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType
@@ -295,6 +300,7 @@ items:
   syntax:
     content: >-
       public void SetState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType

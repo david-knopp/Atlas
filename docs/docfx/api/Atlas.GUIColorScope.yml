@@ -31,6 +31,7 @@ items:
     content: 'public struct GUIColorScope : IDisposable'
     content.vb: >-
       Public Structure GUIColorScope
+
           Implements IDisposable
   seealso:
   - linkId: Atlas.ProfilerScope

@@ -30,7 +30,9 @@ items:
     content: 'public class Signal : SignalBase<ICommand, Action>, ISignal'
     content.vb: >-
       Public Class Signal
+
           Inherits SignalBase(Of ICommand, Action)
+
           Implements ISignal
   inheritance:
   - System.Object

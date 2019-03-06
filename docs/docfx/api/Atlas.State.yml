@@ -37,6 +37,7 @@ items:
     content: 'public abstract class State : ITickable'
     content.vb: >-
       Public MustInherit Class State
+
           Implements ITickable
   seealso:
   - linkId: Atlas.IStateMachine

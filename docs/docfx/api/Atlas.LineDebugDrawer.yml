@@ -33,6 +33,7 @@ items:
     content: 'public struct LineDebugDrawer : IDebugDrawer'
     content.vb: >-
       Public Structure LineDebugDrawer
+
           Implements IDebugDrawer
   seealso:
   - linkId: Atlas.DebugDraw

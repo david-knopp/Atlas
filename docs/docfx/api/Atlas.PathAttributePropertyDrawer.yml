@@ -35,6 +35,7 @@ items:
       <CustomPropertyDrawer(GetType(PathAttribute))>
 
       Public NotInheritable Class PathAttributePropertyDrawer
+
           Inherits PropertyDrawer
   inheritance:
   - System.Object

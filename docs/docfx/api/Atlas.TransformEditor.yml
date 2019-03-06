@@ -35,7 +35,9 @@ items:
       <CustomEditor(GetType(Transform))>
 
       Public NotInheritable Class TransformEditor
+
           Inherits Editor
+
           Implements IPreviewable, IToolModeOwner
   inheritance:
   - System.Object

@@ -38,6 +38,7 @@ items:
     content: 'public class StateMachine : IStateMachine, ITickable'
     content.vb: >-
       Public Class StateMachine
+
           Implements IStateMachine, ITickable
   seealso:
   - linkId: Atlas.StateMachineBehavior
@@ -190,6 +191,7 @@ items:
   syntax:
     content: >-
       public void AddState<StateType>(StateType state)
+
           where StateType : State
     parameters:
     - id: state
@@ -236,6 +238,7 @@ items:
   syntax:
     content: >-
       public void RemoveState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType
@@ -278,6 +281,7 @@ items:
   syntax:
     content: >-
       public StateType GetState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType
@@ -323,6 +327,7 @@ items:
   syntax:
     content: >-
       public void SetState<StateType>()
+
           where StateType : State
     typeParameters:
     - id: StateType

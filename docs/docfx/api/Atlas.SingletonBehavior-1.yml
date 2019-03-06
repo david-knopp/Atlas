@@ -36,6 +36,7 @@ items:
       description: Type of the derived class
     content.vb: >-
       Public MustInherit Class SingletonBehavior(Of TDerived As MonoBehaviour)
+
           Inherits MonoBehaviour
   inheritance:
   - System.Object

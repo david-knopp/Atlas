@@ -35,6 +35,7 @@ items:
       <CustomPropertyDrawer(GetType(MaxValueAttribute))>
 
       Public NotInheritable Class MaxValuePropertyDrawer
+
           Inherits PropertyDrawer
   inheritance:
   - System.Object

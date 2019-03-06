@@ -33,6 +33,7 @@ items:
     content: 'public struct TimedDebugDrawModifier : IDebugDrawer'
     content.vb: >-
       Public Structure TimedDebugDrawModifier
+
           Implements IDebugDrawer
   implements:
   - Atlas.IDebugDrawer

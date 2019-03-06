@@ -10,7 +10,7 @@ namespace Atlas
     /// <summary>
     /// Overrides the default Transform editor that adds handy buttons for resetting transform values
     /// </summary>
-    [CustomEditor( typeof( Transform ) )]
+    [CustomEditor( typeof( Transform ) ), CanEditMultipleObjects]
     public sealed class TransformEditor : Editor
     {
         public override void OnInspectorGUI()

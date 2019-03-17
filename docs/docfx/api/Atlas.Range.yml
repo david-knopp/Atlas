@@ -32,7 +32,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRepresents a closed mathematical interval of float values\n"
   example: []
@@ -75,7 +75,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe minimum value of the range (inclusive)\n"
   example: []
@@ -108,7 +108,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 19
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe maximum value of the range (inclusive)\n"
   example: []
@@ -141,7 +141,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 25
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nReturns a random number between <xref href=\"Atlas.Range.m_minValue\" data-throw-if-not-resolved=\"false\"></xref> (inclusive) and <xref href=\"Atlas.Range.m_maxValue\" data-throw-if-not-resolved=\"false\"></xref> (inclusive)\n"
   example: []
@@ -176,7 +176,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 37
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nReturns a linearly interpolated value between <xref href=\"Atlas.Range.m_minValue\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Atlas.Range.m_maxValue\" data-throw-if-not-resolved=\"false\"></xref>\nwhere an input <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code> of 0 will return <xref href=\"Atlas.Range.m_minValue\" data-throw-if-not-resolved=\"false\"></xref>, and an input of 1 will\nreturn <xref href=\"Atlas.Range.m_maxValue\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -215,7 +215,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 48
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalculates a value representing the normalized position of the provided <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> \nwithin the range, clamped to [0, 1]\n"
   example: []
@@ -254,7 +254,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 71
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDetermines whether or not the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> is within this numerical range (inclusive)\n"
   example: []
@@ -293,7 +293,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 82
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDetermines whether or not the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code> value is contained within this\nnumerical range (inclusive)\n"
   example: []
@@ -332,7 +332,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 93
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDetermines whether or not the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code> value overlaps this range\n"
   example: []
@@ -371,7 +371,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 105
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nClamps the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">value</code> between the range\n"
   example: []
@@ -413,7 +413,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 116
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCombines the range with the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code> into a mathematical union, creating\na range that spans both ranges\n"
   example: []
@@ -452,7 +452,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
     startLine: 131
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalculates the range of values where this range overlaps with the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">range</code>.\nIf the ranges don&apos;t overlap, an invalid range is returned.\n"
   example: []

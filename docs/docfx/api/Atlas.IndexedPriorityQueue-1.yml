@@ -33,7 +33,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nGeneric priority queue data structure, providing random access to its elements\n"
   example: []
@@ -79,7 +79,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCurrent number of elements in the queue\n"
   example: []
@@ -118,7 +118,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAccesses the element at the given index\n"
   example: []
@@ -162,7 +162,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 46
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -196,7 +196,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 55
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -234,7 +234,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 65
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nInserts a new value with the given index\n"
   example: []
@@ -275,7 +275,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 87
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nGets the top element of the queue\n"
   example: []
@@ -312,7 +312,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 97
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves the top element from the queue\n"
   example: []
@@ -349,7 +349,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 124
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUpdates the value at the given index. Note that this function is not\nas efficient as the DecreaseIndex/IncreaseIndex methods, but is\nbest when the value at the index is not known\n"
   remarks: This will cause either an upward or downard sort of the internal heap
@@ -391,7 +391,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 142
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDecreases the value at the current index to the given value\n"
   remarks: This will cause an upward sort of the internal heap
@@ -433,7 +433,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 161
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nIncreases the value at the current index to the given value\n"
   remarks: This will cause a downward sort of the internal heap
@@ -475,7 +475,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 177
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves all elements from the queue\n"
   example: []
@@ -509,7 +509,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
     startLine: 186
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSet the maximum capacity of the queue\n"
   example: []

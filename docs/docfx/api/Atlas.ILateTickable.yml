@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ILateTickable.cs
     startLine: 5
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA helper for providing a shared interface for updating objects in Unity&apos;s LateUpdate\n"
   example: []
@@ -55,7 +55,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ILateTickable.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nIntended to be called every late update cycle\n"
   example: []

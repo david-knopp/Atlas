@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/TypeExtensions.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nExtension methods for the <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> class\n"
   example: []
@@ -59,7 +59,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/TypeExtensions.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nFinds the primitive name for a given type. For instance, where <xref href=\"System.Type.FullName\" data-throw-if-not-resolved=\"false\"></xref>\nwould return &quot;System.Int32&quot; for an int, this method would return just &quot;int&quot;. This is useful\nfor creating more straight-forward code generation\n"
   example: []

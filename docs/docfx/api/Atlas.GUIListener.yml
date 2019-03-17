@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IMGUI/GUIListener.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA singleton class for registering and executing callbacks in Unity&apos;s OnGUI.\nSince simply including the OnGUI method in a <xref href=\"UnityEngine.MonoBehaviour\" data-throw-if-not-resolved=\"false\"></xref>\nwill cause undesirable heap allocations, this class is meant to collect those calls\ninto one place, which can be disabled in live builds or even lazily instantiated\nfor rendering debug information only when necessary.\n"
   example: []
@@ -72,7 +72,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IMGUI/GUIListener.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEvent that fires every OnGUI update cycle\n"
   example: []

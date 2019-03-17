@@ -37,7 +37,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA simple signal container meant to make dispatching and managing signal listeners across\nvarious systems easier\n"
   example: []
@@ -78,7 +78,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -112,7 +112,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 28
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds a zero-argument callback to the signal with the given key\n"
   example: []
@@ -157,7 +157,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 63
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds a single-argument callback to the signal with the given key\n"
   example: []
@@ -206,7 +206,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 99
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds a two-argument callback to the signal with the given key\n"
   example: []
@@ -257,7 +257,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 136
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds a three-argument callback to the signal with the given key\n"
   example: []
@@ -310,7 +310,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 174
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds a four-argument callback to the signal with the given key\n"
   example: []
@@ -365,7 +365,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 208
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves a zero-argument callback from the signal with the given key\n"
   example: []
@@ -410,7 +410,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 235
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves a single-argument callback from the signal with the given key\n"
   example: []
@@ -459,7 +459,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 263
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves a two-argument callback from the signal with the given key\n"
   example: []
@@ -510,7 +510,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 292
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves a three-argument callback from the signal with the given key\n"
   example: []
@@ -563,7 +563,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 322
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves a four-argument callback from the signal with the given key\n"
   example: []
@@ -618,7 +618,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 348
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDispatches the signal with the given key\n"
   example: []
@@ -660,7 +660,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 373
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDispatches the signal with the given key\n"
   example: []
@@ -709,7 +709,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 401
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDispatches the signal with the given key\n"
   example: []
@@ -763,7 +763,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 432
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDispatches the signal with the given key\n"
   example: []
@@ -822,7 +822,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalManager.cs
     startLine: 466
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDispatches the signal with the given key\n"
   example: []

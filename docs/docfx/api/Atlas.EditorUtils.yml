@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/EditorUtils.cs
     startLine: 6
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public static class EditorUtils
@@ -56,7 +56,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/EditorUtils.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nWhether or not the default editor tools (scale, rotate, translate, rect) are hidden\n"
   example: []

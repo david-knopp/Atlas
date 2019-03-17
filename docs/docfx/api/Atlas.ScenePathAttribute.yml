@@ -21,7 +21,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/ScenePathAttribute.cs
     startLine: 12
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nMarks the target string field as a scene path, and automatically provides a \ndropdown in the inspector listing all scenes contained within the project. \nIf the scene has not yet been added to build settings, an inspector warning is\ndisplayed with the ability to add it immediately\n"
   example: []

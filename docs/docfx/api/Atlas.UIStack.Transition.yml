@@ -25,7 +25,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nTypes of panel transitions\n"
   example: []
@@ -70,7 +70,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 21
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nNo transition\n"
   example: []
@@ -104,7 +104,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPlay a transition only in <xref href=\"Atlas.IUIPanel.OnPush(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> / <xref href=\"Atlas.IUIPanel.OnShow(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -138,7 +138,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 31
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPlay a transition only in <xref href=\"Atlas.IUIPanel.OnPop(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> / <xref href=\"Atlas.IUIPanel.OnHide(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -172,7 +172,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 36
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPlay all transitions\n"
   example: []

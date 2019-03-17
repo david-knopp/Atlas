@@ -27,7 +27,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/EffectEmitterBase.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nBase emitter class to be used with the <xref href=\"Atlas.Effect\" data-throw-if-not-resolved=\"false\"></xref> system\n"
   example: []
@@ -73,7 +73,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/EffectEmitterBase.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEvent that gets fired when the effect has finished emitting\n"
   example: []
@@ -106,7 +106,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/EffectEmitterBase.cs
     startLine: 23
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the effect is currently playing\n"
   example: []
@@ -143,7 +143,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/EffectEmitterBase.cs
     startLine: 32
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPlays the emitter\n"
   example: []
@@ -177,7 +177,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/EffectEmitterBase.cs
     startLine: 40
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nStops the emitter\n"
   example: []
@@ -211,7 +211,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/EffectEmitterBase.cs
     startLine: 50
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the emitter has finished emitting\n"
   example: []
@@ -250,7 +250,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/EffectEmitterBase.cs
     startLine: 58
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUpdates the emitter, called once per frame\n"
   example: []

@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
     startLine: 5
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public static class EditorGUILayoutUtils
@@ -58,7 +58,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public static void HorizontalLine(float height = 1F, float widthPct = 1F)
@@ -95,7 +95,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
     startLine: 12
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public static void HorizontalLine(Color color, float height = 1F, float widthPct = 1F)
@@ -134,7 +134,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
     startLine: 24
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public static void RichLabelField(string label)

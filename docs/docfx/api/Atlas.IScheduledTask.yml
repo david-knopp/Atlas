@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
     startLine: 6
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nInterface for tasks used when scheduling execution\n"
   example: []
@@ -58,7 +58,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: void ScheduledTick()

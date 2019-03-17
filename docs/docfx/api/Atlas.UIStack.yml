@@ -30,7 +30,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA stack data structure for management and presentation of UI Panels\n"
   example: []
@@ -67,7 +67,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 42
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -99,7 +99,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 50
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nNumber of panels currently in the stack\n"
   example: []
@@ -136,7 +136,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 60
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPushes the given panel onto the top of the stack, hiding all current panels, with\nfull transitions\n"
   example: []
@@ -172,7 +172,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 71
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPushes the given panel onto the top of the stack, hiding all current panels using\nthe given transitions\n"
   example: []
@@ -211,7 +211,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 93
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves the top panel from the stack, with full transitions\n"
   example: []
@@ -246,7 +246,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 103
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves the top panel from the stack, with the given transition(s)\n"
   example: []
@@ -285,7 +285,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 127
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves all panels from the stack. <xref href=\"Atlas.IUIPanel.OnPop(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> will not\nbe called.\n"
   example: []
@@ -317,7 +317,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 136
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nReturns the top <xref href=\"Atlas.IUIPanel\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -352,7 +352,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
     startLine: 147
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDetermines whether or not the given panel is contained within the stack\n"
   example: []

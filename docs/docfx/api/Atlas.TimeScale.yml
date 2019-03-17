@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
     startLine: 5
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nTypes of time scales used to reference Unity&apos;s various <xref href=\"UnityEngine.Time\" data-throw-if-not-resolved=\"false\"></xref> methods\n"
   example: []
@@ -59,7 +59,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUses default <xref href=\"UnityEngine.Time.time\" data-throw-if-not-resolved=\"false\"></xref>, thus allowing the timer to \nreact to slow-mo effects and game pauses\n"
   example: []
@@ -93,7 +93,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUses <xref href=\"UnityEngine.Time.timeScale\" data-throw-if-not-resolved=\"false\"></xref>-independent time to effectively \nmeasure &quot;real&quot; time\n"
   example: []
@@ -127,7 +127,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/TimeScale.cs
     startLine: 23
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUses the current <xref href=\"UnityEngine.Time.fixedTime\" data-throw-if-not-resolved=\"false\"></xref> to provide more \naccurate time measuring inside of Unity&apos;s FixedUpdate\n"
   example: []

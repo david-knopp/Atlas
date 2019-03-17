@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nExtension methods for the <xref href=\"System.Enum\" data-throw-if-not-resolved=\"false\"></xref> class\n"
   example: []
@@ -59,7 +59,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nDetermines if the given enum value has been marked with <xref href=\"System.ObsoleteAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []

@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs
     startLine: 251
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nFour-argument signal\n"
   example: []
@@ -85,7 +85,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs
     startLine: 260
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nInvokes the signal, calling all registered callback methods/commands\n"
   example: []

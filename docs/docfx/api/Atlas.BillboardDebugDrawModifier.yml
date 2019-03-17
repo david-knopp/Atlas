@@ -26,7 +26,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCauses the modified <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> to get rendered facing the given camera\n"
   example: []
@@ -73,7 +73,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor, automatically uses <xref href=\"UnityEngine.Camera.main\" data-throw-if-not-resolved=\"false\"></xref> for billboarding\n"
   example: []
@@ -112,7 +112,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
     startLine: 33
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -154,7 +154,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
     startLine: 43
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the modified element has finished drawing\n"
   example: []
@@ -193,7 +193,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
     startLine: 54
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nColor of the modified element\n"
   example: []
@@ -232,7 +232,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
     startLine: 63
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDraws the modified element\n"
   example: []

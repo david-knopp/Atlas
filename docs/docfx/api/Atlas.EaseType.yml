@@ -54,7 +54,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 2
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public enum EaseType
@@ -87,7 +87,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 4
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: LinearIn = 0
@@ -119,7 +119,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 5
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: LinearOut = 1
@@ -151,7 +151,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 6
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: LinearInOut = 2
@@ -183,7 +183,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: ExponentialIn = 3
@@ -215,7 +215,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: ExponentialOut = 4
@@ -247,7 +247,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: ExponentialInOut = 5
@@ -279,7 +279,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 12
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuadraticIn = 6
@@ -311,7 +311,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 13
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuadraticOut = 7
@@ -343,7 +343,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuadraticInOut = 8
@@ -375,7 +375,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: CubicIn = 9
@@ -407,7 +407,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: CubicOut = 10
@@ -439,7 +439,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 18
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: CubicInOut = 11
@@ -471,7 +471,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 20
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuarticIn = 12
@@ -503,7 +503,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 21
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuarticOut = 13
@@ -535,7 +535,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 22
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuarticInOut = 14
@@ -567,7 +567,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 24
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuinticIn = 15
@@ -599,7 +599,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 25
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuinticOut = 16
@@ -631,7 +631,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: QuinticInOut = 17
@@ -663,7 +663,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 28
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BackIn = 18
@@ -695,7 +695,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 29
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BackOut = 19
@@ -727,7 +727,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 30
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BackInOut = 20
@@ -759,7 +759,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 32
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BounceIn = 21
@@ -791,7 +791,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 33
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BounceOut = 22
@@ -823,7 +823,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 34
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BounceInOut = 23
@@ -855,7 +855,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 36
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: ElasticIn = 24
@@ -887,7 +887,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 37
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: ElasticOut = 25
@@ -919,7 +919,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 38
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: ElasticInOut = 26
@@ -951,7 +951,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 40
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: CircularIn = 27
@@ -983,7 +983,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 41
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: CircularOut = 28
@@ -1015,7 +1015,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 42
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: CircularInOut = 29
@@ -1047,7 +1047,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 44
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: SineIn = 30
@@ -1079,7 +1079,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 45
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: SineOut = 31
@@ -1111,7 +1111,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
     startLine: 46
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: SineInOut = 32

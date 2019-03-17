@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Attributes/ScenePathPropertyDrawer.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nHandles inspector drawing for <xref href=\"Atlas.ScenePathAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -80,7 +80,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Attributes/ScenePathPropertyDrawer.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
@@ -120,7 +120,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Attributes/ScenePathPropertyDrawer.cs
     startLine: 123
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public override float GetPropertyHeight(SerializedProperty property, GUIContent label)

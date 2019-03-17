@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEffect emitter for handling particle effect emissions\n"
   example: []
@@ -84,7 +84,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nStarts playing particle system, and its children (if it has any)\n"
   example: []
@@ -119,7 +119,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
     startLine: 23
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nStops the particle system, and its children (if it has any)\n"
   example: []
@@ -154,7 +154,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Emitters/ParticleEffectEmitter.cs
     startLine: 34
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the emitter has finished emitting\n"
   example: []

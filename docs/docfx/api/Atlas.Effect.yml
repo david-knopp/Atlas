@@ -26,7 +26,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nManages activation and destruction of all effect emitters (<xref href=\"Atlas.EffectEmitterBase\" data-throw-if-not-resolved=\"false\"></xref>) that comprise a game effect.\nBundling all elements of an effect into one self-contained, reusable package can be make working with effects that\ncontain various components easier, such as audio, particles, haptics, etc.\n"
   example: []
@@ -73,7 +73,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 49
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhen the effect will be activated\n"
   example: []
@@ -110,7 +110,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 57
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhen the effect will be destroyed\n"
   example: []
@@ -147,7 +147,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 65
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the effect is currently playing\n"
   example: []
@@ -184,7 +184,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 74
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nBegins playing all child emitters\n"
   example: []
@@ -216,7 +216,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 87
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nStops all child emitters\n"
   example: []

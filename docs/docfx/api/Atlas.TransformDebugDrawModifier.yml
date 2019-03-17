@@ -26,7 +26,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nTransforms the given <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> into world space\n"
   example: []
@@ -70,7 +70,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -109,7 +109,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -151,7 +151,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
     startLine: 35
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the modified element has finished drawing\n"
   example: []
@@ -190,7 +190,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
     startLine: 46
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nColor of the modified element\n"
   example: []
@@ -229,7 +229,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
     startLine: 55
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDraws the modified element\n"
   example: []

@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA concrete object representing the link from one state to another\n"
   example: []
@@ -67,7 +67,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
     startLine: 24
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -106,7 +106,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
     startLine: 36
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe state to transition to when the condition satisfied\n"
   example: []
@@ -145,7 +145,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
     startLine: 44
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not a transition to <xref href=\"Atlas.StateLink.NextState\" data-throw-if-not-resolved=\"false\"></xref> is desired\n"
   example: []

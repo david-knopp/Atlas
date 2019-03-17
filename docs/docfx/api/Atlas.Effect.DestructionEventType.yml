@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 33
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEvent defining how the effect will be destroyed\n"
   example: []
@@ -58,7 +58,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 38
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDestroy when all child emitters finish\n"
   example: []
@@ -92,7 +92,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 43
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nManually destroy via code (by calling <xref href=\"UnityEngine.Object.Destroy(UnityEngine.Object%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref>)\n"
   example: []

@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nFolder path relativity type\n"
   example: []
@@ -59,7 +59,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 21
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe full path e.g. &quot;C:/Users/MichaelScott/Documents/&quot;\n"
   example: []
@@ -93,7 +93,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUses a path that is relative to the project&apos;s Assets folder e.g. &quot;Scripts/Runtime/&quot;\n"
   example: []
@@ -127,7 +127,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 31
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUses a path that is relative to the project&apos;s root folder e.g. &quot;Assets/Scripts/Runtime/&quot;\n"
   example: []

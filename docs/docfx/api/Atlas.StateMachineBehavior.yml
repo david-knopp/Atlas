@@ -30,7 +30,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe <xref href=\"UnityEngine.MonoBehaviour\" data-throw-if-not-resolved=\"false\"></xref> derivative of a <xref href=\"Atlas.StateMachine\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -79,7 +79,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe state that&apos;s currently executing, or null if no state is running\n"
   example: []
@@ -118,7 +118,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 22
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe state that was running before the current one, or null if no previous state exists\n"
   example: []
@@ -157,7 +157,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 32
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds the given state to the state machine\n"
   example: []
@@ -204,7 +204,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 42
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves the state of the given type. If multiple states exist with the given type,\nthe first state of the desired type is removed.\n"
   example: []
@@ -247,7 +247,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 53
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nGets the state of the given type. If multiple states exist with the given type,\nthe first state of the desired type is returned.\n"
   example: []
@@ -293,7 +293,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 62
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSets the current state to the state of the desired type\n"
   example: []
@@ -336,7 +336,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 70
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nReverts the state machine to the previously running state\n"
   example: []
@@ -370,7 +370,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 78
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUpdates the state machine, called in <xref href=\"Atlas.StateMachineBehavior.Update\" data-throw-if-not-resolved=\"false\"></xref> automatically\n"
   example: []
@@ -402,7 +402,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachineBehavior.cs
     startLine: 88
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUpdates the state machine, called by Unity\n"
   example: []

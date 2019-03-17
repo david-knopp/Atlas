@@ -30,7 +30,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA finite state machine data structure that executes states, and handles switching between them\n"
   example: []
@@ -74,7 +74,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe state that&apos;s currently executing, or null if no state is running\n"
   example: []
@@ -113,7 +113,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 24
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe state that was running before the current one, or null if no previous state exists\n"
   example: []
@@ -152,7 +152,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 33
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -184,7 +184,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 43
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds the given state to the state machine\n"
   example: []
@@ -231,7 +231,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 54
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves the state of the given type. If multiple states exist with the given type,\nthe first state of the desired type is removed.\n"
   example: []
@@ -274,7 +274,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 67
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nGets the state of the given type. If multiple states exist with the given type,\nthe first state of the desired type is returned.\n"
   example: []
@@ -320,7 +320,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 77
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSets the current state to the state of the desired type\n"
   example: []
@@ -363,7 +363,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 94
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nReverts the state machine to the previously running state\n"
   example: []
@@ -397,7 +397,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateMachine.cs
     startLine: 102
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUpdates the state machine\n"
   example: []

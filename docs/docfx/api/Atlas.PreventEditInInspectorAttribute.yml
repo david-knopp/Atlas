@@ -21,7 +21,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PreventEditInInspectorAttribute.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPrevents the target field from being edited in the inspector window while\nstill maintaining its visiblity\n"
   example: []

@@ -34,7 +34,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA system for rendering debug elements in the game view, as well as the scene view.\nOptions to enable in the editor or in standalone builds can be found in the Atlas\npreferences window.\n"
   example: []
@@ -84,7 +84,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the system is enabled\n"
   example: []
@@ -123,7 +123,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 339
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawLine(Vector3 startPos, Vector3 endPos, Color color)
@@ -162,7 +162,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 340
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawLine(Vector3 startPos, Vector3 endPos, Color color, float lifetime)
@@ -203,7 +203,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 341
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawRay(Vector3 pos, Vector3 dir, Color color)
@@ -242,7 +242,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 342
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawRay(Vector3 pos, Vector3 dir, Color color, float lifetime)
@@ -283,7 +283,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 343
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawCross(Vector3 pos, float lineLength, Color color)
@@ -322,7 +322,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 344
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawCross(Vector3 pos, float lineLength, Color color, float lifetime)
@@ -363,7 +363,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 345
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawCircle(Vector3 centerPos, float radius, Color color, int numSegments = 16)
@@ -404,7 +404,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 346
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawCircle(Vector3 centerPos, float radius, Color color, float lifetime, int numSegments = 16)
@@ -447,7 +447,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 347
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawText(Vector3 pos, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft)
@@ -490,7 +490,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 348
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawText(Vector3 pos, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft)
@@ -535,7 +535,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 349
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawText(Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, AnchorPosition anchor = AnchorPosition.TopLeft)
@@ -580,7 +580,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
     startLine: 350
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawText(Vector3 pos, Quaternion rotation, string text, Color color, float fontSize, float lifetime, AnchorPosition anchor = AnchorPosition.TopLeft)

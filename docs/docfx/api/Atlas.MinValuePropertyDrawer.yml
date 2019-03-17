@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nHandles inspector drawing for <xref href=\"Atlas.MinValueAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -80,7 +80,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)

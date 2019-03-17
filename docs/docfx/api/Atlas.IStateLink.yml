@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
     startLine: 5
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nInterface for objects that represent links between <xref href=\"Atlas.State\" data-throw-if-not-resolved=\"false\"></xref>s in a <xref href=\"Atlas.StateMachine\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -56,7 +56,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe state to transition to after the current state\n"
   example: []
@@ -91,7 +91,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not this link&apos;s transition condition is satisifed. This should return true when\na transition is desired, and false otherwise.\n"
   example: []

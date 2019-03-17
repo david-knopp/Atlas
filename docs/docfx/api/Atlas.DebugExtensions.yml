@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
     startLine: 4
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static class DebugExtensions
@@ -57,7 +57,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
     startLine: 6
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawX(Vector3 pos, float lineLength)
@@ -94,7 +94,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
     startLine: 18
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawX(Vector3 pos, float lineLength, Color color)

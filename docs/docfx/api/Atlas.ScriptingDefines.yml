@@ -28,7 +28,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nHelper class for adding/removing scripting define symbols \n"
   example: []
@@ -64,7 +64,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 18
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nDetermines if the given target group has the given symbol defined\n"
   example: []
@@ -108,7 +108,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 31
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nDetermines if the current build group has the given symbol defined\n"
   example: []
@@ -149,7 +149,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 41
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nAdds the given preprocessor definition to the PlayerSettings for the given build group\n"
   example: []
@@ -190,7 +190,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 57
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nAdds the given preprocessor definition to the PlayerSettings for all valid build groups\n"
   example: []
@@ -228,7 +228,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 73
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nRemoves the given preprocessor definition from the PlayerSettings for the given build groups\n"
   example: []
@@ -269,7 +269,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 89
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nRemoves the given preprocessor definition from the PlayerSettings for all valid build groups\n"
   example: []
@@ -307,7 +307,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/ScriptingDefines.cs
     startLine: 105
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nChecks if the given group is valid\n"
   example: []

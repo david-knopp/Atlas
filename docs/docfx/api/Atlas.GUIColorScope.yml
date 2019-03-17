@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/GUIColorScope.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA handy scope variable that sets <xref href=\"UnityEngine.GUI.color\" data-throw-if-not-resolved=\"false\"></xref> to the given color, \nand automatically resets it to its original color when the scope ends\n"
   example: []
@@ -64,7 +64,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/GUIColorScope.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -100,7 +100,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/GUIColorScope.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEnds the scope\n"
   example: []

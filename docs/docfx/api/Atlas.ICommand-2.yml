@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Command/ICommand.cs
     startLine: 30
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nInterface for creating object-based method callbacks with two argument\n"
   example: []
@@ -64,7 +64,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Command/ICommand.cs
     startLine: 35
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nExecutes the object. When registered with a <xref href=\"Atlas.Signal%602\" data-throw-if-not-resolved=\"false\"></xref>, this will get called upon <xref href=\"Atlas.Signal%602.Dispatch(%600%2c%601)\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []

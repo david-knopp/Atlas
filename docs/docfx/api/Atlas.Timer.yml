@@ -31,7 +31,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nProvides a simple interface for measuring elapsed time in seconds\n"
   example: []
@@ -64,7 +64,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -100,7 +100,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 27
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAmount of time that has elapsed (in seconds) since <xref href=\"Atlas.Timer.Start\" data-throw-if-not-resolved=\"false\"></xref> was last \ncalled, or 0 if it the timer has not been started\n<remark>When the timer is paused, the return value will be the amount of time \nmeasured before <xref href=\"Atlas.Timer.Pause\" data-throw-if-not-resolved=\"false\"></xref> was called</remark>\n"
   example: []
@@ -137,7 +137,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 49
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the timer is currently paused\n"
   example: []
@@ -174,7 +174,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 57
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the timer is currently measuring time\n"
   example: []
@@ -211,7 +211,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 69
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nStarts timing\n"
   example: []
@@ -243,7 +243,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 79
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nStarts timing, but starts at the given time offset instead of 0\n"
   example: []
@@ -279,7 +279,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 88
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nStops timing\n"
   example: []
@@ -311,7 +311,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 97
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nPauses timing\n"
   example: []
@@ -343,7 +343,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 105
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUnpauses the timer\n"
   example: []
@@ -375,7 +375,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
     startLine: 117
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nHelper function to determine if the timer&apos;s elapsed time is greater or \nequal to the given time\n"
   example: []

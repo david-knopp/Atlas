@@ -1,2 +1,6 @@
 - name: Introduction
-  href: intro.md
+  href: Intro.md
+- name: Math
+  items:
+  - name: Easing
+    href: Easing.md

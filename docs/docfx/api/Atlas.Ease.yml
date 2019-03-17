@@ -29,7 +29,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA serializable class for simplifying easing/tweening workflow\n"
   example: []
@@ -80,7 +80,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nType of ease function to use when evaluating\n"
   example: []
@@ -117,7 +117,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 31
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalculates the eased value of <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code>\n"
   example: []
@@ -159,7 +159,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 44
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEases between the two given float values at time <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code>\n"
   example: []
@@ -204,7 +204,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 57
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEases between two given <xref href=\"UnityEngine.Vector3\" data-throw-if-not-resolved=\"false\"></xref> values at time <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code>\n"
   example: []
@@ -249,7 +249,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 70
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEases between two given <xref href=\"UnityEngine.Vector2\" data-throw-if-not-resolved=\"false\"></xref> values at time <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code>\n"
   example: []
@@ -294,7 +294,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 83
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEases between two given <xref href=\"UnityEngine.Quaternion\" data-throw-if-not-resolved=\"false\"></xref> values at time <code data-dev-comment-type=\"paramref\" class=\"paramref\">t</code>\n"
   example: []
@@ -339,7 +339,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 90
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public void OnBeforeSerialize()
@@ -371,7 +371,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
     startLine: 94
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public void OnAfterDeserialize()

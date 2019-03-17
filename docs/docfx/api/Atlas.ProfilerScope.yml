@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
     startLine: 12
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA handy scope variable that starts a <xref href=\"UnityEngine.Profiling.Profiler\" data-throw-if-not-resolved=\"false\"></xref> sample, \nand ends it when the scope ends\n"
   example: []
@@ -65,7 +65,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
     startLine: 18
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -101,7 +101,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
     startLine: 29
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -140,7 +140,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
     startLine: 38
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEnds the scope\n"
   example: []

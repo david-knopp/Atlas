@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nInterface for debug draw elements\n"
   example: []
@@ -66,7 +66,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not this drawer has finished drawing yet,\nthis can be used to allow certain elements to be drawn across\nmultiple frames\n"
   example: []
@@ -101,7 +101,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
     startLine: 23
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe color of the element\n"
   example: []
@@ -135,7 +135,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
     startLine: 32
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDraws the element\n"
   example: []

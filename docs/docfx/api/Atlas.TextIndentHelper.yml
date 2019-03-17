@@ -28,7 +28,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nA helper object for making text indentation management easier, particularly when working\nwith code generation\n"
   example: []
@@ -61,7 +61,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nDefault helper for providing 1 tab per indentation\n"
   example: []
@@ -98,7 +98,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 20
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nDefault helper for providing 4 spaces per indentation\n"
   example: []
@@ -135,7 +135,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 27
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -174,7 +174,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 42
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nA string representing the current indentation level. \nThis will initially be an empty string.\n"
   example: []
@@ -211,7 +211,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 51
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nThe current level/number of indentations\n"
   example: []
@@ -248,7 +248,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 65
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nNumber of characters to use per indentation\n"
   example: []
@@ -285,7 +285,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
     startLine: 82
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nHelper method for applying the current indentation to the given string.\nThis is equivalent to prepending <xref href=\"Atlas.TextIndentHelper.Indent\" data-throw-if-not-resolved=\"false\"></xref> to the front of <code data-dev-comment-type=\"paramref\" class=\"paramref\">text</code>\n"
   example: []

@@ -26,7 +26,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IUIPanel.cs
     startLine: 6
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nInterface for UI panels, meant to be used when managed by a UIStack\n"
   example: []
@@ -62,7 +62,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IUIPanel.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the panel is currently active, will be set by the UIStack\n"
   example: []
@@ -96,7 +96,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IUIPanel.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalled when the panel is added to the UI stack\n"
   example: []
@@ -128,7 +128,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IUIPanel.cs
     startLine: 23
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalled when the panel is removed from the UIStack\n"
   example: []
@@ -160,7 +160,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IUIPanel.cs
     startLine: 29
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalled when the panel becomes the top (visible) panel in the <xref href=\"Atlas.UIStack\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -192,7 +192,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/IUIPanel.cs
     startLine: 35
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalled when the panel becomes hidden in the <xref href=\"Atlas.UIStack\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []

@@ -25,7 +25,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nMarks a target string field as a folder path, and automatically provides a button \nnext to the field in the inspector window that opens your system&apos;s folder browser\n"
   example: []
@@ -91,7 +91,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 55
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -130,7 +130,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 65
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nType of path target to represent\n"
   example: []
@@ -167,7 +167,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 70
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nType of path relativity to use\n"
   example: []
@@ -204,7 +204,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 75
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA string representing the desired relative path as defined by <xref href=\"Atlas.PathAttribute.RelativityType\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []

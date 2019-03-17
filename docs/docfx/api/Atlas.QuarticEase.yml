@@ -24,7 +24,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
     startLine: 5
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static class QuarticEase
@@ -58,7 +58,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static float In(float curTime, float duration)
@@ -97,7 +97,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
     startLine: 13
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static float Out(float curTime, float duration)
@@ -136,7 +136,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Math/Easing/QuarticEase.cs
     startLine: 19
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static float InOut(float curTime, float duration)

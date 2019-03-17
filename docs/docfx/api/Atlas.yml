@@ -102,7 +102,7 @@ items:
   fullName: Atlas
   type: Namespace
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
 references:
 - uid: Atlas.IStateLink
   commentId: T:Atlas.IStateLink

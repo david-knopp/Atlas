@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
     startLine: 12
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nOverrides the default Transform editor that adds handy buttons for resetting transform values\n"
   example: []
@@ -30,9 +30,13 @@ items:
     content: >-
       [CustomEditor(typeof(Transform))]
 
+      [CanEditMultipleObjects]
+
       public sealed class TransformEditor : Editor, IPreviewable, IToolModeOwner
     content.vb: >-
       <CustomEditor(GetType(Transform))>
+
+      <CanEditMultipleObjects>
 
       Public NotInheritable Class TransformEditor
 
@@ -50,6 +54,9 @@ items:
     arguments:
     - type: System.Type
       value: UnityEngine.Transform
+  - type: UnityEditor.CanEditMultipleObjects
+    ctor: UnityEditor.CanEditMultipleObjects.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   - sealed
@@ -78,7 +85,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public override void OnInspectorGUI()

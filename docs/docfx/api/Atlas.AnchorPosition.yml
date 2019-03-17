@@ -26,7 +26,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
     startLine: 6
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAn enumeration for various types of UI anchoring positions\n"
   example: []
@@ -64,7 +64,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: TopLeft = 1
@@ -96,7 +96,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: TopRight = 2
@@ -128,7 +128,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BottomLeft = 3
@@ -160,7 +160,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: BottomRight = 4
@@ -192,7 +192,7 @@ items:
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
     startLine: 12
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: Center = 5

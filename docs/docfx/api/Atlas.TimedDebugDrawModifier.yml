@@ -25,7 +25,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCauses the modified <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> to render for the given amount of time\n"
   example: []
@@ -69,7 +69,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -108,7 +108,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
     startLine: 27
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the modified element has finished drawing\n"
   example: []
@@ -147,7 +147,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
     startLine: 38
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nColor of the modified element\n"
   example: []
@@ -186,7 +186,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
     startLine: 47
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDraws the modified element\n"
   example: []

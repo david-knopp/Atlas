@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 37
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nType of path target to represent\n"
   example: []
@@ -58,7 +58,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 42
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRepresents the path of a file\n"
   example: []
@@ -92,7 +92,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
     startLine: 47
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRepresents the path of a directory\n"
   example: []

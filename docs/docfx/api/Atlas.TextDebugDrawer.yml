@@ -25,7 +25,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
     startLine: 12
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDebug text element\n"
   remarks: "Inspired by LotteMakesStuff&apos;s segment font: https://gist.github.com/LotteMakesStuff/ceb66cb29cb7d3c07da1207ab5d12045\nand https://www.keshikan.net/img/dseg_sample.png "
@@ -73,7 +73,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
     startLine: 21
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -118,7 +118,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
     startLine: 34
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not the text has finished drawing\n"
   example: []
@@ -157,7 +157,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
     startLine: 42
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe color of the text\n"
   example: []
@@ -196,7 +196,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
     startLine: 51
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDraws the text\n"
   example: []

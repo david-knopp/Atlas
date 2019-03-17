@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nEvent defining how the effect will be activated\n"
   example: []
@@ -58,7 +58,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 22
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nActivate on <xref href=\"Atlas.Effect.ActivationEventType.Start\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -92,7 +92,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
     startLine: 27
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nManually activate via code (by calling <xref href=\"Atlas.Effect.Play\" data-throw-if-not-resolved=\"false\"></xref>)\n"
   example: []

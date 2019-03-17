@@ -21,7 +21,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
     startLine: 17
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe callback for determining whether or not this link&apos;s transition\ncondition is satisfied\n"
   example: []

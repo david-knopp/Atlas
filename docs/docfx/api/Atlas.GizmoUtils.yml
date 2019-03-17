@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/GizmoUtils.cs
     startLine: 4
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static class GizmoUtils
@@ -56,7 +56,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/GizmoUtils.cs
     startLine: 6
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public static void DrawCircle(Vector3 pos, float radius, Vector3 axis, int numSegments = 20)

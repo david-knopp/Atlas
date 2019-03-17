@@ -22,7 +22,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Attributes/PreventEditInInspectorPropertyDrawer.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   summary: "\nHandles inspector drawing for <xref href=\"Atlas.PreventEditInInspectorAttribute\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -80,7 +80,7 @@ items:
     path: ../../Assets/Scripts/Editor/Utils/Attributes/PreventEditInInspectorPropertyDrawer.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp-Editor
+  - Atlas.Editor
   namespace: Atlas
   syntax:
     content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)

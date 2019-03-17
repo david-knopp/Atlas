@@ -25,7 +25,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/RectangleDebugDrawer.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDebug rectangle element\n"
   example: []
@@ -72,7 +72,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/RectangleDebugDrawer.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -114,7 +114,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/RectangleDebugDrawer.cs
     startLine: 32
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nWhether or not this drawer has finished drawing yet\n"
   example: []
@@ -153,7 +153,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/RectangleDebugDrawer.cs
     startLine: 40
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nColor of the rectangle\n"
   example: []
@@ -192,7 +192,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/RectangleDebugDrawer.cs
     startLine: 49
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDraws the rectangle\n"
   example: []

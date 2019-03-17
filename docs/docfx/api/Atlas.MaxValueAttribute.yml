@@ -23,7 +23,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSets a maximum value for the target field. \nAutomatically prevents assigning a value greater than the specified \nvalue when editing the field in the inspector window\n"
   example: []
@@ -89,7 +89,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
     startLine: 18
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -125,7 +125,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe maximum allowable value the field can have\n"
   example: []

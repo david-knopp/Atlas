@@ -28,7 +28,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 2
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public interface IStateMachine
@@ -59,7 +59,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 4
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: State CurrentState { get; }
@@ -92,7 +92,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 5
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: State PreviousState { get; }
@@ -125,7 +125,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: >-
@@ -162,7 +162,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 8
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: >-
@@ -196,7 +196,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: >-
@@ -232,7 +232,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: >-
@@ -266,7 +266,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: void RevertToPrevState()

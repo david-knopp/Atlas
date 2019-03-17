@@ -29,7 +29,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 10
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nBase signal class that provides a shared listener management for simpler derived signals\n"
   example: []
@@ -83,7 +83,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -117,7 +117,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 27
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRegisters the given command instance as a listener\n"
   example: []
@@ -162,7 +162,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 36
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCreates and registeres a command as a listener\n"
   example: []
@@ -203,7 +203,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 46
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRemoves all command instances of the given type\n"
   example: []
@@ -244,7 +244,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 58
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRegisters the given callback as a listener\n"
   example: []
@@ -282,7 +282,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 67
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUnregisters the given callback as a listener\n"
   example: []
@@ -320,7 +320,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 74
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: protected List<TCommandBase> m_commands
@@ -353,7 +353,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/SignalBase.cs
     startLine: 75
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: protected List<TAction> m_listeners

@@ -29,7 +29,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 11
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nHandles scheduling and distributing task execution between frames, attempting to balance frame-by-frame execution\nso one frame isn&apos;t heavier than the another.\n"
   example: []
@@ -74,7 +74,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 18
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -110,7 +110,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 28
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nNumber of tasks currently scheduled to execute\n"
   example: []
@@ -147,7 +147,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 36
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThis scheduler&apos;s current frame count\n"
   example: []
@@ -184,7 +184,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 48
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRegisters the given task for scheduled updates\n"
   example: []
@@ -226,7 +226,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 67
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRegisters the given task for scheduled updates, with an automatic phase assignment.\nThis method will be a bit slower than <xref href=\"Atlas.TaskScheduler.AddTask(Atlas.IScheduledTask%2cSystem.UInt32%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>, as it will evaluate the number of\nscheduled tasks for upcoming frames in an attempt to select an optimum phase offset for the given <code data-dev-comment-type=\"paramref\" class=\"paramref\">task</code>.\n"
   example: []
@@ -265,7 +265,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 78
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUnregisters the given task\n"
   example: []
@@ -301,7 +301,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 94
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nChanges the frequency for a task that is already managed by this scheduler\n"
   example: []
@@ -340,7 +340,7 @@ items:
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
     startLine: 106
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nUpdates the scheduler, and any tasks scheduled to execute on the scheduler&apos;s current <xref href=\"Atlas.TaskScheduler.Frame\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []

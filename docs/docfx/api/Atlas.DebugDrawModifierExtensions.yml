@@ -26,7 +26,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nHelpful extension methods to make working with <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> more user-friendly\n"
   example: []
@@ -63,7 +63,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
     startLine: 15
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nExtension method to modify the given <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref> by adding a draw lifetime\n"
   example: []
@@ -111,7 +111,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
     startLine: 26
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nExtension method to apply a transformation to a <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -159,7 +159,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
     startLine: 38
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nExtension method to apply a transformation to a <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -210,7 +210,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
     startLine: 50
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nExtension method to apply a billboarded transformation to the given <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>.\nUses <xref href=\"UnityEngine.Camera.main\" data-throw-if-not-resolved=\"false\"></xref> by default for billboarding\n"
   example: []
@@ -258,7 +258,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
     startLine: 62
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nExtension method to apply a billboarded transformation to the given <xref href=\"Atlas.IDebugDrawer\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []

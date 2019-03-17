@@ -21,7 +21,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Framework/Signal/ISignal.cs
     startLine: 2
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   syntax:
     content: public interface ISignal

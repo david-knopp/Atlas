@@ -29,7 +29,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 9
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nRepresents a single state within a <xref href=\"Atlas.IStateMachine\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
@@ -76,7 +76,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 14
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nConstructor\n"
   example: []
@@ -108,7 +108,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 22
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nThe <xref href=\"Atlas.IStateMachine\" data-throw-if-not-resolved=\"false\"></xref> that owns this state\n"
   example: []
@@ -145,7 +145,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 31
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nLinks to other states\n"
   example: []
@@ -182,7 +182,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 41
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds a link to another state\n"
   example: []
@@ -218,7 +218,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 51
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nAdds a link to another state\n"
   example: []
@@ -257,7 +257,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 60
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalled when the state is entered\n"
   example: []
@@ -291,7 +291,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 67
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalled when the state is updated\n"
   example: []
@@ -327,7 +327,7 @@ items:
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
     startLine: 74
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nCalled when the state is exited\n"
   example: []

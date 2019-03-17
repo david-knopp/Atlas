@@ -34,7 +34,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 7
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nA utility class to aid in working with bit fields\n"
   example: []
@@ -70,7 +70,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 16
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSets a flag in the given field\n"
   example: []
@@ -117,7 +117,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 34
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSets a flag in the given field\n"
   example: []
@@ -161,7 +161,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 45
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSets a flag in the given field\n"
   example: []
@@ -205,7 +205,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 56
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nSets a flag in the given field\n"
   example: []
@@ -249,7 +249,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 67
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nClears a flag in the given field\n"
   example: []
@@ -293,7 +293,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 78
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nClears a flag in the given field\n"
   example: []
@@ -337,7 +337,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 89
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nClears a flag in the given field\n"
   example: []
@@ -381,7 +381,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 100
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nToggles a flag in the given field\n"
   example: []
@@ -425,7 +425,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 111
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nToggles a flag in the given field\n"
   example: []
@@ -469,7 +469,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 122
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nToggles a flag in the given field\n"
   example: []
@@ -513,7 +513,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 133
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDetermines whether or not the flag is set in the given bit field\n"
   example: []
@@ -557,7 +557,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 144
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDetermines whether or not the flag is set in the given bit field\n"
   example: []
@@ -601,7 +601,7 @@ items:
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
     startLine: 155
   assemblies:
-  - Assembly-CSharp
+  - Atlas.Runtime
   namespace: Atlas
   summary: "\nDetermines whether or not the flag is set in the given bit field\n"
   example: []

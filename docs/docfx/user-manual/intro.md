@@ -22,7 +22,13 @@ Atlas is a library of reusable classes and tools designed to jump-start your Uni
 10. UI stack
 
 ## Installation
-#### Import the Unity Package (recommended)
+#### Import using the Package Manager (Unity 2019.1+) 
+Add `"com.davidknopp.atlas": "https://github.com/david-knopp/Atlas.git#ReleasePackage",` under the `"dependencies"` section of your project's manifest.json file, which should be located under the "Packages" folder in your project's root directory. Upon running Unity, Atlas should then be
+downloaded automatically.
+
+Note: to use this method, Git must be installed on the user machine and the Git executable path should be listed in the PATH system environment variable as explained [on the Unity forum](https://forum.unity.com/threads/git-support-on-package-manager.573673/ "Package Manager Git support - Unity Forum").
+
+#### Import the Unity Package
 Download the latest .unitypackage from the [releases page](https://github.com/david-knopp/Atlas/releases "releases page"). Then, simply drag and drop the [package](https://docs.unity3d.com/Manual/AssetPackages.html "package") into your Unity project.  
 
 In an effort to keep your project tidy, Atlas will place itself in `Assets/ThirdParty/Atlas/`, but can be moved freely afterward, as nothing within the library depends upon this directory.

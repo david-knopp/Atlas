@@ -94,7 +94,11 @@
 <li>UI stack</li>
 </ol>
 <h2 id="installation">Installation</h2>
-<h4 id="import-the-unity-package-recommended">Import the Unity Package (recommended)</h4>
+<h4 id="import-using-the-package-manager-unity-20191">Import using the Package Manager (Unity 2019.1+)</h4>
+<p>Add <code>&quot;com.davidknopp.atlas&quot;: &quot;https://github.com/david-knopp/Atlas.git#ReleasePackage&quot;,</code> under the <code>&quot;dependencies&quot;</code> section of your project's manifest.json file, which should be located under the &quot;Packages&quot; folder in your project's root directory. Upon running Unity, Atlas should then be
+downloaded automatically.</p>
+<p>Note: to use this method, Git must be installed on the user machine and the Git executable path should be listed in the PATH system environment variable as explained <a href="https://forum.unity.com/threads/git-support-on-package-manager.573673/" title="Package Manager Git support - Unity Forum">on the Unity forum</a>.</p>
+<h4 id="import-the-unity-package">Import the Unity Package</h4>
 <p>Download the latest .unitypackage from the <a href="https://github.com/david-knopp/Atlas/releases" title="releases page">releases page</a>. Then, simply drag and drop the <a href="https://docs.unity3d.com/Manual/AssetPackages.html" title="package">package</a> into your Unity project.</p>
 <p>In an effort to keep your project tidy, Atlas will place itself in <code>Assets/ThirdParty/Atlas/</code>, but can be moved freely afterward, as nothing within the library depends upon this directory.</p>
 <h4 id="copypaste-the-source-folders">Copy/paste the source folders</h4>
@@ -111,7 +115,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.4/docs/docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/david-knopp/Atlas/blob/Readme/docs/docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -60,7 +60,7 @@ namespace Atlas.Internal
                 Preferences.Set( c_runtimePathPrefKey, m_runtimePath );
             }
         }
-        #endregion // IPreferenceItem
+        #endregion IPreferenceItem
 
         private const string c_defaultNamespace = "Atlas";
         private const string c_namespacePrefKey = "Scripting_Namespace";

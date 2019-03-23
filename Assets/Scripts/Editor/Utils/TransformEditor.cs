@@ -1,6 +1,4 @@
-﻿#define ATLAS_TRANSFORM_EDIT_ENABLED
-
-#if ATLAS_TRANSFORM_EDIT_ENABLED
+﻿#if ATLAS_TRANSFORM_EDITOR_DISABLED == false
 
 using UnityEngine;
 using UnityEditor;

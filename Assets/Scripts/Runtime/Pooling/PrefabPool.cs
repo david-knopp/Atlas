@@ -48,6 +48,38 @@ namespace Atlas
         /// </remarks>
         /// <typeparam name="T">The object's prefab type</typeparam>
         /// <param name="prefab">Object prefab to make a copy of</param>
+        /// <returns>The instantiated/recycled clone</returns>
+        public T Instantiate<T>( T prefab ) where T : Component, IPoolable
+        {
+            return Instantiate( prefab, prefab.transform.position, prefab.transform.rotation, null );
+        }
+
+        /// <summary>
+        /// Returns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise
+        /// a recycled object will be re-used.
+        /// </summary>
+        /// <remarks>
+        /// Awake/Start will not get called on recycled objects. Instead, use <see cref="IPoolable.OnPoolInstantiate"/> for per-object startup code
+        /// </remarks>
+        /// <typeparam name="T">The object's prefab type</typeparam>
+        /// <param name="prefab">Object prefab to make a copy of</param>
+        /// <param name="position">Position of the new object</param>
+        /// <param name="rotation">Orientation of the new object</param>
+        /// <returns>The instantiated/recycled clone</returns>
+        public T Instantiate<T>( T prefab, Vector3 position, Quaternion rotation ) where T : Component, IPoolable
+        {
+            return Instantiate( prefab, position, rotation, null );
+        }
+
+        /// <summary>
+        /// Returns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise
+        /// a recycled object will be re-used.
+        /// </summary>
+        /// <remarks>
+        /// Awake/Start will not get called on recycled objects. Instead, use <see cref="IPoolable.OnPoolInstantiate"/> for per-object startup code
+        /// </remarks>
+        /// <typeparam name="T">The object's prefab type</typeparam>
+        /// <param name="prefab">Object prefab to make a copy of</param>
         /// <param name="position">Position of the new object</param>
         /// <param name="rotation">Orientation of the new object</param>
         /// <param name="parent">Parent that will be assigned to the new object</param>
@@ -82,6 +114,30 @@ namespace Atlas
         }
 
         /// <summary>
+        /// Returns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise
+        /// a recycled object will be re-used.
+        /// </summary>
+        /// <remarks>
+        /// Awake/Start will not get called on recycled objects. Instead, use <see cref="IPoolable.OnPoolInstantiate"/> for per-object startup code
+        /// </remarks>
+        /// <typeparam name="T">The object's prefab type</typeparam>
+        /// <param name="prefab">Object prefab to make a copy of</param>
+        /// <param name="parent">Parent that will be assigned to the new object</param>
+        /// <param name="instantiateInWorldSpace">Pass true to maintain the world position of the Object, and false to set the Object's position relative to its new parent</param>
+        /// <returns>The instantiated/recycled clone</returns>
+        public T Instantiate<T>( T prefab, Transform parent, bool instantiateInWorldSpace ) where T : Component, IPoolable
+        {
+            if ( instantiateInWorldSpace )
+            {
+                return Instantiate( prefab, prefab.transform.position, prefab.transform.rotation, parent );
+            }
+            else
+            {
+                return Instantiate( prefab, prefab.transform.localPosition, prefab.transform.localRotation, parent );
+            }
+        }
+
+        /// <summary>
         /// Returns the given object instance to the pool for recycling
         /// </summary>
         /// <remarks>
@@ -110,7 +166,7 @@ namespace Atlas
         }
         #endregion public
 
-        #region private        
+        #region private
         private Dictionary<Object, Queue<Object>> m_objectPool;
         private Dictionary<Object, Object> m_poolTypeLookup;
         private Transform m_pooledObjectsParent;

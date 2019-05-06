@@ -21,6 +21,15 @@ namespace Atlas
         }
 
         /// <summary>
+        /// Total number of objects this pool has internally instantiated
+        /// </summary>
+        public int ObjectCount
+        {
+            get;
+            private set;
+        }
+
+        /// <summary>
         /// Instantiates a specified number of objects for the given prefab. This can help eliminate runtime performance hits by
         /// front-loading object creation (on level load, for instance).
         /// </summary>
@@ -37,6 +46,8 @@ namespace Atlas
                 instance.gameObject.SetActive( false );
                 pooledObjects.Enqueue( instance );
             }
+
+            ObjectCount += count;
         }
 
         /// <summary>
@@ -103,6 +114,7 @@ namespace Atlas
             else
             {
                 instance = Object.Instantiate( prefab, position, rotation, parent );
+                ObjectCount++;
             }
 
             IPoolable poolable = instance as IPoolable;

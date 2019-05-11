@@ -11,6 +11,10 @@
         {
             "m_key": "Scripting_RuntimePath",
             "m_value": "Scripts/Runtime/"
+        },
+        {
+            "m_key": "TransformEditor_State",
+            "m_value": "True"
         }
     ]
 }

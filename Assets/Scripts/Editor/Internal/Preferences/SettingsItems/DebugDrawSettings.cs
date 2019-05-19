@@ -1,14 +1,23 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using System.Collections.Generic;
 
 namespace Atlas.Internal
 {
-    internal sealed class DebugDrawPreferences : IPreferenceItem
+    internal sealed class DebugDrawSettings : ISettingsItem
     {
-        #region IPreferenceItem
+        #region ISettingsItem
         public string Name
         {
             get { return "Debug Draw"; }
+        }
+
+        public List<string> Keywords
+        {
+            get
+            {
+                return new List<string>() { "debug", "draw" };
+            }
         }
 
         public void OnInitialize()
@@ -58,8 +67,8 @@ namespace Atlas.Internal
                                                                   DebugDraw.IsEnabled );
                 }
             }
-        } 
-        #endregion // IPreferenceItem
+        }
+        #endregion ISettingsItem
 
         private enum State
         {

@@ -1,14 +1,23 @@
-﻿using UnityEditor;
+﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace Atlas.Internal
 {
-    internal sealed class TransformEditorPreferences : IPreferenceItem
+    internal sealed class TransformEditorSettings : ISettingsItem
     {
-        #region IPreferenceItem
+        #region ISettingsItem
         public string Name
         {
             get { return "Transform Editor"; }
+        }
+
+        public List<string> Keywords
+        {
+            get
+            {
+                return new List<string>() { "transform", "editor" };
+            }
         }
 
         public void OnInitialize()
@@ -30,8 +39,8 @@ namespace Atlas.Internal
                 UpdateDefineSymbols();
             }
         }
-        #endregion IPreferenceItem
-        
+        #endregion ISettingsItem
+
         private bool m_isEnabled;
 
         private const string c_statePrefKey = "TransformEditor_State";

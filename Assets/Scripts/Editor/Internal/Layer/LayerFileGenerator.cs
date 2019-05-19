@@ -12,7 +12,7 @@ namespace Atlas
     {
         public static string ProjectRelativeLayerFilePath
         {
-            get { return string.Format( "{0}/Layer.cs", ScriptingPreferences.RuntimePath ); }
+            get { return string.Format( "{0}/Layer.cs", ScriptingSettings.RuntimePath ); }
         }
 
         public static string FullLayerFilePath
@@ -30,7 +30,7 @@ namespace Atlas
             stringBuilder.Append( "// This file was generated using Atlas, to re-generate use 'Atlas/Generate Layer File' from the Unity Editor toolbar\n" );
             stringBuilder.Append( "//   To change the destination folder or namespace for this file, use 'Edit/Preferences/Atlas'\n\n" );
 
-            stringBuilder.AppendFormat( "namespace {0}\n", ScriptingPreferences.NamespaceName );
+            stringBuilder.AppendFormat( "namespace {0}\n", ScriptingSettings.NamespaceName );
             stringBuilder.Append( "{\n" );
             indent.IndentLevel++;
 
@@ -67,7 +67,7 @@ namespace Atlas
             AssetDatabase.ImportAsset( string.Format( "Assets/{0}", ProjectRelativeLayerFilePath ), ImportAssetOptions.ForceUpdate );
 
             Debug.LogFormat( "Generated `Layer.cs` at `{0}`\nTo change the destination folder or namespace for this file, use 'Edit/Preferences/Atlas'", 
-                             ScriptingPreferences.RuntimePath );
+                             ScriptingSettings.RuntimePath );
         }
 
         private static void AppendClass<TElement>( StringBuilder stringBuilder, string className, TextIndentHelper indent, Func<string, TElement> elementValueCallback )

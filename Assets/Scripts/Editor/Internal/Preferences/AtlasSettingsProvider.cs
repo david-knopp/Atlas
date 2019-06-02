@@ -44,7 +44,7 @@ namespace Atlas.Internal
 
         #region private
         private AtlasSettingsProvider( string path, SettingsScope scope )
-    : base( path, scope )
+            : base( path, scope )
         {
             Initialize();
         }

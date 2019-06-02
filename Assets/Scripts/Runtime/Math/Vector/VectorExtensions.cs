@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace VVS
+namespace Atlas
 {
     public static class VectorExtensions
     {

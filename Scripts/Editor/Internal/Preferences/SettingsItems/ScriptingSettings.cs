@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using UnityEditor;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Atlas.Internal
 {
-    internal sealed class ScriptingPreferences : IPreferenceItem
+    internal sealed class ScriptingSettings : ISettingsItem
     {
         public static string NamespaceName
         {
@@ -18,10 +18,18 @@ namespace Atlas.Internal
             get { return Preferences.Get( c_runtimePathPrefKey, "Scripts/Runtime/" ); }
         }
 
-        #region IPreferenceItem
+        #region ISettingsItem
         public string Name
         {
             get { return "Scripting"; }
+        }
+
+        public List<string> Keywords
+        {
+            get
+            {
+                return new List<string>() { "script", "scripting", "code", "generation" };
+            }
         }
 
         public void OnInitialize()
@@ -60,7 +68,7 @@ namespace Atlas.Internal
                 Preferences.Set( c_runtimePathPrefKey, m_runtimePath );
             }
         }
-        #endregion // IPreferenceItem
+        #endregion ISettingsItem
 
         private const string c_defaultNamespace = "Atlas";
         private const string c_namespacePrefKey = "Scripting_Namespace";

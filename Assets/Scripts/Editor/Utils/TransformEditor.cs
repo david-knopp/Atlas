@@ -69,9 +69,10 @@ namespace Atlas
             EditorGUILayout.LabelField( labelContent, labelOptions );
 
             Vector3 eulerAngles = property.quaternionValue.eulerAngles;
+            EditorGUIUtility.fieldWidth = 20f; // fix Vector3Field not lining up with PropertyField width when resizing Inspector window to minimum width
 
             EditorGUI.BeginChangeCheck();
-            eulerAngles = EditorGUILayout.Vector3Field( GUIContent.none, eulerAngles );
+            eulerAngles = EditorGUILayout.Vector3Field( GUIContent.none, eulerAngles, GUILayout.ExpandWidth( true ) );
             if ( EditorGUI.EndChangeCheck() )
             {
                 property.quaternionValue = Quaternion.Euler( eulerAngles );

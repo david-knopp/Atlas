@@ -20,6 +20,7 @@ Atlas is a library of reusable classes and tools designed to jump-start your Uni
 8. State machines
 9. Editor helpers
 10. UI stack
+11. Object pooling
 
 ## Installation
 #### Import using the Package Manager (Unity 2019.1+) 

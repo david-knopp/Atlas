@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ICommand&lt;T&gt;
+    <title>Struct GUIBackgroundColorScope
    | Atlas </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ICommand&lt;T&gt;
+    <meta name="title" content="Struct GUIBackgroundColorScope
    | Atlas ">
     <meta name="generator" content="docfx 2.40.10.0">
     
@@ -78,81 +78,42 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Atlas.ICommand`1">
+            <article class="content wrap" id="_content" data-uid="Atlas.GUIBackgroundColorScope">
   
   
-  <h1 id="Atlas_ICommand_1" data-uid="Atlas.ICommand`1" class="text-break">Interface ICommand&lt;T&gt;
+  <h1 id="Atlas_GUIBackgroundColorScope" data-uid="Atlas.GUIBackgroundColorScope" class="text-break">Struct GUIBackgroundColorScope
   </h1>
-  <div class="markdown level0 summary"><p>Interface for creating object-based method callbacks with a single argument</p>
+  <div class="markdown level0 summary"><p>A handy scope variable that sets <span class="xref">UnityEngine.GUI.backgroundColor</span> to the given color,
+and automatically resets it to its original color when the scope ends</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Atlas.html">Atlas</a></h6>
   <h6><strong>Assembly</strong>: Atlas.Runtime.dll</h6>
-  <h5 id="Atlas_ICommand_1_syntax">Syntax</h5>
+  <h5 id="Atlas_GUIBackgroundColorScope_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ICommand&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct GUIBackgroundColorScope : IDisposable</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Atlas_ICommand_1_examples"><strong>Examples</strong></h5>
-  <pre><code class="lang-csharp" name="ICommand">namespace Atlas.Examples
-{
-    public sealed class Example_Command
-    {
-        // command declaration
-        public struct ExampleCommand : ICommand&lt;float&gt;
-        {
-            public void Execute( float value )
-            {
-                UnityEngine.Debug.LogFormat( &quot;Command executed with value of {0}&quot;, value );
-            }
-        }
-
-        public void OnInjectDependencies( Signal&lt;float&gt; exampleSignal )
-        {
-            // instantiate a command object
-            ExampleCommand command = new ExampleCommand();
-
-            // register a command as a listener of the signal
-            exampleSignal.AddCommand( command );
-
-            // ...
-            // further calls to exampleSignal.Dispatch( float value ) will also
-            // invoke command.Execute( float value )
-        }
-    }
-}
-</code></pre>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_ICommand_1_Execute__0_.md&amp;value=---%0Auid%3A%20Atlas.ICommand%601.Execute(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_GUIBackgroundColorScope__ctor_UnityEngine_Color_System_Boolean_.md&amp;value=---%0Auid%3A%20Atlas.GUIBackgroundColorScope.%23ctor(UnityEngine.Color%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Framework/Command/ICommand.cs/#L24">View Source</a>
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Utils/Scopes/GUIBackgroundColorScope.cs/#L18">View Source</a>
   </span>
-  <a id="Atlas_ICommand_1_Execute_" data-uid="Atlas.ICommand`1.Execute*"></a>
-  <h4 id="Atlas_ICommand_1_Execute__0_" data-uid="Atlas.ICommand`1.Execute(`0)">Execute(T)</h4>
-  <div class="markdown level1 summary"><p>Executes the object. When registered with a <a class="xref" href="Atlas.Signal-1.html">Signal&lt;T&gt;</a>, this will get called upon <a class="xref" href="Atlas.Signal-1.html#Atlas_Signal_1_Dispatch__0_">Dispatch(T)</a></p>
+  <a id="Atlas_GUIBackgroundColorScope__ctor_" data-uid="Atlas.GUIBackgroundColorScope.#ctor*"></a>
+  <h4 id="Atlas_GUIBackgroundColorScope__ctor_UnityEngine_Color_System_Boolean_" data-uid="Atlas.GUIBackgroundColorScope.#ctor(UnityEngine.Color,System.Boolean)">GUIBackgroundColorScope(Color, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Execute(T arg)</code></pre>
+    <pre><code class="lang-csharp hljs">public GUIBackgroundColorScope(Color color, bool shouldSetColor = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -165,15 +126,44 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">arg</span></td>
-        <td></td>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>The target color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shouldSetColor</span></td>
+        <td><p>Optional conditional for bypassing color assignment</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_GUIBackgroundColorScope_Dispose.md&amp;value=---%0Auid%3A%20Atlas.GUIBackgroundColorScope.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Utils/Scopes/GUIBackgroundColorScope.cs/#L32">View Source</a>
+  </span>
+  <a id="Atlas_GUIBackgroundColorScope_Dispose_" data-uid="Atlas.GUIBackgroundColorScope.Dispose*"></a>
+  <h4 id="Atlas_GUIBackgroundColorScope_Dispose" data-uid="Atlas.GUIBackgroundColorScope.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Ends the scope</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
-      <div><a class="xref" href="Atlas.Signal-1.html">Signal</a>&lt;T&gt;</div>
+      <div><a class="xref" href="Atlas.ProfilerScope.html">ProfilerScope</a></div>
   </div>
 </article>
           </div>
@@ -183,10 +173,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/docs/docfx/apispec/ICommand-1.md/#L2" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_GUIBackgroundColorScope.md&amp;value=---%0Auid%3A%20Atlas.GUIBackgroundColorScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Framework/Command/ICommand.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Utils/Scopes/GUIBackgroundColorScope.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

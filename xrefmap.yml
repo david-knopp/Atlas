@@ -1321,6 +1321,12 @@ references:
   isSpec: "True"
   fullName: Atlas.EnumExtensions.IsObsolete
   nameWithType: EnumExtensions.IsObsolete
+- uid: Atlas.Example_InspectorButton
+  name: Example_InspectorButton
+  href: api/Atlas.Example_InspectorButton.html
+  commentId: T:Atlas.Example_InspectorButton
+  fullName: Atlas.Example_InspectorButton
+  nameWithType: Example_InspectorButton
 - uid: Atlas.ExponentialEase
   name: ExponentialEase
   href: api/Atlas.ExponentialEase.html
@@ -1385,18 +1391,50 @@ references:
   isSpec: "True"
   fullName: Atlas.GizmoUtils.DrawCircle
   nameWithType: GizmoUtils.DrawCircle
+- uid: Atlas.GUIBackgroundColorScope
+  name: GUIBackgroundColorScope
+  href: api/Atlas.GUIBackgroundColorScope.html
+  commentId: T:Atlas.GUIBackgroundColorScope
+  fullName: Atlas.GUIBackgroundColorScope
+  nameWithType: GUIBackgroundColorScope
+- uid: Atlas.GUIBackgroundColorScope.#ctor(UnityEngine.Color,System.Boolean)
+  name: GUIBackgroundColorScope(Color, Boolean)
+  href: api/Atlas.GUIBackgroundColorScope.html#Atlas_GUIBackgroundColorScope__ctor_UnityEngine_Color_System_Boolean_
+  commentId: M:Atlas.GUIBackgroundColorScope.#ctor(UnityEngine.Color,System.Boolean)
+  fullName: Atlas.GUIBackgroundColorScope.GUIBackgroundColorScope(UnityEngine.Color, System.Boolean)
+  nameWithType: GUIBackgroundColorScope.GUIBackgroundColorScope(Color, Boolean)
+- uid: Atlas.GUIBackgroundColorScope.#ctor*
+  name: GUIBackgroundColorScope
+  href: api/Atlas.GUIBackgroundColorScope.html#Atlas_GUIBackgroundColorScope__ctor_
+  commentId: Overload:Atlas.GUIBackgroundColorScope.#ctor
+  isSpec: "True"
+  fullName: Atlas.GUIBackgroundColorScope.GUIBackgroundColorScope
+  nameWithType: GUIBackgroundColorScope.GUIBackgroundColorScope
+- uid: Atlas.GUIBackgroundColorScope.Dispose
+  name: Dispose()
+  href: api/Atlas.GUIBackgroundColorScope.html#Atlas_GUIBackgroundColorScope_Dispose
+  commentId: M:Atlas.GUIBackgroundColorScope.Dispose
+  fullName: Atlas.GUIBackgroundColorScope.Dispose()
+  nameWithType: GUIBackgroundColorScope.Dispose()
+- uid: Atlas.GUIBackgroundColorScope.Dispose*
+  name: Dispose
+  href: api/Atlas.GUIBackgroundColorScope.html#Atlas_GUIBackgroundColorScope_Dispose_
+  commentId: Overload:Atlas.GUIBackgroundColorScope.Dispose
+  isSpec: "True"
+  fullName: Atlas.GUIBackgroundColorScope.Dispose
+  nameWithType: GUIBackgroundColorScope.Dispose
 - uid: Atlas.GUIColorScope
   name: GUIColorScope
   href: api/Atlas.GUIColorScope.html
   commentId: T:Atlas.GUIColorScope
   fullName: Atlas.GUIColorScope
   nameWithType: GUIColorScope
-- uid: Atlas.GUIColorScope.#ctor(UnityEngine.Color)
-  name: GUIColorScope(Color)
-  href: api/Atlas.GUIColorScope.html#Atlas_GUIColorScope__ctor_UnityEngine_Color_
-  commentId: M:Atlas.GUIColorScope.#ctor(UnityEngine.Color)
-  fullName: Atlas.GUIColorScope.GUIColorScope(UnityEngine.Color)
-  nameWithType: GUIColorScope.GUIColorScope(Color)
+- uid: Atlas.GUIColorScope.#ctor(UnityEngine.Color,System.Boolean)
+  name: GUIColorScope(Color, Boolean)
+  href: api/Atlas.GUIColorScope.html#Atlas_GUIColorScope__ctor_UnityEngine_Color_System_Boolean_
+  commentId: M:Atlas.GUIColorScope.#ctor(UnityEngine.Color,System.Boolean)
+  fullName: Atlas.GUIColorScope.GUIColorScope(UnityEngine.Color, System.Boolean)
+  nameWithType: GUIColorScope.GUIColorScope(Color, Boolean)
 - uid: Atlas.GUIColorScope.#ctor*
   name: GUIColorScope
   href: api/Atlas.GUIColorScope.html#Atlas_GUIColorScope__ctor_
@@ -1417,6 +1455,38 @@ references:
   isSpec: "True"
   fullName: Atlas.GUIColorScope.Dispose
   nameWithType: GUIColorScope.Dispose
+- uid: Atlas.GUIContentColorScope
+  name: GUIContentColorScope
+  href: api/Atlas.GUIContentColorScope.html
+  commentId: T:Atlas.GUIContentColorScope
+  fullName: Atlas.GUIContentColorScope
+  nameWithType: GUIContentColorScope
+- uid: Atlas.GUIContentColorScope.#ctor(UnityEngine.Color,System.Boolean)
+  name: GUIContentColorScope(Color, Boolean)
+  href: api/Atlas.GUIContentColorScope.html#Atlas_GUIContentColorScope__ctor_UnityEngine_Color_System_Boolean_
+  commentId: M:Atlas.GUIContentColorScope.#ctor(UnityEngine.Color,System.Boolean)
+  fullName: Atlas.GUIContentColorScope.GUIContentColorScope(UnityEngine.Color, System.Boolean)
+  nameWithType: GUIContentColorScope.GUIContentColorScope(Color, Boolean)
+- uid: Atlas.GUIContentColorScope.#ctor*
+  name: GUIContentColorScope
+  href: api/Atlas.GUIContentColorScope.html#Atlas_GUIContentColorScope__ctor_
+  commentId: Overload:Atlas.GUIContentColorScope.#ctor
+  isSpec: "True"
+  fullName: Atlas.GUIContentColorScope.GUIContentColorScope
+  nameWithType: GUIContentColorScope.GUIContentColorScope
+- uid: Atlas.GUIContentColorScope.Dispose
+  name: Dispose()
+  href: api/Atlas.GUIContentColorScope.html#Atlas_GUIContentColorScope_Dispose
+  commentId: M:Atlas.GUIContentColorScope.Dispose
+  fullName: Atlas.GUIContentColorScope.Dispose()
+  nameWithType: GUIContentColorScope.Dispose()
+- uid: Atlas.GUIContentColorScope.Dispose*
+  name: Dispose
+  href: api/Atlas.GUIContentColorScope.html#Atlas_GUIContentColorScope_Dispose_
+  commentId: Overload:Atlas.GUIContentColorScope.Dispose
+  isSpec: "True"
+  fullName: Atlas.GUIContentColorScope.Dispose
+  nameWithType: GUIContentColorScope.Dispose
 - uid: Atlas.GUIListener
   name: GUIListener
   href: api/Atlas.GUIListener.html
@@ -1460,6 +1530,40 @@ references:
   isSpec: "True"
   fullName: Atlas.HashCode.Combine
   nameWithType: HashCode.Combine
+- uid: Atlas.HashCode.Get*
+  name: Get
+  href: api/Atlas.HashCode.html#Atlas_HashCode_Get_
+  commentId: Overload:Atlas.HashCode.Get
+  isSpec: "True"
+  fullName: Atlas.HashCode.Get
+  nameWithType: HashCode.Get
+- uid: Atlas.HashCode.Get``2(``0,``1)
+  name: Get<T1, T2>(T1, T2)
+  href: api/Atlas.HashCode.html#Atlas_HashCode_Get__2___0___1_
+  commentId: M:Atlas.HashCode.Get``2(``0,``1)
+  name.vb: Get(Of T1, T2)(T1, T2)
+  fullName: Atlas.HashCode.Get<T1, T2>(T1, T2)
+  fullName.vb: Atlas.HashCode.Get(Of T1, T2)(T1, T2)
+  nameWithType: HashCode.Get<T1, T2>(T1, T2)
+  nameWithType.vb: HashCode.Get(Of T1, T2)(T1, T2)
+- uid: Atlas.HashCode.Get``3(``0,``1,``2)
+  name: Get<T1, T2, T3>(T1, T2, T3)
+  href: api/Atlas.HashCode.html#Atlas_HashCode_Get__3___0___1___2_
+  commentId: M:Atlas.HashCode.Get``3(``0,``1,``2)
+  name.vb: Get(Of T1, T2, T3)(T1, T2, T3)
+  fullName: Atlas.HashCode.Get<T1, T2, T3>(T1, T2, T3)
+  fullName.vb: Atlas.HashCode.Get(Of T1, T2, T3)(T1, T2, T3)
+  nameWithType: HashCode.Get<T1, T2, T3>(T1, T2, T3)
+  nameWithType.vb: HashCode.Get(Of T1, T2, T3)(T1, T2, T3)
+- uid: Atlas.HashCode.Get``4(``0,``1,``2,``3)
+  name: Get<T1, T2, T3, T4>(T1, T2, T3, T4)
+  href: api/Atlas.HashCode.html#Atlas_HashCode_Get__4___0___1___2___3_
+  commentId: M:Atlas.HashCode.Get``4(``0,``1,``2,``3)
+  name.vb: Get(Of T1, T2, T3, T4)(T1, T2, T3, T4)
+  fullName: Atlas.HashCode.Get<T1, T2, T3, T4>(T1, T2, T3, T4)
+  fullName.vb: Atlas.HashCode.Get(Of T1, T2, T3, T4)(T1, T2, T3, T4)
+  nameWithType: HashCode.Get<T1, T2, T3, T4>(T1, T2, T3, T4)
+  nameWithType.vb: HashCode.Get(Of T1, T2, T3, T4)(T1, T2, T3, T4)
 - uid: Atlas.ICommand
   name: ICommand
   href: api/Atlas.ICommand.html
@@ -1871,6 +1975,44 @@ references:
   fullName.vb: Atlas.IndexedPriorityQueue(Of T).Top
   nameWithType: IndexedPriorityQueue<T>.Top
   nameWithType.vb: IndexedPriorityQueue(Of T).Top
+- uid: Atlas.InspectorButtonAttribute
+  name: InspectorButtonAttribute
+  href: api/Atlas.InspectorButtonAttribute.html
+  commentId: T:Atlas.InspectorButtonAttribute
+  fullName: Atlas.InspectorButtonAttribute
+  nameWithType: InspectorButtonAttribute
+- uid: Atlas.IPoolable
+  name: IPoolable
+  href: api/Atlas.IPoolable.html
+  commentId: T:Atlas.IPoolable
+  fullName: Atlas.IPoolable
+  nameWithType: IPoolable
+- uid: Atlas.IPoolable.OnPoolDestroy
+  name: OnPoolDestroy()
+  href: api/Atlas.IPoolable.html#Atlas_IPoolable_OnPoolDestroy
+  commentId: M:Atlas.IPoolable.OnPoolDestroy
+  fullName: Atlas.IPoolable.OnPoolDestroy()
+  nameWithType: IPoolable.OnPoolDestroy()
+- uid: Atlas.IPoolable.OnPoolDestroy*
+  name: OnPoolDestroy
+  href: api/Atlas.IPoolable.html#Atlas_IPoolable_OnPoolDestroy_
+  commentId: Overload:Atlas.IPoolable.OnPoolDestroy
+  isSpec: "True"
+  fullName: Atlas.IPoolable.OnPoolDestroy
+  nameWithType: IPoolable.OnPoolDestroy
+- uid: Atlas.IPoolable.OnPoolInstantiate
+  name: OnPoolInstantiate()
+  href: api/Atlas.IPoolable.html#Atlas_IPoolable_OnPoolInstantiate
+  commentId: M:Atlas.IPoolable.OnPoolInstantiate
+  fullName: Atlas.IPoolable.OnPoolInstantiate()
+  nameWithType: IPoolable.OnPoolInstantiate()
+- uid: Atlas.IPoolable.OnPoolInstantiate*
+  name: OnPoolInstantiate
+  href: api/Atlas.IPoolable.html#Atlas_IPoolable_OnPoolInstantiate_
+  commentId: Overload:Atlas.IPoolable.OnPoolInstantiate
+  isSpec: "True"
+  fullName: Atlas.IPoolable.OnPoolInstantiate
+  nameWithType: IPoolable.OnPoolInstantiate
 - uid: Atlas.IScheduledTask
   name: IScheduledTask
   href: api/Atlas.IScheduledTask.html
@@ -2332,6 +2474,38 @@ references:
   isSpec: "True"
   fullName: Atlas.MinValuePropertyDrawer.OnGUI
   nameWithType: MinValuePropertyDrawer.OnGUI
+- uid: Atlas.MonoBehaviourEditor
+  name: MonoBehaviourEditor
+  href: api/Atlas.MonoBehaviourEditor.html
+  commentId: T:Atlas.MonoBehaviourEditor
+  fullName: Atlas.MonoBehaviourEditor
+  nameWithType: MonoBehaviourEditor
+- uid: Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  name: DrawAttributeButtons()
+  href: api/Atlas.MonoBehaviourEditor.html#Atlas_MonoBehaviourEditor_DrawAttributeButtons
+  commentId: M:Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  fullName: Atlas.MonoBehaviourEditor.DrawAttributeButtons()
+  nameWithType: MonoBehaviourEditor.DrawAttributeButtons()
+- uid: Atlas.MonoBehaviourEditor.DrawAttributeButtons*
+  name: DrawAttributeButtons
+  href: api/Atlas.MonoBehaviourEditor.html#Atlas_MonoBehaviourEditor_DrawAttributeButtons_
+  commentId: Overload:Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  isSpec: "True"
+  fullName: Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  nameWithType: MonoBehaviourEditor.DrawAttributeButtons
+- uid: Atlas.MonoBehaviourEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/Atlas.MonoBehaviourEditor.html#Atlas_MonoBehaviourEditor_OnInspectorGUI
+  commentId: M:Atlas.MonoBehaviourEditor.OnInspectorGUI
+  fullName: Atlas.MonoBehaviourEditor.OnInspectorGUI()
+  nameWithType: MonoBehaviourEditor.OnInspectorGUI()
+- uid: Atlas.MonoBehaviourEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/Atlas.MonoBehaviourEditor.html#Atlas_MonoBehaviourEditor_OnInspectorGUI_
+  commentId: Overload:Atlas.MonoBehaviourEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: Atlas.MonoBehaviourEditor.OnInspectorGUI
+  nameWithType: MonoBehaviourEditor.OnInspectorGUI
 - uid: Atlas.ParticleEffectEmitter
   name: ParticleEffectEmitter
   href: api/Atlas.ParticleEffectEmitter.html
@@ -2496,6 +2670,113 @@ references:
   isSpec: "True"
   fullName: Atlas.PathAttributePropertyDrawer.OnGUI
   nameWithType: PathAttributePropertyDrawer.OnGUI
+- uid: Atlas.PrefabPool
+  name: PrefabPool
+  href: api/Atlas.PrefabPool.html
+  commentId: T:Atlas.PrefabPool
+  fullName: Atlas.PrefabPool
+  nameWithType: PrefabPool
+- uid: Atlas.PrefabPool.#ctor(UnityEngine.Transform)
+  name: PrefabPool(Transform)
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool__ctor_UnityEngine_Transform_
+  commentId: M:Atlas.PrefabPool.#ctor(UnityEngine.Transform)
+  fullName: Atlas.PrefabPool.PrefabPool(UnityEngine.Transform)
+  nameWithType: PrefabPool.PrefabPool(Transform)
+- uid: Atlas.PrefabPool.#ctor*
+  name: PrefabPool
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool__ctor_
+  commentId: Overload:Atlas.PrefabPool.#ctor
+  isSpec: "True"
+  fullName: Atlas.PrefabPool.PrefabPool
+  nameWithType: PrefabPool.PrefabPool
+- uid: Atlas.PrefabPool.Destroy*
+  name: Destroy
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_Destroy_
+  commentId: Overload:Atlas.PrefabPool.Destroy
+  isSpec: "True"
+  fullName: Atlas.PrefabPool.Destroy
+  nameWithType: PrefabPool.Destroy
+- uid: Atlas.PrefabPool.Destroy``1(``0)
+  name: Destroy<T>(T)
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_Destroy__1___0_
+  commentId: M:Atlas.PrefabPool.Destroy``1(``0)
+  name.vb: Destroy(Of T)(T)
+  fullName: Atlas.PrefabPool.Destroy<T>(T)
+  fullName.vb: Atlas.PrefabPool.Destroy(Of T)(T)
+  nameWithType: PrefabPool.Destroy<T>(T)
+  nameWithType.vb: PrefabPool.Destroy(Of T)(T)
+- uid: Atlas.PrefabPool.Instantiate*
+  name: Instantiate
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_Instantiate_
+  commentId: Overload:Atlas.PrefabPool.Instantiate
+  isSpec: "True"
+  fullName: Atlas.PrefabPool.Instantiate
+  nameWithType: PrefabPool.Instantiate
+- uid: Atlas.PrefabPool.Instantiate``1(``0)
+  name: Instantiate<T>(T)
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_Instantiate__1___0_
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0)
+  name.vb: Instantiate(Of T)(T)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T)
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T)
+  nameWithType: PrefabPool.Instantiate<T>(T)
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T)
+- uid: Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  name: Instantiate<T>(T, Transform, Boolean)
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Transform_System_Boolean_
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T, UnityEngine.Transform, System.Boolean)
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T, UnityEngine.Transform, System.Boolean)
+  nameWithType: PrefabPool.Instantiate<T>(T, Transform, Boolean)
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T, Transform, Boolean)
+- uid: Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType: PrefabPool.Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T, Vector3, Quaternion)
+- uid: Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  nameWithType: PrefabPool.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+- uid: Atlas.PrefabPool.ObjectCount
+  name: ObjectCount
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_ObjectCount
+  commentId: P:Atlas.PrefabPool.ObjectCount
+  fullName: Atlas.PrefabPool.ObjectCount
+  nameWithType: PrefabPool.ObjectCount
+- uid: Atlas.PrefabPool.ObjectCount*
+  name: ObjectCount
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_ObjectCount_
+  commentId: Overload:Atlas.PrefabPool.ObjectCount
+  isSpec: "True"
+  fullName: Atlas.PrefabPool.ObjectCount
+  nameWithType: PrefabPool.ObjectCount
+- uid: Atlas.PrefabPool.PreloadObjects*
+  name: PreloadObjects
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_PreloadObjects_
+  commentId: Overload:Atlas.PrefabPool.PreloadObjects
+  isSpec: "True"
+  fullName: Atlas.PrefabPool.PreloadObjects
+  nameWithType: PrefabPool.PreloadObjects
+- uid: Atlas.PrefabPool.PreloadObjects``1(``0,System.Int32)
+  name: PreloadObjects<T>(T, Int32)
+  href: api/Atlas.PrefabPool.html#Atlas_PrefabPool_PreloadObjects__1___0_System_Int32_
+  commentId: M:Atlas.PrefabPool.PreloadObjects``1(``0,System.Int32)
+  name.vb: PreloadObjects(Of T)(T, Int32)
+  fullName: Atlas.PrefabPool.PreloadObjects<T>(T, System.Int32)
+  fullName.vb: Atlas.PrefabPool.PreloadObjects(Of T)(T, System.Int32)
+  nameWithType: PrefabPool.PreloadObjects<T>(T, Int32)
+  nameWithType.vb: PrefabPool.PreloadObjects(Of T)(T, Int32)
 - uid: Atlas.PreventEditInInspectorAttribute
   name: PreventEditInInspectorAttribute
   href: api/Atlas.PreventEditInInspectorAttribute.html
@@ -3988,6 +4269,520 @@ references:
   isSpec: "True"
   fullName: Atlas.StateMachineBehavior.Update
   nameWithType: StateMachineBehavior.Update
+- uid: Atlas.Swizzle
+  name: Swizzle
+  href: api/Atlas.Swizzle.html
+  commentId: T:Atlas.Swizzle
+  fullName: Atlas.Swizzle
+  nameWithType: Swizzle
+- uid: Atlas.Swizzle.XX(UnityEngine.Vector2)
+  name: XX(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XX_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.XX(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.XX(UnityEngine.Vector2)
+  nameWithType: Swizzle.XX(Vector2)
+- uid: Atlas.Swizzle.XX(UnityEngine.Vector3)
+  name: XX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XX(UnityEngine.Vector3)
+  nameWithType: Swizzle.XX(Vector3)
+- uid: Atlas.Swizzle.XX*
+  name: XX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XX_
+  commentId: Overload:Atlas.Swizzle.XX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XX
+  nameWithType: Swizzle.XX
+- uid: Atlas.Swizzle.XXX(UnityEngine.Vector2)
+  name: XXX(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXX_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.XXX(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.XXX(UnityEngine.Vector2)
+  nameWithType: Swizzle.XXX(Vector2)
+- uid: Atlas.Swizzle.XXX(UnityEngine.Vector3)
+  name: XXX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XXX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XXX(UnityEngine.Vector3)
+  nameWithType: Swizzle.XXX(Vector3)
+- uid: Atlas.Swizzle.XXX*
+  name: XXX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXX_
+  commentId: Overload:Atlas.Swizzle.XXX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XXX
+  nameWithType: Swizzle.XXX
+- uid: Atlas.Swizzle.XXY(UnityEngine.Vector2)
+  name: XXY(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXY_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.XXY(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.XXY(UnityEngine.Vector2)
+  nameWithType: Swizzle.XXY(Vector2)
+- uid: Atlas.Swizzle.XXY(UnityEngine.Vector3)
+  name: XXY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XXY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XXY(UnityEngine.Vector3)
+  nameWithType: Swizzle.XXY(Vector3)
+- uid: Atlas.Swizzle.XXY*
+  name: XXY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXY_
+  commentId: Overload:Atlas.Swizzle.XXY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XXY
+  nameWithType: Swizzle.XXY
+- uid: Atlas.Swizzle.XXZ(UnityEngine.Vector3)
+  name: XXZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XXZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XXZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.XXZ(Vector3)
+- uid: Atlas.Swizzle.XXZ*
+  name: XXZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XXZ_
+  commentId: Overload:Atlas.Swizzle.XXZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XXZ
+  nameWithType: Swizzle.XXZ
+- uid: Atlas.Swizzle.XYX(UnityEngine.Vector2)
+  name: XYX(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XYX_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.XYX(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.XYX(UnityEngine.Vector2)
+  nameWithType: Swizzle.XYX(Vector2)
+- uid: Atlas.Swizzle.XYX(UnityEngine.Vector3)
+  name: XYX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XYX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XYX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XYX(UnityEngine.Vector3)
+  nameWithType: Swizzle.XYX(Vector3)
+- uid: Atlas.Swizzle.XYX*
+  name: XYX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XYX_
+  commentId: Overload:Atlas.Swizzle.XYX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XYX
+  nameWithType: Swizzle.XYX
+- uid: Atlas.Swizzle.XYY(UnityEngine.Vector2)
+  name: XYY(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XYY_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.XYY(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.XYY(UnityEngine.Vector2)
+  nameWithType: Swizzle.XYY(Vector2)
+- uid: Atlas.Swizzle.XYY(UnityEngine.Vector3)
+  name: XYY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XYY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XYY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XYY(UnityEngine.Vector3)
+  nameWithType: Swizzle.XYY(Vector3)
+- uid: Atlas.Swizzle.XYY*
+  name: XYY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XYY_
+  commentId: Overload:Atlas.Swizzle.XYY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XYY
+  nameWithType: Swizzle.XYY
+- uid: Atlas.Swizzle.XZ(UnityEngine.Vector3)
+  name: XZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.XZ(Vector3)
+- uid: Atlas.Swizzle.XZ*
+  name: XZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZ_
+  commentId: Overload:Atlas.Swizzle.XZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XZ
+  nameWithType: Swizzle.XZ
+- uid: Atlas.Swizzle.XZX(UnityEngine.Vector3)
+  name: XZX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XZX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XZX(UnityEngine.Vector3)
+  nameWithType: Swizzle.XZX(Vector3)
+- uid: Atlas.Swizzle.XZX*
+  name: XZX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZX_
+  commentId: Overload:Atlas.Swizzle.XZX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XZX
+  nameWithType: Swizzle.XZX
+- uid: Atlas.Swizzle.XZY(UnityEngine.Vector3)
+  name: XZY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XZY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XZY(UnityEngine.Vector3)
+  nameWithType: Swizzle.XZY(Vector3)
+- uid: Atlas.Swizzle.XZY*
+  name: XZY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZY_
+  commentId: Overload:Atlas.Swizzle.XZY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XZY
+  nameWithType: Swizzle.XZY
+- uid: Atlas.Swizzle.XZZ(UnityEngine.Vector3)
+  name: XZZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.XZZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.XZZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.XZZ(Vector3)
+- uid: Atlas.Swizzle.XZZ*
+  name: XZZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_XZZ_
+  commentId: Overload:Atlas.Swizzle.XZZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.XZZ
+  nameWithType: Swizzle.XZZ
+- uid: Atlas.Swizzle.YX(UnityEngine.Vector2)
+  name: YX(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YX_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.YX(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.YX(UnityEngine.Vector2)
+  nameWithType: Swizzle.YX(Vector2)
+- uid: Atlas.Swizzle.YX(UnityEngine.Vector3)
+  name: YX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YX(UnityEngine.Vector3)
+  nameWithType: Swizzle.YX(Vector3)
+- uid: Atlas.Swizzle.YX*
+  name: YX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YX_
+  commentId: Overload:Atlas.Swizzle.YX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YX
+  nameWithType: Swizzle.YX
+- uid: Atlas.Swizzle.YXX(UnityEngine.Vector2)
+  name: YXX(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXX_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.YXX(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.YXX(UnityEngine.Vector2)
+  nameWithType: Swizzle.YXX(Vector2)
+- uid: Atlas.Swizzle.YXX(UnityEngine.Vector3)
+  name: YXX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YXX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YXX(UnityEngine.Vector3)
+  nameWithType: Swizzle.YXX(Vector3)
+- uid: Atlas.Swizzle.YXX*
+  name: YXX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXX_
+  commentId: Overload:Atlas.Swizzle.YXX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YXX
+  nameWithType: Swizzle.YXX
+- uid: Atlas.Swizzle.YXY(UnityEngine.Vector2)
+  name: YXY(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXY_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.YXY(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.YXY(UnityEngine.Vector2)
+  nameWithType: Swizzle.YXY(Vector2)
+- uid: Atlas.Swizzle.YXY(UnityEngine.Vector3)
+  name: YXY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YXY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YXY(UnityEngine.Vector3)
+  nameWithType: Swizzle.YXY(Vector3)
+- uid: Atlas.Swizzle.YXY*
+  name: YXY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXY_
+  commentId: Overload:Atlas.Swizzle.YXY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YXY
+  nameWithType: Swizzle.YXY
+- uid: Atlas.Swizzle.YXZ(UnityEngine.Vector3)
+  name: YXZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YXZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YXZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.YXZ(Vector3)
+- uid: Atlas.Swizzle.YXZ*
+  name: YXZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YXZ_
+  commentId: Overload:Atlas.Swizzle.YXZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YXZ
+  nameWithType: Swizzle.YXZ
+- uid: Atlas.Swizzle.YY(UnityEngine.Vector2)
+  name: YY(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YY_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.YY(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.YY(UnityEngine.Vector2)
+  nameWithType: Swizzle.YY(Vector2)
+- uid: Atlas.Swizzle.YY(UnityEngine.Vector3)
+  name: YY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YY(UnityEngine.Vector3)
+  nameWithType: Swizzle.YY(Vector3)
+- uid: Atlas.Swizzle.YY*
+  name: YY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YY_
+  commentId: Overload:Atlas.Swizzle.YY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YY
+  nameWithType: Swizzle.YY
+- uid: Atlas.Swizzle.YYX(UnityEngine.Vector2)
+  name: YYX(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYX_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.YYX(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.YYX(UnityEngine.Vector2)
+  nameWithType: Swizzle.YYX(Vector2)
+- uid: Atlas.Swizzle.YYX(UnityEngine.Vector3)
+  name: YYX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YYX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YYX(UnityEngine.Vector3)
+  nameWithType: Swizzle.YYX(Vector3)
+- uid: Atlas.Swizzle.YYX*
+  name: YYX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYX_
+  commentId: Overload:Atlas.Swizzle.YYX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YYX
+  nameWithType: Swizzle.YYX
+- uid: Atlas.Swizzle.YYY(UnityEngine.Vector2)
+  name: YYY(Vector2)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYY_UnityEngine_Vector2_
+  commentId: M:Atlas.Swizzle.YYY(UnityEngine.Vector2)
+  fullName: Atlas.Swizzle.YYY(UnityEngine.Vector2)
+  nameWithType: Swizzle.YYY(Vector2)
+- uid: Atlas.Swizzle.YYY(UnityEngine.Vector3)
+  name: YYY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YYY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YYY(UnityEngine.Vector3)
+  nameWithType: Swizzle.YYY(Vector3)
+- uid: Atlas.Swizzle.YYY*
+  name: YYY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYY_
+  commentId: Overload:Atlas.Swizzle.YYY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YYY
+  nameWithType: Swizzle.YYY
+- uid: Atlas.Swizzle.YYZ(UnityEngine.Vector3)
+  name: YYZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YYZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YYZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.YYZ(Vector3)
+- uid: Atlas.Swizzle.YYZ*
+  name: YYZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YYZ_
+  commentId: Overload:Atlas.Swizzle.YYZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YYZ
+  nameWithType: Swizzle.YYZ
+- uid: Atlas.Swizzle.YZ(UnityEngine.Vector3)
+  name: YZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.YZ(Vector3)
+- uid: Atlas.Swizzle.YZ*
+  name: YZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZ_
+  commentId: Overload:Atlas.Swizzle.YZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YZ
+  nameWithType: Swizzle.YZ
+- uid: Atlas.Swizzle.YZX(UnityEngine.Vector3)
+  name: YZX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YZX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YZX(UnityEngine.Vector3)
+  nameWithType: Swizzle.YZX(Vector3)
+- uid: Atlas.Swizzle.YZX*
+  name: YZX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZX_
+  commentId: Overload:Atlas.Swizzle.YZX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YZX
+  nameWithType: Swizzle.YZX
+- uid: Atlas.Swizzle.YZY(UnityEngine.Vector3)
+  name: YZY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YZY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YZY(UnityEngine.Vector3)
+  nameWithType: Swizzle.YZY(Vector3)
+- uid: Atlas.Swizzle.YZY*
+  name: YZY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZY_
+  commentId: Overload:Atlas.Swizzle.YZY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YZY
+  nameWithType: Swizzle.YZY
+- uid: Atlas.Swizzle.YZZ(UnityEngine.Vector3)
+  name: YZZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.YZZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.YZZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.YZZ(Vector3)
+- uid: Atlas.Swizzle.YZZ*
+  name: YZZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_YZZ_
+  commentId: Overload:Atlas.Swizzle.YZZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.YZZ
+  nameWithType: Swizzle.YZZ
+- uid: Atlas.Swizzle.ZX(UnityEngine.Vector3)
+  name: ZX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZX(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZX(Vector3)
+- uid: Atlas.Swizzle.ZX*
+  name: ZX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZX_
+  commentId: Overload:Atlas.Swizzle.ZX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZX
+  nameWithType: Swizzle.ZX
+- uid: Atlas.Swizzle.ZXX(UnityEngine.Vector3)
+  name: ZXX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZXX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZXX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZXX(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZXX(Vector3)
+- uid: Atlas.Swizzle.ZXX*
+  name: ZXX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZXX_
+  commentId: Overload:Atlas.Swizzle.ZXX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZXX
+  nameWithType: Swizzle.ZXX
+- uid: Atlas.Swizzle.ZXY(UnityEngine.Vector3)
+  name: ZXY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZXY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZXY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZXY(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZXY(Vector3)
+- uid: Atlas.Swizzle.ZXY*
+  name: ZXY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZXY_
+  commentId: Overload:Atlas.Swizzle.ZXY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZXY
+  nameWithType: Swizzle.ZXY
+- uid: Atlas.Swizzle.ZXZ(UnityEngine.Vector3)
+  name: ZXZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZXZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZXZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZXZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZXZ(Vector3)
+- uid: Atlas.Swizzle.ZXZ*
+  name: ZXZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZXZ_
+  commentId: Overload:Atlas.Swizzle.ZXZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZXZ
+  nameWithType: Swizzle.ZXZ
+- uid: Atlas.Swizzle.ZY(UnityEngine.Vector3)
+  name: ZY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZY(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZY(Vector3)
+- uid: Atlas.Swizzle.ZY*
+  name: ZY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZY_
+  commentId: Overload:Atlas.Swizzle.ZY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZY
+  nameWithType: Swizzle.ZY
+- uid: Atlas.Swizzle.ZYX(UnityEngine.Vector3)
+  name: ZYX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZYX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZYX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZYX(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZYX(Vector3)
+- uid: Atlas.Swizzle.ZYX*
+  name: ZYX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZYX_
+  commentId: Overload:Atlas.Swizzle.ZYX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZYX
+  nameWithType: Swizzle.ZYX
+- uid: Atlas.Swizzle.ZYY(UnityEngine.Vector3)
+  name: ZYY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZYY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZYY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZYY(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZYY(Vector3)
+- uid: Atlas.Swizzle.ZYY*
+  name: ZYY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZYY_
+  commentId: Overload:Atlas.Swizzle.ZYY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZYY
+  nameWithType: Swizzle.ZYY
+- uid: Atlas.Swizzle.ZYZ(UnityEngine.Vector3)
+  name: ZYZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZYZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZYZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZYZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZYZ(Vector3)
+- uid: Atlas.Swizzle.ZYZ*
+  name: ZYZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZYZ_
+  commentId: Overload:Atlas.Swizzle.ZYZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZYZ
+  nameWithType: Swizzle.ZYZ
+- uid: Atlas.Swizzle.ZZ(UnityEngine.Vector3)
+  name: ZZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZZ(Vector3)
+- uid: Atlas.Swizzle.ZZ*
+  name: ZZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZ_
+  commentId: Overload:Atlas.Swizzle.ZZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZZ
+  nameWithType: Swizzle.ZZ
+- uid: Atlas.Swizzle.ZZX(UnityEngine.Vector3)
+  name: ZZX(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZX_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZZX(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZZX(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZZX(Vector3)
+- uid: Atlas.Swizzle.ZZX*
+  name: ZZX
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZX_
+  commentId: Overload:Atlas.Swizzle.ZZX
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZZX
+  nameWithType: Swizzle.ZZX
+- uid: Atlas.Swizzle.ZZY(UnityEngine.Vector3)
+  name: ZZY(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZY_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZZY(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZZY(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZZY(Vector3)
+- uid: Atlas.Swizzle.ZZY*
+  name: ZZY
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZY_
+  commentId: Overload:Atlas.Swizzle.ZZY
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZZY
+  nameWithType: Swizzle.ZZY
+- uid: Atlas.Swizzle.ZZZ(UnityEngine.Vector3)
+  name: ZZZ(Vector3)
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZZ_UnityEngine_Vector3_
+  commentId: M:Atlas.Swizzle.ZZZ(UnityEngine.Vector3)
+  fullName: Atlas.Swizzle.ZZZ(UnityEngine.Vector3)
+  nameWithType: Swizzle.ZZZ(Vector3)
+- uid: Atlas.Swizzle.ZZZ*
+  name: ZZZ
+  href: api/Atlas.Swizzle.html#Atlas_Swizzle_ZZZ_
+  commentId: Overload:Atlas.Swizzle.ZZZ
+  isSpec: "True"
+  fullName: Atlas.Swizzle.ZZZ
+  nameWithType: Swizzle.ZZZ
 - uid: Atlas.TaskScheduler
   name: TaskScheduler
   href: api/Atlas.TaskScheduler.html
@@ -4684,3 +5479,60 @@ references:
   commentId: F:Atlas.UIStack.Transition.Outro
   fullName: Atlas.UIStack.Transition.Outro
   nameWithType: UIStack.Transition.Outro
+- uid: Atlas.VectorExtensions
+  name: VectorExtensions
+  href: api/Atlas.VectorExtensions.html
+  commentId: T:Atlas.VectorExtensions
+  fullName: Atlas.VectorExtensions
+  nameWithType: VectorExtensions
+- uid: Atlas.VectorExtensions.SetX(UnityEngine.Vector2,System.Single)
+  name: SetX(Vector2, Single)
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetX_UnityEngine_Vector2_System_Single_
+  commentId: M:Atlas.VectorExtensions.SetX(UnityEngine.Vector2,System.Single)
+  fullName: Atlas.VectorExtensions.SetX(UnityEngine.Vector2, System.Single)
+  nameWithType: VectorExtensions.SetX(Vector2, Single)
+- uid: Atlas.VectorExtensions.SetX(UnityEngine.Vector3,System.Single)
+  name: SetX(Vector3, Single)
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetX_UnityEngine_Vector3_System_Single_
+  commentId: M:Atlas.VectorExtensions.SetX(UnityEngine.Vector3,System.Single)
+  fullName: Atlas.VectorExtensions.SetX(UnityEngine.Vector3, System.Single)
+  nameWithType: VectorExtensions.SetX(Vector3, Single)
+- uid: Atlas.VectorExtensions.SetX*
+  name: SetX
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetX_
+  commentId: Overload:Atlas.VectorExtensions.SetX
+  isSpec: "True"
+  fullName: Atlas.VectorExtensions.SetX
+  nameWithType: VectorExtensions.SetX
+- uid: Atlas.VectorExtensions.SetY(UnityEngine.Vector2,System.Single)
+  name: SetY(Vector2, Single)
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetY_UnityEngine_Vector2_System_Single_
+  commentId: M:Atlas.VectorExtensions.SetY(UnityEngine.Vector2,System.Single)
+  fullName: Atlas.VectorExtensions.SetY(UnityEngine.Vector2, System.Single)
+  nameWithType: VectorExtensions.SetY(Vector2, Single)
+- uid: Atlas.VectorExtensions.SetY(UnityEngine.Vector3,System.Single)
+  name: SetY(Vector3, Single)
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetY_UnityEngine_Vector3_System_Single_
+  commentId: M:Atlas.VectorExtensions.SetY(UnityEngine.Vector3,System.Single)
+  fullName: Atlas.VectorExtensions.SetY(UnityEngine.Vector3, System.Single)
+  nameWithType: VectorExtensions.SetY(Vector3, Single)
+- uid: Atlas.VectorExtensions.SetY*
+  name: SetY
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetY_
+  commentId: Overload:Atlas.VectorExtensions.SetY
+  isSpec: "True"
+  fullName: Atlas.VectorExtensions.SetY
+  nameWithType: VectorExtensions.SetY
+- uid: Atlas.VectorExtensions.SetZ(UnityEngine.Vector3,System.Single)
+  name: SetZ(Vector3, Single)
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetZ_UnityEngine_Vector3_System_Single_
+  commentId: M:Atlas.VectorExtensions.SetZ(UnityEngine.Vector3,System.Single)
+  fullName: Atlas.VectorExtensions.SetZ(UnityEngine.Vector3, System.Single)
+  nameWithType: VectorExtensions.SetZ(Vector3, Single)
+- uid: Atlas.VectorExtensions.SetZ*
+  name: SetZ
+  href: api/Atlas.VectorExtensions.html#Atlas_VectorExtensions_SetZ_
+  commentId: Overload:Atlas.VectorExtensions.SetZ
+  isSpec: "True"
+  fullName: Atlas.VectorExtensions.SetZ
+  nameWithType: VectorExtensions.SetZ

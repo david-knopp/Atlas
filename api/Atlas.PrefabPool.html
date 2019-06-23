@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PrefabPool
+   | Atlas </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PrefabPool
+   | Atlas ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atlas.PrefabPool">
+  
+  
+  <h1 id="Atlas_PrefabPool" data-uid="Atlas.PrefabPool" class="text-break">Class PrefabPool
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PrefabPool</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atlas.html">Atlas</a></h6>
+  <h6><strong>Assembly</strong>: Atlas.Runtime.dll</h6>
+  <h5 id="Atlas_PrefabPool_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PrefabPool</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool__ctor_UnityEngine_Transform_.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.%23ctor(UnityEngine.Transform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L16">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool__ctor_" data-uid="Atlas.PrefabPool.#ctor*"></a>
+  <h4 id="Atlas_PrefabPool__ctor_UnityEngine_Transform_" data-uid="Atlas.PrefabPool.#ctor(UnityEngine.Transform)">PrefabPool(Transform)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrefabPool(Transform pooledObjectsParent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">pooledObjectsParent</span></td>
+        <td><p>Transform to use for parenting objects currently in the pool's reserve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool_ObjectCount.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.ObjectCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L26">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool_ObjectCount_" data-uid="Atlas.PrefabPool.ObjectCount*"></a>
+  <h4 id="Atlas_PrefabPool_ObjectCount" data-uid="Atlas.PrefabPool.ObjectCount">ObjectCount</h4>
+  <div class="markdown level1 summary"><p>Total number of objects this pool has internally instantiated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ObjectCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool_Destroy__1___0_.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.Destroy%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L160">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool_Destroy_" data-uid="Atlas.PrefabPool.Destroy*"></a>
+  <h4 id="Atlas_PrefabPool_Destroy__1___0_" data-uid="Atlas.PrefabPool.Destroy``1(``0)">Destroy&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Returns the given object instance to the pool for recycling</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Destroy&lt;T&gt;(T instance)
+    where T : Component, IPoolable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The instance to return to the pool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The object's prefab type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Atlas_PrefabPool_Destroy__1___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>OnDestroy will not get called when returning objects to the pool. Instead, use <a class="xref" href="Atlas.IPoolable.html#Atlas_IPoolable_OnPoolDestroy">OnPoolDestroy()</a> for per-object cleanup code</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool_Instantiate__1___0_.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.Instantiate%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L63">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool_Instantiate_" data-uid="Atlas.PrefabPool.Instantiate*"></a>
+  <h4 id="Atlas_PrefabPool_Instantiate__1___0_" data-uid="Atlas.PrefabPool.Instantiate``1(``0)">Instantiate&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Returns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise
+a recycled object will be re-used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Instantiate&lt;T&gt;(T prefab)
+    where T : Component, IPoolable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>Object prefab to make a copy of</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The instantiated/recycled clone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The object's prefab type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Atlas_PrefabPool_Instantiate__1___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Awake/Start will not get called on recycled objects. Instead, use <a class="xref" href="Atlas.IPoolable.html#Atlas_IPoolable_OnPoolInstantiate">OnPoolInstantiate()</a> for per-object startup code</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Transform_System_Boolean_.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.Instantiate%60%601(%60%600%2CUnityEngine.Transform%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L140">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool_Instantiate_" data-uid="Atlas.PrefabPool.Instantiate*"></a>
+  <h4 id="Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Transform_System_Boolean_" data-uid="Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)">Instantiate&lt;T&gt;(T, Transform, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise
+a recycled object will be re-used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Instantiate&lt;T&gt;(T prefab, Transform parent, bool instantiateInWorldSpace)
+    where T : Component, IPoolable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>Object prefab to make a copy of</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Parent that will be assigned to the new object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">instantiateInWorldSpace</span></td>
+        <td><p>Pass true to maintain the world position of the Object, and false to set the Object's position relative to its new parent</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The instantiated/recycled clone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The object's prefab type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Transform_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Awake/Start will not get called on recycled objects. Instead, use <a class="xref" href="Atlas.IPoolable.html#Atlas_IPoolable_OnPoolInstantiate">OnPoolInstantiate()</a> for per-object startup code</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.Instantiate%60%601(%60%600%2CUnityEngine.Vector3%2CUnityEngine.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L80">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool_Instantiate_" data-uid="Atlas.PrefabPool.Instantiate*"></a>
+  <h4 id="Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_" data-uid="Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)">Instantiate&lt;T&gt;(T, Vector3, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Returns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise
+a recycled object will be re-used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Instantiate&lt;T&gt;(T prefab, Vector3 position, Quaternion rotation)
+    where T : Component, IPoolable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>Object prefab to make a copy of</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position of the new object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Quaternion</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Orientation of the new object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The instantiated/recycled clone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The object's prefab type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Awake/Start will not get called on recycled objects. Instead, use <a class="xref" href="Atlas.IPoolable.html#Atlas_IPoolable_OnPoolInstantiate">OnPoolInstantiate()</a> for per-object startup code</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.Instantiate%60%601(%60%600%2CUnityEngine.Vector3%2CUnityEngine.Quaternion%2CUnityEngine.Transform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L98">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool_Instantiate_" data-uid="Atlas.PrefabPool.Instantiate*"></a>
+  <h4 id="Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_" data-uid="Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)">Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</h4>
+  <div class="markdown level1 summary"><p>Returns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise
+a recycled object will be re-used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Instantiate&lt;T&gt;(T prefab, Vector3 position, Quaternion rotation, Transform parent)
+    where T : Component, IPoolable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>Object prefab to make a copy of</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position of the new object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Quaternion</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>Orientation of the new object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Parent that will be assigned to the new object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The instantiated/recycled clone</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The object's prefab type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Atlas_PrefabPool_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Awake/Start will not get called on recycled objects. Instead, use <a class="xref" href="Atlas.IPoolable.html#Atlas_IPoolable_OnPoolInstantiate">OnPoolInstantiate()</a> for per-object startup code</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool_PreloadObjects__1___0_System_Int32_.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool.PreloadObjects%60%601(%60%600%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L39">View Source</a>
+  </span>
+  <a id="Atlas_PrefabPool_PreloadObjects_" data-uid="Atlas.PrefabPool.PreloadObjects*"></a>
+  <h4 id="Atlas_PrefabPool_PreloadObjects__1___0_System_Int32_" data-uid="Atlas.PrefabPool.PreloadObjects``1(``0,System.Int32)">PreloadObjects&lt;T&gt;(T, Int32)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a specified number of objects for the given prefab. This can help eliminate runtime performance hits by
+front-loading object creation (on level load, for instance).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreloadObjects&lt;T&gt;(T prefab, int count)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>Object prefab to make copies of</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of objects to instantiate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of prefab</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_PrefabPool.md&amp;value=---%0Auid%3A%20Atlas.PrefabPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Pooling/PrefabPool.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

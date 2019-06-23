@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TransformEditor
+    <title>Class MonoBehaviourEditor
    | Atlas </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TransformEditor
+    <meta name="title" content="Class MonoBehaviourEditor
    | Atlas ">
     <meta name="generator" content="docfx 2.40.10.0">
     
@@ -78,13 +78,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Atlas.TransformEditor">
+            <article class="content wrap" id="_content" data-uid="Atlas.MonoBehaviourEditor">
   
   
-  <h1 id="Atlas_TransformEditor" data-uid="Atlas.TransformEditor" class="text-break">Class TransformEditor
+  <h1 id="Atlas_MonoBehaviourEditor" data-uid="Atlas.MonoBehaviourEditor" class="text-break">Class MonoBehaviourEditor
   </h1>
-  <div class="markdown level0 summary"><p>Overrides the default Transform editor that adds handy buttons for resetting transform values</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,27 +91,41 @@
     <div class="level1"><span class="xref">UnityEngine.Object</span></div>
     <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
     <div class="level3"><span class="xref">UnityEditor.Editor</span></div>
-    <div class="level4"><span class="xref">TransformEditor</span></div>
+    <div class="level4"><span class="xref">MonoBehaviourEditor</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Atlas.html">Atlas</a></h6>
   <h6><strong>Assembly</strong>: Atlas.Editor.dll</h6>
-  <h5 id="Atlas_TransformEditor_syntax">Syntax</h5>
+  <h5 id="Atlas_MonoBehaviourEditor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CustomEditor(typeof(Transform))]
-[CanEditMultipleObjects]
-public sealed class TransformEditor : Editor, IPreviewable, IToolModeOwner</code></pre>
+    <pre><code class="lang-csharp hljs">[CustomEditor(typeof(MonoBehaviour), true)]
+public class MonoBehaviourEditor : Editor, IPreviewable, IToolModeOwner</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_TransformEditor_OnInspectorGUI.md&amp;value=---%0Auid%3A%20Atlas.TransformEditor.OnInspectorGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_MonoBehaviourEditor_DrawAttributeButtons.md&amp;value=---%0Auid%3A%20Atlas.MonoBehaviourEditor.DrawAttributeButtons%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Editor/Utils/TransformEditor.cs/#L14">View Source</a>
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs/#L18">View Source</a>
   </span>
-  <a id="Atlas_TransformEditor_OnInspectorGUI_" data-uid="Atlas.TransformEditor.OnInspectorGUI*"></a>
-  <h4 id="Atlas_TransformEditor_OnInspectorGUI" data-uid="Atlas.TransformEditor.OnInspectorGUI">OnInspectorGUI()</h4>
+  <a id="Atlas_MonoBehaviourEditor_DrawAttributeButtons_" data-uid="Atlas.MonoBehaviourEditor.DrawAttributeButtons*"></a>
+  <h4 id="Atlas_MonoBehaviourEditor_DrawAttributeButtons" data-uid="Atlas.MonoBehaviourEditor.DrawAttributeButtons">DrawAttributeButtons()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawAttributeButtons()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_MonoBehaviourEditor_OnInspectorGUI.md&amp;value=---%0Auid%3A%20Atlas.MonoBehaviourEditor.OnInspectorGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs/#L12">View Source</a>
+  </span>
+  <a id="Atlas_MonoBehaviourEditor_OnInspectorGUI_" data-uid="Atlas.MonoBehaviourEditor.OnInspectorGUI*"></a>
+  <h4 id="Atlas_MonoBehaviourEditor_OnInspectorGUI" data-uid="Atlas.MonoBehaviourEditor.OnInspectorGUI">OnInspectorGUI()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -129,10 +142,10 @@ public sealed class TransformEditor : Editor, IPreviewable, IToolModeOwner</code
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_TransformEditor.md&amp;value=---%0Auid%3A%20Atlas.TransformEditor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_MonoBehaviourEditor.md&amp;value=---%0Auid%3A%20Atlas.MonoBehaviourEditor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Editor/Utils/TransformEditor.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

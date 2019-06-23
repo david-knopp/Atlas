@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TransformEditor
+    <title>Struct GUIContentColorScope
    | Atlas </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TransformEditor
+    <meta name="title" content="Struct GUIContentColorScope
    | Atlas ">
     <meta name="generator" content="docfx 2.40.10.0">
     
@@ -78,49 +78,93 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Atlas.TransformEditor">
+            <article class="content wrap" id="_content" data-uid="Atlas.GUIContentColorScope">
   
   
-  <h1 id="Atlas_TransformEditor" data-uid="Atlas.TransformEditor" class="text-break">Class TransformEditor
+  <h1 id="Atlas_GUIContentColorScope" data-uid="Atlas.GUIContentColorScope" class="text-break">Struct GUIContentColorScope
   </h1>
-  <div class="markdown level0 summary"><p>Overrides the default Transform editor that adds handy buttons for resetting transform values</p>
+  <div class="markdown level0 summary"><p>A handy scope variable that sets <span class="xref">UnityEngine.GUI.contentColor</span> to the given color,
+and automatically resets it to its original color when the scope ends</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
-    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
-    <div class="level3"><span class="xref">UnityEditor.Editor</span></div>
-    <div class="level4"><span class="xref">TransformEditor</span></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Atlas.html">Atlas</a></h6>
-  <h6><strong>Assembly</strong>: Atlas.Editor.dll</h6>
-  <h5 id="Atlas_TransformEditor_syntax">Syntax</h5>
+  <h6><strong>Assembly</strong>: Atlas.Runtime.dll</h6>
+  <h5 id="Atlas_GUIContentColorScope_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[CustomEditor(typeof(Transform))]
-[CanEditMultipleObjects]
-public sealed class TransformEditor : Editor, IPreviewable, IToolModeOwner</code></pre>
+    <pre><code class="lang-csharp hljs">public struct GUIContentColorScope : IDisposable</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_GUIContentColorScope__ctor_UnityEngine_Color_System_Boolean_.md&amp;value=---%0Auid%3A%20Atlas.GUIContentColorScope.%23ctor(UnityEngine.Color%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Utils/Scopes/GUIContentColorScope.cs/#L18">View Source</a>
+  </span>
+  <a id="Atlas_GUIContentColorScope__ctor_" data-uid="Atlas.GUIContentColorScope.#ctor*"></a>
+  <h4 id="Atlas_GUIContentColorScope__ctor_UnityEngine_Color_System_Boolean_" data-uid="Atlas.GUIContentColorScope.#ctor(UnityEngine.Color,System.Boolean)">GUIContentColorScope(Color, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GUIContentColorScope(Color color, bool shouldSetColor = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td><p>The target color</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shouldSetColor</span></td>
+        <td><p>Optional conditional for bypassing color assignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_TransformEditor_OnInspectorGUI.md&amp;value=---%0Auid%3A%20Atlas.TransformEditor.OnInspectorGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_GUIContentColorScope_Dispose.md&amp;value=---%0Auid%3A%20Atlas.GUIContentColorScope.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Editor/Utils/TransformEditor.cs/#L14">View Source</a>
+    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Utils/Scopes/GUIContentColorScope.cs/#L32">View Source</a>
   </span>
-  <a id="Atlas_TransformEditor_OnInspectorGUI_" data-uid="Atlas.TransformEditor.OnInspectorGUI*"></a>
-  <h4 id="Atlas_TransformEditor_OnInspectorGUI" data-uid="Atlas.TransformEditor.OnInspectorGUI">OnInspectorGUI()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Atlas_GUIContentColorScope_Dispose_" data-uid="Atlas.GUIContentColorScope.Dispose*"></a>
+  <h4 id="Atlas_GUIContentColorScope_Dispose" data-uid="Atlas.GUIContentColorScope.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Ends the scope</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
   </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">UnityEditor.Editor.OnInspectorGUI()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Atlas.ProfilerScope.html">ProfilerScope</a></div>
+  </div>
 </article>
           </div>
           
@@ -129,10 +173,10 @@ public sealed class TransformEditor : Editor, IPreviewable, IToolModeOwner</code
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_TransformEditor.md&amp;value=---%0Auid%3A%20Atlas.TransformEditor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/david-knopp/Atlas/new/v0.9.5/apiSpec/new?filename=Atlas_GUIContentColorScope.md&amp;value=---%0Auid%3A%20Atlas.GUIContentColorScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Editor/Utils/TransformEditor.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/david-knopp/Atlas/blob/v0.9.5/Assets/Scripts/Runtime/Utils/Scopes/GUIContentColorScope.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

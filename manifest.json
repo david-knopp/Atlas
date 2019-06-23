@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.AnchorPosition.html",
-          "hash": "klnl327Dp1BJb0Lpu+YlNA=="
+          "hash": "vrA57mgMNIiHm7/2qX52pg=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.BackEase.html",
-          "hash": "fP2NuDELE+mHWDf/X4japw=="
+          "hash": "4jt6dJiVsDSnWTb/HLJrTw=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.BillboardDebugDrawModifier.html",
-          "hash": "d3ZC0JixemWSML35li5fBg=="
+          "hash": "2FNGkm4hFfo+hJPj/cHHSA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.BitField.html",
-          "hash": "qGG2yk+AeekRw3bCSFxiUA=="
+          "hash": "QmGi+4DiYLqcAgCi3+E7XA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.BounceEase.html",
-          "hash": "Ein+oZf6LJHXsBvRjZALZw=="
+          "hash": "O3C6YMwjrpPsVxez0u7B2A=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.CircleDebugDrawer.html",
-          "hash": "NpsFJwEOxXdexJsi5ClF3g=="
+          "hash": "ApNcqvRbZwPkMMmPPP9kDg=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.CircularEase.html",
-          "hash": "LucpNTBVIZToIy9U3DwkPg=="
+          "hash": "nns+rjUINcvxkrJEpc/AXw=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.CrossDebugDrawer.html",
-          "hash": "5B9rkTHXa3e/M79gluCuRQ=="
+          "hash": "+LBXkBfoBtY+g907W0jVfw=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.CubicEase.html",
-          "hash": "QSKmZ555eeYZTqQNFAG8Hg=="
+          "hash": "uv7aASI4zVSlwN5X+OO5xA=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.DebugDraw.html",
-          "hash": "aHxQE9hetP+4obfGwyGsNA=="
+          "hash": "dUfh6btHSDHGGkAAZ8Yf9A=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.DebugDrawModifierExtensions.html",
-          "hash": "Bie6Qlw+oqSYRCmdd9o1xA=="
+          "hash": "ULdnEug2XzcMiM8P9tjwPg=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.DebugExtensions.html",
-          "hash": "S85QQGBb0QK+qN+oU9lHKw=="
+          "hash": "WVHzKojCBl60enbyZqg7FQ=="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Ease.html",
-          "hash": "4bd5+hCt57htTCKNW0+kvQ=="
+          "hash": "Rl9+EMW6bYT1c+Up046LzQ=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.EaseType.html",
-          "hash": "DFK2GuKhxHDNgmEaHJ+D4w=="
+          "hash": "BNszwQESlIOsaNTg9knO/g=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.EditorGUILayoutUtils.html",
-          "hash": "GqO3xZOwkYLoyTWNIQYc3A=="
+          "hash": "5O/g59DiVBtlK9xuWIxkBQ=="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.EditorUtils.html",
-          "hash": "6+ypIfv3Klmg8cTCANB0BA=="
+          "hash": "lFVU2AXdhKWiY96u5673JA=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Effect.ActivationEventType.html",
-          "hash": "HEOn1mw6NoVbzY5K7WYNhg=="
+          "hash": "KL0v14Z3iQbYv7OtsIgiGw=="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Effect.DestructionEventType.html",
-          "hash": "+3F7Vjw7m4FJs2EnL/HDKQ=="
+          "hash": "uzTVHMsExr8tZ3s5XWQmAg=="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Effect.html",
-          "hash": "Nii0Fj9h+odCMaGwaMuvNw=="
+          "hash": "WPMaxXrIw2zBp101JwySvg=="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.EffectEmitterBase.html",
-          "hash": "XdJzs66PQkP0e5B3kWJKhA=="
+          "hash": "nytmQYsijGm3J5U0wk5Fiw=="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ElasticEase.html",
-          "hash": "kBKn67NK+SjEIUpaInwMnQ=="
+          "hash": "LPzEAdXj64sijJjcGwb3bw=="
         }
       },
       "is_incremental": false,
@@ -270,7 +270,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.EnumExtensions.html",
-          "hash": "xHarl7ujMaDxe6z85IEZWQ=="
+          "hash": "LcB94pZU/v3qyjfPCoAu6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Example_InspectorButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Example_InspectorButton.html",
+          "hash": "iTCfXBim540hdxOa+W69hg=="
         }
       },
       "is_incremental": false,
@@ -282,7 +294,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ExponentialEase.html",
-          "hash": "Aq/hNTD1WOeV7254FM3v5w=="
+          "hash": "vSE5RZQCQxmhr67WrwAX+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.GUIBackgroundColorScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.GUIBackgroundColorScope.html",
+          "hash": "YYy7Xzxbog05VB6rHCEmGQ=="
         }
       },
       "is_incremental": false,
@@ -294,7 +318,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.GUIColorScope.html",
-          "hash": "T6dnGkae9dvjttd/SCF9dA=="
+          "hash": "hAgMVjMvrMkmiuJMjZaSzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.GUIContentColorScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.GUIContentColorScope.html",
+          "hash": "t5SP+bTu/EtCW0Afvixh7w=="
         }
       },
       "is_incremental": false,
@@ -306,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.GUIListener.html",
-          "hash": "1xXCm9gV8EJaKDEr9Zwl2A=="
+          "hash": "KlbU/1vpxKqh+oGPDUr0Ig=="
         }
       },
       "is_incremental": false,
@@ -318,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.GizmoUtils.html",
-          "hash": "6a9fIAz7PuLBOcHkGTpWsw=="
+          "hash": "hN66GirpU3v95ZtMNntTUg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.HashCode.html",
-          "hash": "yH7TUu52hj8j4riPSJ+wXw=="
+          "hash": "OyyrJZxtajxjvzbp1Bs+3Q=="
         }
       },
       "is_incremental": false,
@@ -342,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ICommand-1.html",
-          "hash": "MyUBbFhCQ2Bd6MmB83RYuw=="
+          "hash": "iRRddeaegsNfAQ7edUkL6A=="
         }
       },
       "is_incremental": false,
@@ -354,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ICommand-2.html",
-          "hash": "fkBjZhsYjMsm5yws6pMwCg=="
+          "hash": "7uPDyX84PK8PmgJDH7Q3AA=="
         }
       },
       "is_incremental": false,
@@ -366,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ICommand-3.html",
-          "hash": "vg6SzoElizpxq7mG98zyrw=="
+          "hash": "uKeOW07CEJyy68IbPEQ2iA=="
         }
       },
       "is_incremental": false,
@@ -378,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ICommand-4.html",
-          "hash": "WYIj42D3miGH0SCehe2U5A=="
+          "hash": "EzSEG4s6E5hedfjFZhRd1w=="
         }
       },
       "is_incremental": false,
@@ -390,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ICommand.html",
-          "hash": "Nn+XjjH7ZOPKrW4sm5WBUg=="
+          "hash": "wGMHNYni7deZ0v35qxvRtg=="
         }
       },
       "is_incremental": false,
@@ -402,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.IDebugDrawer.html",
-          "hash": "bHQZ+b6VldaA6zd5bOL8zA=="
+          "hash": "5hWxvzRGvoRTsQH3sSRUag=="
         }
       },
       "is_incremental": false,
@@ -414,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.IFixedTickable.html",
-          "hash": "MKYBhjQI2L+H4eKYvMqvAA=="
+          "hash": "iCyyacyeANsp3h6PdCbIKQ=="
         }
       },
       "is_incremental": false,
@@ -426,7 +462,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ILateTickable.html",
-          "hash": "DJz30X8MZJFTvfYvf2W5GA=="
+          "hash": "cPeWsUsnR3PQWX4Q7a73RA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.IPoolable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.IPoolable.html",
+          "hash": "713F1wYJwfg0yUZls+fxcw=="
         }
       },
       "is_incremental": false,
@@ -438,7 +486,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.IScheduledTask.html",
-          "hash": "ANtgAzBht+6uahQX8Lo+EA=="
+          "hash": "vAMvgaYLg8AD3fCmoKq9ZA=="
         }
       },
       "is_incremental": false,
@@ -450,7 +498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ISignal.html",
-          "hash": "DERwdrxroiqwhMzp+hAWTg=="
+          "hash": "DDsHiLvxljgWhTVWPcf8uA=="
         }
       },
       "is_incremental": false,
@@ -462,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.IStateLink.html",
-          "hash": "vHVMoJh09vsYoO75Pi8o1Q=="
+          "hash": "xSGTShjF7CtIl1w4TxRT6g=="
         }
       },
       "is_incremental": false,
@@ -474,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.IStateMachine.html",
-          "hash": "n0hMmEwOU4YpnpIAfyTv/g=="
+          "hash": "uC2YpU6s4eBfzXXrhdYxAw=="
         }
       },
       "is_incremental": false,
@@ -486,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ITickable.html",
-          "hash": "WFljBqjdlK3bxXaitRz1RQ=="
+          "hash": "Ncy/orqCmmTqVg8WJTK/SQ=="
         }
       },
       "is_incremental": false,
@@ -498,7 +546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.IUIPanel.html",
-          "hash": "qx8OeIyirV3QUCCVzzTBww=="
+          "hash": "+icE7nGCI6inJqfV98Cv1g=="
         }
       },
       "is_incremental": false,
@@ -510,7 +558,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.IndexedPriorityQueue-1.html",
-          "hash": "2z64G1uIEwNNAFVab/w8Pg=="
+          "hash": "Cr24PwuRr2wEgtFhS+WnIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.InspectorButtonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.InspectorButtonAttribute.html",
+          "hash": "3geR1VuXspMetf6GsQkCXA=="
         }
       },
       "is_incremental": false,
@@ -522,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.LineDebugDrawer.html",
-          "hash": "ae4xRF+WJfZTQgVJQZBlvA=="
+          "hash": "eVb0lv0dc3hC2ElZYN237A=="
         }
       },
       "is_incremental": false,
@@ -534,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.LinearEase.html",
-          "hash": "2sOgj/KYsh/S5YC/gu+ALg=="
+          "hash": "8g2JrFaRH3mylI2hysJBpQ=="
         }
       },
       "is_incremental": false,
@@ -546,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.MaxValueAttribute.html",
-          "hash": "vPpRJgUYYseLBWoOQE8XcQ=="
+          "hash": "w8ZxhQivj2PnyBRIaZdFYQ=="
         }
       },
       "is_incremental": false,
@@ -558,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.MaxValuePropertyDrawer.html",
-          "hash": "fSm2sGirI70Ov0F6yJ3qnA=="
+          "hash": "+zeieFBF6mcpR74LYZtyQA=="
         }
       },
       "is_incremental": false,
@@ -570,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.MinValueAttribute.html",
-          "hash": "rnIGvIzeI8E+7CP9S3B8mQ=="
+          "hash": "ohSing1Gz855QR2O8VuYmA=="
         }
       },
       "is_incremental": false,
@@ -582,7 +642,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.MinValuePropertyDrawer.html",
-          "hash": "e/i2FgKCjEkgVbtMPtWTvg=="
+          "hash": "+9i6qkpFCOfl4hNMtCrDAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.MonoBehaviourEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.MonoBehaviourEditor.html",
+          "hash": "Ay/8at/55Jed+qPrVvoCog=="
         }
       },
       "is_incremental": false,
@@ -594,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ParticleEffectEmitter.html",
-          "hash": "wXzi51d3mMp1UvYwcGrXFQ=="
+          "hash": "mlQhzTabwacKX5QaAxFcLw=="
         }
       },
       "is_incremental": false,
@@ -606,7 +678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.PathAttribute.Path.html",
-          "hash": "YgSplzoNVqPgMJysD18g2A=="
+          "hash": "+Ch1ceAOoxpRcdMs/KuMew=="
         }
       },
       "is_incremental": false,
@@ -618,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.PathAttribute.Relativity.html",
-          "hash": "OOrTZ23urQ3c/itc2gFKjA=="
+          "hash": "Y5cZyC+N42wPDKguLIv43w=="
         }
       },
       "is_incremental": false,
@@ -630,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.PathAttribute.html",
-          "hash": "ovbZLUeYf1Oo5552FNYWhA=="
+          "hash": "eu97avuVynTr+MceEiPiVg=="
         }
       },
       "is_incremental": false,
@@ -642,7 +714,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.PathAttributePropertyDrawer.html",
-          "hash": "VVK4k/Nv5uJEboZJHN0U3Q=="
+          "hash": "IJpWGnrSHDZbROFe9CKpLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.PrefabPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.PrefabPool.html",
+          "hash": "leoDwab+94HB5aX022awdQ=="
         }
       },
       "is_incremental": false,
@@ -654,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.PreventEditInInspectorAttribute.html",
-          "hash": "btMP/JwkoM7n1K1Tj0cZEg=="
+          "hash": "NV3hrjzL+nbDPAs08YrjmQ=="
         }
       },
       "is_incremental": false,
@@ -666,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.PreventEditInInspectorPropertyDrawer.html",
-          "hash": "5zBUq25SAziOu0LEk5vNWA=="
+          "hash": "s7pjrhSo0O2ZOMCLBw2xvg=="
         }
       },
       "is_incremental": false,
@@ -678,7 +762,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ProfilerScope.html",
-          "hash": "esc6lsKgnTCgDN6ypOaxOw=="
+          "hash": "iO/+psr6uR2wt++nXT8odg=="
         }
       },
       "is_incremental": false,
@@ -690,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.QuadraticEase.html",
-          "hash": "R+2tURFGZHakZnsqrHKhZg=="
+          "hash": "0cudUpfE2JOsb17M76Rrjg=="
         }
       },
       "is_incremental": false,
@@ -702,7 +786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.QuarticEase.html",
-          "hash": "nOujy716Ms2oLI7XFGehjQ=="
+          "hash": "8xl+x/NxHfP4FT2g1Q1fgw=="
         }
       },
       "is_incremental": false,
@@ -714,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.QuinticEase.html",
-          "hash": "tcR3wnDp1caIZfrUBZC7XQ=="
+          "hash": "pIQlGhjdugiziT74QdJHjQ=="
         }
       },
       "is_incremental": false,
@@ -726,7 +810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Range.html",
-          "hash": "OQWxMhrLr8xUwpGB9R9Iww=="
+          "hash": "ttUCXeus2hBCP+7RXgjwVw=="
         }
       },
       "is_incremental": false,
@@ -738,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.RangeDrawer.html",
-          "hash": "Hijmcr+f3WEL5j8j+9hUQg=="
+          "hash": "zMKmudKidY1x0UPytKfq7A=="
         }
       },
       "is_incremental": false,
@@ -750,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.RectangleDebugDrawer.html",
-          "hash": "3cNwrnyJCaG2Ryfmufp2VQ=="
+          "hash": "KzUruhVILEEX4ELClgJvvg=="
         }
       },
       "is_incremental": false,
@@ -762,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ScenePathAttribute.html",
-          "hash": "CaSySjXNwweDds6s4W9ccg=="
+          "hash": "bx452K0eEgNDdj4vjK4ACw=="
         }
       },
       "is_incremental": false,
@@ -774,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ScenePathAttributePropertyDrawer.html",
-          "hash": "ZstkHsNkQ7ApLd6l5KU8/A=="
+          "hash": "fx2sFfdQNvlvjzwotnQ6Dw=="
         }
       },
       "is_incremental": false,
@@ -786,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.ScriptingDefines.html",
-          "hash": "csbERHTkOKdHJVX6G0cLuA=="
+          "hash": "oyBd30AyHYs70e7OrhX3WA=="
         }
       },
       "is_incremental": false,
@@ -798,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Signal-1.html",
-          "hash": "PIpYpj1vFtLuIhBmrgf09g=="
+          "hash": "91ZsWEgFFjoIPWGfFLUbBA=="
         }
       },
       "is_incremental": false,
@@ -810,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Signal-2.html",
-          "hash": "/NRvxf8QDdhw1n14WFYRcg=="
+          "hash": "cdCpP5C7+QBffKQnYFI50w=="
         }
       },
       "is_incremental": false,
@@ -822,7 +906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Signal-3.html",
-          "hash": "jh+N7vTGGGZLieuBvdLVHg=="
+          "hash": "RwvVG0z2VyHB6yml/Lq6ZA=="
         }
       },
       "is_incremental": false,
@@ -834,7 +918,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Signal-4.html",
-          "hash": "N7FoNcpOC/Xb8/W8v8hksA=="
+          "hash": "oOsro/Kr7Kc8fr0qiNcQWg=="
         }
       },
       "is_incremental": false,
@@ -846,7 +930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Signal.html",
-          "hash": "eTY63ytnmXLeB/cU/tS/YQ=="
+          "hash": "BXLGSZ124ofFkZVlPGx11Q=="
         }
       },
       "is_incremental": false,
@@ -858,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.SignalBase-2.html",
-          "hash": "1cBhZwDafE4IbnyMz+7yYA=="
+          "hash": "K+ifOptof09G8VsFBTFh7g=="
         }
       },
       "is_incremental": false,
@@ -870,7 +954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.SignalManager-1.html",
-          "hash": "1GocixzL9v+DTExEEd2AFA=="
+          "hash": "000CO3jWx4Gk3w1absi9yQ=="
         }
       },
       "is_incremental": false,
@@ -882,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.SineEase.html",
-          "hash": "7dYBVIiDJraIkQEDx6frAw=="
+          "hash": "BziqSqNIuxXe0yAEH4kfsA=="
         }
       },
       "is_incremental": false,
@@ -894,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.SingletonBehavior-1.html",
-          "hash": "/xof5342/lYcUJeXJNLcMA=="
+          "hash": "auIBaoff+8kfx6G+Zp6kfg=="
         }
       },
       "is_incremental": false,
@@ -906,7 +990,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.State.html",
-          "hash": "zwPBdbXjcDw2+hPQTwuBfQ=="
+          "hash": "82RfyxVcEyuyUfFyUmhsKg=="
         }
       },
       "is_incremental": false,
@@ -918,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.StateLink.TransitionCondition.html",
-          "hash": "oSOqTtuKvxihTbD1atZ0Hg=="
+          "hash": "4ZO+mrJiI6Gu384cIWh49g=="
         }
       },
       "is_incremental": false,
@@ -930,7 +1014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.StateLink.html",
-          "hash": "+ITHXSKirYFIzXg4bP5IAQ=="
+          "hash": "gTz8oc9KWCovQHvA/A5m4A=="
         }
       },
       "is_incremental": false,
@@ -942,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.StateMachine.html",
-          "hash": "2g8prpzGg5U1WzKwa+lPpA=="
+          "hash": "pj6ILIGavw8EeqKckhG5RQ=="
         }
       },
       "is_incremental": false,
@@ -954,7 +1038,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.StateMachineBehavior.html",
-          "hash": "MwBgt2O6YELBgG6bwHYayw=="
+          "hash": "KLOkBtmZJO5uoc0vWe9Krw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.Swizzle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.Swizzle.html",
+          "hash": "o849htpzMlAMafxyO4XG/w=="
         }
       },
       "is_incremental": false,
@@ -966,7 +1062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TaskScheduler.html",
-          "hash": "vSs0EIMkMCqZfwupZ4+DyA=="
+          "hash": "dmyyDR958UStm+ZrLlIBgw=="
         }
       },
       "is_incremental": false,
@@ -978,7 +1074,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TextDebugDrawer.html",
-          "hash": "i9KWeZ/Xzfjv0vo24Bu08g=="
+          "hash": "Tq5txItUF4T/s+cl5/Hocw=="
         }
       },
       "is_incremental": false,
@@ -990,7 +1086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TextIndentHelper.html",
-          "hash": "75evhmRKFY2Nd24eH9Sl0Q=="
+          "hash": "L8aYt6v4rRvZt8+zmahrDQ=="
         }
       },
       "is_incremental": false,
@@ -1002,7 +1098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TimeScale.html",
-          "hash": "W8aZRE9jIgwASOpmQy3g5w=="
+          "hash": "7SnyUT058hB0eJd96gfS1A=="
         }
       },
       "is_incremental": false,
@@ -1014,7 +1110,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TimedDebugDrawModifier.html",
-          "hash": "PvkvwOyvH/vWi845dPHGeg=="
+          "hash": "flML3iJKoHmOwYC8/KzdQg=="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1122,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.Timer.html",
-          "hash": "l0tnCTe8wL5LH/CE0mrLBA=="
+          "hash": "tkbHJzY2S2+uN36bCjDs0w=="
         }
       },
       "is_incremental": false,
@@ -1038,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TransformDebugDrawModifier.html",
-          "hash": "WShGLgN27uMn6z3n7ngOkA=="
+          "hash": "YvtD72PrJRp8PC9PKHP45w=="
         }
       },
       "is_incremental": false,
@@ -1050,7 +1146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TransformEditor.html",
-          "hash": "KxU22ka1fTXSHLVKLnka1g=="
+          "hash": "9T9FsFUXAuIH006cdXyEgw=="
         }
       },
       "is_incremental": false,
@@ -1062,7 +1158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.TypeExtensions.html",
-          "hash": "YsdDkWhugQgR1jg7LgAZ6g=="
+          "hash": "pQVjoAEU2yhDzT08zV7evg=="
         }
       },
       "is_incremental": false,
@@ -1074,7 +1170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.UIStack.Transition.html",
-          "hash": "44xPcMGYehWgHYJLpmm2hA=="
+          "hash": "6dvDOf2QOif4WJRg8DRBwA=="
         }
       },
       "is_incremental": false,
@@ -1086,7 +1182,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.UIStack.html",
-          "hash": "7WC2WhFQ9oc+xTff0QdZGQ=="
+          "hash": "FfNUlJIV7jtvij8XvFe7Cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Atlas.VectorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Atlas.VectorExtensions.html",
+          "hash": "JDCrbfGS1KCjeEoxtZxSBg=="
         }
       },
       "is_incremental": false,
@@ -1098,7 +1206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Atlas.html",
-          "hash": "sZvqJqTfOwStLRb+U5776Q=="
+          "hash": "yoQXFXnryzL91mOIvnlUhg=="
         }
       },
       "is_incremental": false,
@@ -1110,7 +1218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "4ZOFIhvbfDt3iWtg8V14Cg=="
+          "hash": "fuVyXrtt7pNS8wvJPGSpxw=="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "U1k0ystEfYN1Gxq/jmLDrw=="
+          "hash": "7vex52Hjah+tLZrBPO5vnw=="
         }
       },
       "is_incremental": false,
@@ -1189,7 +1297,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "5GB11yhy65q23seivylC7w=="
+          "hash": "9kooFb1Z9iiQGQ78fRFElg=="
         }
       },
       "is_incremental": false,
@@ -1225,7 +1333,7 @@
       "output": {
         ".html": {
           "relative_path": "user-manual/Intro.html",
-          "hash": "IXLsvfWk+ub8Vk1WU/sewA=="
+          "hash": "gI6uapRjoil78s2CaIk54w=="
         }
       },
       "is_incremental": false,
@@ -1260,24 +1368,24 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 123,
+          "skipped_file_count": 123
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 114,
-          "skipped_file_count": 114
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 2
         }
       }
     },

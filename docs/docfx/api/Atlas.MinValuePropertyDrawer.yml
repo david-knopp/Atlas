@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: MinValuePropertyDrawer
     path: ../../Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
@@ -35,13 +35,13 @@ items:
       <CustomPropertyDrawer(GetType(MinValueAttribute))>
 
       Public NotInheritable Class MinValuePropertyDrawer
-
           Inherits PropertyDrawer
   inheritance:
   - System.Object
   - UnityEditor.GUIDrawer
   - UnityEditor.PropertyDrawer
   inheritedMembers:
+  - UnityEditor.PropertyDrawer.CreatePropertyGUI(UnityEditor.SerializedProperty)
   - UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   - UnityEditor.PropertyDrawer.CanCacheInspectorGUI(UnityEditor.SerializedProperty)
   - UnityEditor.PropertyDrawer.attribute
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: OnGUI
     path: ../../Assets/Scripts/Editor/Utils/Attributes/MinValuePropertyDrawer.cs
@@ -133,6 +133,47 @@ references:
   name: PropertyDrawer
   nameWithType: PropertyDrawer
   fullName: UnityEditor.PropertyDrawer
+- uid: UnityEditor.PropertyDrawer.CreatePropertyGUI(UnityEditor.SerializedProperty)
+  commentId: M:UnityEditor.PropertyDrawer.CreatePropertyGUI(UnityEditor.SerializedProperty)
+  parent: UnityEditor.PropertyDrawer
+  isExternal: true
+  name: CreatePropertyGUI(SerializedProperty)
+  nameWithType: PropertyDrawer.CreatePropertyGUI(SerializedProperty)
+  fullName: UnityEditor.PropertyDrawer.CreatePropertyGUI(UnityEditor.SerializedProperty)
+  spec.csharp:
+  - uid: UnityEditor.PropertyDrawer.CreatePropertyGUI(UnityEditor.SerializedProperty)
+    name: CreatePropertyGUI
+    nameWithType: PropertyDrawer.CreatePropertyGUI
+    fullName: UnityEditor.PropertyDrawer.CreatePropertyGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.PropertyDrawer.CreatePropertyGUI(UnityEditor.SerializedProperty)
+    name: CreatePropertyGUI
+    nameWithType: PropertyDrawer.CreatePropertyGUI
+    fullName: UnityEditor.PropertyDrawer.CreatePropertyGUI
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEditor.SerializedProperty
+    name: SerializedProperty
+    nameWithType: SerializedProperty
+    fullName: UnityEditor.SerializedProperty
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   commentId: M:UnityEditor.PropertyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   parent: UnityEditor.PropertyDrawer

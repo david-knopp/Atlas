@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IScheduledTask
     path: ../../Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ScheduledTick
     path: ../../Assets/Scripts/Runtime/TaskScheduler/IScheduledTask.cs

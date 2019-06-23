@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/IMGUI/GUIListener.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: GUIListener
     path: ../../Assets/Scripts/Runtime/UI/IMGUI/GUIListener.cs
@@ -30,7 +30,6 @@ items:
     content: 'public sealed class GUIListener : SingletonBehavior<GUIListener>'
     content.vb: >-
       Public NotInheritable Class GUIListener
-
           Inherits SingletonBehavior(Of GUIListener)
   inheritance:
   - System.Object
@@ -66,7 +65,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/IMGUI/GUIListener.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: GUIRenderEvent
     path: ../../Assets/Scripts/Runtime/UI/IMGUI/GUIListener.cs

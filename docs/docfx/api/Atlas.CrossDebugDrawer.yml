@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CrossDebugDrawer
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
@@ -33,7 +33,6 @@ items:
     content: 'public struct CrossDebugDrawer : IDebugDrawer'
     content.vb: >-
       Public Structure CrossDebugDrawer
-
           Implements IDebugDrawer
   seealso:
   - linkId: Atlas.DebugDraw
@@ -66,7 +65,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
@@ -105,7 +104,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFinished
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
@@ -144,7 +143,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Color
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
@@ -183,7 +182,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Draw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/CrossDebugDrawer.cs

@@ -8,6 +8,9 @@ items:
   - Atlas.HashCode.Combine(System.Int32,System.Int32)
   - Atlas.HashCode.Combine(System.Int32,System.Int32,System.Int32)
   - Atlas.HashCode.Combine(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Atlas.HashCode.Get``2(``0,``1)
+  - Atlas.HashCode.Get``3(``0,``1,``2)
+  - Atlas.HashCode.Get``4(``0,``1,``2,``3)
   langs:
   - csharp
   - vb
@@ -18,7 +21,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: HashCode
     path: ../../Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
@@ -54,7 +57,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Combine
     path: ../../Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
@@ -65,16 +68,16 @@ items:
   summary: "\nCombines 2 hash codes\n"
   example: []
   syntax:
-    content: public static int Combine(int hashA, int hashB)
+    content: public static int Combine(int hash1, int hash2)
     parameters:
-    - id: hashA
+    - id: hash1
       type: System.Int32
-    - id: hashB
+    - id: hash2
       type: System.Int32
     return:
       type: System.Int32
       description: The combined hash value
-    content.vb: Public Shared Function Combine(hashA As Integer, hashB As Integer) As Integer
+    content.vb: Public Shared Function Combine(hash1 As Integer, hash2 As Integer) As Integer
   overload: Atlas.HashCode.Combine*
   modifiers.csharp:
   - public
@@ -96,7 +99,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Combine
     path: ../../Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
@@ -107,18 +110,18 @@ items:
   summary: "\nCombines 3 hash codes\n"
   example: []
   syntax:
-    content: public static int Combine(int hashA, int hashB, int hashC)
+    content: public static int Combine(int hash1, int hash2, int hash3)
     parameters:
-    - id: hashA
+    - id: hash1
       type: System.Int32
-    - id: hashB
+    - id: hash2
       type: System.Int32
-    - id: hashC
+    - id: hash3
       type: System.Int32
     return:
       type: System.Int32
       description: The combined hash value
-    content.vb: Public Shared Function Combine(hashA As Integer, hashB As Integer, hashC As Integer) As Integer
+    content.vb: Public Shared Function Combine(hash1 As Integer, hash2 As Integer, hash3 As Integer) As Integer
   overload: Atlas.HashCode.Combine*
   modifiers.csharp:
   - public
@@ -140,7 +143,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Combine
     path: ../../Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
@@ -151,20 +154,20 @@ items:
   summary: "\nCombines 4 hash codes\n"
   example: []
   syntax:
-    content: public static int Combine(int hashA, int hashB, int hashC, int hashD)
+    content: public static int Combine(int hash1, int hash2, int hash3, int hash4)
     parameters:
-    - id: hashA
+    - id: hash1
       type: System.Int32
-    - id: hashB
+    - id: hash2
       type: System.Int32
-    - id: hashC
+    - id: hash3
       type: System.Int32
-    - id: hashD
+    - id: hash4
       type: System.Int32
     return:
       type: System.Int32
       description: The combined hash value
-    content.vb: Public Shared Function Combine(hashA As Integer, hashB As Integer, hashC As Integer, hashD As Integer) As Integer
+    content.vb: Public Shared Function Combine(hash1 As Integer, hash2 As Integer, hash3 As Integer, hash4 As Integer) As Integer
   overload: Atlas.HashCode.Combine*
   modifiers.csharp:
   - public
@@ -172,6 +175,159 @@ items:
   modifiers.vb:
   - Public
   - Shared
+- uid: Atlas.HashCode.Get``2(``0,``1)
+  commentId: M:Atlas.HashCode.Get``2(``0,``1)
+  id: Get``2(``0,``1)
+  parent: Atlas.HashCode
+  langs:
+  - csharp
+  - vb
+  name: Get<T1, T2>(T1, T2)
+  nameWithType: HashCode.Get<T1, T2>(T1, T2)
+  fullName: Atlas.HashCode.Get<T1, T2>(T1, T2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Get
+    path: ../../Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
+    startLine: 56
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nGenerates a hashcode representing the given objects\n"
+  example: []
+  syntax:
+    content: public static int Get<T1, T2>(T1 obj1, T2 obj2)
+    parameters:
+    - id: obj1
+      type: '{T1}'
+    - id: obj2
+      type: '{T2}'
+    typeParameters:
+    - id: T1
+    - id: T2
+    return:
+      type: System.Int32
+      description: The generated hashcode
+    content.vb: Public Shared Function Get(Of T1, T2)(obj1 As T1, obj2 As T2) As Integer
+  overload: Atlas.HashCode.Get*
+  nameWithType.vb: HashCode.Get(Of T1, T2)(T1, T2)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Atlas.HashCode.Get(Of T1, T2)(T1, T2)
+  name.vb: Get(Of T1, T2)(T1, T2)
+- uid: Atlas.HashCode.Get``3(``0,``1,``2)
+  commentId: M:Atlas.HashCode.Get``3(``0,``1,``2)
+  id: Get``3(``0,``1,``2)
+  parent: Atlas.HashCode
+  langs:
+  - csharp
+  - vb
+  name: Get<T1, T2, T3>(T1, T2, T3)
+  nameWithType: HashCode.Get<T1, T2, T3>(T1, T2, T3)
+  fullName: Atlas.HashCode.Get<T1, T2, T3>(T1, T2, T3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Get
+    path: ../../Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
+    startLine: 65
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nGenerates a hashcode representing the given objects\n"
+  example: []
+  syntax:
+    content: public static int Get<T1, T2, T3>(T1 obj1, T2 obj2, T3 obj3)
+    parameters:
+    - id: obj1
+      type: '{T1}'
+    - id: obj2
+      type: '{T2}'
+    - id: obj3
+      type: '{T3}'
+    typeParameters:
+    - id: T1
+    - id: T2
+    - id: T3
+    return:
+      type: System.Int32
+      description: The generated hashcode
+    content.vb: Public Shared Function Get(Of T1, T2, T3)(obj1 As T1, obj2 As T2, obj3 As T3) As Integer
+  overload: Atlas.HashCode.Get*
+  nameWithType.vb: HashCode.Get(Of T1, T2, T3)(T1, T2, T3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Atlas.HashCode.Get(Of T1, T2, T3)(T1, T2, T3)
+  name.vb: Get(Of T1, T2, T3)(T1, T2, T3)
+- uid: Atlas.HashCode.Get``4(``0,``1,``2,``3)
+  commentId: M:Atlas.HashCode.Get``4(``0,``1,``2,``3)
+  id: Get``4(``0,``1,``2,``3)
+  parent: Atlas.HashCode
+  langs:
+  - csharp
+  - vb
+  name: Get<T1, T2, T3, T4>(T1, T2, T3, T4)
+  nameWithType: HashCode.Get<T1, T2, T3, T4>(T1, T2, T3, T4)
+  fullName: Atlas.HashCode.Get<T1, T2, T3, T4>(T1, T2, T3, T4)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Get
+    path: ../../Assets/Scripts/Runtime/Utils/Hashing/HashCode.cs
+    startLine: 74
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nGenerates a hashcode representing the given objects\n"
+  example: []
+  syntax:
+    content: public static int Get<T1, T2, T3, T4>(T1 obj1, T2 obj2, T3 obj3, T4 obj4)
+    parameters:
+    - id: obj1
+      type: '{T1}'
+    - id: obj2
+      type: '{T2}'
+    - id: obj3
+      type: '{T3}'
+    - id: obj4
+      type: '{T4}'
+    typeParameters:
+    - id: T1
+    - id: T2
+    - id: T3
+    - id: T4
+    return:
+      type: System.Int32
+      description: The generated hashcode
+    content.vb: Public Shared Function Get(Of T1, T2, T3, T4)(obj1 As T1, obj2 As T2, obj3 As T3, obj4 As T4) As Integer
+  overload: Atlas.HashCode.Get*
+  nameWithType.vb: HashCode.Get(Of T1, T2, T3, T4)(T1, T2, T3, T4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Atlas.HashCode.Get(Of T1, T2, T3, T4)(T1, T2, T3, T4)
+  name.vb: Get(Of T1, T2, T3, T4)(T1, T2, T3, T4)
 references:
 - uid: Atlas
   commentId: N:Atlas
@@ -203,3 +359,48 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: Atlas.HashCode.Get*
+  commentId: Overload:Atlas.HashCode.Get
+  name: Get
+  nameWithType: HashCode.Get
+  fullName: Atlas.HashCode.Get
+- uid: '{T1}'
+  commentId: '!:T1'
+  definition: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: '{T2}'
+  commentId: '!:T2'
+  definition: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: T2
+  name: T2
+  nameWithType: T2
+  fullName: T2
+- uid: '{T3}'
+  commentId: '!:T3'
+  definition: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: T3
+  name: T3
+  nameWithType: T3
+  fullName: T3
+- uid: '{T4}'
+  commentId: '!:T4'
+  definition: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4
+- uid: T4
+  name: T4
+  nameWithType: T4
+  fullName: T4

@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Range
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: m_minValue
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: m_maxValue
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: GetRandomValue
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: GetLerpedValue
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -209,7 +209,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: GetNormalizedValue
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Contains
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -287,7 +287,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Contains
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -326,7 +326,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Intersects
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -365,7 +365,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Clamp
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -407,7 +407,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: UnionWith
     path: ../../Assets/Scripts/Runtime/Math/Range.cs
@@ -446,7 +446,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Range.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IntersectionWith
     path: ../../Assets/Scripts/Runtime/Math/Range.cs

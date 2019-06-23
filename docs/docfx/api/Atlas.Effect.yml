@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Effects/Effect.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Effect
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
@@ -34,7 +34,6 @@ items:
     content: 'public sealed class Effect : MonoBehaviour'
     content.vb: >-
       Public NotInheritable Class Effect
-
           Inherits MonoBehaviour
   seealso:
   - linkId: Atlas.EffectEmitterBase
@@ -67,7 +66,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Effects/Effect.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ActivationEvent
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
@@ -104,7 +103,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Effects/Effect.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DestructionEvent
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
@@ -141,7 +140,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Effects/Effect.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsPlaying
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
@@ -178,7 +177,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Effects/Effect.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Play
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs
@@ -210,7 +209,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Effects/Effect.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Stop
     path: ../../Assets/Scripts/Runtime/Effects/Effect.cs

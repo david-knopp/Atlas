@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: State
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -37,7 +37,6 @@ items:
     content: 'public abstract class State : ITickable'
     content.vb: >-
       Public MustInherit Class State
-
           Implements ITickable
   seealso:
   - linkId: Atlas.IStateMachine
@@ -70,7 +69,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -102,7 +101,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: StateMachine
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -139,7 +138,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: StateLinks
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -176,7 +175,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: AddStateLink
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -212,7 +211,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: AddStateLink
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -251,7 +250,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Enter
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -285,7 +284,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Tick
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs
@@ -321,7 +320,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/State.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Exit
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/State.cs

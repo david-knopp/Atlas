@@ -1,39 +1,39 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Atlas.PreventEditInInspectorAttribute
-  commentId: T:Atlas.PreventEditInInspectorAttribute
-  id: PreventEditInInspectorAttribute
+- uid: Atlas.InspectorButtonAttribute
+  commentId: T:Atlas.InspectorButtonAttribute
+  id: InspectorButtonAttribute
   parent: Atlas
   children: []
   langs:
   - csharp
   - vb
-  name: PreventEditInInspectorAttribute
-  nameWithType: PreventEditInInspectorAttribute
-  fullName: Atlas.PreventEditInInspectorAttribute
+  name: InspectorButtonAttribute
+  nameWithType: InspectorButtonAttribute
+  fullName: Atlas.InspectorButtonAttribute
   type: Class
   source:
     remote:
-      path: Assets/Scripts/Runtime/Utils/Attributes/PreventEditInInspectorAttribute.cs
+      path: Assets/Scripts/Runtime/Utils/Attributes/InspectorButtonAttribute.cs
       branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
-    id: PreventEditInInspectorAttribute
-    path: ../../Assets/Scripts/Runtime/Utils/Attributes/PreventEditInInspectorAttribute.cs
-    startLine: 9
+    id: InspectorButtonAttribute
+    path: ../../Assets/Scripts/Runtime/Utils/Attributes/InspectorButtonAttribute.cs
+    startLine: 8
   assemblies:
   - Atlas.Runtime
   namespace: Atlas
-  summary: "\nPrevents the target field from being edited in the inspector window while\nstill maintaining its visiblity\n"
+  summary: "\nAutomatically adds a button in the inspector that executes the marked function on click.\n"
   example: []
   syntax:
     content: >-
-      [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
+      [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
 
-      public sealed class PreventEditInInspectorAttribute : PropertyAttribute, _Attribute
+      public sealed class InspectorButtonAttribute : PropertyAttribute, _Attribute
     content.vb: >-
-      <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
+      <AttributeUsage(AttributeTargets.Method, AllowMultiple:=False)>
 
-      Public NotInheritable Class PreventEditInInspectorAttribute
+      Public NotInheritable Class InspectorButtonAttribute
           Inherits PropertyAttribute
           Implements _Attribute
   inheritance:
@@ -49,7 +49,7 @@ items:
     ctor: System.AttributeUsageAttribute.#ctor(System.AttributeTargets)
     arguments:
     - type: System.AttributeTargets
-      value: 256
+      value: 64
     namedArguments:
     - name: AllowMultiple
       type: System.Boolean

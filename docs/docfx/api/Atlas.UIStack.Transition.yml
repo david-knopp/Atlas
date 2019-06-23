@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/UIStack.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Transition
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/UIStack.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: None
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/UIStack.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Intro
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
@@ -132,7 +132,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/UIStack.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Outro
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/UIStack.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Full
     path: ../../Assets/Scripts/Runtime/UI/UIStack.cs

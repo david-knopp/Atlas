@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Signal/Signal.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Signal
     path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs
@@ -30,9 +30,7 @@ items:
     content: 'public class Signal : SignalBase<ICommand, Action>, ISignal'
     content.vb: >-
       Public Class Signal
-
           Inherits SignalBase(Of ICommand, Action)
-
           Implements ISignal
   inheritance:
   - System.Object
@@ -67,7 +65,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Signal/Signal.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Dispatch
     path: ../../Assets/Scripts/Runtime/Framework/Signal/Signal.cs

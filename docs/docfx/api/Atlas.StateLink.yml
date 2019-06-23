@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: StateLink
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
@@ -32,7 +32,6 @@ items:
     content: 'public struct StateLink : IStateLink'
     content.vb: >-
       Public Structure StateLink
-
           Implements IStateLink
   seealso:
   - linkId: Atlas.IStateLink
@@ -61,7 +60,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
@@ -100,7 +99,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: NextState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
@@ -139,7 +138,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsSatisfied
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs

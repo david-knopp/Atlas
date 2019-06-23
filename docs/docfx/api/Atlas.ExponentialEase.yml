@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ExponentialEase
     path: ../../Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: In
     path: ../../Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Out
     path: ../../Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: InOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/ExponentialEase.cs

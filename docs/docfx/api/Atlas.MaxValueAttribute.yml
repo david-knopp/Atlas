@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: MaxValueAttribute
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
@@ -36,9 +36,7 @@ items:
       <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
 
       Public NotInheritable Class MaxValueAttribute
-
           Inherits PropertyAttribute
-
           Implements _Attribute
   seealso:
   - linkId: Atlas.MinValueAttribute
@@ -83,7 +81,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
@@ -119,7 +117,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: MaxValue
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/MaxValueAttribute.cs

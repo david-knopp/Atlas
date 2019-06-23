@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.IPoolable
+  commentId: T:Atlas.IPoolable
+  id: IPoolable
+  parent: Atlas
+  children:
+  - Atlas.IPoolable.OnPoolDestroy
+  - Atlas.IPoolable.OnPoolInstantiate
+  langs:
+  - csharp
+  - vb
+  name: IPoolable
+  nameWithType: IPoolable
+  fullName: Atlas.IPoolable
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/IPoolable.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: IPoolable
+    path: ../../Assets/Scripts/Runtime/Pooling/IPoolable.cs
+    startLine: 2
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public interface IPoolable
+    content.vb: Public Interface IPoolable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Atlas.IPoolable.OnPoolInstantiate
+  commentId: M:Atlas.IPoolable.OnPoolInstantiate
+  id: OnPoolInstantiate
+  parent: Atlas.IPoolable
+  langs:
+  - csharp
+  - vb
+  name: OnPoolInstantiate()
+  nameWithType: IPoolable.OnPoolInstantiate()
+  fullName: Atlas.IPoolable.OnPoolInstantiate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/IPoolable.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: OnPoolInstantiate
+    path: ../../Assets/Scripts/Runtime/Pooling/IPoolable.cs
+    startLine: 7
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nCalled when the object is instantiated from its pool\n"
+  example: []
+  syntax:
+    content: void OnPoolInstantiate()
+    content.vb: Sub OnPoolInstantiate
+  overload: Atlas.IPoolable.OnPoolInstantiate*
+- uid: Atlas.IPoolable.OnPoolDestroy
+  commentId: M:Atlas.IPoolable.OnPoolDestroy
+  id: OnPoolDestroy
+  parent: Atlas.IPoolable
+  langs:
+  - csharp
+  - vb
+  name: OnPoolDestroy()
+  nameWithType: IPoolable.OnPoolDestroy()
+  fullName: Atlas.IPoolable.OnPoolDestroy()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/IPoolable.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: OnPoolDestroy
+    path: ../../Assets/Scripts/Runtime/Pooling/IPoolable.cs
+    startLine: 12
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nCalled when the object is destroyed and returned to its pool\n"
+  example: []
+  syntax:
+    content: void OnPoolDestroy()
+    content.vb: Sub OnPoolDestroy
+  overload: Atlas.IPoolable.OnPoolDestroy*
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: Atlas.IPoolable.OnPoolInstantiate*
+  commentId: Overload:Atlas.IPoolable.OnPoolInstantiate
+  name: OnPoolInstantiate
+  nameWithType: IPoolable.OnPoolInstantiate
+  fullName: Atlas.IPoolable.OnPoolInstantiate
+- uid: Atlas.IPoolable.OnPoolDestroy*
+  commentId: Overload:Atlas.IPoolable.OnPoolDestroy
+  name: OnPoolDestroy
+  nameWithType: IPoolable.OnPoolDestroy
+  fullName: Atlas.IPoolable.OnPoolDestroy

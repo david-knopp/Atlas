@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Interfaces/IFixedTickable.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IFixedTickable
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/IFixedTickable.cs
@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Interfaces/IFixedTickable.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: FixedTick
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/IFixedTickable.cs

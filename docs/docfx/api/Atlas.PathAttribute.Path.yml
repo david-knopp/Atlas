@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Path
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: File
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Directory
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs

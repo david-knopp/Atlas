@@ -48,7 +48,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: EaseType
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: LinearIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: LinearOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: LinearInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -177,7 +177,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ExponentialIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -209,7 +209,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ExponentialOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ExponentialInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -273,7 +273,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuadraticIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuadraticOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -337,7 +337,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuadraticInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CubicIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -401,7 +401,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CubicOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -433,7 +433,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CubicInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -465,7 +465,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuarticIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -497,7 +497,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuarticOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -529,7 +529,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuarticInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -561,7 +561,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuinticIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -593,7 +593,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuinticOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -625,7 +625,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: QuinticInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -657,7 +657,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BackIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -689,7 +689,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BackOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -721,7 +721,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BackInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -753,7 +753,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BounceIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -785,7 +785,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BounceOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -817,7 +817,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BounceInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -849,7 +849,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ElasticIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -881,7 +881,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ElasticOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -913,7 +913,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ElasticInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -945,7 +945,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CircularIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -977,7 +977,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CircularOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -1009,7 +1009,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CircularInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -1041,7 +1041,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SineIn
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -1073,7 +1073,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SineOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs
@@ -1105,7 +1105,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/EaseType.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SineInOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/EaseType.cs

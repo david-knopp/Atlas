@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TaskScheduler
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -37,7 +37,6 @@ items:
     content: 'public sealed class TaskScheduler : IScheduledTask'
     content.vb: >-
       Public NotInheritable Class TaskScheduler
-
           Implements IScheduledTask
   seealso:
   - linkId: Atlas.IScheduledTask
@@ -68,7 +67,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -104,7 +103,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TaskCount
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -141,7 +140,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Frame
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -178,7 +177,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: AddTask
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -220,7 +219,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: AddTask
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -259,7 +258,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: RemoveTask
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -295,7 +294,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ChangeFrequency
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
@@ -334,7 +333,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ScheduledTick
     path: ../../Assets/Scripts/Runtime/TaskScheduler/TaskScheduler.cs

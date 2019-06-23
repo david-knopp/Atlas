@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DebugExtensions
     path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawX
     path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawX
     path: ../../Assets/Scripts/Runtime/Utils/Extensions/Debug/DebugExtensions.cs

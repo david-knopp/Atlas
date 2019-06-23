@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Ease
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -42,7 +42,6 @@ items:
       <Serializable>
 
       Public NotInheritable Class Ease
-
           Implements ISerializationCallbackReceiver
   inheritance:
   - System.Object
@@ -74,7 +73,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Type
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -111,7 +110,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Evaluate
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -153,7 +152,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Interpolate
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -198,7 +197,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Interpolate
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -243,7 +242,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Interpolate
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -288,7 +287,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Interpolate
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -333,7 +332,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: OnBeforeSerialize
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs
@@ -365,7 +364,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/Ease.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: OnAfterDeserialize
     path: ../../Assets/Scripts/Runtime/Math/Easing/Ease.cs

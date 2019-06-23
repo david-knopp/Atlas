@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: EnumExtensions
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsObsolete
     path: ../../Assets/Scripts/Editor/Utils/Extensions/System/EnumExtensions.cs

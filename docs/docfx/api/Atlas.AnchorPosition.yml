@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/AnchorPosition.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: AnchorPosition
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/AnchorPosition.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TopLeft
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/AnchorPosition.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TopRight
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/AnchorPosition.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BottomLeft
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/AnchorPosition.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BottomRight
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/UI/AnchorPosition.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Center
     path: ../../Assets/Scripts/Runtime/UI/AnchorPosition.cs

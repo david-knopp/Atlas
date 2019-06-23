@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BillboardDebugDrawModifier
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
@@ -34,7 +34,6 @@ items:
     content: 'public struct BillboardDebugDrawModifier : IDebugDrawer'
     content.vb: >-
       Public Structure BillboardDebugDrawModifier
-
           Implements IDebugDrawer
   seealso:
   - linkId: Atlas.DebugDraw
@@ -67,7 +66,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
@@ -106,7 +105,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
@@ -148,7 +147,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFinished
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
@@ -187,7 +186,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Color
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
@@ -226,7 +225,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Draw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/BillboardDebugDrawModifier.cs

@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: EditorGUILayoutUtils
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: HorizontalLine
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: HorizontalLine
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
@@ -128,7 +128,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: RichLabelField
     path: ../../Assets/Scripts/Editor/Utils/EditorGUILayoutUtils.cs

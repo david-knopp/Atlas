@@ -152,8 +152,20 @@
           name: QuinticEase
         - uid: Atlas.SineEase
           name: SineEase
+      - name: Vector
+        items:
+        - uid: Atlas.Swizzle
+          name: Swizzle
+        - uid: Atlas.VectorExtensions
+          name: VectorExtensions
       - uid: Atlas.Range
         name: Range
+    - name: Pooling
+      items:
+      - uid: Atlas.IPoolable
+        name: IPoolable
+      - uid: Atlas.PrefabPool
+        name: PrefabPool
     - name: TaskScheduler
       items:
       - uid: Atlas.IScheduledTask
@@ -190,6 +202,8 @@
           name: PathAttribute.Relativity
         - uid: Atlas.PreventEditInInspectorAttribute
           name: PreventEditInInspectorAttribute
+        - uid: Atlas.InspectorButtonAttribute
+          name: InspectorButtonAttribute
         - uid: Atlas.ScenePathAttribute
           name: ScenePathAttribute
       - name: Hashing
@@ -200,6 +214,10 @@
         items:
         - uid: Atlas.GUIColorScope
           name: GUIColorScope
+        - uid: Atlas.GUIBackgroundColorScope
+          name: GUIBackgroundColorScope
+        - uid: Atlas.GUIContentColorScope
+          name: GUIContentColorScope
         - uid: Atlas.ProfilerScope
           name: ProfilerScope
       - name: Timer
@@ -224,6 +242,8 @@
       name: MaxValuePropertyDrawer
     - uid: Atlas.MinValuePropertyDrawer
       name: MinValuePropertyDrawer
+    - uid: Atlas.MonoBehaviourEditor
+      name: MonoBehaviourEditor
     - uid: Atlas.PathAttributePropertyDrawer
       name: PathAttributePropertyDrawer
     - uid: Atlas.PreventEditInInspectorPropertyDrawer

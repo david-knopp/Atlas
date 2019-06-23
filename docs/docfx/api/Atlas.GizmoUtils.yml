@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/GizmoUtils.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: GizmoUtils
     path: ../../Assets/Scripts/Runtime/Utils/GizmoUtils.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/GizmoUtils.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawCircle
     path: ../../Assets/Scripts/Runtime/Utils/GizmoUtils.cs

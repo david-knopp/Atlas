@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TextIndentHelper
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: StandardTabHelper
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: StandardSpacesHelper
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
@@ -129,7 +129,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Indent
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IndentLevel
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
@@ -242,7 +242,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CharactersPerIndent
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Editor/Utils/TextIndentHelper.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ApplyIndent
     path: ../../Assets/Scripts/Editor/Utils/TextIndentHelper.cs

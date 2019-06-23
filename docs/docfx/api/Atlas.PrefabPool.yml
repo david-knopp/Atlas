@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.PrefabPool
+  commentId: T:Atlas.PrefabPool
+  id: PrefabPool
+  parent: Atlas
+  children:
+  - Atlas.PrefabPool.#ctor(UnityEngine.Transform)
+  - Atlas.PrefabPool.Destroy``1(``0)
+  - Atlas.PrefabPool.Instantiate``1(``0)
+  - Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  - Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  - Atlas.PrefabPool.ObjectCount
+  - Atlas.PrefabPool.PreloadObjects``1(``0,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PrefabPool
+  nameWithType: PrefabPool
+  fullName: Atlas.PrefabPool
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: PrefabPool
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 8
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public sealed class PrefabPool
+    content.vb: Public NotInheritable Class PrefabPool
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Atlas.PrefabPool.#ctor(UnityEngine.Transform)
+  commentId: M:Atlas.PrefabPool.#ctor(UnityEngine.Transform)
+  id: '#ctor(UnityEngine.Transform)'
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: PrefabPool(Transform)
+  nameWithType: PrefabPool.PrefabPool(Transform)
+  fullName: Atlas.PrefabPool.PrefabPool(UnityEngine.Transform)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: .ctor
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 15
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public PrefabPool(Transform pooledObjectsParent)
+    parameters:
+    - id: pooledObjectsParent
+      type: UnityEngine.Transform
+      description: Transform to use for parenting objects currently in the pool&apos;s reserve
+    content.vb: Public Sub New(pooledObjectsParent As Transform)
+  overload: Atlas.PrefabPool.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Atlas.PrefabPool.ObjectCount
+  commentId: P:Atlas.PrefabPool.ObjectCount
+  id: ObjectCount
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: ObjectCount
+  nameWithType: PrefabPool.ObjectCount
+  fullName: Atlas.PrefabPool.ObjectCount
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ObjectCount
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 25
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nTotal number of objects this pool has internally instantiated\n"
+  example: []
+  syntax:
+    content: public int ObjectCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ObjectCount As Integer
+  overload: Atlas.PrefabPool.ObjectCount*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Atlas.PrefabPool.PreloadObjects``1(``0,System.Int32)
+  commentId: M:Atlas.PrefabPool.PreloadObjects``1(``0,System.Int32)
+  id: PreloadObjects``1(``0,System.Int32)
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: PreloadObjects<T>(T, Int32)
+  nameWithType: PrefabPool.PreloadObjects<T>(T, Int32)
+  fullName: Atlas.PrefabPool.PreloadObjects<T>(T, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: PreloadObjects
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 38
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nInstantiates a specified number of objects for the given prefab. This can help eliminate runtime performance hits by\nfront-loading object creation (on level load, for instance).\n"
+  example: []
+  syntax:
+    content: >-
+      public void PreloadObjects<T>(T prefab, int count)
+          where T : Component
+    parameters:
+    - id: prefab
+      type: '{T}'
+      description: Object prefab to make copies of
+    - id: count
+      type: System.Int32
+      description: Number of objects to instantiate
+    typeParameters:
+    - id: T
+      description: Type of prefab
+    content.vb: Public Sub PreloadObjects(Of T As Component)(prefab As T, count As Integer)
+  overload: Atlas.PrefabPool.PreloadObjects*
+  nameWithType.vb: PrefabPool.PreloadObjects(Of T)(T, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.PrefabPool.PreloadObjects(Of T)(T, System.Int32)
+  name.vb: PreloadObjects(Of T)(T, Int32)
+- uid: Atlas.PrefabPool.Instantiate``1(``0)
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0)
+  id: Instantiate``1(``0)
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: Instantiate<T>(T)
+  nameWithType: PrefabPool.Instantiate<T>(T)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Instantiate
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 62
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nReturns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise\na recycled object will be re-used.\n"
+  remarks: "\nAwake/Start will not get called on recycled objects. Instead, use <xref href=\"Atlas.IPoolable.OnPoolInstantiate\" data-throw-if-not-resolved=\"false\"></xref> for per-object startup code\n"
+  example: []
+  syntax:
+    content: >-
+      public T Instantiate<T>(T prefab)
+          where T : Component, IPoolable
+    parameters:
+    - id: prefab
+      type: '{T}'
+      description: Object prefab to make a copy of
+    typeParameters:
+    - id: T
+      description: The object&apos;s prefab type
+    return:
+      type: '{T}'
+      description: The instantiated/recycled clone
+    content.vb: Public Function Instantiate(Of T As {Component, IPoolable})(prefab As T) As T
+  overload: Atlas.PrefabPool.Instantiate*
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T)
+  name.vb: Instantiate(Of T)(T)
+- uid: Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  id: Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType: PrefabPool.Instantiate<T>(T, Vector3, Quaternion)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Instantiate
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 79
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nReturns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise\na recycled object will be re-used.\n"
+  remarks: "\nAwake/Start will not get called on recycled objects. Instead, use <xref href=\"Atlas.IPoolable.OnPoolInstantiate\" data-throw-if-not-resolved=\"false\"></xref> for per-object startup code\n"
+  example: []
+  syntax:
+    content: >-
+      public T Instantiate<T>(T prefab, Vector3 position, Quaternion rotation)
+          where T : Component, IPoolable
+    parameters:
+    - id: prefab
+      type: '{T}'
+      description: Object prefab to make a copy of
+    - id: position
+      type: UnityEngine.Vector3
+      description: Position of the new object
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: Orientation of the new object
+    typeParameters:
+    - id: T
+      description: The object&apos;s prefab type
+    return:
+      type: '{T}'
+      description: The instantiated/recycled clone
+    content.vb: Public Function Instantiate(Of T As {Component, IPoolable})(prefab As T, position As Vector3, rotation As Quaternion) As T
+  overload: Atlas.PrefabPool.Instantiate*
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T, Vector3, Quaternion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+- uid: Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  id: Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType: PrefabPool.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Instantiate
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 97
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nReturns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise\na recycled object will be re-used.\n"
+  remarks: "\nAwake/Start will not get called on recycled objects. Instead, use <xref href=\"Atlas.IPoolable.OnPoolInstantiate\" data-throw-if-not-resolved=\"false\"></xref> for per-object startup code\n"
+  example: []
+  syntax:
+    content: >-
+      public T Instantiate<T>(T prefab, Vector3 position, Quaternion rotation, Transform parent)
+          where T : Component, IPoolable
+    parameters:
+    - id: prefab
+      type: '{T}'
+      description: Object prefab to make a copy of
+    - id: position
+      type: UnityEngine.Vector3
+      description: Position of the new object
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: Orientation of the new object
+    - id: parent
+      type: UnityEngine.Transform
+      description: Parent that will be assigned to the new object
+    typeParameters:
+    - id: T
+      description: The object&apos;s prefab type
+    return:
+      type: '{T}'
+      description: The instantiated/recycled clone
+    content.vb: Public Function Instantiate(Of T As {Component, IPoolable})(prefab As T, position As Vector3, rotation As Quaternion, parent As Transform) As T
+  overload: Atlas.PrefabPool.Instantiate*
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+- uid: Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  commentId: M:Atlas.PrefabPool.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  id: Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: Instantiate<T>(T, Transform, Boolean)
+  nameWithType: PrefabPool.Instantiate<T>(T, Transform, Boolean)
+  fullName: Atlas.PrefabPool.Instantiate<T>(T, UnityEngine.Transform, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Instantiate
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 139
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nReturns an instanced copy of the given prefab object. If the pool is empty, a new object will be instantiated, otherwise\na recycled object will be re-used.\n"
+  remarks: "\nAwake/Start will not get called on recycled objects. Instead, use <xref href=\"Atlas.IPoolable.OnPoolInstantiate\" data-throw-if-not-resolved=\"false\"></xref> for per-object startup code\n"
+  example: []
+  syntax:
+    content: >-
+      public T Instantiate<T>(T prefab, Transform parent, bool instantiateInWorldSpace)
+          where T : Component, IPoolable
+    parameters:
+    - id: prefab
+      type: '{T}'
+      description: Object prefab to make a copy of
+    - id: parent
+      type: UnityEngine.Transform
+      description: Parent that will be assigned to the new object
+    - id: instantiateInWorldSpace
+      type: System.Boolean
+      description: Pass true to maintain the world position of the Object, and false to set the Object&apos;s position relative to its new parent
+    typeParameters:
+    - id: T
+      description: The object&apos;s prefab type
+    return:
+      type: '{T}'
+      description: The instantiated/recycled clone
+    content.vb: Public Function Instantiate(Of T As {Component, IPoolable})(prefab As T, parent As Transform, instantiateInWorldSpace As Boolean) As T
+  overload: Atlas.PrefabPool.Instantiate*
+  nameWithType.vb: PrefabPool.Instantiate(Of T)(T, Transform, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.PrefabPool.Instantiate(Of T)(T, UnityEngine.Transform, System.Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+- uid: Atlas.PrefabPool.Destroy``1(``0)
+  commentId: M:Atlas.PrefabPool.Destroy``1(``0)
+  id: Destroy``1(``0)
+  parent: Atlas.PrefabPool
+  langs:
+  - csharp
+  - vb
+  name: Destroy<T>(T)
+  nameWithType: PrefabPool.Destroy<T>(T)
+  fullName: Atlas.PrefabPool.Destroy<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Destroy
+    path: ../../Assets/Scripts/Runtime/Pooling/PrefabPool.cs
+    startLine: 159
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  summary: "\nReturns the given object instance to the pool for recycling\n"
+  remarks: "\nOnDestroy will not get called when returning objects to the pool. Instead, use <xref href=\"Atlas.IPoolable.OnPoolDestroy\" data-throw-if-not-resolved=\"false\"></xref> for per-object cleanup code\n"
+  example: []
+  syntax:
+    content: >-
+      public void Destroy<T>(T instance)
+          where T : Component, IPoolable
+    parameters:
+    - id: instance
+      type: '{T}'
+      description: The instance to return to the pool
+    typeParameters:
+    - id: T
+      description: The object&apos;s prefab type
+    content.vb: Public Sub Destroy(Of T As {Component, IPoolable})(instance As T)
+  overload: Atlas.PrefabPool.Destroy*
+  nameWithType.vb: PrefabPool.Destroy(Of T)(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Atlas.PrefabPool.Destroy(Of T)(T)
+  name.vb: Destroy(Of T)(T)
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.PrefabPool.#ctor*
+  commentId: Overload:Atlas.PrefabPool.#ctor
+  name: PrefabPool
+  nameWithType: PrefabPool.PrefabPool
+  fullName: Atlas.PrefabPool.PrefabPool
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Atlas.PrefabPool.ObjectCount*
+  commentId: Overload:Atlas.PrefabPool.ObjectCount
+  name: ObjectCount
+  nameWithType: PrefabPool.ObjectCount
+  fullName: Atlas.PrefabPool.ObjectCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Atlas.PrefabPool.PreloadObjects*
+  commentId: Overload:Atlas.PrefabPool.PreloadObjects
+  name: PreloadObjects
+  nameWithType: PrefabPool.PreloadObjects
+  fullName: Atlas.PrefabPool.PreloadObjects
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Atlas.IPoolable.OnPoolInstantiate
+  commentId: M:Atlas.IPoolable.OnPoolInstantiate
+  isExternal: true
+- uid: Atlas.PrefabPool.Instantiate*
+  commentId: Overload:Atlas.PrefabPool.Instantiate
+  name: Instantiate
+  nameWithType: PrefabPool.Instantiate
+  fullName: Atlas.PrefabPool.Instantiate
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Atlas.IPoolable.OnPoolDestroy
+  commentId: M:Atlas.IPoolable.OnPoolDestroy
+  isExternal: true
+- uid: Atlas.PrefabPool.Destroy*
+  commentId: Overload:Atlas.PrefabPool.Destroy
+  name: Destroy
+  nameWithType: PrefabPool.Destroy
+  fullName: Atlas.PrefabPool.Destroy

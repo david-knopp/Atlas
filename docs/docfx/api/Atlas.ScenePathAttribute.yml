@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/ScenePathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ScenePathAttribute
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/ScenePathAttribute.cs
@@ -34,9 +34,7 @@ items:
       <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
 
       Public NotInheritable Class ScenePathAttribute
-
           Inherits PropertyAttribute
-
           Implements _Attribute
   seealso:
   - linkId: Atlas.PathAttribute

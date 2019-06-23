@@ -1,0 +1,2136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Atlas.Swizzle
+  commentId: T:Atlas.Swizzle
+  id: Swizzle
+  parent: Atlas
+  children:
+  - Atlas.Swizzle.XX(UnityEngine.Vector2)
+  - Atlas.Swizzle.XX(UnityEngine.Vector3)
+  - Atlas.Swizzle.XXX(UnityEngine.Vector2)
+  - Atlas.Swizzle.XXX(UnityEngine.Vector3)
+  - Atlas.Swizzle.XXY(UnityEngine.Vector2)
+  - Atlas.Swizzle.XXY(UnityEngine.Vector3)
+  - Atlas.Swizzle.XXZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.XYX(UnityEngine.Vector2)
+  - Atlas.Swizzle.XYX(UnityEngine.Vector3)
+  - Atlas.Swizzle.XYY(UnityEngine.Vector2)
+  - Atlas.Swizzle.XYY(UnityEngine.Vector3)
+  - Atlas.Swizzle.XZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.XZX(UnityEngine.Vector3)
+  - Atlas.Swizzle.XZY(UnityEngine.Vector3)
+  - Atlas.Swizzle.XZZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.YX(UnityEngine.Vector2)
+  - Atlas.Swizzle.YX(UnityEngine.Vector3)
+  - Atlas.Swizzle.YXX(UnityEngine.Vector2)
+  - Atlas.Swizzle.YXX(UnityEngine.Vector3)
+  - Atlas.Swizzle.YXY(UnityEngine.Vector2)
+  - Atlas.Swizzle.YXY(UnityEngine.Vector3)
+  - Atlas.Swizzle.YXZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.YY(UnityEngine.Vector2)
+  - Atlas.Swizzle.YY(UnityEngine.Vector3)
+  - Atlas.Swizzle.YYX(UnityEngine.Vector2)
+  - Atlas.Swizzle.YYX(UnityEngine.Vector3)
+  - Atlas.Swizzle.YYY(UnityEngine.Vector2)
+  - Atlas.Swizzle.YYY(UnityEngine.Vector3)
+  - Atlas.Swizzle.YYZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.YZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.YZX(UnityEngine.Vector3)
+  - Atlas.Swizzle.YZY(UnityEngine.Vector3)
+  - Atlas.Swizzle.YZZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZX(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZXX(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZXY(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZXZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZY(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZYX(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZYY(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZYZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZZ(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZZX(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZZY(UnityEngine.Vector3)
+  - Atlas.Swizzle.ZZZ(UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: Swizzle
+  nameWithType: Swizzle
+  fullName: Atlas.Swizzle
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: Swizzle
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 4
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static class Swizzle
+    content.vb: Public Module Swizzle
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Atlas.Swizzle.XXX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XXX(UnityEngine.Vector3)
+  id: XXX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XXX(Vector3)
+  nameWithType: Swizzle.XXX(Vector3)
+  fullName: Atlas.Swizzle.XXX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XXX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 7
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XXX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XXX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XXX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XYX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XYX(UnityEngine.Vector3)
+  id: XYX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XYX(Vector3)
+  nameWithType: Swizzle.XYX(Vector3)
+  fullName: Atlas.Swizzle.XYX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XYX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 12
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XYX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XYX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XYX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XZX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XZX(UnityEngine.Vector3)
+  id: XZX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XZX(Vector3)
+  nameWithType: Swizzle.XZX(Vector3)
+  fullName: Atlas.Swizzle.XZX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XZX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 17
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XZX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XZX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XZX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XXY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XXY(UnityEngine.Vector3)
+  id: XXY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XXY(Vector3)
+  nameWithType: Swizzle.XXY(Vector3)
+  fullName: Atlas.Swizzle.XXY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XXY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 22
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XXY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XXY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XXY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XYY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XYY(UnityEngine.Vector3)
+  id: XYY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XYY(Vector3)
+  nameWithType: Swizzle.XYY(Vector3)
+  fullName: Atlas.Swizzle.XYY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XYY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 27
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XYY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XYY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XYY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XZY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XZY(UnityEngine.Vector3)
+  id: XZY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XZY(Vector3)
+  nameWithType: Swizzle.XZY(Vector3)
+  fullName: Atlas.Swizzle.XZY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XZY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 32
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XZY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XZY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XZY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XXZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XXZ(UnityEngine.Vector3)
+  id: XXZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XXZ(Vector3)
+  nameWithType: Swizzle.XXZ(Vector3)
+  fullName: Atlas.Swizzle.XXZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XXZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 37
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XXZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XXZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XXZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XZZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XZZ(UnityEngine.Vector3)
+  id: XZZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XZZ(Vector3)
+  nameWithType: Swizzle.XZZ(Vector3)
+  fullName: Atlas.Swizzle.XZZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XZZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 42
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XZZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XZZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.XZZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YXX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YXX(UnityEngine.Vector3)
+  id: YXX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YXX(Vector3)
+  nameWithType: Swizzle.YXX(Vector3)
+  fullName: Atlas.Swizzle.YXX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YXX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 47
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YXX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YXX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YXX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YYX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YYX(UnityEngine.Vector3)
+  id: YYX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YYX(Vector3)
+  nameWithType: Swizzle.YYX(Vector3)
+  fullName: Atlas.Swizzle.YYX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YYX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 52
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YYX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YYX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YYX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YZX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YZX(UnityEngine.Vector3)
+  id: YZX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YZX(Vector3)
+  nameWithType: Swizzle.YZX(Vector3)
+  fullName: Atlas.Swizzle.YZX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YZX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 57
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YZX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YZX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YZX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YXY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YXY(UnityEngine.Vector3)
+  id: YXY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YXY(Vector3)
+  nameWithType: Swizzle.YXY(Vector3)
+  fullName: Atlas.Swizzle.YXY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YXY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 62
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YXY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YXY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YXY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YYY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YYY(UnityEngine.Vector3)
+  id: YYY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YYY(Vector3)
+  nameWithType: Swizzle.YYY(Vector3)
+  fullName: Atlas.Swizzle.YYY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YYY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 67
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YYY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YYY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YYY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YZY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YZY(UnityEngine.Vector3)
+  id: YZY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YZY(Vector3)
+  nameWithType: Swizzle.YZY(Vector3)
+  fullName: Atlas.Swizzle.YZY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YZY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 72
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YZY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YZY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YZY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YXZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YXZ(UnityEngine.Vector3)
+  id: YXZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YXZ(Vector3)
+  nameWithType: Swizzle.YXZ(Vector3)
+  fullName: Atlas.Swizzle.YXZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YXZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 77
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YXZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YXZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YXZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YYZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YYZ(UnityEngine.Vector3)
+  id: YYZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YYZ(Vector3)
+  nameWithType: Swizzle.YYZ(Vector3)
+  fullName: Atlas.Swizzle.YYZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YYZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 82
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YYZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YYZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YYZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YZZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YZZ(UnityEngine.Vector3)
+  id: YZZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YZZ(Vector3)
+  nameWithType: Swizzle.YZZ(Vector3)
+  fullName: Atlas.Swizzle.YZZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YZZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 87
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YZZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YZZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.YZZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZXX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZXX(UnityEngine.Vector3)
+  id: ZXX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZXX(Vector3)
+  nameWithType: Swizzle.ZXX(Vector3)
+  fullName: Atlas.Swizzle.ZXX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZXX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 92
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZXX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZXX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZXX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZYX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZYX(UnityEngine.Vector3)
+  id: ZYX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZYX(Vector3)
+  nameWithType: Swizzle.ZYX(Vector3)
+  fullName: Atlas.Swizzle.ZYX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZYX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 97
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZYX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZYX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZYX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZZX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZZX(UnityEngine.Vector3)
+  id: ZZX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZZX(Vector3)
+  nameWithType: Swizzle.ZZX(Vector3)
+  fullName: Atlas.Swizzle.ZZX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZZX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 102
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZZX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZZX(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZZX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZXY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZXY(UnityEngine.Vector3)
+  id: ZXY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZXY(Vector3)
+  nameWithType: Swizzle.ZXY(Vector3)
+  fullName: Atlas.Swizzle.ZXY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZXY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 107
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZXY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZXY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZXY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZYY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZYY(UnityEngine.Vector3)
+  id: ZYY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZYY(Vector3)
+  nameWithType: Swizzle.ZYY(Vector3)
+  fullName: Atlas.Swizzle.ZYY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZYY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 112
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZYY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZYY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZYY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZZY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZZY(UnityEngine.Vector3)
+  id: ZZY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZZY(Vector3)
+  nameWithType: Swizzle.ZZY(Vector3)
+  fullName: Atlas.Swizzle.ZZY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZZY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 117
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZZY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZZY(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZZY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZXZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZXZ(UnityEngine.Vector3)
+  id: ZXZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZXZ(Vector3)
+  nameWithType: Swizzle.ZXZ(Vector3)
+  fullName: Atlas.Swizzle.ZXZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZXZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 122
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZXZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZXZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZXZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZYZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZYZ(UnityEngine.Vector3)
+  id: ZYZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZYZ(Vector3)
+  nameWithType: Swizzle.ZYZ(Vector3)
+  fullName: Atlas.Swizzle.ZYZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZYZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 127
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZYZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZYZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZYZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZZZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZZZ(UnityEngine.Vector3)
+  id: ZZZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZZZ(Vector3)
+  nameWithType: Swizzle.ZZZ(Vector3)
+  fullName: Atlas.Swizzle.ZZZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZZZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 132
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 ZZZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZZZ(v As Vector3) As Vector3
+  overload: Atlas.Swizzle.ZZZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XX(UnityEngine.Vector3)
+  id: XX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XX(Vector3)
+  nameWithType: Swizzle.XX(Vector3)
+  fullName: Atlas.Swizzle.XX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 139
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 XX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XX(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.XX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.XZ(UnityEngine.Vector3)
+  id: XZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XZ(Vector3)
+  nameWithType: Swizzle.XZ(Vector3)
+  fullName: Atlas.Swizzle.XZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 144
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 XZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XZ(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.XZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YX(UnityEngine.Vector3)
+  id: YX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YX(Vector3)
+  nameWithType: Swizzle.YX(Vector3)
+  fullName: Atlas.Swizzle.YX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 149
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 YX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YX(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.YX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YY(UnityEngine.Vector3)
+  id: YY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YY(Vector3)
+  nameWithType: Swizzle.YY(Vector3)
+  fullName: Atlas.Swizzle.YY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 154
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 YY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YY(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.YY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.YZ(UnityEngine.Vector3)
+  id: YZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YZ(Vector3)
+  nameWithType: Swizzle.YZ(Vector3)
+  fullName: Atlas.Swizzle.YZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 159
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 YZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YZ(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.YZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZX(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZX(UnityEngine.Vector3)
+  id: ZX(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZX(Vector3)
+  nameWithType: Swizzle.ZX(Vector3)
+  fullName: Atlas.Swizzle.ZX(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 164
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 ZX(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZX(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.ZX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZY(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZY(UnityEngine.Vector3)
+  id: ZY(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZY(Vector3)
+  nameWithType: Swizzle.ZY(Vector3)
+  fullName: Atlas.Swizzle.ZY(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 169
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 ZY(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZY(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.ZY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.ZZ(UnityEngine.Vector3)
+  commentId: M:Atlas.Swizzle.ZZ(UnityEngine.Vector3)
+  id: ZZ(UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: ZZ(Vector3)
+  nameWithType: Swizzle.ZZ(Vector3)
+  fullName: Atlas.Swizzle.ZZ(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: ZZ
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 174
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 ZZ(this Vector3 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector3
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ZZ(v As Vector3) As Vector2
+  overload: Atlas.Swizzle.ZZ*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XXX(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.XXX(UnityEngine.Vector2)
+  id: XXX(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XXX(Vector2)
+  nameWithType: Swizzle.XXX(Vector2)
+  fullName: Atlas.Swizzle.XXX(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XXX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 181
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XXX(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XXX(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.XXX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XYX(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.XYX(UnityEngine.Vector2)
+  id: XYX(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XYX(Vector2)
+  nameWithType: Swizzle.XYX(Vector2)
+  fullName: Atlas.Swizzle.XYX(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XYX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 186
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XYX(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XYX(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.XYX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XXY(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.XXY(UnityEngine.Vector2)
+  id: XXY(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XXY(Vector2)
+  nameWithType: Swizzle.XXY(Vector2)
+  fullName: Atlas.Swizzle.XXY(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XXY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 191
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XXY(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XXY(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.XXY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XYY(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.XYY(UnityEngine.Vector2)
+  id: XYY(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XYY(Vector2)
+  nameWithType: Swizzle.XYY(Vector2)
+  fullName: Atlas.Swizzle.XYY(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XYY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 196
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 XYY(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XYY(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.XYY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YXX(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.YXX(UnityEngine.Vector2)
+  id: YXX(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YXX(Vector2)
+  nameWithType: Swizzle.YXX(Vector2)
+  fullName: Atlas.Swizzle.YXX(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YXX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 201
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YXX(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YXX(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.YXX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YYX(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.YYX(UnityEngine.Vector2)
+  id: YYX(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YYX(Vector2)
+  nameWithType: Swizzle.YYX(Vector2)
+  fullName: Atlas.Swizzle.YYX(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YYX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 206
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YYX(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YYX(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.YYX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YXY(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.YXY(UnityEngine.Vector2)
+  id: YXY(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YXY(Vector2)
+  nameWithType: Swizzle.YXY(Vector2)
+  fullName: Atlas.Swizzle.YXY(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YXY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 211
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YXY(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YXY(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.YXY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YYY(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.YYY(UnityEngine.Vector2)
+  id: YYY(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YYY(Vector2)
+  nameWithType: Swizzle.YYY(Vector2)
+  fullName: Atlas.Swizzle.YYY(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YYY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 216
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector3 YYY(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YYY(v As Vector2) As Vector3
+  overload: Atlas.Swizzle.YYY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.XX(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.XX(UnityEngine.Vector2)
+  id: XX(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: XX(Vector2)
+  nameWithType: Swizzle.XX(Vector2)
+  fullName: Atlas.Swizzle.XX(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: XX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 223
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 XX(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function XX(v As Vector2) As Vector2
+  overload: Atlas.Swizzle.XX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YX(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.YX(UnityEngine.Vector2)
+  id: YX(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YX(Vector2)
+  nameWithType: Swizzle.YX(Vector2)
+  fullName: Atlas.Swizzle.YX(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YX
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 228
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 YX(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YX(v As Vector2) As Vector2
+  overload: Atlas.Swizzle.YX*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Atlas.Swizzle.YY(UnityEngine.Vector2)
+  commentId: M:Atlas.Swizzle.YY(UnityEngine.Vector2)
+  id: YY(UnityEngine.Vector2)
+  isExtensionMethod: true
+  parent: Atlas.Swizzle
+  langs:
+  - csharp
+  - vb
+  name: YY(Vector2)
+  nameWithType: Swizzle.YY(Vector2)
+  fullName: Atlas.Swizzle.YY(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: YY
+    path: ../../Assets/Scripts/Runtime/Math/Vector/Swizzle.cs
+    startLine: 233
+  assemblies:
+  - Atlas.Runtime
+  namespace: Atlas
+  syntax:
+    content: public static Vector2 YY(this Vector2 v)
+    parameters:
+    - id: v
+      type: UnityEngine.Vector2
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function YY(v As Vector2) As Vector2
+  overload: Atlas.Swizzle.YY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Atlas
+  commentId: N:Atlas
+  name: Atlas
+  nameWithType: Atlas
+  fullName: Atlas
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Atlas.Swizzle.XXX*
+  commentId: Overload:Atlas.Swizzle.XXX
+  name: XXX
+  nameWithType: Swizzle.XXX
+  fullName: Atlas.Swizzle.XXX
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Atlas.Swizzle.XYX*
+  commentId: Overload:Atlas.Swizzle.XYX
+  name: XYX
+  nameWithType: Swizzle.XYX
+  fullName: Atlas.Swizzle.XYX
+- uid: Atlas.Swizzle.XZX*
+  commentId: Overload:Atlas.Swizzle.XZX
+  name: XZX
+  nameWithType: Swizzle.XZX
+  fullName: Atlas.Swizzle.XZX
+- uid: Atlas.Swizzle.XXY*
+  commentId: Overload:Atlas.Swizzle.XXY
+  name: XXY
+  nameWithType: Swizzle.XXY
+  fullName: Atlas.Swizzle.XXY
+- uid: Atlas.Swizzle.XYY*
+  commentId: Overload:Atlas.Swizzle.XYY
+  name: XYY
+  nameWithType: Swizzle.XYY
+  fullName: Atlas.Swizzle.XYY
+- uid: Atlas.Swizzle.XZY*
+  commentId: Overload:Atlas.Swizzle.XZY
+  name: XZY
+  nameWithType: Swizzle.XZY
+  fullName: Atlas.Swizzle.XZY
+- uid: Atlas.Swizzle.XXZ*
+  commentId: Overload:Atlas.Swizzle.XXZ
+  name: XXZ
+  nameWithType: Swizzle.XXZ
+  fullName: Atlas.Swizzle.XXZ
+- uid: Atlas.Swizzle.XZZ*
+  commentId: Overload:Atlas.Swizzle.XZZ
+  name: XZZ
+  nameWithType: Swizzle.XZZ
+  fullName: Atlas.Swizzle.XZZ
+- uid: Atlas.Swizzle.YXX*
+  commentId: Overload:Atlas.Swizzle.YXX
+  name: YXX
+  nameWithType: Swizzle.YXX
+  fullName: Atlas.Swizzle.YXX
+- uid: Atlas.Swizzle.YYX*
+  commentId: Overload:Atlas.Swizzle.YYX
+  name: YYX
+  nameWithType: Swizzle.YYX
+  fullName: Atlas.Swizzle.YYX
+- uid: Atlas.Swizzle.YZX*
+  commentId: Overload:Atlas.Swizzle.YZX
+  name: YZX
+  nameWithType: Swizzle.YZX
+  fullName: Atlas.Swizzle.YZX
+- uid: Atlas.Swizzle.YXY*
+  commentId: Overload:Atlas.Swizzle.YXY
+  name: YXY
+  nameWithType: Swizzle.YXY
+  fullName: Atlas.Swizzle.YXY
+- uid: Atlas.Swizzle.YYY*
+  commentId: Overload:Atlas.Swizzle.YYY
+  name: YYY
+  nameWithType: Swizzle.YYY
+  fullName: Atlas.Swizzle.YYY
+- uid: Atlas.Swizzle.YZY*
+  commentId: Overload:Atlas.Swizzle.YZY
+  name: YZY
+  nameWithType: Swizzle.YZY
+  fullName: Atlas.Swizzle.YZY
+- uid: Atlas.Swizzle.YXZ*
+  commentId: Overload:Atlas.Swizzle.YXZ
+  name: YXZ
+  nameWithType: Swizzle.YXZ
+  fullName: Atlas.Swizzle.YXZ
+- uid: Atlas.Swizzle.YYZ*
+  commentId: Overload:Atlas.Swizzle.YYZ
+  name: YYZ
+  nameWithType: Swizzle.YYZ
+  fullName: Atlas.Swizzle.YYZ
+- uid: Atlas.Swizzle.YZZ*
+  commentId: Overload:Atlas.Swizzle.YZZ
+  name: YZZ
+  nameWithType: Swizzle.YZZ
+  fullName: Atlas.Swizzle.YZZ
+- uid: Atlas.Swizzle.ZXX*
+  commentId: Overload:Atlas.Swizzle.ZXX
+  name: ZXX
+  nameWithType: Swizzle.ZXX
+  fullName: Atlas.Swizzle.ZXX
+- uid: Atlas.Swizzle.ZYX*
+  commentId: Overload:Atlas.Swizzle.ZYX
+  name: ZYX
+  nameWithType: Swizzle.ZYX
+  fullName: Atlas.Swizzle.ZYX
+- uid: Atlas.Swizzle.ZZX*
+  commentId: Overload:Atlas.Swizzle.ZZX
+  name: ZZX
+  nameWithType: Swizzle.ZZX
+  fullName: Atlas.Swizzle.ZZX
+- uid: Atlas.Swizzle.ZXY*
+  commentId: Overload:Atlas.Swizzle.ZXY
+  name: ZXY
+  nameWithType: Swizzle.ZXY
+  fullName: Atlas.Swizzle.ZXY
+- uid: Atlas.Swizzle.ZYY*
+  commentId: Overload:Atlas.Swizzle.ZYY
+  name: ZYY
+  nameWithType: Swizzle.ZYY
+  fullName: Atlas.Swizzle.ZYY
+- uid: Atlas.Swizzle.ZZY*
+  commentId: Overload:Atlas.Swizzle.ZZY
+  name: ZZY
+  nameWithType: Swizzle.ZZY
+  fullName: Atlas.Swizzle.ZZY
+- uid: Atlas.Swizzle.ZXZ*
+  commentId: Overload:Atlas.Swizzle.ZXZ
+  name: ZXZ
+  nameWithType: Swizzle.ZXZ
+  fullName: Atlas.Swizzle.ZXZ
+- uid: Atlas.Swizzle.ZYZ*
+  commentId: Overload:Atlas.Swizzle.ZYZ
+  name: ZYZ
+  nameWithType: Swizzle.ZYZ
+  fullName: Atlas.Swizzle.ZYZ
+- uid: Atlas.Swizzle.ZZZ*
+  commentId: Overload:Atlas.Swizzle.ZZZ
+  name: ZZZ
+  nameWithType: Swizzle.ZZZ
+  fullName: Atlas.Swizzle.ZZZ
+- uid: Atlas.Swizzle.XX*
+  commentId: Overload:Atlas.Swizzle.XX
+  name: XX
+  nameWithType: Swizzle.XX
+  fullName: Atlas.Swizzle.XX
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Atlas.Swizzle.XZ*
+  commentId: Overload:Atlas.Swizzle.XZ
+  name: XZ
+  nameWithType: Swizzle.XZ
+  fullName: Atlas.Swizzle.XZ
+- uid: Atlas.Swizzle.YX*
+  commentId: Overload:Atlas.Swizzle.YX
+  name: YX
+  nameWithType: Swizzle.YX
+  fullName: Atlas.Swizzle.YX
+- uid: Atlas.Swizzle.YY*
+  commentId: Overload:Atlas.Swizzle.YY
+  name: YY
+  nameWithType: Swizzle.YY
+  fullName: Atlas.Swizzle.YY
+- uid: Atlas.Swizzle.YZ*
+  commentId: Overload:Atlas.Swizzle.YZ
+  name: YZ
+  nameWithType: Swizzle.YZ
+  fullName: Atlas.Swizzle.YZ
+- uid: Atlas.Swizzle.ZX*
+  commentId: Overload:Atlas.Swizzle.ZX
+  name: ZX
+  nameWithType: Swizzle.ZX
+  fullName: Atlas.Swizzle.ZX
+- uid: Atlas.Swizzle.ZY*
+  commentId: Overload:Atlas.Swizzle.ZY
+  name: ZY
+  nameWithType: Swizzle.ZY
+  fullName: Atlas.Swizzle.ZY
+- uid: Atlas.Swizzle.ZZ*
+  commentId: Overload:Atlas.Swizzle.ZZ
+  name: ZZ
+  nameWithType: Swizzle.ZZ
+  fullName: Atlas.Swizzle.ZZ

@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TransitionCondition
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/StateLink.cs

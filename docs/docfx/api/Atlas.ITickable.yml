@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ITickable
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs
@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Tick
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ITickable.cs

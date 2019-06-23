@@ -26,9 +26,12 @@ items:
   - Atlas.EffectEmitterBase
   - Atlas.ElasticEase
   - Atlas.EnumExtensions
+  - Atlas.Example_InspectorButton
   - Atlas.ExponentialEase
   - Atlas.GizmoUtils
+  - Atlas.GUIBackgroundColorScope
   - Atlas.GUIColorScope
+  - Atlas.GUIContentColorScope
   - Atlas.GUIListener
   - Atlas.HashCode
   - Atlas.ICommand
@@ -40,6 +43,8 @@ items:
   - Atlas.IFixedTickable
   - Atlas.ILateTickable
   - Atlas.IndexedPriorityQueue`1
+  - Atlas.InspectorButtonAttribute
+  - Atlas.IPoolable
   - Atlas.IScheduledTask
   - Atlas.ISignal
   - Atlas.IStateLink
@@ -52,11 +57,13 @@ items:
   - Atlas.MaxValuePropertyDrawer
   - Atlas.MinValueAttribute
   - Atlas.MinValuePropertyDrawer
+  - Atlas.MonoBehaviourEditor
   - Atlas.ParticleEffectEmitter
   - Atlas.PathAttribute
   - Atlas.PathAttribute.Path
   - Atlas.PathAttribute.Relativity
   - Atlas.PathAttributePropertyDrawer
+  - Atlas.PrefabPool
   - Atlas.PreventEditInInspectorAttribute
   - Atlas.PreventEditInInspectorPropertyDrawer
   - Atlas.ProfilerScope
@@ -83,6 +90,7 @@ items:
   - Atlas.StateLink.TransitionCondition
   - Atlas.StateMachine
   - Atlas.StateMachineBehavior
+  - Atlas.Swizzle
   - Atlas.TaskScheduler
   - Atlas.TextDebugDrawer
   - Atlas.TextIndentHelper
@@ -94,6 +102,7 @@ items:
   - Atlas.TypeExtensions
   - Atlas.UIStack
   - Atlas.UIStack.Transition
+  - Atlas.VectorExtensions
   langs:
   - csharp
   - vb
@@ -920,6 +929,26 @@ references:
   name: Range
   nameWithType: Range
   fullName: Atlas.Range
+- uid: Atlas.Swizzle
+  commentId: T:Atlas.Swizzle
+  name: Swizzle
+  nameWithType: Swizzle
+  fullName: Atlas.Swizzle
+- uid: Atlas.VectorExtensions
+  commentId: T:Atlas.VectorExtensions
+  name: VectorExtensions
+  nameWithType: VectorExtensions
+  fullName: Atlas.VectorExtensions
+- uid: Atlas.IPoolable
+  commentId: T:Atlas.IPoolable
+  name: IPoolable
+  nameWithType: IPoolable
+  fullName: Atlas.IPoolable
+- uid: Atlas.PrefabPool
+  commentId: T:Atlas.PrefabPool
+  name: PrefabPool
+  nameWithType: PrefabPool
+  fullName: Atlas.PrefabPool
 - uid: Atlas.IScheduledTask
   commentId: T:Atlas.IScheduledTask
   parent: Atlas
@@ -959,6 +988,11 @@ references:
   name: UIStack.Transition
   nameWithType: UIStack.Transition
   fullName: Atlas.UIStack.Transition
+- uid: Atlas.InspectorButtonAttribute
+  commentId: T:Atlas.InspectorButtonAttribute
+  name: InspectorButtonAttribute
+  nameWithType: InspectorButtonAttribute
+  fullName: Atlas.InspectorButtonAttribute
 - uid: Atlas.MaxValueAttribute
   commentId: T:Atlas.MaxValueAttribute
   parent: Atlas
@@ -1021,11 +1055,21 @@ references:
   name: HashCode
   nameWithType: HashCode
   fullName: Atlas.HashCode
+- uid: Atlas.GUIBackgroundColorScope
+  commentId: T:Atlas.GUIBackgroundColorScope
+  name: GUIBackgroundColorScope
+  nameWithType: GUIBackgroundColorScope
+  fullName: Atlas.GUIBackgroundColorScope
 - uid: Atlas.GUIColorScope
   commentId: T:Atlas.GUIColorScope
   name: GUIColorScope
   nameWithType: GUIColorScope
   fullName: Atlas.GUIColorScope
+- uid: Atlas.GUIContentColorScope
+  commentId: T:Atlas.GUIContentColorScope
+  name: GUIContentColorScope
+  nameWithType: GUIContentColorScope
+  fullName: Atlas.GUIContentColorScope
 - uid: Atlas.ProfilerScope
   commentId: T:Atlas.ProfilerScope
   name: ProfilerScope
@@ -1088,6 +1132,11 @@ references:
   name: TypeExtensions
   nameWithType: TypeExtensions
   fullName: Atlas.TypeExtensions
+- uid: Atlas.MonoBehaviourEditor
+  commentId: T:Atlas.MonoBehaviourEditor
+  name: MonoBehaviourEditor
+  nameWithType: MonoBehaviourEditor
+  fullName: Atlas.MonoBehaviourEditor
 - uid: Atlas.RangeDrawer
   commentId: T:Atlas.RangeDrawer
   name: RangeDrawer
@@ -1109,6 +1158,11 @@ references:
   name: TransformEditor
   nameWithType: TransformEditor
   fullName: Atlas.TransformEditor
+- uid: Atlas.Example_InspectorButton
+  commentId: T:Atlas.Example_InspectorButton
+  name: Example_InspectorButton
+  nameWithType: Example_InspectorButton
+  fullName: Atlas.Example_InspectorButton
 - uid: Atlas
   commentId: N:Atlas
   name: Atlas

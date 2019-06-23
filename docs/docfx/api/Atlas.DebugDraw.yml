@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DebugDraw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -42,7 +42,6 @@ items:
     content: 'public sealed class DebugDraw : SingletonBehavior<DebugDraw>'
     content.vb: >-
       Public NotInheritable Class DebugDraw
-
           Inherits SingletonBehavior(Of DebugDraw)
   inheritance:
   - System.Object
@@ -78,7 +77,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsEnabled
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -117,7 +116,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawLine
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -156,7 +155,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawLine
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -197,7 +196,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawRay
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -236,7 +235,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawRay
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -277,7 +276,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawCross
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -316,7 +315,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawCross
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -357,7 +356,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawCircle
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -398,7 +397,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawCircle
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -441,7 +440,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -484,7 +483,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -529,7 +528,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
@@ -574,7 +573,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DrawText
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/DebugDraw.cs

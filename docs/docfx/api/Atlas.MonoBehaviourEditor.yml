@@ -1,44 +1,39 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Atlas.TransformEditor
-  commentId: T:Atlas.TransformEditor
-  id: TransformEditor
+- uid: Atlas.MonoBehaviourEditor
+  commentId: T:Atlas.MonoBehaviourEditor
+  id: MonoBehaviourEditor
   parent: Atlas
   children:
-  - Atlas.TransformEditor.OnInspectorGUI
+  - Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  - Atlas.MonoBehaviourEditor.OnInspectorGUI
   langs:
   - csharp
   - vb
-  name: TransformEditor
-  nameWithType: TransformEditor
-  fullName: Atlas.TransformEditor
+  name: MonoBehaviourEditor
+  nameWithType: MonoBehaviourEditor
+  fullName: Atlas.MonoBehaviourEditor
   type: Class
   source:
     remote:
-      path: Assets/Scripts/Editor/Utils/TransformEditor.cs
+      path: Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs
       branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
-    id: TransformEditor
-    path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
-    startLine: 10
+    id: MonoBehaviourEditor
+    path: ../../Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs
+    startLine: 8
   assemblies:
   - Atlas.Editor
   namespace: Atlas
-  summary: "\nOverrides the default Transform editor that adds handy buttons for resetting transform values\n"
-  example: []
   syntax:
     content: >-
-      [CustomEditor(typeof(Transform))]
+      [CustomEditor(typeof(MonoBehaviour), true)]
 
-      [CanEditMultipleObjects]
-
-      public sealed class TransformEditor : Editor, IPreviewable, IToolModeOwner
+      public class MonoBehaviourEditor : Editor, IPreviewable, IToolModeOwner
     content.vb: >-
-      <CustomEditor(GetType(Transform))>
+      <CustomEditor(GetType(MonoBehaviour), True)>
 
-      <CanEditMultipleObjects>
-
-      Public NotInheritable Class TransformEditor
+      Public Class MonoBehaviourEditor
           Inherits Editor
           Implements IPreviewable, IToolModeOwner
   inheritance:
@@ -46,42 +41,31 @@ items:
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
   - UnityEditor.Editor
-  attributes:
-  - type: UnityEditor.CustomEditor
-    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
-    arguments:
-    - type: System.Type
-      value: UnityEngine.Transform
-  - type: UnityEditor.CanEditMultipleObjects
-    ctor: UnityEditor.CanEditMultipleObjects.#ctor
-    arguments: []
   modifiers.csharp:
   - public
-  - sealed
   - class
   modifiers.vb:
   - Public
-  - NotInheritable
   - Class
-- uid: Atlas.TransformEditor.OnInspectorGUI
-  commentId: M:Atlas.TransformEditor.OnInspectorGUI
+- uid: Atlas.MonoBehaviourEditor.OnInspectorGUI
+  commentId: M:Atlas.MonoBehaviourEditor.OnInspectorGUI
   id: OnInspectorGUI
-  parent: Atlas.TransformEditor
+  parent: Atlas.MonoBehaviourEditor
   langs:
   - csharp
   - vb
   name: OnInspectorGUI()
-  nameWithType: TransformEditor.OnInspectorGUI()
-  fullName: Atlas.TransformEditor.OnInspectorGUI()
+  nameWithType: MonoBehaviourEditor.OnInspectorGUI()
+  fullName: Atlas.MonoBehaviourEditor.OnInspectorGUI()
   type: Method
   source:
     remote:
-      path: Assets/Scripts/Editor/Utils/TransformEditor.cs
+      path: Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs
       branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: OnInspectorGUI
-    path: ../../Assets/Scripts/Editor/Utils/TransformEditor.cs
-    startLine: 13
+    path: ../../Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs
+    startLine: 11
   assemblies:
   - Atlas.Editor
   namespace: Atlas
@@ -89,13 +73,43 @@ items:
     content: public override void OnInspectorGUI()
     content.vb: Public Overrides Sub OnInspectorGUI
   overridden: UnityEditor.Editor.OnInspectorGUI
-  overload: Atlas.TransformEditor.OnInspectorGUI*
+  overload: Atlas.MonoBehaviourEditor.OnInspectorGUI*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
+- uid: Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  commentId: M:Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  id: DrawAttributeButtons
+  parent: Atlas.MonoBehaviourEditor
+  langs:
+  - csharp
+  - vb
+  name: DrawAttributeButtons()
+  nameWithType: MonoBehaviourEditor.DrawAttributeButtons()
+  fullName: Atlas.MonoBehaviourEditor.DrawAttributeButtons()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs
+      branch: v0.9.5
+      repo: https://github.com/david-knopp/Atlas
+    id: DrawAttributeButtons
+    path: ../../Assets/Scripts/Editor/Utils/MonoBehaviourEditor.cs
+    startLine: 17
+  assemblies:
+  - Atlas.Editor
+  namespace: Atlas
+  syntax:
+    content: public void DrawAttributeButtons()
+    content.vb: Public Sub DrawAttributeButtons
+  overload: Atlas.MonoBehaviourEditor.DrawAttributeButtons*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: Atlas
   commentId: N:Atlas
@@ -179,8 +193,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Atlas.TransformEditor.OnInspectorGUI*
-  commentId: Overload:Atlas.TransformEditor.OnInspectorGUI
+- uid: Atlas.MonoBehaviourEditor.OnInspectorGUI*
+  commentId: Overload:Atlas.MonoBehaviourEditor.OnInspectorGUI
   name: OnInspectorGUI
-  nameWithType: TransformEditor.OnInspectorGUI
-  fullName: Atlas.TransformEditor.OnInspectorGUI
+  nameWithType: MonoBehaviourEditor.OnInspectorGUI
+  fullName: Atlas.MonoBehaviourEditor.OnInspectorGUI
+- uid: Atlas.MonoBehaviourEditor.DrawAttributeButtons*
+  commentId: Overload:Atlas.MonoBehaviourEditor.DrawAttributeButtons
+  name: DrawAttributeButtons
+  nameWithType: MonoBehaviourEditor.DrawAttributeButtons
+  fullName: Atlas.MonoBehaviourEditor.DrawAttributeButtons

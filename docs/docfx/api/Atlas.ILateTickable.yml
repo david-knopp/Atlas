@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Interfaces/ILateTickable.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ILateTickable
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ILateTickable.cs
@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/Interfaces/ILateTickable.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: LateTick
     path: ../../Assets/Scripts/Runtime/Framework/Interfaces/ILateTickable.cs

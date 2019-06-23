@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IStateLink
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: NextState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsSatisfied
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateLink.cs

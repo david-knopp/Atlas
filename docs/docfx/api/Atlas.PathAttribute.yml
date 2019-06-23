@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: PathAttribute
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
@@ -38,9 +38,7 @@ items:
       <AttributeUsage(AttributeTargets.Field, AllowMultiple:=False)>
 
       Public NotInheritable Class PathAttribute
-
           Inherits PropertyAttribute
-
           Implements _Attribute
   seealso:
   - linkId: Atlas.ScenePathAttribute
@@ -85,7 +83,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
@@ -124,7 +122,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TargetType
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
@@ -161,7 +159,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: RelativityType
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
@@ -198,7 +196,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: RelativePath
     path: ../../Assets/Scripts/Runtime/Utils/Attributes/PathAttribute.cs

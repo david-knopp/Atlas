@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/CubicEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CubicEase
     path: ../../Assets/Scripts/Runtime/Math/Easing/CubicEase.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/CubicEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: In
     path: ../../Assets/Scripts/Runtime/Math/Easing/CubicEase.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/CubicEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Out
     path: ../../Assets/Scripts/Runtime/Math/Easing/CubicEase.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Math/Easing/CubicEase.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: InOut
     path: ../../Assets/Scripts/Runtime/Math/Easing/CubicEase.cs

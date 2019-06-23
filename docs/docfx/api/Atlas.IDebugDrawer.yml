@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IDebugDrawer
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFinished
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Color
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
@@ -129,7 +129,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Draw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/IDebugDrawer.cs

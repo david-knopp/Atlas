@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TextDebugDrawer
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
@@ -34,7 +34,6 @@ items:
     content: 'public struct TextDebugDrawer : IDebugDrawer'
     content.vb: >-
       Public Structure TextDebugDrawer
-
           Implements IDebugDrawer
   seealso:
   - linkId: Atlas.DebugDraw
@@ -67,7 +66,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
@@ -112,7 +111,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFinished
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
@@ -151,7 +150,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Color
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
@@ -190,7 +189,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Draw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Drawers/TextDebugDrawer.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TimedDebugDrawModifier
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
@@ -33,7 +33,6 @@ items:
     content: 'public struct TimedDebugDrawModifier : IDebugDrawer'
     content.vb: >-
       Public Structure TimedDebugDrawModifier
-
           Implements IDebugDrawer
   implements:
   - Atlas.IDebugDrawer
@@ -63,7 +62,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
@@ -102,7 +101,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFinished
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
@@ -141,7 +140,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Color
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
@@ -180,7 +179,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Draw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TimedDebugDrawModifier.cs

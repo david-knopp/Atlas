@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DebugDrawModifierExtensions
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Timed
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Transformed
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
@@ -153,7 +153,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Transformed
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Billboarded
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Billboarded
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/DebugDrawModifierExtensions.cs

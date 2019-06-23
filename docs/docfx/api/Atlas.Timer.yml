@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Timer
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Elapsed
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsPaused
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsTiming
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Start
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Start
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -273,7 +273,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Stop
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Pause
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -337,7 +337,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Unpause
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Timer/Timer.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: HasElapsed
     path: ../../Assets/Scripts/Runtime/Utils/Timer/Timer.cs

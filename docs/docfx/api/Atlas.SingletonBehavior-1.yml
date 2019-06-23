@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SingletonBehavior
     path: ../../Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
@@ -36,7 +36,6 @@ items:
       description: Type of the derived class
     content.vb: >-
       Public MustInherit Class SingletonBehavior(Of TDerived As MonoBehaviour)
-
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -72,7 +71,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: HasInstance
     path: ../../Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
@@ -113,7 +112,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Instance
     path: ../../Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
@@ -154,7 +153,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Awake
     path: ../../Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
@@ -188,7 +187,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Framework/SingletonBehavior.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: OnDestroy
     path: ../../Assets/Scripts/Runtime/Framework/SingletonBehavior.cs

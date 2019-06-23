@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IndexedPriorityQueue
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -40,7 +40,6 @@ items:
   syntax:
     content: >-
       public sealed class IndexedPriorityQueue<T>
-
           where T : IComparable<T>
     typeParameters:
     - id: T
@@ -73,7 +72,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Count
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -112,7 +111,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: this[]
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -156,7 +155,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -190,7 +189,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -228,7 +227,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Insert
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -269,7 +268,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Top
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -306,7 +305,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Pop
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -343,7 +342,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Set
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -385,7 +384,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: DecreaseValueAtIndex
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -427,7 +426,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IncreaseValueAtIndex
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -469,7 +468,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Clear
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
@@ -503,7 +502,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Resize
     path: ../../Assets/Scripts/Runtime/Collections/IndexedPriorityQueue.cs

@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IStateMachine
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: CurrentState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: PreviousState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: AddState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
@@ -130,7 +130,6 @@ items:
   syntax:
     content: >-
       void AddState<StateType>(StateType state)
-
           where StateType : State
     parameters:
     - id: state
@@ -156,7 +155,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: RemoveState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
@@ -167,7 +166,6 @@ items:
   syntax:
     content: >-
       void RemoveState<StateType>()
-
           where StateType : State
     typeParameters:
     - id: StateType
@@ -190,7 +188,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: GetState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
@@ -201,7 +199,6 @@ items:
   syntax:
     content: >-
       StateType GetState<StateType>()
-
           where StateType : State
     typeParameters:
     - id: StateType
@@ -226,7 +223,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SetState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
@@ -237,7 +234,6 @@ items:
   syntax:
     content: >-
       void SetState<StateType>()
-
           where StateType : State
     typeParameters:
     - id: StateType
@@ -260,7 +256,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: RevertToPrevState
     path: ../../Assets/Scripts/Runtime/AI/StateMachine/IStateMachine.cs

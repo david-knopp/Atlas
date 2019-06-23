@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: TransformDebugDrawModifier
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
@@ -34,7 +34,6 @@ items:
     content: 'public struct TransformDebugDrawModifier : IDebugDrawer'
     content.vb: >-
       Public Structure TransformDebugDrawModifier
-
           Implements IDebugDrawer
   implements:
   - Atlas.IDebugDrawer
@@ -64,7 +63,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
@@ -103,7 +102,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
@@ -145,7 +144,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFinished
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
@@ -184,7 +183,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Color
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
@@ -223,7 +222,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Draw
     path: ../../Assets/Scripts/Runtime/Debug/DebugDraw/Modifiers/TransformDebugDrawModifier.cs

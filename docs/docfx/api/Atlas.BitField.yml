@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: BitField
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SetFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SetFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -155,7 +155,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SetFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: SetFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -243,7 +243,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ClearFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -287,7 +287,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ClearFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -331,7 +331,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ClearFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ToggleFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -419,7 +419,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ToggleFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -463,7 +463,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ToggleFlag
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -507,7 +507,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFlagSet
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -551,7 +551,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFlagSet
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs
@@ -595,7 +595,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/BitField.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: IsFlagSet
     path: ../../Assets/Scripts/Runtime/Utils/BitField.cs

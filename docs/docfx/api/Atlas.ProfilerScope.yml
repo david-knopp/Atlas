@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: ProfilerScope
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
@@ -32,7 +32,6 @@ items:
     content: 'public struct ProfilerScope : IDisposable'
     content.vb: >-
       Public Structure ProfilerScope
-
           Implements IDisposable
   seealso:
   - linkId: Atlas.GUIColorScope
@@ -59,7 +58,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
@@ -95,7 +94,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: .ctor
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
@@ -134,7 +133,7 @@ items:
   source:
     remote:
       path: Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs
-      branch: v0.9.4
+      branch: v0.9.5
       repo: https://github.com/david-knopp/Atlas
     id: Dispose
     path: ../../Assets/Scripts/Runtime/Utils/Scopes/ProfilerScope.cs

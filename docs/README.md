@@ -23,6 +23,9 @@ Atlas is a library of reusable classes and tools designed to jump-start your Uni
 11. Object pooling
 
 ## Installation
+
+Atlas is a small library and doesn't rely on any external dependencies (outside of Unity itself), so installation should be relatively simple. Below are a couple of different ways to get Atlas up and running in your project:
+
 #### Import using the Package Manager (Unity 2019.1+) 
 Add `"com.davidknopp.atlas": "https://github.com/david-knopp/Atlas.git#ReleasePackage",` under the `"dependencies"` section of your project's manifest.json file, which should be located under the "Packages" folder in your project's root directory. Upon running Unity, Atlas should then be
 downloaded automatically.

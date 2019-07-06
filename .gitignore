@@ -10,3 +10,4 @@ obj/
 Assets/Plugins/ConsoleE/
 Assets/Plugins/ConsoleE.meta
 *.user
+.vscode/

@@ -7,7 +7,7 @@ namespace Atlas
     /// </summary>
     /// <seealso cref="IStateMachine"/>
     /// <seealso cref="Atlas.StateMachine"/>
-    public abstract class State : ITickable
+    public abstract class State
     {
         /// <summary>
         /// Constructor

@@ -12,32 +12,32 @@ namespace Atlas
         /// <summary>
         /// The minimum value of the range (inclusive)
         /// </summary>
-        public float m_minValue;
+        public float MinValue;
 
         /// <summary>
         /// The maximum value of the range (inclusive)
         /// </summary>
-        public float m_maxValue;
+        public float MaxValue;
 
         /// <summary>
-        /// Returns a random number between <see cref="m_minValue"/> (inclusive) and <see cref="m_maxValue"/> (inclusive)
+        /// Returns a random number between <see cref="MinValue"/> (inclusive) and <see cref="MaxValue"/> (inclusive)
         /// </summary>
         /// <returns>A random value within the range</returns>
         public float GetRandomValue()
         {
-            return UnityEngine.Random.Range( m_minValue, m_maxValue );
+            return UnityEngine.Random.Range( MinValue, MaxValue );
         }
 
         /// <summary>
-        /// Returns a linearly interpolated value between <see cref="m_minValue"/> and <see cref="m_maxValue"/>
-        /// where an input <paramref name="t"/> of 0 will return <see cref="m_minValue"/>, and an input of 1 will
-        /// return <see cref="m_maxValue"/>
+        /// Returns a linearly interpolated value between <see cref="MinValue"/> and <see cref="MaxValue"/>
+        /// where an input <paramref name="t"/> of 0 will return <see cref="MinValue"/>, and an input of 1 will
+        /// return <see cref="MaxValue"/>
         /// </summary>
         /// <param name="t">The value to interpulate normalized to [0, 1]</param>
         /// <returns>The linearly interpolated value</returns>
         public float GetLerpedValue( float t )
         {
-            return Mathf.Lerp( m_minValue, m_maxValue, Mathf.Clamp01( t ) );
+            return Mathf.Lerp( MinValue, MaxValue, Mathf.Clamp01( t ) );
         }
 
         /// <summary>
@@ -50,9 +50,9 @@ namespace Atlas
         {
 
             // special case for if the range represents a single point
-            if ( m_maxValue == m_minValue )
+            if ( MaxValue == MinValue )
             {
-                if ( value == m_maxValue )
+                if ( value == MaxValue )
                 {
                     return 1f;
                 }
@@ -60,7 +60,7 @@ namespace Atlas
                 return 0f;
             }
 
-            float normalizedValue = ( value - m_minValue ) / ( m_maxValue - m_minValue );
+            float normalizedValue = ( value - MinValue ) / ( MaxValue - MinValue );
             return Mathf.Clamp01( normalizedValue );
         }
 
@@ -71,7 +71,7 @@ namespace Atlas
         /// <returns>Whether or not the value is within the range</returns>
         public bool Contains( float value )
         {
-            return value >= m_minValue && value <= m_maxValue;
+            return value >= MinValue && value <= MaxValue;
         }
 
         /// <summary>
@@ -82,8 +82,8 @@ namespace Atlas
         /// <returns>Whether or not the range value is contained</returns>
         public bool Contains( Range range )
         {
-            return Contains( range.m_minValue ) &&
-                   Contains( range.m_maxValue );
+            return Contains( range.MinValue ) &&
+                   Contains( range.MaxValue );
         }
 
         /// <summary>
@@ -93,8 +93,8 @@ namespace Atlas
         /// <returns>Whether or not the ranges overlap eachother</returns>
         public bool Intersects( Range range )
         {
-            return m_minValue <= range.m_maxValue &&
-                   m_maxValue >= range.m_minValue;
+            return MinValue <= range.MaxValue &&
+                   MaxValue >= range.MinValue;
         }
 
         /// <summary>
@@ -105,7 +105,7 @@ namespace Atlas
         /// to the range limits is returned.</returns>
         public float Clamp( float value )
         {
-            return Mathf.Clamp( value, m_minValue, m_maxValue );
+            return Mathf.Clamp( value, MinValue, MaxValue );
         }
 
         /// <summary>
@@ -118,8 +118,8 @@ namespace Atlas
         {
             return new Range()
             {
-                m_minValue = Mathf.Min( m_minValue, range.m_minValue ),
-                m_maxValue = Mathf.Max( m_maxValue, range.m_maxValue )
+                MinValue = Mathf.Min( MinValue, range.MinValue ),
+                MaxValue = Mathf.Max( MaxValue, range.MaxValue )
             };
         }
 
@@ -135,16 +135,16 @@ namespace Atlas
             {
                 return new Range()
                 {
-                    m_minValue = Mathf.Max( m_minValue, range.m_minValue ),
-                    m_maxValue = Mathf.Min( m_maxValue, range.m_maxValue )
+                    MinValue = Mathf.Max( MinValue, range.MinValue ),
+                    MaxValue = Mathf.Min( MaxValue, range.MaxValue )
                 };
             }
 
             // no intersection
             return new Range()
             {
-                m_minValue = float.NaN,
-                m_maxValue = float.NaN
+                MinValue = float.NaN,
+                MaxValue = float.NaN
             };
         }
     }

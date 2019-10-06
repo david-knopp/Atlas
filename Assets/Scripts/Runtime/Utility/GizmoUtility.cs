@@ -2,7 +2,7 @@
 
 namespace Atlas
 {
-    public static class GizmoUtils
+    public static class GizmoUtility
     {
         public static void DrawCircle( Vector3 pos, float radius, Vector3 axis, int numSegments = 20 )
         {

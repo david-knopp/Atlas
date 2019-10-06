@@ -11,3 +11,4 @@ Assets/Plugins/ConsoleE/
 Assets/Plugins/ConsoleE.meta
 *.user
 .vscode/
+Assets/ThirdParty/ConsoleE*

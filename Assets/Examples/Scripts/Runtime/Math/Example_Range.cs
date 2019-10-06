@@ -21,6 +21,6 @@ namespace Atlas.Examples
 
         // range declaration
         [SerializeField] private Range m_damageRange 
-            = new Range() { m_minValue = 6f, m_maxValue = 20f };
+            = new Range() { MinValue = 6f, MaxValue = 20f };
     }
 }

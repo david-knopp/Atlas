@@ -119,7 +119,17 @@ namespace Atlas
         {
             return Elapsed >= time;
         }
-        #endregion // public
+
+        public float GetElapsedPercent( float duration )
+        {
+            if ( duration > 0f )
+            {
+                return Elapsed / duration;
+            }
+
+            return 0f;
+        }
+        #endregion public
 
         #region private
         private float m_startTimestamp;
@@ -144,6 +154,6 @@ namespace Atlas
                 }
             }
         }
-        #endregion // private
+        #endregion private
     }
 }

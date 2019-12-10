@@ -13,8 +13,11 @@
         {
             int hash = 13;
 
-            hash = ( hash * 7 ) + hash1;
-            hash = ( hash * 7 ) + hash2;
+            unchecked
+            {
+                hash = ( hash * 7 ) + hash1;
+                hash = ( hash * 7 ) + hash2; 
+            }
 
             return hash;
         }
@@ -27,9 +30,12 @@
         {
             int hash = 13;
 
-            hash = ( hash * 7 ) + hash1;
-            hash = ( hash * 7 ) + hash2;
-            hash = ( hash * 7 ) + hash3;
+            unchecked
+            {
+                hash = ( hash * 7 ) + hash1;
+                hash = ( hash * 7 ) + hash2;
+                hash = ( hash * 7 ) + hash3; 
+            }
 
             return hash;
         }
@@ -42,10 +48,13 @@
         {
             int hash = 13;
 
-            hash = ( hash * 7 ) + hash1;
-            hash = ( hash * 7 ) + hash2;
-            hash = ( hash * 7 ) + hash3;
-            hash = ( hash * 7 ) + hash4;
+            unchecked
+            {
+                hash = ( hash * 7 ) + hash1;
+                hash = ( hash * 7 ) + hash2;
+                hash = ( hash * 7 ) + hash3;
+                hash = ( hash * 7 ) + hash4; 
+            }
 
             return hash;
         }

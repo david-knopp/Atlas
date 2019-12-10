@@ -40,6 +40,11 @@ namespace Atlas
             return new Vector3( v.x, v.x, v.z );
         }
 
+        public static Vector3 XYZ( this Vector3 v )
+        {
+            return new Vector3( v.x, v.y, v.z );
+        }
+
         public static Vector3 XZZ( this Vector3 v )
         {
             return new Vector3( v.x, v.z, v.z );
@@ -140,6 +145,11 @@ namespace Atlas
         public static Vector2 XX( this Vector3 v )
         {
             return new Vector2( v.x, v.x );
+        }
+
+        public static Vector2 XY( this Vector3 v )
+        {
+            return new Vector2( v.x, v.y );
         }
 
         public static Vector2 XZ( this Vector3 v )

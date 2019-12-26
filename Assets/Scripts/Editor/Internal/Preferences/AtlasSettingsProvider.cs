@@ -20,13 +20,13 @@ namespace Atlas.Internal
             DrawInfo();
 
             EditorGUILayout.Separator();
-            EditorGUILayoutUtils.HorizontalLine( 2f, 0.95f );
+            EditorGUILayoutUtility.HorizontalLine( 2f, 0.95f );
 
             for ( int i = 0; i < m_settingsItems.Count; i++ )
             {
                 ISettingsItem settingsItem = m_settingsItems[i];
 
-                EditorGUILayoutUtils.RichLabelField( string.Format( "<b>{0}</b>", settingsItem.Name ) );
+                EditorGUILayoutUtility.RichLabelField( string.Format( "<b>{0}</b>", settingsItem.Name ) );
 
                 using ( new EditorGUI.IndentLevelScope() )
                 {
@@ -36,7 +36,7 @@ namespace Atlas.Internal
                 if ( i < m_settingsItems.Count - 1 )
                 {
                     EditorGUILayout.Separator();
-                    EditorGUILayoutUtils.HorizontalLine( 1f, 0.85f );
+                    EditorGUILayoutUtility.HorizontalLine( 1f, 0.85f );
                 }
             }
         }
@@ -85,7 +85,7 @@ namespace Atlas.Internal
         {
             using ( new GUIColorScope( new Color( 0.6f, 0.6f, 0.6f ) ) )
             {
-                EditorGUILayoutUtils.RichLabelField( "<b>Atlas Utility Library</b> by David Knopp" );
+                EditorGUILayoutUtility.RichLabelField( "<b>Atlas Utility Library</b> by David Knopp" );
                 EditorGUILayout.LabelField( string.Format( "Version {0}", Version.Full ) );
             }
 

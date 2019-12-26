@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Atlas
 {
-    public static class EditorGUILayoutUtils
+    public static class EditorGUILayoutUtility
     {
         public static void HorizontalLine( float height = 1f, float widthPct = 1f )
         {

@@ -120,6 +120,11 @@ namespace Atlas
             return Elapsed >= time;
         }
 
+        /// <summary>
+        /// Returns the percentage of the given duration that has elapsed
+        /// </summary>
+        /// <param name="duration">The duration (in seconds) to calculate the percentage for</param>
+        /// <returns>The percentage of the given duration that has elapsed</returns>
         public float GetElapsedPercent( float duration )
         {
             if ( duration > 0f )

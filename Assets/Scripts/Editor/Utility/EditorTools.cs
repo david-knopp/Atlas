@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Atlas
 {
-    public static class EditorUtils
+    public static class EditorTools
     {
         /// <summary>
         /// Whether or not the default editor tools (scale, rotate, translate, rect) are hidden
@@ -13,17 +13,21 @@ namespace Atlas
         {
             get
             {
-                Type type = typeof( Tools );
-                FieldInfo field = type.GetField( "s_Hidden", BindingFlags.NonPublic | BindingFlags.Static );
-                return ( ( bool )field.GetValue( null ) );
+                FieldInfo field = GetHiddenField();
+                return ( bool )field.GetValue( null );
             }
 
             set
             {
-                Type type = typeof( Tools );
-                FieldInfo field = type.GetField( "s_Hidden", BindingFlags.NonPublic | BindingFlags.Static );
+                FieldInfo field = GetHiddenField();
                 field.SetValue( null, value );
             }
+        }
+
+        private static FieldInfo GetHiddenField()
+        {
+            Type type = typeof( Tools );
+            return type.GetField( "s_Hidden", BindingFlags.NonPublic | BindingFlags.Static );
         }
     }
 }

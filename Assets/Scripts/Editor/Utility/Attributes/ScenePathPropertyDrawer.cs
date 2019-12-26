@@ -16,14 +16,16 @@ namespace Atlas
         {
             if ( property.propertyType == SerializedPropertyType.String )
             {
+                ScenePathAttribute pathAttribute = attribute as ScenePathAttribute;
                 Rect propertyRect = position;
                 propertyRect.height = EditorGUIUtility.singleLineHeight;
 
-                string[] sceneGUIDs = AssetDatabase.FindAssets( "t:Scene" );
+                string[] sceneGUIDs = AssetDatabase.FindAssets( $"{pathAttribute.Filter} t:Scene", pathAttribute.Folders );
                 if ( sceneGUIDs != null
                      && sceneGUIDs.Length > 0 )
                 {
                     string[] scenePaths = sceneGUIDs.Select( ConvertGUIDToFilename ).ToArray();
+
                     int selectedIndex = Mathf.Max( Array.IndexOf( scenePaths, property.stringValue ), 0 );
 
                     EditorGUI.BeginChangeCheck();

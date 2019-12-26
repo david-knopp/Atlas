@@ -6,7 +6,7 @@ namespace Atlas.Examples
     public sealed class Example_ScenePathAttribute : MonoBehaviour
     {
         // displays dropdown of scene names in inspector
-        [SerializeField, ScenePath] private string m_scenePath;
+        [SerializeField, ScenePath( null, "Assets/Examples/Scenes" )] private string m_scenePath;
         
         private void LoadScene()
         {

@@ -13,5 +13,18 @@ namespace Atlas
     [AttributeUsage( AttributeTargets.Field, AllowMultiple = false )]
     public sealed class ScenePathAttribute : PropertyAttribute
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="filter">Optional filter</param>
+        /// <param name="folders">Optional list of project-relative folders to search in, e.g. "Assets/Scenes"</param>
+        public ScenePathAttribute( string filter = null, params string[] folders )
+        {
+            Filter = filter;
+            Folders = folders;
+        }
+
+        public string Filter;
+        public readonly string[] Folders;
     }
 }

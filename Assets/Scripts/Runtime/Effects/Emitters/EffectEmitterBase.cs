@@ -61,14 +61,14 @@ namespace Atlas
             if ( IsPlaying &&
                  IsFinished )
             {
-                m_emissionFinishedEvent.Invoke();
+                m_emissionFinishedEvent?.Invoke();
                 IsPlaying = false;
             }
         }
         #endregion protected
 
         #region private
-        private Action m_emissionFinishedEvent = () => { };
+        private Action m_emissionFinishedEvent;
         #endregion private
     }
 }

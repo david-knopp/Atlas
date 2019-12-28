@@ -74,7 +74,6 @@ namespace Atlas
             private set;
         }
 
-        [ContextMenu( "Play" )]
         /// <summary>
         /// Begins playing all child emitters
         /// </summary>
@@ -115,17 +114,21 @@ namespace Atlas
         [SerializeField, Tooltip( "When this effect should get destroyed" )] private DestructionEventType m_destructionEvent;
         [SerializeField, MinValue( 0f )] private float m_lifetimeSeconds;
 
-        private List<EffectEmitterBase> m_emitters = new List<EffectEmitterBase>();
+        private List<EffectEmitterBase> m_emitters;
         private Timer m_destroyTimer = new Timer();
         private int m_finishedEmittersCount;
 
         private void Awake()
         {
-            GetComponentsInChildren( m_emitters );
-
-            for ( int i = 0; i < m_emitters.Count; i++ )
+            if ( DestructionEvent == DestructionEventType.Finished )
             {
-                m_emitters[i].EmissionFinishedEvent += OnEmitterFinished;
+                m_emitters = new List<EffectEmitterBase>();
+                GetComponentsInChildren( m_emitters );
+
+                for ( int i = 0; i < m_emitters.Count; i++ )
+                {
+                    m_emitters[i].EmissionFinishedEvent += OnEmitterFinished;
+                }
             }
         }
 

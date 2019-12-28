@@ -10,6 +10,17 @@ namespace Atlas
     public struct Range
     {
         /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="minValue">Minimum value of the range (inclusive)</param>
+        /// <param name="maxValue">Maximum value of the range (inclusive)</param>
+        public Range( float minValue, float maxValue )
+        {
+            MinValue = minValue;
+            MaxValue = maxValue;
+        }
+
+        /// <summary>
         /// The minimum value of the range (inclusive)
         /// </summary>
         public float MinValue;

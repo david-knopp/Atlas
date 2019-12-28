@@ -62,7 +62,7 @@ namespace Atlas
                                             if ( selectedIndex >= 0 &&
                                                  selectedIndex < sceneGUIDs.Length )
                                             {
-                                                EditorBuildSettingsScene scene = new EditorBuildSettingsScene( new GUID( sceneGUIDs[selectedIndex] ), true );
+                                                EditorBuildSettingsScene scene = new EditorBuildSettingsScene( new UnityEditor.GUID( sceneGUIDs[selectedIndex] ), true );
 
                                                 var scenesList = new EditorBuildSettingsScene[EditorBuildSettings.scenes.Length + 1];
                                                 Array.Copy( EditorBuildSettings.scenes, scenesList, scenesList.Length - 1 );
@@ -95,7 +95,7 @@ namespace Atlas
                                             if ( selectedIndex >= 0 &&
                                                  selectedIndex < sceneGUIDs.Length )
                                             {
-                                                GUID sceneGUID = new GUID( sceneGUIDs[selectedIndex] );
+                                                UnityEditor.GUID sceneGUID = new UnityEditor.GUID( sceneGUIDs[selectedIndex] );
                                                 var scenesList = new EditorBuildSettingsScene[EditorBuildSettings.scenes.Length];
                                                 Array.Copy( EditorBuildSettings.scenes, scenesList, scenesList.Length );
 

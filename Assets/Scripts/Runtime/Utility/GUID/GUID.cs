@@ -43,7 +43,8 @@ namespace Atlas
 
         public void OnAfterDeserialize()
         {
-            if ( m_serialiedGUID != null )
+            if ( m_serialiedGUID != null &&
+                 m_serialiedGUID.Length == 16 ) // GUIDs must be 16 bytes long)
             {
                 Value = new Guid( m_serialiedGUID );
             }

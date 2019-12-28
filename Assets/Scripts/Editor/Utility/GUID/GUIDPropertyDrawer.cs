@@ -8,7 +8,7 @@ namespace Atlas
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {
-            GUID guid = ( GUID )fieldInfo.GetValue( property.serializedObject.targetObject );
+            GUID guid = property.GetTargetObject<GUID>();
 
             using ( new EditorGUI.DisabledScope( true ) )
             {

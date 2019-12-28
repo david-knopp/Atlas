@@ -31,6 +31,11 @@ namespace Atlas
         public float MaxValue;
 
         /// <summary>
+        /// Represents the difference between the minimum and maximum values
+        /// </summary>
+        public float Length => Mathf.Max( MaxValue - MinValue, 0f );
+
+        /// <summary>
         /// Returns a random number between <see cref="MinValue"/> (inclusive) and <see cref="MaxValue"/> (inclusive)
         /// </summary>
         /// <returns>A random value within the range</returns>

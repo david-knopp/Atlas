@@ -10,11 +10,22 @@ namespace Atlas
 {
     public static class SerializedPropertyExtensions
     {
+        /// <summary>
+        /// Gets the typed object value of the SerializedProperty
+        /// </summary>
+        /// <typeparam name="T">The target object's type</typeparam>
+        /// <param name="property">The property to fetch the value from</param>
+        /// <returns>The typed object value</returns>
         public static T GetTargetObject<T>( this SerializedProperty property )
         {
             return ( T )GetTargetObject( property );
         }
 
+        /// <summary>
+        /// Gets the object value of the SerializedProperty
+        /// </summary>
+        /// <param name="property">The property to fetch the value from</param>
+        /// <returns>The object value</returns>
         public static object GetTargetObject( this SerializedProperty property )
         {
             if ( property == null )
@@ -26,6 +37,11 @@ namespace Atlas
             return ParseObjectElements( property.serializedObject.targetObject, elements );
         }
 
+        /// <summary>
+        /// Sets the property's target value to the given value
+        /// </summary>
+        /// <param name="property">The property to set</param>
+        /// <param name="value">The value to set to</param>
         public static void SetTargetObject( this SerializedProperty property, object value )
         {
             var elements = GetPropertyElements( property.propertyPath );
@@ -98,7 +114,7 @@ namespace Atlas
             var match = regex.Match( element );
 
             if ( match.Success &&
-                 int.TryParse( match.Groups[0].Value, out int index ) )
+                 int.TryParse( match.Groups[1].Value, out int index ) )
             {
                 return index;
             }
@@ -141,4 +157,3 @@ namespace Atlas
         }
     }
 }
-

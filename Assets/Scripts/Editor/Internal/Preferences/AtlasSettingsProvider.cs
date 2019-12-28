@@ -3,6 +3,7 @@ using UnityEditor;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace Atlas.Internal
 {
@@ -60,7 +61,7 @@ namespace Atlas.Internal
             // add settings items
             Type interfaceType = typeof( ISettingsItem );
             var settingsTypes = AppDomain.CurrentDomain.GetAssemblies()
-                                                       .SelectMany( x => x.GetTypes() )
+                                                       .SelectMany( x => GetLoadableTypes( x ) )
                                                        .Where( x => x.IsClass && interfaceType.IsAssignableFrom( x ) );
 
             foreach ( Type settingsType in settingsTypes )
@@ -102,6 +103,18 @@ namespace Atlas.Internal
             }
 
             EditorGUILayout.EndHorizontal();
+        }
+
+        private static IEnumerable<Type> GetLoadableTypes( Assembly assembly )
+        {
+            try
+            {
+                return assembly.GetTypes();
+            }
+            catch ( ReflectionTypeLoadException e )
+            {
+                return e.Types.Where( t => t != null );
+            }
         }
         #endregion private
     }

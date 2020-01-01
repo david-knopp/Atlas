@@ -2,6 +2,9 @@
 
 namespace Atlas
 {
+    /// <summary>
+    /// Handles audio playback for use with the effect system
+    /// </summary>
     [RequireComponent( typeof( AudioSource ) )]
     public sealed class AudioEffectEmitter : EffectEmitterBase
     {

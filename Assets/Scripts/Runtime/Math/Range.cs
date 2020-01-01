@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Atlas
 {
@@ -23,11 +24,13 @@ namespace Atlas
         /// <summary>
         /// The minimum value of the range (inclusive)
         /// </summary>
+        [FormerlySerializedAs( "m_minValue" )]
         public float MinValue;
 
         /// <summary>
         /// The maximum value of the range (inclusive)
         /// </summary>
+        [FormerlySerializedAs( "m_maxValue" )]
         public float MaxValue;
 
         /// <summary>

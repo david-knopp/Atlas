@@ -11,8 +11,8 @@ namespace Atlas
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {
-            SerializedProperty minValueProperty = property.FindPropertyRelative( "m_minValue" );
-            SerializedProperty maxValueProperty = property.FindPropertyRelative( "m_maxValue" );
+            SerializedProperty minValueProperty = property.FindPropertyRelative( "MinValue" );
+            SerializedProperty maxValueProperty = property.FindPropertyRelative( "MaxValue" );
 
             float labelWidth = EditorGUIUtility.labelWidth;
             float propertyWidth = ( position.width - c_horizontalSpacing - labelWidth ) * 0.5f;

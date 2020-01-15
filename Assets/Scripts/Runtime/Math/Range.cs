@@ -17,26 +17,44 @@ namespace Atlas
         /// <param name="maxValue">Maximum value of the range (inclusive)</param>
         public Range( float minValue, float maxValue )
         {
-            MinValue = minValue;
-            MaxValue = maxValue;
+            m_minValue = Mathf.Min( minValue, maxValue );
+            m_maxValue = Mathf.Max( minValue, maxValue );
         }
 
         /// <summary>
         /// The minimum value of the range (inclusive)
         /// </summary>
-        [FormerlySerializedAs( "m_minValue" )]
-        public float MinValue;
+        public float MinValue => m_minValue;
 
         /// <summary>
         /// The maximum value of the range (inclusive)
         /// </summary>
-        [FormerlySerializedAs( "m_maxValue" )]
-        public float MaxValue;
+        public float MaxValue => m_maxValue;
 
         /// <summary>
         /// Represents the difference between the minimum and maximum values
         /// </summary>
         public float Length => Mathf.Max( MaxValue - MinValue, 0f );
+
+        /// <summary>
+        /// Sets the range with the given values. If minValue > maxValue, the values will be swapped
+        /// so the Range's MinValue and MaxValue are preserved
+        /// </summary>
+        /// <param name="minValue">The smallest inclusive value for the range</param>
+        /// <param name="maxValue">The largest inclusive value for the range</param>
+        public void Set( float minValue, float maxValue )
+        {
+            if ( minValue < maxValue )
+            {
+                m_minValue = minValue;
+                m_maxValue = maxValue;
+            }
+            else
+            {
+                m_maxValue = minValue;
+                m_minValue = maxValue;
+            }
+        }
 
         /// <summary>
         /// Returns a random number between <see cref="MinValue"/> (inclusive) and <see cref="MaxValue"/> (inclusive)
@@ -128,18 +146,15 @@ namespace Atlas
         }
 
         /// <summary>
-        /// Combines the range with the given <paramref name="range"/> into a mathematical union, creating
-        /// a range that spans both ranges
+        /// Combines the range with the given <paramref name="range"/>, growing the range
+        /// to span both ranges
         /// </summary>
-        /// <param name="range">The range to union with</param>
+        /// <param name="range">The range to encapsulate</param>
         /// <returns>The combined range</returns>
-        public Range UnionWith( Range range )
+        public Range Encapsulate( Range range )
         {
-            return new Range()
-            {
-                MinValue = Mathf.Min( MinValue, range.MinValue ),
-                MaxValue = Mathf.Max( MaxValue, range.MaxValue )
-            };
+            return new Range( Mathf.Min( MinValue, range.MinValue ),
+                              Mathf.Max( MaxValue, range.MaxValue ) );
         }
 
         /// <summary>
@@ -152,19 +167,15 @@ namespace Atlas
         {
             if ( Intersects( range ) )
             {
-                return new Range()
-                {
-                    MinValue = Mathf.Max( MinValue, range.MinValue ),
-                    MaxValue = Mathf.Min( MaxValue, range.MaxValue )
-                };
+                return new Range( Mathf.Max( MinValue, range.MinValue ), 
+                                  Mathf.Min( MaxValue, range.MaxValue ) );
             }
 
             // no intersection
-            return new Range()
-            {
-                MinValue = float.NaN,
-                MaxValue = float.NaN
-            };
+            return new Range( float.NaN, float.NaN );
         }
+
+        [SerializeField, FormerlySerializedAs( "MinValue" )] private float m_minValue;
+        [SerializeField, FormerlySerializedAs( "MaxValue" )] private float m_maxValue;
     }
 }

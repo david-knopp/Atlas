@@ -4,7 +4,12 @@ using System;
 
 namespace Atlas
 {
-    public sealed class FixedSizeQueue<T> : IEnumerable<T>, IEnumerable, IReadOnlyCollection<T>, ICollection
+    /// <summary>
+    /// Represents a queue data structure of fixed length. When the buffer is full, subsequent writes overwrite the "oldest" 
+    /// values in an FIFO fashion
+    /// </summary>
+    /// <typeparam name="T">The type of elements to store in the queue</typeparam>
+    public sealed class CircularQueue<T> : IEnumerable<T>, IEnumerable, IReadOnlyCollection<T>, ICollection
     {
         /// <summary>
         /// The maximum number of elements this queue can hold
@@ -44,7 +49,7 @@ namespace Atlas
         /// Constructor
         /// </summary>
         /// <param name="size">The maximum number of elements this queue can hold</param>
-        public FixedSizeQueue( int size )
+        public CircularQueue( int size )
         {
             if ( size < 0 )
             {
@@ -62,18 +67,19 @@ namespace Atlas
         /// <param name="item">The item to add to the queue, can be null for reference types</param>
         public void Enqueue( T item )
         {
-            m_internalQueue.Enqueue( item );
-
-            if ( m_internalQueue.Count > FixedSize )
+            if ( m_internalQueue.Count > 0 &&
+                 m_internalQueue.Count == FixedSize )
             {
                 m_internalQueue.Dequeue();
             }
+
+            m_internalQueue.Enqueue( item );
         }
 
         /// <summary>
         /// Removes the item at the beginning of the queue and returns it
         /// </summary>
-        /// <returns>The object that is removed from the beginning of the <see cref="FixedSizeQueue{T}"/></returns>
+        /// <returns>The object that is removed from the beginning of the <see cref="CircularQueue{T}"/></returns>
         public T Dequeue()
         {
             return m_internalQueue.Dequeue();
@@ -107,9 +113,9 @@ namespace Atlas
         }
 
         /// <summary>
-        /// Copies the <see cref="FixedSizeQueue{T}"/> elements to an existing array, starting at the specified array index
+        /// Copies the <see cref="CircularQueue{T}"/> elements to an existing array, starting at the specified array index
         /// </summary>
-        /// <param name="array">The destination array for the elements copied from the <see cref="FixedSizeQueue{T}"/></param>
+        /// <param name="array">The destination array for the elements copied from the <see cref="CircularQueue{T}"/></param>
         /// <param name="index">The zero-based index in array at which copying begins</param>
         public void CopyTo( T[] array, int index )
         {
@@ -117,27 +123,27 @@ namespace Atlas
         }
 
         /// <summary>
-        /// Returns an enumerator that iterates through the <see cref="FixedSizeQueue{T}"/>
+        /// Returns an enumerator that iterates through the <see cref="CircularQueue{T}"/>
         /// </summary>
-        /// <returns>An enumerator for the <see cref="FixedSizeQueue{T}"/></returns>
+        /// <returns>An enumerator for the <see cref="CircularQueue{T}"/></returns>
         public IEnumerator<T> GetEnumerator()
         {
             return m_internalQueue.GetEnumerator();
         }
 
         /// <summary>
-        /// Returns an enumerator that iterates through the <see cref="FixedSizeQueue{T}"/>
+        /// Returns an enumerator that iterates through the <see cref="CircularQueue{T}"/>
         /// </summary>
-        /// <returns>An enumerator for the <see cref="FixedSizeQueue{T}"/></returns>
+        /// <returns>An enumerator for the <see cref="CircularQueue{T}"/></returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
 
         /// <summary>
-        /// Copies the <see cref="FixedSizeQueue{T}"/> elements to an existing one-dimensional Array, starting at the specified array index
+        /// Copies the <see cref="CircularQueue{T}"/> elements to an existing one-dimensional Array, starting at the specified array index
         /// </summary>
-        /// <param name="array">The one-dimensional destination Array for the elements copied from the <see cref="FixedSizeQueue{T}"/>. The Array must have zero-based indexing.</param>
+        /// <param name="array">The one-dimensional destination Array for the elements copied from the <see cref="CircularQueue{T}"/>. The Array must have zero-based indexing.</param>
         /// <param name="index">The zero-based index in array at which copying begins</param>
         void ICollection.CopyTo( Array array, int index )
         {

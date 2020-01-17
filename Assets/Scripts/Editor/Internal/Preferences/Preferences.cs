@@ -43,7 +43,7 @@ namespace Atlas.Internal
 
             Save();
         } 
-        #endregion // public
+        #endregion public
 
         #region private
         [Serializable]
@@ -138,6 +138,6 @@ namespace Atlas.Internal
 
             return string.Empty;
         }
-        #endregion // private
+        #endregion private
     }
 }

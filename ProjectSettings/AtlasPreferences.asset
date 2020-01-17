@@ -15,6 +15,10 @@
         {
             "m_key": "TransformEditor_State",
             "m_value": "True"
+        },
+        {
+            "m_key": "ScenePath_Filter",
+            "m_value": "Assets/Examples/Scenes"
         }
     ]
 }

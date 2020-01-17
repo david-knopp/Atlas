@@ -14,7 +14,7 @@
 
         public static int Revision
         {
-            get { return 6; }
+            get { return 7; }
         }
 
         public static string Full

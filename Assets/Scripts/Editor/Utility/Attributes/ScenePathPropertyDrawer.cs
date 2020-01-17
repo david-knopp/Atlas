@@ -20,7 +20,18 @@ namespace Atlas
                 Rect propertyRect = position;
                 propertyRect.height = EditorGUIUtility.singleLineHeight;
 
-                string[] sceneGUIDs = AssetDatabase.FindAssets( $"{pathAttribute.Filter} t:Scene", pathAttribute.Folders );
+                string[] searchFolders;
+                if ( pathAttribute.Folders == null || 
+                     pathAttribute.Folders.Length == 0 )
+                {
+                    searchFolders = new string[] { Internal.ScenePathSettings.GetDefaultScenePathFolder() };
+                }
+                else
+                {
+                    searchFolders = pathAttribute.Folders;
+                }
+
+                string[] sceneGUIDs = AssetDatabase.FindAssets( $"{pathAttribute.Filter} t:Scene", searchFolders );
                 if ( sceneGUIDs != null
                      && sceneGUIDs.Length > 0 )
                 {

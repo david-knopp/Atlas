@@ -109,7 +109,7 @@ namespace Atlas
         {
             Reset();
         }
-        #endregion // ISerializationCallbackReceiver 
+        #endregion ISerializationCallbackReceiver 
         #endregion public
 
         #region private

@@ -21,6 +21,7 @@ Atlas is a library of reusable classes and tools designed to jump-start your Uni
 9. Editor helpers
 10. UI stack
 11. Object pooling
+12. Vector swizzling
 
 ## Installation
 

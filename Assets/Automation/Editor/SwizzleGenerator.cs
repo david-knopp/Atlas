@@ -28,32 +28,36 @@ namespace Atlas.Internal
 
         private void Generate()
         {
-            m_stringBuilder.AppendFormat( "using UnityEngine;\n\n" );
+            m_stringBuilder.Append( "using UnityEngine;\n\n" );
 
-            m_stringBuilder.AppendFormat( "namespace Atlas\n" );
+            m_stringBuilder.Append( "namespace Atlas\n" );
             m_stringBuilder.Append( "{\n" );
             m_indent.IndentLevel++;
 
-                m_stringBuilder.Append( m_indent.ApplyIndent( "public static class Swizzle\n" ) );
-                m_stringBuilder.Append( m_indent.ApplyIndent( "{\n" ) );
-                m_indent.IndentLevel++;
+            m_stringBuilder.Append( m_indent.ApplyIndent( "public static class Swizzle\n" ) );
+            m_stringBuilder.Append( m_indent.ApplyIndent( "{\n" ) );
+            m_indent.IndentLevel++;
 
-                AppendXXXSwizzles( "Vector3", "X", "Y", "Z", "_" );
-                m_stringBuilder.Append( "\n" );
+            for ( int i = 2; i <= 4; i++ )
+            {
+                AppendSwizzles( 2, i, 'X', 'Y', '_' );
+            }
 
-                AppendXXXSwizzles( "Vector2", "X", "Y", "_" );
-                m_stringBuilder.Append( "\n" );
+            for ( int i = 2; i <= 4; i++ )
+            {
+                AppendSwizzles( 3, i, 'X', 'Y', 'Z', '_' );
+            }
 
-                AppendXXSwizzles( "Vector3", "X", "Y", "Z", "_" );
-                m_stringBuilder.Append( "\n" );
-
-                AppendXXSwizzles( "Vector2", "X", "Y", "_" );
-
-                m_indent.IndentLevel--;
-                m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
+            for ( int i = 2; i <= 4; i++ )
+            {
+                AppendSwizzles( 4, i, 'X', 'Y', 'Z', 'W', '_' );
+            }
 
             m_indent.IndentLevel--;
-            m_stringBuilder.Append( m_indent.ApplyIndent( "}" ) );
+            m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
+
+            m_indent.IndentLevel--;
+            m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
 
             using ( StreamWriter writer = new StreamWriter( FullDestinationPath, false ) )
             {
@@ -65,95 +69,106 @@ namespace Atlas.Internal
             Debug.LogFormat( $"Generated `Swizzle.cs` at `{ProjectRelativeDestinationPath}`" );
         }
 
-        private void AppendXXXSwizzles( string inputType, params string[] displayValues )
+        private void AppendSwizzles( int inputComponentCount, int outputComponentCount, params char[] displayValues )
         {
-            m_stringBuilder.Append( m_indent.ApplyIndent( $"#region {inputType}.XXX" ) );
+            // put e.g. .XX in regions, this assumes 'x' is the first value in displayValues
+            string regionComponents = GetFunctionString( 0, outputComponentCount, displayValues );
+            m_stringBuilder.Append( m_indent.ApplyIndent( $"#region Vector{inputComponentCount}.{regionComponents}" ) );
 
-            int numValues = displayValues.Length;
-
-            for ( int i = 0; i < numValues; i++ )
+            int loopCount = 1;
+            for ( int i = 0; i < outputComponentCount; i++ )
             {
-                for ( int j = 0; j < numValues; j++ )
+                loopCount *= displayValues.Length;
+            }
+
+            for ( int i = 0; i < loopCount; i++ )
+            {
+                string display = GetFunctionString( i, outputComponentCount, displayValues );
+                if ( IsDisplayValid( display ) == false )
                 {
-                    for ( int k = 0; k < numValues; k++ )
-                    {
-                        if ( displayValues[i] == "_" &&
-                             displayValues[j] == "_" &&
-                             displayValues[k] == "_" )
-                        {
-                            continue;
-                        }
+                    continue;
+                }
 
-                        m_stringBuilder.Append( "\n" );
-                        m_stringBuilder.Append( m_indent.ApplyIndent( 
-                                $"public static Vector3 {displayValues[i]}{displayValues[j]}{displayValues[k]}( this {inputType} {c_argName} )\n" ) );
-                        m_stringBuilder.Append( m_indent.ApplyIndent( "{\n" ) );
-                        m_indent.IndentLevel++;
+                m_stringBuilder.Append( "\n" );
+                m_stringBuilder.Append( m_indent.ApplyIndent( $"public static Vector{outputComponentCount} {display}( this Vector{inputComponentCount} {c_argName} )\n" ) );
+                m_stringBuilder.Append( m_indent.ApplyIndent( "{\n" ) );
+                m_indent.IndentLevel++;
 
-                        m_stringBuilder.Append( m_indent.ApplyIndent(
-                                $"return new Vector3( {GetValueString( displayValues[i] )}, {GetValueString( displayValues[j] )}, {GetValueString( displayValues[k] )} );\n" ) );
+                m_stringBuilder.Append( m_indent.ApplyIndent( $"return new Vector{outputComponentCount}( {GetReturnString( display )} );\n" ) );
 
-                        m_indent.IndentLevel--;
-                        m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
-                    }
+                m_indent.IndentLevel--;
+                m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
+            }
+
+            m_stringBuilder.Append( m_indent.ApplyIndent( $"#endregion Vector{inputComponentCount}.{regionComponents}\n\n" ) );
+        }
+
+        private static string GetFunctionString( int index, int outputComponentCount, char[] displayValues )
+        {
+            int displayCount = displayValues.Length;
+            char[] result = new char[outputComponentCount];
+
+            for ( int i = outputComponentCount - 1; i >= 0; i-- )
+            {
+                int componentIndex = index % displayCount;
+                result[i] = displayValues[componentIndex];
+                index /= displayCount;
+            }
+
+            return new string( result );
+        }
+
+        private static string GetReturnString( string displayString )
+        {
+            StringBuilder sb = new StringBuilder();
+
+            for ( int i = 0; i < displayString.Length; i++ )
+            {
+                char character = displayString[i];
+
+                switch ( character )
+                {
+                    case 'X':
+                        sb.Append( $"{c_argName}.x" );
+                        break;
+
+                    case 'Y':
+                        sb.Append( $"{c_argName}.y" );
+                        break;
+
+                    case 'Z':
+                        sb.Append( $"{c_argName}.z" );
+                        break;
+
+                    case 'W':
+                        sb.Append( $"{c_argName}.w" );
+                        break;
+
+                    case '_':
+                        sb.Append( "0f" );
+                        break;
+                }
+
+                if ( i + 1 < displayString.Length )
+                {
+                    sb.Append( ", " );
                 }
             }
 
-            m_stringBuilder.Append( m_indent.ApplyIndent( $"#endregion {inputType}.XXX\n" ) );
+            return sb.ToString();
         }
 
-        private void AppendXXSwizzles( string inputType, params string[] displayValues )
+        private static bool IsDisplayValid( string displayString )
         {
-            m_stringBuilder.Append( m_indent.ApplyIndent( $"#region {inputType}.XX" ) );
-
-            int numValues = displayValues.Length;
-
-            for ( int i = 0; i < numValues; i++ )
+            foreach ( char character in displayString )
             {
-                for ( int j = 0; j < numValues; j++ )
+                if ( character != '_' )
                 {
-                    if ( displayValues[i] == "_" && 
-                         displayValues[j] == "_" )
-                    {
-                        continue;
-                    }
-
-                    m_stringBuilder.Append( "\n" );
-                    m_stringBuilder.Append( m_indent.ApplyIndent(
-                        $"public static Vector2 {displayValues[i]}{displayValues[j]}( this {inputType} {c_argName} )\n" ) );
-                    m_stringBuilder.Append( m_indent.ApplyIndent( "{\n" ) );
-                    m_indent.IndentLevel++;
-
-                    m_stringBuilder.Append( m_indent.ApplyIndent(
-                            $"return new Vector2( {GetValueString( displayValues[i] )}, {GetValueString( displayValues[j] )} );\n" ) );
-
-                    m_indent.IndentLevel--;
-                    m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
+                    return true;
                 }
             }
 
-            m_stringBuilder.Append( m_indent.ApplyIndent( $"#endregion {inputType}.XX\n" ) );
-        }
-
-        private string GetValueString( string valueString )
-        {
-            switch ( valueString )
-            {
-                case "X":
-                    return $"{c_argName}.x";
-
-                case "Y":
-                    return $"{c_argName}.y";
-
-                case "Z":
-                    return $"{c_argName}.z";
-
-                case "_":
-                    return "0f";
-
-                default:
-                    return valueString;
-            }
+            return false;
         }
     }
 }

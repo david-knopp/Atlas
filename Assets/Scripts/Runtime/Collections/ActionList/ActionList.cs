@@ -5,19 +5,18 @@ namespace Atlas
 {
     public class ActionList : IAction
     {
-        public bool IsRunning { get; private set; }
-        public bool IsFinished => IsRunning && m_actionList.Count == 0;
+        public bool IsFinished => m_actionList.Count == 0;
         public bool IsBlocking { get; set; } = true;
         public bool IsPaused { get; set; }
 
         public void AddFirst( IAction action )
         {
-            m_actionList.AddFirst( action );
+            m_actionList.AddFirst( new ActionMetadata( action ) );
         }
 
         public void AddLast( IAction action )
         {
-            m_actionList.AddLast( action );
+            m_actionList.AddLast( new ActionMetadata( action ) );
         }
 
         public void Clear()
@@ -25,22 +24,12 @@ namespace Atlas
             m_actionList.Clear();
         }
 
-        public void Start()
+        public void OnStart()
         {
-            IsRunning = true;
         }
 
-        public void Stop()
+        public void OnStop()
         {
-            foreach ( var action in m_actionList )
-            {
-                if ( action.IsRunning )
-                {
-                    action.Stop();
-                }
-            }
-
-            IsRunning = false;
         }
 
         public void Tick()
@@ -48,23 +37,33 @@ namespace Atlas
             for ( var node = m_actionList.First; node != null; )
             {
                 var nextNode = node.Next;
-                IAction action = node.Value;
+                var actionMetadata = node.Value;
+                var action = actionMetadata.Action;
+                bool isActionFinished = false;
 
-                // start action
-                if ( action.IsRunning == false )
+                if ( action.IsPaused == false )
                 {
-                    action.Start();
+                    // start action
+                    if ( actionMetadata.HasStarted == false )
+                    {
+                        action.OnStart();
+                        actionMetadata.HasStarted = true;
+                        node.Value = actionMetadata;
+                    }
+
+                    action.Tick();
+
+                    // finish action
+                    if ( action.IsFinished )
+                    {
+                        action.OnStop();
+                        m_actionList.Remove( node );
+                        isActionFinished = true;
+                    }
                 }
 
-                action.Tick();
-
-                // finish action
-                if ( action.IsFinished )
-                {
-                    action.Stop();
-                    m_actionList.Remove( node );
-                }
-                else if ( action.IsBlocking )
+                if ( isActionFinished == false &&
+                     action.IsBlocking )
                 {
                     break;
                 }
@@ -73,6 +72,18 @@ namespace Atlas
             }
         }
 
-        private readonly LinkedList<IAction> m_actionList = new LinkedList<IAction>();
+        private struct ActionMetadata
+        {
+            public ActionMetadata( IAction action )
+            {
+                Action = action;
+                HasStarted = false;
+            }
+
+            public IAction Action;
+            public bool HasStarted;
+        }
+
+        private readonly LinkedList<ActionMetadata> m_actionList = new LinkedList<ActionMetadata>();
     }
 }

@@ -5,7 +5,7 @@ namespace Atlas
     public abstract class InterpolatedActionBase : IAction
     {
         public bool IsFinished => m_timer.HasElapsed( LengthSeconds );
-        public virtual bool IsBlocking { get; protected set; } = true;
+        public virtual bool IsBlocking { get; } = true;
         public bool IsPaused { get; set; }
 
         public virtual void OnStart()

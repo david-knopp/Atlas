@@ -63,12 +63,12 @@ namespace Atlas
         /// <summary>
         /// Type of path target to represent
         /// </summary>
-        public Path TargetType { get; private set; }
+        public Path TargetType { get; }
 
         /// <summary>
         /// Type of path relativity to use
         /// </summary>
-        public Relativity RelativityType { get; private set; }
+        public Relativity RelativityType { get; }
 
         /// <summary>
         /// A string representing the desired relative path as defined by <see cref="RelativityType"/>

@@ -1,0 +1,163 @@
+﻿using System;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Animations;
+using UnityEngine;
+
+namespace Atlas
+{
+    public abstract class AnimatorParameterHandlePropertyDrawerBase : PropertyDrawer
+    {
+        public virtual AnimatorControllerParameterType? ParameterTypeFilter { get; } = null;
+
+        public override float GetPropertyHeight( SerializedProperty property, GUIContent label )
+        {
+            SerializedProperty nameProperty = property.FindPropertyRelative( "m_name" );
+            m_hasMatchedTriggerName = false;
+
+            IterateAnimators( property, animator =>
+            {
+                if ( m_hasMatchedTriggerName )
+                {
+                    return;
+                }
+
+                IterateParameters( animator, parameter =>
+                {
+                    if ( parameter.name == nameProperty.stringValue )
+                    {
+                        m_hasMatchedTriggerName = true;
+                    }
+                } );
+            } );
+
+            if ( m_hasMatchedTriggerName == false )
+            {
+                return EditorGUIUtility.singleLineHeight * 2f + EditorGUIUtility.standardVerticalSpacing;
+            }
+            else
+            {
+                return EditorGUIUtility.singleLineHeight;
+            }
+        }
+
+        public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
+        {
+            SerializedProperty nameProperty = property.FindPropertyRelative( "m_name" );
+            position.height = EditorGUIUtility.singleLineHeight;
+
+            float dropdownXOffset = position.x + EditorGUIUtility.labelWidth;
+            float dropdownWidth = position.width - EditorGUIUtility.labelWidth;
+
+            // draw animator parameter name popup field
+            if ( EditorGUI.Toggle( position, label, false, EditorStyles.popup ) )
+            {
+                GenericMenu menu = new GenericMenu();
+
+                IterateAnimators( property, controller =>
+                {
+                    IterateParameters( controller, parameter =>
+                    {
+                        menu.AddItem( new GUIContent( $"{controller.name}/{parameter.name}" ),
+                            nameProperty.stringValue == parameter.name,
+                            () =>
+                            {
+                                nameProperty.stringValue = parameter.name;
+                                nameProperty.serializedObject.ApplyModifiedProperties();
+                            } );
+                    } );
+                } );
+
+                menu.AddSeparator( "" );
+                menu.AddItem( s_otherGUIContent, m_hasMatchedTriggerName == false, () => 
+                {
+                    nameProperty.stringValue = string.Empty;
+                    nameProperty.serializedObject.ApplyModifiedProperties();
+                } );
+
+                menu.DropDown( new Rect( dropdownXOffset, position.y, dropdownWidth, position.height ) );
+            }
+
+            // render parameter name
+            GUIContent selectedParamContent;
+
+            if ( m_hasMatchedTriggerName )
+            {
+                selectedParamContent = new GUIContent( nameProperty.stringValue );
+            }
+            else
+            {
+                selectedParamContent = s_otherGUIContent;
+            }
+
+            Rect selectedParamPosition = new Rect( dropdownXOffset + 4, position.y, dropdownWidth - 18, position.height );
+            GUI.Label( selectedParamPosition, selectedParamContent );
+
+            if ( m_hasMatchedTriggerName == false )
+            {
+                position.y += position.height + EditorGUIUtility.standardVerticalSpacing;
+                EditorGUI.PropertyField( position, nameProperty, new GUIContent( " " ) );
+            }
+        }
+
+        private void IterateAnimators( SerializedProperty property, Action<AnimatorController> controllerCallback )
+        {
+            HashSet<AnimatorController> controllers = new HashSet<AnimatorController>();
+
+            void TryInvokeCallback( Animator animator )
+            {
+                AnimatorController controller = animator.runtimeAnimatorController as AnimatorController;
+
+                // only visit an controller once
+                if ( controllers.Add( controller ) )
+                {
+                    controllerCallback( controller );
+                }
+            }
+
+            // fetch any animators referenced as a serialized sibling field
+            SerializedProperty objectIterator = property.serializedObject.GetIterator();
+            while ( objectIterator.Next( enterChildren: true ) )
+            {
+                if ( objectIterator.propertyType == SerializedPropertyType.ObjectReference &&
+                     objectIterator.objectReferenceValue is Animator animator )
+                {
+                    TryInvokeCallback( animator );
+                }
+            }
+
+            // fetch any animators from hierarchy
+            MonoBehaviour targetBehavior = property.serializedObject.targetObject as MonoBehaviour;
+            if ( targetBehavior != null )
+            {
+                // children
+                foreach ( Animator animator in targetBehavior.GetComponentsInChildren<Animator>() )
+                {
+                    TryInvokeCallback( animator );
+                }
+
+                // parents
+                foreach ( Animator animator in targetBehavior.GetComponentsInParent<Animator>() )
+                {
+                    TryInvokeCallback( animator );
+                }
+            }
+        }
+
+        private void IterateParameters( AnimatorController controller,
+            Action<AnimatorControllerParameter> parameterCallback )
+        {
+            foreach ( AnimatorControllerParameter parameter in controller.parameters )
+            {
+                if ( ParameterTypeFilter.HasValue == false ||
+                     ParameterTypeFilter.Value == parameter.type )
+                {
+                    parameterCallback( parameter );
+                }
+            }
+        }
+
+        private bool m_hasMatchedTriggerName = false;
+        private static readonly GUIContent s_otherGUIContent = new GUIContent( "other..." );
+    }
+}

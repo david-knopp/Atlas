@@ -29,6 +29,6 @@ namespace Atlas
             return new AnimatorBoolHandle( boolName );
         }
 
-        [SerializeField] private string m_name;
+        [SerializeField, AnimatorParameterName( AnimatorControllerParameterType.Bool )] private string m_name;
     }
 }

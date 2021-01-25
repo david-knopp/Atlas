@@ -7,17 +7,7 @@ namespace Atlas
     public sealed class AnimatorParameterNameAttribute : PropertyAttribute
     {
         /// <summary>
-        /// Component search location relative to the MonoBehaviour serializing the target
-        /// </summary>
-        public enum AnimatorSource
-        { 
-            Children = 0,
-            Parents = 1,
-            ThisObject = 2
-        }
-
-        /// <summary>
-        /// Options for showing/hiding parameter type when displaying parameter names
+        /// Options for displaying parameters categorized by their type when displaying popup menu
         /// </summary>
         public enum ParameterTypeDisplay
         {
@@ -30,10 +20,8 @@ namespace Atlas
         /// </summary>
         /// <param name="animatorSource">GameObject-relative source location to extract the Animator from</param>
         /// <param name="typeDisplay">Controls whether or not the parameter type is shown next to its name in the inspector</param>
-        public AnimatorParameterNameAttribute( AnimatorSource animatorSource = AnimatorSource.Children,
-            ParameterTypeDisplay typeDisplay = ParameterTypeDisplay.Show )
+        public AnimatorParameterNameAttribute( ParameterTypeDisplay typeDisplay = ParameterTypeDisplay.Show )
         {
-            TargetAnimatorSource = animatorSource;
             ParameterTypeFilter = null;
             TypeDisplay = typeDisplay;
         }
@@ -43,18 +31,11 @@ namespace Atlas
         /// </summary>
         /// <param name="parameterTypeFilter">Type to filter displayed parameters by</param>
         /// <param name="animatorSource">GameObject-relative source location to extract the Animator from</param>
-        public AnimatorParameterNameAttribute( AnimatorControllerParameterType parameterTypeFilter,
-            AnimatorSource animatorSource = AnimatorSource.Children )
+        public AnimatorParameterNameAttribute( AnimatorControllerParameterType parameterTypeFilter )
         {
-            TargetAnimatorSource = animatorSource;
             ParameterTypeFilter = parameterTypeFilter;
             TypeDisplay = ParameterTypeDisplay.Hide;
         }
-
-        /// <summary>
-        /// GameObject-relative source location to get the target Animator from
-        /// </summary>
-        public AnimatorSource TargetAnimatorSource { get; }
 
         /// <summary>
         /// Optional filter for displaying Animator controller parameters of only a given type
@@ -62,7 +43,7 @@ namespace Atlas
         public AnimatorControllerParameterType? ParameterTypeFilter { get; }
 
         /// <summary>
-        /// Options for displaying the type of a parameter next to its name in the inspector
+        /// Options for displaying parameters categorized by their type when displaying popup menu
         /// </summary>
         public ParameterTypeDisplay TypeDisplay { get; }
     }

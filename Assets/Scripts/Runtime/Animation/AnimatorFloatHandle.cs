@@ -29,6 +29,6 @@ namespace Atlas
             return new AnimatorFloatHandle( floatName );
         }
 
-        [SerializeField] private string m_name;
+        [SerializeField, AnimatorParameterName( AnimatorControllerParameterType.Float )] private string m_name;
     }
 }

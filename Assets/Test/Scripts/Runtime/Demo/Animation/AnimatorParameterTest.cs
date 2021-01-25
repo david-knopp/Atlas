@@ -12,5 +12,6 @@ namespace Atlas
         [SerializeField] private AnimatorIntHandle m_int;
         [SerializeField] private AnimatorFloatHandle m_float;
         [SerializeField] private AnimatorBoolHandle m_bool;
+        [SerializeField, AnimatorParameterName] private string m_genericParam;
     }
 }

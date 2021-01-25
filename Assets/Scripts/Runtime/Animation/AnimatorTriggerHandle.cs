@@ -29,6 +29,6 @@ namespace Atlas
             return new AnimatorTriggerHandle( triggerName );
         }
 
-        [SerializeField] private string m_name;
+        [SerializeField, AnimatorParameterName( AnimatorControllerParameterType.Trigger )] private string m_name;
     }
 }

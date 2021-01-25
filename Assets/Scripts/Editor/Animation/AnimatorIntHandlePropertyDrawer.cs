@@ -1,12 +1,9 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using UnityEditor;
 
 namespace Atlas
 {
     [CustomPropertyDrawer( typeof( AnimatorIntHandle ) )]
     public sealed class AnimatorIntHandlePropertyDrawerBase : AnimatorParameterHandlePropertyDrawerBase
     {
-        public override AnimatorControllerParameterType? ParameterTypeFilter =>
-            AnimatorControllerParameterType.Int;
     }
 }

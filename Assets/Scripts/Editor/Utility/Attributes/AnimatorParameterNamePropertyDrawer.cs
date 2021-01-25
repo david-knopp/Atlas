@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
@@ -11,133 +11,162 @@ namespace Atlas
     {
         public override float GetPropertyHeight( SerializedProperty property, GUIContent label )
         {
-            Animator animator = GetAnimator( property );
-            if ( animator != null )
+            m_hasMatchedTriggerName = false;
+
+            IterateAnimators( property, animator =>
             {
-                var parameters = GetSelectableParameters( ParamAttribute, animator );
-                int selectedIndex = Array.FindIndex( parameters, 0, x => x.name == property.stringValue );
-
-                if ( selectedIndex < 0 )
+                if ( m_hasMatchedTriggerName )
                 {
-                    return base.GetPropertyHeight( property, label ) * 2 + EditorGUIUtility.standardVerticalSpacing;
+                    return;
                 }
-            }
 
-            return base.GetPropertyHeight( property, label );
+                IterateParameters( animator, parameter =>
+                {
+                    if ( parameter.name == property.stringValue )
+                    {
+                        m_hasMatchedTriggerName = true;
+                    }
+                } );
+            } );
+
+            if ( m_hasMatchedTriggerName == false )
+            {
+                return EditorGUIUtility.singleLineHeight * 2f + EditorGUIUtility.standardVerticalSpacing;
+            }
+            else
+            {
+                return EditorGUIUtility.singleLineHeight;
+            }
         }
 
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {
-            if ( property.propertyType != SerializedPropertyType.String )
-            {
-                EditorGUI.PropertyField( position, property, label );
-                return;
-            }
-
             position.height = EditorGUIUtility.singleLineHeight;
 
-            Animator animator = GetAnimator( property );
-            if ( animator != null )
+            float dropdownXOffset = position.x + EditorGUIUtility.labelWidth;
+            float dropdownWidth = position.width - EditorGUIUtility.labelWidth;
+
+            // draw animator parameter name popup field
+            if ( EditorGUI.Toggle( position, label, false, EditorStyles.popup ) )
             {
-                ;
-                // get popup labels
-                var parameters = GetSelectableParameters( ParamAttribute, animator );
-                var parameterNames = parameters.Select( x => x.name ).ToArray();
-                int selectedIndex = Array.IndexOf( parameterNames, property.stringValue );
-                var popupLabels = parameters.Select( GetParameterLabel ).ToList();
-                popupLabels.Add( new GUIContent( "Other..." ) );
+                GenericMenu menu = new GenericMenu();
 
-                if ( selectedIndex < 0 )
+                IterateAnimators( property, controller =>
                 {
-                    selectedIndex = popupLabels.Count - 1;
-                }
-
-                // show popup
-                EditorGUI.BeginChangeCheck();
-
-                selectedIndex = EditorGUI.Popup( position, label, selectedIndex, popupLabels.ToArray() );
-
-                if ( EditorGUI.EndChangeCheck() )
-                {
-                    if ( selectedIndex < parameterNames.Length )
+                    IterateParameters( controller, parameter =>
                     {
-                        property.stringValue = parameterNames[selectedIndex];
-                    }
-                    else
-                    {
-                        property.stringValue = null;
-                    }
-                }
+                        menu.AddItem( GetParameterMenuContent( controller, parameter ),
+                            property.stringValue == parameter.name,
+                            () =>
+                            {
+                                property.stringValue = parameter.name;
+                                property.serializedObject.ApplyModifiedProperties();
+                            } );
+                    } );
+                } );
 
-                // show manual input field for "other" option
-                if ( selectedIndex == popupLabels.Count - 1 )
+                menu.AddSeparator( "" );
+                menu.AddItem( s_otherGUIContent, m_hasMatchedTriggerName == false, () =>
                 {
-                    position.y += position.height + EditorGUIUtility.standardVerticalSpacing;
+                    property.stringValue = string.Empty;
+                    property.serializedObject.ApplyModifiedProperties();
+                } );
 
-                    property.stringValue = EditorGUI.TextField( position, " ", property.stringValue );
-                }
+                menu.DropDown( new Rect( dropdownXOffset, position.y, dropdownWidth, position.height ) );
+            }
+
+            // render parameter name
+            GUIContent selectedParamContent;
+
+            if ( m_hasMatchedTriggerName )
+            {
+                selectedParamContent = new GUIContent( property.stringValue );
             }
             else
             {
-                EditorGUI.PropertyField( position, property, label );
+                selectedParamContent = s_otherGUIContent;
+            }
+
+            Rect selectedParamPosition = new Rect( dropdownXOffset + 4, position.y, dropdownWidth - 18, position.height );
+            GUI.Label( selectedParamPosition, selectedParamContent );
+
+            if ( m_hasMatchedTriggerName == false )
+            {
+                position.y += position.height + EditorGUIUtility.standardVerticalSpacing;
+                EditorGUI.PropertyField( position, property, new GUIContent( " " ) );
             }
         }
 
-        private Animator Animator { get; set; }
+        private AnimatorParameterNameAttribute NameAttribute => attribute as AnimatorParameterNameAttribute;
 
-        private AnimatorParameterNameAttribute ParamAttribute => attribute as AnimatorParameterNameAttribute;
+        private bool m_hasMatchedTriggerName = false;
+        private static readonly GUIContent s_otherGUIContent = new GUIContent( "Other..." );
 
-        private Animator GetAnimator( SerializedProperty property )
+        private void IterateAnimators( SerializedProperty property, Action<AnimatorController> controllerCallback )
         {
-            // use cached animator reference
-            if ( Animator != null )
+            HashSet<AnimatorController> controllers = new HashSet<AnimatorController>();
+
+            void TryInvokeCallback( Animator animator )
             {
-                return Animator;
+                AnimatorController controller = animator.runtimeAnimatorController as AnimatorController;
+
+                // only visit an controller once
+                if ( controllers.Add( controller ) )
+                {
+                    controllerCallback( controller );
+                }
             }
 
-            // try fetching animator
-            MonoBehaviour parentBehavior = property.serializedObject.targetObject as MonoBehaviour;
-
-            switch ( ParamAttribute.TargetAnimatorSource )
+            // fetch any animators referenced as a serialized sibling field
+            SerializedProperty objectIterator = property.serializedObject.GetIterator();
+            while ( objectIterator.Next( enterChildren: true ) )
             {
-                case AnimatorParameterNameAttribute.AnimatorSource.Children:
-                    Animator = parentBehavior?.GetComponentInChildren<Animator>();
-                    break;
-
-                case AnimatorParameterNameAttribute.AnimatorSource.Parents:
-                    Animator = parentBehavior?.GetComponentInParent<Animator>();
-                    break;
-
-                case AnimatorParameterNameAttribute.AnimatorSource.ThisObject:
-                    Animator = parentBehavior?.GetComponent<Animator>();
-                    break;
+                if ( objectIterator.propertyType == SerializedPropertyType.ObjectReference &&
+                     objectIterator.objectReferenceValue is Animator animator )
+                {
+                    TryInvokeCallback( animator );
+                }
             }
 
-            return Animator;
+            // fetch any animators from hierarchy
+            MonoBehaviour targetBehavior = property.serializedObject.targetObject as MonoBehaviour;
+            if ( targetBehavior != null )
+            {
+                // children
+                foreach ( Animator animator in targetBehavior.GetComponentsInChildren<Animator>() )
+                {
+                    TryInvokeCallback( animator );
+                }
+
+                // parents
+                foreach ( Animator animator in targetBehavior.GetComponentsInParent<Animator>() )
+                {
+                    TryInvokeCallback( animator );
+                }
+            }
         }
 
-        private AnimatorControllerParameter[] GetSelectableParameters( AnimatorParameterNameAttribute attribute, Animator animator )
+        private void IterateParameters( AnimatorController controller,
+            Action<AnimatorControllerParameter> parameterCallback )
         {
-            AnimatorController controller = animator.runtimeAnimatorController as AnimatorController;
-
-            if ( attribute.ParameterTypeFilter.HasValue )
+            foreach ( AnimatorControllerParameter parameter in controller.parameters )
             {
-                return controller.parameters.Where( x => x.type == attribute.ParameterTypeFilter.Value ).ToArray();
+                if ( NameAttribute.ParameterTypeFilter.HasValue == false ||
+                     NameAttribute.ParameterTypeFilter.Value == parameter.type )
+                {
+                    parameterCallback( parameter );
+                }
             }
-
-            return controller.parameters;
         }
 
-        private GUIContent GetParameterLabel( AnimatorControllerParameter parameter )
+        private GUIContent GetParameterMenuContent( AnimatorController controller, AnimatorControllerParameter parameter )
         {
-            switch ( ParamAttribute.TypeDisplay )
+            if ( NameAttribute.TypeDisplay == AnimatorParameterNameAttribute.ParameterTypeDisplay.Show )
             {
-                case AnimatorParameterNameAttribute.ParameterTypeDisplay.Show:
-                    return new GUIContent( $"{parameter.name} ({parameter.type})" );
-
-                default:
-                    return new GUIContent( parameter.name );
+                return new GUIContent( $"{controller.name}/{parameter.type}s/{parameter.name}" );
             }
+
+            return new GUIContent( $"{controller.name}/{parameter.name}" );
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Atlas
         {
             if ( m_heap.Count == 0 )
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException( "Failed Dequeueing item from the PriorityQueue: queue is empty" );
             }
 
             return m_heap.Pop().Item;
@@ -43,7 +43,7 @@ namespace Atlas
         {
             if ( m_heap.Count == 0 )
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException( "Failed Peeking item from the PriorityQueue: queue is empty" );
             }
 
             return m_heap.Peek().Item;

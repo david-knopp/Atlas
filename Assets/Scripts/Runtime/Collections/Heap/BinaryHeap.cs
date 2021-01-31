@@ -10,7 +10,6 @@ namespace Atlas
         {
         }
 
-
         public BinaryHeap( int capacity )
             : this( Comparer<T>.Default, capacity )
         {
@@ -40,7 +39,7 @@ namespace Atlas
         {
             if ( Count == 0 )
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException( "Failed Peeking item in the BinaryHeap: the heap is empty" );
             }
 
             return m_heap[0];
@@ -50,7 +49,7 @@ namespace Atlas
         {
             if ( Count == 0 )
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException( "Failed Popping item from the BinaryHeap: the heap is empty" );
             }
 
             T top = m_heap[0];

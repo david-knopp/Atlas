@@ -10,6 +10,12 @@ namespace Atlas
         {
         }
 
+
+        public BinaryHeap( int capacity )
+            : this( Comparer<T>.Default, capacity )
+        {
+        }
+
         public BinaryHeap( IComparer<T> comparer )
             : this( comparer, 0 )
         {

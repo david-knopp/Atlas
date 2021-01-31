@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Atlas.Test
 {
@@ -35,37 +36,39 @@ namespace Atlas.Test
                 heap.Add( i );
             }
 
-            Assert.That( heap.Count == insertCount );
+            Assert.AreEqual( heap.Count, insertCount );
         }
 
         [Test]
-        [TestCase( 1 )]
-        [TestCase( 10 )]
-        public void PeekMin( int insertCount )
+        [TestCase( new int[] { 0 } )]
+        [TestCase( new int[] { 5, 1, -2, 18, 3, 9 } )]
+        [TestCase( new int[] { 14, 8, 1, 3, 1, 16, 45 } )]
+        public void PeekMin( int[] values )
         {
             BinaryHeap<int> heap = new BinaryHeap<int>( new LessIntComparer() );
 
-            for ( int i = 0; i < insertCount; i++ )
+            foreach ( int value in values )
             {
-                heap.Add( i );
+                heap.Add( value );
             }
 
-            Assert.That( heap.Peek() == 0 );
+            Assert.AreEqual( heap.Peek(), values.Min() );
         }
 
         [Test]
-        [TestCase( 1 )]
-        [TestCase( 10 )]
-        public void PeekMax( int insertCount )
+        [TestCase( new int[] { 0 } )]
+        [TestCase( new int[] { 5, 1, -2, 18, 3, 9 } )]
+        [TestCase( new int[] { 14, 8, 1, 3, 1, 16, 45 } )]
+        public void PeekMax( int[] values )
         {
             BinaryHeap<int> heap = new BinaryHeap<int>( new GreaterIntComparer() );
 
-            for ( int i = 0; i < insertCount; i++ )
+            foreach ( int value in values )
             {
-                heap.Add( i );
+                heap.Add( value );
             }
 
-            Assert.That( heap.Peek() == insertCount - 1 );
+            Assert.AreEqual( heap.Peek(), values.Max() );
         }
 
         [Test]
@@ -86,7 +89,7 @@ namespace Atlas.Test
             for ( int i = 0; i < values.Length; i++ )
             {
                 int value = heap.Pop();
-                Assert.That( value == values[i] );
+                Assert.AreEqual( value, values[i] );
             }
         }
 
@@ -104,7 +107,7 @@ namespace Atlas.Test
 
             heap.Pop();
 
-            Assert.That( heap.Count == insertCount - 1 );
+            Assert.AreEqual( heap.Count, insertCount - 1 );
         }
 
         [Test]
@@ -121,7 +124,17 @@ namespace Atlas.Test
 
             heap.Clear();
 
-            Assert.That( heap.Count == 0 );
+            Assert.AreEqual( heap.Count, 0 );
+        }
+
+        [Test]
+        [TestCase( 0 )]
+        [TestCase( 1000 )]
+        public void Capacity( int capacity )
+        {
+            BinaryHeap<int> heap = new BinaryHeap<int>( capacity );
+
+            Assert.AreEqual( heap.Capacity, capacity );
         }
     }
 }

@@ -108,7 +108,18 @@ namespace Atlas
 
             void TryInvokeCallback( Animator animator )
             {
-                AnimatorController controller = animator.runtimeAnimatorController as AnimatorController;
+                RuntimeAnimatorController runtimeController = null;
+
+                if ( animator.runtimeAnimatorController is AnimatorOverrideController overrideController )
+                {
+                    runtimeController = overrideController.runtimeAnimatorController;
+                }
+                else
+                {
+                    runtimeController = animator.runtimeAnimatorController;
+                }
+
+                AnimatorController controller = runtimeController as AnimatorController;
 
                 // only visit an controller once
                 if ( controllers.Add( controller ) )

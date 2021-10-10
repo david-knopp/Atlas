@@ -38,20 +38,12 @@ namespace Atlas.Internal
             m_stringBuilder.Append( m_indent.ApplyIndent( "{\n" ) );
             m_indent.IndentLevel++;
 
-            for ( int i = 2; i <= 4; i++ )
-            {
-                AppendSwizzles( 2, i, 'X', 'Y', '_' );
-            }
-
-            for ( int i = 2; i <= 4; i++ )
-            {
-                AppendSwizzles( 3, i, 'X', 'Y', 'Z', '_' );
-            }
-
-            for ( int i = 2; i <= 4; i++ )
-            {
-                AppendSwizzles( 4, i, 'X', 'Y', 'Z', 'W', '_' );
-            }
+            AppendSwizzles<Vector2>( "Vector{0}", new Range( 2, 4 ), 'X', 'Y', '_' );
+            AppendSwizzles<Vector3>( "Vector{0}", new Range( 2, 4 ), 'X', 'Y', 'Z', '_' );
+            AppendSwizzles<Vector4>( "Vector{0}", new Range( 2, 4 ), 'X', 'Y', 'Z', 'W', '_' );
+            AppendSwizzles<Vector2Int>( "Vector{0}Int", new Range( 2, 3 ), 'X', 'Y', '_' );
+            AppendSwizzles<Vector3Int>( "Vector{0}Int", new Range( 2, 3 ), 'X', 'Y', 'Z', '_' );
+            AppendSwizzles<Color>( "Color", 4, 'R', 'G', 'B', 'A', '_' );
 
             m_indent.IndentLevel--;
             m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
@@ -69,11 +61,23 @@ namespace Atlas.Internal
             Debug.LogFormat( $"Generated `Swizzle.cs` at `{ProjectRelativeDestinationPath}`" );
         }
 
-        private void AppendSwizzles( int inputComponentCount, int outputComponentCount, params char[] displayValues )
+        private void AppendSwizzles<TInput>( string outputTypeFormat, Range outputComponentRange, params char[] displayValues )
+            where TInput : struct
         {
+            for ( int i = ( int )outputComponentRange.MinValue; i <= ( int )outputComponentRange.MaxValue; i++ )
+            {
+                AppendSwizzles<TInput>( string.Format( outputTypeFormat, i ), i, displayValues );
+            }
+        }
+
+        private void AppendSwizzles<TInput>( string outputTypeName, int outputComponentCount, params char[] displayValues )
+            where TInput : struct
+        {
+            string inputTypeName = typeof( TInput ).Name;
+
             // put e.g. .XX in regions, this assumes 'x' is the first value in displayValues
             string regionComponents = GetFunctionString( 0, outputComponentCount, displayValues );
-            m_stringBuilder.Append( m_indent.ApplyIndent( $"#region Vector{inputComponentCount}.{regionComponents}" ) );
+            m_stringBuilder.Append( m_indent.ApplyIndent( $"#region {inputTypeName}.{regionComponents}" ) );
 
             int loopCount = 1;
             for ( int i = 0; i < outputComponentCount; i++ )
@@ -90,17 +94,17 @@ namespace Atlas.Internal
                 }
 
                 m_stringBuilder.Append( "\n" );
-                m_stringBuilder.Append( m_indent.ApplyIndent( $"public static Vector{outputComponentCount} {display}( this Vector{inputComponentCount} {c_argName} )\n" ) );
+                m_stringBuilder.Append( m_indent.ApplyIndent( $"public static {outputTypeName} {display}( this {inputTypeName} {c_argName} )\n" ) );
                 m_stringBuilder.Append( m_indent.ApplyIndent( "{\n" ) );
                 m_indent.IndentLevel++;
 
-                m_stringBuilder.Append( m_indent.ApplyIndent( $"return new Vector{outputComponentCount}( {GetReturnString( display )} );\n" ) );
+                m_stringBuilder.Append( m_indent.ApplyIndent( $"return new {outputTypeName}( {GetReturnString<TInput>( display )} );\n" ) );
 
                 m_indent.IndentLevel--;
                 m_stringBuilder.Append( m_indent.ApplyIndent( "}\n" ) );
             }
 
-            m_stringBuilder.Append( m_indent.ApplyIndent( $"#endregion Vector{inputComponentCount}.{regionComponents}\n\n" ) );
+            m_stringBuilder.Append( m_indent.ApplyIndent( $"#endregion {inputTypeName}.{regionComponents}\n\n" ) );
         }
 
         private static string GetFunctionString( int index, int outputComponentCount, char[] displayValues )
@@ -118,7 +122,7 @@ namespace Atlas.Internal
             return new string( result );
         }
 
-        private static string GetReturnString( string displayString )
+        private static string GetReturnString<TInput>( string displayString )
         {
             StringBuilder sb = new StringBuilder();
 
@@ -142,6 +146,27 @@ namespace Atlas.Internal
 
                     case 'W':
                         sb.Append( $"{c_argName}.w" );
+                        break;
+
+                    case 'R':
+                        sb.Append( $"{c_argName}.r" );
+                        break;
+
+                    case 'G':
+                        sb.Append( $"{c_argName}.g" );
+                        break;
+
+                    case 'B':
+                        sb.Append( $"{c_argName}.b" );
+                        break;
+
+                    case 'A':
+                        sb.Append( $"{c_argName}.a" );
+                        break;
+
+                    case '_' when typeof( TInput ) == typeof( Vector2Int ):
+                    case '_' when typeof( TInput ) == typeof( Vector3Int ):
+                        sb.Append( "0" );
                         break;
 
                     case '_':

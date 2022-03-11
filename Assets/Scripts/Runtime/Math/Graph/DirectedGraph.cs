@@ -6,22 +6,22 @@ using UnityEngine;
 namespace Atlas
 {
     /// <summary>
-    /// A graph of nodes connected by directed edges with associated edge weights
+    /// A graph of nodes connected by directed connections with associated connection weights
     /// </summary>
     public class DirectedGraph<TNode>
         where TNode : IGraphNode
     {
-        public readonly struct Edge
+        public readonly struct Connection
         {
-            public Edge( int fromNode, int toNode, float weight )
+            public Connection( int fromNodeID, int toNodeID, float weight )
             {
-                FromNode = fromNode;
-                ToNode = toNode;
+                FromNodeID = fromNodeID;
+                ToNodeID = toNodeID;
                 Weight = weight;
             }
 
-            public readonly int FromNode;
-            public readonly int ToNode;
+            public readonly int FromNodeID;
+            public readonly int ToNodeID;
             public readonly float Weight;
         }
 
@@ -47,41 +47,46 @@ namespace Atlas
             return m_nodes.Remove( nodeID );
         }
 
-        public void AddEdge( Edge edge )
+        public bool TryGetNode( int nodeID, out TNode node )
         {
-            if ( m_outgoingEdges.TryGetValue( edge.FromNode, out var edges ) == false )
+            return m_nodes.TryGetValue( nodeID, out node );
+        }
+
+        public void AddConnection( Connection connection )
+        {
+            if ( m_outgoingConnections.TryGetValue( connection.FromNodeID, out var connections ) == false )
             {
-                edges = new List<Edge>();
-                m_outgoingEdges[edge.FromNode] = edges;
+                connections = new List<Connection>();
+                m_outgoingConnections[connection.FromNodeID] = connections;
             }
 
-            edges.Add( edge );
+            connections.Add( connection );
         }
 
-        public void AddEdge( int fromNode, int toNode, float weight )
+        public void AddConnection( int fromNode, int toNode, float weight )
         {
-            AddEdge( new Edge( fromNode, toNode, weight ) );
+            AddConnection( new Connection( fromNode, toNode, weight ) );
         }
 
-        public void AddBiDirectionalEdge( int nodeA, int nodeB, float weight )
+        public void AddBiDirectionalConnection( int nodeA, int nodeB, float weight )
         {
-            AddEdge( nodeA, nodeB, weight );
-            AddEdge( nodeB, nodeA, weight );
+            AddConnection( nodeA, nodeB, weight );
+            AddConnection( nodeB, nodeA, weight );
         }
 
-        public bool TryGetOutgoingEdges( int fromNode, out IReadOnlyList<Edge> edges )
+        public bool TryGetOutgoingConnections( int fromNode, out IReadOnlyList<Connection> connections )
         {
-            if ( m_outgoingEdges.TryGetValue( fromNode, out var outgoingEdges ) )
+            if ( m_outgoingConnections.TryGetValue( fromNode, out var outgoingConnections ) )
             {
-                edges = outgoingEdges;
+                connections = outgoingConnections;
                 return true;
             }
 
-            edges = default;
+            connections = default;
             return false;
         }
 
         private readonly Dictionary<int, TNode> m_nodes = new Dictionary<int, TNode>();
-        private readonly Dictionary<int, List<Edge>> m_outgoingEdges = new Dictionary<int, List<Edge>>();
+        private readonly Dictionary<int, List<Connection>> m_outgoingConnections = new Dictionary<int, List<Connection>>();
     } 
 }

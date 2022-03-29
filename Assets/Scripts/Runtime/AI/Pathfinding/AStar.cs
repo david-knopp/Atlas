@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace Atlas
 {
-    public class AStar<TNode>
+    public class AStar<TNode, TConnection>
         where TNode : IGraphNode
+        where TConnection : IGraphConnection, new()
     {
         #region public
 
@@ -16,14 +17,14 @@ namespace Atlas
 
         public delegate float Heuristic( TNode fromNode, TNode toNode );
 
-        public AStar( DirectedGraph<TNode> graph, Heuristic heuristic )
+        public AStar( DirectedGraph<TNode, TConnection> graph, Heuristic heuristic )
         {
             m_graph = graph;
             m_heuristic = heuristic;
             m_openList = new IndexedPriorityQueue<NodeRecord>( graph.Nodes.Count );
         }
 
-        public Result Search( int startNodeID, int endNodeID, List<DirectedGraph<TNode>.Connection> resultPath )
+        public Result Search( int startNodeID, int endNodeID, List<TConnection> resultPath )
         {
             if ( resultPath == null )
             {
@@ -48,7 +49,12 @@ namespace Atlas
                 CurrentStatus = NodeRecord.Status.Open,
                 CostSoFar = 0f,
                 TotalCostEstimate = m_heuristic.Invoke( startNode, endNode ),
-                Connection = new DirectedGraph<TNode>.Connection( startNodeID, startNodeID, 0f )
+                Connection = new TConnection
+                {
+                    FromNodeID = startNodeID,
+                    ToNodeID = startNodeID,
+                    Weight = 0f
+                }
             };
 
             m_nodes.Add( startNodeID, startRecord );
@@ -134,7 +140,7 @@ namespace Atlas
                 Closed
             }
 
-            public DirectedGraph<TNode>.Connection Connection;
+            public TConnection Connection;
             public float CostSoFar;
             public float TotalCostEstimate;
             public Status CurrentStatus;
@@ -148,10 +154,10 @@ namespace Atlas
 
         private readonly Dictionary<int, NodeRecord> m_nodes = new Dictionary<int, NodeRecord>();
         private readonly IndexedPriorityQueue<NodeRecord> m_openList;
-        private readonly DirectedGraph<TNode> m_graph;
+        private readonly DirectedGraph<TNode, TConnection> m_graph;
         private readonly Heuristic m_heuristic;
 
-        private void ConstructPath( int startNodeID, int endNodeID, List<DirectedGraph<TNode>.Connection> resultPath )
+        private void ConstructPath( int startNodeID, int endNodeID, List<TConnection> resultPath )
         {
             resultPath.Clear();
 

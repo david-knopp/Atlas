@@ -1,8 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 namespace Atlas
 {
@@ -61,7 +59,7 @@ namespace Atlas
         public bool TryGetNode( int nodeID, out TNode node )
         {
             return m_nodes.TryGetValue( nodeID, out node );
-        } 
+        }
 
         #endregion nodes
 
@@ -181,7 +179,7 @@ namespace Atlas
 
             connection = default;
             return false;
-        } 
+        }
 
         #endregion connections
 

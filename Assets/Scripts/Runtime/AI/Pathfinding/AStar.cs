@@ -5,7 +5,7 @@ namespace Atlas
 {
     public class AStar<TNode, TConnection>
         where TNode : IGraphNode
-        where TConnection : IGraphConnection, new()
+        where TConnection : struct, IGraphConnection
     {
         #region public
 

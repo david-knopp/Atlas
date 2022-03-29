@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Atlas
@@ -8,23 +9,10 @@ namespace Atlas
     /// <summary>
     /// A graph of nodes connected by directed connections with associated connection weights
     /// </summary>
-    public class DirectedGraph<TNode>
+    public class DirectedGraph<TNode, TConnection>
         where TNode : IGraphNode
+        where TConnection : IGraphConnection, new()
     {
-        public readonly struct Connection
-        {
-            public Connection( int fromNodeID, int toNodeID, float weight )
-            {
-                FromNodeID = fromNodeID;
-                ToNodeID = toNodeID;
-                Weight = weight;
-            }
-
-            public readonly int FromNodeID;
-            public readonly int ToNodeID;
-            public readonly float Weight;
-        }
-
         public IReadOnlyDictionary<int, TNode> Nodes => m_nodes;
 
         public void AddNode( TNode node )
@@ -52,20 +40,33 @@ namespace Atlas
             return m_nodes.TryGetValue( nodeID, out node );
         }
 
-        public void AddConnection( Connection connection )
+        public void AddConnection( TConnection connection )
         {
             if ( m_outgoingConnections.TryGetValue( connection.FromNodeID, out var connections ) == false )
             {
-                connections = new List<Connection>();
+                connections = new List<TConnection>();
                 m_outgoingConnections[connection.FromNodeID] = connections;
             }
 
-            connections.Add( connection );
+            int currentIndex = connections.FindIndex( x => x.ToNodeID == connection.ToNodeID );
+            if ( currentIndex >= 0 )
+            {
+                connections[currentIndex] = connection;
+            }
+            else
+            {
+                connections.Add( connection );
+            }
         }
 
         public void AddConnection( int fromNode, int toNode, float weight )
         {
-            AddConnection( new Connection( fromNode, toNode, weight ) );
+            AddConnection( new TConnection
+            {
+                FromNodeID = fromNode,
+                ToNodeID = toNode,
+                Weight = weight
+            } );
         }
 
         public void AddBiDirectionalConnection( int nodeA, int nodeB, float weight )
@@ -74,7 +75,33 @@ namespace Atlas
             AddConnection( nodeB, nodeA, weight );
         }
 
-        public bool TryGetOutgoingConnections( int fromNode, out IReadOnlyList<Connection> connections )
+        public bool HasConnection( int fromNode, int toNode )
+        {
+            if ( m_outgoingConnections.TryGetValue( fromNode, out var connections ) )
+            {
+                return connections.Any( x => x.ToNodeID == toNode );
+            }
+
+            return false;
+        }
+
+        public bool TryGetConnection( int fromNode, int toNode, out TConnection connection )
+        {
+            if ( m_outgoingConnections.TryGetValue( fromNode, out var connections ) )
+            {
+                int connectionIndex = connections.FindIndex( x => x.ToNodeID == toNode );
+                if ( connectionIndex >= 0 )
+                {
+                    connection = connections[connectionIndex];
+                    return true;
+                }
+            }
+
+            connection = default;
+            return false;
+        }
+
+        public bool TryGetOutgoingConnections( int fromNode, out IReadOnlyList<TConnection> connections )
         {
             if ( m_outgoingConnections.TryGetValue( fromNode, out var outgoingConnections ) )
             {
@@ -86,7 +113,25 @@ namespace Atlas
             return false;
         }
 
+        public bool TryGetOutgoingConnection( int fromNode, int toNode, out TConnection connection )
+        {
+            if ( TryGetOutgoingConnections( fromNode, out var connections ) )
+            {
+                foreach ( TConnection c in connections )
+                {
+                    if ( c.ToNodeID == toNode )
+                    {
+                        connection = c;
+                        return true;
+                    }
+                }
+            }
+
+            connection = default;
+            return false;
+        }
+
         private readonly Dictionary<int, TNode> m_nodes = new Dictionary<int, TNode>();
-        private readonly Dictionary<int, List<Connection>> m_outgoingConnections = new Dictionary<int, List<Connection>>();
-    } 
+        private readonly Dictionary<int, List<TConnection>> m_outgoingConnections = new Dictionary<int, List<TConnection>>();
+    }
 }

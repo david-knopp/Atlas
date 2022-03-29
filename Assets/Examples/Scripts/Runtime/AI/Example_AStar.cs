@@ -16,8 +16,9 @@ namespace Atlas.Examples
         [SerializeField]
         private Example_GraphNode m_endNode;
 
-        private DirectedGraph<Example_GraphNode> m_graph = new DirectedGraph<Example_GraphNode>();
-        private List<DirectedGraph<Example_GraphNode>.Connection> m_path = new List<DirectedGraph<Example_GraphNode>.Connection>();
+        private DirectedGraph<Example_GraphNode, GraphConnection> m_graph =
+            new DirectedGraph<Example_GraphNode, GraphConnection>();
+        private List<GraphConnection> m_path = new List<GraphConnection>();
 
         [InspectorButton]
         private void Search()
@@ -28,7 +29,8 @@ namespace Atlas.Examples
                 return;
             }
 
-            AStar<Example_GraphNode> search = new AStar<Example_GraphNode>( m_graph, heuristic: EuclidianDistance );
+            AStar<Example_GraphNode, GraphConnection> search =
+                new AStar<Example_GraphNode, GraphConnection>( m_graph, heuristic: EuclidianDistance );
 
             DateTime startTime = DateTime.UtcNow;
             var status = search.Search( m_startNode.ID, m_endNode.ID, m_path );

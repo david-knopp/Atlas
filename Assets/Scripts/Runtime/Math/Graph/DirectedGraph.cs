@@ -11,9 +11,32 @@ namespace Atlas
     /// </summary>
     public class DirectedGraph<TNode, TConnection>
         where TNode : IGraphNode
-        where TConnection : IGraphConnection, new()
+        where TConnection : struct, IGraphConnection
     {
+        #region public
+
+        #region nodes
+
         public IReadOnlyDictionary<int, TNode> Nodes => m_nodes;
+
+        public TNode this[int nodeID]
+        {
+            get
+            {
+                if ( TryGetNode( nodeID, out var node ) )
+                {
+                    return node;
+                }
+
+                throw new KeyNotFoundException(
+                    $"Graph doesn't contain a node with ID `{nodeID}`" );
+            }
+
+            set
+            {
+                m_nodes[nodeID] = value;
+            }
+        }
 
         public void AddNode( TNode node )
         {
@@ -38,20 +61,49 @@ namespace Atlas
         public bool TryGetNode( int nodeID, out TNode node )
         {
             return m_nodes.TryGetValue( nodeID, out node );
+        } 
+
+        #endregion nodes
+
+        #region connections
+
+        public TConnection this[int fromNodeID, int toNodeID]
+        {
+            get
+            {
+                if ( TryGetConnection( fromNodeID, toNodeID, out var connection ) )
+                {
+                    return connection;
+                }
+
+                throw new KeyNotFoundException(
+                    $"Graph doesn't contain a connection from node `{fromNodeID}` to node `{toNodeID}`" );
+            }
+
+            set
+            {
+                var connections = GetOrAddOutgoingConnections( fromNodeID );
+
+                int currentIndex = connections.FindIndex( x => x.ToNodeID == toNodeID );
+                if ( currentIndex >= 0 )
+                {
+                    connections[currentIndex] = value;
+                }
+                else
+                {
+                    connections.Add( value );
+                }
+            }
         }
 
         public void AddConnection( TConnection connection )
         {
-            if ( m_outgoingConnections.TryGetValue( connection.FromNodeID, out var connections ) == false )
-            {
-                connections = new List<TConnection>();
-                m_outgoingConnections[connection.FromNodeID] = connections;
-            }
+            var connections = GetOrAddOutgoingConnections( connection.FromNodeID );
 
-            int currentIndex = connections.FindIndex( x => x.ToNodeID == connection.ToNodeID );
-            if ( currentIndex >= 0 )
+            if ( connections.Any( x => x.ToNodeID == connection.ToNodeID ) )
             {
-                connections[currentIndex] = connection;
+                throw new InvalidOperationException(
+                    $"A connection from node `{connection.FromNodeID}` to node `{connection.ToNodeID}` already exists in the graph" );
             }
             else
             {
@@ -129,9 +181,28 @@ namespace Atlas
 
             connection = default;
             return false;
-        }
+        } 
+
+        #endregion connections
+
+        #endregion public
+
+        #region private
 
         private readonly Dictionary<int, TNode> m_nodes = new Dictionary<int, TNode>();
         private readonly Dictionary<int, List<TConnection>> m_outgoingConnections = new Dictionary<int, List<TConnection>>();
+
+        private List<TConnection> GetOrAddOutgoingConnections( int fromNodeID )
+        {
+            if ( m_outgoingConnections.TryGetValue( fromNodeID, out var connections ) == false )
+            {
+                connections = new List<TConnection>();
+                m_outgoingConnections[fromNodeID] = connections;
+            }
+
+            return connections;
+        }
+
+        #endregion private
     }
 }

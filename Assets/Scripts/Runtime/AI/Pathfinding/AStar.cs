@@ -33,6 +33,7 @@ namespace Atlas
 
             m_nodes.Clear();
             m_openList.Clear();
+            m_nextNodeIndex = 0;
 
             // verify nodes
             if ( m_graph.TryGetNode( startNodeID, out TNode startNode ) == false ||
@@ -46,6 +47,7 @@ namespace Atlas
             NodeRecord startRecord = new NodeRecord()
             {
                 NodeID = startNodeID,
+                NodeIndex = m_nextNodeIndex++,
                 CurrentStatus = NodeRecord.Status.Open,
                 CostSoFar = 0f,
                 TotalCostEstimate = m_heuristic.Invoke( startNode, endNode ),
@@ -58,7 +60,7 @@ namespace Atlas
             };
 
             m_nodes.Add( startNodeID, startRecord );
-            m_openList.Insert( startNodeID, startRecord );
+            m_openList.Insert( startRecord.NodeIndex, startRecord );
 
             while ( m_openList.Count > 0 )
             {
@@ -98,11 +100,11 @@ namespace Atlas
                             if ( nodeRecord.CurrentStatus == NodeRecord.Status.Closed )
                             {
                                 nodeRecord.CurrentStatus = NodeRecord.Status.Open;
-                                m_openList.Insert( nodeRecord.NodeID, nodeRecord );
+                                m_openList.Insert( nodeRecord.NodeIndex, nodeRecord );
                             }
                             else if ( nodeRecord.CurrentStatus == NodeRecord.Status.Open )
                             {
-                                m_openList.DecreaseValueAtIndex( nodeID, nodeRecord );
+                                m_openList.DecreaseValueAtIndex( nodeRecord.NodeIndex, nodeRecord );
                             }
                         }
                         // first time seeing this node
@@ -111,6 +113,7 @@ namespace Atlas
                             nodeRecord = new NodeRecord()
                             {
                                 NodeID = nodeID,
+                                NodeIndex = m_nextNodeIndex++,
                                 CurrentStatus = NodeRecord.Status.Open,
                                 CostSoFar = cost,
                                 TotalCostEstimate = cost + m_heuristic.Invoke( startNode, endNode ),
@@ -118,7 +121,7 @@ namespace Atlas
                             };
 
                             m_nodes.Add( nodeID, nodeRecord );
-                            m_openList.Insert( nodeRecord.NodeID, nodeRecord );
+                            m_openList.Insert( nodeRecord.NodeIndex, nodeRecord );
                         }
                     }
                 }
@@ -145,6 +148,7 @@ namespace Atlas
             public float TotalCostEstimate;
             public Status CurrentStatus;
             public int NodeID;
+            public int NodeIndex;
 
             public int CompareTo( NodeRecord other )
             {
@@ -156,6 +160,7 @@ namespace Atlas
         private readonly IndexedPriorityQueue<NodeRecord> m_openList;
         private readonly DirectedGraph<TNode, TConnection> m_graph;
         private readonly Heuristic m_heuristic;
+        private int m_nextNodeIndex = 0;
 
         private void ConstructPath( int startNodeID, int endNodeID, List<TConnection> resultPath )
         {

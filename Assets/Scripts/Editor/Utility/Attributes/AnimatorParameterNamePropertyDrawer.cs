@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
@@ -160,6 +161,11 @@ namespace Atlas
         private void IterateParameters( AnimatorController controller,
             Action<AnimatorControllerParameter> parameterCallback )
         {
+            if ( controller == null )
+            {
+                return;
+            }
+
             foreach ( AnimatorControllerParameter parameter in controller.parameters )
             {
                 if ( NameAttribute.ParameterTypeFilter.HasValue == false ||

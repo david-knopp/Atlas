@@ -51,6 +51,17 @@ namespace Atlas
         public bool IsPaused
         {
             get => m_pauseTimestamp.HasValue;
+            set
+            {
+                if ( value )
+                {
+                    Pause();
+                }
+                else
+                {
+                    Unpause();
+                }
+            }
         }
 
         /// <summary>
@@ -98,6 +109,11 @@ namespace Atlas
         /// </summary>
         public void Pause()
         {
+            if ( IsPaused )
+            {
+                return;
+            }
+
             m_pauseTimestamp = CurrentTime;
         }
 
@@ -106,6 +122,11 @@ namespace Atlas
         /// </summary>
         public void Unpause()
         {
+            if ( IsPaused == false )
+            {
+                return;
+            }
+
             m_startTimestamp += CurrentTime - m_pauseTimestamp;
             m_pauseTimestamp = null;
         }

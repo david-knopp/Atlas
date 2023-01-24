@@ -11,7 +11,7 @@ namespace Atlas
     {
         public override void OnGUI( Rect position, SerializedProperty property, GUIContent label )
         {
-            using ( new EditorGUI.DisabledScope( Application.isPlaying ) )
+            using ( new EditorGUI.DisabledScope( !Application.isPlaying ) )
             {
                 EditorGUI.PropertyField( position, property, label );
             }

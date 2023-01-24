@@ -10,6 +10,8 @@ namespace Atlas.Test
         [SerializeField, MaxValue( 1 )] private int m_intMax;
         [SerializeField, MinValue( 0 )] private int m_intMin;
         [SerializeField, PreventEditInInspector] private bool m_notEditable;
+        [SerializeField, PreventEditInPlayMode] private bool m_notEditableInPlayMode;
+        [SerializeField, PreventEditInEditMode] private bool m_notEditableInEditMode;
         [SerializeField, AnimatorParameterName] private string m_animatorParameterName;
     }
 }

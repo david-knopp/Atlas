@@ -7,7 +7,7 @@ namespace Atlas.Examples
     public sealed class Example_ActionList : MonoBehaviour
     {
         [Serializable]
-        private sealed class TestAction : InterpolatedActionBase
+        private sealed class TestAction : InterpolatedAction
         {
             public override bool IsBlocking => m_isBlocking;
 

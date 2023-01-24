@@ -15,8 +15,8 @@ namespace Atlas
         public Timer( TimeScale scale = TimeScale.Scaled )
         {
             m_timeScale = scale;
-            m_startTimestamp = float.NegativeInfinity;
-            m_pauseTimestamp = float.NegativeInfinity;
+            m_startTimestamp = null;
+            m_pauseTimestamp = null;
         }
 
         /// <summary>
@@ -29,13 +29,14 @@ namespace Atlas
         {
             get
             {
-                if ( IsPaused )
+                if ( m_startTimestamp.HasValue )
                 {
-                    return m_pauseTimestamp - m_startTimestamp;
-                }
-                else if ( float.IsNegativeInfinity( m_startTimestamp ) == false )
-                {
-                    return CurrentTime - m_startTimestamp;
+                    if ( IsPaused )
+                    {
+                        return m_pauseTimestamp.Value - m_startTimestamp.Value;
+                    }
+
+                    return CurrentTime - m_startTimestamp.Value;
                 }
                 else
                 {
@@ -49,7 +50,7 @@ namespace Atlas
         /// </summary>
         public bool IsPaused
         {
-            get { return float.IsNegativeInfinity( m_pauseTimestamp ) == false; }
+            get => m_pauseTimestamp.HasValue;
         }
 
         /// <summary>
@@ -59,8 +60,8 @@ namespace Atlas
         {
             get
             {
-                return IsPaused == false && 
-                       float.IsNegativeInfinity( m_startTimestamp ) == false;
+                return IsPaused == false &&
+                       m_startTimestamp.HasValue;
             }
         }
 
@@ -70,7 +71,7 @@ namespace Atlas
         public void Start()
         {
             m_startTimestamp = CurrentTime;
-            m_pauseTimestamp = float.NegativeInfinity;
+            m_pauseTimestamp = null;
         }
 
         /// <summary>
@@ -80,7 +81,7 @@ namespace Atlas
         public void Start( float timeOffset )
         {
             m_startTimestamp = CurrentTime - timeOffset;
-            m_pauseTimestamp = float.NegativeInfinity;
+            m_pauseTimestamp = null;
         }
 
         /// <summary>
@@ -88,8 +89,8 @@ namespace Atlas
         /// </summary>
         public void Stop()
         {
-            m_startTimestamp = float.NegativeInfinity;
-            m_pauseTimestamp = float.NegativeInfinity;
+            m_startTimestamp = null;
+            m_pauseTimestamp = null;
         }
 
         /// <summary>
@@ -106,7 +107,7 @@ namespace Atlas
         public void Unpause()
         {
             m_startTimestamp += CurrentTime - m_pauseTimestamp;
-            m_pauseTimestamp = float.NegativeInfinity;
+            m_pauseTimestamp = null;
         }
 
         /// <summary>
@@ -137,8 +138,8 @@ namespace Atlas
         #endregion public
 
         #region private
-        private float m_startTimestamp;
-        private float m_pauseTimestamp;
+        private float? m_startTimestamp;
+        private float? m_pauseTimestamp;
         private TimeScale m_timeScale;
 
         private float CurrentTime

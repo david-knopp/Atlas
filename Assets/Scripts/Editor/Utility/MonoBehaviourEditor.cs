@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿#if ATLAS_MONOBEHAVIOUR_EDITOR_DISABLED == false
+
+using UnityEngine;
 using UnityEditor;
 using System;
 using System.Reflection;
@@ -42,3 +44,5 @@ namespace Atlas
         }
     }
 }
+
+#endif

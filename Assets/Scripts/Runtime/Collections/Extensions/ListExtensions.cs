@@ -12,6 +12,7 @@ namespace Atlas
         /// </summary>
         /// <typeparam name="T">Generic element type contained within the List</typeparam>
         /// <param name="list">List to randomize</param>
+        /// <exception cref="ArgumentNullException">Thrown if the given list is null</exception>
         public static void Shuffle<T>( this IList<T> list )
         {
             if ( list == null )

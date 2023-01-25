@@ -5,6 +5,15 @@ namespace Atlas
 {
     public static class DirectedGraphExtensions
     {
+        /// <summary>
+        /// Traverses a graph starting at the given node, visiting neighbor nodes before
+        /// moving onto next-level neighbors
+        /// </summary>
+        /// <typeparam name="TNode">Type of the graph's nodes</typeparam>
+        /// <typeparam name="TConnection">Type of the graph's connections</typeparam>
+        /// <param name="graph">Graph to traverse</param>
+        /// <param name="startNode">ID of the node to begin the search at</param>
+        /// <returns>Each node visited, along with its parent that was traversed first</returns>
         public static IEnumerable<( TNode node, TNode parent )> BreadthFirstSearch<TNode, TConnection>(
             this DirectedGraph<TNode, TConnection> graph,
             TNode startNode )
@@ -14,6 +23,16 @@ namespace Atlas
             return BreadthFirstSearch( graph, startNode, shouldVisitNodePredicate: _ => true );
         }
 
+        /// <summary>
+        /// Traverses a graph starting at the given node, visiting neighbor nodes before
+        /// moving onto next-level neighbors
+        /// </summary>
+        /// <typeparam name="TNode">Type of the graph's nodes</typeparam>
+        /// <typeparam name="TConnection">Type of the graph's connections</typeparam>
+        /// <param name="graph">Graph to traverse</param>
+        /// <param name="startNode">ID of the node to begin the search at</param>
+        /// <param name="shouldVisitNodePredicate">A callback to determine whether or not the given node should be visited</param>
+        /// <returns>Each node visited, along with its parent that was traversed first</returns>
         public static IEnumerable<( TNode node, TNode parent )> BreadthFirstSearch<TNode, TConnection>(
             this DirectedGraph<TNode, TConnection> graph,
             TNode startNode,
@@ -56,6 +75,16 @@ namespace Atlas
             }
         }
 
+        /// <summary>
+        /// Traverses a graph starting at the given node, visiting neighbor nodes before
+        /// moving onto next-level neighbors
+        /// </summary>
+        /// <typeparam name="TNode">Type of the graph's nodes</typeparam>
+        /// <typeparam name="TConnection">Type of the graph's connections</typeparam>
+        /// <param name="graph">Graph to traverse</param>
+        /// <param name="startNode">ID of the node to begin the search at</param>
+        /// <param name="maxNodeDepth">The maximum allowable depth of nodes to visit before ending traversal</param>
+        /// <returns>Each node visited, along with its parent that was traversed first</returns>
         public static IEnumerable<( TNode node, TNode parent )> BreadthFirstSearch<TNode, TConnection>(
             this DirectedGraph<TNode, TConnection> graph,
             TNode startNode,

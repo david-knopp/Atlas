@@ -12,7 +12,7 @@ namespace Atlas
 
         public static void HorizontalLine( Color color, float height = 1f, float widthPct = 1f )
         {
-            Rect rect = EditorGUILayout.GetControlRect( false );
+            Rect rect = EditorGUILayout.GetControlRect( false, height );
             rect.height = height;
 
             float targetWidth = rect.width * widthPct;

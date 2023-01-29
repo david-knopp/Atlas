@@ -10,18 +10,28 @@ Check out the [documentation](https://david-knopp.github.io/Atlas/index.html "do
 Atlas is a library of reusable classes and tools designed to jump-start your Unity project by providing solutions for common tasks, and extending/augmenting the features of Unity and C#.
 
 ## Feature Overview
-1. Game view debug drawing
-2. Easing
-3. Inspector attributes
-4. Timers
-5. Singletons
-6. Signals
-7. Effect emitters
-8. State machines
-9. Editor helpers
-10. UI stack
-11. Object pooling
-12. Vector swizzling
+
+### Animation Parameter Helpers
+Various objects for each of the `Animator` parameter types that show a dropdown of options in the inspector. They show parameters for any `Animator`s serialized with the class, as well as any `Animator`s in children and parent components. As an added benefit, they automatically cache the parameter hash for that extra bit of performance at runtime.
+
+```c#
+public class CatapultAnimation : MonoBehaviour
+{
+    [SerializeField]
+    private Animator m_animator;
+
+    [SerializeField]
+    private AnimatorTriggerHandle m_launchParam = "Launch";
+
+    [InspectorButton]
+    public void Launch()
+    {
+        m_animator.SetTrigger( m_launchParam );
+    }
+} 
+```
+
+<img src="./docfx/images/Examples_AnimatorParameters.gif" width=60% height=60%>
 
 ## Installation
 

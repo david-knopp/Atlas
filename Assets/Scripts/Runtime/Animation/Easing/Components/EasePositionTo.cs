@@ -9,18 +9,47 @@ namespace Atlas
     {
         protected override void OnUpdate( float t )
         {
-            transform.position = Vector3.LerpUnclamped( m_startPosition, m_endPosition, t );
+            Vector3 position = Vector3.LerpUnclamped( m_startPosition, m_endPosition, t );
+
+            if ( m_useLocalPosition )
+            {
+                transform.localPosition = position;
+            }
+            else
+            {
+                transform.position = position;
+            }
         }
 
         protected override void Awake()
         {
             base.Awake();
-            m_startPosition = transform.position;
+            Initialize();
         }
 
         [SerializeField]
         private Vector3 m_endPosition;
 
+        [SerializeField]
+        private bool m_useLocalPosition;
+
         private Vector3 m_startPosition;
+
+        private void Initialize()
+        {
+            if ( m_useLocalPosition )
+            {
+                m_startPosition = transform.localPosition;
+            }
+            else
+            {
+                m_startPosition = transform.position;
+            }
+        }
+
+        private void OnValidate()
+        {
+            Initialize();
+        }
     }
 }

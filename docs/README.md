@@ -82,6 +82,27 @@ Reset `Transform` values to default with a button press.
 
 <img src="./docfx/images/Examples_TransformEditor.gif" width=60% height=60%>
 
+### Swizzles
+C# swizzling for `Vector2`, `Vector3`, `Vector4`, `Vector2Int`, `Vector3Int`, and `Color`.
+
+```c#
+public class SwizzleMeTimbers : MonoBehaviour
+{
+    public void Start()
+    {
+        // Creates a 2-dimensional vector with world X and Z
+        Vector2 flatPos2D = transform.position.XZ();
+
+        // Creates a 3-dimensional vector with (x, 0, y) values
+        Vector3 flatPos3D = flatPos2D.X_Y();
+
+        // Creates a color with the red and blue channels swapped,
+        // and the alpha set to 0
+        Color color = Color.magenta.BGR_();
+    }
+}
+```
+
 ### Range
 A serializable struct giving mininum and maximum float values, and providing several functions for common uses, such as checking if a value is within the range, getting a random value, clamping a value, etc. Also comes in an `int` variety.
 
@@ -98,6 +119,33 @@ public sealed class DamageComponent : MonoBehaviour
 
         hitCharacter.ApplyDamage( damageAmount );
     }
+}
+```
+
+### Key-Value Pair Deconstruction
+Easily break keys apart from values when iterating a `Dictionary`.
+
+```c#
+public class CharacterDatabase
+{
+    public void IterateCharacters()
+    {
+        // with key-value pair deconstruction
+        foreach ( ( int id, Character character ) in m_characters )
+        {
+            // ...
+        }
+
+        // without
+        foreach ( var kvp in m_characters )
+        {
+            int id = kvp.Key;
+            Character character = kvp.Value;
+        }
+    }
+    
+    private readonly Dictionary<int, Character> m_characters =
+        new Dictionary<int, Character>();
 }
 ```
 

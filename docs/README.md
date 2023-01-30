@@ -12,7 +12,7 @@ Atlas is a library of reusable classes and tools designed to jump-start your Uni
 ## Feature Overview
 
 ### Animation Parameter Helpers
-Various objects for each of the `Animator` parameter types that show a dropdown of options in the inspector. They show parameters for any `Animator`s serialized with the class, as well as any `Animator`s in children and parent components. As an added benefit, they automatically cache the parameter hash for that extra bit of performance at runtime.
+Structs for each of the `Animator` parameter types that show a dropdown of options in the inspector. They show parameters for any `Animator`s serialized with the class, as well as any `Animator`s in children and parent components. As an added benefit, they automatically cache the parameter hash for that extra bit of performance at runtime.
 
 ```c#
 public class CatapultAnimation : MonoBehaviour
@@ -31,7 +31,41 @@ public class CatapultAnimation : MonoBehaviour
 } 
 ```
 
-<img src="./docfx/images/Examples_AnimatorParameters.gif" width=60% height=60%>
+<img src="./docfx/images/Examples_AnimatorParameters.gif" width=75% height=75%>
+
+### Easing
+Several classes and functions based around [Robert Penner's easing functions]("http://robertpenner.com/easing/") for adding quick procedural animation. The `Ease` object gives dropdown options in the inspector with eases such as quadratic, bounce, elastic, etc., and functions to make interpolation easy. There are also several `EaseComponent`s that can be added to any object to add motion without writing code.
+
+```c#
+public sealed class EaseRotation : MonoBehaviour
+{
+    [SerializeField]
+    private Vector3 m_startRotation;
+
+    [SerializeField]
+    private Vector3 m_endRotation;
+
+    [SerializeField]
+    private Ease m_ease;
+
+    private void Update()
+    {
+        // get normalized time on [0, 1], wrapping every 2 seconds
+        float t = ( Time.time % 2f ) / 2f;
+
+        // ease between rotations
+        transform.rotation = m_ease.Interpolate( Quaternion.Euler( m_startRotation ),
+                                                 Quaternion.Euler( m_endRotation ),
+                                                 t );
+    }
+}
+```
+
+<img src="./docfx/images/Examples_Ease2.gif" width=75% height=75%>
+
+> All motion in this example is done using the various Transform `EaseComponent`s, e.g. `EaseRotationTo`:
+
+<img src="./docfx/images/Examples_EaseRotationTo.png" width = 50% height = 50%>
 
 ## Installation
 

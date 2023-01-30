@@ -5,6 +5,7 @@ namespace Atlas
     /// <summary>
     /// Eases the GameObject's Transform scale to the given scale
     /// </summary>
+    [DisallowMultipleComponent]
     public class EaseScaleTo : EaseComponent
     {
         protected override void OnUpdate( float t )
@@ -22,5 +23,10 @@ namespace Atlas
         private Vector3 m_endScale = Vector3.one;
 
         private Vector3 m_startScale;
+
+        private void Reset()
+        {
+            m_endScale = transform.localScale;
+        }
     }
 }

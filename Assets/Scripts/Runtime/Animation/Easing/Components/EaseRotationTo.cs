@@ -5,6 +5,7 @@ namespace Atlas
     /// <summary>
     /// Eases the GameObject's Transform rotation to the given rotation
     /// </summary>
+    [DisallowMultipleComponent]
     public class EaseRotationTo : EaseComponent
     {
         protected override void OnUpdate( float t )
@@ -46,11 +47,6 @@ namespace Atlas
             {
                 m_startRotation = transform.rotation.eulerAngles;
             }
-        }
-
-        private void OnValidate()
-        {
-            Initialize();
         }
     }
 }

@@ -5,6 +5,7 @@ namespace Atlas
     /// <summary>
     /// Eases the GameObject's Transform position to the given position
     /// </summary>
+    [DisallowMultipleComponent]
     public class EasePositionTo : EaseComponent
     {
         protected override void OnUpdate( float t )
@@ -45,11 +46,6 @@ namespace Atlas
             {
                 m_startPosition = transform.position;
             }
-        }
-
-        private void OnValidate()
-        {
-            Initialize();
         }
     }
 }

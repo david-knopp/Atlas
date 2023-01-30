@@ -131,7 +131,7 @@ namespace Atlas
 
         #region private
         [SerializeField]
-        private Ease m_ease;
+        private Ease m_ease = new Ease() { Type = EaseType.QuarticInOut };
 
         [SerializeField, MinValue( 0.0f )]
         private float m_durationSeconds = 1.0f;
@@ -152,7 +152,7 @@ namespace Atlas
         private Ease m_returnEase;
 
         private Timer m_timer;
-        private int m_loopCount;
+        private uint m_loopCount;
 
         private void OnEaseFinished()
         {

@@ -67,6 +67,25 @@ public sealed class EaseRotation : MonoBehaviour
 
 <img src="./docfx/images/Examples_EaseRotationTo.png" width = 50% height = 50%>
 
+### Range
+A serializable struct giving mininum and maximum float values, and providing several functions for common uses, such as checking if a value is within the range, getting a random value, clamping a value, etc. Also comes in an `int` variety.
+
+```c#
+public sealed class DamageComponent : MonoBehaviour
+{
+    [SerializeField]
+    private Range m_damageRange = new Range( 6f, 20f );
+
+    public void OnCharacterHit( Character hitCharacter )
+    {
+        // get randomized damage amount
+        float damageAmount = m_damageRange.GetRandomValue();
+
+        hitCharacter.ApplyDamage( damageAmount );
+    }
+}
+```
+
 ## Installation
 
 Atlas is a small library and doesn't rely on any external dependencies (outside of Unity itself), so installation should be relatively simple. Below are a couple of different ways to get Atlas up and running in your project:

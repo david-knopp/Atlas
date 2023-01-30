@@ -67,6 +67,21 @@ public sealed class EaseRotation : MonoBehaviour
 
 <img src="./docfx/images/Examples_EaseRotationTo.png" width = 50% height = 50%>
 
+### Time Scale Editor Window
+An editor window that allows manipulating Unity's `Time.timeScale` at runtime. It's great for speeding up (or slowing down) gameplay when debugging.
+
+<img src="./docfx/images/Examples_TimeScaleWindow.gif" width=50% height=50%>
+
+### Inspector Buttons
+Easily add buttons that call `MonoBehaviour` methods by adding the `[InspectorButton]` attribute to them.
+
+<img src="./docfx/images/Examples_InspectorButton.gif" width=50% height=50%>
+
+### Transform Reset Buttons
+Reset `Transform` values to default with a button press.
+
+<img src="./docfx/images/Examples_TransformEditor.gif" width=60% height=60%>
+
 ### Range
 A serializable struct giving mininum and maximum float values, and providing several functions for common uses, such as checking if a value is within the range, getting a random value, clamping a value, etc. Also comes in an `int` variety.
 

@@ -3,15 +3,15 @@
 namespace Atlas
 {
     /// <summary>
-    /// Eases the GameObject's Transform rotation to the given rotation
+    /// Eases the GameObject's Transform rotation to the given rotation,
+    /// using quaternion interpolation
     /// </summary>
     [DisallowMultipleComponent]
     public class EaseRotationTo : EaseComponent
     {
         protected override void OnUpdate( float t )
         {
-            Vector3 eulerAngles = Vector3.SlerpUnclamped( m_startRotation, m_endRotationDegrees, t );
-            Quaternion rotation = Quaternion.Euler( eulerAngles );
+            Quaternion rotation = Quaternion.SlerpUnclamped( m_startRotation, m_endRotation, t );
 
             if ( m_useLocalRotation )
             {
@@ -35,18 +35,21 @@ namespace Atlas
         [SerializeField]
         private bool m_useLocalRotation;
 
-        private Vector3 m_startRotation;
+        private Quaternion m_startRotation;
+        private Quaternion m_endRotation;
 
         private void Initialize()
         {
             if ( m_useLocalRotation )
             {
-                m_startRotation = transform.localRotation.eulerAngles;
+                m_startRotation = Quaternion.Euler( transform.localRotation.eulerAngles );
             }
             else
             {
-                m_startRotation = transform.rotation.eulerAngles;
+                m_startRotation = Quaternion.Euler( transform.rotation.eulerAngles );
             }
+
+            m_endRotation = Quaternion.Euler( m_endRotationDegrees );
         }
     }
 }

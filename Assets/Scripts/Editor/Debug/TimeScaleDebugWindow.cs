@@ -63,6 +63,7 @@ namespace Atlas
                 }
             }
 
+            DrawTimeScaleButton( 0.5f );
             DrawTimeScaleButton( 1.0f );
             DrawTimeScaleButton( 2.0f );
             DrawTimeScaleButton( 4.0f );

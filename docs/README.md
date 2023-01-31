@@ -122,6 +122,21 @@ public sealed class DamageComponent : MonoBehaviour
 }
 ```
 
+### Scene Path Dropdown
+Display a dropdown for all scenes in the project, or with an optional filter or folders to search in. A default scene folder path can also be set in the Atlas preferences under Edit->Preferences->Atlas->[ScenePath] Settings.
+
+```c#
+[SerializeField, ScenePath]
+private string m_scenePath;
+
+public void LoadScene()
+{
+    SceneManager.LoadScene( m_scenePath );
+}
+```
+
+<img src="./docfx/images/Examples_ScenePathAttribute.gif" width=40% height=40%>
+
 ### Key-Value Pair Deconstruction
 Easily break keys apart from values when iterating a `Dictionary`.
 

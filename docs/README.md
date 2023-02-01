@@ -103,6 +103,30 @@ public class SwizzleMeTimbers : MonoBehaviour
 }
 ```
 
+### Timer
+An object for measuring elapsed time based off of Unity's timestep, configurable for Scaled, Unscaled, and Fixed time scales.
+
+```c#
+private IEnumerator LerpPositionToRoutine( Vector3 targetPosition, float lerpTimeSeconds )
+{
+    // start timer
+    Timer timer = new Timer();
+    timer.Start();
+
+    Vector3 startPosition = transform.position;
+
+    // interpolate to target position for given amount of time
+    while ( timer.HasElapsed( lerpTimeSeconds ) == false )
+    {
+        // normalizes Timer's elapsed time to [0, 1]
+        float t = timer.GetElapsedPercent( lerpTimeSeconds );
+        transform.position = Vector3.Lerp( startPosition, targetPosition, t );
+
+        yield return null;
+    }
+}
+```
+
 ### Range
 A serializable struct giving mininum and maximum float values, and providing several functions for common uses, such as checking if a value is within the range, getting a random value, clamping a value, etc. Also comes in an `int` variety.
 
@@ -161,6 +185,31 @@ public class CharacterDatabase
     
     private readonly Dictionary<int, Character> m_characters =
         new Dictionary<int, Character>();
+}
+```
+
+### Singleton
+An implementation of the Singleton design pattern that helps ensure only 1 instance of the given class exists, and caches a shared instance by searching existing objects, or by instantiating one if one hasn't yet been created.
+
+```c#
+// Singleton declaration
+public sealed class AudioSystem : SingletonBehavior<AudioSystem>
+{
+    public void PlayAudioClip( AudioClip clip )
+    {
+        // Audio playback code...
+    }
+}
+
+// Accessing the singleton
+public sealed class MatchAudio
+{
+    // called when a goal is scored
+    public void OnGoalScored()
+    {
+        // play audio using shared AudioSystem instance
+        AudioSystem.Instance.PlayAudioClip( AudioClip.GoalScored );
+    }
 }
 ```
 

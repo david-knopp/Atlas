@@ -40,8 +40,6 @@ namespace Atlas
 
                     if ( m_instance == null )
                     {
-                        Debug.LogFormat( "SingletonBehavior.Instance: Couldn't find a scene reference of type '{0}', creating a new one", typeof( TDerived ) );
-
                         GameObject singletonObj = new GameObject();
                         m_instance = singletonObj.AddComponent<TDerived>();
                         singletonObj.name = typeof( TDerived ).ToString();

@@ -7,7 +7,19 @@
 Check out the [documentation](https://david-knopp.github.io/Atlas/index.html "documentation") for a more detailed api reference and guides.
 
 ## Summary
-Atlas is a library of reusable classes and tools designed to jump-start your Unity project by providing solutions for common tasks, and extending/augmenting the features of Unity and C#.
+Atlas is a library of reusable classes and tools meant to help with some of the common things in gamedev.
+
+## Installation
+#### Import using the Package Manager (Unity 2019.1+) 
+Add `"com.davidknopp.atlas": "https://github.com/david-knopp/Atlas.git#ReleasePackage",` under the `"dependencies"` section of your project's manifest.json file, which should be located under the "Packages" folder in your project's root directory. Upon running Unity, Atlas should then be
+downloaded automatically.
+
+Note: to use this method, Git must be installed on the user machine and the Git executable path should be listed in the PATH system environment variable as explained [on the Unity forum](https://forum.unity.com/threads/git-support-on-package-manager.573673/ "Package Manager Git support - Unity Forum").
+
+#### Import the Unity Package
+Download the latest .unitypackage from the [releases page](https://github.com/david-knopp/Atlas/releases "releases page"). Then, simply drag and drop the [package](https://docs.unity3d.com/Manual/AssetPackages.html "package") into your Unity project.  
+
+In an effort to keep your project tidy, Atlas will place itself in `Assets/ThirdParty/Atlas/`, but can be moved freely afterward, as nothing within the library depends upon this directory.
 
 ## Feature Preview
 
@@ -212,27 +224,6 @@ public sealed class MatchAudio
     }
 }
 ```
-
-## Installation
-
-Atlas is a small library and doesn't rely on any external dependencies (outside of Unity itself), so installation should be relatively simple. Below are a couple of different ways to get Atlas up and running in your project:
-
-#### Import using the Package Manager (Unity 2019.1+) 
-Add `"com.davidknopp.atlas": "https://github.com/david-knopp/Atlas.git#ReleasePackage",` under the `"dependencies"` section of your project's manifest.json file, which should be located under the "Packages" folder in your project's root directory. Upon running Unity, Atlas should then be
-downloaded automatically.
-
-Note: to use this method, Git must be installed on the user machine and the Git executable path should be listed in the PATH system environment variable as explained [on the Unity forum](https://forum.unity.com/threads/git-support-on-package-manager.573673/ "Package Manager Git support - Unity Forum").
-
-#### Import the Unity Package
-Download the latest .unitypackage from the [releases page](https://github.com/david-knopp/Atlas/releases "releases page"). Then, simply drag and drop the [package](https://docs.unity3d.com/Manual/AssetPackages.html "package") into your Unity project.  
-
-In an effort to keep your project tidy, Atlas will place itself in `Assets/ThirdParty/Atlas/`, but can be moved freely afterward, as nothing within the library depends upon this directory.
-
-#### Copy/paste the source folders
-Download or clone the latest master branch, then copy the assets contained at `Assets/Scripts/` of the Atlas project into your Unity project.
-
-#### Mix & Match
-Many of the files & classes contained within Atlas are modular and can be used on their own without any other dependencies. Therefore, individual files can be taken at will from the repository for use within your Unity projects.
 
 ## License
 [MIT © David Knopp](https://github.com/david-knopp/Atlas/blob/master/LICENSE "MIT © David Knopp")

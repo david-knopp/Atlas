@@ -7,7 +7,7 @@ namespace Atlas
     /// A finite state machine data structure that executes states, and handles switching between them
     /// </summary>
     /// <seealso cref="StateMachineBehavior"/>
-    public class StateMachine : IStateMachine, ITickable
+    public class StateMachine : IStateMachine
     {
         #region public
         /// <summary>
@@ -117,7 +117,7 @@ namespace Atlas
                 CurrentState.Tick();
             }
         }
-        #endregion // public
+        #endregion public
 
         #region private
         private Dictionary<Type, State> m_states;
@@ -140,6 +140,6 @@ namespace Atlas
                 CurrentState.Enter();
             }
         }
-        #endregion // private
+        #endregion private
     }
 }

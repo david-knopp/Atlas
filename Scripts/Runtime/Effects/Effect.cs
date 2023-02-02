@@ -18,14 +18,14 @@ namespace Atlas
         public enum ActivationEventType
         {
             /// <summary>
-            /// Activate on <see cref="Start"/>
+            /// Automatically activate on <see cref="Start"/>
             /// </summary>
             Start = 0,
 
             /// <summary>
-            /// Manually activate via code (by calling <see cref="Play"/>)
+            /// Manually control activation, e.g. via code (by calling <see cref="Play"/>)
             /// </summary>
-            Manual = 1
+            AdHoc = 1
         }
 
         /// <summary>
@@ -34,14 +34,19 @@ namespace Atlas
         public enum DestructionEventType
         {
             /// <summary>
-            /// Destroy when all child emitters finish
+            /// Automatically destroy when all child emitters finish
             /// </summary>
             Finished = 0,
 
             /// <summary>
-            /// Manually destroy via code (by calling <see cref="Object.Destroy"/>)
+            /// Manually control destruction, e.g. via code (by calling <see cref="Object.Destroy"/>)
             /// </summary>
-            Manual = 1
+            AdHoc = 1,
+
+            /// <summary>
+            /// Automatically destroy after a set amount of time
+            /// </summary>
+            Timed
         }
 
         /// <summary>
@@ -76,6 +81,11 @@ namespace Atlas
         {
             IsPlaying = true;
 
+            if ( DestructionEvent == DestructionEventType.Timed )
+            {
+                m_destroyTimer.Start();
+            }
+
             foreach ( var emitter in m_emitters )
             {
                 emitter.Play();
@@ -100,17 +110,25 @@ namespace Atlas
         #endregion public
 
         #region private
-        [SerializeField] private List<EffectEmitterBase> m_emitters;
-        [SerializeField] private ActivationEventType m_activationEvent;
-        [SerializeField] private DestructionEventType m_destructionEvent;
+        [SerializeField, Tooltip( "When this effect should become active" )] private ActivationEventType m_activationEvent;
+        [SerializeField, Tooltip( "When this effect should get destroyed" )] private DestructionEventType m_destructionEvent;
+        [SerializeField, MinValue( 0f )] private float m_lifetimeSeconds;
 
+        private List<EffectEmitterBase> m_emitters;
+        private Timer m_destroyTimer = new Timer();
         private int m_finishedEmittersCount;
 
         private void Awake()
         {
-            for ( int i = 0; i < m_emitters.Count; i++ )
+            if ( DestructionEvent == DestructionEventType.Finished )
             {
-                m_emitters[i].EmissionFinishedEvent += OnEmitterFinished;
+                m_emitters = new List<EffectEmitterBase>();
+                GetComponentsInChildren( m_emitters );
+
+                for ( int i = 0; i < m_emitters.Count; i++ )
+                {
+                    m_emitters[i].EmissionFinishedEvent += OnEmitterFinished;
+                }
             }
         }
 
@@ -119,6 +137,16 @@ namespace Atlas
             if ( ActivationEvent == ActivationEventType.Start )
             {
                 Play();
+            }
+        }
+
+        private void Update()
+        {
+            if ( m_destroyTimer.IsTiming &&
+                 m_destroyTimer.HasElapsed( m_lifetimeSeconds ) )
+            {
+                m_destroyTimer.Stop();
+                Destroy();
             }
         }
 
@@ -137,9 +165,14 @@ namespace Atlas
 
             if ( DestructionEvent == DestructionEventType.Finished )
             {
-                Destroy( gameObject );
+                Destroy();
             }
-        } 
+        }
+
+        private void Destroy()
+        {
+            Destroy( gameObject );
+        }
         #endregion private
     }
 }

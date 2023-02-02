@@ -1,8 +1,8 @@
 {
   "name": "com.davidknopp.atlas",
   "displayName": "Atlas",
-  "version": "0.9.5",
-  "unity": "2018.1",
+  "version": "0.9.9",
+  "unity": "2018.3",
   "description": "A C# utility and helper library for Unity 👩‍🚀",
   "keywords": [
     "Utility",
